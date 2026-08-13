@@ -177,4 +177,10 @@ export interface Category {
   cardBlurb: string;
   /** Slug of a product whose photograph represents the category. */
   heroProduct: string;
+  /**
+   * Rendered on the homepage rather than at its own URL. Used for the flagship
+   * range, which would otherwise compete with the homepage for the same head
+   * term — the brand, the domain and the homepage all target "cone sleeves".
+   */
+  mergedIntoHome?: boolean;
 }

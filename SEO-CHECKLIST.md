@@ -19,9 +19,9 @@ Current status: **both pass with 0 errors and 0 warnings.**
 
 | Requirement | Status | How it is verified |
 |---|---|---|
-| Unique SEO title | ✅ 240/240 unique | Build audit fails on any duplicate |
+| Unique SEO title | ✅ 239/239 unique | Build audit fails on any duplicate |
 | Title length ≤ 60 chars (raw) | ✅ | Content validator fails above 60; brand suffix appended only if the total stays ≤ 65 |
-| Unique meta description | ✅ 240/240 unique | Build audit fails on any duplicate |
+| Unique meta description | ✅ 239/239 unique | Build audit fails on any duplicate |
 | Description 120–130 chars | ✅ | Validator warns below 118, fails above 160 |
 | Exactly one H1 | ✅ | Build audit fails on zero or more than one |
 | Unique H1 across pages | ✅ | Content validator fails on duplicates |
@@ -44,7 +44,7 @@ Current status: **both pass with 0 errors and 0 warnings.**
 
 | Requirement | Status | Detail |
 |---|---|---|
-| `/sitemap.xml` | ✅ | Published as `/sitemap-index.xml` with one part file, 240 URLs |
+| `/sitemap.xml` | ✅ | Published as `/sitemap-index.xml` with one part file, 239 URLs |
 | Segmented sitemaps | ✅ | `@astrojs/sitemap` splits automatically above 45,000 URLs; not yet needed |
 | `robots.txt` | ✅ | Generated from the route data, so it cannot drift from the site |
 | Custom 404 | ✅ | `/404/`, noindex, links into every range plus the catalogue and guides |
@@ -78,7 +78,7 @@ discipline.
 | Locations not cross-linked exhaustively | ✅ | Each location links to exactly 3 geographically sensible neighbours, not all 25 |
 | Related products genuinely relevant | ✅ | Hand-assigned per product; validator fails on any slug that does not resolve |
 
-**Coverage:** 222 contextual links, 680 related-product links, 240 pages, zero
+**Coverage:** 222 contextual links, 680 related-product links, 239 pages, zero
 orphans. The footer links only 6 of 25 locations, so no page carries a
 link-ring footprint.
 
@@ -89,7 +89,7 @@ link-ring footprint.
 Every programmatic page type was checked against the brief's criteria before
 being allowed to publish.
 
-| Check | Products (170) | Categories (18) | Locations (25) |
+| Check | Products (170) | Categories (17) | Locations (25) |
 |---|---|---|---|
 | Unique search intent | ✅ 11 synonym pages consolidated instead | ✅ 4 thin subcategories merged | ✅ 10 cannibalising areas dropped |
 | Unique primary content | ✅ | ✅ | ✅ |

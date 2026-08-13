@@ -912,7 +912,7 @@ export const FOOD_TRAYS: Product[] = [
           'Because it grips the taper rather than the rim, the hole size is specific to your cone. This is not a product that works from a stock size.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'the cone sleeve range these are sized alongside',
           sentence: 'Holders are normally ordered with {link}, cut from the same cone measurements.',
         },
@@ -1018,7 +1018,7 @@ export const FOOD_TRAYS: Product[] = [
           'Running them together on the same stock, from the same ink, removes the problem entirely. It is the single most common reason customers move to coordinated ordering.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'the sleeve range these sets are built from',
           sentence: 'Sets are usually assembled from {link} plus a matching tray or holder.',
         },

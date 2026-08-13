@@ -115,8 +115,8 @@ Four product slugs were renamed as a result, with 301s from the old forms:
 
 | Check | Result |
 |---|---|
-| Duplicate SEO titles | 0 across 240 pages |
-| Duplicate meta descriptions | 0 across 240 pages |
+| Duplicate SEO titles | 0 across 239 pages |
+| Duplicate meta descriptions | 0 across 239 pages |
 | Duplicate H1s | 0 |
 | Duplicate opening paragraphs | 0 |
 

@@ -3,66 +3,69 @@ import { Image } from 'astro:assets';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import ProductCard from '~/components/ProductCard.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
-import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
-import { productBySlug, productsInCategory, PRODUCT_COUNT } from '~/data/products';
+import Sections from '~/components/Sections.astro';
+import Faqs from '~/components/Faqs.astro';
+import { ROUTED_CATEGORIES, HOME_CATEGORY, categoryPath } from '~/data/categories';
+import { productsInCategory, PRODUCT_COUNT } from '~/data/products';
 import { POSTS, postPath, readingTime } from '~/data/blog';
 import { CITIES } from '~/data/locations';
-import { primaryImage, imageCount } from '~/lib/images';
+import { primaryImage } from '~/lib/images';
 import { whatsappHref, CONTACT, TEL_HREF } from '~/config/site';
 import * as schema from '~/lib/schema';
 
+/**
+ * The homepage is also the cone sleeve category page.
+ *
+ * The brand, the domain and this page all target "custom cone sleeves UK".
+ * Publishing a separate /cone-sleeves/ category page would have put two of
+ * our own pages against each other for that head term, so the flagship range
+ * — its product grid, its buyer guidance and its FAQs — lives here instead,
+ * and /cone-sleeves/ 301s to this page.
+ */
 const path = '/';
 const heroImage = primaryImage('custom-waffle-cone-sleeves')!;
 
-// A representative product from each range rather than an arbitrary slice.
-const featured = [
-  'custom-ice-cream-cone-sleeves',
-  'burger-sleeves',
-  'custom-printed-coffee-sleeves',
-  'french-fry-boxes',
-  'custom-burger-trays',
-  'custom-greaseproof-paper',
-  'custom-paper-coffee-cups',
-  'custom-take-out-bags',
-]
-  .map((s) => productBySlug(s))
-  .filter((p): p is NonNullable<typeof p> => Boolean(p));
-
+const coneSleeves = productsInCategory('cone-sleeves');
 const latestPosts = POSTS.slice(0, 3);
 const homeCities = CITIES.slice(0, 10);
 
 const graph = [
   schema.webPage({
     path,
-    name: 'Cone Sleeves UK | Custom Printed Cone Sleeves & Food Packaging',
+    name: 'Custom Printed Cone Sleeves | Cone Sleeves UK',
     description:
-      'Custom printed cone sleeves, food sleeves, trays, cups and papers for UK food businesses, cut to your own products.',
+      'Custom printed cone sleeves cut to the cones you already serve, for UK ice cream shops, dessert bars and street food traders.',
+    type: 'CollectionPage',
     primaryImage: heroImage.src,
   }),
   schema.itemList(
-    TOP_CATEGORIES.map((c) => ({ name: c.name, path: categoryPath(c) })),
+    coneSleeves.map((p) => ({ name: p.name, path: `/${p.slug}/` })),
     path,
   ),
+  // These are the same questions rendered as accordions further down.
+  schema.faqPage(HOME_CATEGORY.faqs, path),
 ];
 ---
 
 <BaseLayout
-  title="Custom Cone Sleeves UK | Printed Food Packaging"
-  description="Printed cone sleeves, food sleeves, trays, cups and papers for UK food businesses. Cut to your own products, quoted in writing."
+  title="Custom Cone Sleeves UK | Printed Cone Sleeve Supplier"
+  description="Printed cone sleeves cut to the cones you already serve. Waffle, sugar, cake and savoury cone wraps for UK dessert and street food businesses."
   path={path}
   image={heroImage.src}
   imageAlt="Custom printed cone sleeve on a waffle cone"
   schema={graph}
+  whatsappContext="custom printed cone sleeves"
 >
   <section class="hero">
     <div class="wrap hero-grid">
       <div class="hero-copy">
-        <p class="eyebrow">UK packaging supplier</p>
-        <h1>Cone sleeves cut to the cones you already serve</h1>
+        <p class="eyebrow">UK cone sleeve supplier</p>
+        <h1>Custom printed cone sleeves, cut to your own cones</h1>
         <p class="lede">
-          We print sleeves, trays, cups, papers and bags for food businesses across the
-          United Kingdom — sized from your own product rather than pulled from a stock
-          list, and quoted with the board, finish and lead time in writing.
+          A cone sleeve is the piece of packaging a customer holds for the whole time they
+          are eating. We print them for ice cream shops, gelaterias, dessert bars and
+          street food traders across the United Kingdom — sized from the cone you already
+          buy rather than pulled from a stock list.
         </p>
 
         <div class="btn-row hero-cta">
@@ -72,12 +75,12 @@ const graph = [
 
         <dl class="hero-stats">
           <div>
-            <dt>Products</dt>
-            <dd>{PRODUCT_COUNT}</dd>
+            <dt>Cone sleeve designs</dt>
+            <dd>{coneSleeves.length}</dd>
           </div>
           <div>
-            <dt>Ranges</dt>
-            <dd>{TOP_CATEGORIES.length}</dd>
+            <dt>Products in total</dt>
+            <dd>{PRODUCT_COUNT}</dd>
           </div>
           <div>
             <dt>Delivered</dt>
@@ -106,16 +109,48 @@ const graph = [
     </div>
   </section>
 
+  <div class="wrap home-quote" id="quote">
+    <QuoteForm
+      requirementHint="Custom printed cone sleeves"
+      source="homepage"
+      variant="panel"
+      heading="Get a cone sleeve quote"
+      intro="Tell us which cone you serve and roughly how many sleeves you need. We reply with the board, print and finish, plus the minimum quantity and lead time for your job."
+      id="quote-form"
+    />
+  </div>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <h2>The cone sleeve range</h2>
+      <p class="section-lede">
+        {coneSleeves.length} cone sleeve products covering the shapes sold across the UK dessert
+        trade: standard waffle, sugar, cake and rolled cones, plus savoury cones used for
+        chips and fried chicken.
+      </p>
+      <div class="grid-auto featured-grid">
+        {coneSleeves.map((p, i) => <ProductCard product={p} eager={i < 4} />)}
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="wrap home-guidance">
+      <Sections sections={HOME_CATEGORY.sections} />
+      <Faqs faqs={HOME_CATEGORY.faqs} heading="Cone sleeves: common questions" />
+    </div>
+  </section>
+
   <section class="section-tight ranges">
     <div class="wrap">
-      <h2>What we print</h2>
+      <h2>The rest of what we print</h2>
       <p class="section-lede">
-        Seven ranges, each specified around a different problem — grip on a cone, grease
-        from a fryer, heat through a cup wall, or a bag that has to hold a full order.
+        Six further ranges, each specified around a different problem — grease from a
+        fryer, heat through a cup wall, or a bag that has to hold a full order.
       </p>
       <div class="range-grid">
         {
-          TOP_CATEGORIES.map((c) => {
+          ROUTED_CATEGORIES.map((c) => {
             const img = primaryImage(c.heroProduct);
             const count = productsInCategory(c.slug).length;
             return (
@@ -144,10 +179,13 @@ const graph = [
           })
         }
       </div>
+      <p class="all-products-link">
+        <a class="btn btn-outline" href="/products/">See all {PRODUCT_COUNT} products</a>
+      </p>
     </div>
   </section>
 
-  <section class="section section-white">
+  <section class="section section-sunk">
     <div class="wrap how-grid">
       <div>
         <p class="eyebrow">How it works</p>
@@ -160,10 +198,10 @@ const graph = [
       </div>
       <ol class="how-steps">
         <li>
-          <h3>Send the product</h3>
+          <h3>Send the cone</h3>
           <p>
-            Post us the cone, cup or container you use, or send the measurements. A physical
-            sample removes every ambiguity at once.
+            Post us two or three of the cones you use, or the top diameter and slant
+            height. A physical sample removes every ambiguity at once.
           </p>
         </li>
         <li>
@@ -176,8 +214,8 @@ const graph = [
         <li>
           <h3>Work on the die line</h3>
           <p>
-            We supply a template cut to your product, so artwork is built on the correct
-            shape rather than adjusted to fit afterwards.
+            We supply a template cut to your cone, so artwork is built on the correct arc
+            rather than adjusted to fit afterwards.
           </p>
         </li>
         <li>
@@ -188,22 +226,6 @@ const graph = [
           </p>
         </li>
       </ol>
-    </div>
-  </section>
-
-  <section class="section-tight">
-    <div class="wrap">
-      <h2>Ordered most often</h2>
-      <p class="section-lede">
-        A cross-section of the catalogue — one from each range, so you can see how
-        differently each is specified.
-      </p>
-      <div class="grid-auto featured-grid">
-        {featured.map((p) => <ProductCard product={p} />)}
-      </div>
-      <p class="all-products-link">
-        <a class="btn btn-outline" href="/products/">See all {PRODUCT_COUNT} products</a>
-      </p>
     </div>
   </section>
 
@@ -239,64 +261,47 @@ const graph = [
     </div>
   </section>
 
-  <section class="section-tight" id="quote">
-    <div class="wrap home-quote-grid">
-      <QuoteForm
-        source="homepage"
-        variant="panel"
-        heading="Tell us what you need"
-        intro="A short enquiry is enough to start. We reply with a written specification, the minimum quantity and a lead time for your job."
-        id="quote-form"
-      />
+  <section class="section-tight">
+    <div class="wrap home-contact-grid">
       <div class="home-contact">
-        <h2>Rather talk first?</h2>
+        <h2>Rather talk it through?</h2>
         <p>
-          Sizing questions are usually quicker on the phone, especially with the product
-          in front of you.
+          Sizing questions are usually quicker on the phone, especially with a cone in
+          front of you.
         </p>
         <ul>
           <li><a href={TEL_HREF}>{CONTACT.phoneDisplay}</a></li>
           <li><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
-          <li><a href={whatsappHref()} rel="noopener">Message us on WhatsApp</a></li>
+          <li><a href={whatsappHref('custom printed cone sleeves')} rel="noopener">Message us on WhatsApp</a></li>
         </ul>
-        <p class="home-contact-note">
-          {imageCount()} product photographs across {PRODUCT_COUNT} pages, so you can see
-          the format before you ask about it.
+      </div>
+      <div class="home-posts">
+        <h2>Guides for buyers</h2>
+        <p class="section-lede">Written for people specifying packaging rather than selling it.</p>
+        <div class="post-grid">
+          {
+            latestPosts.map((post) => (
+              <a class="post-card card" href={postPath(post.slug)}>
+                <span class="badge badge-amber">{post.topic}</span>
+                <h3>{post.title}</h3>
+                <span class="post-meta">{readingTime(post)} min read</span>
+              </a>
+            ))
+          }
+        </div>
+        <p class="all-products-link">
+          <a class="btn btn-outline btn-sm" href="/blog/">All guides</a>
         </p>
       </div>
     </div>
   </section>
 
-  <section class="section section-sunk">
-    <div class="wrap">
-      <h2>Guides for buyers</h2>
-      <p class="section-lede">
-        Written for people specifying packaging rather than selling it.
-      </p>
-      <div class="post-grid">
-        {
-          latestPosts.map((post) => (
-            <a class="post-card card" href={postPath(post.slug)}>
-              <span class="badge badge-amber">{post.topic}</span>
-              <h3>{post.title}</h3>
-              <p>{post.standfirst}</p>
-              <span class="post-meta">{readingTime(post)} min read</span>
-            </a>
-          ))
-        }
-      </div>
-      <p class="all-products-link">
-        <a class="btn btn-outline" href="/blog/">All guides</a>
-      </p>
-    </div>
-  </section>
-
-  <section class="section-tight">
+  <section class="section-tight section-sunk">
     <div class="wrap">
       <h2 class="areas-title">Areas we supply</h2>
       <p class="section-lede">
-        We deliver anywhere in the UK. These pages cover what packaging the trade in each
-        place actually buys.
+        We deliver anywhere in the UK. These pages cover what the food trade in each place
+        actually buys.
       </p>
       <ul class="area-list">
         {homeCities.map((l) => <li><a href={`/${l.slug}/`}>{l.place}</a></li>)}
@@ -329,11 +334,11 @@ const graph = [
   .hero-copy h1 {
     margin: 0.5rem 0 var(--space-s);
     font-size: var(--step-6);
-    max-width: 15ch;
+    max-width: 16ch;
   }
 
   .hero-copy .lede {
-    max-width: 52ch;
+    max-width: 54ch;
   }
 
   .hero-cta {
@@ -409,10 +414,22 @@ const graph = [
     }
   }
 
+  .home-quote {
+    padding-block: var(--space-l);
+  }
+
   .section-lede {
     margin-top: 0.5rem;
     max-width: 62ch;
     color: var(--c-text-soft);
+  }
+
+  .featured-grid {
+    margin-top: var(--space-m);
+  }
+
+  .home-guidance {
+    max-width: 82ch;
   }
 
   .range-grid {
@@ -464,6 +481,10 @@ const graph = [
     color: var(--green-700);
   }
 
+  .all-products-link {
+    margin-top: var(--space-m);
+  }
+
   .how-grid {
     display: grid;
     gap: var(--space-xl);
@@ -498,7 +519,7 @@ const graph = [
     counter-increment: how;
     position: relative;
     padding: var(--space-s) var(--space-s) var(--space-s) 3.75rem;
-    background: var(--cream);
+    background: var(--surface);
     border-radius: var(--radius-m);
   }
 
@@ -521,14 +542,6 @@ const graph = [
     margin: 0;
     font-size: 0.93rem;
     color: var(--c-text-soft);
-  }
-
-  .featured-grid {
-    margin-top: var(--space-m);
-  }
-
-  .all-products-link {
-    margin-top: var(--space-m);
   }
 
   .honest-grid {
@@ -581,15 +594,15 @@ const graph = [
     line-height: 1.5;
   }
 
-  .home-quote-grid {
+  .home-contact-grid {
     display: grid;
     gap: var(--space-l);
-    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
     align-items: start;
   }
 
   @media (max-width: 900px) {
-    .home-quote-grid {
+    .home-contact-grid {
       grid-template-columns: minmax(0, 1fr);
     }
   }
@@ -598,6 +611,10 @@ const graph = [
     padding: var(--space-m);
     background: var(--surface-sunk);
     border-radius: var(--radius-l);
+  }
+
+  .home-contact h2 {
+    font-size: var(--step-2);
   }
 
   .home-contact p {
@@ -615,18 +632,14 @@ const graph = [
     font-weight: 650;
   }
 
-  .home-contact-note {
-    margin-top: var(--space-m) !important;
-    padding-top: var(--space-s);
-    border-top: 1px solid var(--c-border-soft);
-    font-size: var(--step--1) !important;
-    color: var(--c-text-muted) !important;
+  .home-posts h2 {
+    font-size: var(--step-2);
   }
 
   .post-grid {
     display: grid;
     gap: var(--space-s);
-    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(14rem, 100%), 1fr));
     margin-top: var(--space-m);
   }
 
@@ -634,19 +647,14 @@ const graph = [
     display: grid;
     gap: 0.45rem;
     align-content: start;
-    padding: var(--space-m);
+    padding: var(--space-s);
     text-decoration: none;
     color: inherit;
   }
 
   .post-card h3 {
-    font-size: var(--step-1);
-  }
-
-  .post-card p {
-    font-size: 0.93rem;
-    color: var(--c-text-soft);
-    line-height: 1.55;
+    font-size: var(--step-0);
+    line-height: 1.35;
   }
 
   .post-meta {

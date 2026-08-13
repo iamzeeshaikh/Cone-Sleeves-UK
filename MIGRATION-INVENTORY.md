@@ -83,7 +83,8 @@ dependency, no PHP, no database and no plugin layer.
 /                                     Home
 /products/                            Full catalogue index (170 products)
 /<product-slug>/                      170 product pages, root level
-/<category>/                          7 top-level category pages
+/<category>/                          6 top-level category pages
+                                      (cone sleeves renders on /)
 /<category>/<subcategory>/            11 subcategory pages
 /<location-slug>/                     25 UK location pages
 /locations/                           Location index
@@ -103,7 +104,7 @@ dependency, no PHP, no database and no plugin layer.
 /robots.txt  /rss.xml  /sitemap-index.xml
 ```
 
-**240 indexable pages. 242 HTML files including 404 and thank-you.**
+**239 indexable pages. 241 HTML files including 404 and thank-you.**
 
 ---
 
@@ -118,7 +119,7 @@ each and split the same buyer intent.
 
 | New category | Products | Source category |
 |---|---|---|
-| `/cone-sleeves/` | 21 | Cone Sleeves By Industry |
+| **`/` (homepage)** | 21 | Cone Sleeves By Industry |
 | `/food-sleeves/` | 23 | Custom Food Sleeves |
 | `/food-trays/` | 18 | Custom Food Trays |
 | `/food-boxes/` | 4 | Custom Food Boxes |
@@ -129,6 +130,26 @@ each and split the same buyer intent.
 Ten products were re-filed. Trays and cone holders sitting in "Cone Sleeves By
 Industry" moved to `/food-trays/`; burger sleeves and gift card sleeves moved
 to `/food-sleeves/`.
+
+### The cone sleeve range lives on the homepage
+
+`/cone-sleeves/` is **not published as a separate page**, and 301s to `/`.
+
+The brand is Cone Sleeves UK, the domain is conesleeves.co.uk, and the
+homepage targets "custom cone sleeves UK". A category page at
+`/cone-sleeves/` targeting the same head term would have been two of our own
+pages competing for one query — the single clearest case of cannibalisation on
+the site, and the one hardest to win, because the homepage will always carry
+more authority.
+
+The whole category is therefore rendered on the homepage instead: its quote
+form, all 21 cone sleeve products, its four buyer-guidance sections and its
+FAQs. Nothing was lost — only the duplicate URL.
+
+The category record still exists in `src/data/categories.ts` with a
+`mergedIntoHome: true` flag. `categoryPath()` resolves it to `/`, so the
+header, footer and catalogue index all point at the homepage automatically,
+and product breadcrumbs drop the category crumb rather than repeating Home.
 
 ### Consolidations: 181 → 170
 
@@ -172,7 +193,7 @@ All four old slugs 301 to the new ones.
 | Content type | Count | Volume |
 |---|---|---|
 | Product pages | 170 | Individually written; 413 typed content sections |
-| Category pages | 18 | Buyer guidance, not grids |
+| Category pages | 17 published (18 records) | Buyer guidance, not grids |
 | Location pages | 25 | 20 cities, 5 counties |
 | Blog articles | 12 | 12,916 words, every article over 1,000 |
 | Legal & trust pages | 8 | Written for a UK B2B bespoke-goods supplier |
@@ -228,11 +249,11 @@ a depot, a local team or a guaranteed local delivery time, because none exist.
 ```
 Astro 7.2.1 · adapter @astrojs/vercel 11.0.5 · Node 25 (Vercel runtime 24)
 
-242 HTML pages prerendered
+241 HTML pages prerendered
   1 serverless function (/api/quote/)
 3,730 image renditions generated
-245 redirect routes emitted
-240 URLs in sitemap
+243 redirect routes emitted
+239 URLs in sitemap
 
 CSS  39.6 KB total across all pages
 JS    9.1 KB total (2 chunks — nav drawer, gallery, forms, configurator)

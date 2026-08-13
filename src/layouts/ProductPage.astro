@@ -29,7 +29,11 @@ const related = relatedProducts(product);
 
 const crumbs = [
   { name: 'Home', path: '/' },
-  ...(category ? [{ name: category.name, path: categoryPath(category) }] : []),
+  // A category merged into the homepage resolves to '/', so including it here
+  // would repeat the Home crumb.
+  ...(category && !category.mergedIntoHome
+    ? [{ name: category.name, path: categoryPath(category) }]
+    : []),
   ...(sub ? [{ name: sub.name, path: categoryPath(sub) }] : []),
   { name: product.name, path },
 ];
@@ -281,7 +285,7 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
 
   .product-aside {
     position: sticky;
-    top: 6.5rem;
+    top: 8.5rem;
     display: grid;
     gap: var(--space-s);
   }

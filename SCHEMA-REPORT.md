@@ -12,12 +12,12 @@ rendered on the page. Nothing is emitted that a visitor cannot see.
 ## 1. Validation status
 
 `scripts/audit-build.mjs` parses every `<script type="application/ld+json">`
-block on all 242 built pages and fails the build if any of the following is
+block on all 241 built pages and fails the build if any of the following is
 true:
 
 | Check | Result |
 |---|---|
-| JSON parses | ✅ 242/242 pages |
+| JSON parses | ✅ 241/241 pages |
 | Every node has an `@type` | ✅ |
 | Every URL in the graph is on `conesleeves.co.uk` | ✅ 0 off-site URLs |
 | No `aggregateRating` anywhere | ✅ 0 |
@@ -49,9 +49,9 @@ references them rather than redeclaring the entity differently per template.
 
 | Page type | Nodes emitted | Count |
 |---|---|---|
-| Homepage | `WebPage`, `ItemList` (the 7 ranges) | 1 |
+| Homepage | `CollectionPage`, `ItemList` (21 cone sleeves), `FAQPage` | 1 |
 | Product | `BreadcrumbList`, `WebPage`, `Product`, `FAQPage` | 170 |
-| Category | `BreadcrumbList`, `CollectionPage`, `ItemList`, `FAQPage` | 18 |
+| Category | `BreadcrumbList`, `CollectionPage`, `ItemList`, `FAQPage` | 17 |
 | Location | `BreadcrumbList`, `WebPage`, `Service`, `FAQPage` | 25 |
 | Blog article | `BreadcrumbList`, `WebPage`, `BlogPosting`, `FAQPage` (where present) | 12 |
 | Blog index | `BreadcrumbList`, `CollectionPage`, `ItemList` | 1 |
@@ -166,8 +166,8 @@ the `Product` builder — and at that point they will describe something true.
 
 ## 6. FAQPage usage
 
-`FAQPage` markup appears on 226 pages: 170 products, 18 categories, 25
-locations, `/faqs/`, and any blog article with a questions block.
+`FAQPage` markup appears on 226 pages: 170 products, 17 category pages, 25
+locations, the homepage, `/faqs/`, and any blog article with a questions block.
 
 It is emitted only where the identical questions and answers are rendered as
 visible `<details>` accordions on the same page. The build audit enforces
@@ -264,7 +264,7 @@ and the Schema.org validator:
 
 | URL | Expect |
 |---|---|
-| `/` | Organization, WebSite, WebPage, ItemList |
+| `/` | Organization, WebSite, CollectionPage, ItemList, FAQPage |
 | `/custom-waffle-cone-sleeves/` | Product (no price warning is expected and correct), BreadcrumbList, FAQPage |
 | `/paper-cups/sizes/` | CollectionPage, ItemList, BreadcrumbList, FAQPage |
 | `/cone-sleeves-london/` | Service, BreadcrumbList, FAQPage |
@@ -305,4 +305,4 @@ Adding them would require inventing prices and reviews.
 | No invented return policies | ✅ |
 | Schema consistent with visible content | ✅ FAQ questions matched string-by-string |
 | All schema URLs on `conesleeves.co.uk` | ✅ Enforced by the build audit |
-| JSON-LD validated, errors fixed | ✅ 0 errors across 242 pages |
+| JSON-LD validated, errors fixed | ✅ 0 errors across 241 pages |

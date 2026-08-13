@@ -2,8 +2,8 @@
 
 Every URL the site publishes, and every legacy URL that redirects into it.
 
-**242 redirects** are emitted into the Vercel routing config at build time from
-`src/data/redirects.ts`. All 242 have been verified against the built page set
+**243 redirects** are emitted into the Vercel routing config at build time from
+`src/data/redirects.ts`. All 243 have been verified against the built page set
 by `scripts/audit-build.mjs` — a redirect pointing at a page that does not
 exist fails the build audit.
 
@@ -19,14 +19,14 @@ canonical or internal link without one.
 |---|---|---|
 | `/` | 1 | Homepage |
 | `/<product-slug>/` | 170 | `/custom-waffle-cone-sleeves/` |
-| `/<category>/` | 7 | `/cone-sleeves/` |
+| `/<category>/` | 6 | `/food-sleeves/` |
 | `/<category>/<subcategory>/` | 11 | `/paper-cups/sizes/` |
 | `/<location-slug>/` | 25 | `/cone-sleeves-london/` |
 | `/blog/<slug>/` | 12 | `/blog/how-cone-sleeve-printing-works/` |
 | Index pages | 4 | `/products/` `/locations/` `/blog/` `/faqs/` |
 | Company & tools | 4 | `/about/` `/contact/` `/request-a-quote/` `/design-your-cone-sleeve/` |
 | Legal & policy | 6 | `/privacy-policy/` `/cookie-policy/` `/terms-and-conditions/` `/delivery-information/` `/returns-and-refunds/` `/artwork-guidelines/` |
-| **Indexable total** | **240** | |
+| **Indexable total** | **239** | |
 | Noindex utility | 2 | `/thank-you/` `/404/` |
 | Endpoint | 1 | `/api/quote/` — POST only, returns 405 on GET |
 | Generated files | 3 | `/robots.txt` `/rss.xml` `/sitemap-index.xml` |
@@ -42,7 +42,7 @@ automatically, so no collision is possible.
 
 | New URL | Products | Legacy URL |
 |---|---|---|
-| `/cone-sleeves/` | 21 | `/product-category/cone-sleeves-by-industry/` |
+| **`/` (homepage)** | 21 | `/product-category/cone-sleeves-by-industry/` and `/cone-sleeves/` |
 | `/food-sleeves/` | 23 | `/product-category/custom-food-sleeves/` |
 | `/food-trays/` | 18 | `/product-category/custom-food-trays/` |
 | `/food-boxes/` | 4 | `/product-category/custom-food-boxes/` |
@@ -196,7 +196,7 @@ and carries links back into the ranges, the catalogue and the guides.
 ## 10. Sitemap
 
 - `/sitemap-index.xml` is the entry point, referencing one part file.
-- **240 URLs** — every indexable page, and nothing else.
+- **239 URLs** — every indexable page, and nothing else.
 - `/thank-you/` and `/404/` are excluded by the sitemap filter and carry
   `noindex`. The build audit fails if a noindex page appears in the sitemap,
   or if an indexable page is missing from it.

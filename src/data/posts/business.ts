@@ -427,7 +427,7 @@ export const BUSINESS: BlogPost[] = [
           'Businesses that go in with that expectation are almost always pleased. Businesses sold a growth story are usually not.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'the printed sleeve range and what each format costs',
           sentence: 'If the case makes sense for you, {link} is the place to start.',
         },

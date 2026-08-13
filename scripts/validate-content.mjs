@@ -53,6 +53,8 @@ const US_SPELLINGS = [
 
 const publishedPaths = new Set(STATIC_PAGES);
 for (const c of CATEGORIES) {
+  // A category merged into the homepage has no URL of its own.
+  if (c.mergedIntoHome) continue;
   publishedPaths.add(c.parent ? `/${c.parent}/${c.slug}/` : `/${c.slug}/`);
 }
 for (const p of PRODUCTS) publishedPaths.add(`/${p.slug}/`);

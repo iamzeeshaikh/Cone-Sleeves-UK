@@ -3,7 +3,7 @@
 Astro website for **conesleeves.co.uk** — custom printed cone sleeves and food
 packaging for UK businesses.
 
-240 indexable pages: 170 products, 18 categories, 25 UK locations, 12 guides,
+239 indexable pages: 170 products, 17 category pages, 25 UK locations, 12 guides,
 plus company, legal and tool pages.
 
 ---

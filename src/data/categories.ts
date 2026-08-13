@@ -12,6 +12,10 @@ export const CATEGORIES: Category[] = [
   {
     slug: 'cone-sleeves',
     name: 'Cone Sleeves',
+    // The flagship range is rendered on the homepage. Publishing it at
+    // /cone-sleeves/ as well would put two pages of ours against each other
+    // for "custom cone sleeves UK", which the homepage should own outright.
+    mergedIntoHome: true,
     heroProduct: 'custom-waffle-cone-sleeves',
     sourceNames: ['Cone Sleeves By Industry'],
     seoTitle: 'Custom Cone Sleeves UK | Printed Ice Cream Cone Sleeves',
@@ -1232,5 +1236,12 @@ export function subcategoriesOf(parent: string): Category[] {
 
 /** Full path for a category, including its parent segment when nested. */
 export function categoryPath(c: Category): string {
+  if (c.mergedIntoHome) return '/';
   return c.parent ? `/${c.parent}/${c.slug}/` : `/${c.slug}/`;
 }
+
+/** The flagship range, rendered on the homepage rather than at its own URL. */
+export const HOME_CATEGORY = CATEGORIES.find((c) => c.mergedIntoHome)!;
+
+/** Top-level categories that still have a page of their own. */
+export const ROUTED_CATEGORIES = TOP_CATEGORIES.filter((c) => !c.mergedIntoHome);

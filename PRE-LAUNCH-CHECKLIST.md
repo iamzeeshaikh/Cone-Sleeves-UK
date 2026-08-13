@@ -21,9 +21,9 @@ node scripts/audit-build.mjs        # crawls dist/client
 
 ### Build and crawl
 
-- [x] Production build completes — 242 HTML pages, 1 serverless function
+- [x] Production build completes — 241 HTML pages, 1 serverless function
 - [x] 3,730 image renditions generated
-- [x] 240 indexable pages, 240 unique titles, 240 unique descriptions
+- [x] 239 indexable pages, 239 unique titles, 239 unique descriptions
 - [x] Zero broken internal links
 - [x] Zero missing images
 - [x] Zero orphan pages
@@ -31,10 +31,10 @@ node scripts/audit-build.mjs        # crawls dist/client
 - [x] Every page has exactly one H1
 - [x] Every canonical is absolute, HTTPS, self-referencing and trailing-slashed
 - [x] `hreflang="en-GB"` and `x-default` on every indexable page
-- [x] Sitemap lists exactly the 240 indexable pages, nothing more
+- [x] Sitemap lists exactly the 239 indexable pages, nothing more
 - [x] `robots.txt` generated from route data
 - [x] Custom 404 page, noindex, with useful links
-- [x] 242 redirects emitted, **every target verified to exist**
+- [x] 243 redirects emitted, **every target verified to exist**
 - [x] All JSON-LD parses; zero fabricated reviews, ratings, prices or availability
 - [x] Every FAQPage question verified present in the rendered page text
 

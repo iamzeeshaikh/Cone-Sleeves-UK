@@ -49,7 +49,9 @@ export const RESPELLED: Record<string, string> = {
 
 /** Legacy WooCommerce category paths → new category paths. */
 export const CATEGORY_REDIRECTS: Record<string, string> = {
-  '/product-category/cone-sleeves-by-industry/': '/cone-sleeves/',
+  // The cone sleeve range lives on the homepage, not a category page.
+  '/product-category/cone-sleeves-by-industry/': '/',
+  '/cone-sleeves/': '/',
   '/product-category/custom-food-sleeves/': '/food-sleeves/',
   '/product-category/custom-food-trays/': '/food-trays/',
   '/product-category/custom-food-boxes/': '/food-boxes/',

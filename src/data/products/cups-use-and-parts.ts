@@ -469,7 +469,7 @@ export const CUPS_BY_USE: Product[] = [
           'A coated or laminated outer face keeps the print sharp and stops the board going soft under a customer\'s grip.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'cone sleeves for the same customers',
           sentence: 'Parlours ordering cups almost always order {link} alongside them.',
         },

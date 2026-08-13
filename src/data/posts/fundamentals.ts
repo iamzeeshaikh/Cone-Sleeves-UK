@@ -586,7 +586,7 @@ export const FUNDAMENTALS: BlogPost[] = [
           'If samples are not available for your print method, choose matt for dark artwork and gloss for bright artwork, and you will be right most of the time.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'the sleeve range and the finishes available on each',
           sentence: 'Finish options vary a little by board, which is noted across {link}.',
         },

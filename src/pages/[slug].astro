@@ -4,7 +4,7 @@ import ProductPage from '~/layouts/ProductPage.astro';
 import CategoryPage from '~/layouts/CategoryPage.astro';
 import LocationPage from '~/layouts/LocationPage.astro';
 import { PRODUCTS } from '~/data/products';
-import { TOP_CATEGORIES } from '~/data/categories';
+import { ROUTED_CATEGORIES } from '~/data/categories';
 import { LOCATIONS } from '~/data/locations';
 
 /**
@@ -12,9 +12,12 @@ import { LOCATIONS } from '~/data/locations';
  * location pages all live at `/<slug>/`, so one route generates them and
  * dispatches to the right template. Static routes such as /about/ take
  * precedence over this file automatically.
+ *
+ * The cone sleeve range is absent here on purpose: it renders on the homepage
+ * rather than at /cone-sleeves/, so the two cannot compete for one head term.
  */
 export const getStaticPaths: GetStaticPaths = () => [
-  ...TOP_CATEGORIES.map((category) => ({
+  ...ROUTED_CATEGORIES.map((category) => ({
     params: { slug: category.slug },
     props: { kind: 'category' as const, category },
   })),

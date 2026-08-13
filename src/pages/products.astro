@@ -71,7 +71,9 @@ const graph = [
               <p class="muted">{group.category.cardBlurb}</p>
             </div>
             <a class="btn btn-outline btn-sm" href={categoryPath(group.category)}>
-              {group.category.name} guide
+              {group.category.mergedIntoHome
+                ? `${group.category.name} guidance`
+                : `${group.category.name} guide`}
             </a>
           </div>
 

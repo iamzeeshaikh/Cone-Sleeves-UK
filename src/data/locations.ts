@@ -267,7 +267,7 @@ export const LOCATIONS: LocationPage[] = [
           'Ask for a sample and have the person who will actually use it assemble twenty in a row before you commit to a design.',
         ],
         link: {
-          href: '/cone-sleeves/',
+          href: '/',
           anchor: 'the cone sleeve range and how each type assembles',
           sentence: 'Assembly differs between board weights, which is covered across {link}.',
         },
