@@ -1,0 +1,235 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
+import { CONTACT, TEL_HREF, SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/faqs/';
+
+/** Site-wide questions only. Product and category FAQs live on their own pages. */
+const groups = [
+  {
+    id: 'ordering',
+    heading: 'Ordering',
+    faqs: [
+      {
+        q: 'How do I get a price?',
+        a: 'Send us the product the packaging has to fit, a realistic quantity and any date you are working to. We reply with a written specification covering the board, lining, print method and finish, along with the minimum order quantity and lead time for that job.',
+      },
+      {
+        q: 'What is your minimum order quantity?',
+        a: 'There is no single figure, because it follows from the print method your job needs. A short digital run makes a few hundred workable where a long conventional press run would not. Tell us the quantity you have in mind and we will tell you what is realistic.',
+      },
+      {
+        q: 'How long does an order take?',
+        a: 'Lead time depends on the print method, the run length and how busy the press is that month, so we confirm yours in writing on the quote rather than publishing a general figure. Seasonal periods — Christmas especially — are considerably longer than the rest of the year.',
+      },
+      {
+        q: 'Can I get a sample before ordering?',
+        a: 'Sample options depend on the print method quoted for your job, and digital work makes them far easier than conventional runs. Ask at quote stage and we will tell you what can be produced and what it costs.',
+      },
+      {
+        q: 'Do you charge for tooling?',
+        a: 'A new size needs a physical cutting die, which is made once and used for every reorder afterwards. Whether that appears as a separate line and what happens to the tool at reorder is set out on your quote.',
+      },
+    ],
+  },
+  {
+    id: 'specification',
+    heading: 'Specification',
+    faqs: [
+      {
+        q: 'Do you work from measurements or from a sample?',
+        a: 'Either, and a physical sample is better. Posting us two or three of the cones, cups or containers you use removes every measurement question at once, including the ones you would not have thought to ask about, such as how much a batch varies within one box.',
+      },
+      {
+        q: 'Can you match packaging to products I buy elsewhere?',
+        a: 'That is the normal starting point. The die is cut to the product you already use, so nothing about your existing supply has to change.',
+      },
+      {
+        q: 'Is your packaging suitable for direct contact with food?',
+        a: 'When the board grade and the ink system are both specified for direct contact, yes. That is a specification decision rather than an assumption, so we confirm it in writing on the quote against the food you describe and the temperature it is served at.',
+      },
+      {
+        q: 'Which board should I choose?',
+        a: 'Start with the food. Anything fried or oily needs a grease-resistant lining, and that decision comes before everything else. For cold and dry products the choice opens up, and it comes down to how long the customer holds it and how you want it to look.',
+      },
+    ],
+  },
+  {
+    id: 'artwork',
+    heading: 'Artwork and printing',
+    faqs: [
+      {
+        q: 'What artwork do you need?',
+        a: 'Vector artwork where possible, built on the die template we supply, with bleed past the cut line and any critical colours named as Pantone references. Our artwork guidelines set out the full requirements.',
+      },
+      {
+        q: 'We only have a logo. Is that enough?',
+        a: 'Yes, and it is a perfectly good place to start. A single mark repeated around a plain sleeve is one of the cheapest and most effective specifications there is, and it needs no illustration work at all.',
+      },
+      {
+        q: 'Will my brand colour print exactly?',
+        a: 'On white board, a named spot colour holds very closely. On kraft the colour sits over a warm brown base and shifts noticeably, so an exact match needs either a white underbase or a white board.',
+      },
+      {
+        q: 'Can we run more than one design in an order?',
+        a: 'On digital printing this is straightforward and the cost depends on how the quantity splits. On longer conventional runs each design carries its own setup, which changes the economics considerably.',
+      },
+    ],
+  },
+  {
+    id: 'delivery',
+    heading: 'Delivery and after',
+    faqs: [
+      {
+        q: 'Where do you deliver?',
+        a: 'Anywhere in the United Kingdom, on national carriers. Scottish, Northern Irish and island postcodes can take longer and may carry a carrier surcharge, which we confirm against your specific postcode when we quote.',
+      },
+      {
+        q: 'Do you offer same-day or timed delivery?',
+        a: 'No. We do not operate our own vehicles, so any delivery date we give is the carrier\'s estimate rather than a guarantee. If a date is critical, tell us early and we will schedule production with that in mind.',
+      },
+      {
+        q: 'What if the delivered goods do not match the approved proof?',
+        a: 'Tell us as soon as you notice, with photographs and the batch details. How that is resolved is set out in our terms and conditions, and it is a fair thing to ask any supplier about before ordering.',
+      },
+    ],
+  },
+];
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'FAQs', path },
+];
+
+const allFaqs = groups.flatMap((g) => g.faqs);
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Frequently asked questions',
+    description:
+      'Answers on ordering, specification, artwork, printing and delivery of custom printed packaging in the UK.',
+    type: 'FAQPage',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  schema.faqPage(allFaqs, path),
+];
+---
+
+<BaseLayout
+  title="FAQs | Custom Packaging Questions | Cone Sleeves UK"
+  description="Answers on ordering, specification, artwork, printing and UK delivery of custom printed food packaging, without invented figures."
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="faq-head">
+    <div class="wrap-narrow">
+      <p class="eyebrow">Questions</p>
+      <h1>Frequently asked questions</h1>
+      <p class="lede">
+        The questions that come up on almost every enquiry. Product-specific questions are
+        answered on each product page, where the answer can actually be specific.
+      </p>
+      <nav class="faq-jump" aria-label="Jump to a section">
+        <ul>
+          {groups.map((g) => <li><a href={`#${g.id}`}>{g.heading}</a></li>)}
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  <div class="wrap-narrow faq-groups">
+    {groups.map((g) => <Faqs faqs={g.faqs} heading={g.heading} id={g.id} />)}
+
+    <div class="faq-cta">
+      <h2>Not answered here?</h2>
+      <p>
+        Ask us directly — most questions are quicker to answer with your actual product in
+        front of us.
+      </p>
+      <p class="faq-cta-links">
+        <a class="btn btn-primary" href="/request-a-quote/">Send an enquiry</a>
+        <a class="btn btn-outline" href={TEL_HREF}>Call {CONTACT.phoneDisplay}</a>
+      </p>
+      <p class="faq-cta-email">
+        or email <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .faq-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .faq-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .faq-jump {
+    margin-top: var(--space-m);
+  }
+
+  .faq-jump ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .faq-jump a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--green-800);
+    text-decoration: none;
+  }
+
+  .faq-jump a:hover {
+    border-color: var(--green-500);
+    background: var(--green-050);
+  }
+
+  .faq-groups {
+    padding-bottom: var(--space-xl);
+  }
+
+  .faq-cta {
+    margin-top: var(--space-2xl);
+    padding: var(--space-l);
+    background: var(--green-050);
+    border-radius: var(--radius-l);
+  }
+
+  .faq-cta h2 {
+    font-size: var(--step-2);
+  }
+
+  .faq-cta p {
+    margin-top: 0.6rem;
+    color: var(--c-text-soft);
+  }
+
+  .faq-cta-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: var(--space-m) !important;
+  }
+
+  .faq-cta-email {
+    font-size: 0.95rem;
+  }
+</style>

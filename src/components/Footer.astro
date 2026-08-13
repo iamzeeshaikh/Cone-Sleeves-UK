@@ -1,0 +1,197 @@
+---
+import Logo from './Logo.astro';
+import { CONTACT, TEL_HREF, SITE, BUSINESS_PENDING, whatsappHref } from '~/config/site';
+import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
+import { CITIES } from '~/data/locations';
+
+const year = 2026;
+
+// Only a handful of locations are linked from the footer. Linking all of them
+// from every page would make each location page look like part of a ring.
+const footerCities = CITIES.slice(0, 6);
+
+const legal = [
+  { label: 'Privacy Policy', href: '/privacy-policy/' },
+  { label: 'Cookie Policy', href: '/cookie-policy/' },
+  { label: 'Terms & Conditions', href: '/terms-and-conditions/' },
+  { label: 'Delivery Information', href: '/delivery-information/' },
+  { label: 'Returns & Refunds', href: '/returns-and-refunds/' },
+  { label: 'Artwork Guidelines', href: '/artwork-guidelines/' },
+];
+---
+
+<footer class="site-footer">
+  <div class="wrap footer-grid">
+    <div class="footer-brand">
+      <Logo light />
+      <p class="footer-blurb">
+        {SITE.tagline}. Sleeves, trays, cups, papers and bags printed to your own
+        artwork and sized to the products you already serve.
+      </p>
+      <ul class="footer-contact">
+        <li>
+          <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a>
+        </li>
+        <li>
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </li>
+        <li>
+          <a href={whatsappHref()} rel="noopener">WhatsApp us</a>
+        </li>
+      </ul>
+    </div>
+
+    <nav class="footer-col" aria-label="Product ranges">
+      <h2>Ranges</h2>
+      <ul>
+        {TOP_CATEGORIES.map((c) => <li><a href={categoryPath(c)}>{c.name}</a></li>)}
+        <li><a href="/products/">All products</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Company">
+      <h2>Company</h2>
+      <ul>
+        <li><a href="/about/">About us</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/request-a-quote/">Request a quote</a></li>
+        <li><a href="/design-your-cone-sleeve/">Design your sleeve</a></li>
+        <li><a href="/blog/">Guides</a></li>
+        <li><a href="/faqs/">FAQs</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Areas we supply">
+      <h2>Areas we supply</h2>
+      <ul>
+        {footerCities.map((l) => <li><a href={`/${l.slug}/`}>{l.place}</a></li>)}
+        <li><a href="/locations/">All areas</a></li>
+      </ul>
+    </nav>
+
+    <nav class="footer-col" aria-label="Legal">
+      <h2>Legal</h2>
+      <ul>
+        {legal.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+      </ul>
+    </nav>
+  </div>
+
+  <div class="wrap footer-bottom">
+    <p>&copy; {year} {SITE.name}. All rights reserved.</p>
+    {
+      /* Company details render only when a real value has been supplied.
+         Nothing is invented in the template. */
+    }
+    {
+      (BUSINESS_PENDING.legalName ||
+        BUSINESS_PENDING.companyNumber ||
+        BUSINESS_PENDING.vatNumber ||
+        BUSINESS_PENDING.registeredAddress) && (
+        <p class="footer-legal-details">
+          {BUSINESS_PENDING.legalName && <span>{BUSINESS_PENDING.legalName}</span>}
+          {BUSINESS_PENDING.companyNumber && (
+            <span>Company no. {BUSINESS_PENDING.companyNumber}</span>
+          )}
+          {BUSINESS_PENDING.vatNumber && <span>VAT no. {BUSINESS_PENDING.vatNumber}</span>}
+          {BUSINESS_PENDING.registeredAddress && (
+            <span>{BUSINESS_PENDING.registeredAddress}</span>
+          )}
+        </p>
+      )
+    }
+  </div>
+</footer>
+
+<style>
+  .site-footer {
+    background: var(--green-900);
+    color: rgb(255 255 255 / 0.78);
+    padding-block: var(--space-xl) var(--space-l);
+    margin-top: var(--space-2xl);
+    font-size: 0.95rem;
+  }
+
+  .footer-grid {
+    display: grid;
+    gap: var(--space-l) var(--space-m);
+    grid-template-columns: 1.6fr repeat(4, minmax(0, 1fr));
+  }
+
+  @media (max-width: 980px) {
+    .footer-grid {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+    .footer-brand {
+      grid-column: 1 / -1;
+    }
+  }
+
+  @media (max-width: 520px) {
+    .footer-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .footer-brand :global(svg) {
+    height: 40px;
+    width: auto;
+  }
+
+  .footer-blurb {
+    margin-top: var(--space-s);
+    max-width: 34ch;
+    line-height: 1.6;
+  }
+
+  .footer-contact {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-s);
+    display: grid;
+    gap: 0.35rem;
+  }
+
+  .footer-col h2 {
+    font-size: 0.8rem;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: var(--amber-500);
+    margin-bottom: 0.75rem;
+  }
+
+  .footer-col ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.4rem;
+  }
+
+  .site-footer a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .site-footer a:hover {
+    color: #fff;
+    text-decoration: underline;
+  }
+
+  .footer-bottom {
+    margin-top: var(--space-xl);
+    padding-top: var(--space-s);
+    border-top: 1px solid rgb(255 255 255 / 0.12);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+    justify-content: space-between;
+    font-size: 0.85rem;
+    color: rgb(255 255 255 / 0.6);
+  }
+
+  .footer-legal-details {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+</style>

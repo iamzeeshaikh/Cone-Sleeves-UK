@@ -1,0 +1,27 @@
+{
+  "name": "conesleeves-uk",
+  "type": "module",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Cone Sleeves UK — custom printed cone sleeves and food packaging for UK businesses",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "check": "astro check",
+    "audit": "node scripts/audit-build.mjs"
+  },
+  "dependencies": {
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.3",
+    "@astrojs/vercel": "^11.0.5",
+    "astro": "^7.2.1",
+    "nodemailer": "^9.0.5",
+    "sharp": "^0.35.3"
+  },
+  "devDependencies": {
+    "@types/nodemailer": "^7.0.4",
+    "linkedom": "^0.18.13"
+  }
+}

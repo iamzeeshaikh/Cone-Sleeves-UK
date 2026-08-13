@@ -1,0 +1,481 @@
+---
+import { CONTACT } from '~/config/site';
+
+interface Props {
+  /** Pre-fills and locks the product field on a product page. */
+  productName?: string;
+  /** Pre-fills the requirement field on a category page, still editable. */
+  requirementHint?: string;
+  heading?: string;
+  intro?: string;
+  /** 'card' sits inside a page; 'panel' is the full-width version. */
+  variant?: 'card' | 'panel';
+  /** Distinguishes submissions in the notification email. */
+  source: string;
+  id?: string;
+}
+
+const {
+  productName,
+  requirementHint,
+  heading = 'Get a quote',
+  intro = 'Tell us what you need and we will come back with a written specification, minimum quantity and lead time.',
+  variant = 'card',
+  source,
+  id = 'quote',
+} = Astro.props;
+
+const formId = `qf-${id}`;
+---
+
+<section class={`quote-card quote-${variant}`} id={id}>
+  <div class="quote-head">
+    <p class="eyebrow">Short enquiry</p>
+    <h2>{heading}</h2>
+    <p class="quote-intro">{intro}</p>
+  </div>
+
+  <form
+    class="quote-form"
+    id={formId}
+    action="/api/quote/"
+    method="POST"
+    enctype="multipart/form-data"
+    novalidate
+    data-quote-form
+  >
+    <input type="hidden" name="source" value={source} />
+    {productName && <input type="hidden" name="product_locked" value={productName} />}
+
+    {/* Honeypot: hidden from people, tempting to bots. Any value rejects. */}
+    <div class="hp-field" aria-hidden="true">
+      <label for={`${formId}-website`}>Website</label>
+      <input
+        type="text"
+        id={`${formId}-website`}
+        name="website"
+        tabindex="-1"
+        autocomplete="off"
+      />
+    </div>
+    {/* Timing trap: the server rejects anything submitted implausibly fast. */}
+    <input type="hidden" name="rendered_at" value={Date.now().toString()} data-rendered-at />
+
+    <div class="field-grid">
+      <p class="field">
+        <label for={`${formId}-name`}>Your name <span class="req" aria-hidden="true">*</span></label>
+        <input
+          type="text"
+          id={`${formId}-name`}
+          name="name"
+          required
+          autocomplete="name"
+          maxlength="80"
+          aria-describedby={`${formId}-name-err`}
+        />
+        <span class="err" id={`${formId}-name-err`} data-err-for="name"></span>
+      </p>
+
+      <p class="field">
+        <label for={`${formId}-email`}>Email <span class="req" aria-hidden="true">*</span></label>
+        <input
+          type="email"
+          id={`${formId}-email`}
+          name="email"
+          required
+          autocomplete="email"
+          inputmode="email"
+          maxlength="120"
+          aria-describedby={`${formId}-email-err`}
+        />
+        <span class="err" id={`${formId}-email-err`} data-err-for="email"></span>
+      </p>
+
+      <p class="field">
+        <label for={`${formId}-phone`}>Phone</label>
+        <input
+          type="tel"
+          id={`${formId}-phone`}
+          name="phone"
+          autocomplete="tel"
+          inputmode="tel"
+          maxlength="30"
+          aria-describedby={`${formId}-phone-err`}
+        />
+        <span class="err" id={`${formId}-phone-err`} data-err-for="phone"></span>
+      </p>
+
+      <p class="field">
+        <label for={`${formId}-quantity`}>
+          Quantity <span class="req" aria-hidden="true">*</span>
+        </label>
+        <input
+          type="text"
+          id={`${formId}-quantity`}
+          name="quantity"
+          required
+          placeholder="e.g. 5,000"
+          maxlength="40"
+          aria-describedby={`${formId}-quantity-err`}
+        />
+        <span class="err" id={`${formId}-quantity-err`} data-err-for="quantity"></span>
+      </p>
+
+      <p class="field field-wide">
+        <label for={`${formId}-product`}>
+          Product or requirement <span class="req" aria-hidden="true">*</span>
+        </label>
+        <input
+          type="text"
+          id={`${formId}-product`}
+          name="product"
+          required
+          value={productName ?? requirementHint ?? ''}
+          readonly={productName ? true : undefined}
+          maxlength="120"
+          aria-describedby={`${formId}-product-err`}
+        />
+        <span class="err" id={`${formId}-product-err`} data-err-for="product"></span>
+      </p>
+
+      <p class="field field-wide">
+        <label for={`${formId}-message`}>Message or instructions</label>
+        <textarea
+          id={`${formId}-message`}
+          name="message"
+          rows="4"
+          maxlength="2000"
+          placeholder="Sizes, board, finish, print colours, the date you need it by"></textarea>
+      </p>
+
+      <p class="field field-wide">
+        <label for={`${formId}-artwork`}>Artwork (optional)</label>
+        <input
+          type="file"
+          id={`${formId}-artwork`}
+          name="artwork"
+          accept=".pdf,.ai,.eps,.svg,.png,.jpg,.jpeg,.zip"
+          aria-describedby={`${formId}-artwork-help ${formId}-artwork-err`}
+        />
+        <span class="help" id={`${formId}-artwork-help`}>
+          PDF, AI, EPS, SVG, PNG, JPG or ZIP. Up to 10&nbsp;MB.
+        </span>
+        <span class="err" id={`${formId}-artwork-err`} data-err-for="artwork"></span>
+      </p>
+
+      <p class="field field-wide field-consent">
+        <label class="consent">
+          <input type="checkbox" name="consent" value="yes" required />
+          <span>
+            I agree that Cone Sleeves UK may use these details to respond to my enquiry, as
+            described in the <a href="/privacy-policy/">privacy policy</a>.
+            <span class="req" aria-hidden="true">*</span>
+          </span>
+        </label>
+        <span class="err" data-err-for="consent"></span>
+      </p>
+    </div>
+
+    <div class="quote-actions">
+      <button type="submit" class="btn btn-primary" data-submit>Send enquiry</button>
+      <span class="quote-alt">
+        or call <a href={`tel:${CONTACT.phoneE164}`}>{CONTACT.phoneDisplay}</a>
+      </span>
+    </div>
+
+    <p class="form-status" role="status" aria-live="polite" data-status></p>
+  </form>
+</section>
+
+<style>
+  .quote-card {
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-l);
+    box-shadow: var(--shadow-s);
+    padding: var(--space-m);
+  }
+
+  .quote-panel {
+    background: linear-gradient(180deg, var(--green-050), var(--surface) 40%);
+    border-color: var(--green-100);
+    padding: var(--space-l);
+  }
+
+  @media (min-width: 720px) {
+    .quote-card {
+      padding: var(--space-l);
+    }
+  }
+
+  .quote-head h2 {
+    font-size: var(--step-3);
+    margin-top: 0.35rem;
+  }
+
+  .quote-intro {
+    margin-top: 0.5rem;
+    color: var(--c-text-soft);
+    max-width: 60ch;
+  }
+
+  .quote-form {
+    margin-top: var(--space-m);
+  }
+
+  .field-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 640px) {
+    .field-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .field {
+    margin: 0;
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .field-wide {
+    grid-column: 1 / -1;
+  }
+
+  .quote-form label {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--ink-700);
+  }
+
+  .req {
+    color: var(--danger-700);
+  }
+
+  .quote-form input[type='text'],
+  .quote-form input[type='email'],
+  .quote-form input[type='tel'],
+  .quote-form textarea,
+  .quote-form input[type='file'] {
+    width: 100%;
+    /* 16px minimum stops iOS Safari zooming the viewport on focus. */
+    font-size: 16px;
+    padding: 0.7rem 0.8rem;
+    min-height: 48px;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-m);
+    color: var(--ink-900);
+  }
+
+  .quote-form textarea {
+    resize: vertical;
+    min-height: 7rem;
+  }
+
+  .quote-form input:focus-visible,
+  .quote-form textarea:focus-visible {
+    border-color: var(--green-600);
+  }
+
+  .quote-form input[readonly] {
+    background: var(--surface-sunk);
+    color: var(--ink-700);
+  }
+
+  .quote-form input[type='file'] {
+    padding: 0.55rem 0.6rem;
+  }
+
+  .quote-form input[type='file']::file-selector-button {
+    margin-right: 0.75rem;
+    padding: 0.45rem 0.8rem;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-s);
+    background: var(--surface-sunk);
+    font-weight: 600;
+    cursor: pointer;
+  }
+
+  .help {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .err {
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--danger-700);
+  }
+
+  .err:empty {
+    display: none;
+  }
+
+  .field-consent .consent {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--c-text-soft);
+    line-height: 1.5;
+  }
+
+  .field-consent input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.15rem;
+    flex: none;
+    accent-color: var(--green-700);
+  }
+
+  .quote-actions {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 0.75rem 1rem;
+    margin-top: var(--space-m);
+  }
+
+  .quote-alt {
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+  }
+
+  .form-status {
+    margin-top: var(--space-s);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-m);
+    font-weight: 600;
+    display: none;
+  }
+
+  .form-status[data-state='ok'] {
+    display: block;
+    background: var(--success-050);
+    color: var(--success-700);
+  }
+
+  .form-status[data-state='error'] {
+    display: block;
+    background: var(--danger-050);
+    color: var(--danger-700);
+  }
+
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // Progressive enhancement. Without JavaScript the form posts normally and
+  // the endpoint redirects to /thank-you/; with it, validation and the
+  // response are handled inline so the visitor keeps their place on the page.
+  const MAX_BYTES = 10 * 1024 * 1024;
+  const ALLOWED = ['pdf', 'ai', 'eps', 'svg', 'png', 'jpg', 'jpeg', 'zip'];
+
+  document.querySelectorAll<HTMLFormElement>('[data-quote-form]').forEach((form) => {
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const submit = form.querySelector<HTMLButtonElement>('[data-submit]')!;
+
+    // Stamp the render time on the client so a cached HTML page cannot make a
+    // genuine visitor look like an instant bot submission.
+    const stamp = form.querySelector<HTMLInputElement>('[data-rendered-at]');
+    if (stamp) stamp.value = Date.now().toString();
+
+    const setError = (name: string, message: string) => {
+      const el = form.querySelector<HTMLElement>(`[data-err-for="${name}"]`);
+      if (el) el.textContent = message;
+      const input = form.elements.namedItem(name) as HTMLInputElement | null;
+      if (input) input.setAttribute('aria-invalid', message ? 'true' : 'false');
+      return !message;
+    };
+
+    const validate = () => {
+      let ok = true;
+      const value = (n: string) =>
+        ((form.elements.namedItem(n) as HTMLInputElement | null)?.value ?? '').trim();
+
+      ok = setError('name', value('name') ? '' : 'Please tell us your name.') && ok;
+
+      const email = value('email');
+      const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email);
+      ok = setError('email', emailOk ? '' : 'Please enter a valid email address.') && ok;
+
+      const phone = value('phone');
+      const phoneOk = !phone || /^[0-9+()\s-]{7,}$/.test(phone);
+      ok = setError('phone', phoneOk ? '' : 'Please check the phone number.') && ok;
+
+      ok = setError('quantity', value('quantity') ? '' : 'Roughly how many do you need?') && ok;
+      ok = setError('product', value('product') ? '' : 'Please tell us what you need.') && ok;
+
+      const consent = form.elements.namedItem('consent') as HTMLInputElement | null;
+      ok = setError('consent', consent?.checked ? '' : 'Please tick to continue.') && ok;
+
+      const file = form.querySelector<HTMLInputElement>('input[type="file"]')?.files?.[0];
+      let fileError = '';
+      if (file) {
+        const ext = file.name.split('.').pop()?.toLowerCase() ?? '';
+        if (!ALLOWED.includes(ext)) fileError = 'That file type is not accepted.';
+        else if (file.size > MAX_BYTES) fileError = 'That file is larger than 10 MB.';
+      }
+      ok = setError('artwork', fileError) && ok;
+
+      return ok;
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      status.removeAttribute('data-state');
+      status.textContent = '';
+
+      if (!validate()) {
+        status.setAttribute('data-state', 'error');
+        status.textContent = 'Please check the highlighted fields.';
+        form.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus();
+        return;
+      }
+
+      submit.disabled = true;
+      const original = submit.textContent;
+      submit.textContent = 'Sending…';
+
+      try {
+        const res = await fetch(form.action, {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'X-Requested-With': 'fetch' },
+        });
+        const data = (await res.json()) as { ok: boolean; message?: string };
+
+        if (res.ok && data.ok) {
+          status.setAttribute('data-state', 'ok');
+          status.textContent =
+            data.message ?? 'Thank you — your enquiry is with us and we will reply by email.';
+          form.reset();
+          const w = window as unknown as { dataLayer?: unknown[] };
+          if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'quote_submit' });
+        } else {
+          status.setAttribute('data-state', 'error');
+          status.textContent =
+            data.message ?? 'Something went wrong sending that. Please try again or email us.';
+        }
+      } catch {
+        status.setAttribute('data-state', 'error');
+        status.textContent =
+          'We could not reach the server. Please try again, or email info@conesleeves.co.uk.';
+      } finally {
+        submit.disabled = false;
+        submit.textContent = original;
+      }
+    });
+  });
+</script>

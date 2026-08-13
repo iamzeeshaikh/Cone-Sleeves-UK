@@ -1,0 +1,109 @@
+---
+import { Image } from 'astro:assets';
+import type { Product } from '~/data/types';
+import { primaryImage } from '~/lib/images';
+
+interface Props {
+  product: Product;
+  /** The first row of a grid loads eagerly; everything below the fold lazies. */
+  eager?: boolean;
+}
+
+const { product, eager = false } = Astro.props;
+const img = primaryImage(product.slug);
+---
+
+<article class="card product-card">
+  <a class="product-card-link" href={`/${product.slug}/`}>
+    <div class="product-card-media">
+      {
+        img && (
+          <Image
+            src={img}
+            alt={`${product.name} printed for a UK food business`}
+            widths={[240, 360, 520]}
+            sizes="(min-width: 1100px) 260px, (min-width: 700px) 30vw, 45vw"
+            format="webp"
+            quality={72}
+            loading={eager ? 'eager' : 'lazy'}
+            fetchpriority={eager ? 'high' : undefined}
+            decoding={eager ? 'sync' : 'async'}
+          />
+        )
+      }
+    </div>
+    <div class="product-card-body">
+      <h3>{product.name}</h3>
+      <p>{product.cardBlurb}</p>
+      <span class="product-card-cta">Specification &amp; quote</span>
+    </div>
+  </a>
+</article>
+
+<style>
+  .product-card {
+    display: flex;
+  }
+
+  .product-card-link {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .product-card-media {
+    aspect-ratio: var(--ratio-product);
+    background: var(--surface-sunk);
+    overflow: hidden;
+  }
+
+  .product-card-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--dur) var(--ease-out);
+  }
+
+  .product-card:hover .product-card-media :global(img) {
+    transform: scale(1.03);
+  }
+
+  .product-card-body {
+    display: flex;
+    flex-direction: column;
+    gap: 0.35rem;
+    padding: var(--space-s);
+    flex: 1;
+  }
+
+  .product-card-body h3 {
+    font-size: var(--step-0);
+    line-height: 1.3;
+  }
+
+  .product-card-body p {
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+    flex: 1;
+  }
+
+  .product-card-cta {
+    margin-top: 0.35rem;
+    font-size: var(--step--1);
+    font-weight: 650;
+    color: var(--green-700);
+  }
+
+  .product-card-cta::after {
+    content: ' →';
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .product-card:hover .product-card-media :global(img) {
+      transform: none;
+    }
+  }
+</style>

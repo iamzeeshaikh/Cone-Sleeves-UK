@@ -1,0 +1,116 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { PRODUCT_COUNT } from '~/data/products';
+import { TOP_CATEGORIES } from '~/data/categories';
+import { LOCATIONS } from '~/data/locations';
+import { CONTACT, TEL_HREF, BUSINESS_PENDING } from '~/config/site';
+
+const path = '/about/';
+---
+
+<TextPage
+  title="About Cone Sleeves UK | Printed Packaging Supplier"
+  description="Who we are, how we work, and the claims we deliberately do not make. A UK supplier of printed cone sleeves and food packaging."
+  path={path}
+  h1="About Cone Sleeves UK"
+  standfirst="We print cone sleeves, food sleeves, trays, cups, papers and bags for food businesses across the United Kingdom, sized from the products they already serve."
+  crumbLabel="About"
+  pageType="AboutPage"
+>
+  <h2>What we do</h2>
+  <p>
+    We supply printed packaging to UK food businesses: ice cream shops, dessert bars,
+    cafés, takeaways, bakeries, street food traders and event caterers. The catalogue runs
+    to {PRODUCT_COUNT} products across {TOP_CATEGORIES.length} ranges, and every one of them is quoted against a
+    specification rather than sold from a shelf.
+  </p>
+  <p>
+    The common thread is that nothing is a stock size. A cone sleeve is cut to the cone you
+    already buy, a cup sleeve to the cup already in your cupboard, a tray to the portion
+    you already serve. That is the part most packaging orders get wrong, so it is where we
+    start.
+  </p>
+
+  <h2>How we work</h2>
+  <p>
+    Send us the product — a cone, a cup, a container, or a photograph of a made-up
+    portion with a ruler beside it. We cut the die from that, confirm the board, lining,
+    print method and finish in writing, and send a flat sample where the job allows it
+    before anything is printed.
+  </p>
+  <p>
+    Artwork goes onto a template shaped to your product, which we supply before design
+    work begins. Our <a href="/artwork-guidelines/">artwork guidelines</a> set out the file
+    formats, bleed and colour information we need.
+  </p>
+
+  <h2>What we will not do</h2>
+  <p>
+    A great deal of packaging marketing consists of numbers that apply to nothing in
+    particular. We have deliberately left those off this website.
+  </p>
+  <ul>
+    <li>
+      <strong>No published lead times.</strong> Turnaround moves with the print method, the
+      run length and how busy the press is that month. Yours goes on your quote.
+    </li>
+    <li>
+      <strong>No single minimum order quantity.</strong> It follows from the print method
+      your job needs, and a short digital run behaves nothing like a long conventional one.
+    </li>
+    <li>
+      <strong>No blanket recycling claims.</strong> We tell you exactly what board, lining
+      and finish a quoted item uses. Whether it is recycled depends on the collection
+      available where it is thrown away, which we do not control.
+    </li>
+    <li>
+      <strong>No reviews, ratings or testimonials.</strong> None have been independently
+      collected, so none are published. You will not find star ratings in our page markup
+      either.
+    </li>
+    <li>
+      <strong>No claims of local offices.</strong> Our <a href="/locations/">area pages</a>
+      describe the trade in each place, not branches we do not have.
+    </li>
+  </ul>
+
+  <h2>Where we supply</h2>
+  <p>
+    Anywhere in the United Kingdom. Orders travel on national carriers, and we cover
+    {LOCATIONS.length} areas in detail on this site because there is something specific worth saying about
+    the trade in each. Delivery to everywhere else works exactly the same way — see
+    <a href="/delivery-information/">delivery information</a> for how dates are given.
+  </p>
+
+  <h2>Talking to us</h2>
+  <p>
+    We work by email and telephone and post physical samples rather than meeting in person.
+    Sizing questions are almost always quicker on the phone with the product in your hand.
+  </p>
+  <ul>
+    <li>Telephone and WhatsApp: <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a></li>
+    <li>Email: <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
+  </ul>
+
+  {
+    !BUSINESS_PENDING.legalName && (
+      <p class="pending">
+        <strong>Business details pending confirmation</strong>
+        Registered company name, company registration number, VAT number and registered
+        address have not been published because they have not yet been supplied for this
+        site. They are configured through environment variables and will appear in the
+        footer and in the page markup as soon as the real values are provided. Nothing has
+        been invented in their place.
+      </p>
+    )
+  }
+
+  <h2>Start an enquiry</h2>
+  <p>
+    Tell us what you serve and roughly how many you need, and we will come back with a
+    specification you can actually compare against another quote.
+  </p>
+  <p>
+    <a class="btn btn-primary" href="/request-a-quote/">Request a quote</a>
+  </p>
+</TextPage>

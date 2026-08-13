@@ -1,0 +1,164 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import { TOP_CATEGORIES, subcategoriesOf, categoryPath } from '~/data/categories';
+import { productsInCategory, PRODUCT_COUNT } from '~/data/products';
+import { SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/products/';
+
+const groups = TOP_CATEGORIES.map((category) => ({
+  category,
+  subs: subcategoriesOf(category.slug),
+  products: productsInCategory(category.slug),
+}));
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'All products', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'All products',
+    description: `The full Cone Sleeves UK catalogue — ${PRODUCT_COUNT} printed packaging products across ${TOP_CATEGORIES.length} ranges.`,
+    type: 'CollectionPage',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  schema.itemList(
+    groups.flatMap((g) => g.products.map((p) => ({ name: p.name, path: `/${p.slug}/` }))),
+    path,
+  ),
+];
+---
+
+<BaseLayout
+  title="All Products | Cone Sleeves UK Printed Packaging"
+  description={`Browse all ${PRODUCT_COUNT} printed packaging products for UK food businesses: cone sleeves, food sleeves, trays, boxes, cups, papers and bags.`}
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="products-head">
+    <div class="wrap">
+      <p class="eyebrow">Catalogue</p>
+      <h1>Every product we print</h1>
+      <p class="lede">
+        {PRODUCT_COUNT} products across {TOP_CATEGORIES.length} ranges. Each page sets out
+        what the item is specified against — grip, grease, heat, weight or presentation —
+        rather than repeating the same description.
+      </p>
+      <nav class="jump-nav" aria-label="Jump to a range">
+        <ul>
+          {groups.map((g) => <li><a href={`#${g.category.slug}`}>{g.category.name}</a></li>)}
+        </ul>
+      </nav>
+    </div>
+  </section>
+
+  {
+    groups.map((group, index) => (
+      <section class={`section-tight ${index % 2 === 1 ? 'section-sunk' : ''}`} id={group.category.slug}>
+        <div class="wrap">
+          <div class="group-head">
+            <div>
+              <h2>{group.category.name}</h2>
+              <p class="muted">{group.category.cardBlurb}</p>
+            </div>
+            <a class="btn btn-outline btn-sm" href={categoryPath(group.category)}>
+              {group.category.name} guide
+            </a>
+          </div>
+
+          {group.subs.length > 0 && (
+            <ul class="chip-nav">
+              {group.subs.map((s) => (
+                <li>
+                  <a href={categoryPath(s)}>{s.name}</a>
+                </li>
+              ))}
+            </ul>
+          )}
+
+          <div class="grid-auto group-grid">
+            {group.products.map((p) => (
+              <ProductCard product={p} />
+            ))}
+          </div>
+        </div>
+      </section>
+    ))
+  }
+</BaseLayout>
+
+<style>
+  .products-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .products-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .products-head .lede {
+    max-width: 62ch;
+  }
+
+  .jump-nav ul,
+  .chip-nav {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .jump-nav {
+    margin-top: var(--space-m);
+  }
+
+  .jump-nav a,
+  .chip-nav a {
+    display: inline-block;
+    padding: 0.45rem 0.85rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: var(--green-800);
+    text-decoration: none;
+  }
+
+  .jump-nav a:hover,
+  .chip-nav a:hover {
+    border-color: var(--green-500);
+    background: var(--green-050);
+  }
+
+  .group-head {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: var(--space-s);
+  }
+
+  .group-head p {
+    margin-top: 0.25rem;
+    max-width: 52ch;
+  }
+
+  .chip-nav {
+    margin-top: var(--space-s);
+  }
+
+  .group-grid {
+    margin-top: var(--space-m);
+  }
+</style>

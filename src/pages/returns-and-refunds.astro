@@ -1,0 +1,107 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT, TEL_HREF } from '~/config/site';
+
+const path = '/returns-and-refunds/';
+---
+
+<TextPage
+  title="Returns & Refunds | Cone Sleeves UK"
+  description="How to raise a problem with a printed packaging order, what we can put right, and what bespoke goods mean for returns."
+  path={path}
+  h1="Returns and Refunds"
+  standfirst="Custom printed goods are made to your specification, which changes what a return means. Here is how problems are handled."
+  updated="2026-08-13"
+  crumbLabel="Returns & Refunds"
+>
+  <h2>Why bespoke goods are different</h2>
+  <p>
+    Everything we supply is made to a specification you have approved: your size, your
+    board, your artwork, on a die cut to your own product. It cannot be resold to anyone
+    else.
+  </p>
+  <p>
+    That means there is no general right to return correctly produced goods because they
+    are no longer wanted. It also means the stages before production — the specification,
+    the flat sample and the proof — matter more than they would for a stock item, which is
+    why we build them into every job.
+  </p>
+
+  <h2>When we will put something right</h2>
+  <p>Tell us straight away if any of these apply:</p>
+  <ul>
+    <li>The goods do not match the specification confirmed on your order.</li>
+    <li>The goods do not match the proof you approved.</li>
+    <li>There is a manufacturing or print defect — misregistration, banding, poor cutting.</li>
+    <li>The quantity delivered falls outside the tolerance stated on your quotation.</li>
+    <li>The goods arrived damaged in transit.</li>
+  </ul>
+
+  <h2>What we cannot put right</h2>
+  <p>These are worth stating plainly, because they are the common disappointments:</p>
+  <ul>
+    <li>
+      An error that was present in the proof you approved. Approving a proof confirms the
+      layout, content and spelling, so check it carefully rather than quickly.
+    </li>
+    <li>
+      Colour that differs from what you saw on a screen. Screens emit light and board
+      reflects it, and the two cannot match. Where colour is critical, ask about a printed
+      sample before approving.
+    </li>
+    <li>
+      A size that does not fit a product different from the one we sized against. If your
+      cone or cup supplier changes, send us the new one before reordering.
+    </li>
+    <li>Ordering more than you turned out to need.</li>
+  </ul>
+
+  <h2>How to raise a problem</h2>
+  <ol>
+    <li>
+      <strong>Tell us promptly.</strong> Transit damage in particular has to be reported
+      quickly for a carrier claim to be possible.
+    </li>
+    <li>
+      <strong>Send photographs.</strong> Include the affected goods, the outer packaging if
+      it is a transit issue, and any batch or label information on the box.
+    </li>
+    <li>
+      <strong>Keep the goods.</strong> Do not dispose of them until we have agreed what
+      happens, as they may need inspecting or returning.
+    </li>
+    <li>
+      <strong>Tell us what would resolve it.</strong> A reprint, a credit or a partial
+      credit are the usual outcomes, and knowing what you need helps us reach it faster.
+    </li>
+  </ol>
+
+  <h2>What happens next</h2>
+  <p>
+    We look at the evidence against the approved proof and the order specification. Where
+    the fault is ours, we agree a remedy with you — normally a reprint of the affected
+    quantity, or a credit where a reprint would not arrive in time to be useful.
+  </p>
+  <p class="pending">
+    <strong>Timescales and process detail pending</strong>
+    The period within which problems must be reported, the return process, and how credits
+    or refunds are issued have not been supplied for this site. Rather than invent figures,
+    they are left blank. These must be confirmed and published here before launch, and they
+    should match what is set out in the <a href="/terms-and-conditions/">terms and conditions</a>.
+  </p>
+
+  <h2>Cancelling an order</h2>
+  <p>
+    Because production is bespoke, an order can normally be changed or cancelled without
+    cost only before production begins. Once tooling has been made or the job is on press,
+    costs have already been incurred. Tell us as early as possible and we will be
+    straightforward about what is and is not recoverable.
+  </p>
+
+  <h2>Talk to us</h2>
+  <p>
+    Most problems are resolved faster by a conversation than by an email chain. Call
+    <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a> or email
+    <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> with your order reference.
+  </p>
+</TextPage>

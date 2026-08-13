@@ -1,0 +1,1332 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { CONTACT, TEL_HREF, SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/design-your-cone-sleeve/';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Design your cone sleeve', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Design your cone sleeve',
+    description:
+      'Build a cone sleeve specification step by step with a live visual representation, then send it to us as a quote request.',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+];
+
+/** Every choice the tool offers, kept in one place so markup and summary agree. */
+const steps = [
+  {
+    id: 'style',
+    title: 'Sleeve style',
+    help: 'The shape decides the die. If you are unsure, pick the closest and tell us in the notes.',
+    fields: [
+      {
+        name: 'style',
+        label: 'Cone sleeve style',
+        type: 'radio',
+        options: [
+          { value: 'Waffle cone sleeve', hint: 'Wide taper, standard scoop cone' },
+          { value: 'Sugar cone sleeve', hint: 'Narrow, steeply tapered' },
+          { value: 'Cake cone sleeve', hint: 'Flat-bottomed wafer cone' },
+          { value: 'Savoury cone sleeve', hint: 'Chips, chicken, churros' },
+          { value: 'Crepe cone holder', hint: 'Wider opening, no wafer inside' },
+          { value: 'Not sure yet', hint: 'We will advise from your sample' },
+        ],
+      },
+      {
+        name: 'wrapDepth',
+        label: 'Wrap depth',
+        type: 'radio',
+        options: [
+          { value: 'Short band', hint: 'Most of the cone visible' },
+          { value: 'Medium wrap', hint: 'Balanced coverage' },
+          { value: 'Deep wrap', hint: 'Covers most of the cone' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'use',
+    title: 'Use and size',
+    help: 'What goes in it, and how big your cone actually is.',
+    fields: [
+      {
+        name: 'intendedUse',
+        label: 'Intended use',
+        type: 'select',
+        options: [
+          { value: 'Scooped ice cream' },
+          { value: 'Soft serve' },
+          { value: 'Gelato' },
+          { value: 'Rolled ice cream' },
+          { value: 'Chips or fries' },
+          { value: 'Fried chicken' },
+          { value: 'Crepes' },
+          { value: 'Sweets or snacks' },
+          { value: 'Event or wedding catering' },
+          { value: 'Something else' },
+        ],
+      },
+      {
+        name: 'topDiameter',
+        label: 'Top diameter (mm)',
+        type: 'number',
+        placeholder: 'e.g. 62',
+        help: 'Across the open rim, outside edge to outside edge.',
+      },
+      {
+        name: 'slantHeight',
+        label: 'Slant height (mm)',
+        type: 'number',
+        placeholder: 'e.g. 110',
+        help: 'Down the sloping side, from rim to where the wrap should stop.',
+      },
+      {
+        name: 'sizeNote',
+        label: 'If you do not have measurements',
+        type: 'select',
+        options: [
+          { value: 'I have the measurements above' },
+          { value: 'I will post you sample cones' },
+          { value: 'Please advise a standard size' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'material',
+    title: 'Material',
+    help: 'Board and thickness. Savoury or fried food needs a grease-resistant option.',
+    fields: [
+      {
+        name: 'material',
+        label: 'Board',
+        type: 'radio',
+        options: [
+          { value: 'Coated white board', hint: 'Accurate colour, clean look' },
+          { value: 'Uncoated kraft', hint: 'Natural brown, colours shift' },
+          { value: 'Greaseproof-lined board', hint: 'For fried and oily food' },
+          { value: 'Recycled-content board', hint: 'Subject to availability' },
+        ],
+      },
+      {
+        name: 'thickness',
+        label: 'Board thickness',
+        type: 'radio',
+        options: [
+          { value: 'Light', hint: 'Lowest cost, quick service' },
+          { value: 'Standard', hint: 'Suits most counters' },
+          { value: 'Heavy', hint: 'Large scoops, long serves, outdoors' },
+          { value: 'Advise me', hint: 'We will recommend against your use' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'print',
+    title: 'Printing',
+    help: 'How many colours, which faces, and how the surface is finished.',
+    fields: [
+      {
+        name: 'printSides',
+        label: 'Printed sides',
+        type: 'radio',
+        options: [
+          { value: 'Outside only' },
+          { value: 'Outside and inside' },
+          { value: 'Unprinted (plain)' },
+        ],
+      },
+      {
+        name: 'colours',
+        label: 'Colour printing',
+        type: 'radio',
+        options: [
+          { value: 'One spot colour', hint: 'Lowest cost' },
+          { value: 'Two spot colours', hint: 'Accurate brand colours' },
+          { value: 'Full colour (CMYK)', hint: 'Photos and illustration' },
+          { value: 'Full colour plus a spot', hint: 'Where one colour must match' },
+        ],
+      },
+      {
+        name: 'finish',
+        label: 'Finish',
+        type: 'radio',
+        options: [
+          { value: 'Unlaminated', hint: 'Cheapest, easiest to recycle' },
+          { value: 'Matt lamination', hint: 'Hides handling marks' },
+          { value: 'Gloss lamination', hint: 'Brighter, more saturated' },
+        ],
+      },
+    ],
+  },
+  {
+    id: 'extras',
+    title: 'Additions and artwork',
+    help: 'Anything beyond a standard printed sleeve, plus your files.',
+    fields: [
+      {
+        name: 'additions',
+        label: 'Special additions',
+        type: 'checkbox',
+        options: [
+          { value: 'Die-cut window' },
+          { value: 'Foil or metallic detail' },
+          { value: 'Matching cone holder' },
+          { value: 'Matching tray' },
+          { value: 'Seasonal second design' },
+        ],
+      },
+      {
+        name: 'quantity',
+        label: 'Quantity',
+        type: 'select',
+        options: [
+          { value: 'Under 500' },
+          { value: '500 – 2,000' },
+          { value: '2,000 – 5,000' },
+          { value: '5,000 – 20,000' },
+          { value: '20,000 – 50,000' },
+          { value: 'Over 50,000' },
+          { value: 'Not sure yet' },
+        ],
+      },
+    ],
+  },
+];
+
+const previewColours = [
+  { value: '#2b5a1e', label: 'Forest green' },
+  { value: '#1a1917', label: 'Black' },
+  { value: '#ffffff', label: 'White' },
+  { value: '#f2a93b', label: 'Amber' },
+  { value: '#c2456b', label: 'Pink' },
+  { value: '#9c3a2c', label: 'Terracotta' },
+  { value: '#1f4a73', label: 'Navy' },
+  { value: '#b98b52', label: 'Kraft' },
+];
+---
+
+<BaseLayout
+  title="Design Your Cone Sleeve | Cone Sleeves UK"
+  description="Build a cone sleeve specification step by step with a live visual representation, then send it to us as a quote request."
+  path={path}
+  schema={graph}
+  whatsappContext="a cone sleeve I configured on your site"
+  bodyClass="tool-page"
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="tool-head">
+    <div class="wrap">
+      <p class="eyebrow">Configurator</p>
+      <h1>Design your cone sleeve</h1>
+      <p class="lede">
+        Work through the specification a step at a time. The panel on the right updates as
+        you go, and at the end you can review everything, change anything, and send it to
+        us as a quote request.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap tool-grid">
+    <form class="tool-form" id="design-tool" novalidate data-design-tool>
+      <ol class="tool-progress" aria-label="Progress">
+        {
+          steps.map((step, i) => (
+            <li data-progress-step={i}>
+              <span class="tool-progress-num">{i + 1}</span>
+              <span class="tool-progress-label">{step.title}</span>
+            </li>
+          ))
+        }
+        <li data-progress-step={steps.length}>
+          <span class="tool-progress-num">{steps.length + 1}</span>
+          <span class="tool-progress-label">Review &amp; send</span>
+        </li>
+      </ol>
+
+      {
+        steps.map((step, i) => (
+          <fieldset class="tool-step" data-step={i} hidden={i !== 0}>
+            <legend>
+              <span class="tool-step-count">
+                Step {i + 1} of {steps.length + 1}
+              </span>
+              <span class="tool-step-title">{step.title}</span>
+            </legend>
+            <p class="tool-step-help">{step.help}</p>
+
+            {step.fields.map((field) => (
+              <div class="tool-field">
+                {field.type === 'radio' || field.type === 'checkbox' ? (
+                  <fieldset class="option-set">
+                    <legend>{field.label}</legend>
+                    <div class="option-grid">
+                      {field.options!.map((opt, oi) => (
+                        <label class="option">
+                          <input
+                            type={field.type}
+                            name={field.name}
+                            value={opt.value}
+                            checked={field.type === 'radio' && oi === 0}
+                            data-config
+                            data-config-label={field.label}
+                          />
+                          <span class="option-body">
+                            <span class="option-value">{opt.value}</span>
+                            {'hint' in opt && opt.hint && (
+                              <span class="option-hint">{opt.hint}</span>
+                            )}
+                          </span>
+                        </label>
+                      ))}
+                    </div>
+                  </fieldset>
+                ) : field.type === 'select' ? (
+                  <p class="stack-field">
+                    <label for={`tool-${field.name}`}>{field.label}</label>
+                    <select id={`tool-${field.name}`} name={field.name} data-config data-config-label={field.label}>
+                      {field.options!.map((opt) => (
+                        <option value={opt.value}>{opt.value}</option>
+                      ))}
+                    </select>
+                  </p>
+                ) : (
+                  <p class="stack-field">
+                    <label for={`tool-${field.name}`}>{field.label}</label>
+                    <input
+                      type="number"
+                      inputmode="numeric"
+                      min="1"
+                      max="1000"
+                      id={`tool-${field.name}`}
+                      name={field.name}
+                      placeholder={'placeholder' in field ? field.placeholder : undefined}
+                      data-config
+                      data-config-label={field.label}
+                    />
+                    {'help' in field && field.help && <span class="tool-hint">{field.help}</span>}
+                  </p>
+                )}
+              </div>
+            ))}
+
+            <div class="tool-nav">
+              {i > 0 && (
+                <button type="button" class="btn btn-outline" data-step-back>
+                  Back
+                </button>
+              )}
+              <button type="button" class="btn btn-primary" data-step-next>
+                Continue
+              </button>
+            </div>
+          </fieldset>
+        ))
+      }
+
+      <fieldset class="tool-step" data-step={steps.length} hidden>
+        <legend>
+          <span class="tool-step-count">Step {steps.length + 1} of {steps.length + 1}</span>
+          <span class="tool-step-title">Review and send</span>
+        </legend>
+        <p class="tool-step-help">
+          Check the specification below. Use the edit links to change anything before you
+          send it.
+        </p>
+
+        <div class="summary" data-summary aria-live="polite"></div>
+
+        <div class="tool-contact">
+          <h2>Your details</h2>
+          <div class="field-grid">
+            <p class="stack-field">
+              <label for="tool-name">Your name <span class="req" aria-hidden="true">*</span></label>
+              <input type="text" id="tool-name" name="name" required autocomplete="name" maxlength="80" />
+              <span class="err" data-err-for="name"></span>
+            </p>
+            <p class="stack-field">
+              <label for="tool-email">Email <span class="req" aria-hidden="true">*</span></label>
+              <input type="email" id="tool-email" name="email" required autocomplete="email" maxlength="120" />
+              <span class="err" data-err-for="email"></span>
+            </p>
+            <p class="stack-field">
+              <label for="tool-phone">Phone</label>
+              <input type="tel" id="tool-phone" name="phone" autocomplete="tel" maxlength="30" />
+              <span class="err" data-err-for="phone"></span>
+            </p>
+            <p class="stack-field">
+              <label for="tool-company">Business name</label>
+              <input type="text" id="tool-company" name="company" autocomplete="organization" maxlength="80" data-config data-config-label="Business" />
+            </p>
+            <p class="stack-field field-wide">
+              <label for="tool-notes">Notes</label>
+              <textarea id="tool-notes" name="message" rows="3" maxlength="2000" placeholder="Deadlines, brand colours, anything unusual about the product"></textarea>
+            </p>
+            <p class="stack-field field-wide">
+              <label for="tool-artwork">Artwork (optional)</label>
+              <input
+                type="file"
+                id="tool-artwork"
+                name="artwork"
+                accept=".pdf,.ai,.eps,.svg,.png,.jpg,.jpeg,.zip"
+                aria-describedby="tool-artwork-help"
+              />
+              <span class="tool-hint" id="tool-artwork-help">
+                PDF, AI, EPS, SVG, PNG, JPG or ZIP, up to 10&nbsp;MB. Attached to your enquiry.
+              </span>
+              <span class="err" data-err-for="artwork"></span>
+            </p>
+            <p class="stack-field field-wide">
+              <label class="consent">
+                <input type="checkbox" name="consent" value="yes" required />
+                <span>
+                  I agree that Cone Sleeves UK may use these details to respond to my
+                  enquiry, as described in the <a href="/privacy-policy/">privacy policy</a>.
+                  <span class="req" aria-hidden="true">*</span>
+                </span>
+              </label>
+              <span class="err" data-err-for="consent"></span>
+            </p>
+          </div>
+        </div>
+
+        <div class="hp-field" aria-hidden="true">
+          <label for="tool-website">Website</label>
+          <input type="text" id="tool-website" name="website" tabindex="-1" autocomplete="off" />
+        </div>
+        <input type="hidden" name="rendered_at" value="0" data-rendered-at />
+        <input type="hidden" name="source" value="design-tool" />
+        <input type="hidden" name="product" value="Design Your Cone Sleeve configuration" />
+        <input type="hidden" name="quantity" value="" data-quantity-mirror />
+        <input type="hidden" name="configuration" value="" data-configuration />
+
+        <div class="tool-nav">
+          <button type="button" class="btn btn-outline" data-step-back>Back</button>
+          <button type="submit" class="btn btn-primary" data-tool-submit>Send this specification</button>
+        </div>
+
+        <p class="form-status" role="status" aria-live="polite" data-status></p>
+      </fieldset>
+    </form>
+
+    <aside class="tool-preview">
+      <div class="preview-sticky">
+        <h2>Representation</h2>
+        <div class="preview-stage">
+          <svg viewBox="0 0 220 300" role="img" aria-labelledby="preview-title" data-preview-svg>
+            <title id="preview-title">A representation of the cone sleeve you are specifying</title>
+            <defs>
+              <linearGradient id="wafer" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#e8c48a" />
+                <stop offset="100%" stop-color="#c99a58" />
+              </linearGradient>
+              <pattern id="waffle" width="9" height="9" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                <rect width="9" height="9" fill="url(#wafer)" />
+                <path d="M0 0h9M0 0v9" stroke="#b1823f" stroke-width="1" opacity="0.55" />
+              </pattern>
+              <linearGradient id="glossSheen" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stop-color="#fff" stop-opacity="0" />
+                <stop offset="42%" stop-color="#fff" stop-opacity="0.42" />
+                <stop offset="60%" stop-color="#fff" stop-opacity="0.06" />
+                <stop offset="100%" stop-color="#fff" stop-opacity="0" />
+              </linearGradient>
+              <clipPath id="sleeveClip">
+                <path d="M56 96 L164 96 L127 262 L93 262 Z" data-sleeve-clip />
+              </clipPath>
+            </defs>
+
+            {/* Scoop */}
+            <circle cx="110" cy="72" r="38" fill="#f6e2cd" data-scoop />
+            <circle cx="96" cy="62" r="12" fill="#fff" opacity="0.35" />
+
+            {/* Cone */}
+            <path d="M62 92 L158 92 L110 286 Z" fill="url(#waffle)" stroke="#a97a37" stroke-width="1.5" />
+
+            {/* Sleeve */}
+            <g data-sleeve-group>
+              <path d="M56 96 L164 96 L127 262 L93 262 Z" fill="#2b5a1e" stroke="rgba(0,0,0,0.18)" stroke-width="1.5" data-sleeve />
+              <g clip-path="url(#sleeveClip)">
+                <g data-sleeve-pattern></g>
+                <rect x="40" y="80" width="140" height="200" fill="url(#glossSheen)" data-sheen opacity="0" />
+              </g>
+              <text x="110" y="180" text-anchor="middle" font-family="Inter, system-ui, sans-serif" font-size="15" font-weight="800" letter-spacing="0.5" data-sleeve-text>YOUR LOGO</text>
+            </g>
+          </svg>
+        </div>
+
+        <div class="preview-controls">
+          <p class="preview-label" id="colour-label">Preview colour</p>
+          <div class="swatches" role="group" aria-labelledby="colour-label">
+            {
+              previewColours.map((c, i) => (
+                <button
+                  type="button"
+                  class="swatch"
+                  style={`--swatch:${c.value}`}
+                  data-swatch={c.value}
+                  data-swatch-name={c.label}
+                  aria-pressed={i === 0 ? 'true' : 'false'}
+                >
+                  <span class="visually-hidden">{c.label}</span>
+                </button>
+              ))
+            }
+          </div>
+          <p class="preview-label">
+            <label class="preview-inline">
+              <input type="checkbox" data-pattern-toggle />
+              Show a repeating pattern
+            </label>
+          </p>
+        </div>
+
+        <p class="preview-disclaimer">
+          <strong>This is a representation, not a manufacturing proof.</strong>
+          It shows roughly how the choices sit together. Colours on screen differ from
+          printed board, and the true shape is set from your own cone once we cut the die.
+        </p>
+
+        <p class="preview-help">
+          Stuck on a step? Call <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a> or email
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+        </p>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<style>
+  .tool-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .tool-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .tool-head .lede {
+    max-width: 60ch;
+  }
+
+  .tool-grid {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    align-items: start;
+    padding-bottom: var(--space-xl);
+  }
+
+  @media (max-width: 960px) {
+    .tool-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .tool-preview {
+      order: -1;
+    }
+  }
+
+  .tool-form {
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-l);
+    padding: var(--space-m);
+  }
+
+  @media (min-width: 720px) {
+    .tool-form {
+      padding: var(--space-l);
+    }
+  }
+
+  .tool-progress {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem 1rem;
+    padding: 0 0 var(--space-m);
+    margin: 0 0 var(--space-m);
+    border-bottom: 1px solid var(--c-border-soft);
+    counter-reset: none;
+  }
+
+  .tool-progress li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .tool-progress-num {
+    display: grid;
+    place-items: center;
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 50%;
+    background: var(--surface-sunk);
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+
+  .tool-progress li[data-active] {
+    color: var(--green-800);
+    font-weight: 650;
+  }
+
+  .tool-progress li[data-active] .tool-progress-num {
+    background: var(--green-700);
+    color: #fff;
+  }
+
+  .tool-progress li[data-done] .tool-progress-num {
+    background: var(--green-100);
+    color: var(--green-800);
+  }
+
+  @media (max-width: 620px) {
+    .tool-progress-label {
+      display: none;
+    }
+  }
+
+  .tool-step {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .tool-step[hidden] {
+    display: none;
+  }
+
+  .tool-step > legend {
+    display: grid;
+    gap: 0.2rem;
+    padding: 0;
+    margin-bottom: 0.4rem;
+  }
+
+  .tool-step-count {
+    font-size: var(--step--1);
+    font-weight: 650;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: var(--amber-700);
+  }
+
+  .tool-step-title {
+    font-size: var(--step-3);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    color: var(--ink-900);
+  }
+
+  .tool-step-help {
+    color: var(--c-text-soft);
+    max-width: 56ch;
+    margin-bottom: var(--space-m);
+  }
+
+  .tool-field + .tool-field {
+    margin-top: var(--space-m);
+  }
+
+  .option-set {
+    border: 0;
+    padding: 0;
+    margin: 0;
+    min-width: 0;
+  }
+
+  .option-set > legend {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--ink-700);
+    padding: 0;
+    margin-bottom: 0.5rem;
+  }
+
+  .option-grid {
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(min(13rem, 100%), 1fr));
+  }
+
+  .option {
+    position: relative;
+    display: block;
+    cursor: pointer;
+  }
+
+  .option input {
+    position: absolute;
+    opacity: 0;
+    width: 1px;
+    height: 1px;
+  }
+
+  .option-body {
+    display: grid;
+    gap: 0.15rem;
+    padding: 0.75rem 0.85rem;
+    min-height: 48px;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-m);
+    transition: border-color var(--dur-fast), background var(--dur-fast);
+  }
+
+  .option input:checked + .option-body {
+    border-color: var(--green-600);
+    background: var(--green-050);
+    box-shadow: inset 0 0 0 1px var(--green-600);
+  }
+
+  .option input:focus-visible + .option-body {
+    outline: 3px solid var(--amber-600);
+    outline-offset: 2px;
+  }
+
+  .option-value {
+    font-weight: 650;
+    font-size: 0.95rem;
+    color: var(--ink-900);
+  }
+
+  .option-hint {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+    line-height: 1.4;
+  }
+
+  .stack-field {
+    display: grid;
+    gap: 0.3rem;
+    margin: 0;
+  }
+
+  .stack-field label {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--ink-700);
+  }
+
+  .tool-form input[type='text'],
+  .tool-form input[type='email'],
+  .tool-form input[type='tel'],
+  .tool-form input[type='number'],
+  .tool-form input[type='file'],
+  .tool-form select,
+  .tool-form textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 0.7rem 0.8rem;
+    min-height: 48px;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-m);
+    color: var(--ink-900);
+  }
+
+  .tool-form textarea {
+    resize: vertical;
+  }
+
+  .tool-hint {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .tool-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--c-border-soft);
+  }
+
+  .summary {
+    display: grid;
+    gap: 0.15rem;
+    margin-bottom: var(--space-l);
+  }
+
+  .summary-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr) auto;
+    gap: 0.75rem;
+    align-items: baseline;
+    padding: 0.6rem 0.2rem;
+    border-bottom: 1px solid var(--c-border-soft);
+    font-size: 0.95rem;
+  }
+
+  .summary-row dt {
+    color: var(--c-text-muted);
+  }
+
+  .summary-row dd {
+    margin: 0;
+    font-weight: 650;
+    color: var(--ink-900);
+  }
+
+  .summary-edit {
+    background: none;
+    border: 0;
+    padding: 0.2rem 0.4rem;
+    font-size: var(--step--1);
+    font-weight: 650;
+    color: var(--green-700);
+    text-decoration: underline;
+    cursor: pointer;
+  }
+
+  @media (max-width: 560px) {
+    .summary-row {
+      grid-template-columns: minmax(0, 1fr) auto;
+    }
+    .summary-row dd {
+      grid-column: 1 / -1;
+    }
+  }
+
+  .tool-contact h2 {
+    font-size: var(--step-1);
+    margin-bottom: var(--space-s);
+  }
+
+  .field-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 640px) {
+    .field-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .field-wide {
+    grid-column: 1 / -1;
+  }
+
+  .consent {
+    display: flex;
+    gap: 0.6rem;
+    align-items: flex-start;
+    font-weight: 400;
+    font-size: 0.9rem;
+    color: var(--c-text-soft);
+    line-height: 1.5;
+  }
+
+  .consent input[type='checkbox'] {
+    width: 20px;
+    height: 20px;
+    margin-top: 0.15rem;
+    flex: none;
+    accent-color: var(--green-700);
+  }
+
+  .req {
+    color: var(--danger-700);
+  }
+
+  .err {
+    font-size: var(--step--1);
+    font-weight: 600;
+    color: var(--danger-700);
+  }
+
+  .err:empty {
+    display: none;
+  }
+
+  .hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+  }
+
+  .form-status {
+    margin-top: var(--space-s);
+    padding: 0.75rem 1rem;
+    border-radius: var(--radius-m);
+    font-weight: 600;
+    display: none;
+  }
+
+  .form-status[data-state='ok'] {
+    display: block;
+    background: var(--success-050);
+    color: var(--success-700);
+  }
+
+  .form-status[data-state='error'] {
+    display: block;
+    background: var(--danger-050);
+    color: var(--danger-700);
+  }
+
+  /* --- Preview --- */
+
+  .preview-sticky {
+    position: sticky;
+    top: 6.5rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-l);
+    padding: var(--space-m);
+  }
+
+  @media (max-width: 960px) {
+    .preview-sticky {
+      position: static;
+    }
+  }
+
+  .preview-sticky > h2 {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--c-text-muted);
+  }
+
+  .preview-stage {
+    margin-top: var(--space-s);
+    background: linear-gradient(180deg, var(--surface-sunk), var(--cream));
+    border-radius: var(--radius-m);
+    display: grid;
+    place-items: center;
+    padding: var(--space-s);
+  }
+
+  .preview-stage svg {
+    width: 100%;
+    max-width: 15rem;
+    height: auto;
+  }
+
+  .preview-controls {
+    margin-top: var(--space-m);
+  }
+
+  .preview-label {
+    font-size: 0.9rem;
+    font-weight: 650;
+    color: var(--ink-700);
+    margin-bottom: 0.5rem;
+  }
+
+  .swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+    margin-bottom: var(--space-s);
+  }
+
+  .swatch {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    background: var(--swatch);
+    border: 2px solid var(--c-border);
+    padding: 0;
+  }
+
+  .swatch[aria-pressed='true'] {
+    border-color: var(--green-700);
+    box-shadow: 0 0 0 2px var(--green-100);
+  }
+
+  .preview-inline {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 500;
+    font-size: 0.9rem;
+    color: var(--c-text-soft);
+  }
+
+  .preview-inline input {
+    width: 18px;
+    height: 18px;
+    accent-color: var(--green-700);
+  }
+
+  .preview-disclaimer {
+    margin-top: var(--space-s);
+    padding: 0.75rem 0.9rem;
+    background: var(--amber-050);
+    border: 1px solid var(--amber-200);
+    border-radius: var(--radius-m);
+    font-size: var(--step--1);
+    line-height: 1.5;
+    color: var(--ink-700);
+  }
+
+  .preview-help {
+    margin-top: var(--space-s);
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+</style>
+
+<script>
+  // Configurator logic. No framework: a few hundred lines of DOM work that
+  // manage step visibility, the live representation and the final submission.
+  const form = document.querySelector<HTMLFormElement>('[data-design-tool]');
+  if (form) {
+    const stepEls = Array.from(form.querySelectorAll<HTMLFieldSetElement>('[data-step]'));
+    const progressEls = Array.from(
+      form.querySelectorAll<HTMLLIElement>('[data-progress-step]'),
+    );
+    const summary = form.querySelector<HTMLElement>('[data-summary]')!;
+    const status = form.querySelector<HTMLElement>('[data-status]')!;
+    const configField = form.querySelector<HTMLInputElement>('[data-configuration]')!;
+    const quantityMirror = form.querySelector<HTMLInputElement>('[data-quantity-mirror]')!;
+    const stamp = form.querySelector<HTMLInputElement>('[data-rendered-at]')!;
+    stamp.value = Date.now().toString();
+
+    const last = stepEls.length - 1;
+    let current = 0;
+
+    // --- Steps -----------------------------------------------------------
+
+    const show = (index: number) => {
+      current = Math.max(0, Math.min(last, index));
+      stepEls.forEach((el, i) => {
+        el.hidden = i !== current;
+      });
+      progressEls.forEach((el, i) => {
+        el.toggleAttribute('data-active', i === current);
+        el.toggleAttribute('data-done', i < current);
+      });
+      if (current === last) renderSummary();
+      // Move focus to the new step's heading region for screen reader users.
+      const legend = stepEls[current].querySelector<HTMLElement>('.tool-step-title');
+      legend?.setAttribute('tabindex', '-1');
+      legend?.focus();
+      stepEls[current].scrollIntoView({ block: 'start', behavior: 'smooth' });
+    };
+
+    form.querySelectorAll<HTMLButtonElement>('[data-step-next]').forEach((btn) =>
+      btn.addEventListener('click', () => show(current + 1)),
+    );
+    form.querySelectorAll<HTMLButtonElement>('[data-step-back]').forEach((btn) =>
+      btn.addEventListener('click', () => show(current - 1)),
+    );
+
+    // --- Configuration collection ---------------------------------------
+
+    type Entry = { label: string; value: string; step: number };
+
+    const collect = (): Entry[] => {
+      const out: Entry[] = [];
+      const seen = new Map<string, Entry>();
+
+      form.querySelectorAll<HTMLInputElement | HTMLSelectElement>('[data-config]').forEach((el) => {
+        const label = el.dataset.configLabel ?? el.name;
+        const stepEl = el.closest<HTMLFieldSetElement>('[data-step]');
+        const step = Number(stepEl?.dataset.step ?? 0);
+
+        if (el instanceof HTMLInputElement && el.type === 'checkbox') {
+          if (!el.checked) return;
+          const existing = seen.get(label);
+          if (existing) existing.value += `, ${el.value}`;
+          else {
+            const entry = { label, value: el.value, step };
+            seen.set(label, entry);
+            out.push(entry);
+          }
+          return;
+        }
+
+        if (el instanceof HTMLInputElement && el.type === 'radio') {
+          if (!el.checked) return;
+        }
+
+        const value = (el as HTMLInputElement).value.trim();
+        if (!value) return;
+        const entry = { label, value, step };
+        seen.set(label, entry);
+        out.push(entry);
+      });
+
+      return out;
+    };
+
+    const renderSummary = () => {
+      const entries = collect();
+      summary.innerHTML = '';
+      const dl = document.createElement('dl');
+      dl.style.margin = '0';
+
+      entries.forEach((entry) => {
+        const row = document.createElement('div');
+        row.className = 'summary-row';
+
+        const dt = document.createElement('dt');
+        dt.textContent = entry.label;
+
+        const dd = document.createElement('dd');
+        dd.textContent = entry.value;
+
+        const edit = document.createElement('button');
+        edit.type = 'button';
+        edit.className = 'summary-edit';
+        edit.textContent = 'Change';
+        edit.setAttribute('aria-label', `Change ${entry.label}`);
+        edit.addEventListener('click', () => show(entry.step));
+
+        row.append(dt, dd, edit);
+        dl.append(row);
+      });
+
+      summary.append(dl);
+
+      const config: Record<string, string> = {};
+      entries.forEach((e) => {
+        config[e.label] = e.value;
+      });
+      configField.value = JSON.stringify(config);
+      quantityMirror.value = config['Quantity'] ?? 'Not specified';
+    };
+
+    // --- Live representation ---------------------------------------------
+
+    const sleeve = document.querySelector<SVGPathElement>('[data-sleeve]');
+    const sleeveText = document.querySelector<SVGTextElement>('[data-sleeve-text]');
+    const sheen = document.querySelector<SVGRectElement>('[data-sheen]');
+    const patternGroup = document.querySelector<SVGGElement>('[data-sleeve-pattern]');
+    const scoop = document.querySelector<SVGCircleElement>('[data-scoop]');
+    const sleevePath = document.querySelector<SVGPathElement>('[data-sleeve]');
+    const clipPath = document.querySelector<SVGPathElement>('[data-sleeve-clip]');
+
+    let colour = '#2b5a1e';
+    let showPattern = false;
+
+    /** Rough luminance, so text on a pale sleeve stays readable. */
+    const isLight = (hex: string) => {
+      const n = parseInt(hex.slice(1), 16);
+      const r = (n >> 16) & 255;
+      const g = (n >> 8) & 255;
+      const b = n & 255;
+      return (0.299 * r + 0.587 * g + 0.114 * b) / 255 > 0.6;
+    };
+
+    const depthGeometry: Record<string, { topY: number; botY: number; lx: number; rx: number }> = {
+      'Short band': { topY: 108, botY: 190, lx: 55, rx: 165 },
+      'Medium wrap': { topY: 100, botY: 240, lx: 56, rx: 164 },
+      'Deep wrap': { topY: 96, botY: 276, lx: 57, rx: 163 },
+    };
+
+    const useColours: Record<string, string> = {
+      'Scooped ice cream': '#f6e2cd',
+      'Soft serve': '#fbf3e4',
+      Gelato: '#f2d7c2',
+      'Rolled ice cream': '#e7cdb6',
+      'Chips or fries': '#e8bf62',
+      'Fried chicken': '#d59a4c',
+      Crepes: '#e6c9a2',
+      'Sweets or snacks': '#f2c9d8',
+    };
+
+    const updatePreview = () => {
+      if (!sleeve || !sleevePath || !clipPath) return;
+
+      const depth =
+        (form.querySelector<HTMLInputElement>('input[name="wrapDepth"]:checked')?.value ??
+          'Medium wrap') as keyof typeof depthGeometry;
+      const g = depthGeometry[depth] ?? depthGeometry['Medium wrap'];
+
+      // Narrow the sleeve towards the point in proportion to its depth.
+      const t = (g.botY - 96) / 190;
+      const innerL = 56 + t * 40;
+      const innerR = 164 - t * 40;
+      const d = `M${g.lx} ${g.topY} L${g.rx} ${g.topY} L${innerR} ${g.botY} L${innerL} ${g.botY} Z`;
+      sleevePath.setAttribute('d', d);
+      clipPath.setAttribute('d', d);
+
+      const printing = form.querySelector<HTMLInputElement>('input[name="printSides"]:checked')?.value;
+      const material = form.querySelector<HTMLInputElement>('input[name="material"]:checked')?.value;
+      const finish = form.querySelector<HTMLInputElement>('input[name="finish"]:checked')?.value;
+
+      // An unprinted sleeve shows the board colour rather than a print colour.
+      let fill = colour;
+      if (printing === 'Unprinted (plain)') {
+        fill = material === 'Uncoated kraft' ? '#b98b52' : '#f7f4ee';
+      } else if (material === 'Uncoated kraft') {
+        // Ink over brown board reads warmer and darker.
+        fill = mix(colour, '#8a6234', 0.28);
+      }
+
+      sleeve.setAttribute('fill', fill);
+
+      if (sleeveText) {
+        sleeveText.setAttribute('fill', isLight(fill) ? '#1a1917' : '#ffffff');
+        sleeveText.setAttribute('y', String((g.topY + g.botY) / 2 + 5));
+        sleeveText.style.display = printing === 'Unprinted (plain)' ? 'none' : '';
+      }
+
+      if (sheen) sheen.setAttribute('opacity', finish === 'Gloss lamination' ? '1' : '0');
+
+      if (patternGroup) {
+        patternGroup.innerHTML = '';
+        if (showPattern && printing !== 'Unprinted (plain)') {
+          const dotColour = isLight(fill) ? 'rgba(26,25,23,0.35)' : 'rgba(255,255,255,0.42)';
+          for (let y = g.topY + 10; y < g.botY - 6; y += 18) {
+            for (let x = 46; x < 180; x += 18) {
+              const c = document.createElementNS('http://www.w3.org/2000/svg', 'circle');
+              c.setAttribute('cx', String(x + (Math.floor(y / 18) % 2 ? 9 : 0)));
+              c.setAttribute('cy', String(y));
+              c.setAttribute('r', '3');
+              c.setAttribute('fill', dotColour);
+              patternGroup.append(c);
+            }
+          }
+        }
+      }
+
+      const use = form.querySelector<HTMLSelectElement>('select[name="intendedUse"]')?.value;
+      if (scoop && use) scoop.setAttribute('fill', useColours[use] ?? '#f6e2cd');
+    };
+
+    /** Simple RGB blend, used to approximate ink over kraft board. */
+    function mix(a: string, b: string, amount: number): string {
+      const pa = parseInt(a.slice(1), 16);
+      const pb = parseInt(b.slice(1), 16);
+      const ch = (shift: number) => {
+        const va = (pa >> shift) & 255;
+        const vb = (pb >> shift) & 255;
+        return Math.round(va * (1 - amount) + vb * amount);
+      };
+      return `rgb(${ch(16)}, ${ch(8)}, ${ch(0)})`;
+    }
+
+    document.querySelectorAll<HTMLButtonElement>('[data-swatch]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        colour = btn.dataset.swatch!;
+        document
+          .querySelectorAll<HTMLButtonElement>('[data-swatch]')
+          .forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        updatePreview();
+      });
+    });
+
+    document
+      .querySelector<HTMLInputElement>('[data-pattern-toggle]')
+      ?.addEventListener('change', (e) => {
+        showPattern = (e.target as HTMLInputElement).checked;
+        updatePreview();
+      });
+
+    form.addEventListener('change', updatePreview);
+    form.addEventListener('input', updatePreview);
+    updatePreview();
+
+    // --- Submission -------------------------------------------------------
+
+    const setError = (name: string, message: string) => {
+      const el = form.querySelector<HTMLElement>(`[data-err-for="${name}"]`);
+      if (el) el.textContent = message;
+      const input = form.elements.namedItem(name) as HTMLInputElement | null;
+      if (input) input.setAttribute('aria-invalid', message ? 'true' : 'false');
+      return !message;
+    };
+
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      renderSummary();
+      status.removeAttribute('data-state');
+      status.textContent = '';
+
+      const val = (n: string) =>
+        ((form.elements.namedItem(n) as HTMLInputElement | null)?.value ?? '').trim();
+
+      let ok = true;
+      ok = setError('name', val('name') ? '' : 'Please tell us your name.') && ok;
+      ok =
+        setError(
+          'email',
+          /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(val('email'))
+            ? ''
+            : 'Please enter a valid email address.',
+        ) && ok;
+      const phone = val('phone');
+      ok = setError('phone', !phone || /^[0-9+()\s-]{7,}$/.test(phone) ? '' : 'Please check the phone number.') && ok;
+      const consent = form.elements.namedItem('consent') as HTMLInputElement | null;
+      ok = setError('consent', consent?.checked ? '' : 'Please tick to continue.') && ok;
+
+      const file = form.querySelector<HTMLInputElement>('input[type="file"]')?.files?.[0];
+      let fileError = '';
+      if (file) {
+        const ext = file.name.split('.').pop()?.toLowerCase() ?? '';
+        if (!['pdf', 'ai', 'eps', 'svg', 'png', 'jpg', 'jpeg', 'zip'].includes(ext)) {
+          fileError = 'That file type is not accepted.';
+        } else if (file.size > 10 * 1024 * 1024) {
+          fileError = 'That file is larger than 10 MB.';
+        }
+      }
+      ok = setError('artwork', fileError) && ok;
+
+      if (!ok) {
+        status.setAttribute('data-state', 'error');
+        status.textContent = 'Please check the highlighted fields.';
+        form.querySelector<HTMLElement>('[aria-invalid="true"]')?.focus();
+        return;
+      }
+
+      const submitBtn = form.querySelector<HTMLButtonElement>('[data-tool-submit]')!;
+      submitBtn.disabled = true;
+      const original = submitBtn.textContent;
+      submitBtn.textContent = 'Sending…';
+
+      try {
+        const res = await fetch('/api/quote/', {
+          method: 'POST',
+          body: new FormData(form),
+          headers: { 'X-Requested-With': 'fetch' },
+        });
+        const data = (await res.json()) as { ok: boolean; message?: string };
+
+        if (res.ok && data.ok) {
+          status.setAttribute('data-state', 'ok');
+          status.textContent =
+            data.message ?? 'Thank you — your specification is with us and we will reply by email.';
+          const w = window as unknown as { dataLayer?: unknown[] };
+          if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'design_tool_submit' });
+        } else {
+          status.setAttribute('data-state', 'error');
+          status.textContent = data.message ?? 'Something went wrong. Please try again or email us.';
+        }
+      } catch {
+        status.setAttribute('data-state', 'error');
+        status.textContent =
+          'We could not reach the server. Please try again, or email info@conesleeves.co.uk.';
+      } finally {
+        submitBtn.disabled = false;
+        submitBtn.textContent = original;
+      }
+    });
+
+    show(0);
+  }
+</script>

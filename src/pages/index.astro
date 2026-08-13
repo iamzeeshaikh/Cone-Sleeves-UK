@@ -1,0 +1,690 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import QuoteForm from '~/components/QuoteForm.astro';
+import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
+import { productBySlug, productsInCategory, PRODUCT_COUNT } from '~/data/products';
+import { POSTS, postPath, readingTime } from '~/data/blog';
+import { CITIES } from '~/data/locations';
+import { primaryImage, imageCount } from '~/lib/images';
+import { whatsappHref, CONTACT, TEL_HREF } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/';
+const heroImage = primaryImage('custom-waffle-cone-sleeves')!;
+
+// A representative product from each range rather than an arbitrary slice.
+const featured = [
+  'custom-ice-cream-cone-sleeves',
+  'burger-sleeves',
+  'custom-printed-coffee-sleeves',
+  'french-fry-boxes',
+  'custom-burger-trays',
+  'custom-greaseproof-paper',
+  'custom-paper-coffee-cups',
+  'custom-take-out-bags',
+]
+  .map((s) => productBySlug(s))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+const latestPosts = POSTS.slice(0, 3);
+const homeCities = CITIES.slice(0, 10);
+
+const graph = [
+  schema.webPage({
+    path,
+    name: 'Cone Sleeves UK | Custom Printed Cone Sleeves & Food Packaging',
+    description:
+      'Custom printed cone sleeves, food sleeves, trays, cups and papers for UK food businesses, cut to your own products.',
+    primaryImage: heroImage.src,
+  }),
+  schema.itemList(
+    TOP_CATEGORIES.map((c) => ({ name: c.name, path: categoryPath(c) })),
+    path,
+  ),
+];
+---
+
+<BaseLayout
+  title="Custom Cone Sleeves UK | Printed Food Packaging"
+  description="Printed cone sleeves, food sleeves, trays, cups and papers for UK food businesses. Cut to your own products, quoted in writing."
+  path={path}
+  image={heroImage.src}
+  imageAlt="Custom printed cone sleeve on a waffle cone"
+  schema={graph}
+>
+  <section class="hero">
+    <div class="wrap hero-grid">
+      <div class="hero-copy">
+        <p class="eyebrow">UK packaging supplier</p>
+        <h1>Cone sleeves cut to the cones you already serve</h1>
+        <p class="lede">
+          We print sleeves, trays, cups, papers and bags for food businesses across the
+          United Kingdom — sized from your own product rather than pulled from a stock
+          list, and quoted with the board, finish and lead time in writing.
+        </p>
+
+        <div class="btn-row hero-cta">
+          <a class="btn btn-primary" href="/design-your-cone-sleeve/">Design your cone sleeve</a>
+          <a class="btn btn-outline" href="#quote">Get a quote</a>
+        </div>
+
+        <dl class="hero-stats">
+          <div>
+            <dt>Products</dt>
+            <dd>{PRODUCT_COUNT}</dd>
+          </div>
+          <div>
+            <dt>Ranges</dt>
+            <dd>{TOP_CATEGORIES.length}</dd>
+          </div>
+          <div>
+            <dt>Delivered</dt>
+            <dd>UK-wide</dd>
+          </div>
+        </dl>
+      </div>
+
+      <div class="hero-media">
+        <Image
+          src={heroImage}
+          alt="Custom printed cone sleeve wrapped around a waffle cone"
+          widths={[420, 620, 840]}
+          sizes="(min-width: 1000px) 480px, 88vw"
+          format="webp"
+          quality={80}
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+        />
+        <div class="hero-badge">
+          <strong>Sized from your product</strong>
+          <span>Send a cone, cup or container and we cut the die to it</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section-tight ranges">
+    <div class="wrap">
+      <h2>What we print</h2>
+      <p class="section-lede">
+        Seven ranges, each specified around a different problem — grip on a cone, grease
+        from a fryer, heat through a cup wall, or a bag that has to hold a full order.
+      </p>
+      <div class="range-grid">
+        {
+          TOP_CATEGORIES.map((c) => {
+            const img = primaryImage(c.heroProduct);
+            const count = productsInCategory(c.slug).length;
+            return (
+              <a class="range-card card" href={categoryPath(c)}>
+                <div class="range-media">
+                  {img && (
+                    <Image
+                      src={img}
+                      alt={`${c.name} printed by Cone Sleeves UK`}
+                      widths={[220, 400]}
+                      sizes="(min-width: 900px) 240px, 45vw"
+                      format="webp"
+                      quality={70}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </div>
+                <div class="range-body">
+                  <h3>{c.name}</h3>
+                  <p>{c.cardBlurb}</p>
+                  <span class="range-count">{count} products</span>
+                </div>
+              </a>
+            );
+          })
+        }
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-white">
+    <div class="wrap how-grid">
+      <div>
+        <p class="eyebrow">How it works</p>
+        <h2>Four steps, and none of them involve guessing a size</h2>
+        <p class="section-lede">
+          Almost every packaging order that goes wrong goes wrong at the measurement
+          stage. We start there rather than with the artwork.
+        </p>
+        <a class="btn btn-primary" href="/request-a-quote/">Start an enquiry</a>
+      </div>
+      <ol class="how-steps">
+        <li>
+          <h3>Send the product</h3>
+          <p>
+            Post us the cone, cup or container you use, or send the measurements. A physical
+            sample removes every ambiguity at once.
+          </p>
+        </li>
+        <li>
+          <h3>Agree the specification</h3>
+          <p>
+            Board, lining, print method, colours and finish, with the minimum quantity and
+            lead time confirmed in writing on your quote.
+          </p>
+        </li>
+        <li>
+          <h3>Work on the die line</h3>
+          <p>
+            We supply a template cut to your product, so artwork is built on the correct
+            shape rather than adjusted to fit afterwards.
+          </p>
+        </li>
+        <li>
+          <h3>Approve, print, deliver</h3>
+          <p>
+            A digital proof on the die line, then production and dispatch on national
+            carriers to any UK address.
+          </p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <h2>Ordered most often</h2>
+      <p class="section-lede">
+        A cross-section of the catalogue — one from each range, so you can see how
+        differently each is specified.
+      </p>
+      <div class="grid-auto featured-grid">
+        {featured.map((p) => <ProductCard product={p} />)}
+      </div>
+      <p class="all-products-link">
+        <a class="btn btn-outline" href="/products/">See all {PRODUCT_COUNT} products</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section section-green honest">
+    <div class="wrap honest-grid">
+      <div>
+        <p class="eyebrow">What we will not do</p>
+        <h2>No invented lead times, and no claims we cannot back</h2>
+        <p>
+          Plenty of packaging websites publish a turnaround figure, a minimum order
+          quantity and an environmental claim that apply to nothing in particular. We
+          would rather put those on your quote, against your actual specification.
+        </p>
+      </div>
+      <ul class="honest-list">
+        <li>
+          <strong>Lead times</strong>
+          <span>Confirmed per job, because they move with the press schedule and run length.</span>
+        </li>
+        <li>
+          <strong>Minimum quantities</strong>
+          <span>Set by the print method your job needs, not by a single site-wide number.</span>
+        </li>
+        <li>
+          <strong>Recycling claims</strong>
+          <span>We tell you the board and lining; whether it is recycled depends on your collection.</span>
+        </li>
+        <li>
+          <strong>Reviews and ratings</strong>
+          <span>None published, because none have been independently collected.</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="section-tight" id="quote">
+    <div class="wrap home-quote-grid">
+      <QuoteForm
+        source="homepage"
+        variant="panel"
+        heading="Tell us what you need"
+        intro="A short enquiry is enough to start. We reply with a written specification, the minimum quantity and a lead time for your job."
+        id="quote-form"
+      />
+      <div class="home-contact">
+        <h2>Rather talk first?</h2>
+        <p>
+          Sizing questions are usually quicker on the phone, especially with the product
+          in front of you.
+        </p>
+        <ul>
+          <li><a href={TEL_HREF}>{CONTACT.phoneDisplay}</a></li>
+          <li><a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a></li>
+          <li><a href={whatsappHref()} rel="noopener">Message us on WhatsApp</a></li>
+        </ul>
+        <p class="home-contact-note">
+          {imageCount()} product photographs across {PRODUCT_COUNT} pages, so you can see
+          the format before you ask about it.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-sunk">
+    <div class="wrap">
+      <h2>Guides for buyers</h2>
+      <p class="section-lede">
+        Written for people specifying packaging rather than selling it.
+      </p>
+      <div class="post-grid">
+        {
+          latestPosts.map((post) => (
+            <a class="post-card card" href={postPath(post.slug)}>
+              <span class="badge badge-amber">{post.topic}</span>
+              <h3>{post.title}</h3>
+              <p>{post.standfirst}</p>
+              <span class="post-meta">{readingTime(post)} min read</span>
+            </a>
+          ))
+        }
+      </div>
+      <p class="all-products-link">
+        <a class="btn btn-outline" href="/blog/">All guides</a>
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <h2 class="areas-title">Areas we supply</h2>
+      <p class="section-lede">
+        We deliver anywhere in the UK. These pages cover what packaging the trade in each
+        place actually buys.
+      </p>
+      <ul class="area-list">
+        {homeCities.map((l) => <li><a href={`/${l.slug}/`}>{l.place}</a></li>)}
+        <li><a href="/locations/">All areas</a></li>
+      </ul>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .hero {
+    padding-block: var(--space-l) var(--space-xl);
+    background: linear-gradient(170deg, var(--green-050) 0%, var(--cream) 60%);
+  }
+
+  .hero-grid {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: minmax(0, 1.05fr) minmax(0, 1fr);
+    align-items: center;
+  }
+
+  @media (max-width: 900px) {
+    .hero-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-l);
+    }
+  }
+
+  .hero-copy h1 {
+    margin: 0.5rem 0 var(--space-s);
+    font-size: var(--step-6);
+    max-width: 15ch;
+  }
+
+  .hero-copy .lede {
+    max-width: 52ch;
+  }
+
+  .hero-cta {
+    margin-top: var(--space-m);
+  }
+
+  .hero-stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-l);
+    margin-top: var(--space-l);
+    padding-top: var(--space-m);
+    border-top: 1px solid var(--green-100);
+  }
+
+  .hero-stats dt {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--c-text-muted);
+    font-weight: 650;
+  }
+
+  .hero-stats dd {
+    margin: 0.15rem 0 0;
+    font-size: var(--step-3);
+    font-weight: 750;
+    color: var(--green-800);
+    letter-spacing: -0.02em;
+  }
+
+  .hero-media {
+    position: relative;
+  }
+
+  .hero-media :global(img) {
+    width: 100%;
+    aspect-ratio: var(--ratio-product);
+    object-fit: cover;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-l);
+  }
+
+  .hero-badge {
+    position: absolute;
+    left: -0.75rem;
+    bottom: 1.25rem;
+    display: grid;
+    gap: 0.15rem;
+    max-width: 17rem;
+    padding: 0.85rem 1.1rem;
+    background: var(--surface);
+    border-radius: var(--radius-m);
+    box-shadow: var(--shadow-m);
+  }
+
+  .hero-badge strong {
+    font-size: 0.95rem;
+    color: var(--green-800);
+  }
+
+  .hero-badge span {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+    line-height: 1.45;
+  }
+
+  @media (max-width: 520px) {
+    .hero-badge {
+      left: 0.5rem;
+      right: 0.5rem;
+      max-width: none;
+    }
+  }
+
+  .section-lede {
+    margin-top: 0.5rem;
+    max-width: 62ch;
+    color: var(--c-text-soft);
+  }
+
+  .range-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    margin-top: var(--space-m);
+  }
+
+  .range-card {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .range-media {
+    aspect-ratio: 4 / 3;
+    background: var(--surface-sunk);
+    overflow: hidden;
+  }
+
+  .range-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .range-body {
+    padding: var(--space-s);
+    display: grid;
+    gap: 0.3rem;
+    align-content: start;
+  }
+
+  .range-body h3 {
+    font-size: var(--step-1);
+  }
+
+  .range-body p {
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+    line-height: 1.5;
+  }
+
+  .range-count {
+    font-size: var(--step--1);
+    font-weight: 650;
+    color: var(--green-700);
+  }
+
+  .how-grid {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .how-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-l);
+    }
+  }
+
+  .how-grid h2 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .how-grid .btn {
+    margin-top: var(--space-m);
+  }
+
+  .how-steps {
+    counter-reset: how;
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .how-steps li {
+    counter-increment: how;
+    position: relative;
+    padding: var(--space-s) var(--space-s) var(--space-s) 3.75rem;
+    background: var(--cream);
+    border-radius: var(--radius-m);
+  }
+
+  .how-steps li::before {
+    content: '0' counter(how);
+    position: absolute;
+    left: 1.1rem;
+    top: 1.05rem;
+    font-weight: 750;
+    color: var(--amber-600);
+    font-size: 1.1rem;
+  }
+
+  .how-steps h3 {
+    font-size: var(--step-0);
+    margin-bottom: 0.2rem;
+  }
+
+  .how-steps p {
+    margin: 0;
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+  }
+
+  .featured-grid {
+    margin-top: var(--space-m);
+  }
+
+  .all-products-link {
+    margin-top: var(--space-m);
+  }
+
+  .honest-grid {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.1fr);
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .honest-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-l);
+    }
+  }
+
+  .honest-grid h2 {
+    margin: 0.4rem 0 var(--space-s);
+    max-width: 20ch;
+  }
+
+  .honest-grid > div > p {
+    color: rgb(255 255 255 / 0.82);
+    max-width: 52ch;
+  }
+
+  .honest-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2xs);
+  }
+
+  .honest-list li {
+    display: grid;
+    gap: 0.2rem;
+    padding: var(--space-s);
+    background: rgb(255 255 255 / 0.07);
+    border-radius: var(--radius-m);
+    border-left: 3px solid var(--amber-500);
+  }
+
+  .honest-list strong {
+    color: #fff;
+  }
+
+  .honest-list span {
+    font-size: 0.92rem;
+    color: rgb(255 255 255 / 0.78);
+    line-height: 1.5;
+  }
+
+  .home-quote-grid {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 1.5fr) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  @media (max-width: 900px) {
+    .home-quote-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .home-contact {
+    padding: var(--space-m);
+    background: var(--surface-sunk);
+    border-radius: var(--radius-l);
+  }
+
+  .home-contact p {
+    margin-top: 0.5rem;
+    color: var(--c-text-soft);
+    font-size: 0.95rem;
+  }
+
+  .home-contact ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-s);
+    display: grid;
+    gap: 0.4rem;
+    font-weight: 650;
+  }
+
+  .home-contact-note {
+    margin-top: var(--space-m) !important;
+    padding-top: var(--space-s);
+    border-top: 1px solid var(--c-border-soft);
+    font-size: var(--step--1) !important;
+    color: var(--c-text-muted) !important;
+  }
+
+  .post-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+    margin-top: var(--space-m);
+  }
+
+  .post-card {
+    display: grid;
+    gap: 0.45rem;
+    align-content: start;
+    padding: var(--space-m);
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-card h3 {
+    font-size: var(--step-1);
+  }
+
+  .post-card p {
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+    line-height: 1.55;
+  }
+
+  .post-meta {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .post-card .badge {
+    justify-self: start;
+  }
+
+  .areas-title {
+    font-size: var(--step-3);
+  }
+
+  .area-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-m);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .area-list a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--green-800);
+  }
+
+  .area-list a:hover {
+    border-color: var(--green-500);
+    background: var(--green-050);
+  }
+</style>

@@ -1,0 +1,57 @@
+---
+import type { Faq } from '~/data/types';
+
+interface Props {
+  faqs: Faq[];
+  heading?: string;
+  level?: 2 | 3;
+  id?: string;
+}
+
+const { faqs, heading = 'Frequently asked questions', level = 2, id = 'faqs' } = Astro.props;
+const Heading = `h${level}` as 'h2' | 'h3';
+const SubHeading = `h${level + 1}` as 'h3' | 'h4';
+---
+
+<section class="faq-block" id={id}>
+  <Heading>{heading}</Heading>
+  <div class="faq-list">
+    {
+      faqs.map((faq, i) => (
+        <details class="faq-item" open={i === 0}>
+          <summary>
+            <SubHeading>{faq.q}</SubHeading>
+          </summary>
+          <div class="faq-answer">
+            <p>{faq.a}</p>
+          </div>
+        </details>
+      ))
+    }
+  </div>
+</section>
+
+<style>
+  .faq-block {
+    margin-top: var(--space-xl);
+  }
+
+  .faq-block > h2,
+  .faq-block > h3 {
+    margin-bottom: var(--space-s);
+  }
+
+  .faq-list {
+    max-width: 74ch;
+  }
+
+  /* The summary carries a heading for document outline; it must not inherit
+     the display size of a normal h3. */
+  .faq-item summary h3,
+  .faq-item summary h4 {
+    font-size: var(--step-0);
+    font-weight: 650;
+    letter-spacing: 0;
+    margin: 0;
+  }
+</style>

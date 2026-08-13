@@ -1,0 +1,351 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Gallery from '~/components/Gallery.astro';
+import Sections from '~/components/Sections.astro';
+import Faqs from '~/components/Faqs.astro';
+import QuoteForm from '~/components/QuoteForm.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import type { Product } from '~/data/types';
+import { relatedProducts } from '~/data/products';
+import { categoryBySlug, subcategoriesOf, categoryPath } from '~/data/categories';
+import { productImages } from '~/lib/images';
+import { whatsappHref, CONTACT, TEL_HREF } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+interface Props {
+  product: Product;
+}
+
+const { product } = Astro.props;
+const path = `/${product.slug}/`;
+const category = categoryBySlug(product.category);
+const sub = product.subcategory
+  ? subcategoriesOf(product.category).find((s) => s.slug === product.subcategory)
+  : undefined;
+
+const images = productImages(product.slug);
+const related = relatedProducts(product);
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  ...(category ? [{ name: category.name, path: categoryPath(category) }] : []),
+  ...(sub ? [{ name: sub.name, path: categoryPath(sub) }] : []),
+  { name: product.name, path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: product.seoTitle,
+    description: product.seoDescription,
+    primaryImage: images[0]?.src,
+    breadcrumbId: `${new URL(path, 'https://conesleeves.co.uk').href}#breadcrumb`,
+  }),
+  schema.product({
+    name: product.name,
+    description: product.seoDescription,
+    path,
+    images: images.slice(0, 4).map((i) => i.src),
+    category: category?.name ?? 'Food packaging',
+  }),
+  // FAQPage is only emitted because these exact questions and answers are
+  // rendered on the page below.
+  schema.faqPage(product.faqs, path),
+];
+
+const enquiryLabel = product.enquiryLabel ?? product.name.toLowerCase();
+
+// Ordering guidance is framed by range, so the strip is not identical
+// wording on all 170 product pages.
+const orderingByCategory: Record<string, { lead: string; artwork: string }> = {
+  'cone-sleeves': {
+    lead: 'Send us two or three of the cones you use, or the top diameter and slant height.',
+    artwork: 'We supply a die template cut to your cone before design work starts.',
+  },
+  'food-sleeves': {
+    lead: 'Measure the made-up item as it leaves your pass, at its widest point.',
+    artwork: 'We send a flat die line so artwork is built on the right shape.',
+  },
+  'food-trays': {
+    lead: 'Tell us the internal size you need and what the tray has to carry.',
+    artwork: 'Artwork sits on the rim and outer faces; the base is covered by food.',
+  },
+  'food-boxes': {
+    lead: 'Weigh a typical portion on your own scales and send us the figure.',
+    artwork: 'Simple, high-contrast artwork survives grease and handling best on these.',
+  },
+  'beverage-sleeves': {
+    lead: 'Send a cup, or the brand and size code printed on its base.',
+    artwork: 'Keep key elements clear of the glued seam, which moves between cups.',
+  },
+  'paper-cups': {
+    lead: 'Tell us the volume you pour and whether you need matching lids.',
+    artwork: 'Cup blanks are a curved fan, so we supply a template to design on.',
+  },
+  'printed-papers-bags': {
+    lead: 'Measure the item, then add enough on each side to fold and tuck.',
+    artwork: 'One or two colours reproduce most reliably on an absorbent stock.',
+  },
+};
+
+const ordering = orderingByCategory[product.category] ?? orderingByCategory['cone-sleeves'];
+---
+
+<BaseLayout
+  title={`${product.seoTitle} | Cone Sleeves UK`.length > 65
+    ? product.seoTitle
+    : `${product.seoTitle} | Cone Sleeves UK`}
+  description={product.seoDescription}
+  path={path}
+  image={images[0]?.src}
+  imageAlt={`${product.name} printed for a UK food business`}
+  ogType="product"
+  schema={graph}
+  whatsappContext={enquiryLabel}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <div class="wrap product-hero">
+    <div class="product-hero-media">
+      <Gallery slug={product.slug} productName={product.name} />
+    </div>
+
+    <div class="product-hero-body">
+      {category && <p class="eyebrow">{sub ? sub.name : category.name}</p>}
+      <h1>{product.h1}</h1>
+      {product.intro.map((p) => <p class="lede">{p}</p>)}
+
+      <div class="btn-row product-cta">
+        <a class="btn btn-primary" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href={whatsappHref(enquiryLabel)} rel="noopener">
+          WhatsApp us
+        </a>
+      </div>
+
+      <ul class="product-assurances">
+        <li>Cut to your own product, not a stock size</li>
+        <li>Board, print and finish confirmed in writing</li>
+        <li>Delivered across the UK on national carriers</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="wrap product-body">
+    <div class="product-main">
+      <Sections sections={product.sections} />
+
+      <section class="content-section ordering-strip">
+        <h2>Ordering, artwork and delivery</h2>
+        <div class="ordering-grid">
+          <div>
+            <h3>Getting a quote</h3>
+            <p>{ordering.lead} We reply with a written specification, the minimum order quantity and the lead time for your job.</p>
+          </div>
+          <div>
+            <h3>Artwork</h3>
+            <p>{ordering.artwork} Full file requirements are set out in our <a href="/artwork-guidelines/">artwork guidelines</a>.</p>
+          </div>
+          <div>
+            <h3>Turnaround</h3>
+            <p>
+              Lead times depend on the print method, run length and press schedule, so we
+              confirm yours on the quote rather than publishing a single figure.
+            </p>
+          </div>
+          <div>
+            <h3>Delivery in the UK</h3>
+            <p>
+              Orders are dispatched on national carriers to any UK address. See
+              <a href="/delivery-information/">delivery information</a> for how dates are given.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <Faqs faqs={product.faqs} heading={`${product.name}: common questions`} />
+    </div>
+
+    <aside class="product-aside">
+      <QuoteForm
+        productName={product.name}
+        source={`product:${product.slug}`}
+        heading="Quote for this product"
+        intro="We reply with a specification, minimum quantity and lead time."
+        id="quote"
+      />
+
+      <div class="aside-contact">
+        <h2>Prefer to talk it through?</h2>
+        <p>
+          Sizing questions are usually quicker on the phone, especially if you have the
+          product in front of you.
+        </p>
+        <p class="aside-links">
+          <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a>
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </p>
+      </div>
+    </aside>
+  </div>
+
+  {
+    related.length > 0 && (
+      <section class="section section-sunk">
+        <div class="wrap">
+          <h2>Related to {product.name.toLowerCase()}</h2>
+          <p class="muted related-intro">
+            Products people ordering this one usually look at as well.
+          </p>
+          <div class="grid-auto related-grid">
+            {related.map((r) => (
+              <ProductCard product={r} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .product-hero {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.05fr);
+    align-items: start;
+    padding-bottom: var(--space-l);
+  }
+
+  @media (max-width: 900px) {
+    .product-hero {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .product-hero-body h1 {
+    margin-top: 0.4rem;
+    margin-bottom: var(--space-s);
+  }
+
+  .product-hero-body .lede + .lede {
+    margin-top: 0.75rem;
+  }
+
+  .product-cta {
+    margin-top: var(--space-m);
+  }
+
+  .product-assurances {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-m);
+    display: grid;
+    gap: 0.45rem;
+    font-size: 0.95rem;
+    color: var(--c-text-soft);
+  }
+
+  .product-assurances li {
+    position: relative;
+    padding-left: 1.6rem;
+  }
+
+  .product-assurances li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.42em;
+    width: 0.7rem;
+    height: 0.4rem;
+    border-left: 2px solid var(--green-600);
+    border-bottom: 2px solid var(--green-600);
+    transform: rotate(-45deg);
+  }
+
+  .product-body {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: minmax(0, 1fr) 22rem;
+    align-items: start;
+    padding-top: var(--space-l);
+    border-top: 1px solid var(--c-border-soft);
+  }
+
+  @media (max-width: 1000px) {
+    .product-body {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .product-aside {
+    position: sticky;
+    top: 6.5rem;
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  @media (max-width: 1000px) {
+    .product-aside {
+      position: static;
+      order: -1;
+    }
+  }
+
+  .ordering-strip {
+    margin-top: var(--space-xl);
+    padding: var(--space-m);
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-l);
+  }
+
+  .ordering-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    margin-top: var(--space-s);
+  }
+
+  .ordering-grid h3 {
+    font-size: var(--step-0);
+    margin-bottom: 0.25rem;
+  }
+
+  .ordering-grid p {
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+    margin: 0;
+  }
+
+  .aside-contact {
+    padding: var(--space-m);
+    background: var(--green-050);
+    border-radius: var(--radius-l);
+  }
+
+  .aside-contact h2 {
+    font-size: var(--step-1);
+  }
+
+  .aside-contact p {
+    margin-top: 0.5rem;
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+  }
+
+  .aside-links {
+    display: grid;
+    gap: 0.25rem;
+    font-weight: 650;
+  }
+
+  .related-intro {
+    margin-top: 0.35rem;
+  }
+
+  .related-grid {
+    margin-top: var(--space-m);
+  }
+</style>

@@ -1,0 +1,98 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
+import { CONTACT, TEL_HREF } from '~/config/site';
+---
+
+<BaseLayout
+  title="Page not found | Cone Sleeves UK"
+  description="That page could not be found. Browse the packaging ranges or send us an enquiry."
+  path="/404/"
+  noindex
+>
+  <section class="notfound">
+    <div class="wrap-narrow">
+      <p class="eyebrow">Error 404</p>
+      <h1>That page is not here</h1>
+      <p class="lede">
+        The link may be out of date, or the page may have moved when this site replaced its
+        predecessor. Everything below still exists.
+      </p>
+
+      <h2>Product ranges</h2>
+      <ul class="nf-links">
+        {TOP_CATEGORIES.map((c) => <li><a href={categoryPath(c)}>{c.name}</a></li>)}
+      </ul>
+
+      <h2>Useful pages</h2>
+      <ul class="nf-links">
+        <li><a href="/products/">All products</a></li>
+        <li><a href="/design-your-cone-sleeve/">Design your cone sleeve</a></li>
+        <li><a href="/blog/">Buying guides</a></li>
+        <li><a href="/locations/">Areas we supply</a></li>
+        <li><a href="/faqs/">FAQs</a></li>
+        <li><a href="/contact/">Contact</a></li>
+      </ul>
+
+      <p class="nf-help">
+        If you were looking for something specific, tell us what it was — call
+        <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a> or email
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+      </p>
+
+      <p>
+        <a class="btn btn-primary" href="/">Back to the homepage</a>
+      </p>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .notfound {
+    padding-block: var(--space-2xl) var(--space-3xl);
+  }
+
+  .notfound h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .notfound h2 {
+    margin-top: var(--space-xl);
+    font-size: var(--step-1);
+  }
+
+  .nf-links {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-s);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nf-links a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--green-800);
+  }
+
+  .nf-links a:hover {
+    border-color: var(--green-500);
+    background: var(--green-050);
+  }
+
+  .nf-help {
+    margin-top: var(--space-xl);
+    color: var(--c-text-soft);
+  }
+
+  .notfound .btn {
+    margin-top: var(--space-m);
+  }
+</style>

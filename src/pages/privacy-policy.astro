@@ -1,0 +1,124 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT, BUSINESS_PENDING, ANALYTICS } from '~/config/site';
+
+const path = '/privacy-policy/';
+---
+
+<TextPage
+  title="Privacy Policy | Cone Sleeves UK"
+  description="How Cone Sleeves UK handles the personal information you send through enquiry forms, email, telephone and WhatsApp."
+  path={path}
+  h1="Privacy Policy"
+  standfirst="What happens to the information you send us, why we hold it, and how to ask us to delete it."
+  updated="2026-08-13"
+  crumbLabel="Privacy Policy"
+>
+  <h2>Who this policy covers</h2>
+  <p>
+    This policy applies to conesleeves.co.uk and to enquiries sent to us by form, email,
+    telephone or WhatsApp.
+  </p>
+  {
+    !BUSINESS_PENDING.legalName && (
+      <p class="pending">
+        <strong>Data controller details pending</strong>
+        The registered company name, company number and registered address of the data
+        controller have not been published because they have not yet been supplied for this
+        site. They must be added before launch — a privacy policy that does not identify
+        the controller is incomplete. Nothing has been invented in their place.
+      </p>
+    )
+  }
+
+  <h2>What we collect</h2>
+  <p>We collect only what you choose to send us. Through the enquiry forms that is:</p>
+  <ul>
+    <li>Your name.</li>
+    <li>Your email address.</li>
+    <li>Your telephone number, if you provide one.</li>
+    <li>Your business name, if you provide one.</li>
+    <li>The product, quantity and any message or specification you describe.</li>
+    <li>Any artwork file you attach.</li>
+  </ul>
+  <p>
+    Our web server also records the IP address a submission came from, for the short
+    period needed to apply a rate limit that keeps automated spam off the form.
+  </p>
+
+  <h2>Why we hold it</h2>
+  <p>
+    To answer your enquiry, produce a quotation, and — if you place an order — to fulfil
+    it. The lawful basis is our legitimate interest in responding to a business enquiry you
+    have initiated, and, once an order is placed, performance of a contract with you.
+  </p>
+  <p>
+    We do not use enquiry details for marketing unless you separately ask us to, and we do
+    not sell or share them with third parties for their own purposes.
+  </p>
+
+  <h2>How long we keep it</h2>
+  <p>
+    Enquiries that do not lead to an order are kept while there is a realistic prospect of
+    the conversation continuing, and are deleted after that. Records relating to an actual
+    order are kept for as long as we are required to retain business and tax records.
+    Artwork files are kept while your job is live and while a reorder from the same die is
+    plausible.
+  </p>
+
+  <h2>Who processes it</h2>
+  <p>
+    Your enquiry is delivered to us by an email service provider and is stored in our email
+    system. The website is hosted by a hosting provider that processes requests to it.
+    These providers act on our instructions.
+  </p>
+  <p class="pending">
+    <strong>Processor names pending</strong>
+    The specific hosting, email and any customer-management providers used for the live
+    site should be named here before launch, so this policy describes the actual
+    arrangement rather than a generic one.
+  </p>
+
+  <h2>Cookies and analytics</h2>
+  {
+    ANALYTICS.ga4 || ANALYTICS.gtm ? (
+      <p>
+        This site loads an analytics tag. See our <a href="/cookie-policy/">cookie policy</a>{' '}
+        for what it sets and how to control it.
+      </p>
+    ) : (
+      <p>
+        This site currently sets no cookies of its own and loads no analytics or advertising
+        scripts. If analytics is enabled later, our{' '}
+        <a href="/cookie-policy/">cookie policy</a> will describe exactly what it sets, and a
+        consent mechanism will be added first.
+      </p>
+    )
+  }
+
+  <h2>WhatsApp</h2>
+  <p>
+    The WhatsApp buttons on this site open WhatsApp with a message addressed to us. Once
+    you send it, the conversation is handled inside WhatsApp and is also subject to
+    WhatsApp's own privacy terms, which we do not control.
+  </p>
+
+  <h2>Your rights</h2>
+  <p>
+    Under UK data protection law you can ask us for a copy of the personal data we hold
+    about you, ask us to correct it, ask us to delete it, or object to our processing of
+    it. Write to <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> and we will respond
+    within one month.
+  </p>
+  <p>
+    If you are not satisfied with our response, you can complain to the Information
+    Commissioner's Office, the UK supervisory authority for data protection.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    If this policy changes we will update the date at the top of this page. Material
+    changes affecting how we handle existing enquiries will be notified directly to anyone
+    affected.
+  </p>
+</TextPage>

@@ -1,0 +1,238 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import QuoteForm from '~/components/QuoteForm.astro';
+import { CONTACT, TEL_HREF, whatsappHref, SITE, BUSINESS_PENDING } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/contact/';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Contact', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Contact Cone Sleeves UK',
+    description:
+      'Contact Cone Sleeves UK by phone, WhatsApp or email, or send an enquiry with your specification.',
+    type: 'ContactPage',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+];
+---
+
+<BaseLayout
+  title="Contact Cone Sleeves UK | Phone, Email & WhatsApp"
+  description="Contact Cone Sleeves UK by phone, WhatsApp or email, or send an enquiry with your packaging specification and artwork attached."
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="contact-head">
+    <div class="wrap">
+      <p class="eyebrow">Contact</p>
+      <h1>Talk to us about your packaging</h1>
+      <p class="lede">
+        Sizing questions are usually quicker on the phone, especially with the product in
+        front of you. Anything with artwork attached is better by email or through the form
+        below.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap contact-grid">
+    <div class="contact-methods">
+      <a class="contact-card" href={TEL_HREF}>
+        <span class="contact-kind">Telephone</span>
+        <strong>{CONTACT.phoneDisplay}</strong>
+        <span class="contact-note">Best for sizing and specification questions</span>
+      </a>
+
+      <a class="contact-card" href={whatsappHref()} rel="noopener">
+        <span class="contact-kind">WhatsApp</span>
+        <strong>{CONTACT.phoneDisplay}</strong>
+        <span class="contact-note">Send a photograph of your cone, cup or portion</span>
+      </a>
+
+      <a class="contact-card" href={`mailto:${CONTACT.email}`}>
+        <span class="contact-kind">Email</span>
+        <strong>{CONTACT.email}</strong>
+        <span class="contact-note">Best for artwork, quantities and written quotes</span>
+      </a>
+
+      <div class="contact-info">
+        <h2>What to send us</h2>
+        <ul>
+          <li>The cone, cup or container you use, or its measurements.</li>
+          <li>What goes in it, and whether it is served hot, cold or fried.</li>
+          <li>A realistic quantity — and your annual usage if you know it.</li>
+          <li>Any date the packaging has to be in your hands by.</li>
+        </ul>
+        <p>
+          With those four things we can usually come back with a workable specification
+          first time rather than after a chain of emails.
+        </p>
+      </div>
+
+      <div class="contact-info">
+        <h2>Samples</h2>
+        <p>
+          We post physical samples rather than meeting in person. What is available depends
+          on the print method quoted for your job, so ask at quote stage and we will tell
+          you what can be produced and what it costs.
+        </p>
+      </div>
+
+      {
+        !BUSINESS_PENDING.tradingAddress && (
+          <div class="contact-pending">
+            <strong>Address pending confirmation</strong>
+            <p>
+              No trading or registered address is published on this site because none has
+              been supplied for it. Rather than invent one, the field is left empty and
+              will populate from configuration once the real details are confirmed.
+            </p>
+          </div>
+        )
+      }
+      {
+        BUSINESS_PENDING.tradingAddress && (
+          <div class="contact-info">
+            <h2>Address</h2>
+            <p>{BUSINESS_PENDING.tradingAddress}</p>
+          </div>
+        )
+      }
+    </div>
+
+    <div class="contact-form">
+      <QuoteForm
+        source="contact-page"
+        variant="panel"
+        heading="Send an enquiry"
+        intro="Attach artwork if you have it. We reply with a written specification, minimum quantity and lead time."
+        id="enquiry"
+      />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .contact-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .contact-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .contact-head .lede {
+    max-width: 58ch;
+  }
+
+  .contact-grid {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.2fr);
+    align-items: start;
+    padding-bottom: var(--space-xl);
+  }
+
+  @media (max-width: 900px) {
+    .contact-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .contact-methods {
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .contact-card {
+    display: grid;
+    gap: 0.2rem;
+    padding: var(--space-m);
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-l);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--dur-fast), box-shadow var(--dur-fast);
+  }
+
+  .contact-card:hover {
+    border-color: var(--green-500);
+    box-shadow: var(--shadow-s);
+  }
+
+  .contact-kind {
+    font-size: var(--step--1);
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.07em;
+    color: var(--amber-700);
+  }
+
+  .contact-card strong {
+    font-size: var(--step-1);
+    color: var(--green-800);
+  }
+
+  .contact-note {
+    font-size: 0.9rem;
+    color: var(--c-text-muted);
+  }
+
+  .contact-info {
+    padding: var(--space-m);
+    background: var(--surface-sunk);
+    border-radius: var(--radius-l);
+  }
+
+  .contact-info h2 {
+    font-size: var(--step-1);
+    margin-bottom: 0.5rem;
+  }
+
+  .contact-info ul {
+    padding-left: 1.2rem;
+    display: grid;
+    gap: 0.3rem;
+    color: var(--c-text-soft);
+    font-size: 0.95rem;
+  }
+
+  .contact-info p {
+    margin-top: 0.6rem;
+    color: var(--c-text-soft);
+    font-size: 0.95rem;
+  }
+
+  .contact-pending {
+    padding: var(--space-m);
+    background: var(--surface-sunk);
+    border-left: 3px solid var(--amber-600);
+    border-radius: var(--radius-m);
+  }
+
+  .contact-pending strong {
+    display: block;
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--amber-700);
+    margin-bottom: 0.35rem;
+  }
+
+  .contact-pending p {
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+    margin: 0;
+  }
+</style>

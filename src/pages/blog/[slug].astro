@@ -1,0 +1,317 @@
+---
+import type { GetStaticPaths } from 'astro';
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Sections from '~/components/Sections.astro';
+import Faqs from '~/components/Faqs.astro';
+import { POSTS, postPath, relatedPosts, readingTime, wordCount } from '~/data/blog';
+import { primaryImage } from '~/lib/images';
+import { SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+export const getStaticPaths: GetStaticPaths = () =>
+  POSTS.map((post) => ({ params: { slug: post.slug }, props: { post } }));
+
+const { post } = Astro.props;
+const path = postPath(post.slug);
+const image = primaryImage(post.imageFrom);
+const related = relatedPosts(post);
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Guides', path: '/blog/' },
+  { name: post.title, path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: post.seoTitle,
+    description: post.seoDescription,
+    primaryImage: image?.src,
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  schema.blogPosting({
+    path,
+    headline: post.title,
+    description: post.seoDescription,
+    image: image?.src ?? '/og/cone-sleeves-uk-default.png',
+    published: post.published,
+    updated: post.updated,
+    author: post.author,
+    wordCount: wordCount(post),
+    section: post.topic,
+  }),
+  ...(post.faqs?.length ? [schema.faqPage(post.faqs, path)] : []),
+];
+
+const dateFmt = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+
+// A table of contents built from the section headings rather than maintained
+// separately, so it can never drift out of step with the article.
+const toc = post.sections.map((s) => ({
+  heading: s.heading,
+  id: s.heading
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, ''),
+}));
+---
+
+<BaseLayout
+  title={`${post.seoTitle} | Cone Sleeves UK`.length > 65
+    ? post.seoTitle
+    : `${post.seoTitle} | Cone Sleeves UK`}
+  description={post.seoDescription}
+  path={path}
+  image={image?.src}
+  imageAlt={post.imageAlt}
+  ogType="article"
+  publishedTime={post.published}
+  modifiedTime={post.updated ?? post.published}
+  schema={graph}
+  whatsappContext="a packaging question from your guides"
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <article class="article">
+    <header class="wrap-narrow article-head">
+      <span class="badge badge-amber">{post.topic}</span>
+      <h1>{post.title}</h1>
+      <p class="standfirst">{post.standfirst}</p>
+      <p class="article-meta">
+        <span>By {post.author}</span>
+        <span aria-hidden="true">·</span>
+        <time datetime={post.published}>{dateFmt.format(new Date(post.published))}</time>
+        {
+          post.updated && (
+            <>
+              <span aria-hidden="true">·</span>
+              <span>
+                Updated <time datetime={post.updated}>{dateFmt.format(new Date(post.updated))}</time>
+              </span>
+            </>
+          )
+        }
+        <span aria-hidden="true">·</span>
+        <span>{readingTime(post)} min read</span>
+      </p>
+    </header>
+
+    {
+      image && (
+        <figure class="wrap article-figure">
+          <Image
+            src={image}
+            alt={post.imageAlt}
+            widths={[640, 960, 1280]}
+            sizes="(min-width: 1100px) 1000px, 94vw"
+            format="webp"
+            quality={78}
+            loading="eager"
+            fetchpriority="high"
+            decoding="sync"
+          />
+        </figure>
+      )
+    }
+
+    <div class="wrap article-body-grid">
+      <nav class="article-toc" aria-label="On this page">
+        <h2>On this page</h2>
+        <ol>
+          {toc.map((t) => <li><a href={`#${t.id}`}>{t.heading}</a></li>)}
+          {post.faqs?.length ? <li><a href="#article-faqs">Questions</a></li> : null}
+        </ol>
+      </nav>
+
+      <div class="article-body" data-article-body>
+        <Sections sections={post.sections} />
+        {post.faqs?.length ? <Faqs faqs={post.faqs} heading="Questions" id="article-faqs" /> : null}
+      </div>
+    </div>
+
+    {
+      related.length > 0 && (
+        <section class="section-tight article-related">
+          <div class="wrap">
+            <h2>Related guides</h2>
+            <ul>
+              {related.map((r) => (
+                <li class="card">
+                  <a href={postPath(r.slug)}>
+                    <span class="badge badge-amber">{r.topic}</span>
+                    <h3>{r.title}</h3>
+                    <p>{r.standfirst}</p>
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+      )
+    }
+  </article>
+</BaseLayout>
+
+<script>
+  // The table of contents links to headings by slug, so the ids are applied
+  // here rather than duplicated into the content model.
+  const slugify = (s: string) =>
+    s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '');
+
+  document
+    .querySelectorAll<HTMLHeadingElement>('[data-article-body] .content-section > h2')
+    .forEach((h) => {
+      if (!h.id) h.id = slugify(h.textContent ?? '');
+    });
+</script>
+
+<style>
+  .article {
+    padding-bottom: var(--space-l);
+  }
+
+  .article-head {
+    padding-block: var(--space-s) var(--space-m);
+    display: grid;
+    gap: 0.6rem;
+    justify-items: start;
+  }
+
+  .article-head h1 {
+    font-size: var(--step-5);
+    max-width: 22ch;
+  }
+
+  .standfirst {
+    font-size: var(--step-1);
+    line-height: 1.55;
+    color: var(--c-text-soft);
+    max-width: 58ch;
+  }
+
+  .article-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .article-figure {
+    margin: 0 auto var(--space-l);
+  }
+
+  .article-figure :global(img) {
+    width: 100%;
+    aspect-ratio: var(--ratio-wide);
+    object-fit: cover;
+    border-radius: var(--radius-l);
+  }
+
+  .article-body-grid {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: 16rem minmax(0, 1fr);
+    align-items: start;
+  }
+
+  @media (max-width: 1000px) {
+    .article-body-grid {
+      grid-template-columns: minmax(0, 1fr);
+      gap: var(--space-l);
+    }
+  }
+
+  .article-toc {
+    position: sticky;
+    top: 6.5rem;
+    padding: var(--space-s);
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-m);
+  }
+
+  @media (max-width: 1000px) {
+    .article-toc {
+      position: static;
+    }
+  }
+
+  .article-toc h2 {
+    font-size: var(--step--1);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--c-text-muted);
+    margin-bottom: 0.6rem;
+  }
+
+  .article-toc ol {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+    counter-reset: toc;
+  }
+
+  .article-toc li {
+    counter-increment: toc;
+  }
+
+  .article-toc a {
+    font-size: 0.9rem;
+    color: var(--ink-700);
+    text-decoration: none;
+    line-height: 1.4;
+    display: block;
+  }
+
+  .article-toc a:hover {
+    color: var(--green-700);
+    text-decoration: underline;
+  }
+
+  .article-body {
+    max-width: 72ch;
+  }
+
+  .article-related ul {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-m);
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(17rem, 100%), 1fr));
+  }
+
+  .article-related a {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    padding: var(--space-m);
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .article-related h3 {
+    font-size: var(--step-1);
+  }
+
+  .article-related p {
+    font-size: 0.92rem;
+    color: var(--c-text-soft);
+    line-height: 1.55;
+  }
+
+  .article-related .badge {
+    justify-self: start;
+  }
+</style>

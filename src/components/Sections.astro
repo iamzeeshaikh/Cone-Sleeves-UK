@@ -1,0 +1,312 @@
+---
+import type { Section, InternalLink } from '~/data/types';
+
+interface Props {
+  sections: Section[];
+  /** Heading level for section titles, so page hierarchy stays logical. */
+  level?: 2 | 3;
+}
+
+const { sections, level = 2 } = Astro.props;
+const Heading = `h${level}` as 'h2' | 'h3';
+const SubHeading = `h${level + 1}` as 'h3' | 'h4';
+
+/**
+ * Renders a contextual link inside its sentence. The data model stores the
+ * sentence with a `{link}` placeholder so the anchor always sits inside real
+ * prose rather than being appended as a bare "read more".
+ */
+function splitSentence(link: InternalLink) {
+  const [before, after] = link.sentence.split('{link}');
+  return { before: before ?? '', after: after ?? '' };
+}
+---
+
+{
+  sections.map((section) => (
+    <section class={`content-section content-${section.kind}`}>
+      <Heading>{section.heading}</Heading>
+
+      {section.kind === 'prose' && (
+        <>
+          {section.body.map((p) => (
+            <p>{p}</p>
+          ))}
+        </>
+      )}
+
+      {section.kind === 'bullets' && (
+        <>
+          {section.intro && <p>{section.intro}</p>}
+          <ul class="marker-list">
+            {section.items.map((item) => (
+              <li>{item}</li>
+            ))}
+          </ul>
+          {section.outro && <p>{section.outro}</p>}
+        </>
+      )}
+
+      {section.kind === 'specs' && (
+        <>
+          {section.intro && <p>{section.intro}</p>}
+          <div class="table-scroll">
+            <table class="spec-table">
+              <tbody>
+                {section.rows.map(([label, value]) => (
+                  <tr>
+                    <th scope="row">{label}</th>
+                    <td>{value}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {section.note && <p class="spec-note">{section.note}</p>}
+        </>
+      )}
+
+      {section.kind === 'steps' && (
+        <>
+          {section.intro && <p>{section.intro}</p>}
+          <ol class="step-list">
+            {section.steps.map((step) => (
+              <li>
+                <SubHeading>{step.title}</SubHeading>
+                <p>{step.body}</p>
+              </li>
+            ))}
+          </ol>
+        </>
+      )}
+
+      {section.kind === 'uses' && (
+        <>
+          {section.intro && <p>{section.intro}</p>}
+          <div class="use-grid">
+            {section.items.map((item) => (
+              <div class="use-card">
+                <SubHeading>{item.title}</SubHeading>
+                <p>{item.body}</p>
+              </div>
+            ))}
+          </div>
+        </>
+      )}
+
+      {section.kind === 'compare' && (
+        <>
+          {section.intro && <p>{section.intro}</p>}
+          <div class="table-scroll">
+            <table class="spec-table compare-table">
+              <thead>
+                <tr>
+                  <th scope="col">&nbsp;</th>
+                  <th scope="col">{section.columns[0]}</th>
+                  <th scope="col">{section.columns[1]}</th>
+                </tr>
+              </thead>
+              <tbody>
+                {section.rows.map(([criterion, a, b]) => (
+                  <tr>
+                    <th scope="row">{criterion}</th>
+                    <td>{a}</td>
+                    <td>{b}</td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+          {section.outro && <p>{section.outro}</p>}
+        </>
+      )}
+
+      {section.kind === 'callout' && (
+        <div class={`callout${section.pending ? ' callout-pending' : ''}`}>
+          <p>{section.body}</p>
+          {section.pending && (
+            <p class="callout-tag">
+              Confirmed in writing per order rather than claimed here
+            </p>
+          )}
+        </div>
+      )}
+
+      {section.link && (
+        <p class="context-link">
+          {splitSentence(section.link).before}
+          <a href={section.link.href}>{section.link.anchor}</a>
+          {splitSentence(section.link).after}
+        </p>
+      )}
+    </section>
+  ))
+}
+
+<style>
+  .content-section + .content-section {
+    margin-top: var(--space-xl);
+  }
+
+  .content-section h2,
+  .content-section h3 {
+    margin-bottom: var(--space-xs);
+  }
+
+  .content-section p + p,
+  .content-section > ul,
+  .content-section > ol,
+  .content-section .table-scroll,
+  .content-section .use-grid,
+  .content-section .callout,
+  .content-section .context-link {
+    margin-top: var(--space-s);
+  }
+
+  .content-section p {
+    max-width: 68ch;
+    color: var(--c-text-soft);
+  }
+
+  .marker-list {
+    max-width: 70ch;
+    padding-left: 0;
+    list-style: none;
+    display: grid;
+    gap: 0.6rem;
+  }
+
+  .marker-list li {
+    position: relative;
+    padding-left: 1.6rem;
+    color: var(--c-text-soft);
+  }
+
+  .marker-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.62em;
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 2px;
+    background: var(--amber-500);
+  }
+
+  .step-list {
+    counter-reset: step;
+    list-style: none;
+    padding: 0;
+    max-width: 70ch;
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .step-list > li {
+    counter-increment: step;
+    position: relative;
+    padding-left: 3rem;
+  }
+
+  .step-list > li::before {
+    content: counter(step);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2rem;
+    height: 2rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--green-050);
+    color: var(--green-800);
+    font-weight: 700;
+    font-size: 0.9rem;
+  }
+
+  .step-list h3,
+  .step-list h4 {
+    font-size: var(--step-0);
+    margin-bottom: 0.2rem;
+  }
+
+  .step-list p {
+    margin: 0;
+  }
+
+  .use-grid {
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fit, minmax(min(16rem, 100%), 1fr));
+  }
+
+  .use-card {
+    padding: var(--space-s);
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-left: 3px solid var(--green-500);
+    border-radius: var(--radius-m);
+  }
+
+  .use-card h3,
+  .use-card h4 {
+    font-size: var(--step-0);
+    margin-bottom: 0.3rem;
+  }
+
+  .use-card p {
+    margin: 0;
+    font-size: 0.95rem;
+  }
+
+  .spec-note {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .compare-table th[scope='col'] {
+    background: var(--green-050);
+    color: var(--green-900);
+    width: auto;
+  }
+
+  .compare-table th[scope='row'] {
+    width: 26%;
+  }
+
+  .callout {
+    padding: var(--space-s) var(--space-m);
+    background: var(--amber-050);
+    border: 1px solid var(--amber-200);
+    border-radius: var(--radius-m);
+    max-width: 72ch;
+  }
+
+  .callout p {
+    margin: 0;
+    color: var(--ink-700);
+  }
+
+  .callout-pending {
+    background: var(--surface-sunk);
+    border-color: var(--c-border);
+    border-left: 3px solid var(--amber-600);
+  }
+
+  .callout-tag {
+    margin-top: 0.5rem !important;
+    font-size: var(--step--1);
+    font-weight: 650;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: var(--amber-700);
+  }
+
+  .context-link {
+    color: var(--c-text-soft);
+  }
+
+  .context-link a {
+    font-weight: 600;
+  }
+</style>

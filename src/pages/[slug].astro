@@ -1,0 +1,36 @@
+---
+import type { GetStaticPaths } from 'astro';
+import ProductPage from '~/layouts/ProductPage.astro';
+import CategoryPage from '~/layouts/CategoryPage.astro';
+import LocationPage from '~/layouts/LocationPage.astro';
+import { PRODUCTS } from '~/data/products';
+import { TOP_CATEGORIES } from '~/data/categories';
+import { LOCATIONS } from '~/data/locations';
+
+/**
+ * Root-level single-segment routes. Products, top-level categories and
+ * location pages all live at `/<slug>/`, so one route generates them and
+ * dispatches to the right template. Static routes such as /about/ take
+ * precedence over this file automatically.
+ */
+export const getStaticPaths: GetStaticPaths = () => [
+  ...TOP_CATEGORIES.map((category) => ({
+    params: { slug: category.slug },
+    props: { kind: 'category' as const, category },
+  })),
+  ...PRODUCTS.map((product) => ({
+    params: { slug: product.slug },
+    props: { kind: 'product' as const, product },
+  })),
+  ...LOCATIONS.map((location) => ({
+    params: { slug: location.slug },
+    props: { kind: 'location' as const, location },
+  })),
+];
+
+const props = Astro.props;
+---
+
+{props.kind === 'product' && <ProductPage product={props.product} />}
+{props.kind === 'category' && <CategoryPage category={props.category} />}
+{props.kind === 'location' && <LocationPage location={props.location} />}

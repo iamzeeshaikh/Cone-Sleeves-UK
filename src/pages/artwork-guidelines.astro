@@ -1,0 +1,152 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT } from '~/config/site';
+
+const path = '/artwork-guidelines/';
+---
+
+<TextPage
+  title="Artwork Guidelines | Cone Sleeves UK"
+  description="File formats, bleed, colour and die line requirements for supplying artwork for printed cone sleeves and food packaging."
+  path={path}
+  h1="Artwork Guidelines"
+  standfirst="What to send us, how to set it up, and the handful of things that cause almost every artwork problem."
+  updated="2026-08-13"
+  crumbLabel="Artwork Guidelines"
+>
+  <h2>Ask for the die line first</h2>
+  <p>
+    This is the single most useful thing on this page. Every product we print has a flat
+    shape that is not a rectangle, and a cone sleeve's flat shape is a curved fan.
+  </p>
+  <p>
+    We supply an editable vector template showing the cut line, any folds, the overlap area
+    and the safe margin. Ask for it at enquiry stage and give it to whoever designs your
+    artwork before they start. Artwork laid out on a rectangle and adjusted afterwards is
+    where most problems begin.
+  </p>
+
+  <h2>File formats</h2>
+  <ul>
+    <li>
+      <strong>Preferred:</strong> vector PDF, or the native Illustrator file, with the die
+      line on its own layer.
+    </li>
+    <li>
+      <strong>Accepted:</strong> EPS, SVG, or high-resolution PSD and TIFF where the design
+      is genuinely photographic.
+    </li>
+    <li>
+      <strong>Please avoid:</strong> Word documents, PowerPoint, screenshots, and images
+      pulled from a website or a social media post.
+    </li>
+  </ul>
+  <p>
+    Send the working file rather than a flattened export where you can. Small adjustments
+    then take minutes instead of being impossible.
+  </p>
+
+  <h2>Resolution</h2>
+  <p>
+    Any raster element should be at least 300 dpi at final printed size. An image that
+    looks sharp on a screen is often around 72 dpi, which is a quarter of what print needs
+    and cannot be recovered by enlarging it.
+  </p>
+
+  <h2>Bleed and safe area</h2>
+  <ul>
+    <li>
+      <strong>Bleed:</strong> extend any background colour or image past the cut line on
+      every edge. Cutting has a small tolerance, and artwork stopping exactly at the line
+      produces a white sliver on some units.
+    </li>
+    <li>
+      <strong>Safe area:</strong> keep anything that matters — logos, type, barcodes — inside
+      the safe margin shown on the template.
+    </li>
+    <li>
+      <strong>Overlap:</strong> the glued or tucked area is hidden on every assembled unit.
+      Nothing important should sit there.
+    </li>
+  </ul>
+
+  <h2>Colour</h2>
+  <ul>
+    <li>
+      Supply process artwork in CMYK. Files supplied in RGB have to be converted, and the
+      conversion shifts colours.
+    </li>
+    <li>
+      Name any critical colour as a Pantone reference rather than a CMYK build or a hex
+      code. A named spot colour holds far more consistently across a run.
+    </li>
+    <li>
+      Build large solid blacks as a rich black from more than one ink. A single-ink black
+      laid thinly across a big area reads warm and patchy.
+    </li>
+    <li>
+      Expect a shift on kraft and uncoated stocks. Inks are transparent, so a warm brown
+      base pulls everything towards it and pale tints can disappear.
+    </li>
+  </ul>
+
+  <h2>Type and fine detail</h2>
+  <ul>
+    <li>Convert fonts to outlines, or supply the font files with the artwork.</li>
+    <li>
+      Avoid very small reversed-out type. Ink spreads slightly into board, which closes up
+      fine gaps.
+    </li>
+    <li>
+      On a cone sleeve, type that should read level once wrapped has to be set on the die's
+      arc, not on a straight baseline.
+    </li>
+    <li>
+      Keep barcodes on a flat panel with clear space around them. A barcode across a crease
+      or on a curved area scans unreliably.
+    </li>
+  </ul>
+
+  <h2>Leaving room for labels</h2>
+  <p>
+    If a sticker is applied after printing — an allergen label, a weight, a date code, a
+    batch number — reserve a clear area of the right size in the artwork. Deciding this
+    afterwards is how a label ends up across a logo.
+  </p>
+  <p>
+    Panels that are written on by hand also need to be left unlaminated, because pen does
+    not take on a laminated surface.
+  </p>
+
+  <h2>What you are confirming</h2>
+  <p>
+    You are responsible for the content of the artwork you supply: that you hold the rights
+    to use it, and that any wording on it is accurate. That includes food labelling,
+    ingredient statements and any environmental or recycling claim printed on the pack.
+    Packaging can carry whatever you specify; the specification is yours to stand behind.
+  </p>
+
+  <h2>The proof</h2>
+  <p>
+    We issue a digital proof showing your artwork on the die line. It confirms position,
+    content and spelling — not colour, which a screen cannot represent accurately.
+  </p>
+  <p>
+    Before approving, print the flat at 100 per cent on any desktop printer, cut around the
+    die line and wrap it round your actual product. Five minutes there catches more than
+    any amount of on-screen checking, and every problem found at that stage is free to fix.
+  </p>
+
+  <h2>No artwork yet?</h2>
+  <p>
+    A logo is a perfectly good starting point. A single mark repeated around a plain board
+    is one of the cheapest and most effective specifications available, and it needs no
+    illustration work. Send what you have and we will tell you what will and will not hold
+    at print size.
+  </p>
+  <p>
+    Questions about a specific file are quickest by email — send it to
+    <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> and we will look at it before you
+    commit to anything.
+  </p>
+</TextPage>

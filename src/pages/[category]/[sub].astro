@@ -1,0 +1,16 @@
+---
+import type { GetStaticPaths } from 'astro';
+import CategoryPage from '~/layouts/CategoryPage.astro';
+import { CATEGORIES } from '~/data/categories';
+
+/** Nested subcategory routes, e.g. /paper-cups/sizes/. */
+export const getStaticPaths: GetStaticPaths = () =>
+  CATEGORIES.filter((c) => c.parent).map((category) => ({
+    params: { category: category.parent!, sub: category.slug },
+    props: { category },
+  }));
+
+const { category } = Astro.props;
+---
+
+<CategoryPage category={category} />

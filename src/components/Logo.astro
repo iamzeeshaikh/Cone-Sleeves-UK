@@ -1,0 +1,75 @@
+---
+/**
+ * Brand mark. Inline SVG so it costs no request and stays sharp at any size.
+ * The cone glyph and the green/amber pairing carry over the existing brand
+ * identity; the wordmark is redrawn for the UK business.
+ */
+interface Props {
+  /** 'full' = mark + wordmark, 'mark' = glyph only (used by the mobile bar). */
+  variant?: 'full' | 'mark';
+  /** Inverts the wordmark for use on the dark green footer. */
+  light?: boolean;
+  class?: string;
+}
+
+const { variant = 'full', light = false, class: className = '' } = Astro.props;
+
+const wordColour = light ? '#ffffff' : '#1f4415';
+const ukColour = light ? '#f2a93b' : '#a86b06';
+---
+
+{
+  variant === 'mark' ? (
+    <svg
+      class={className}
+      width="40"
+      height="40"
+      viewBox="0 0 40 40"
+      role="img"
+      aria-label="Cone Sleeves UK"
+      fill="none"
+    >
+      <rect width="40" height="40" rx="11" fill="#2b5a1e" />
+      <path d="M20 31.5 13.2 14.8h13.6L20 31.5Z" fill="#f2a93b" />
+      <path d="M13.9 16.5h12.2l-1.1 2.7H15l-1.1-2.7Z" fill="#fbe0ac" />
+      <circle cx="20" cy="11.6" r="3.6" fill="#fbe0ac" />
+    </svg>
+  ) : (
+    <svg
+      class={className}
+      width="212"
+      height="40"
+      viewBox="0 0 212 40"
+      role="img"
+      aria-label="Cone Sleeves UK"
+      fill="none"
+    >
+      <rect width="40" height="40" rx="11" fill="#2b5a1e" />
+      <path d="M20 31.5 13.2 14.8h13.6L20 31.5Z" fill="#f2a93b" />
+      <path d="M13.9 16.5h12.2l-1.1 2.7H15l-1.1-2.7Z" fill="#fbe0ac" />
+      <circle cx="20" cy="11.6" r="3.6" fill="#fbe0ac" />
+      <text
+        x="52"
+        y="19.5"
+        fill={wordColour}
+        font-family="Inter, system-ui, sans-serif"
+        font-size="15.5"
+        font-weight="800"
+        letter-spacing="-0.45"
+      >
+        Cone Sleeves
+      </text>
+      <text
+        x="52"
+        y="33"
+        fill={ukColour}
+        font-family="Inter, system-ui, sans-serif"
+        font-size="9.5"
+        font-weight="700"
+        letter-spacing="2.6"
+      >
+        UNITED KINGDOM
+      </text>
+    </svg>
+  )
+}

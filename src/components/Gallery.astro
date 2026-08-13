@@ -1,0 +1,149 @@
+---
+import { Image } from 'astro:assets';
+import { productImages, galleryAlt } from '~/lib/images';
+
+interface Props {
+  slug: string;
+  productName: string;
+}
+
+const { slug, productName } = Astro.props;
+const images = productImages(slug).slice(0, 6);
+const [hero, ...rest] = images;
+---
+
+{
+  hero && (
+    <div class="gallery" data-gallery>
+      <figure class="gallery-main">
+        <Image
+          id="gallery-main-image"
+          src={hero}
+          alt={galleryAlt(productName, hero, 0)}
+          widths={[420, 640, 900]}
+          sizes="(min-width: 1000px) 520px, 92vw"
+          format="webp"
+          quality={78}
+          loading="eager"
+          fetchpriority="high"
+          decoding="sync"
+          data-main
+        />
+      </figure>
+
+      {rest.length > 0 && (
+        <ul class="gallery-thumbs">
+          {images.map((img, i) => (
+            <li>
+              <button
+                type="button"
+                class="thumb"
+                aria-label={`Show image ${i + 1} of ${images.length}`}
+                aria-pressed={i === 0 ? 'true' : 'false'}
+                data-thumb
+                data-full={img.src}
+                data-alt={galleryAlt(productName, img, i)}
+                data-width={img.width}
+                data-height={img.height}
+              >
+                <Image
+                  src={img}
+                  alt=""
+                  widths={[110, 220]}
+                  sizes="100px"
+                  format="webp"
+                  quality={65}
+                  loading="lazy"
+                  decoding="async"
+                />
+              </button>
+            </li>
+          ))}
+        </ul>
+      )}
+    </div>
+  )
+}
+
+<style>
+  .gallery {
+    display: grid;
+    gap: var(--space-xs);
+  }
+
+  .gallery-main {
+    margin: 0;
+    aspect-ratio: var(--ratio-product);
+    border-radius: var(--radius-l);
+    overflow: hidden;
+    background: var(--surface-sunk);
+    border: 1px solid var(--c-border-soft);
+  }
+
+  .gallery-main :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .gallery-thumbs {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+    gap: var(--space-2xs);
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .thumb {
+    display: block;
+    width: 100%;
+    padding: 0;
+    aspect-ratio: 1;
+    border: 2px solid transparent;
+    border-radius: var(--radius-m);
+    overflow: hidden;
+    background: var(--surface-sunk);
+    transition: border-color var(--dur-fast) var(--ease-out);
+  }
+
+  .thumb :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .thumb[aria-pressed='true'] {
+    border-color: var(--green-600);
+  }
+
+  .thumb:hover {
+    border-color: var(--green-100);
+  }
+</style>
+
+<script>
+  // Swaps the main image on thumbnail activation. The full-size sources are
+  // already generated at build time, so this is an attribute change rather
+  // than a fetch of anything new.
+  document.querySelectorAll<HTMLElement>('[data-gallery]').forEach((gallery) => {
+    const main = gallery.querySelector<HTMLImageElement>('[data-main]');
+    const thumbs = gallery.querySelectorAll<HTMLButtonElement>('[data-thumb]');
+    if (!main) return;
+
+    thumbs.forEach((thumb) => {
+      thumb.addEventListener('click', () => {
+        const src = thumb.dataset.full;
+        if (!src) return;
+        main.src = src;
+        // The generated srcset belongs to the original image, so it has to go
+        // or the browser will keep serving the previous picture.
+        main.removeAttribute('srcset');
+        main.alt = thumb.dataset.alt ?? main.alt;
+        if (thumb.dataset.width) main.width = Number(thumb.dataset.width);
+        if (thumb.dataset.height) main.height = Number(thumb.dataset.height);
+        thumbs.forEach((t) => t.setAttribute('aria-pressed', String(t === thumb)));
+      });
+    });
+  });
+</script>

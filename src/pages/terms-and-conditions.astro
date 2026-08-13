@@ -1,0 +1,141 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT, BUSINESS_PENDING } from '~/config/site';
+
+const path = '/terms-and-conditions/';
+---
+
+<TextPage
+  title="Terms & Conditions | Cone Sleeves UK"
+  description="The terms on which Cone Sleeves UK quotes for and supplies custom printed packaging to business customers in the UK."
+  path={path}
+  h1="Terms and Conditions"
+  standfirst="The basis on which we quote, produce and supply custom printed packaging."
+  updated="2026-08-13"
+  crumbLabel="Terms & Conditions"
+>
+  {
+    !BUSINESS_PENDING.legalName && (
+      <p class="pending">
+        <strong>Legal entity details pending</strong>
+        These terms are written for a business-to-business supplier of bespoke printed
+        goods, but they cannot be relied on as a complete contract until the supplying
+        legal entity is identified. The registered company name, company number, registered
+        address and VAT number have not been supplied for this site and have not been
+        invented. They must be added, and the whole document reviewed by whoever advises
+        the business, before launch.
+      </p>
+    )
+  }
+
+  <h2>1. These terms</h2>
+  <p>
+    These terms apply to quotations issued by us and to orders accepted by us for custom
+    printed packaging. They are written on the basis that our customers are businesses
+    rather than consumers, because the goods are made to order to a customer's own
+    specification.
+  </p>
+
+  <h2>2. Quotations</h2>
+  <p>
+    A quotation sets out the specification, the quantity, the price and the lead time for
+    that specification. It is an invitation to order rather than a binding offer, and it is
+    valid for the period stated on it. Changing any part of the specification — board,
+    size, quantity, print method, finish — changes the price, and needs a fresh quotation.
+  </p>
+
+  <h2>3. Orders</h2>
+  <p>
+    An order is accepted when we confirm it in writing. Because the goods are made to your
+    specification, once production has begun an order cannot generally be cancelled or
+    altered without cost.
+  </p>
+
+  <h2>4. Artwork and proofs</h2>
+  <p>
+    You are responsible for the content of the artwork you supply, including that you hold
+    the rights to use it and that any wording on it is accurate and lawful — food
+    labelling, ingredient and environmental claims included.
+  </p>
+  <p>
+    We issue a digital proof showing the layout on the die line. Approving that proof
+    confirms the position, the content and the spelling. Errors present in an approved
+    proof and reproduced in the finished goods are not a production fault.
+  </p>
+  <p>
+    A digital proof shows layout rather than exact colour. Screens and printed board cannot
+    match, and colour on kraft and uncoated stocks shifts further. Where colour is critical,
+    ask about a printed sample before approving.
+  </p>
+
+  <h2>5. Tooling</h2>
+  <p>
+    A new size requires a physical cutting die. Where a tooling charge applies it is stated
+    on the quotation. Ownership of the tool, how long it is retained and whether it is
+    available for reorders is set out there rather than assumed.
+  </p>
+
+  <h2>6. Quantity tolerance</h2>
+  <p>
+    Print and die-cutting processes do not deliver an exact count. A tolerance either side
+    of the ordered quantity is normal in this industry, and the tolerance that applies to
+    your job is stated on the quotation.
+  </p>
+  <p class="pending">
+    <strong>Tolerance figure pending</strong>
+    The percentage tolerance the business works to has not been supplied, so no figure is
+    published here. It must be confirmed and stated before these terms are relied on.
+  </p>
+
+  <h2>7. Delivery</h2>
+  <p>
+    Goods are dispatched on national carriers. Delivery dates given are estimates provided
+    by the carrier rather than guarantees, and we do not offer timed or same-day delivery.
+    Risk in the goods passes on delivery.
+  </p>
+  <p>
+    Please check goods on arrival. Shortages or damage in transit should be reported
+    promptly so a claim can be made with the carrier while it is still possible.
+  </p>
+
+  <h2>8. Faulty or incorrect goods</h2>
+  <p>
+    If delivered goods do not match the approved proof or the agreed specification, tell us
+    as soon as you notice, with photographs and the batch details. See our
+    <a href="/returns-and-refunds/">returns and refunds page</a> for how that is handled.
+  </p>
+
+  <h2>9. Food safety and compliance</h2>
+  <p>
+    We confirm the board grade, lining, ink system and finish supplied. You remain
+    responsible for satisfying yourself that the specification is appropriate for your food,
+    your process and your own food safety management system, and for any claims printed on
+    the packaging.
+  </p>
+
+  <h2>10. Payment</h2>
+  <p class="pending">
+    <strong>Payment terms pending</strong>
+    Deposit requirements, credit terms and accepted payment methods have not been supplied
+    and are therefore not stated. They must be confirmed and set out here before launch.
+  </p>
+
+  <h2>11. Liability</h2>
+  <p>
+    Nothing in these terms excludes liability that cannot lawfully be excluded. Subject to
+    that, our liability in respect of an order is limited to the value of that order, and we
+    are not liable for indirect or consequential loss.
+  </p>
+
+  <h2>12. Governing law</h2>
+  <p>
+    These terms are governed by the law of England and Wales, and the courts of England and
+    Wales have exclusive jurisdiction.
+  </p>
+
+  <h2>Questions</h2>
+  <p>
+    Anything here you want clarified before ordering is a fair question to ask. Write to
+    <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+  </p>
+</TextPage>

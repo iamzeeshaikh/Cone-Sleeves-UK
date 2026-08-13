@@ -1,0 +1,232 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import QuoteForm from '~/components/QuoteForm.astro';
+import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
+import { CONTACT, TEL_HREF, SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/request-a-quote/';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Request a quote', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Request a quote',
+    description:
+      'Send us your packaging requirement and we reply with a written specification, minimum quantity and lead time.',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+];
+---
+
+<BaseLayout
+  title="Request a Quote | Cone Sleeves UK Packaging"
+  description="Send your packaging requirement and we reply with a written specification, a minimum quantity and a lead time for your job."
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="quote-head">
+    <div class="wrap">
+      <p class="eyebrow">Enquiry</p>
+      <h1>Request a quote</h1>
+      <p class="lede">
+        Tell us what you need. We come back with the board, lining, print method and
+        finish, along with the minimum order quantity and the lead time for your job — in
+        writing, so you can compare it properly against anything else you have been sent.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap quote-page-grid">
+    <div>
+      <QuoteForm
+        source="request-a-quote"
+        variant="panel"
+        heading="Your requirement"
+        intro="Four details get us most of the way: what it holds, how big, how many and by when."
+        id="quote"
+      />
+      <p class="noscript-note" id="error-note" hidden data-error-note>
+        Your enquiry was not sent. Please check the form and try again, or email
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+      </p>
+    </div>
+
+    <aside class="quote-side">
+      <div class="side-block">
+        <h2>What to include</h2>
+        <ol>
+          <li>
+            <strong>What it holds</strong>
+            <span>The product and whether it is served hot, cold or straight from a fryer.</span>
+          </li>
+          <li>
+            <strong>How big</strong>
+            <span>
+              Measurements, or tell us you will post a sample — that is often quicker in the
+              end.
+            </span>
+          </li>
+          <li>
+            <strong>How many</strong>
+            <span>A realistic first order, and your annual usage if you know it.</span>
+          </li>
+          <li>
+            <strong>By when</strong>
+            <span>Any fixed date the packaging has to be in your hands for.</span>
+          </li>
+        </ol>
+      </div>
+
+      <div class="side-block">
+        <h2>Not sure which product?</h2>
+        <p>Start from the range that comes closest and we will steer you from there.</p>
+        <ul class="side-links">
+          {TOP_CATEGORIES.map((c) => <li><a href={categoryPath(c)}>{c.name}</a></li>)}
+        </ul>
+      </div>
+
+      <div class="side-block side-contact">
+        <h2>Rather talk?</h2>
+        <p>
+          <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a>
+        </p>
+        <p>
+          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+        </p>
+      </div>
+    </aside>
+  </div>
+</BaseLayout>
+
+<script>
+  // The no-JavaScript fallback redirects failures here with ?error=1.
+  if (new URLSearchParams(location.search).get('error')) {
+    const note = document.querySelector<HTMLElement>('[data-error-note]');
+    if (note) {
+      note.hidden = false;
+      note.scrollIntoView({ block: 'center' });
+    }
+  }
+</script>
+
+<style>
+  .quote-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .quote-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+  }
+
+  .quote-head .lede {
+    max-width: 62ch;
+  }
+
+  .quote-page-grid {
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr);
+    align-items: start;
+    padding-bottom: var(--space-xl);
+  }
+
+  @media (max-width: 900px) {
+    .quote-page-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .quote-side {
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .side-block {
+    padding: var(--space-m);
+    background: var(--surface-sunk);
+    border-radius: var(--radius-l);
+  }
+
+  .side-block h2 {
+    font-size: var(--step-1);
+    margin-bottom: var(--space-s);
+  }
+
+  .side-block ol {
+    list-style: none;
+    padding: 0;
+    counter-reset: q;
+    display: grid;
+    gap: var(--space-s);
+  }
+
+  .side-block ol li {
+    counter-increment: q;
+    display: grid;
+    gap: 0.15rem;
+    padding-left: 2rem;
+    position: relative;
+  }
+
+  .side-block ol li::before {
+    content: counter(q);
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 1.4rem;
+    height: 1.4rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--green-700);
+    color: #fff;
+    font-size: 0.75rem;
+    font-weight: 700;
+  }
+
+  .side-block ol span {
+    font-size: 0.9rem;
+    color: var(--c-text-soft);
+    line-height: 1.5;
+  }
+
+  .side-links {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 0.35rem;
+    font-weight: 600;
+  }
+
+  .side-block p {
+    color: var(--c-text-soft);
+    font-size: 0.95rem;
+  }
+
+  .side-contact p {
+    font-weight: 650;
+    font-size: var(--step-0);
+  }
+
+  .side-contact p + p {
+    margin-top: 0.3rem;
+  }
+
+  .noscript-note {
+    margin-top: var(--space-s);
+    padding: 0.85rem 1rem;
+    background: var(--danger-050);
+    color: var(--danger-700);
+    border-radius: var(--radius-m);
+    font-weight: 600;
+  }
+</style>

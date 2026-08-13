@@ -1,0 +1,28 @@
+# dependencies
+node_modules/
+
+# build output
+dist/
+.vercel/
+.astro/
+
+# environment — never commit real credentials
+.env
+.env.*
+!.env.example
+
+# migration source material (reference only, not part of the deployable site)
+_source/
+src-images/
+*.zip
+*.sql
+*.xml
+wc-product-export-*.csv
+
+# macOS
+.DS_Store
+._*
+
+# logs
+npm-debug.log*
+*.log

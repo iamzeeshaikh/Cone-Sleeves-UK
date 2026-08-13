@@ -1,0 +1,97 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import { CONTACT, TEL_HREF } from '~/config/site';
+
+// Deliberately excluded from the sitemap and marked noindex: a form result
+// page has no independent search intent and should never rank.
+const path = '/thank-you/';
+---
+
+<BaseLayout
+  title="Enquiry received | Cone Sleeves UK"
+  description="Your enquiry has been received. We will reply by email."
+  path={path}
+  noindex
+>
+  <section class="thanks">
+    <div class="wrap-narrow">
+      <div class="thanks-mark" aria-hidden="true">
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none">
+          <path
+            d="m5 12.5 4.5 4.5L19 7.5"
+            stroke="currentColor"
+            stroke-width="2.5"
+            stroke-linecap="round"
+            stroke-linejoin="round"></path>
+        </svg>
+      </div>
+      <h1>Your enquiry is with us</h1>
+      <p class="lede">
+        We have received it and will reply by email. If you attached artwork, that has come
+        through with it.
+      </p>
+
+      <h2>What happens next</h2>
+      <ol class="next-steps">
+        <li>We read the requirement and come back with any sizing questions.</li>
+        <li>You get a written specification with the board, print, finish and quantity.</li>
+        <li>Once that is agreed we send a die template for artwork.</li>
+      </ol>
+
+      <p>
+        If it is urgent, call <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a> or email
+        <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> and mention that you have
+        already sent an enquiry.
+      </p>
+
+      <div class="btn-row">
+        <a class="btn btn-primary" href="/">Back to the homepage</a>
+        <a class="btn btn-outline" href="/blog/">Read the buying guides</a>
+      </div>
+    </div>
+  </section>
+</BaseLayout>
+
+<style>
+  .thanks {
+    padding-block: var(--space-2xl) var(--space-3xl);
+    text-align: left;
+  }
+
+  .thanks-mark {
+    display: grid;
+    place-items: center;
+    width: 66px;
+    height: 66px;
+    border-radius: 50%;
+    background: var(--green-050);
+    color: var(--green-700);
+    margin-bottom: var(--space-m);
+  }
+
+  .thanks h1 {
+    margin-bottom: var(--space-s);
+  }
+
+  .thanks h2 {
+    margin-top: var(--space-xl);
+    font-size: var(--step-2);
+  }
+
+  .next-steps {
+    margin-top: var(--space-s);
+    padding-left: 1.3rem;
+    display: grid;
+    gap: 0.5rem;
+    color: var(--c-text-soft);
+  }
+
+  .thanks > div > p:last-of-type {
+    margin-top: var(--space-m);
+    color: var(--c-text-soft);
+  }
+
+  .btn-row {
+    margin-top: var(--space-l);
+  }
+</style>

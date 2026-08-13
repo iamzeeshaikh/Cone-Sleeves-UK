@@ -1,0 +1,130 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  path: string;
+  h1: string;
+  standfirst?: string;
+  /** ISO date this policy or page was last reviewed. */
+  updated?: string;
+  crumbLabel: string;
+  pageType?: 'WebPage' | 'AboutPage' | 'ContactPage';
+  noindex?: boolean;
+  extraSchema?: unknown[];
+}
+
+const {
+  title,
+  description,
+  path,
+  h1,
+  standfirst,
+  updated,
+  crumbLabel,
+  pageType = 'WebPage',
+  noindex = false,
+  extraSchema = [],
+} = Astro.props;
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: crumbLabel, path },
+];
+
+const graph = noindex
+  ? []
+  : [
+      schema.breadcrumbs(path, crumbs),
+      schema.webPage({
+        path,
+        name: title,
+        description,
+        type: pageType,
+        breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+      }),
+      ...extraSchema,
+    ];
+
+const dateFmt = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout title={title} description={description} path={path} noindex={noindex} schema={graph}>
+  {!noindex && <Breadcrumbs crumbs={crumbs} />}
+
+  <article class="text-page">
+    <header class="wrap-narrow text-head">
+      <h1>{h1}</h1>
+      {standfirst && <p class="lede">{standfirst}</p>}
+      {
+        updated && (
+          <p class="updated">
+            Last reviewed <time datetime={updated}>{dateFmt.format(new Date(updated))}</time>
+          </p>
+        )
+      }
+    </header>
+
+    <div class="wrap-narrow prose text-body">
+      <slot />
+    </div>
+  </article>
+</BaseLayout>
+
+<style>
+  .text-page {
+    padding-block: var(--space-s) var(--space-xl);
+  }
+
+  .text-head {
+    margin-bottom: var(--space-l);
+  }
+
+  .text-head h1 {
+    max-width: 22ch;
+  }
+
+  .text-head .lede {
+    margin-top: var(--space-s);
+    max-width: 60ch;
+  }
+
+  .updated {
+    margin-top: var(--space-s);
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+
+  .text-body :global(h2) {
+    margin-top: var(--space-xl);
+  }
+
+  .text-body :global(h3) {
+    margin-top: var(--space-l);
+  }
+
+  .text-body :global(.pending) {
+    padding: 0.9rem 1.1rem;
+    background: var(--surface-sunk);
+    border-left: 3px solid var(--amber-600);
+    border-radius: var(--radius-s);
+    font-size: 0.95rem;
+  }
+
+  .text-body :global(.pending strong) {
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    font-size: var(--step--1);
+    color: var(--amber-700);
+    margin-bottom: 0.3rem;
+  }
+</style>

@@ -1,0 +1,244 @@
+---
+import { Image } from 'astro:assets';
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { POSTS, postPath, readingTime } from '~/data/blog';
+import { primaryImage } from '~/lib/images';
+import { SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/blog/';
+const [lead, ...rest] = POSTS;
+const leadImage = primaryImage(lead.imageFrom);
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Guides', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Packaging guides for UK food businesses',
+    description:
+      'Guides on sizing, board, printing, artwork and ordering custom food packaging in the UK.',
+    type: 'CollectionPage',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  schema.itemList(
+    POSTS.map((p) => ({ name: p.title, path: postPath(p.slug) })),
+    path,
+  ),
+];
+
+const dateFmt = new Intl.DateTimeFormat('en-GB', {
+  day: 'numeric',
+  month: 'long',
+  year: 'numeric',
+});
+---
+
+<BaseLayout
+  title="Packaging Guides for UK Food Businesses | Cone Sleeves UK"
+  description="Guides on sizing, board, printing, artwork and ordering custom food packaging, written for buyers rather than sellers."
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="blog-head">
+    <div class="wrap">
+      <p class="eyebrow">Guides</p>
+      <h1>Packaging guides for people who have to specify it</h1>
+      <p class="lede">
+        Practical notes on measuring, board choice, printing and ordering, including the
+        trade-offs that suppliers usually leave out.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <a class="lead-post card" href={postPath(lead.slug)}>
+      <div class="lead-media">
+        {
+          leadImage && (
+            <Image
+              src={leadImage}
+              alt={lead.imageAlt}
+              widths={[520, 800, 1100]}
+              sizes="(min-width: 900px) 560px, 92vw"
+              format="webp"
+              quality={76}
+              loading="eager"
+              fetchpriority="high"
+              decoding="sync"
+            />
+          )
+        }
+      </div>
+      <div class="lead-body">
+        <span class="badge badge-amber">{lead.topic}</span>
+        <h2>{lead.title}</h2>
+        <p>{lead.standfirst}</p>
+        <p class="post-meta">
+          <time datetime={lead.published}>{dateFmt.format(new Date(lead.published))}</time>
+          <span aria-hidden="true">·</span>
+          <span>{readingTime(lead)} min read</span>
+        </p>
+      </div>
+    </a>
+
+    <ul class="post-list">
+      {
+        rest.map((post) => {
+          const img = primaryImage(post.imageFrom);
+          return (
+            <li class="card post-item">
+              <a href={postPath(post.slug)}>
+                <div class="post-item-media">
+                  {img && (
+                    <Image
+                      src={img}
+                      alt={post.imageAlt}
+                      widths={[280, 480]}
+                      sizes="(min-width: 900px) 300px, 45vw"
+                      format="webp"
+                      quality={70}
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  )}
+                </div>
+                <div class="post-item-body">
+                  <span class="badge badge-amber">{post.topic}</span>
+                  <h2>{post.title}</h2>
+                  <p>{post.standfirst}</p>
+                  <p class="post-meta">
+                    <time datetime={post.published}>
+                      {dateFmt.format(new Date(post.published))}
+                    </time>
+                    <span aria-hidden="true">·</span>
+                    <span>{readingTime(post)} min read</span>
+                  </p>
+                </div>
+              </a>
+            </li>
+          );
+        })
+      }
+    </ul>
+  </div>
+</BaseLayout>
+
+<style>
+  .blog-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .blog-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+    max-width: 20ch;
+  }
+
+  .blog-head .lede {
+    max-width: 58ch;
+  }
+
+  .lead-post {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    text-decoration: none;
+    color: inherit;
+    margin-bottom: var(--space-l);
+  }
+
+  @media (max-width: 800px) {
+    .lead-post {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .lead-media {
+    aspect-ratio: var(--ratio-editorial);
+    background: var(--surface-sunk);
+    overflow: hidden;
+  }
+
+  .lead-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .lead-body {
+    display: grid;
+    gap: 0.5rem;
+    align-content: center;
+    padding: var(--space-l);
+  }
+
+  .lead-body h2 {
+    font-size: var(--step-3);
+  }
+
+  .lead-body p {
+    color: var(--c-text-soft);
+  }
+
+  .post-list {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-s);
+    grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
+  }
+
+  .post-item a {
+    display: grid;
+    grid-template-rows: auto 1fr;
+    height: 100%;
+    text-decoration: none;
+    color: inherit;
+  }
+
+  .post-item-media {
+    aspect-ratio: var(--ratio-wide);
+    background: var(--surface-sunk);
+    overflow: hidden;
+  }
+
+  .post-item-media :global(img) {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .post-item-body {
+    display: grid;
+    gap: 0.4rem;
+    align-content: start;
+    padding: var(--space-m);
+  }
+
+  .post-item-body h2 {
+    font-size: var(--step-1);
+  }
+
+  .post-item-body p {
+    font-size: 0.93rem;
+    color: var(--c-text-soft);
+    line-height: 1.55;
+  }
+
+  .badge {
+    justify-self: start;
+  }
+
+  .post-meta {
+    display: flex;
+    gap: 0.4rem;
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+</style>

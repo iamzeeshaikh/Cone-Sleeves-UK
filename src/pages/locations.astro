@@ -1,0 +1,209 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import { LOCATIONS, CITIES, COUNTIES } from '~/data/locations';
+import { SITE } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+const path = '/locations/';
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Areas we supply', path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: 'Areas we supply',
+    description:
+      'Cone Sleeves UK delivers printed packaging across the United Kingdom. Guides to the trade in each area we cover.',
+    type: 'CollectionPage',
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  schema.itemList(
+    LOCATIONS.map((l) => ({ name: l.place, path: `/${l.slug}/` })),
+    path,
+  ),
+];
+
+const byNation = ['England', 'Scotland', 'Wales'] as const;
+---
+
+<BaseLayout
+  title="Areas We Supply | Cone Sleeves UK Packaging Delivery"
+  description="We deliver printed packaging across the UK. Area guides covering the food trade in each city and county we supply."
+  path={path}
+  schema={graph}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="loc-index-head">
+    <div class="wrap">
+      <p class="eyebrow">Coverage</p>
+      <h1>Areas we supply across the United Kingdom</h1>
+      <p class="lede">
+        We deliver anywhere in the UK on national carriers. The pages below are not
+        delivery promises — they are notes on what the food trade in each place actually
+        buys, and what that means for a specification.
+      </p>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <div class="coverage-note">
+      <h2>What these pages are, and are not</h2>
+      <p>
+        We have no branches, depots or vehicles in any of these places, and we do not
+        offer timed or same-day delivery anywhere. Orders travel on national carriers, so
+        any date we give is a carrier estimate. What each page does contain is the local
+        commercial context: who buys this packaging there and what tends to matter to
+        them.
+      </p>
+    </div>
+
+    {
+      byNation.map((nation) => {
+        const cities = CITIES.filter((l) => l.nation === nation);
+        const counties = COUNTIES.filter((l) => l.nation === nation);
+        if (!cities.length && !counties.length) return null;
+        return (
+          <section class="nation-block">
+            <h2>{nation}</h2>
+            {cities.length > 0 && (
+              <>
+                <h3>Cities</h3>
+                <ul class="loc-grid">
+                  {cities.map((l) => (
+                    <li>
+                      <a href={`/${l.slug}/`}>
+                        <strong>{l.place}</strong>
+                        <span>{l.seoDescription}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+            {counties.length > 0 && (
+              <>
+                <h3>Counties</h3>
+                <ul class="loc-grid">
+                  {counties.map((l) => (
+                    <li>
+                      <a href={`/${l.slug}/`}>
+                        <strong>{l.place}</strong>
+                        <span>{l.seoDescription}</span>
+                      </a>
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
+          </section>
+        );
+      })
+    }
+
+    <div class="coverage-note">
+      <h2>Not on this list?</h2>
+      <p>
+        These pages cover the areas where we have enough to say to make a page worth
+        reading. We supply the whole of the UK regardless, including Northern Ireland and
+        the islands, where carrier transit and surcharges differ — we confirm both against
+        your postcode when we quote.
+      </p>
+      <p>
+        <a class="btn btn-primary" href="/request-a-quote/">Ask for a quote</a>
+      </p>
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .loc-index-head {
+    padding-block: var(--space-s) var(--space-l);
+  }
+
+  .loc-index-head h1 {
+    margin: 0.4rem 0 var(--space-s);
+    max-width: 22ch;
+  }
+
+  .loc-index-head .lede {
+    max-width: 62ch;
+  }
+
+  .coverage-note {
+    padding: var(--space-m);
+    background: var(--surface-sunk);
+    border-radius: var(--radius-l);
+    margin-bottom: var(--space-xl);
+    max-width: 78ch;
+  }
+
+  .coverage-note h2 {
+    font-size: var(--step-1);
+  }
+
+  .coverage-note p {
+    margin-top: 0.6rem;
+    color: var(--c-text-soft);
+  }
+
+  .nation-block {
+    margin-bottom: var(--space-xl);
+  }
+
+  .nation-block > h2 {
+    font-size: var(--step-3);
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid var(--green-100);
+  }
+
+  .nation-block h3 {
+    margin-top: var(--space-m);
+    margin-bottom: var(--space-s);
+    font-size: var(--step-0);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--c-text-muted);
+  }
+
+  .loc-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: var(--space-2xs);
+    grid-template-columns: repeat(auto-fill, minmax(min(19rem, 100%), 1fr));
+  }
+
+  .loc-grid a {
+    display: grid;
+    gap: 0.25rem;
+    height: 100%;
+    padding: var(--space-s);
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-m);
+    text-decoration: none;
+    color: inherit;
+    transition: border-color var(--dur-fast), box-shadow var(--dur-fast);
+  }
+
+  .loc-grid a:hover {
+    border-color: var(--green-500);
+    box-shadow: var(--shadow-s);
+  }
+
+  .loc-grid strong {
+    color: var(--green-800);
+  }
+
+  .loc-grid span {
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+    line-height: 1.5;
+  }
+</style>

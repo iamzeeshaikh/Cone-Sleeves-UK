@@ -1,0 +1,108 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT, ANALYTICS } from '~/config/site';
+
+const path = '/cookie-policy/';
+const analyticsActive = Boolean(ANALYTICS.ga4 || ANALYTICS.gtm);
+---
+
+<TextPage
+  title="Cookie Policy | Cone Sleeves UK"
+  description="What cookies and tracking technologies conesleeves.co.uk uses, described accurately rather than as a generic template."
+  path={path}
+  h1="Cookie Policy"
+  standfirst="This page describes what this website actually sets — which, as it is configured today, is nothing."
+  updated="2026-08-13"
+  crumbLabel="Cookie Policy"
+>
+  {
+    !analyticsActive && (
+      <>
+        <h2>This site sets no cookies</h2>
+        <p>
+          As currently built and deployed, conesleeves.co.uk sets no cookies of its own, no
+          analytics cookies, and no advertising or tracking cookies. No analytics tag,
+          tag manager, advertising pixel or session-recording script is loaded on any page.
+        </p>
+        <p>
+          That is a statement about how the site is configured rather than a promise about
+          the future. Because it is true today, this site does not display a cookie consent
+          banner — showing one for cookies that are never set would be misleading.
+        </p>
+
+        <h2>What the site does store</h2>
+        <p>
+          Nothing in your browser. There is no local storage, no session storage and no
+          fingerprinting. Fonts and images are served from this domain rather than from a
+          third-party network, so no request leaves this site as you browse it.
+        </p>
+        <p>
+          Our server records the IP address of enquiry form submissions briefly, in order to
+          apply a rate limit against automated spam. That is a server-side log rather than
+          anything placed on your device.
+        </p>
+
+        <h2>If analytics is added later</h2>
+        <p>
+          The site is built so that Google Analytics or Google Tag Manager can be switched on
+          through configuration. If that happens, three things must happen with it:
+        </p>
+        <ol>
+          <li>
+            This page must be updated to name the cookies actually set, what each one does
+            and how long it lasts.
+          </li>
+          <li>
+            A consent mechanism must be added, so non-essential cookies are only set after a
+            visitor agrees.
+          </li>
+          <li>
+            The tag must be loaded only after that consent is given, rather than on page
+            load.
+          </li>
+        </ol>
+        <p class="pending">
+          <strong>Pre-launch note</strong>
+          No analytics identifier has been configured for this site, and none has been
+          invented. If tracking is enabled before launch, the three steps above are
+          outstanding work rather than optional extras.
+        </p>
+      </>
+    )
+  }
+
+  {
+    analyticsActive && (
+      <>
+        <h2>Analytics is enabled on this site</h2>
+        <p>
+          An analytics tag is currently configured, which sets cookies in your browser to
+          measure how the site is used.
+        </p>
+        <p class="pending">
+          <strong>This section needs completing</strong>
+          Now that a tag is configured, this page must list each cookie it sets, its purpose
+          and its lifetime, and a consent mechanism must gate it. Until that is done, this
+          policy does not accurately describe the site.
+        </p>
+      </>
+    )
+  }
+
+  <h2>Third-party links</h2>
+  <p>
+    The WhatsApp buttons on this site open WhatsApp, which is operated by a third party
+    with its own cookies and privacy terms. Following that link takes you outside this
+    website and outside this policy.
+  </p>
+
+  <h2>Questions</h2>
+  <p>
+    If anything here does not match what you observe in your browser, we would genuinely
+    like to know — write to <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>.
+  </p>
+  <p>
+    See also our <a href="/privacy-policy/">privacy policy</a> for how enquiry details are
+    handled.
+  </p>
+</TextPage>

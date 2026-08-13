@@ -1,0 +1,110 @@
+---
+import TextPage from '~/layouts/TextPage.astro';
+import { CONTACT, TEL_HREF } from '~/config/site';
+
+const path = '/delivery-information/';
+---
+
+<TextPage
+  title="Delivery Information | Cone Sleeves UK"
+  description="How Cone Sleeves UK delivers printed packaging across the UK, how dates are given, and what affects transit to your postcode."
+  path={path}
+  h1="Delivery Information"
+  standfirst="How orders reach you, how dates are given, and why we do not publish a delivery promise."
+  updated="2026-08-13"
+  crumbLabel="Delivery Information"
+>
+  <h2>How orders travel</h2>
+  <p>
+    Finished goods are dispatched on national carriers to any address in the United
+    Kingdom. We do not operate our own delivery vehicles and we have no regional depots, so
+    every order is carried by a third party from production to your door.
+  </p>
+  <p>
+    Packaging ships flat wherever the format allows it. That keeps the carriage cost down,
+    protects the printed face, and means a pallet's worth of sleeves arrives in far less
+    space than the same quantity pre-formed.
+  </p>
+
+  <h2>Why there is no published delivery time</h2>
+  <p>
+    Two separate periods sit between an order and a delivery, and only one of them is about
+    transport.
+  </p>
+  <ul>
+    <li>
+      <strong>Production</strong> — set by the print method, the run length, whether tooling
+      is needed and how busy the press is that month. This is the larger of the two and it
+      varies considerably.
+    </li>
+    <li>
+      <strong>Transit</strong> — the carrier's own service, which is broadly consistent for
+      mainland addresses and longer for some postcodes.
+    </li>
+  </ul>
+  <p>
+    Because production dominates, a single site-wide figure would be misleading. Your
+    production lead time is confirmed in writing on your quotation, against your actual
+    specification, and the carrier's transit is added to it.
+  </p>
+
+  <h2>Dates are estimates, not guarantees</h2>
+  <p>
+    Any delivery date we give is the carrier's estimate. We do not offer timed, next-day or
+    same-day delivery anywhere in the UK, and we would rather say so plainly than imply a
+    service we cannot control.
+  </p>
+  <p>
+    If a date genuinely matters — an event, a seasonal launch, a shop opening — tell us at
+    enquiry stage rather than at order stage. We schedule production backwards from a fixed
+    date, and the artwork deadline that follows from it is usually earlier than people
+    expect.
+  </p>
+
+  <h2>Postcodes that take longer</h2>
+  <p>
+    Transit to English, Welsh and lowland Scottish mainland addresses is broadly the same.
+    These take longer, and some carriers apply a surcharge:
+  </p>
+  <ul>
+    <li>Scottish Highlands and Islands.</li>
+    <li>Northern Ireland.</li>
+    <li>Isle of Man, Isle of Wight, Channel Islands and the Scilly Isles.</li>
+  </ul>
+  <p>
+    We confirm what applies to your specific postcode when we quote, rather than leaving it
+    to appear later as an unexpected cost.
+  </p>
+
+  <h2>Delivery access</h2>
+  <p>
+    Tell us at order stage if your address has anything a carrier needs to know about:
+    restricted access, a booking-in requirement, a delivery window, no forklift, or a
+    city-centre location with vehicle restrictions. We can pass instructions on, though we
+    cannot commit the carrier to a specific time.
+  </p>
+
+  <h2>Checking your delivery</h2>
+  <p>
+    Please check goods on arrival rather than after storing them. Shortages and transit
+    damage need reporting promptly so that a claim with the carrier is still possible.
+  </p>
+  <p>
+    If what arrives does not match the approved proof or the agreed specification, see our
+    <a href="/returns-and-refunds/">returns and refunds page</a>.
+  </p>
+
+  <h2>Split deliveries</h2>
+  <p>
+    Splitting an order across two or more deliveries is often possible, and it suits
+    seasonal businesses that would otherwise pay to store stock through a quiet period. It
+    costs a little more per unit than a single delivery. Ask us to price both ways.
+  </p>
+
+  <h2>Questions about a delivery</h2>
+  <p>
+    Call <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a> or email
+    <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a> with your order reference and we
+    will chase the carrier on your behalf.
+  </p>
+</TextPage>

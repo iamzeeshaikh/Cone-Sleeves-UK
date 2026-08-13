@@ -1,0 +1,228 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Sections from '~/components/Sections.astro';
+import Faqs from '~/components/Faqs.astro';
+import QuoteForm from '~/components/QuoteForm.astro';
+import ProductCard from '~/components/ProductCard.astro';
+import type { LocationPage } from '~/data/types';
+import { productBySlug } from '~/data/products';
+import { locationBySlug } from '~/data/locations';
+import { SITE, CONTACT, TEL_HREF } from '~/config/site';
+import * as schema from '~/lib/schema';
+
+interface Props {
+  location: LocationPage;
+}
+
+const { location } = Astro.props;
+const path = `/${location.slug}/`;
+
+const recommended = location.recommended
+  .map((s) => productBySlug(s))
+  .filter((p): p is NonNullable<typeof p> => Boolean(p));
+
+// Nearby links are a short, geographically sensible list — not every location
+// page linking to every other one.
+const nearby = location.nearby
+  .map((s) => locationBySlug(s))
+  .filter((l): l is LocationPage => Boolean(l));
+
+const crumbs = [
+  { name: 'Home', path: '/' },
+  { name: 'Areas we supply', path: '/locations/' },
+  { name: location.place, path },
+];
+
+const graph = [
+  schema.breadcrumbs(path, crumbs),
+  schema.webPage({
+    path,
+    name: location.seoTitle,
+    description: location.seoDescription,
+    breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
+  }),
+  // A Service with an areaServed, not a LocalBusiness. There is no public
+  // address in this location, so LocalBusiness would be a fabricated place.
+  schema.serviceArea({
+    path,
+    name: `Custom printed food packaging for ${location.place}`,
+    description: location.seoDescription,
+    place: location.place,
+  }),
+  schema.faqPage(location.faqs, path),
+];
+---
+
+<BaseLayout
+  title={`${location.seoTitle} | Cone Sleeves UK`.length > 65
+    ? location.seoTitle
+    : `${location.seoTitle} | Cone Sleeves UK`}
+  description={location.seoDescription}
+  path={path}
+  schema={graph}
+  whatsappContext={`packaging for our ${location.place} business`}
+>
+  <Breadcrumbs crumbs={crumbs} />
+
+  <section class="loc-hero">
+    <div class="wrap">
+      <p class="eyebrow">
+        {location.kind === 'city' ? 'City' : 'County'} · {location.nation}
+      </p>
+      <h1>{location.h1}</h1>
+      <div class="loc-intro">
+        {location.intro.map((p) => <p class="lede">{p}</p>)}
+      </div>
+      <div class="btn-row">
+        <a class="btn btn-primary" href="#quote">Get a quote</a>
+        <a class="btn btn-outline" href={TEL_HREF}>Call {CONTACT.phoneDisplay}</a>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap loc-body">
+    <div class="loc-main">
+      <Sections sections={location.sections} />
+      <Faqs faqs={location.faqs} heading={`Packaging in ${location.place}: common questions`} />
+    </div>
+
+    <aside class="loc-aside">
+      <QuoteForm
+        requirementHint=""
+        source={`location:${location.slug}`}
+        heading={`Quote for a ${location.place} business`}
+        intro="Tell us what you serve and how many you need. We reply with a specification and a lead time."
+        id="quote"
+      />
+    </aside>
+  </div>
+
+  {
+    recommended.length > 0 && (
+      <section class="section section-sunk">
+        <div class="wrap">
+          <h2>Packaging {location.place} businesses order most</h2>
+          <p class="muted rec-intro">
+            Chosen for the trades that actually operate here rather than as a general list.
+          </p>
+          <div class="grid-auto rec-grid">
+            {recommended.map((p) => (
+              <ProductCard product={p} />
+            ))}
+          </div>
+        </div>
+      </section>
+    )
+  }
+
+  {
+    nearby.length > 0 && (
+      <section class="section-tight">
+        <div class="wrap">
+          <h2 class="nearby-title">Nearby areas we also supply</h2>
+          <ul class="nearby-list">
+            {nearby.map((l) => (
+              <li>
+                <a href={`/${l.slug}/`}>{l.place}</a>
+              </li>
+            ))}
+            <li>
+              <a href="/locations/">All areas</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    )
+  }
+</BaseLayout>
+
+<style>
+  .loc-hero {
+    padding-block: var(--space-s) var(--space-l);
+    background: linear-gradient(180deg, var(--green-050), transparent);
+  }
+
+  .loc-hero h1 {
+    margin: 0.4rem 0 var(--space-s);
+    max-width: 20ch;
+  }
+
+  .loc-intro {
+    max-width: 65ch;
+  }
+
+  .loc-intro .lede + .lede {
+    margin-top: 0.75rem;
+  }
+
+  .loc-hero .btn-row {
+    margin-top: var(--space-m);
+  }
+
+  .loc-body {
+    display: grid;
+    gap: var(--space-xl);
+    grid-template-columns: minmax(0, 1fr) 21rem;
+    align-items: start;
+    padding-top: var(--space-l);
+  }
+
+  @media (max-width: 1000px) {
+    .loc-body {
+      grid-template-columns: minmax(0, 1fr);
+    }
+    .loc-aside {
+      order: -1;
+    }
+  }
+
+  .loc-aside {
+    position: sticky;
+    top: 6.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    .loc-aside {
+      position: static;
+    }
+  }
+
+  .rec-intro {
+    margin-top: 0.35rem;
+  }
+
+  .rec-grid {
+    margin-top: var(--space-m);
+  }
+
+  .nearby-title {
+    font-size: var(--step-2);
+  }
+
+  .nearby-list {
+    list-style: none;
+    padding: 0;
+    margin-top: var(--space-s);
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+
+  .nearby-list a {
+    display: inline-block;
+    padding: 0.5rem 0.9rem;
+    background: var(--surface);
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    font-size: 0.92rem;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--green-800);
+  }
+
+  .nearby-list a:hover {
+    border-color: var(--green-500);
+    background: var(--green-050);
+  }
+</style>
