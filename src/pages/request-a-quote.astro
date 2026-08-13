@@ -1,9 +1,11 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
 import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
 import { CONTACT, TEL_HREF, SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/request-a-quote/';
@@ -12,6 +14,8 @@ const crumbs = [
   { name: 'Home', path: '/' },
   { name: 'Request a quote', path },
 ];
+
+const faqs = PAGE_FAQS['/request-a-quote/'];
 
 const graph = [
   schema.breadcrumbs(path, crumbs),
@@ -22,6 +26,7 @@ const graph = [
       'Send us your packaging requirement and we reply with a written specification, minimum quantity and lead time.',
     breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
   }),
+  schema.faqPage(faqs, path),
 ];
 ---
 
@@ -105,6 +110,12 @@ const graph = [
       </div>
     </aside>
   </div>
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <script>
@@ -228,5 +239,11 @@ const graph = [
     color: var(--danger-700);
     border-radius: var(--radius-m);
     font-weight: 600;
+  }
+</style>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
   }
 </style>

@@ -1,7 +1,9 @@
 ---
 import BaseLayout from './BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import { SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 interface Props {
@@ -31,6 +33,11 @@ const {
   extraSchema = [],
 } = Astro.props;
 
+// Fixed routes take their FAQ block from one keyed file rather than each page
+// declaring its own, so the validator can hold them to the same ten-pair rule
+// it applies to every generated page.
+const faqs = noindex ? [] : (PAGE_FAQS[path] ?? []);
+
 const crumbs = [
   { name: 'Home', path: '/' },
   { name: crumbLabel, path },
@@ -47,6 +54,7 @@ const graph = noindex
         type: pageType,
         breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
       }),
+      ...(faqs.length ? [schema.faqPage(faqs, path)] : []),
       ...extraSchema,
     ];
 
@@ -75,6 +83,7 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
 
     <div class="wrap-narrow prose text-body">
       <slot />
+      {faqs.length > 0 && <Faqs faqs={faqs} heading="Questions We Are Asked" />}
     </div>
   </article>
 </BaseLayout>

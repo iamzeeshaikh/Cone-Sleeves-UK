@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import { LOCATIONS, CITIES, COUNTIES } from '~/data/locations';
 import { SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/locations/';
@@ -11,6 +13,8 @@ const crumbs = [
   { name: 'Home', path: '/' },
   { name: 'Areas we supply', path },
 ];
+
+const faqs = PAGE_FAQS['/locations/'];
 
 const graph = [
   schema.breadcrumbs(path, crumbs),
@@ -26,6 +30,7 @@ const graph = [
     LOCATIONS.map((l) => ({ name: l.place, path: `/${l.slug}/` })),
     path,
   ),
+  schema.faqPage(faqs, path),
 ];
 
 const byNation = ['England', 'Scotland', 'Wales'] as const;
@@ -119,6 +124,12 @@ const byNation = ['England', 'Scotland', 'Wales'] as const;
       </p>
     </div>
   </div>
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -205,5 +216,11 @@ const byNation = ['England', 'Scotland', 'Wales'] as const;
     font-size: var(--step--1);
     color: var(--c-text-muted);
     line-height: 1.5;
+  }
+</style>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
   }
 </style>

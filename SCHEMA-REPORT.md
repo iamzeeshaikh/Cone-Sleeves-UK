@@ -166,15 +166,21 @@ the `Product` builder — and at that point they will describe something true.
 
 ## 6. FAQPage usage
 
-`FAQPage` markup appears on 226 pages: 170 products, 17 category pages, 25
-locations, the homepage, `/faqs/`, and any blog article with a questions block.
+`FAQPage` markup appears on 236 pages: 170 products, 17 category pages, 25
+locations, 12 articles, the homepage, `/faqs/`, and 10 fixed routes.
+
+Four routes carry none, on purpose. The privacy, cookie and terms pages keep
+their text continuous, because splitting a clause into an accordion hides it
+behind a click and invites a paraphrase that no longer matches the clause.
+`/thank-you/` is noindex and reached only after a submission.
 
 It is emitted only where the identical questions and answers are rendered as
 visible `<details>` accordions on the same page. The build audit enforces
 this by matching every markup question against the page's rendered text.
 
-**2,266 question/answer pairs** across the site, all of them visible: exactly ten
-on every product, category, location and article page, plus sixteen on `/faqs/`.
+**2,366 question/answer pairs** across the site, all of them visible: exactly ten
+on every product, category, location, article and fixed route, plus sixteen on
+`/faqs/`.
 
 No question is repeated within a page and no answer is repeated across pages —
 the pre-build validator fails on either, so near-duplicate FAQ blocks cannot be
@@ -295,7 +301,7 @@ Adding them would require inventing prices and reviews.
 | Offer / AggregateOffer *only where valid* | ✅ Correctly omitted — no valid price data exists |
 | MerchantReturnPolicy *only with a real policy* | ✅ Correctly omitted — policy not supplied |
 | OfferShippingDetails *only with accurate data* | ✅ Correctly omitted — no confirmed shipping data |
-| FAQPage *only with visible FAQs* | ✅ 226 pages, all verified against rendered text |
+| FAQPage *only with visible FAQs* | ✅ 236 pages, all verified against rendered text |
 | BlogPosting / Article | ✅ 12 articles |
 | ContactPage | ✅ |
 | AboutPage | ✅ |

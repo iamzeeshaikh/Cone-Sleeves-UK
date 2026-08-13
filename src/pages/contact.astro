@@ -1,8 +1,10 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
 import { CONTACT, TEL_HREF, whatsappHref, SITE, BUSINESS_PENDING } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/contact/';
@@ -11,6 +13,8 @@ const crumbs = [
   { name: 'Home', path: '/' },
   { name: 'Contact', path },
 ];
+
+const faqs = PAGE_FAQS['/contact/'];
 
 const graph = [
   schema.breadcrumbs(path, crumbs),
@@ -22,6 +26,7 @@ const graph = [
     type: 'ContactPage',
     breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
   }),
+  schema.faqPage(faqs, path),
 ];
 ---
 
@@ -120,6 +125,12 @@ const graph = [
       />
     </div>
   </div>
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -234,5 +245,11 @@ const graph = [
     font-size: 0.93rem;
     color: var(--c-text-soft);
     margin: 0;
+  }
+</style>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
   }
 </style>

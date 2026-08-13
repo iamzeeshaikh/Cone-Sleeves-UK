@@ -2,9 +2,11 @@
 import { Image } from 'astro:assets';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import { POSTS, postPath, readingTime } from '~/data/blog';
 import { primaryImage } from '~/lib/images';
 import { SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/blog/';
@@ -15,6 +17,8 @@ const crumbs = [
   { name: 'Home', path: '/' },
   { name: 'Guides', path },
 ];
+
+const faqs = PAGE_FAQS['/blog/'];
 
 const graph = [
   schema.breadcrumbs(path, crumbs),
@@ -30,6 +34,7 @@ const graph = [
     POSTS.map((p) => ({ name: p.title, path: postPath(p.slug) })),
     path,
   ),
+  schema.faqPage(faqs, path),
 ];
 
 const dateFmt = new Intl.DateTimeFormat('en-GB', {
@@ -129,6 +134,12 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
       }
     </ul>
   </div>
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -240,5 +251,11 @@ const dateFmt = new Intl.DateTimeFormat('en-GB', {
     gap: 0.4rem;
     font-size: var(--step--1);
     color: var(--c-text-muted);
+  }
+</style>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
   }
 </style>

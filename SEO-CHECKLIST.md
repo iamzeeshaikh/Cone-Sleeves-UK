@@ -107,7 +107,9 @@ was dropped and why is in `MIGRATION-INVENTORY.md` §5 and §7.
 The FAQ row is enforced rather than sampled: `scripts/validate-content.mjs`
 fails the build when any page carries fewer than ten pairs, repeats a
 question within a page, or reuses an answer already used on another page.
-Blog articles carry ten each on the same terms.
+Blog articles and the fixed routes carry ten each on the same terms, and a new
+static page without an FAQ block fails rather than quietly joining the
+exemption list.
 
 ---
 

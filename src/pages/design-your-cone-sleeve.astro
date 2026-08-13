@@ -1,7 +1,9 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import { CONTACT, TEL_HREF, SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/design-your-cone-sleeve/';
@@ -10,6 +12,8 @@ const crumbs = [
   { name: 'Home', path: '/' },
   { name: 'Design your cone sleeve', path },
 ];
+
+const faqs = PAGE_FAQS['/design-your-cone-sleeve/'];
 
 const graph = [
   schema.breadcrumbs(path, crumbs),
@@ -20,6 +24,7 @@ const graph = [
       'Build a cone sleeve specification step by step with a live visual representation, then send it to us as a quote request.',
     breadcrumbId: `${SITE.origin}${path}#breadcrumb`,
   }),
+  schema.faqPage(faqs, path),
 ];
 
 /** Every choice the tool offers, kept in one place so markup and summary agree. */
@@ -504,6 +509,12 @@ const previewColours = [
       </div>
     </aside>
   </div>
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -1330,3 +1341,9 @@ const previewColours = [
     show(0);
   }
 </script>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
+  }
+</style>

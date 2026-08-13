@@ -1,10 +1,12 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
+import Faqs from '~/components/Faqs.astro';
 import ProductCard from '~/components/ProductCard.astro';
 import { TOP_CATEGORIES, subcategoriesOf, categoryPath } from '~/data/categories';
 import { productsInCategory, PRODUCT_COUNT } from '~/data/products';
 import { SITE } from '~/config/site';
+import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
 const path = '/products/';
@@ -20,6 +22,8 @@ const crumbs = [
   { name: 'All products', path },
 ];
 
+const faqs = PAGE_FAQS['/products/'];
+
 const graph = [
   schema.breadcrumbs(path, crumbs),
   schema.webPage({
@@ -33,6 +37,7 @@ const graph = [
     groups.flatMap((g) => g.products.map((p) => ({ name: p.name, path: `/${p.slug}/` }))),
     path,
   ),
+  schema.faqPage(faqs, path),
 ];
 ---
 
@@ -96,6 +101,12 @@ const graph = [
       </section>
     ))
   }
+
+  <section class="section section-white">
+    <div class="wrap page-faqs">
+      <Faqs faqs={faqs} heading="Questions We Are Asked" />
+    </div>
+  </section>
 </BaseLayout>
 
 <style>
@@ -162,5 +173,11 @@ const graph = [
 
   .group-grid {
     margin-top: var(--space-m);
+  }
+</style>
+
+<style>
+  .page-faqs {
+    max-width: 82ch;
   }
 </style>

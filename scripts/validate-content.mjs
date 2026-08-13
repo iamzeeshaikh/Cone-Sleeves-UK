@@ -19,7 +19,8 @@ register('./ts-resolve.mjs', import.meta.url);
 // The data files are TypeScript, so they are read as text and the object
 // literals extracted rather than imported. That keeps this script dependency
 // free and able to run before any build step.
-const { PRODUCTS, CATEGORIES, LOCATIONS, POSTS, STATIC_PAGES } = await loadData();
+const { PRODUCTS, CATEGORIES, LOCATIONS, POSTS, STATIC_PAGES, NOINDEX_PATHS, PAGE_FAQS } =
+  await loadData();
 
 const errors = [];
 const warnings = [];
@@ -200,6 +201,26 @@ for (const p of PRODUCTS) checkFaqs('product', p.slug, p.faqs);
 for (const c of CATEGORIES) checkFaqs('category', c.slug, c.faqs);
 for (const l of LOCATIONS) checkFaqs('location', l.slug, l.faqs);
 for (const b of POSTS) checkFaqs('post', b.slug, b.faqs);
+for (const [path, faqs] of Object.entries(PAGE_FAQS)) checkFaqs('page', path, faqs);
+
+// The fixed routes that carry no FAQ block are a deliberate list, not an
+// oversight. Naming them here means a new static page without FAQs fails rather
+// than quietly joining the exemption.
+const FAQ_EXEMPT_PATHS = new Set([
+  '/privacy-policy/',
+  '/cookie-policy/',
+  '/terms-and-conditions/',
+  '/faqs/', // the page is itself a FAQ list, written in the route
+  '/', // homepage renders the merged cone sleeve category's FAQs
+  ...NOINDEX_PATHS,
+]);
+for (const path of STATIC_PAGES) {
+  if (FAQ_EXEMPT_PATHS.has(path)) continue;
+  if (!PAGE_FAQS[path]) fail(`static page ${path}: no FAQ block in page-faqs.ts`);
+}
+for (const path of Object.keys(PAGE_FAQS)) {
+  if (!STATIC_PAGES.includes(path)) fail(`page-faqs.ts: ${path} is not a published route`);
+}
 
 // ---------------------------------------------------------------------------
 // Internal links, anchors and prose rules
@@ -335,12 +356,13 @@ async function loadData() {
   // Node strips TypeScript types natively, so the data modules import directly.
   const url = (rel) => new URL(`../${rel}`, import.meta.url).href;
 
-  const [productsMod, catMod, locMod, blogMod, pagesMod] = await Promise.all([
+  const [productsMod, catMod, locMod, blogMod, pagesMod, pageFaqMod] = await Promise.all([
     import(url('src/data/products/index.ts')),
     import(url('src/data/categories.ts')),
     import(url('src/data/locations.ts')),
     import(url('src/data/blog.ts')),
     import(url('src/data/static-pages.ts')),
+    import(url('src/data/page-faqs.ts')),
   ]);
 
   return {
@@ -349,5 +371,7 @@ async function loadData() {
     LOCATIONS: locMod.LOCATIONS,
     POSTS: blogMod.POSTS,
     STATIC_PAGES: pagesMod.STATIC_PAGE_PATHS,
+    NOINDEX_PATHS: pagesMod.NOINDEX_PATHS,
+    PAGE_FAQS: pageFaqMod.PAGE_FAQS,
   };
 }
