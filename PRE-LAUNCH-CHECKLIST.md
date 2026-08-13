@@ -100,6 +100,29 @@ Tested against a running server with real POSTs:
 
 ---
 
+## BLOCKING — the domain is serving injected spam
+
+Search Console shows **3,712 indexed gambling pages** on conesleeves.co.uk as
+of 7 August 2026, up from 552 in May. Not one of them belongs to this site, and
+the count is still climbing, which means the injection is live rather than
+historical.
+
+- [x] Catch-all `410 Gone` built for every URL that is not a real page
+- [x] Verified against the production routing table: spam 410s, real pages 200,
+      legacy redirects 301
+- [x] Spam deliberately left crawlable — a robots.txt block would stop Google
+      seeing the 410 and the pages would never drop out
+- [ ] **Deploy this site over the compromised one.** Nothing above is live until
+      this happens, and no other de-indexing step matters before it.
+- [ ] Shut down the old hosting account and database, not just the DNS record
+- [ ] Delete any attacker-submitted sitemap in *Indexing → Sitemaps*
+- [ ] Check *Security & Manual actions*, and file a reconsideration request once
+      the 410s are serving
+
+Full analysis and the exported URL list: `SPAM-DEINDEX-PLAN.md`.
+
+---
+
 ## BLOCKING — information needed from the business
 
 Each item below has a clearly marked placeholder in the site that renders only
