@@ -5,6 +5,7 @@ import Gallery from '~/components/Gallery.astro';
 import Sections from '~/components/Sections.astro';
 import Faqs from '~/components/Faqs.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
+import DesignPanel from '~/components/DesignPanel.astro';
 import ProductCard from '~/components/ProductCard.astro';
 import type { Product } from '~/data/types';
 import { relatedProducts } from '~/data/products';
@@ -147,6 +148,10 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
     />
   </div>
 
+  <div class="wrap product-design">
+    <DesignPanel product={product} />
+  </div>
+
   <div class="wrap product-main">
     <Sections sections={product.sections} />
 
@@ -276,6 +281,10 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
 
   /* Content runs the full wrapper. Paragraphs keep their own measure, so the
      prose stays readable while tables and comparison grids use the width. */
+  .product-design {
+    padding-bottom: var(--space-l);
+  }
+
   .product-main {
     padding-bottom: var(--space-l);
   }

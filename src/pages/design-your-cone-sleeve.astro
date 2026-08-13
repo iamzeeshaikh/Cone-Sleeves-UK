@@ -27,7 +27,7 @@ const graph = [
   schema.faqPage(faqs, path),
 ];
 
-/** Every choice the tool offers, kept in one place so markup and summary agree. */
+/** Every choice the designer offers, kept in one place so markup and summary agree. */
 const steps = [
   {
     id: 'style',
@@ -299,8 +299,8 @@ const previewColours = [
                   </fieldset>
                 ) : field.type === 'select' ? (
                   <p class="stack-field">
-                    <label for={`tool-${field.name}`}>{field.label}</label>
-                    <select id={`tool-${field.name}`} name={field.name} data-config data-config-label={field.label}>
+                    <label for={`cfg-${field.name}`}>{field.label}</label>
+                    <select id={`cfg-${field.name}`} name={field.name} data-config data-config-label={field.label}>
                       {field.options!.map((opt) => (
                         <option value={opt.value}>{opt.value}</option>
                       ))}
@@ -308,13 +308,13 @@ const previewColours = [
                   </p>
                 ) : (
                   <p class="stack-field">
-                    <label for={`tool-${field.name}`}>{field.label}</label>
+                    <label for={`cfg-${field.name}`}>{field.label}</label>
                     <input
                       type="number"
                       inputmode="numeric"
                       min="1"
                       max="1000"
-                      id={`tool-${field.name}`}
+                      id={`cfg-${field.name}`}
                       name={field.name}
                       placeholder={'placeholder' in field ? field.placeholder : undefined}
                       data-config
@@ -385,9 +385,9 @@ const previewColours = [
                 id="tool-artwork"
                 name="artwork"
                 accept=".pdf,.ai,.eps,.svg,.png,.jpg,.jpeg,.zip"
-                aria-describedby="tool-artwork-help"
+                aria-describedby="cfg-artwork-help"
               />
-              <span class="tool-hint" id="tool-artwork-help">
+              <span class="tool-hint" id="cfg-artwork-help">
                 PDF, AI, EPS, SVG, PNG, JPG or ZIP, up to 10&nbsp;MB. Attached to your enquiry.
               </span>
               <span class="err" data-err-for="artwork"></span>
@@ -411,7 +411,7 @@ const previewColours = [
           <input type="text" id="tool-website" name="website" tabindex="-1" autocomplete="off" />
         </div>
         <input type="hidden" name="rendered_at" value="0" data-rendered-at />
-        <input type="hidden" name="source" value="design-tool" />
+        <input type="hidden" name="source" value="design-your-sleeve" />
         <input type="hidden" name="product" value="Design Your Cone Sleeve configuration" />
         <input type="hidden" name="quantity" value="" data-quantity-mirror />
         <input type="hidden" name="configuration" value="" data-configuration />
@@ -1323,7 +1323,7 @@ const previewColours = [
           status.textContent =
             data.message ?? 'Thank you — your specification is with us and we will reply by email.';
           const w = window as unknown as { dataLayer?: unknown[] };
-          if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'design_tool_submit' });
+          if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'design_your_sleeve_submit' });
         } else {
           status.setAttribute('data-state', 'error');
           status.textContent = data.message ?? 'Something went wrong. Please try again or email us.';

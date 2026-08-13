@@ -61,7 +61,7 @@ export const CATEGORIES: Category[] = [
           'Soft serve in a cake cone — a shorter, narrower sleeve, because cake cones taper more sharply.',
           'Rolled ice cream and gelato in a sugar cone — a stiffer board that holds shape when the cone is heavier.',
           'Chips, popcorn chicken or churros in a savoury cone — grease-resistant board, usually with a deeper wrap.',
-          'Event and seasonal runs — the same die as your standard sleeve with a different print, so nothing needs re-tooling.',
+          'Event and seasonal runs — the same die as your standard sleeve with a different print, so nothing needs a new die.',
         ],
         outro:
           'If you sell more than one cone size, most sites settle on two dies rather than one compromise size that fits neither.',
@@ -136,7 +136,7 @@ export const CATEGORIES: Category[] = [
         a: 'Digital for shorter runs and multiple designs, conventional for longer runs. Which suits your job depends on quantity and colour count.',
       },
       {
-        q: 'Do you charge for tooling?',
+        q: 'Do you charge for the die?',
         a: 'A new size needs a physical cutting die, made once and used for every reorder. Where a charge applies it is stated on the quote.',
       },
     ],
@@ -601,7 +601,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         q: 'Can we run seasonal designs?',
-        a: 'Easily, because there is no tooling. Only the print changes, so a seasonal run is shorter than a first order.',
+        a: 'Easily, because there is no new die. Only the print changes, so a seasonal run is shorter than a first order.',
       },
       {
         q: 'How many sleeve sizes will we need?',
@@ -609,7 +609,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         q: 'Are sleeves cheaper than printed cups?',
-        a: 'For a single site, considerably cheaper, because a sleeve avoids cup tooling and the higher minimum quantities that printed cups carry. You brand a plain cup you already buy.',
+        a: 'For a single site, considerably cheaper, because a sleeve avoids cup dies and the higher minimum quantities that printed cups carry. You brand a plain cup you already buy.',
       },
     ],
   },
@@ -670,7 +670,7 @@ export const CATEGORIES: Category[] = [
           ['Print', 'Flexo for long runs, digital for shorter runs and multiple designs'],
           ['Colours', 'Up to full CMYK plus spot colours; kraft shifts colour, so proofs matter'],
           ['Lids', 'Sourced to match the rim diameter, not the stated cup volume'],
-          ['Run length', 'Cup tooling favours volume; short runs are quoted differently'],
+          ['Run length', 'Cup dies favour volume; short runs are quoted differently'],
         ],
         note:
           'Lead times, minimum quantities and unit pricing vary considerably across these options and are confirmed in writing per enquiry.',
@@ -1542,7 +1542,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         q: 'Can we keep our standard cup size for a seasonal run?',
-        a: 'Yes, and you should. No new tooling, no new lids, and no change at the counter when you switch.',
+        a: 'Yes, and you should. No new die, no new lids, and no change at the counter when you switch.',
       },
       {
         q: 'What is the biggest scheduling risk?',

@@ -1511,7 +1511,7 @@ export const PRINTED_PAPERS: Product[] = [
       {
         kind: 'callout',
         heading: 'Quoted Against a Specific Application',
-        body: 'Mycelium is a made-to-order moulded product with its own tooling, lead times and minimum volumes, and these differ substantially from board packaging. We do not publish general figures for it. Tell us what needs protecting, the volumes involved and your timescale, and we will confirm what is achievable in writing.',
+        body: 'Mycelium is a made-to-order moulded product with its own dies, lead times and minimum volumes, and these differ substantially from board packaging. We do not publish general figures for it. Tell us what needs protecting, the volumes involved and your timescale, and we will confirm what is achievable in writing.',
         pending: true,
       },
       {
@@ -1520,7 +1520,7 @@ export const PRINTED_PAPERS: Product[] = [
         items: [
           'The item being protected, with dimensions and weight.',
           'How fragile it is and what transit it has to survive.',
-          'Annual volume, since moulded tooling is volume-sensitive.',
+          'Annual volume, since moulded dies are volume-sensitive.',
           'Your timescale, which for a grown material is longer than for board.',
         ],
       },
@@ -1532,7 +1532,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         q: 'How does the cost compare with foam?',
-        a: 'It varies with the shape, the tooling and the volume far more than board packaging does, so a general comparison would be misleading. Send the application and we will price it properly.',
+        a: 'It varies with the shape, the dies and the volume far more than board packaging does, so a general comparison would be misleading. Send the application and we will price it properly.',
       },
       {
         q: 'What lead time should we expect?',
@@ -1556,7 +1556,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         q: 'Is there a minimum volume?',
-        a: 'Moulded tooling is volume-sensitive, so there usually is. Send your annual quantity and we will tell you whether it is viable.',
+        a: 'Moulded dies are volume-sensitive, so there usually is. Send your annual quantity and we will tell you whether it is viable.',
       },
       {
         q: 'Can we see a sample before committing?',

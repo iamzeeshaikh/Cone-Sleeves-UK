@@ -1,4 +1,11 @@
-import { SITE, CONTACT, canonical, SOCIAL_PROFILES, BUSINESS_PENDING } from '~/config/site';
+import {
+  SITE,
+  CONTACT,
+  canonical,
+  SOCIAL_PROFILES,
+  BUSINESS_PENDING,
+  POSTAL_ADDRESS,
+} from '~/config/site';
 import type { Faq } from '~/data/types';
 
 /**
@@ -29,6 +36,7 @@ export function organisation() {
       width: 512,
       height: 512,
     },
+    address: POSTAL_ADDRESS,
     areaServed: {
       '@type': 'Country',
       name: 'United Kingdom',

@@ -3,6 +3,7 @@ import { Image } from 'astro:assets';
 import BaseLayout from '~/layouts/BaseLayout.astro';
 import ProductCard from '~/components/ProductCard.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
+import DesignPanel from '~/components/DesignPanel.astro';
 import Sections from '~/components/Sections.astro';
 import Faqs from '~/components/Faqs.astro';
 import { ROUTED_CATEGORIES, HOME_CATEGORY, categoryPath } from '~/data/categories';
@@ -119,6 +120,12 @@ const graph = [
       id="quote-form"
     />
   </div>
+
+  <section class="section-tight">
+    <div class="wrap">
+      <DesignPanel category="cone-sleeves" heading="Design Your Cone Sleeve" />
+    </div>
+  </section>
 
   <section class="section-tight">
     <div class="wrap">

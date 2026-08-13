@@ -278,7 +278,7 @@ export const BUSINESS: BlogPost[] = [
         body: [
           'A wedding needing two hundred sleeves and a chain needing two hundred thousand are quoted on entirely different logic. Sending a quantity with your first message avoids a wasted exchange.',
           'Digital printing makes short runs genuinely viable, and it also makes several designs in one order affordable — useful for a tasting flight or a set of colours across a menu.',
-          'What short runs do not avoid is tooling. If the sleeve size is new, a die still has to be made, and that has its own lead time.',
+          'What short runs do not avoid is die-making. If the sleeve size is new, a die still has to be made, and that has its own lead time.',
         ],
         link: {
           href: '/custom-small-cone-sleeves/',
@@ -290,7 +290,7 @@ export const BUSINESS: BlogPost[] = [
         kind: 'prose',
         heading: 'Reusing an Existing Die',
         body: [
-          'If you already have a sleeve in production, a seasonal or event version of it is only a print job. No new tooling, no tooling lead time, and a considerably shorter schedule.',
+          'If you already have a sleeve in production, a seasonal or event version of it is only a print job. No new die, no die lead time, and a considerably shorter schedule.',
           'That is the single most useful thing to know when a date is tight. Ask whether your existing die can carry the new artwork before assuming you need something new.',
           'It is also an argument for choosing a sensible standard size at the outset, so future one-offs are cheap.',
         ],
@@ -335,7 +335,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         q: 'Can we order a few hundred rather than thousands?',
-        a: 'Short runs are normal for event work and digital printing makes them viable. What does not scale down is tooling, so an existing sleeve size is much cheaper to reprint than a new one is to create.',
+        a: 'Short runs are normal for event work and digital printing makes them viable. What does not scale down is die-making, so an existing sleeve size is much cheaper to reprint than a new one is to create.',
       },
       {
         q: 'Should we print the event year on the packaging?',
@@ -354,7 +354,7 @@ export const BUSINESS: BlogPost[] = [
         a: 'From expected footfall and a conversion rate you actually believe, then check the total against what you can store and transport.',
       },
       {
-        q: 'Is tooling a problem for a one-off?',
+        q: 'Is the die a problem for a one-off?',
         a: 'It is the cost that does not scale down. Using an existing size avoids it entirely, which is worth checking first.',
       },
       {
@@ -608,7 +608,7 @@ export const BUSINESS: BlogPost[] = [
         items: [
           'What exactly is the board grade, lining, ink system and finish being quoted?',
           'What is the minimum order quantity, and what is the lead time from artwork approval?',
-          'Is the tooling cost separate, and what happens to the die at reorder?',
+          'Is the die cost separate, and what happens to the die at reorder?',
           'What sample options exist before a full run, and at what cost?',
           'What happens if the delivered goods do not match the approved proof?',
         ],
@@ -641,7 +641,7 @@ export const BUSINESS: BlogPost[] = [
           },
           {
             title: 'Get the Full Specification in Writing',
-            body: 'Board, lining, ink, finish, quantity, lead time and tooling terms, on the quote rather than in conversation.',
+            body: 'Board, lining, ink, finish, quantity, lead time and die terms, on the quote rather than in conversation.',
           },
           {
             title: 'Check a Flat Sample Against the Real Product',
@@ -694,7 +694,7 @@ export const BUSINESS: BlogPost[] = [
         body: [
           'If you already buy printed packaging, you are not starting from nothing. You have a size that works, artwork that has been through a press, and a usage figure based on real trade rather than a guess.',
           'Send all three to any new supplier. A sample of your current packaging is worth more than a written specification, because it shows the board weight, the finish and the fit in a way a description cannot.',
-          'The one thing that rarely transfers is the tooling. A die made by another supplier normally stays with them, so budget for a new one when you move, and treat that as a one-off rather than an ongoing cost.',
+          'The one thing that rarely transfers is the die. A die made by another supplier normally stays with them, so budget for a new one when you move, and treat that as a one-off rather than an ongoing cost.',
         ],
         link: {
           href: '/artwork-guidelines/',
@@ -714,11 +714,11 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         q: 'What should a supplier be able to confirm in writing?',
-        a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to the tooling at reorder. Any reluctance on those is worth noticing.',
+        a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to the die at reorder. Any reluctance on those is worth noticing.',
       },
       {
         q: 'What should a supplier confirm in writing?',
-        a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to tooling at reorder.',
+        a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to the die at reorder.',
       },
       {
         q: 'Is the cheapest quote usually comparable?',
@@ -734,7 +734,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         q: 'Can we move supplier without starting again?',
-        a: 'Largely. Your size, artwork and usage figures all carry over. Tooling usually does not, so budget for a new die.',
+        a: 'Largely. Your size, artwork and usage figures all carry over. The die usually does not, so budget for a new die.',
       },
       {
         q: 'How do we judge a supplier early?',

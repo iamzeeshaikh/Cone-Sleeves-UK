@@ -74,7 +74,7 @@ Tested against a running server with real POSTs:
 - [x] SMTP credentials read from environment only; never in client code
 - [x] Real credentials verified absent from `dist/` after a full build
 
-### Design tool
+### Design Your Cone Sleeve
 
 - [x] Six steps with progress indicator; back and continue navigation
 - [x] Live SVG representation updates with style, depth, board, print, finish and colour
@@ -129,13 +129,17 @@ SMTP. Enquiries land in the client's nominated inbox.
       local only and does not deploy. Without this the live forms return 503.
 - [ ] Send one enquiry from the deployed site and confirm arrival
 
-**Note on the From address.** `SMTP_FROM_EMAIL` is set to an address on the old
-`.com` domain at the client's explicit instruction, after it was raised that it
-contradicts this site's domain-separation rule. It is confined to `.env`, so the
-build audit's `.com` sweep still passes. Gmail will rewrite the From header to
-the authenticating account unless that address is verified under Gmail
-Settings → Accounts → *Send mail as*; check the header on the first delivered
-enquiry and add the alias there if the rewrite is not wanted.
+**Note on the From address.** `SMTP_FROM_EMAIL` is `info@conesleeves.co.uk`
+and `SMTP_FROM_NAME` is `Cone Sleeves UK`, so outgoing mail matches the site's
+own domain. (An earlier `.com` value was corrected by the client on the same
+day.)
+
+- [ ] **Verify `info@conesleeves.co.uk` in Gmail** under Settings → Accounts →
+      *Send mail as*. Until it is verified, Gmail rewrites the From header to
+      the authenticating account and enquiries appear to come from a personal
+      address. Check the header on a delivered enquiry to see which is
+      happening — the send itself succeeds either way, so a 200 does not prove
+      the From survived.
 
 ### 2. Legal entity details — BLOCKING
 

@@ -205,7 +205,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'Can we run a shallow wrap in winter and a deep one in summer?',
-        a: 'Plenty of seaside sites do exactly that, from one artwork file and two dies. The tooling is paid for once and both versions reorder as print-only jobs afterwards.',
+        a: 'Plenty of seaside sites do exactly that, from one artwork file and two dies. The die is paid for once and both versions reorder as print-only jobs afterwards.',
       },
       {
         q: 'Do plain wrappers still need a die?',
@@ -331,7 +331,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'How far in advance should we reorder?',
-        a: 'Before you are down to your last case. Reorders skip tooling and artwork, so they are quicker than a first order, but production lead time still applies and moves with the season.',
+        a: 'Before you are down to your last case. Reorders skip die-making and artwork, so they are quicker than a first order, but production lead time still applies and moves with the season.',
       },
     ],
     related: [
@@ -605,7 +605,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'Can children\'s sleeves share a die with the adult size?',
-        a: 'No. The children\'s cone is a different shape rather than a scaled version, so it needs its own tool. The artwork is what carries across, not the die.',
+        a: 'No. The children\'s cone is a different shape rather than a scaled version, so it needs its own die. The artwork is what carries across, not the die.',
       },
       {
         q: 'Should the children\'s design be different?',
@@ -2049,7 +2049,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'Do they need a die?',
-        a: 'Not a cutting die, because they are moulded rather than die-cut. Tooling for a moulded shape works differently, which we confirm on the quote.',
+        a: 'Not a cutting die, because they are moulded rather than die-cut. A mould works differently, which we confirm on the quote.',
       },
       {
         q: 'Are they available in colours?',
@@ -2070,7 +2070,7 @@ export const CONE_SLEEVES: Product[] = [
     category: 'cone-sleeves',
     seoTitle: 'Custom Die Cut Sleeves UK | Shaped Packaging Sleeves',
     seoDescription:
-      'Sleeves cut to a shape of your own, including windows, contours and locking tabs, on a bespoke tool rather than a stock die.',
+      'Sleeves cut to a shape of your own, including windows, contours and locking tabs, on a bespoke die rather than a stock one.',
     h1: 'Custom Die-Cut Sleeves',
     cardBlurb: 'Sleeves cut to a shape of your own, including windows and contoured edges.',
     enquiryLabel: 'custom die-cut sleeves',
@@ -2081,15 +2081,15 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Tooling Is a One-Off, Not a Per-Unit Cost',
+        heading: 'The Die Is a One-Off, Not a Per-Unit Cost',
         body: [
-          'A die is a physical tool. It is made once, paid for once, and used for every reorder afterwards.',
-          'That means the tooling cost spreads across everything you ever print from it. On a first order of a few thousand it looks expensive; across three years of reorders it usually is not.',
+          'A die is a physical cutting form. It is made once, paid for once, and used for every reorder afterwards.',
+          'That means the die cost spreads across everything you ever print from it. On a first order of a few thousand it looks expensive; across three years of reorders it usually is not.',
         ],
       },
       {
         kind: 'bullets',
-        heading: 'Shapes Worth a Bespoke Tool',
+        heading: 'Shapes Worth a Bespoke Die',
         items: [
           'A window that shows the product through the sleeve.',
           'A contoured top edge that follows the shape of what it wraps.',
@@ -2114,10 +2114,10 @@ export const CONE_SLEEVES: Product[] = [
           },
           {
             title: 'Check a Plain Cut Sample',
-            body: 'An unprinted sample cut on the tool, wrapped around the real product. Changes are cheapest here.',
+            body: 'An unprinted sample cut on the die, wrapped around the real product. Changes are cheapest here.',
           },
           {
-            title: 'Print from the Approved Tool',
+            title: 'Print from the Approved Die',
             body: 'Once the shape is signed off the artwork is placed and the run scheduled.',
           },
         ],
@@ -2144,7 +2144,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'How long does a new die take to make?',
-        a: 'It is a separate step ahead of printing, and its lead time is confirmed with your quote. A first order with new tooling always runs longer than a reorder from the same tool.',
+        a: 'It is a separate step ahead of printing, and its lead time is confirmed with your quote. A first order needing a new die always runs longer than a reorder from the same die.',
       },
       {
         q: 'Can you cut any shape?',
@@ -2156,7 +2156,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         q: 'Can we see the shape before printing?',
-        a: 'Yes, as an unprinted sample cut on the tool. Wrapping that around the real product is the cheapest possible moment to change anything.',
+        a: 'Yes, as an unprinted sample cut on the die. Wrapping that around the real product is the cheapest possible moment to change anything.',
       },
       {
         q: 'Is a window cheaper without film?',

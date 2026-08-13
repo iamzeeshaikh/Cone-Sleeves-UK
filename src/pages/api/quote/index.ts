@@ -164,7 +164,7 @@ export const POST: APIRoute = async ({ request }) => {
   const source = clean(form.get('source'), 80) || 'website';
   const consent = clean(form.get('consent'), 10);
 
-  // The design tool posts its configuration as a JSON string.
+  // The sleeve designer posts its configuration as a JSON string.
   const configRaw = clean(form.get('configuration'), 4000);
 
   const errors: string[] = [];
@@ -269,7 +269,7 @@ export const POST: APIRoute = async ({ request }) => {
     '',
     ...rows.map(([k, v]) => `${k}: ${v}`),
     ...(configRows.length
-      ? ['', 'Design tool configuration:', ...configRows.map(([k, v]) => `  ${k}: ${v}`)]
+      ? ['', 'Design Your Sleeve configuration:', ...configRows.map(([k, v]) => `  ${k}: ${v}`)]
       : []),
     '',
     'Message:',
@@ -288,7 +288,7 @@ export const POST: APIRoute = async ({ request }) => {
     </table>
     ${
       configRows.length
-        ? `<h3 style="font:600 15px system-ui,sans-serif;color:#1f4415;margin:18px 0 8px">Design tool configuration</h3>
+        ? `<h3 style="font:600 15px system-ui,sans-serif;color:#1f4415;margin:18px 0 8px">Design Your Sleeve configuration</h3>
            <table style="border-collapse:collapse;font:14px system-ui,sans-serif">
              ${configRows
                .map(

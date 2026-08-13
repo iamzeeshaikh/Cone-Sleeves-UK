@@ -51,13 +51,13 @@ export const PRACTICE: BlogPost[] = [
         heading: 'Setting Type on an Arc',
         body: [
           'Type that should read horizontally on the finished cone has to be set on a curve on the flat, following the same radius as the die.',
-          'Every serious design application can do this — it is the same tool used for text on a circular badge. What it needs is the correct radius, which comes from the die line rather than from guesswork.',
+          'Every serious design application can do this — it is the same control used for text on a circular badge. What it needs is the correct radius, which comes from the die line rather than from guesswork.',
           'A short wordmark tolerates this better than a long sentence. If you have a lot to say, consider saying less rather than setting a paragraph on a curve.',
         ],
         link: {
           href: '/custom-die-cut-sleeves/',
           anchor: 'how a die line is produced for a bespoke shape',
-          sentence: 'For anything non-standard, {link} covers the tooling stage that comes first.',
+          sentence: 'For anything non-standard, {link} covers the die stage that comes first.',
         },
       },
       {
@@ -565,7 +565,7 @@ export const PRACTICE: BlogPost[] = [
         kind: 'prose',
         heading: 'Why the Sleeve Usually Beats the Cup',
         body: [
-          'Printed cups carry tooling costs and minimum quantities that a single café often cannot justify. A printed sleeve carries neither, works with plain cups already in the cupboard, and can change four times a year without writing off stock.',
+          'Printed cups carry die costs and minimum quantities that a single café often cannot justify. A printed sleeve carries neither, works with plain cups already in the cupboard, and can change four times a year without writing off stock.',
           'It also brands a cup you have not committed to. If you switch cup supplier next year, the sleeve very likely still fits, whereas a pallet of printed cups is a pallet of printed cups.',
           'For a café branding its takeaway offer for the first time, this is almost always where to start.',
         ],
@@ -633,7 +633,7 @@ export const PRACTICE: BlogPost[] = [
         kind: 'prose',
         heading: 'Using Seasonal Designs Well',
         body: [
-          'The cheapest branding change a café can make is a new sleeve design on the same cups. There is no tooling, no cup stock to clear and no change at the counter.',
+          'The cheapest branding change a café can make is a new sleeve design on the same cups. There is no die to pay for, no cup stock to clear and no change at the counter.',
           'Digital printing makes several designs in one run affordable, so a set of four seasonal sleeves is genuinely achievable for an independent.',
           'The one thing worth avoiding is printing a year on them. Undated artwork can be used again; dated artwork becomes waste on 1 January.',
         ],
@@ -665,7 +665,7 @@ export const PRACTICE: BlogPost[] = [
         kind: 'prose',
         heading: 'When It Is Worth Moving on to Printed Cups',
         body: [
-          'Sleeves stop being the obvious answer at a certain volume. Once a group is getting through enough cups that the tooling and minimum quantity on a printed cup are spread thinly, the maths changes.',
+          'Sleeves stop being the obvious answer at a certain volume. Once a group is getting through enough cups that the die and minimum quantity on a printed cup are spread thinly, the maths changes.',
           'The crossover is not a fixed number, because it depends on the print method, the number of sizes carried and how often the design changes. A business changing its artwork four times a year stays with sleeves far longer than one running a single design.',
           'The useful move is to ask for both prices against your genuine annual usage rather than your next order. That comparison usually settles it in one email.',
         ],
@@ -729,11 +729,11 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         q: 'Should we print cups instead?',
-        a: 'Once volumes justify the tooling and minimum quantity. Ask for both prices against your genuine annual usage.',
+        a: 'Once volumes justify the die and minimum quantity. Ask for both prices against your genuine annual usage.',
       },
       {
         q: 'Can we run a seasonal sleeve?',
-        a: 'Easily, and it is the cheapest branding change a café can make — no tooling and no cup stock to clear.',
+        a: 'Easily, and it is the cheapest branding change a café can make — no die and no cup stock to clear.',
       },
     ],
   },

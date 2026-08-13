@@ -280,7 +280,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
   '/design-your-cone-sleeve/': [
     {
       q: 'Is this preview a production proof?',
-      a: 'No, and the tool says so on screen. It shows layout and proportion on a generic shape, not the die cut for your cone. A production proof is issued separately once the specification and the template are agreed.',
+      a: 'No, and this page says so on screen. It shows layout and proportion on a generic shape, not the die cut for your cone. A production proof is issued separately once the specification and the template are agreed.',
     },
     {
       q: 'Will the printed colours match what we see here?',
@@ -288,11 +288,11 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: 'Can we save what we build here?',
-      a: 'Take a screenshot and attach it to your enquiry. The tool is a sketchpad rather than a store, and the details that actually matter — size, board, colour count — are settled in the written specification.',
+      a: 'Take a screenshot and attach it to your enquiry. This page is a sketchpad rather than a store, and the details that actually matter — size, board, colour count — are settled in the written specification.',
     },
     {
       q: 'Does the design here get sent to press?',
-      a: 'No. What you build here communicates an idea to us. Print-ready artwork is drawn to the die template we issue, at the correct resolution and with bleed, which a browser tool cannot produce.',
+      a: 'No. What you build here communicates an idea to us. Print-ready artwork is drawn to the die template we issue, at the correct resolution and with bleed, which a browser cannot produce.',
     },
     {
       q: 'Do we need design software to use it?',
@@ -300,7 +300,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: 'Can we upload our own logo into the preview?',
-      a: 'The tool is deliberately simple, so send your logo with the enquiry instead. That way it reaches us at full quality rather than as a screen-sized copy.',
+      a: 'The designer is deliberately simple, so send your logo with the enquiry instead. That way it reaches us at full quality rather than as a screen-sized copy.',
     },
     {
       q: 'How close is the shape to a real sleeve?',
@@ -316,7 +316,7 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
     },
     {
       q: 'What is the next step once we have an idea?',
-      a: 'Send it with a photograph of the cone or cup it wraps. The physical product is what turns a sketch into a specification, and it is the one thing the tool cannot supply.',
+      a: 'Send it with a photograph of the cone or cup it wraps. The physical product is what turns a sketch into a specification, and it is the one thing a screen cannot supply.',
     },
   ],
 

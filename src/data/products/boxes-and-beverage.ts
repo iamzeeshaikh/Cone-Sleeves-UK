@@ -398,7 +398,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
         kind: 'prose',
         heading: 'Cheaper than Printing the Cup, and More Flexible',
         body: [
-          'Printed cups carry tooling and minimum quantities that put them out of reach for a single site. Sleeves do not, and they work across every cup size that shares a circumference.',
+          'Printed cups carry die costs and minimum quantities that put them out of reach for a single site. Sleeves do not, and they work across every cup size that shares a circumference.',
           'They also let you change design four times a year without holding four cup lines.',
         ],
         link: {

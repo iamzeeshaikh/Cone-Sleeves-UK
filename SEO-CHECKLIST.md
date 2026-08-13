@@ -172,7 +172,8 @@ No content or functionality was removed to improve a score.
 | Product grids | ✅ `repeat(auto-fill, minmax(min(15rem, 100%), 1fr))` |
 | Tables | ✅ Every table wrapped in `.table-scroll` with `overflow-x: auto`; the page body never scrolls sideways |
 | Accordions | ✅ Native `<details>`/`<summary>`, 48 px minimum tap target |
-| Custom design tool | ✅ Single column below 960 px, preview moves above the form, step labels collapse to numbers below 620 px |
+| Design Your Cone Sleeve page | ✅ Single column below 960 px, preview moves above the form, step labels collapse to numbers below 620 px |
+| Design Yours panel (171 pages) | ✅ Stacks below 780 px; name field is 16 px so iOS does not zoom on focus |
 | WhatsApp controls | ✅ Fixed bottom-left, 52 px targets, call button hidden above 780 px where `tel:` is useless |
 | Tap targets | ✅ 44–48 px minimum on all interactive elements |
 | Font sizes | ✅ Body never below 16 px |
@@ -212,7 +213,7 @@ until a real ID is configured**, and no ID has been invented.
 | Google Tag Manager | `PUBLIC_GTM_ID` — takes precedence over GA4 if both are set |
 | Search Console verification | `PUBLIC_GSC_VERIFICATION` — meta tag only rendered when set |
 | Quote form submissions | `dataLayer.push({ event: 'quote_submit' })` |
-| Design tool submissions | `dataLayer.push({ event: 'design_tool_submit' })` |
+| Design Your Sleeve submissions | `dataLayer.push({ event: 'design_your_sleeve_submit' })` |
 | Phone clicks | `dataLayer.push({ event: 'phone_click' })` |
 | Email clicks | `dataLayer.push({ event: 'email_click' })` |
 | WhatsApp clicks | `dataLayer.push({ event: 'whatsapp_click' })` |

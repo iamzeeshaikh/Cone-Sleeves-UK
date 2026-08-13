@@ -155,7 +155,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         q: 'Can we measure a cone with an ordinary ruler?',
-        a: 'Yes. A ruler and three cones is all the equipment needed. The difficulty is knowing which two measurements matter, not the tools.',
+        a: 'Yes. A ruler and three cones is all the equipment needed. The difficulty is knowing which two measurements matter, not the equipment.',
       },
       {
         q: 'What if our cones vary a lot?',
@@ -344,7 +344,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         q: 'Can we change board without changing the die?',
-        a: 'Usually yes, within limits — a much heavier board can behave differently on the same die. If you are considering a change at reorder, ask us to check rather than assuming the tool transfers directly.',
+        a: 'Usually yes, within limits — a much heavier board can behave differently on the same die. If you are considering a change at reorder, ask us to check rather than assuming the die transfers directly.',
       },
       {
         q: 'Can we change board at reorder?',
@@ -401,7 +401,7 @@ export const FUNDAMENTALS: BlogPost[] = [
         heading: 'Printing Happens Flat, Before Anything Is a Cone',
         body: [
           'A cone sleeve is printed as a flat shape on a large sheet alongside many others, then cut out by a die and shipped flat. The cone shape only appears when a member of your staff rolls it.',
-          'That is worth understanding because it explains almost everything else: why artwork has to be built on an arc, why the print quality depends on the board surface rather than the finished shape, and why changing the size means changing a physical tool.',
+          'That is worth understanding because it explains almost everything else: why artwork has to be built on an arc, why the print quality depends on the board surface rather than the finished shape, and why changing the size means changing a physical die.',
         ],
       },
       {
@@ -457,7 +457,7 @@ export const FUNDAMENTALS: BlogPost[] = [
         steps: [
           {
             title: 'The Die Is Made or Retrieved',
-            body: 'A new size needs a new physical cutting tool. A reorder uses the existing one, which is why repeat orders are quicker.',
+            body: 'A new size needs a new physical cutting die. A reorder uses the existing one, which is why repeat orders are quicker.',
           },
           {
             title: 'Artwork Is Placed on the Die Line',
@@ -503,7 +503,7 @@ export const FUNDAMENTALS: BlogPost[] = [
         kind: 'prose',
         heading: 'Where the Cost Actually Sits on a Small Order',
         body: [
-          'On a first order of a few thousand sleeves, the printing itself is rarely the largest line. Setup, tooling and the minimum quantity the press will accept usually dominate.',
+          'On a first order of a few thousand sleeves, the printing itself is rarely the largest line. Setup, dies and the minimum quantity the press will accept usually dominate.',
           'That is why the price per unit falls so sharply between two thousand and twenty thousand: the fixed costs are being spread across ten times as many sleeves rather than the ink getting cheaper.',
           'It is also why asking for a price at two quantities is more useful than asking for one. The shape of that curve tells you where your own reorder point should sit.',
         ],
@@ -543,10 +543,10 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         q: 'Does the die exist before printing?',
-        a: 'It has to, because the artwork is placed on it. That is why a new size runs longer than a reorder from an existing tool.',
+        a: 'It has to, because the artwork is placed on it. That is why a new size runs longer than a reorder from an existing die.',
       },
       {
-        q: 'Can we change artwork without new tooling?',
+        q: 'Can we change artwork without a new die?',
         a: 'Yes. The die is tied to the shape, not the design, so a new artwork on the same size is a print job only.',
       },
       {

@@ -1,0 +1,432 @@
+---
+/**
+ * "Design Yours" — a compact live representation shown on every product page
+ * and on the homepage.
+ *
+ * This is not the five-step page in miniature. It answers the one question a
+ * visitor has while looking at a product photograph — *what would this look
+ * like in my colours* — and then hands the answer to the full page, which is
+ * where board, size, finish and quantity actually get decided.
+ *
+ * The shape follows the range. A cone drawn on a paper bag page would be
+ * worse than showing nothing, so each range maps to the silhouette it
+ * actually sells.
+ */
+import type { Product } from '~/data/types';
+
+interface Props {
+  /** Omitted on the homepage, where the panel speaks for the whole range. */
+  product?: Product;
+  /** Range slug, used when there is no single product. */
+  category?: string;
+  heading?: string;
+}
+
+const { product, category, heading } = Astro.props;
+
+const rangeSlug = product?.category ?? category ?? 'cone-sleeves';
+
+/** Range → silhouette. Anything unmapped falls back to the cone. */
+const SHAPES: Record<string, 'cone' | 'wrap' | 'tray' | 'cup' | 'bag'> = {
+  'cone-sleeves': 'cone',
+  'food-sleeves': 'wrap',
+  'food-trays': 'tray',
+  'food-boxes': 'tray',
+  'beverage-sleeves': 'cup',
+  'paper-cups': 'cup',
+  'printed-papers-bags': 'bag',
+};
+const shape = SHAPES[rangeSlug] ?? 'cone';
+
+const subject = product?.name ?? 'Cone Sleeve';
+const title = heading ?? `Design Your ${subject}`;
+
+/** Carries the choices to the full page so nothing is retyped there. */
+const fullHref = product
+  ? `/design-your-cone-sleeve/?product=${encodeURIComponent(product.slug)}`
+  : '/design-your-cone-sleeve/';
+
+const colours = [
+  { value: '#2b5a1e', label: 'Forest green' },
+  { value: '#1a1917', label: 'Black' },
+  { value: '#ffffff', label: 'White' },
+  { value: '#f2a93b', label: 'Amber' },
+  { value: '#c2456b', label: 'Pink' },
+  { value: '#9c3a2c', label: 'Terracotta' },
+  { value: '#1f4a73', label: 'Navy' },
+  { value: '#b98b52', label: 'Kraft' },
+];
+
+/** Where the branding sits on each silhouette, so one text node serves all five. */
+const TEXT_POS: Record<string, { x: number; y: number; size: number }> = {
+  cone: { x: 110, y: 178, size: 15 },
+  wrap: { x: 110, y: 152, size: 15 },
+  tray: { x: 110, y: 168, size: 15 },
+  cup: { x: 110, y: 176, size: 15 },
+  bag: { x: 110, y: 158, size: 16 },
+};
+const textPos = TEXT_POS[shape];
+---
+
+<section class="design-panel" data-design-panel data-shape={shape}>
+  <div class="dp-head">
+    <p class="eyebrow">Design Yours</p>
+    <h2>{title}</h2>
+    <p class="dp-lede">
+      Put your colour and your name on it to see how the idea reads. This is a
+      representation, not a manufacturing proof — the die is cut from your own product.
+    </p>
+  </div>
+
+  <div class="dp-grid">
+    <div class="dp-stage">
+      <svg viewBox="0 0 220 300" role="img" aria-labelledby="dp-title">
+        <title id="dp-title">A representation of {subject.toLowerCase()} in the colour you pick</title>
+        <defs>
+          <linearGradient id="dp-wafer" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#e8c48a"></stop>
+            <stop offset="100%" stop-color="#c99a58"></stop>
+          </linearGradient>
+          <linearGradient id="dp-sheen" x1="0" y1="0" x2="1" y2="0">
+            <stop offset="0%" stop-color="#fff" stop-opacity="0"></stop>
+            <stop offset="42%" stop-color="#fff" stop-opacity="0.42"></stop>
+            <stop offset="100%" stop-color="#fff" stop-opacity="0"></stop>
+          </linearGradient>
+          <pattern id="dp-dots" width="14" height="14" patternUnits="userSpaceOnUse">
+            <circle cx="7" cy="7" r="2.1" fill="#fff" opacity="0.34"></circle>
+          </pattern>
+        </defs>
+
+        {
+          shape === 'cone' && (
+            <g>
+              <circle cx="110" cy="72" r="38" fill="#f6e2cd" />
+              <circle cx="96" cy="62" r="12" fill="#fff" opacity="0.35" />
+              <path d="M62 92 L158 92 L110 286 Z" fill="url(#dp-wafer)" stroke="#a97a37" stroke-width="1.5" />
+              <path d="M56 96 L164 96 L127 262 L93 262 Z" data-dp-panel stroke="rgba(0,0,0,0.18)" stroke-width="1.5" />
+            </g>
+          )
+        }
+
+        {
+          shape === 'wrap' && (
+            <g>
+              <rect x="44" y="96" width="132" height="108" rx="26" fill="#f0d7ae" stroke="#c2a06a" stroke-width="1.5" />
+              <path d="M44 132 h132 v46 h-132 Z" data-dp-panel stroke="rgba(0,0,0,0.16)" stroke-width="1.5" />
+              <rect x="60" y="84" width="100" height="20" rx="9" fill="#e6c9a0" />
+            </g>
+          )
+        }
+
+        {
+          shape === 'tray' && (
+            <g>
+              <path d="M52 122 L168 122 L150 232 L70 232 Z" data-dp-panel stroke="rgba(0,0,0,0.18)" stroke-width="1.5" />
+              <path d="M52 122 L168 122 L158 142 L62 142 Z" fill="rgba(255,255,255,0.16)" />
+              <path d="M74 104 q36 -22 72 0 l0 18 l-72 0 Z" fill="#f0d7ae" stroke="#c2a06a" stroke-width="1.4" />
+            </g>
+          )
+        }
+
+        {
+          shape === 'cup' && (
+            <g>
+              <path d="M66 96 L154 96 L140 258 L80 258 Z" fill="#f4efe6" stroke="#cfc4b2" stroke-width="1.5" />
+              <ellipse cx="110" cy="96" rx="44" ry="9" fill="#e6ded0" stroke="#cfc4b2" stroke-width="1.3" />
+              <path d="M72 140 L148 140 L138 214 L82 214 Z" data-dp-panel stroke="rgba(0,0,0,0.16)" stroke-width="1.5" />
+            </g>
+          )
+        }
+
+        {
+          shape === 'bag' && (
+            <g>
+              <path d="M60 104 L160 104 L160 256 L60 256 Z" data-dp-panel stroke="rgba(0,0,0,0.18)" stroke-width="1.5" />
+              <path d="M60 104 L110 84 L160 104 L110 120 Z" fill="rgba(0,0,0,0.12)" />
+              <path d="M84 100 q26 -30 52 0" fill="none" stroke="rgba(0,0,0,0.35)" stroke-width="3" stroke-linecap="round" />
+            </g>
+          )
+        }
+
+        <rect
+          x="40"
+          y="80"
+          width="140"
+          height="200"
+          fill="url(#dp-dots)"
+          data-dp-pattern
+          opacity="0"
+          pointer-events="none"></rect>
+        <rect
+          x="40"
+          y="80"
+          width="140"
+          height="200"
+          fill="url(#dp-sheen)"
+          data-dp-gloss
+          opacity="0"
+          pointer-events="none"></rect>
+
+        <text
+          x={textPos.x}
+          y={textPos.y}
+          text-anchor="middle"
+          font-family="Inter, system-ui, sans-serif"
+          font-size={textPos.size}
+          font-weight="800"
+          letter-spacing="0.5"
+          data-dp-text>YOUR NAME</text>
+      </svg>
+    </div>
+
+    <div class="dp-controls">
+      <p class="dp-label" id="dp-colour-label">Sleeve colour</p>
+      <div class="dp-swatches" role="group" aria-labelledby="dp-colour-label">
+        {
+          colours.map((c, i) => (
+            <button
+              type="button"
+              class="dp-swatch"
+              style={`--swatch:${c.value}`}
+              data-dp-swatch={c.value}
+              aria-pressed={i === 0 ? 'true' : 'false'}
+            >
+              <span class="visually-hidden">{c.label}</span>
+            </button>
+          ))
+        }
+      </div>
+
+      <p class="dp-field">
+        <label for="dp-name">Name on the pack</label>
+        <input
+          type="text"
+          id="dp-name"
+          maxlength="18"
+          value="YOUR NAME"
+          autocomplete="off"
+          data-dp-input
+        />
+      </p>
+
+      <p class="dp-label">Finish</p>
+      <div class="dp-segmented" role="group" aria-label="Finish">
+        <button type="button" data-dp-finish="matt" aria-pressed="true">Matt</button>
+        <button type="button" data-dp-finish="gloss" aria-pressed="false">Gloss</button>
+      </div>
+
+      <p class="dp-check">
+        <label>
+          <input type="checkbox" data-dp-pattern-toggle />
+          Show a repeating pattern
+        </label>
+      </p>
+
+      <a class="btn btn-primary dp-cta" href={fullHref}>Take this into the full designer</a>
+      <p class="dp-note">
+        The full page adds size, board, print and quantity, then sends the whole
+        specification to us in one go.
+      </p>
+    </div>
+  </div>
+</section>
+
+<style>
+  .design-panel {
+    background: var(--surface);
+    border: 1px solid var(--c-border-soft);
+    border-radius: var(--radius-xl);
+    padding: var(--space-m);
+    box-shadow: var(--shadow-s);
+  }
+
+  .dp-head h2 {
+    font-size: var(--step-2);
+    margin: 0.3rem 0 0.5rem;
+  }
+
+  .dp-lede {
+    color: var(--c-text-soft);
+    max-width: 62ch;
+    margin: 0;
+  }
+
+  .dp-grid {
+    margin-top: var(--space-m);
+    display: grid;
+    gap: var(--space-l);
+    grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+    align-items: start;
+  }
+
+  @media (max-width: 780px) {
+    .dp-grid {
+      grid-template-columns: minmax(0, 1fr);
+    }
+  }
+
+  .dp-stage {
+    background: var(--surface-sunk);
+    border-radius: var(--radius-l);
+    padding: var(--space-s);
+  }
+
+  .dp-stage svg {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  .dp-label {
+    margin: var(--space-s) 0 0.4rem;
+    font-size: var(--step--1);
+    font-weight: 650;
+  }
+
+  .dp-controls > .dp-label:first-child {
+    margin-top: 0;
+  }
+
+  .dp-swatches {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.45rem;
+  }
+
+  .dp-swatch {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 2px solid var(--c-border);
+    background: var(--swatch);
+    cursor: pointer;
+    padding: 0;
+  }
+
+  .dp-swatch[aria-pressed='true'] {
+    outline: 2px solid var(--green-700);
+    outline-offset: 2px;
+  }
+
+  .dp-field {
+    margin: var(--space-s) 0 0;
+    display: grid;
+    gap: 0.3rem;
+  }
+
+  .dp-field label {
+    font-size: var(--step--1);
+    font-weight: 650;
+  }
+
+  .dp-field input {
+    /* 16px minimum, or iOS zooms the page on focus. */
+    font-size: 1rem;
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-m);
+    background: var(--surface);
+    color: inherit;
+    width: 100%;
+  }
+
+  .dp-segmented {
+    display: inline-flex;
+    border: 1px solid var(--c-border);
+    border-radius: var(--radius-pill);
+    overflow: hidden;
+  }
+
+  .dp-segmented button {
+    border: 0;
+    background: var(--surface);
+    padding: 0.4rem 1rem;
+    font: inherit;
+    font-size: var(--step--1);
+    cursor: pointer;
+    color: var(--c-text-soft);
+  }
+
+  .dp-segmented button[aria-pressed='true'] {
+    background: var(--green-700);
+    color: #fff;
+  }
+
+  .dp-check {
+    margin: var(--space-s) 0 0;
+    font-size: var(--step--1);
+  }
+
+  .dp-check label {
+    display: flex;
+    align-items: center;
+    gap: 0.45rem;
+  }
+
+  .dp-cta {
+    margin-top: var(--space-m);
+  }
+
+  .dp-note {
+    margin-top: 0.6rem;
+    font-size: var(--step--1);
+    color: var(--c-text-muted);
+  }
+</style>
+
+<script>
+  // Each panel wires itself, so the same component can appear more than once
+  // on a page without the two fighting over one set of controls.
+  document.querySelectorAll<HTMLElement>('[data-design-panel]').forEach((root) => {
+    const panel = root.querySelector<SVGPathElement>('[data-dp-panel]');
+    const text = root.querySelector<SVGTextElement>('[data-dp-text]');
+    const gloss = root.querySelector<SVGRectElement>('[data-dp-gloss]');
+    const pattern = root.querySelector<SVGRectElement>('[data-dp-pattern]');
+    if (!panel || !text) return;
+
+    let colour = '#2b5a1e';
+
+    /** Rough luminance, so a name on a white or amber pack stays readable. */
+    const isLight = (hex: string) => {
+      const n = parseInt(hex.slice(1), 16);
+      return (0.299 * ((n >> 16) & 255) + 0.587 * ((n >> 8) & 255) + 0.114 * (n & 255)) / 255 > 0.6;
+    };
+
+    const paint = () => {
+      panel.setAttribute('fill', colour);
+      text.setAttribute('fill', isLight(colour) ? '#1a1917' : '#ffffff');
+    };
+
+    root.querySelectorAll<HTMLButtonElement>('[data-dp-swatch]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        colour = btn.dataset.dpSwatch!;
+        root
+          .querySelectorAll<HTMLButtonElement>('[data-dp-swatch]')
+          .forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        paint();
+      });
+    });
+
+    root.querySelector<HTMLInputElement>('[data-dp-input]')?.addEventListener('input', (e) => {
+      const v = (e.target as HTMLInputElement).value.trim();
+      text.textContent = v ? v.toUpperCase() : 'YOUR NAME';
+    });
+
+    root.querySelectorAll<HTMLButtonElement>('[data-dp-finish]').forEach((btn) => {
+      btn.addEventListener('click', () => {
+        root
+          .querySelectorAll<HTMLButtonElement>('[data-dp-finish]')
+          .forEach((b) => b.setAttribute('aria-pressed', String(b === btn)));
+        gloss?.setAttribute('opacity', btn.dataset.dpFinish === 'gloss' ? '1' : '0');
+      });
+    });
+
+    root
+      .querySelector<HTMLInputElement>('[data-dp-pattern-toggle]')
+      ?.addEventListener('change', (e) => {
+        pattern?.setAttribute('opacity', (e.target as HTMLInputElement).checked ? '1' : '0');
+      });
+
+    paint();
+  });
+</script>

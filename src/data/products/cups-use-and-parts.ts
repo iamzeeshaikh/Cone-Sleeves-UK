@@ -42,7 +42,7 @@ export const CUPS_BY_USE: Product[] = [
       {
         kind: 'callout',
         heading: 'Sleeves Are the Cheaper Way In',
-        body: 'Printed cups carry tooling and minimum quantities that a single site often cannot justify. A printed sleeve on a plain cup achieves most of the branding effect for a fraction of the commitment, and it is where most independents start.',
+        body: 'Printed cups carry die costs and minimum quantities that a single site often cannot justify. A printed sleeve on a plain cup achieves most of the branding effect for a fraction of the commitment, and it is where most independents start.',
         link: {
           href: '/custom-printed-coffee-sleeves/',
           anchor: 'printed sleeves on plain cups',
@@ -69,7 +69,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         q: 'Are sleeves cheaper than printed cups?',
-        a: 'For a single site, almost always. A printed sleeve on a plain cup avoids cup tooling and minimum quantities entirely.',
+        a: 'For a single site, almost always. A printed sleeve on a plain cup avoids cup dies and minimum quantities entirely.',
       },
       {
         q: 'Which sizes should we print first?',
@@ -2167,7 +2167,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         q: 'Are sleeves cheaper than printed cups?',
-        a: 'For a single site, considerably. They avoid cup tooling and minimum quantities entirely while branding cups you already hold.',
+        a: 'For a single site, considerably. They avoid cup dies and minimum quantities entirely while branding cups you already hold.',
       },
       {
         q: 'Can we order sleeves without buying cups?',
@@ -2427,7 +2427,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         q: 'Can we change the pattern seasonally?',
-        a: 'Easily, because there is no tooling on a cup print. Only the artwork changes between runs.',
+        a: 'Easily, because there is no die on a cup print. Only the artwork changes between runs.',
       },
       {
         q: 'Do patterns suit a children\'s offer?',
@@ -2516,7 +2516,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         q: 'Can we use our standard cup size?',
-        a: 'Yes, and you should. Keeping the size means no new tooling and no change at the counter when you switch.',
+        a: 'Yes, and you should. Keeping the size means no new die and no change at the counter when you switch.',
       },
       {
         q: 'How many should we order?',
@@ -2600,7 +2600,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         q: 'Can we keep the same cup size?',
-        a: 'Yes, and it is the sensible route. No tooling, no new lids, and no change at the counter when you switch over.',
+        a: 'Yes, and it is the sensible route. No die, no new lids, and no change at the counter when you switch over.',
       },
       {
         q: 'Should the design mention the year?',

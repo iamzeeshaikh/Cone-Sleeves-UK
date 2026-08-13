@@ -3,7 +3,15 @@ import BaseLayout from '~/layouts/BaseLayout.astro';
 import Breadcrumbs from '~/components/Breadcrumbs.astro';
 import Faqs from '~/components/Faqs.astro';
 import QuoteForm from '~/components/QuoteForm.astro';
-import { CONTACT, TEL_HREF, whatsappHref, SITE, BUSINESS_PENDING } from '~/config/site';
+import {
+  CONTACT,
+  TEL_HREF,
+  whatsappHref,
+  SITE,
+  BUSINESS_PENDING,
+  ADDRESS,
+  MAP_HREF,
+} from '~/config/site';
 import { PAGE_FAQS } from '~/data/page-faqs';
 import * as schema from '~/lib/schema';
 
@@ -93,23 +101,33 @@ const graph = [
         </p>
       </div>
 
+      <div class="contact-info">
+        <h2>Address</h2>
+        <address class="contact-address">
+          {ADDRESS.street}<br />
+          {ADDRESS.locality}<br />
+          {ADDRESS.postcode}<br />
+          {ADDRESS.country}
+        </address>
+        <p class="contact-note">
+          This is a trading address rather than a trade counter. Samples and enquiries are
+          handled by post and email, so please
+          <a href="#enquiry">send your requirement</a> rather than travelling to it.
+        </p>
+        <p>
+          <a href={MAP_HREF} rel="noopener noreferrer" target="_blank">See the address on a map</a>
+        </p>
+      </div>
+
       {
-        !BUSINESS_PENDING.tradingAddress && (
+        !BUSINESS_PENDING.registeredAddress && (
           <div class="contact-pending">
-            <strong>Address pending confirmation</strong>
+            <strong>Registered office pending confirmation</strong>
             <p>
-              No trading or registered address is published on this site because none has
-              been supplied for it. Rather than invent one, the field is left empty and
-              will populate from configuration once the real details are confirmed.
+              The address above is where the business trades. A registered office is a
+              separate legal fact and has not been supplied, so nothing is published for it
+              rather than assuming the two are the same.
             </p>
-          </div>
-        )
-      }
-      {
-        BUSINESS_PENDING.tradingAddress && (
-          <div class="contact-info">
-            <h2>Address</h2>
-            <p>{BUSINESS_PENDING.tradingAddress}</p>
           </div>
         )
       }
@@ -245,6 +263,19 @@ const graph = [
     font-size: 0.93rem;
     color: var(--c-text-soft);
     margin: 0;
+  }
+</style>
+
+<style>
+  .contact-address {
+    font-style: normal;
+    line-height: 1.6;
+    margin-top: 0.35rem;
+  }
+
+  .contact-note {
+    margin-top: var(--space-s);
+    color: var(--c-text-soft);
   }
 </style>
 

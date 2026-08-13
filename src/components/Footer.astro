@@ -1,6 +1,13 @@
 ---
 import Logo from './Logo.astro';
-import { CONTACT, TEL_HREF, SITE, BUSINESS_PENDING, whatsappHref } from '~/config/site';
+import {
+  CONTACT,
+  TEL_HREF,
+  SITE,
+  BUSINESS_PENDING,
+  whatsappHref,
+  ADDRESS,
+} from '~/config/site';
 import { TOP_CATEGORIES, categoryPath } from '~/data/categories';
 import { CITIES } from '~/data/locations';
 
@@ -79,6 +86,9 @@ const legal = [
 
   <div class="wrap footer-bottom">
     <p>&copy; {year} {SITE.name}. All rights reserved.</p>
+    <address class="footer-address">
+      {ADDRESS.street}, {ADDRESS.locality}, {ADDRESS.postcode}, {ADDRESS.country}
+    </address>
     {
       /* Company details render only when a real value has been supplied.
          Nothing is invented in the template. */
@@ -187,6 +197,13 @@ const legal = [
     justify-content: space-between;
     font-size: 0.85rem;
     color: rgb(255 255 255 / 0.6);
+  }
+
+  /* An <address> element italicises by default, which reads as emphasis the
+     line does not want in a footer rule. */
+  .footer-address {
+    font-style: normal;
+    margin: 0;
   }
 
   .footer-legal-details {

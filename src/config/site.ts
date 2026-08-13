@@ -24,7 +24,40 @@ export const CONTACT = {
   whatsappNumber: '447458651107',
 } as const;
 
+/**
+ * Trading address, supplied by the client 2026-08-13.
+ *
+ * Held as components rather than one string because structured data needs
+ * them separately, and a single line cannot be split back apart reliably.
+ * The registered office may differ from this and is still taken from the
+ * environment — see BUSINESS_PENDING below.
+ */
+export const ADDRESS = {
+  street: '7 Greys Court, Kingsland Grange',
+  locality: 'Warrington',
+  postcode: 'WA1 4SH',
+  country: 'United Kingdom',
+  countryCode: 'GB',
+} as const;
+
+/** One line, for footers and running text. */
+export const ADDRESS_LINE = `${ADDRESS.street}, ${ADDRESS.locality}, ${ADDRESS.postcode}, ${ADDRESS.country}`;
+
+/** Schema.org PostalAddress built from the same components. */
+export const POSTAL_ADDRESS = {
+  '@type': 'PostalAddress',
+  streetAddress: ADDRESS.street,
+  addressLocality: ADDRESS.locality,
+  postalCode: ADDRESS.postcode,
+  addressCountry: ADDRESS.countryCode,
+} as const;
+
 export const TEL_HREF = `tel:${CONTACT.phoneE164}`;
+
+/** Google Maps search link, built from the address rather than a stored URL. */
+export const MAP_HREF = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
+  ADDRESS_LINE,
+)}`;
 
 /**
  * Builds a WhatsApp deep link with a message that names the page the visitor
@@ -45,16 +78,19 @@ export function canonical(path: string): string {
 }
 
 /**
- * Business details that must be confirmed before launch. Templates render
- * these only when an environment variable supplies a real value — no
- * placeholder company numbers, VAT numbers or addresses are ever published.
+ * Business details still to be confirmed. Templates render these only when an
+ * environment variable supplies a real value — no placeholder company numbers,
+ * VAT numbers or addresses are ever published.
+ *
+ * The trading address is no longer here: it was supplied and now lives in
+ * ADDRESS above. `registeredAddress` stays, because a registered office is a
+ * separate legal fact and may not be the same place.
  */
 export const BUSINESS_PENDING = {
   legalName: import.meta.env.PUBLIC_COMPANY_LEGAL_NAME || '',
   companyNumber: import.meta.env.PUBLIC_COMPANY_NUMBER || '',
   vatNumber: import.meta.env.PUBLIC_VAT_NUMBER || '',
   registeredAddress: import.meta.env.PUBLIC_REGISTERED_ADDRESS || '',
-  tradingAddress: import.meta.env.PUBLIC_TRADING_ADDRESS || '',
 } as const;
 
 export const ANALYTICS = {

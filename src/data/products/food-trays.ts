@@ -292,7 +292,7 @@ export const FOOD_TRAYS: Product[] = [
     enquiryLabel: 'hot dog trays',
     intro: [
       'A hot dog on a flat tray rolls. It rolls into the chips, it rolls off the edge, and the toppings end up on the tray rather than the dog.',
-      'A shaped channel fixes it, and costs nothing once the tool exists.',
+      'A shaped channel fixes it, and costs nothing once the die exists.',
     ],
     sections: [
       {

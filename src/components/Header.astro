@@ -3,6 +3,7 @@ import Logo from './Logo.astro';
 import { CONTACT, TEL_HREF } from '~/config/site';
 import { TOP_CATEGORIES, subcategoriesOf, categoryPath } from '~/data/categories';
 import { productsInCategory, productBySlug } from '~/data/products';
+import { CITIES, COUNTIES } from '~/data/locations';
 
 /**
  * Site header.
@@ -40,13 +41,37 @@ const ranges = TOP_CATEGORIES.map((c) => ({
   ],
 }));
 
+/**
+ * Areas gets a panel of its own. Twenty-five location pages behind a single
+ * flat link are pages nobody finds, and the nations split is how a visitor
+ * actually scans a list of British places.
+ */
+const NATION_ORDER = ['England', 'Scotland', 'Wales'];
+const cityGroups = NATION_ORDER.map((nation) => ({
+  nation,
+  places: CITIES.filter((c) => c.nation === nation),
+})).filter((g) => g.places.length > 0);
+
+const areaColumns = [
+  ...cityGroups.map((g) => ({
+    label: g.nation,
+    items: g.places.map((c) => ({ label: c.place, href: `/${c.slug}/` })),
+  })),
+  {
+    label: 'Counties',
+    items: COUNTIES.map((c) => ({ label: c.place, href: `/${c.slug}/` })),
+  },
+];
+
 const links = [
-  { label: 'Design tool', href: '/design-your-cone-sleeve/' },
+  { label: 'Design Yours', href: '/design-your-cone-sleeve/' },
   { label: 'Guides', href: '/blog/' },
-  { label: 'Areas', href: '/locations/' },
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
 ];
+
+const onAreas =
+  currentPath === '/locations/' || CITIES.concat(COUNTIES).some((l) => currentPath === `/${l.slug}/`);
 
 const isActive = (href: string) =>
   currentPath === href || (href !== '/' && currentPath.startsWith(href));
@@ -125,6 +150,40 @@ const onProducts =
             </div>
           </li>
 
+          <li class="has-mega has-mega-areas">
+            <a href="/locations/" aria-current={onAreas ? 'true' : undefined}>
+              Areas
+              <svg width="10" height="10" viewBox="0 0 12 12" aria-hidden="true" fill="none">
+                <path d="M2 4.5 6 8.5l4-4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+              </svg>
+            </a>
+
+            <div class="mega">
+              <div class="mega-inner">
+                <div class="mega-grid mega-grid-areas">
+                  {
+                    areaColumns.map((col) => (
+                      <div class="mega-col">
+                        <p class="mega-heading">{col.label}</p>
+                        <ul class="mega-subs">
+                          {col.items.map((i) => (
+                            <li>
+                              <a href={i.href}>{i.label}</a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    ))
+                  }
+                </div>
+                <div class="mega-foot">
+                  <a class="mega-all" href="/locations/">Every area we supply</a>
+                  <a class="btn btn-primary btn-sm" href="/request-a-quote/">Get a quote</a>
+                </div>
+              </div>
+            </div>
+          </li>
+
           {
             links.map((l) => (
               <li>
@@ -187,6 +246,23 @@ const onProducts =
           ))
         }
         <li><a href="/products/">All products</a></li>
+        <li>
+          <details>
+            <summary>Areas</summary>
+            <ul>
+              <li>
+                <a href="/locations/">Every area we supply</a>
+              </li>
+              {areaColumns.flatMap((col) =>
+                col.items.map((i) => (
+                  <li>
+                    <a href={i.href}>{i.label}</a>
+                  </li>
+                )),
+              )}
+            </ul>
+          </details>
+        </li>
         {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
         <li><a href="/faqs/">FAQs</a></li>
       </ul>
@@ -363,6 +439,42 @@ const onProducts =
     .mega-grid {
       grid-template-columns: repeat(3, minmax(0, 1fr));
     }
+  }
+
+  /* Areas panel. England holds seventeen of the twenty cities, so its column
+     is given twice the width and its list flows into two sub-columns —
+     otherwise one column runs four times the height of the other three. */
+  .mega-grid-areas {
+    grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr) minmax(0, 1fr);
+  }
+
+  .mega-grid-areas .mega-col:first-child .mega-subs {
+    columns: 2;
+    column-gap: var(--space-m);
+  }
+
+  .mega-grid-areas .mega-subs {
+    display: block;
+    margin-top: 0.45rem;
+  }
+
+  .mega-grid-areas .mega-subs li {
+    break-inside: avoid;
+  }
+
+  @media (max-width: 1240px) {
+    .mega-grid-areas {
+      grid-template-columns: minmax(0, 2fr) minmax(0, 1fr) minmax(0, 1fr);
+    }
+  }
+
+  .mega-heading {
+    margin: 0;
+    font-size: 0.78rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    color: var(--green-800);
   }
 
   .mega-range {

@@ -2097,7 +2097,7 @@ export const FOOD_SLEEVES: Product[] = [
     cardBlurb: 'Short runs on your existing die for festivals, Christmas and one-off events.',
     enquiryLabel: 'event and seasonal sleeves',
     intro: [
-      'A seasonal sleeve is usually not a new product at all. It is your existing sleeve with different artwork, which means no new tooling and a much shorter conversation.',
+      'A seasonal sleeve is usually not a new product at all. It is your existing sleeve with different artwork, which means no new die and a much shorter conversation.',
       'The work is in the scheduling rather than the specification.',
     ],
     sections: [
@@ -2116,7 +2116,7 @@ export const FOOD_SLEEVES: Product[] = [
           },
           {
             title: 'Reuse the Existing Die',
-            body: 'If the sleeve shape is unchanged there is no tooling cost or lead time, only print.',
+            body: 'If the sleeve shape is unchanged there is no die cost or lead time, only print.',
           },
           {
             title: 'Order to the Promotion, Not to the Year',
@@ -2147,7 +2147,7 @@ export const FOOD_SLEEVES: Product[] = [
     faqs: [
       {
         q: 'Can we reuse our standard sleeve die for a seasonal design?',
-        a: 'If the shape and size are unchanged, yes, and it removes the tooling cost and its lead time entirely. Only the print differs, which is why seasonal runs are usually quicker than a first order.',
+        a: 'If the shape and size are unchanged, yes, and it removes the die cost and its lead time entirely. Only the print differs, which is why seasonal runs are usually quicker than a first order.',
       },
       {
         q: 'Should we print the year on a Christmas sleeve?',
@@ -2155,7 +2155,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         q: 'Can we reuse our existing die?',
-        a: 'If the shape and size are unchanged, yes, and it removes the tooling cost and its lead time entirely. Only the print differs.',
+        a: 'If the shape and size are unchanged, yes, and it removes the die cost and its lead time entirely. Only the print differs.',
       },
       {
         q: 'How far ahead should we order?',
@@ -2232,7 +2232,7 @@ export const FOOD_SLEEVES: Product[] = [
           href: '/custom-die-cut-sleeves/',
           anchor: 'bespoke die cutting for windows and slots',
           sentence:
-            'Card slots and windows are cut on a bespoke tool, covered under {link}.',
+            'Card slots and windows are cut on a bespoke die, covered under {link}.',
         },
       },
       {

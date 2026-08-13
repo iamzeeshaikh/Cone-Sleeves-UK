@@ -200,6 +200,7 @@ All four old slugs 301 to the new ones.
 | FAQ pairs | 2,366 | 10 on every product, category, location, article and fixed route; 16 on `/faqs/` |
 | Contextual internal links | 222 | One per content section maximum |
 | Related-product links | 680 | |
+| Design Yours panels | 171 | Every product page plus the homepage, five silhouettes |
 | **Total authored words** | | **≈ 131,600** |
 
 Not one sentence was carried over from the source site. See
