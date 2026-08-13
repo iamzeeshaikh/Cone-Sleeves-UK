@@ -39,7 +39,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Start from the cone, not the artwork',
+        heading: 'Start from the Cone, Not the Artwork',
         body: [
           'Every sleeve on this page is cut to a flat shape that rolls into a cone angle. Two numbers decide that shape: the diameter across the open top of your cone, and the slant height from the rim down to the point where you want the wrap to stop.',
           'Send us a sample cone or the measurements and we set the die from those. Artwork comes afterwards, laid onto a shape that is already correct. Doing it the other way round is how designs end up cropped at the seam.',
@@ -53,7 +53,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Which sleeve suits which counter',
+        heading: 'Which Sleeve Suits Which Counter',
         intro:
           'The shape of your product narrows the choice faster than any other factor:',
         items: [
@@ -68,7 +68,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'specs',
-        heading: 'Common specification across the cone sleeve range',
+        heading: 'Common Specification Across the Cone Sleeve Range',
         intro:
           'These are the options quoted most often. Anything outside them is still worth asking about.',
         rows: [
@@ -85,7 +85,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Print that survives a warm hand',
+        heading: 'Print That Survives a Warm Hand',
         body: [
           'Cone sleeves get gripped, twisted and occasionally dropped in a puddle of melted ice cream. Ink sitting on an unprotected surface will scuff along the seam within minutes of handling.',
           'Matt lamination is the usual answer on dark or heavily inked designs, because it hides handling marks and keeps a deep colour looking even. Lighter designs on kraft often read better with no lamination at all.',
@@ -144,24 +144,24 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'uses',
-        heading: 'Where sleeves earn their place on the pass',
+        heading: 'Where Sleeves Earn Their Place on the Pass',
         intro:
           'Sleeves suit food that is handed over hot and eaten immediately. The detail that changes is grease.',
         items: [
           {
-            title: 'Burgers and buns',
+            title: 'Burgers and Buns',
             body: 'A sleeve holds the stack together and stops the bun crown separating on the first bite. Grease resistance matters more here than anywhere else in the range.',
           },
           {
-            title: 'Hot dogs, corn dogs and skewers',
+            title: 'Hot Dogs, Corn Dogs and Skewers',
             body: 'A long, narrow wrap with a closed base catches sauce. The base is the part people forget to specify, and the part that fails first.',
           },
           {
-            title: 'Wraps, burritos and shawarma',
+            title: 'Wraps, Burritos and Shawarma',
             body: 'A tapered sleeve keeps the roll compressed so the filling stays inside as the customer eats down the length of it.',
           },
           {
-            title: 'Pastries, doughnuts and cake slices',
+            title: 'Pastries, Doughnuts and Cake Slices',
             body: 'Dry goods need presentation more than protection, so uncoated board and a lighter weight usually read better than a laminated finish.',
           },
         ],
@@ -174,7 +174,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Grease resistance is a specification, not a material',
+        heading: 'Grease Resistance Is a Specification, Not a Material',
         body: [
           'Plain board absorbs fat. Within ten minutes a burger sleeve on untreated stock goes translucent along the base and the print starts to look tired.',
           'The usual fixes are a greaseproof liner bonded to the board, a coated inner face, or a heavier board that simply has more to soak. Which one suits depends on how long your food sits before it is eaten — a delivery order needs more protection than a counter sale.',
@@ -188,30 +188,30 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'steps',
-        heading: 'Getting a sleeve sized without guesswork',
+        heading: 'Getting a Sleeve Sized Without Guesswork',
         intro: 'Four steps take most of the risk out of a first order.',
         steps: [
           {
-            title: 'Measure the made product, not the ingredient',
+            title: 'Measure the Made Product, Not the Ingredient',
             body: 'A 4in bun becomes a 5in burger once it is built. Measure the item as it leaves your pass, at its widest point.',
           },
           {
-            title: 'Decide how much you want covered',
+            title: 'Decide How Much You Want Covered',
             body: 'A half-height sleeve shows the food and photographs well. A full-height wrap protects better and travels further.',
           },
           {
-            title: 'Send the numbers with a photograph',
+            title: 'Send the Numbers with a Photograph',
             body: 'A picture of the finished item beside a ruler answers more questions than a written description.',
           },
           {
-            title: 'Check the flat sample before print',
+            title: 'Check the Flat Sample Before Print',
             body: 'Wrap the unprinted flat around a real portion. Anything that needs adjusting is cheap to change at this point.',
           },
         ],
       },
       {
         kind: 'callout',
-        heading: 'Delivery orders behave differently',
+        heading: 'Delivery Orders Behave Differently',
         body: 'Food that sits in a courier bag for twenty minutes steams. A sleeve that performs on the counter can go soft in transit, so tell us at quote stage what proportion of your orders are delivered — it changes the board recommendation.',
       },
     ],
@@ -257,7 +257,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Matching board weight to what the tray carries',
+        heading: 'Matching Board Weight to What the Tray Carries',
         intro:
           'The two ends of the range behave very differently once food is on them.',
         columns: ['Lighter board', 'Heavier board'],
@@ -273,7 +273,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Tray shapes in this range',
+        heading: 'Tray Shapes in This Range',
         items: [
           'Open rectangular trays for chips, wings and loaded portions.',
           'Deep-walled trays for nachos and anything with sauce that moves.',
@@ -290,7 +290,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Printing on a tray that will be seen from above',
+        heading: 'Printing on a Tray That Will Be Seen from Above',
         body: [
           'A tray is looked down into, not across. Artwork placed on the walls disappears once food is loaded, so the base and the rim do the visible work.',
           'Keep logos off the centre of the base where the food sits, and let them run along the rim or in the corners. On a lighter board, printing the underside is worth considering — that is the face people see when a tray is carried at chest height.',
@@ -298,7 +298,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'specs',
-        heading: 'What we need to quote a tray',
+        heading: 'What We Need to Quote a Tray',
         rows: [
           ['Internal dimensions', 'Length, width and wall depth, or the portion size in grams'],
           ['Load', 'What goes on it, and whether it is served hot or wet'],
@@ -351,7 +351,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Steam is the problem, not grease',
+        heading: 'Steam Is the Problem, Not Grease',
         body: [
           'Most operators worry about oil soaking through. In practice the bigger issue is steam: hot chips in a closed container go soft within minutes, and no board specification fixes that.',
           'Open formats — scoops, cones and open-topped cartons — let steam escape and keep the food crisp. Closed boxes suit delivery, where spillage matters more than texture, and usually need venting to work at all.',
@@ -365,7 +365,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Choosing between the formats',
+        heading: 'Choosing Between the Formats',
         items: [
           'Scoop boxes — open front, quick to fill from a fryer basket, easy to eat from standing up.',
           'Cartons — four closed walls, better for a seated table service and for stacking on a tray.',
@@ -377,7 +377,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'callout',
-        heading: 'Confirm grease resistance for your own menu',
+        heading: 'Confirm Grease Resistance for Your Own Menu',
         body: 'Fryer temperature, oil type and holding time all change how a board performs. We specify a grease-resistant board suited to the food you describe, and confirm the exact grade on your quote rather than quoting a general claim here.',
         pending: true,
       },
@@ -419,7 +419,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Corrugated against flat board',
+        heading: 'Corrugated Against Flat Board',
         intro:
           'The two constructions feel different in the hand and cost differently.',
         columns: ['Corrugated (fluted)', 'Flat board'],
@@ -433,7 +433,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Sizing to cups you already own',
+        heading: 'Sizing to Cups You Already Own',
         body: [
           'A sleeve is sized by the circumference of the cup at the point where a hand naturally grips it, not by the cup\'s stated volume. Two 12oz cups from different suppliers can differ by several millimetres, which is enough for a sleeve to spin.',
           'Send us the cup, or the brand and size code printed on the base, and the sleeve is cut to that. If you run 8oz and 12oz, most cafés order one sleeve that grips both and one for the 16oz.',
@@ -447,7 +447,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Ways cafés use the printed area',
+        heading: 'Ways Cafés Use the Printed Area',
         items: [
           'A wordmark and a single social handle, repeated so it reads from any angle.',
           'Seasonal artwork on the same die, changed three or four times a year.',
@@ -492,7 +492,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Where to start if you are ordering cups for the first time',
+        heading: 'Where to Start If You Are Ordering Cups for the First Time',
         body: [
           'Start with volume. A cup\'s stated size is its brim-full capacity, and nobody serves a drink to the brim — a 12oz cup holds roughly 10 to 11oz of usable drink once headspace is allowed. Order to the drink you pour, not to the number on the box.',
           'Then decide on wall construction. Single wall needs a sleeve for anything genuinely hot; double wall does not, and usually works out cheaper than a single wall plus a sleeve once you count both.',
@@ -506,7 +506,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Four ways into the range',
+        heading: 'Four Ways into the Range',
         intro: 'The subcategories below each answer a different starting question:',
         items: [
           'By size — you know the volume and need the right cup for it.',
@@ -517,13 +517,13 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'callout',
-        heading: 'Recyclability claims need checking against your waste contract',
+        heading: 'Recyclability Claims Need Checking Against Your Waste Contract',
         body: 'Lined paper cups need specialist collection in most of the UK, and whether yours are recycled in practice depends on your local arrangement rather than on the cup alone. We will tell you what lining a quoted cup uses so you can check it against your own waste provider before making a claim on the print.',
         pending: true,
       },
       {
         kind: 'specs',
-        heading: 'Specification points that change the price',
+        heading: 'Specification Points That Change the Price',
         rows: [
           ['Wall', 'Single, double or ripple'],
           ['Lining', 'PE, PLA or a water-based dispersion coating'],
@@ -580,7 +580,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Greaseproof, parchment and waxed are not the same thing',
+        heading: 'Greaseproof, Parchment and Waxed Are Not the Same Thing',
         body: [
           'Greaseproof paper resists oil because the fibres are beaten until the sheet is dense. It handles a burger or a bacon roll well and takes print cleanly.',
           'Parchment is treated differently and tolerates oven heat, which matters if the paper goes into a hot cabinet. Waxed paper carries a coating that repels moisture but softens under heat, so it suits cold and ambient food rather than anything straight from a fryer.',
@@ -594,7 +594,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where each paper format is used',
+        heading: 'Where Each Paper Format Is Used',
         items: [
           'Sheets — laid under a burger, wrapped around a hot sandwich, or used to line a tray.',
           'Basket liners — cut to fit a serving basket so it can be wiped rather than washed.',
@@ -605,22 +605,22 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'steps',
-        heading: 'How a printed paper order comes together',
+        heading: 'How a Printed Paper Order Comes Together',
         steps: [
           {
-            title: 'Pick the paper by contact',
+            title: 'Pick the Paper by Contact',
             body: 'Hot and oily narrows you to greaseproof or parchment. Cold and dry opens the choice to lighter, cheaper stock.',
           },
           {
-            title: 'Set the sheet size from the item',
+            title: 'Set the Sheet Size from the Item',
             body: 'A sheet needs enough overlap to fold and tuck. Measure the item and add the fold, rather than ordering a common size and hoping.',
           },
           {
-            title: 'Keep the print simple',
+            title: 'Keep the Print Simple',
             body: 'Papers are usually printed in one or two colours. Fine gradients and small reversed-out type do not hold on an absorbent sheet.',
           },
           {
-            title: 'Confirm food-contact suitability',
+            title: 'Confirm Food-Contact Suitability',
             body: 'Inks used on direct-contact paper are specified for that use. We confirm the ink system on your quote.',
           },
         ],
@@ -662,7 +662,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'specs',
-        heading: 'What each size is normally poured for',
+        heading: 'What Each Size Is Normally Poured For',
         intro: 'A quick orientation before you open an individual size page.',
         rows: [
           ['2oz – 4oz', 'Espresso, tasters, sauces and sampling at events'],
@@ -677,7 +677,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Two sizes cover most menus',
+        heading: 'Two Sizes Cover Most Menus',
         body: [
           'Cafés that carry four cup sizes usually find two of them barely move. Stock cost and cupboard space both argue for a short list.',
           'A common UK pairing is 8oz and 12oz for hot, with a single 16oz for cold. Adding a size is easy later; clearing dead stock is not.',
@@ -720,7 +720,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Lining choices in plain terms',
+        heading: 'Lining Choices in Plain Terms',
         columns: ['Conventional PE lining', 'Alternative linings'],
         rows: [
           ['Heat tolerance', 'Handles standard hot drink temperatures reliably', 'Varies by type; PLA in particular has a lower ceiling'],
@@ -734,7 +734,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Kraft is a look as well as a material',
+        heading: 'Kraft Is a Look as Well as a Material',
         body: [
           'Kraft board is unbleached, which is why it is brown. Plenty of independents choose it because it reads as plain and unfussy next to a white cup.',
           'The trade-off is colour accuracy. Print sits over a warm brown base, so blues go muddy and pale tints disappear. Designs made for kraft usually lean on one strong colour and let the board do the rest.',
@@ -777,7 +777,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Full coverage costs more than it looks',
+        heading: 'Full Coverage Costs More than It Looks',
         body: [
           'A solid colour across the whole body means ink over the entire printable area, plus a margin at the seam and the rim that stays unprinted so the cup can be formed and rolled.',
           'That unprinted margin is unavoidable. On a dark cup it shows as a thin light line at the rim, which is normal on every printed cup regardless of supplier.',
@@ -785,7 +785,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Getting close to a brand colour',
+        heading: 'Getting Close to a Brand Colour',
         items: [
           'Supply the colour as a Pantone reference rather than a screenshot or a hex code.',
           'Expect a shift on kraft board; specify a white cup if the match must be tight.',
@@ -826,7 +826,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Where the print actually gets seen',
+        heading: 'Where the Print Actually Gets Seen',
         body: [
           'A cup is held in one hand, and that hand covers roughly a third of the printable area. Whatever sits under the fingers is invisible for the life of the drink.',
           'Designs that repeat around the circumference survive this. A single logo placed once has an even chance of facing the wrong way on the walk to the office.',
@@ -840,7 +840,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'specs',
-        heading: 'Points to settle before quoting',
+        heading: 'Points to Settle Before Quoting',
         rows: [
           ['Wall construction', 'Single wall with sleeve, or double wall'],
           ['Sizes carried', 'How many, and whether they can share a lid diameter'],
@@ -883,29 +883,29 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'uses',
-        heading: 'What changes between food uses',
+        heading: 'What Changes Between Food Uses',
         items: [
           {
-            title: 'Hot food — soup and porridge',
+            title: 'Hot Food — Soup and Porridge',
             body: 'Sustained heat and a spoon scraping the wall. Needs a heavier board than a drink cup of the same volume.',
           },
           {
-            title: 'Frozen — ice cream and gelato',
+            title: 'Frozen — Ice Cream and Gelato',
             body: 'Condensation on the outside is the issue, not heat. A coated outer face stops the print softening in a cold cabinet.',
           },
           {
-            title: 'Dry snacks — popcorn, nuts, chips',
+            title: 'Dry Snacks — Popcorn, Nuts, Chips',
             body: 'Nothing wet touches the wall, so an unlined board is usually adequate and costs less.',
           },
           {
-            title: 'Sauces and portions',
+            title: 'Sauces and Portions',
             body: 'Bought in volume, used in seconds. Denesting cleanly from a stack matters more than anything printed on them.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Lids change the size you need',
+        heading: 'Lids Change the Size You Need',
         body: [
           'A dessert cup with a domed lid holds more than its stated volume once the dome is counted, which is why a scoop can sit proud of the rim without crushing.',
           'A flat lid does the opposite — it caps the fill line below the rim. Decide on the lid before the cup size, or you will end up serving a smaller portion than you costed.',
@@ -948,7 +948,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Where a heavier card cup makes sense',
+        heading: 'Where a Heavier Card Cup Makes Sense',
         items: [
           'Offices and meeting rooms, where cups are carried along corridors rather than a few steps.',
           'Events and conferences serving in volume from a temporary counter.',
@@ -960,7 +960,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering with lids from the start',
+        heading: 'Ordering with Lids from the Start',
         body: [
           'Buying cups first and lids later is the most common ordering mistake in this part of the range. Rim diameters differ between manufacturers even at identical stated volumes.',
           'If lids are part of the plan, say so in the first message. Matching them afterwards means either accepting a loose fit or replacing stock you have already paid for.',
@@ -993,7 +993,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Rim diameter is the number that matters',
+        heading: 'Rim Diameter Is the Number That Matters',
         body: [
           'Lids fit rims, not volumes. Two cups both sold as 12oz can have rims several millimetres apart, and a lid that is close but not right will pop off in a car door pocket.',
           'When you enquire, give us the rim measurement across the outside of the rolled edge, or send a cup. Either removes the guesswork completely.',
@@ -1007,7 +1007,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Parts covered in this group',
+        heading: 'Parts Covered in This Group',
         items: [
           'Lids — sip, flat and domed, matched to the rim of the cup you use.',
           'Sleeves — corrugated or flat board, printed or plain.',
@@ -1050,31 +1050,31 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Planning a seasonal run backwards from the date',
+        heading: 'Planning a Seasonal Run Backwards from the Date',
         intro:
           'Work back from the day the cup needs to be in use, not forward from today.',
         steps: [
           {
-            title: 'Fix the on-counter date',
+            title: 'Fix the On-Counter Date',
             body: 'Decide the first day of the promotion. Everything else is scheduled against it.',
           },
           {
-            title: 'Allow for delivery and stock rotation',
+            title: 'Allow for Delivery and Stock Rotation',
             body: 'Stock has to reach every site and get to the front of the cupboard before the date, not on it.',
           },
           {
-            title: 'Confirm print lead time in writing',
+            title: 'Confirm Print Lead Time in Writing',
             body: 'Lead time depends on the press, the run length and the season\'s workload. We confirm yours on the quote rather than quoting a general figure.',
           },
           {
-            title: 'Approve artwork with time to spare',
+            title: 'Approve Artwork with Time to Spare',
             body: 'Artwork approval is the step most often late. Aim to sign off well before the press slot, not on the day of it.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'One design or several',
+        heading: 'One Design or Several',
         body: [
           'Digital print makes several designs in one order far more workable than it used to be, which suits a set of four seasonal illustrations across one run.',
           'Longer runs on flexo favour a single design, because each additional one carries its own setup. The crossover point depends on your quantity, and it is worth asking us to price both ways.',
@@ -1117,7 +1117,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A jammed dispenser is reported as a broken machine',
+        heading: 'A Jammed Dispenser Is Reported as a Broken Machine',
         body: [
           'When a cup sticks in a tube, nobody blames the cup. The fault goes to facilities as a broken cooler, and a technician is sent out.',
           'That is why dimensional consistency matters more here than anywhere else in the cup range, and why we ask for the dispenser model before quoting.',
@@ -1130,7 +1130,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Three different fittings',
+        heading: 'Three Different Fittings',
         items: [
           'Flat-bottomed cooler cups, which stack in a vertical tube.',
           'Cone cups, which use a different dispenser entirely and cannot be put down.',
@@ -1172,7 +1172,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'specs',
-        heading: 'Choosing a paper by what it has to survive',
+        heading: 'Choosing a Paper by What It Has to Survive',
         rows: [
           ['Hot and oily food', 'Greaseproof, or parchment where the paper also sees oven heat'],
           ['Cold, moist food', 'Waxed or coated papers that repel moisture'],
@@ -1185,7 +1185,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'prose',
-        heading: 'Designing for an absorbent surface',
+        heading: 'Designing for an Absorbent Surface',
         body: [
           'Print on paper behaves differently from print on coated board. Ink spreads slightly into the fibres, so fine lines thicken and small reversed-out type can close up.',
           'Designs that hold up are simple: a wordmark, a repeated motif, a pattern with generous space around it. Photographic images rarely reproduce well and cost more to run.',
@@ -1228,7 +1228,7 @@ export const CATEGORIES: Category[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Flat bags against block-bottom bags',
+        heading: 'Flat Bags Against Block-Bottom Bags',
         columns: ['Flat bag', 'Block-bottom bag'],
         rows: [
           ['Filling', 'One-handed for a single item', 'Stands open, so staff can load with both hands'],
@@ -1242,7 +1242,7 @@ export const CATEGORIES: Category[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points that decide whether a bag works',
+        heading: 'Points That Decide Whether a Bag Works',
         items: [
           'Handle type, and whether the bag carries weight or is simply held.',
           'Grease resistance where hot food goes straight in without a container.',

@@ -24,7 +24,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Print area is measured in centimetres',
+        heading: 'Print Area Is Measured in Centimetres',
         body: [
           'Flattened, a 2oz cup gives a printable strip only a few centimetres tall. A logo with a strapline and a website underneath will not resolve at that scale.',
           'Successful designs on this size use one element — a wordmark or a symbol — repeated around the cup. Everything else is dropped.',
@@ -32,7 +32,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where 2oz cups are used',
+        heading: 'Where 2oz Cups Are Used',
         items: [
           'Single espresso, served and drunk immediately at a counter.',
           'Sauce and condiment portions alongside a main item.',
@@ -89,7 +89,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: '4oz against 2oz',
+        heading: '4oz Against 2oz',
         columns: ['4oz', '2oz'],
         rows: [
           ['Print area', 'Enough for a logo and a short line of text', 'One element only'],
@@ -102,7 +102,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Common uses',
+        heading: 'Common Uses',
         items: [
           'Double espresso and short milk drinks.',
           'Tasting flights where three or four samples are served together.',
@@ -147,7 +147,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The size speciality coffee actually uses',
+        heading: 'The Size Speciality Coffee Actually Uses',
         body: [
           'A flat white is defined partly by its ratio of espresso to milk. Serve it in a larger cup and either the coffee is lost or the drink is not a flat white.',
           'Cafés that take their coffee seriously usually carry 6oz alongside a larger size, rather than treating one cup as universal.',
@@ -155,7 +155,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Two very different buyers',
+        heading: 'Two Very Different Buyers',
         items: [
           'Speciality cafés, buying modest quantities and caring about print and board quality.',
           'Vending operators, buying in volume and caring about rim consistency and machine compatibility.',
@@ -212,7 +212,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A size defined by machines, not by drinks',
+        heading: 'A Size Defined by Machines, Not by Drinks',
         body: [
           'Most sizes in this range exist because a drink needs them. 7oz exists because dispensers and cooler stacks are built to it.',
           'That makes dimensional consistency more important than usual — a cup a millimetre out of tolerance jams a dispenser, which is a facilities problem rather than a packaging one.',
@@ -225,7 +225,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What buyers of this size care about',
+        heading: 'What Buyers of This Size Care About',
         items: [
           'Consistent rim diameter, so cups denest cleanly from a dispenser.',
           'Consistent height, so a stack fits the tube.',
@@ -266,7 +266,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The 8oz and 12oz lid overlap',
+        heading: 'The 8oz and 12oz Lid Overlap',
         body: [
           'Many cup ranges use the same rim on 8oz and 12oz, with the larger cup being taller rather than wider. One lid then serves both sizes.',
           'That halves the lid lines you hold and removes the commonest service error, which is a member of staff reaching for the wrong lid during a rush.',
@@ -290,7 +290,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Why most cafés start here',
+        heading: 'Why Most Cafés Start Here',
         items: [
           'Customers understand what a small coffee is without explanation.',
           'The print area is large enough for a proper design.',
@@ -331,7 +331,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A size chosen by the pour, not the customer',
+        heading: 'A Size Chosen by the Pour, Not the Customer',
         body: [
           'No customer asks for a 9oz coffee. Caterers choose it because a standard pour of soft drink or a measured serving of hot drink fits it neatly with headspace to carry.',
           'Where portion control matters — conference catering, hospital and school service — that precision is worth more than a recognisable size name.',
@@ -339,7 +339,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where it gets specified',
+        heading: 'Where It Gets Specified',
         items: [
           'Conference and event catering with a fixed drink specification.',
           'Institutional service where portions are standardised.',
@@ -385,7 +385,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The size that carries the brand',
+        heading: 'The Size That Carries the Brand',
         body: [
           'Because it is the volume most customers order, the 12oz cup is the one that appears in photographs, on desks and in the background of other people\'s pictures.',
           'If print budget is limited, spend it here first. A beautifully printed 8oz and a plain 12oz is the wrong way round.',
@@ -409,7 +409,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Drinks it covers',
+        heading: 'Drinks It Covers',
         items: [
           'Latte and cappuccino, which need volume for milk.',
           'Americano, the default filter alternative in most UK cafés.',
@@ -450,7 +450,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Hot use against cold use at this size',
+        heading: 'Hot Use Against Cold Use at This Size',
         columns: ['Hot 16oz', 'Cold 16oz'],
         rows: [
           ['Wall', 'Double wall or a sleeve is close to essential', 'Single wall is fine'],
@@ -463,7 +463,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Weight becomes noticeable',
+        heading: 'Weight Becomes Noticeable',
         body: [
           'A full 16oz drink is a substantial weight in one hand, and the cup wall has to resist being squeezed while carrying it.',
           'Thin single-wall cups at this size can deform enough to pop a lid, which is the practical argument for a heavier construction rather than comfort alone.',
@@ -506,7 +506,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A thick shake tests the lid, not the cup',
+        heading: 'A Thick Shake Tests the Lid, Not the Cup',
         body: [
           'A milkshake is heavy and thick, and a customer pulling on a straw creates suction that lifts a poorly seated lid.',
           'That makes lid fit the critical specification at this size. A cup that is a fraction out of round at the rim will not hold a lid under that load.',
@@ -514,7 +514,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points that matter at 20oz',
+        heading: 'Points That Matter at 20oz',
         items: [
           'Rim roundness, because lid seating is under more stress.',
           'Wall stiffness, since a full cup squeezed at the middle can pop the lid.',
@@ -560,7 +560,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Print around the drink, not over it',
+        heading: 'Print Around the Drink, Not Over It',
         body: [
           'A full-coverage design on a clear cup defeats the reason for choosing it. The drink disappears and you have paid extra for a cup that now behaves like an opaque one.',
           'Designs that work leave a clear window across the front and place branding around it — a band at the top, a mark at the base, or a repeating outline.',
@@ -573,7 +573,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where 32oz clear cups are used',
+        heading: 'Where 32oz Clear Cups Are Used',
         items: [
           'Bubble tea, where the pearls at the base are part of the product.',
           'Layered iced coffee, where the pour is the selling point.',
@@ -584,7 +584,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Clear cups are a different material',
+        heading: 'Clear Cups Are a Different Material',
         body: 'These are not paper cups with a window — they are formed from a clear material, which affects how they print, how they should be disposed of, and what can honestly be claimed about them. We confirm the material on your quote so any on-pack wording matches it.',
         pending: true,
       },
@@ -620,7 +620,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Volume buying changes the priorities',
+        heading: 'Volume Buying Changes the Priorities',
         body: [
           'A sampling campaign might use fifty thousand cups across a season, each held for under a minute. Nobody studies the design.',
           'That argues for a plain cup or a single-colour logo rather than full-colour artwork, and for spending the difference on quantity.',
@@ -633,7 +633,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Uses across the small sizes',
+        heading: 'Uses Across the Small Sizes',
         items: [
           'Product sampling in supermarkets and food halls.',
           'Tasting flights at breweries, distilleries and food shows.',
@@ -675,7 +675,7 @@ export const CUP_SIZES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Tall cups are unstable by design',
+        heading: 'Tall Cups Are Unstable by Design',
         body: [
           'A large cup is taller relative to its base than a small one, which makes it easier to tip. In a venue with seat-side service that is a real cost in spillages.',
           'A wider base helps, at the price of not fitting some cup holders. It is a genuine trade rather than a free improvement.',
@@ -683,7 +683,7 @@ export const CUP_SIZES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where large cups are bought',
+        heading: 'Where Large Cups Are Bought',
         items: [
           'Cinemas and sports venues, where a large soft drink is a standard offer.',
           'Festivals and outdoor events serving in volume.',
@@ -731,7 +731,7 @@ export const CUP_MATERIALS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Colours shift on a brown base',
+        heading: 'Colours Shift on a Brown Base',
         body: [
           'Printing inks are transparent. On white board the paper reflects light back through them and colours look as intended; on kraft, that base is warm brown, so everything shifts towards it.',
           'Blues go muddy, pale tints nearly disappear, and a bright red reads as a deeper rust. None of that is a printing fault — it is what the substrate does.',
@@ -744,7 +744,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Designing for kraft rather than against it',
+        heading: 'Designing for Kraft Rather than Against It',
         items: [
           'Use one strong colour and let the board provide the second.',
           'Black and dark tones print predictably; pale tints do not.',
@@ -755,7 +755,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Kraft is a look, not an environmental claim',
+        heading: 'Kraft Is a Look, Not an Environmental Claim',
         body: 'Unbleached board avoids a bleaching stage, but a kraft cup still needs a liquid barrier on the inside and still needs the right collection to be recycled. The brown colour on its own says nothing about disposal.',
       },
     ],
@@ -790,7 +790,7 @@ export const CUP_MATERIALS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Wax against a conventional hot cup lining',
+        heading: 'Wax Against a Conventional Hot Cup Lining',
         columns: ['Wax lining', 'Hot cup lining'],
         rows: [
           ['Hot drinks', 'Not suitable — the coating softens', 'Designed for it'],
@@ -803,7 +803,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where wax cups suit',
+        heading: 'Where Wax Cups Suit',
         items: [
           'Cold soft drinks at events and markets.',
           'Water service where cups are filled from a jug.',
@@ -849,7 +849,7 @@ export const CUP_MATERIALS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Heat tolerance is the point',
+        heading: 'Heat Tolerance Is the Point',
         body: [
           'Most cup linings are specified against a hot drink, which is a fairly gentle test compared with an oven or a hot-hold cabinet.',
           'Parchment handles sustained heat better, which matters for baked portions, hot-held food and anything that goes into a cabinet rather than straight to a customer.',
@@ -862,7 +862,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Typical applications',
+        heading: 'Typical Applications',
         items: [
           'Baked portions cooked in the cup rather than transferred into it.',
           'Hot-held food in a cabinet over a service period.',
@@ -873,7 +873,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Temperature limits confirmed per specification',
+        heading: 'Temperature Limits Confirmed per Specification',
         body: 'Heat tolerance varies between parchment grades, and publishing a single temperature figure would be misleading. Tell us the temperature and duration your application involves and we will confirm a suitable grade in writing.',
         pending: true,
       },
@@ -909,7 +909,7 @@ export const CUP_MATERIALS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Collection matters more than the cup',
+        heading: 'Collection Matters More than the Cup',
         body: [
           'A lined paper cup needs a facility that can separate the lining from the fibre. Those facilities exist, and they are not what most general waste goes to.',
           'A cup sent to general waste performs the same regardless of how it was specified. Arranging the collection is the step that changes the outcome.',
@@ -917,22 +917,22 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'steps',
-        heading: 'Working out what you can honestly say',
+        heading: 'Working Out What You Can Honestly Say',
         steps: [
           {
-            title: 'Ask your waste contractor what they collect',
+            title: 'Ask Your Waste Contractor What They Collect',
             body: 'Specifically whether they take lined paper cups as a separate stream, not whether they take card.',
           },
           {
-            title: 'Decide where your cups end up',
+            title: 'Decide Where Your Cups End Up',
             body: 'Cups used in-store go into your bins. Cups taken away go into street bins, which you do not control.',
           },
           {
-            title: 'Match the cup to the stream available',
+            title: 'Match the Cup to the Stream Available',
             body: 'There is no point specifying for a stream you cannot access.',
           },
           {
-            title: 'Only then write the on-pack wording',
+            title: 'Only Then Write the On-Pack Wording',
             body: 'The instruction printed on the cup should describe what a customer can actually do.',
           },
         ],
@@ -944,7 +944,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'We confirm materials, not outcomes',
+        heading: 'We Confirm Materials, Not Outcomes',
         body: 'We will tell you exactly what board and lining a quoted cup uses so you can check it against your own collection. We will not publish a general claim that a cup "is recycled", because that depends on circumstances outside the packaging.',
         pending: true,
       },
@@ -980,7 +980,7 @@ export const CUP_MATERIALS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'What the alternatives change',
+        heading: 'What the Alternatives Change',
         columns: ['Alternative lining', 'Recycled content board'],
         rows: [
           ['What it addresses', 'The plastic layer inside the cup', 'The virgin fibre in the board'],
@@ -993,7 +993,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'The biggest reduction is not a cup at all',
+        heading: 'The Biggest Reduction Is Not a Cup at All',
         body: [
           'For a site with seating, serving in reusable cups for eat-in customers removes far more waste than any change to the disposable specification.',
           'That is worth saying plainly, even though it is not something we sell. Where takeaway is genuinely the trade, the specification choices above are the ones that matter.',
@@ -1006,7 +1006,7 @@ export const CUP_MATERIALS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Availability and certification confirmed per order',
+        heading: 'Availability and Certification Confirmed per Order',
         body: 'Which alternative linings and recycled-content boards are available depends on the run size, the cup size and what is in supply. We confirm the specific options for your job in writing rather than listing claims here.',
         pending: true,
       },
@@ -1044,7 +1044,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Full coverage is ink, and ink is the cost',
+        heading: 'Full Coverage Is Ink, and Ink Is the Cost',
         body: [
           'A coloured cup is a white cup with colour printed across it. That means ink over the entire printable area rather than the few per cent a logo uses.',
           'It also means an unprinted margin at the rim and the seam, which is unavoidable on every printed cup and shows as a thin light line at the top.',
@@ -1057,7 +1057,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Holding a brand colour',
+        heading: 'Holding a Brand Colour',
         items: [
           'Supply a Pantone reference rather than a hex code or a screenshot.',
           'Spot colours hold far better across a long run than the same colour built from CMYK.',
@@ -1098,7 +1098,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'White against a coloured body',
+        heading: 'White Against a Coloured Body',
         columns: ['White', 'Solid colour'],
         rows: [
           ['Print cost', 'Only where the design sits', 'Ink across the whole cup'],
@@ -1111,7 +1111,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Clean does not mean plain',
+        heading: 'Clean Does Not Mean Plain',
         body: [
           'Plenty of well-regarded cafés use a white cup with a single mark, and it reads as confident rather than cheap.',
           'What undermines it is a low-quality board that looks grey rather than white. If you are going minimal, the board grade matters more than usual.',
@@ -1154,7 +1154,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Building a black that stays black',
+        heading: 'Building a Black That Stays Black',
         body: [
           'Large flat areas of a single black ink show density variation across a run, and the eye reads that as a warm or patchy cast.',
           'A rich black built from more than one ink, or a spot black, holds far more evenly. It costs a little more and is the difference between a cup that looks premium and one that looks slightly off.',
@@ -1167,7 +1167,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Living with a dark cup',
+        heading: 'Living with a Dark Cup',
         items: [
           'Matt finishes hide handling marks; gloss shows every fingerprint.',
           'Milk and foam splashes are highly visible on black.',
@@ -1208,7 +1208,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Natural kraft against printed brown',
+        heading: 'Natural Kraft Against Printed Brown',
         columns: ['Natural kraft', 'Printed brown'],
         rows: [
           ['Cost', 'No ink needed for the colour', 'Full coverage ink'],
@@ -1221,7 +1221,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Batch variation on natural board',
+        heading: 'Batch Variation on Natural Board',
         body: [
           'Unbleached board is a natural material, and its shade shifts a little between mill batches. Two orders six months apart can differ visibly if placed side by side.',
           'Most sites never notice. Brands that hold cups next to other packaging in the same brown do, which is when printed brown becomes the safer specification.',
@@ -1264,7 +1264,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Pale colours are the least forgiving',
+        heading: 'Pale Colours Are the Least Forgiving',
         body: [
           'A deep colour hides density variation. A pale pink is a light tint of a stronger ink, and small shifts in how much ink lands read as visible banding or blotchiness.',
           'A spot colour mixed to the shade you want holds far better than a pink built from a light tint of magenta.',
@@ -1277,7 +1277,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where pink cups get used',
+        heading: 'Where Pink Cups Get Used',
         items: [
           'Dessert bars and bubble tea, where the cup is part of the visual offer.',
           'Charity and awareness campaigns with a fixed brand pink.',
@@ -1318,7 +1318,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Metallic ink against foil',
+        heading: 'Metallic Ink Against Foil',
         columns: ['Metallic ink', 'Foil or metallised board'],
         rows: [
           ['Appearance', 'Muted, slightly grainy gold', 'Bright, genuinely reflective'],
@@ -1331,7 +1331,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Gold rarely photographs as it looks',
+        heading: 'Gold Rarely Photographs as It Looks',
         body: [
           'Metallic effects rely on reflecting light, and a camera flattens that. A cup that looks striking on a counter can look beige in a photograph.',
           'If the cup is intended for social media, it is worth seeing a physical sample photographed before committing to a run.',
@@ -1374,7 +1374,7 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Reds drift more than most colours',
+        heading: 'Reds Drift More than Most Colours',
         body: [
           'A red built from CMYK sits close to the edge of what those four inks can produce, so small variations push it towards orange or towards pink.',
           'Across a long run that drift becomes visible when cups from the start and end of the job are held together. A spot red avoids it.',
@@ -1382,7 +1382,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where red cups are used',
+        heading: 'Where Red Cups Are Used',
         items: [
           'Sports venues and stadium concourses, where visibility matters.',
           'Festivals and outdoor events with a strong brand colour.',
@@ -1428,12 +1428,12 @@ export const CUP_COLOURS: Product[] = [
     sections: [
       {
         kind: 'callout',
-        heading: 'Colour is not an environmental claim',
+        heading: 'Colour Is Not an Environmental Claim',
         body: 'A green cup with a leaf motif implies something about disposal that the material may not support. If the cup is conventionally lined, that impression is misleading even without a word of text. Where the colour is a brand choice, that is straightforward; where it is meant to signal recyclability, the specification has to back it up.',
       },
       {
         kind: 'prose',
-        heading: 'Greens print reliably',
+        heading: 'Greens Print Reliably',
         body: [
           'Unlike red and pale pink, mid greens sit comfortably within what process inks reproduce, so they hold well across a run without needing a spot colour.',
           'Very deep or very bright greens are the exceptions and benefit from a spot ink in the same way.',
@@ -1446,7 +1446,7 @@ export const CUP_COLOURS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Common uses',
+        heading: 'Common Uses',
         items: [
           'Cafés and juice bars with green in their identity.',
           'Festive ranges, paired with red and gold.',

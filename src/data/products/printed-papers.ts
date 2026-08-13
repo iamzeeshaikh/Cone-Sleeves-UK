@@ -20,7 +20,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Sheet size is set by the fold, not the food',
+        heading: 'Sheet Size Is Set by the Fold, Not the Food',
         body: [
           'A sheet exactly the size of a burger wraps nothing. You need enough paper to fold under, tuck at the sides and hold closed.',
           'Measure the item, then add the fold on each side. Ordering a common size and hoping it wraps is the usual reason a first order is replaced.',
@@ -33,7 +33,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What it is used for',
+        heading: 'What It Is Used For',
         items: [
           'Wrapping burgers and hot sandwiches at the pass.',
           'Lining trays and baskets so they can be wiped rather than washed.',
@@ -90,7 +90,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Two-layer wrap against a single sheet',
+        heading: 'Two-Layer Wrap Against a Single Sheet',
         columns: ['Two layers', 'Single sheet'],
         rows: [
           ['Grease control', 'Inner sheet takes it; outer stays clean', 'One sheet does both, and shows it'],
@@ -103,7 +103,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Print the outer sheet, not the inner one',
+        heading: 'Print the Outer Sheet, Not the Inner One',
         body: [
           'The inner sheet is soaked in oil within a minute and nothing printed on it survives being seen. Printing it is money spent on something nobody looks at.',
           'The outer sheet stays clean and is what the customer carries home, so that is where the design belongs.',
@@ -146,7 +146,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A liner is cheaper than washing a basket',
+        heading: 'A Liner Is Cheaper than Washing a Basket',
         body: [
           'A metal or plastic basket used without a liner has to be washed between customers. With a liner it is wiped and reused immediately.',
           'Across a busy service that saves genuine labour, which is why the sheet pays for itself several times over.',
@@ -159,7 +159,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Getting the sheet size right',
+        heading: 'Getting the Sheet Size Right',
         items: [
           'It should cover the base and rise up the sides, not lie flat across the top.',
           'Corners that stick out look deliberate; ones that flop over look careless.',
@@ -199,7 +199,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Shape it to the basket you already own',
+        heading: 'Shape It to the Basket You Already Own',
         body: [
           'Most kitchens have baskets in one or two sizes. A liner cut to that footprint sits flat, covers the base and rises just enough up the sides.',
           'Send us a basket, or its internal dimensions, and the liner is cut to it rather than trimmed to fit by staff.',
@@ -212,7 +212,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Design points for a liner',
+        heading: 'Design Points for a Liner',
         items: [
           'The centre is covered by food, so branding belongs around the edges.',
           'One or two colours reproduce reliably on an absorbent sheet.',
@@ -253,7 +253,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Sustained heat is different from hot food',
+        heading: 'Sustained Heat Is Different from Hot Food',
         body: [
           'A burger wrapped and handed over exposes the paper to heat for a couple of minutes. A pasty held in a heated cabinet exposes it for hours.',
           'Over that time an ordinary sheet dries out, discolours and loses strength, which is why hot-held applications need a grade specified for it.',
@@ -266,13 +266,13 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Temperature and holding time confirmed per specification',
+        heading: 'Temperature and Holding Time Confirmed per Specification',
         body: 'Heat tolerance varies between paper grades, and a single published figure would be misleading. Tell us the temperature and how long the paper is held at it, and we will confirm a suitable grade in writing on your quote.',
         pending: true,
       },
       {
         kind: 'bullets',
-        heading: 'Applications that need this',
+        heading: 'Applications That Need This',
         items: [
           'Hot cabinets holding pasties, sausage rolls and pies through a service.',
           'Heat lamps over a pass where wrapped items wait.',
@@ -312,7 +312,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Parchment against greaseproof',
+        heading: 'Parchment Against Greaseproof',
         columns: ['Parchment', 'Greaseproof'],
         rows: [
           ['Oven use', 'Tolerates baking temperatures', 'Not suitable'],
@@ -325,7 +325,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Printing paper that goes into an oven',
+        heading: 'Printing Paper That Goes into an Oven',
         body: [
           'Where a printed sheet is baked with the product, the ink system has to be specified for that, not just for food contact.',
           'Where the printed sheet is added after baking — a wrap around a finished loaf, for instance — the requirement is much simpler.',
@@ -368,7 +368,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Moisture out, heat is a problem',
+        heading: 'Moisture Out, Heat Is a Problem',
         body: [
           'The wax coating stops moisture passing through the sheet, which suits cold sandwiches, cheese, confectionery and anything that would go soggy in plain paper.',
           'Warm it and the coating softens, transfers to the food, and stops doing its job. It is not a matter of degree — it is the wrong material for hot applications.',
@@ -381,7 +381,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where waxed paper suits',
+        heading: 'Where Waxed Paper Suits',
         items: [
           'Cold sandwiches and wraps prepared ahead.',
           'Confectionery and toffee, where stickiness is the issue.',
@@ -422,7 +422,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Translucency is the reason to use it',
+        heading: 'Translucency Is the Reason to Use It',
         body: [
           'A wrapped item in glassine is visible as a shape and a colour without being exposed. That reads as considered in a way an opaque wrap does not.',
           'It also means a simple printed pattern over the top creates depth, because the product shows through the gaps.',
@@ -435,7 +435,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Common applications',
+        heading: 'Common Applications',
         items: [
           'Confectionery and chocolate wrapping where the product should be glimpsed.',
           'Bakery interleaving between layers of pastry or biscuits.',
@@ -476,7 +476,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'One sheet at a time, with one hand',
+        heading: 'One Sheet at a Time, with One Hand',
         body: [
           'A member of staff at a deli counter is holding tongs or a knife. They need a single sheet to come away cleanly from the stack with the other hand.',
           'Interleaved or pop-up presentation solves that. A loose ream does not, and it slows every transaction slightly.',
@@ -489,7 +489,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What deli paper has to handle',
+        heading: 'What Deli Paper Has to Handle',
         items: [
           'Cold, damp goods — cured meat, cheese, olives, salads.',
           'Being folded around an irregular shape rather than a neat item.',
@@ -530,7 +530,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Weight and moisture together',
+        heading: 'Weight and Moisture Together',
         body: [
           'A wet sheet loses strength, and a heavy item concentrates load at the fold. Those two combine badly on a light paper.',
           'A heavier grade holds the weight even once damp, which is the practical requirement rather than a preference.',
@@ -543,7 +543,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Butcher counter requirements',
+        heading: 'Butcher Counter Requirements',
         items: [
           'Enough strength to carry a joint without tearing at the fold.',
           'Moisture resistance so blood does not soak straight through.',
@@ -584,7 +584,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Breathability is the point',
+        heading: 'Breathability Is the Point',
         body: [
           'A cheese needs to release moisture slowly while being protected from drying out completely. That is a balance rather than a barrier.',
           'Wrapping cheese in plain greaseproof or in film both cause problems, which is why specialist cheesemongers use a paper made for it.',
@@ -597,7 +597,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What cheesemongers ask for',
+        heading: 'What Cheesemongers Ask For',
         items: [
           'A wrap that lets the cheese breathe without drying it out.',
           'Resistance to the fat that comes out of a mature cheese.',
@@ -638,7 +638,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The fold has to hold without tape',
+        heading: 'The Fold Has to Hold Without Tape',
         body: [
           'A sandwich wrapped and then taped is secure and irritating to open. A well-sized sheet folded properly holds itself closed with no tape at all.',
           'That needs enough paper to tuck underneath, which is more than the sandwich footprint suggests.',
@@ -651,7 +651,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Practical points',
+        heading: 'Practical Points',
         items: [
           'Size to a made sandwich, not to the bread.',
           'Grease resistance matters for anything with mayonnaise or hot fillings.',
@@ -692,7 +692,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A sheet catches what a holder cannot',
+        heading: 'A Sheet Catches What a Holder Cannot',
         body: [
           'A taco holder supports the shell but leaves the bottom open. Sauce and filling drop straight through onto a plate or a hand.',
           'A greaseproof sheet under the shell catches that, and the customer can gather it up as they eat down.',
@@ -705,7 +705,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing for a taco',
+        heading: 'Sizing for a Taco',
         items: [
           'Big enough to gather up around the base as the customer eats.',
           'Not so big that it flaps and gets in the way.',
@@ -746,7 +746,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The liner stops the base going soft',
+        heading: 'The Liner Stops the Base Going Soft',
         body: [
           'Cheese oil and moisture from the base soak into a plain box within minutes, and the board loses rigidity exactly where the pizza needs support.',
           'A greaseproof liner keeps that separation. It also means the box can sometimes be reused for a second delivery in the same run, though most operators do not.',
@@ -759,7 +759,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Specifying a liner',
+        heading: 'Specifying a Liner',
         items: [
           'Cut to the pizza diameter, not the box — a liner up the walls is wasted paper.',
           'Greaseproof, since cheese oil is the whole problem.',
@@ -800,7 +800,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'People read placemats because they are bored',
+        heading: 'People Read Placemats Because They Are Bored',
         body: [
           'Waiting for food is dead time, and a placemat is directly in front of the customer. Anything printed on it gets read, often more than once.',
           'That is why they carry menus, offers, puzzles for children and loyalty information rather than just a logo.',
@@ -813,7 +813,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What placemats are used for',
+        heading: 'What Placemats Are Used For',
         items: [
           'The menu itself, in cafés without printed menus.',
           'Promotions and specials that change more often than a menu does.',
@@ -854,7 +854,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The barrier faces the food',
+        heading: 'The Barrier Faces the Food',
         body: [
           'The coated side goes against the product and the uncoated side faces out, which is where the print and any handwritten labelling go.',
           'Wrapped the wrong way round it does very little, which is worth telling staff explicitly when the paper is introduced.',
@@ -867,7 +867,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Practical requirements',
+        heading: 'Practical Requirements',
         items: [
           'A coated side that stops moisture escaping the product.',
           'An uncoated outer face that takes a marker pen for date and cut.',
@@ -908,7 +908,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The wrap has to hold its own shape',
+        heading: 'The Wrap Has to Hold Its Own Shape',
         body: [
           'A hand-tied bouquet is supported by its wrap. Paper that collapses leaves the arrangement flopping, which undoes the work of tying it.',
           'A slightly stiffer stock holds the cone shape, and that is more important than any decorative quality.',
@@ -916,7 +916,7 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What florists specify',
+        heading: 'What Florists Specify',
         items: [
           'Large sheets — bouquet wrap is bigger than most printed paper.',
           'Enough stiffness to hold a cone without support.',
@@ -962,7 +962,7 @@ export const PRINTED_PAPERS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A foam alternative, not a paper one',
+        heading: 'A Foam Alternative, Not a Paper One',
         body: [
           'The comparison that makes sense is with expanded foam used to protect fragile items in transit, not with the printed papers elsewhere in this range.',
           'It is moulded to a shape, it cushions, and it breaks down in a way foam does not.',
@@ -970,13 +970,13 @@ export const PRINTED_PAPERS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Quoted against a specific application',
+        heading: 'Quoted Against a Specific Application',
         body: 'Mycelium is a made-to-order moulded product with its own tooling, lead times and minimum volumes, and these differ substantially from board packaging. We do not publish general figures for it. Tell us what needs protecting, the volumes involved and your timescale, and we will confirm what is achievable in writing.',
         pending: true,
       },
       {
         kind: 'bullets',
-        heading: 'What to send with an enquiry',
+        heading: 'What to Send with an Enquiry',
         items: [
           'The item being protected, with dimensions and weight.',
           'How fragile it is and what transit it has to survive.',

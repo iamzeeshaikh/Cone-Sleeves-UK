@@ -33,7 +33,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Storage decides the specification',
+        heading: 'Storage Decides the Specification',
         body: [
           'Flat-packed sleeves take a fraction of the space of formed containers. For a site paying central London rent, the difference between stock that stores in a cupboard and stock that needs a corner of the kitchen is a real cost.',
           'It also argues for choosing one sleeve that works across two products rather than the theoretically ideal item for each.',
@@ -46,7 +46,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Who orders this packaging in London',
+        heading: 'Who Orders This Packaging in London',
         items: [
           'Dessert bars across Shoreditch, Soho and Edgware Road, most trading late and at volume.',
           'Gelaterias and scoop shops in residential high streets, where summer trade is concentrated into a few weeks.',
@@ -59,7 +59,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering and artwork',
+        heading: 'Ordering and Artwork',
         body: [
           'Send us the cone or container you already use, along with the quantity you can realistically store. We work from a physical sample wherever possible, and post is more reliable than a description.',
           'Artwork goes onto a die template cut to your product, which we supply before design work starts.',
@@ -67,7 +67,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'callout',
-        heading: 'How delivery to London works',
+        heading: 'How Delivery to London Works',
         body: 'Orders are dispatched on national carriers from our production partners and delivered to your London address. We do not run our own vehicles in London and do not offer same-day or timed delivery, so any date we give you is the carrier\'s estimate rather than a guarantee. Congestion charge and low emission zones can affect carrier scheduling into central postcodes.',
       },
     ],
@@ -110,7 +110,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'The trades that order here',
+        heading: 'The Trades That Order Here',
         items: [
           'Dessert houses along Wilmslow Road and in Rusholme, many trading past midnight.',
           'Street food halls and market traders, where a pitch shares service space with neighbours.',
@@ -122,7 +122,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering around a term-time market',
+        heading: 'Ordering Around a Term-Time Market',
         body: [
           'A business trading mainly to students has two hard peaks and a long quiet summer. Ordering a year\'s packaging in June ties up cash in stock that will not move until autumn.',
           'Splitting an order across two deliveries usually costs a little more per unit and manages the cash flow far better. Ask us to price it both ways.',
@@ -135,7 +135,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Delivery and lead times',
+        heading: 'Delivery and Lead Times',
         body: [
           'Stock is dispatched on national carriers to your Manchester address. We do not operate local vehicles and do not offer timed delivery, so treat any date as a carrier estimate.',
           'Lead time is set by the print method and the press schedule rather than by distance, and we confirm it in writing on the quote.',
@@ -177,7 +177,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Sit-in dessert service changes the priorities',
+        heading: 'Sit-In Dessert Service Changes the Priorities',
         body: [
           'A dessert eaten at a table does not need to survive a walk home. It needs to look right under the lights and hold up while someone photographs it.',
           'That pushes the specification towards trays and presentation boards rather than the deep wraps a walking customer needs.',
@@ -190,7 +190,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Local trades we quote for',
+        heading: 'Local Trades We Quote For',
         items: [
           'Dessert lounges across Ladypool Road, Alum Rock and the city centre.',
           'Restaurants in the Balti Triangle adding a takeaway and delivery arm.',
@@ -202,7 +202,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Planning around event dates',
+        heading: 'Planning Around Event Dates',
         body: [
           'A caterer working an NEC show knows the date months ahead and needs stock in hand before it, not on it.',
           'Tell us the date at enquiry rather than the quantity alone. We schedule backwards from it and confirm the production lead time in writing.',
@@ -249,7 +249,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'What tends to matter for Leeds operators',
+        heading: 'What Tends to Matter for Leeds Operators',
         items: [
           'Assembly speed, because a queue in an arcade unit backs up quickly.',
           'Flat storage, since units in converted historic buildings rarely have back rooms.',
@@ -261,7 +261,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Assembly time is a real cost',
+        heading: 'Assembly Time Is a Real Cost',
         body: [
           'A sleeve that takes four seconds to roll rather than two costs a minute for every thirty covers. Across a Saturday in a busy arcade unit that adds up.',
           'Ask for a sample and have the person who will actually use it assemble twenty in a row before you commit to a design.',
@@ -274,7 +274,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Artwork and proofing',
+        heading: 'Artwork and Proofing',
         body: [
           'We supply a die template cut to your product before design work begins, so artwork is built on the right shape rather than adjusted afterwards.',
           'A digital proof on the die line follows, and print is scheduled once you have signed it off.',
@@ -316,7 +316,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Two very different customers in one city',
+        heading: 'Two Very Different Customers in One City',
         body: [
           'A long-established café usually wants a plain or single-colour sleeve that fits the cones it has always used, and it wants that supply to stay identical for years.',
           'A newer dessert business wants full-colour artwork, changes it seasonally, and cares more about how it photographs than how it stores.',
@@ -334,7 +334,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Who we quote for in Glasgow',
+        heading: 'Who We Quote for in Glasgow',
         items: [
           'Long-established ice cream cafés with a fixed cone and a fixed supplier history.',
           'Contemporary dessert bars in Finnieston and the West End.',
@@ -378,7 +378,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Demand here is event-driven',
+        heading: 'Demand Here Is Event-Driven',
         items: [
           'Match days at Anfield and Goodison, which concentrate street food trade into a few hours.',
           'Cruise arrivals at the Pier Head, which put large numbers of visitors ashore on fixed dates.',
@@ -390,7 +390,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Stock levels for a spiky trade',
+        heading: 'Stock Levels for a Spiky Trade',
         body: [
           'A business whose busiest day is five times its quietest cannot order to an average. Running out on a match day costs far more than holding a little extra board.',
           'Work out your peak-day usage, multiply by the number of peak days between orders, and add a margin. That is a more useful basis than a monthly average.',
@@ -403,7 +403,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Artwork for outdoor trading',
+        heading: 'Artwork for Outdoor Trading',
         body: [
           'Packaging used outdoors is seen in daylight, in rain and under temporary lighting. Designs with strong contrast survive all three; subtle tonal work does not.',
           'If your trade is mostly outdoor pitches, it is worth checking a printed sample outside rather than under shop lighting.',
@@ -445,7 +445,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Precise beats reassuring',
+        heading: 'Precise Beats Reassuring',
         body: [
           'A sleeve marked recyclable that local facilities do not accept is worse than one with no marking, because it tells the customer something untrue.',
           'We will tell you exactly what board and finish a quoted item uses. Checking that against what your waste contractor and your customers\' bins actually take is the step that makes a claim honest.',
@@ -458,7 +458,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'The Bristol trades that order most',
+        heading: 'The Bristol Trades That Order Most',
         items: [
           'Independent cafés along Gloucester Road and North Street, many with an explicit environmental position.',
           'Street food operators at Wapping Wharf and Cargo, trading from converted containers with minimal storage.',
@@ -470,7 +470,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'callout',
-        heading: 'What we will and will not claim',
+        heading: 'What We Will and Will Not Claim',
         body: 'We confirm board grade, lining and finish in writing on your quote so you can verify it independently. We do not publish blanket recyclability or compostability claims, because whether a given item is actually recycled depends on collection arrangements we do not control.',
         pending: true,
       },
@@ -510,7 +510,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Trading inside someone else\'s venue',
+        heading: 'Trading Inside Someone Else\'s Venue',
         body: [
           'A food trader operating from a taproom kitchen is serving customers who are seated at the venue\'s tables with the venue\'s glasses. The packaging is the trader\'s only branded surface.',
           'It also has to work on a table rather than in a hand, which points towards trays and boards rather than wraps.',
@@ -523,7 +523,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sheffield trades we quote for',
+        heading: 'Sheffield Trades We Quote For',
         items: [
           'Kitchen residencies inside taprooms and bars, often with a menu that changes monthly.',
           'Cafés serving the student areas around Broomhill and Ecclesall Road.',
@@ -535,7 +535,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering when the menu is not fixed',
+        heading: 'Ordering When the Menu Is Not Fixed',
         body: [
           'Specifying packaging around a dish that will be replaced in six weeks leaves you with stock you cannot use.',
           'The practical answer is to specify for the wettest and heaviest thing you are likely to serve, in two sizes, and accept that it is not ideal for any single dish.',
@@ -577,31 +577,31 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Planning a Festival order',
+        heading: 'Planning a Festival Order',
         intro:
           'August volumes are not a busy week — they are a different business for three weeks.',
         steps: [
           {
-            title: 'Estimate from a peak day, not an average',
+            title: 'Estimate from a Peak Day, Not an Average',
             body: 'Take your busiest ordinary Saturday and work out what a Festival day looks like against it. Most traders find it is a multiple, not a percentage.',
           },
           {
-            title: 'Order in spring, not in July',
+            title: 'Order in Spring, Not in July',
             body: 'Every trader in the city is ordering for the same three weeks. Press capacity and carrier schedules both tighten.',
           },
           {
-            title: 'Confirm the lead time in writing',
+            title: 'Confirm the Lead Time in Writing',
             body: 'We put the production lead time on your quote, and Scottish transit typically adds a day over English mainland delivery.',
           },
           {
-            title: 'Sort storage before the stock arrives',
+            title: 'Sort Storage Before the Stock Arrives',
             body: 'Festival volumes of packaging need somewhere to live. Flat-packed stock helps considerably here.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Trading the rest of the year',
+        heading: 'Trading the Rest of the Year',
         body: [
           'The Old Town and Grassmarket support a steady tourist trade outside August, and the Bruntsfield and Stockbridge areas trade to residents year round.',
           'Packaging that works for a Festival pitch usually works for the rest of the year too, so most traders run one specification and simply order more of it in spring.',
@@ -653,7 +653,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Sweet centres buy by weight, not by portion',
+        heading: 'Sweet Centres Buy by Weight, Not by Portion',
         body: [
           'Mithai and dry snacks are sold by weight from a counter, which means the packaging is sized to a price band rather than to a serving.',
           'That changes the question from "how big is a portion" to "what weight bands do you sell", and the answer decides the bag or box sizes you need.',
@@ -666,7 +666,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Leicester businesses we quote for',
+        heading: 'Leicester Businesses We Quote For',
         items: [
           'Sweet centres and mithai shops along Belgrave Road, selling by weight from open counters.',
           'Dessert cafés and bubble tea shops in the city centre and Highfields.',
@@ -678,7 +678,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering for a celebration market',
+        heading: 'Ordering for a Celebration Market',
         body: [
           'A caterer supplying weddings orders to a date and often to a bespoke design, sometimes with names or dates printed on it.',
           'Short digital runs suit that well. Send the quantity and the date together and we will tell you what is realistic rather than quoting a general lead time.',
@@ -720,7 +720,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'What Nottingham operators tend to ask for',
+        heading: 'What Nottingham Operators Tend to Ask For',
         items: [
           'Packaging that looks considered rather than generic, particularly in Hockley.',
           'Kraft and uncoated finishes, which suit the area\'s independent positioning.',
@@ -732,7 +732,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Kraft looks right and prints awkwardly',
+        heading: 'Kraft Looks Right and Prints Awkwardly',
         body: [
           'Unbleached board reads as independent and unmanufactured, which is exactly the positioning much of the Hockley trade wants.',
           'The cost is colour accuracy: inks sit over a warm brown base, so blues go muddy and pale tints nearly vanish. Designs made for kraft work; designs adapted to it rarely do.',
@@ -745,7 +745,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering around the university year',
+        heading: 'Ordering Around the University Year',
         body: [
           'A business trading substantially to students sees demand fall away between June and September.',
           'Splitting a year\'s order across two deliveries avoids paying for stock that sits through the summer. We will price it both ways if you ask.',
@@ -787,7 +787,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Bilingual artwork needs planning, not translating',
+        heading: 'Bilingual Artwork Needs Planning, Not Translating',
         body: [
           'Welsh text runs longer than the equivalent English in most cases, so a layout designed for one language and then translated tends to break.',
           'Setting both languages from the start, with the space each needs, avoids a design that works in one and looks cramped in the other.',
@@ -800,7 +800,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Cardiff trades we supply',
+        heading: 'Cardiff Trades We Supply',
         items: [
           'Cafés and dessert shops across the city centre, Cathays and Pontcanna.',
           'Event caterers working the Principality Stadium and Cardiff Bay, whose demand spikes around fixtures.',
@@ -851,7 +851,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Late-night service is a volume problem',
+        heading: 'Late-Night Service Is a Volume Problem',
         body: [
           'A takeaway serving several hundred customers in three hours cannot afford packaging that needs careful assembly. Anything that takes an extra second per order costs real time.',
           'It also cannot afford to run out, so peak-night usage rather than weekly average is the number to plan stock against.',
@@ -864,7 +864,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What matters for this trade',
+        heading: 'What Matters for This Trade',
         items: [
           'Filling speed — an open scoop beats a box that needs forming.',
           'Grease resistance, because portions sit before they are eaten.',
@@ -876,7 +876,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Open formats against closed ones in winter',
+        heading: 'Open Formats Against Closed Ones in Winter',
         body: [
           'An open scoop keeps chips crisp by letting steam escape, and it also lets heat escape. On a cold night that trade goes the other way.',
           'A vented closed carton is the usual compromise: it holds heat better than an open scoop while still letting enough steam out to avoid sogginess.',
@@ -918,7 +918,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Delivery packaging is judged on arrival, not despatch',
+        heading: 'Delivery Packaging Is Judged on Arrival, Not Despatch',
         body: [
           'Food that looks correct leaving the kitchen can arrive twenty minutes later steamed soft and slid to one side of its container.',
           'Nothing about that is visible to the kitchen, which is why delivery-led businesses benefit from testing their own packaging by ordering from themselves.',
@@ -931,7 +931,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What delivery changes',
+        heading: 'What Delivery Changes',
         items: [
           'Open formats stop working — chips migrate and portions tip.',
           'Venting becomes necessary, or hot food steams itself soft.',
@@ -943,7 +943,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Campus catering demand',
+        heading: 'Campus Catering Demand',
         body: [
           'Both universities generate substantial catering volume during term, with a marked drop over the summer.',
           'As elsewhere, splitting an order across the academic year avoids financing stock through the quiet months.',
@@ -985,7 +985,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Who orders here',
+        heading: 'Who Orders Here',
         items: [
           'Sweet centres selling mithai and dry snacks by weight across the city.',
           'Restaurants running substantial takeaway and delivery arms alongside dining rooms.',
@@ -997,7 +997,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Large one-off orders need earlier planning',
+        heading: 'Large One-Off Orders Need Earlier Planning',
         body: [
           'A wedding caterer supplying several hundred guests may need more packaging for one event than a café uses in a quarter, and it has to arrive before a fixed date.',
           'Send the date with the quantity. We schedule production backwards from it and confirm the lead time in writing rather than quoting a general figure.',
@@ -1010,7 +1010,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Retail packing adds extra requirements',
+        heading: 'Retail Packing Adds Extra Requirements',
         body: [
           'Goods packed for a shelf rather than sold across a counter need weight, ingredients and allergen information that counter sales do not.',
           'That has to be planned into the artwork rather than added afterwards, so tell us at quote stage if any of the packaging is for retail sale.',
@@ -1052,7 +1052,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Known dates make planning easier, not harder',
+        heading: 'Known Dates Make Planning Easier, Not Harder',
         body: [
           'Unlike weather-driven seaside trade, cruise turnaround dates are published well ahead. A trader can look at the calendar and order against it.',
           'That is a genuine advantage over most seasonal businesses, provided the ordering actually happens in advance rather than the week before.',
@@ -1065,7 +1065,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Southampton trades we supply',
+        heading: 'Southampton Trades We Supply',
         items: [
           'Waterfront and Ocean Village cafés trading to visitors and residents.',
           'Ice cream and dessert vendors along the common and the parks in summer.',
@@ -1077,7 +1077,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Coastal trading is harder on packaging',
+        heading: 'Coastal Trading Is Harder on Packaging',
         body: [
           'Salt air, wind and rain reach outdoor packaging in a way they do not inland. Unlaminated board absorbs moisture from the air alone on a damp day.',
           'For a permanent outdoor pitch, a laminated finish is worth specifying rather than treating as optional.',
@@ -1119,7 +1119,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'What seafront trading does to packaging',
+        heading: 'What Seafront Trading Does to Packaging',
         items: [
           'Wind catches light board and lifts unweighted items straight off a counter.',
           'Direct sun on a display softens anything unlaminated over an afternoon.',
@@ -1131,7 +1131,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Deeper wraps for hot days',
+        heading: 'Deeper Wraps for Hot Days',
         body: [
           'A short sleeve that works perfectly well in a shaded high street is not enough on a seafront in August, when melt runs down the outside faster than a customer can keep up.',
           'Seaside vendors typically run a deeper wrap in summer and a shorter one out of season, from the same artwork.',
@@ -1144,7 +1144,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering for a season',
+        heading: 'Ordering for a Season',
         body: [
           'Seaside trade concentrates into roughly four months, and stock ordered in March has to last through it.',
           'Estimate from your busiest week rather than your average one, and remember that a good August can double the figure a normal summer suggests.',
@@ -1186,7 +1186,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Corporate catering is judged on the unpacking',
+        heading: 'Corporate Catering Is Judged on the Unpacking',
         body: [
           'A platter delivered to a meeting room is unpacked in front of the client who ordered it. Packaging that looks tidy at that moment does a job no high street sale requires.',
           'It also has to survive a car journey and being carried through a building, sometimes stacked.',
@@ -1199,7 +1199,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What corporate contracts ask for',
+        heading: 'What Corporate Contracts Ask For',
         items: [
           'Allergen and dietary information presented clearly, usually on a separate card.',
           'Platters that stack for delivery without crushing the layer below.',
@@ -1211,7 +1211,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering against a contract',
+        heading: 'Ordering Against a Contract',
         body: [
           'Contract catering gives a predictable volume, which makes longer print runs economic in a way ad-hoc trade does not.',
           'If you have a contract with a known term, tell us the annual volume rather than the first order. It usually changes which print method makes sense.',
@@ -1253,7 +1253,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Three markets, three requirements',
+        heading: 'Three Markets, Three Requirements',
         items: [
           'Market Square traders — outdoor pitches, small storage, high summer footfall.',
           'College catering — a fixed term calendar and formal presentation standards.',
@@ -1265,7 +1265,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Market trading with almost no storage',
+        heading: 'Market Trading with Almost No Storage',
         body: [
           'A stall on Market Square has room for a day\'s stock and nothing more. Everything else has to be carried in each morning.',
           'That makes flat-packed, compact packaging close to essential, and it argues against holding several specialist lines.',
@@ -1278,7 +1278,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering around the university terms',
+        heading: 'Ordering Around the University Terms',
         body: [
           'Cambridge terms are short and the vacations are long, so a business trading to students has an unusually pronounced quiet period.',
           'Tourist trade partly fills the summer gap, but the mix of what sells changes, which is worth accounting for in what you stock.',
@@ -1320,7 +1320,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Historic units, modern volumes',
+        heading: 'Historic Units, Modern Volumes',
         body: [
           'A Covered Market unit may have a few square metres of back-of-house and a listed building\'s worth of restrictions on changing it.',
           'Packaging that ships flat and assembles at the counter is not a preference here so much as the only workable option.',
@@ -1333,7 +1333,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Oxford trades we quote for',
+        heading: 'Oxford Trades We Quote For',
         items: [
           'Covered Market bakeries, delis and dessert businesses.',
           'Cafés along Cowley Road and Jericho serving residents year round.',
@@ -1345,7 +1345,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Presentation for a heritage setting',
+        heading: 'Presentation for a Heritage Setting',
         body: [
           'Businesses in historic settings often want packaging that does not look mass-produced, which points towards uncoated boards and restrained one or two colour printing.',
           'That is also usually the cheaper specification, which is a rare alignment between how something should look and what it costs.',
@@ -1389,7 +1389,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Producer packing against seaside service',
+        heading: 'Producer Packing Against Seaside Service',
         intro: 'The two Kent markets pull in opposite directions.',
         columns: ['Farm shop producer', 'Coastal vendor'],
         rows: [
@@ -1404,7 +1404,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Retail packing needs the labelling planned first',
+        heading: 'Retail Packing Needs the Labelling Planned First',
         body: [
           'Anything sold pre-packed from a shelf carries information requirements that a counter sale does not. That has to be laid out with the design rather than added afterwards.',
           'Reserve the panel before the front is designed, or the sticker ends up over your logo.',
@@ -1417,7 +1417,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'callout',
-        heading: 'Delivery across Kent',
+        heading: 'Delivery Across Kent',
         body: 'Kent addresses are served by national carriers on standard mainland transit. We have no premises, depot or delivery vehicles in the county, and cannot offer timed or same-day delivery to any Kent address.',
       },
     ],
@@ -1456,7 +1456,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Seafront trade in Essex',
+        heading: 'Seafront Trade in Essex',
         items: [
           'Southend\'s seafront ice cream and chip trade, concentrated into good weather.',
           'Pier and amusement catering, where speed of service dominates everything.',
@@ -1468,7 +1468,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Commuter town trade is a different order pattern',
+        heading: 'Commuter Town Trade Is a Different Order Pattern',
         body: [
           'A café in Chelmsford or Brentwood trades to residents and commuters at consistent volumes across the year, with peaks at weekday mornings rather than summer weekends.',
           'That makes stock planning far simpler, and it makes longer print runs more economic because usage is predictable.',
@@ -1481,7 +1481,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Ordering and artwork',
+        heading: 'Ordering and Artwork',
         body: [
           'Send us the cup or container you already use, along with your realistic annual volume rather than just a first order.',
           'Annual volume often changes which print method makes sense, and it is the single most useful figure you can give us.',
@@ -1523,7 +1523,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Destination customers notice the packaging',
+        heading: 'Destination Customers Notice the Packaging',
         body: [
           'Someone who has driven to a farm shop café on a Sunday is paying attention in a way a commuter grabbing a coffee is not. The packaging is part of what they are there for.',
           'That justifies a better specification than a convenience business would choose, and customers here generally accept the price that goes with it.',
@@ -1536,7 +1536,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Surrey businesses we supply',
+        heading: 'Surrey Businesses We Supply',
         items: [
           'Farm shops with a café and a produce counter under one roof.',
           'Garden centre restaurants, which trade heavily at weekends and in spring.',
@@ -1548,7 +1548,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Selling produce as well as serving it',
+        heading: 'Selling Produce as Well as Serving It',
         body: [
           'Farm shops frequently want the café packaging and the retail packaging to look like they come from the same business, which they often do not when ordered separately months apart.',
           'Running both in one order keeps the colour and stock consistent, and usually costs less than two separate jobs.',
@@ -1590,7 +1590,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Illuminations extend the season',
+        heading: 'Illuminations Extend the Season',
         body: [
           'Most seaside trade ends with the summer holidays. Blackpool\'s Illuminations push a meaningful season into November, which lengthens the period stock has to cover.',
           'It also means autumn trading happens in cold, wet weather, where an unlaminated sleeve performs noticeably worse than it does in August.',
@@ -1603,7 +1603,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Lancashire trades we quote for',
+        heading: 'Lancashire Trades We Quote For',
         items: [
           'Blackpool and Lytham seafront ice cream, chip and confectionery vendors.',
           'Promenade kiosks trading from Easter through the Illuminations.',
@@ -1615,7 +1615,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Volume changes the economics',
+        heading: 'Volume Changes the Economics',
         body: [
           'A high-volume seafront site can justify print methods that a small café cannot, because the setup cost spreads across a far larger run.',
           'If your annual usage is genuinely large, say so at enquiry. It may open options that would be uneconomic at a smaller scale.',
@@ -1657,7 +1657,7 @@ export const LOCATIONS: LocationPage[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Race weeks are a catering event, not a busy week',
+        heading: 'Race Weeks Are a Catering Event, Not a Busy Week',
         body: [
           'Cheltenham\'s festival weeks put catering demand into a few days at a scale that has nothing to do with normal trade.',
           'Caterers working them order to the date, in quantities that would last an ordinary café a year. That needs planning months ahead rather than weeks.',
@@ -1670,7 +1670,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Gloucestershire businesses we supply',
+        heading: 'Gloucestershire Businesses We Supply',
         items: [
           'Cotswolds tea rooms and village cafés trading to visitors at weekends.',
           'Farm shops and producers packing for their own shelves and for wholesale.',
@@ -1682,7 +1682,7 @@ export const LOCATIONS: LocationPage[] = [
       },
       {
         kind: 'prose',
-        heading: 'Packaging that suits a rural setting',
+        heading: 'Packaging That Suits a Rural Setting',
         body: [
           'A glossy laminated pack looks out of place in a Cotswolds tea room in a way it would not in a city centre.',
           'Uncoated boards, kraft and restrained one or two colour printing suit the setting, and they are usually the cheaper specification as well.',

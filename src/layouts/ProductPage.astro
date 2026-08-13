@@ -141,10 +141,10 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
       <Sections sections={product.sections} />
 
       <section class="content-section ordering-strip">
-        <h2>Ordering, artwork and delivery</h2>
+        <h2>Ordering, Artwork and Delivery</h2>
         <div class="ordering-grid">
           <div>
-            <h3>Getting a quote</h3>
+            <h3>Getting a Quote</h3>
             <p>{ordering.lead} We reply with a written specification, the minimum order quantity and the lead time for your job.</p>
           </div>
           <div>
@@ -168,20 +168,20 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
         </div>
       </section>
 
-      <Faqs faqs={product.faqs} heading={`${product.name}: common questions`} />
+      <Faqs faqs={product.faqs} heading={`${product.name}: Common Questions`} />
     </div>
 
     <aside class="product-aside">
       <QuoteForm
         productName={product.name}
         source={`product:${product.slug}`}
-        heading="Quote for this product"
+        heading="Quote for This Product"
         intro="We reply with a specification, minimum quantity and lead time."
         id="quote"
       />
 
       <div class="aside-contact">
-        <h2>Prefer to talk it through?</h2>
+        <h2>Prefer to Talk It Through?</h2>
         <p>
           Sizing questions are usually quicker on the phone, especially if you have the
           product in front of you.
@@ -198,7 +198,7 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
     related.length > 0 && (
       <section class="section section-sunk">
         <div class="wrap">
-          <h2>Related to {product.name.toLowerCase()}</h2>
+          <h2>Related to {product.name}</h2>
           <p class="muted related-intro">
             Products people ordering this one usually look at as well.
           </p>

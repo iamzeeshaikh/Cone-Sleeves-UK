@@ -24,7 +24,7 @@ export const FUNDAMENTALS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Why cone size is not a number you can order from',
+        heading: 'Why Cone Size Is Not a Number You Can Order From',
         body: [
           'Cones are sold by name rather than by dimension. A supplier will offer a "standard waffle cone" and a "large waffle cone", and two suppliers using those words will send you cones that differ by several millimetres.',
           'For most purposes that does not matter. For a sleeve it matters a great deal, because a wrap cut a few millimetres too wide slides down the taper the moment the cone warms up.',
@@ -33,31 +33,31 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'The two measurements that set the die',
+        heading: 'The Two Measurements That Set the Die',
         intro:
           'You need a cone, a ruler and about a minute. Do this with a cone from your current stock, not a photograph from a catalogue.',
         steps: [
           {
-            title: 'Measure the top diameter',
+            title: 'Measure the Top Diameter',
             body: 'Across the open rim, outside edge to outside edge, at the widest point. Cones are rarely perfectly round, so take the widest reading rather than an average.',
           },
           {
-            title: 'Measure the slant height',
+            title: 'Measure the Slant Height',
             body: 'From the rim, down the outside of the cone, to the point where you want the sleeve to stop. This is along the sloping side, not straight down through the middle — that distinction matters and is the step most often got wrong.',
           },
           {
-            title: 'Repeat on two more cones',
+            title: 'Repeat on Two More Cones',
             body: 'Take three cones from the same box and measure all three. If they differ by more than a millimetre or two, that variation has to be built into the die.',
           },
           {
-            title: 'Decide how much wafer stays visible',
+            title: 'Decide How Much Wafer Stays Visible',
             body: 'Most parlours leave two to three centimetres of cone showing below the rim, so the wafer is part of what the customer sees. Covering to the rim protects better and hides the product.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Slant height, not vertical height',
+        heading: 'Slant Height, Not Vertical Height',
         body: [
           'A cone is a triangle in profile. The distance from the rim down the sloping side is longer than the vertical drop from the rim to the same point, and it is the slant measurement that determines how much board wraps around the cone.',
           'Using the vertical height produces a sleeve that is consistently too short, usually by enough to be obvious but not enough for anyone to work out why.',
@@ -66,7 +66,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What changes the answer',
+        heading: 'What Changes the Answer',
         intro:
           'Several things shift the ideal size away from a straight measurement of the cone:',
         items: [
@@ -87,7 +87,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Sizing for more than one cone',
+        heading: 'Sizing for More than One Cone',
         body: [
           'Sites selling both waffle and cake cones almost always need two dies. A cake cone tapers more sharply and has a narrower rim, so a sleeve cut for a waffle cone sits loose on it and rotates as the customer eats.',
           'That is not a compromise worth making. The artwork can be identical across both, which keeps the design cost to one job, and only the die changes.',
@@ -101,7 +101,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'Short band against deep wrap',
+        heading: 'Short Band Against Deep Wrap',
         intro:
           'Depth is a choice rather than a measurement, and it changes the cost as well as the performance.',
         columns: ['Short band', 'Deep wrap'],
@@ -117,7 +117,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'The simplest way to get this right',
+        heading: 'The Simplest Way to Get This Right',
         body: [
           'Post us three cones. It removes every measurement question at once, including the ones you would not have thought to ask about, such as how much the rim varies within a single box.',
           'We cut the die from the physical cone, allow a working tolerance, and send a flat sample you can wrap around a real cone before anything is printed.',
@@ -126,7 +126,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Things worth measuring at the same time',
+        heading: 'Things Worth Measuring at the Same Time',
         intro:
           'While you have a cone and a ruler out, these save a second round of questions later:',
         items: [
@@ -177,7 +177,7 @@ export const FUNDAMENTALS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Three decisions hiding inside one word',
+        heading: 'Three Decisions Hiding Inside One Word',
         body: [
           'When a supplier says "board", they are actually describing three separate things: what the board is made from, how heavy it is, and what has been done to its surface.',
           'Those three interact, and changing one usually changes what the others need to be. A heavier board on an unlaminated surface behaves quite differently from a lighter board with a coating.',
@@ -186,7 +186,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'The three board families',
+        heading: 'The Three Board Families',
         intro: 'Almost every cone sleeve is one of these.',
         columns: ['Coated white board', 'Uncoated kraft'],
         rows: [
@@ -201,7 +201,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Weight, and why heavier is not automatically better',
+        heading: 'Weight, and Why Heavier Is Not Automatically Better',
         body: [
           'A heavier board holds its shape under a large scoop, survives being pre-assembled and stacked, and feels more substantial in the hand.',
           'It also costs more per unit, takes more storage space per thousand, and is firmer for staff to roll during a rush. On a high-volume kiosk turning over hundreds of cones an hour, that last point is a real operational cost.',
@@ -215,7 +215,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Signs your board is too light',
+        heading: 'Signs Your Board Is Too Light',
         intro: 'These show up within days of a first order rather than months:',
         items: [
           'A visible crease where the customer\'s thumb sits, appearing before they finish the cone.',
@@ -229,7 +229,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Grease resistance is a separate axis',
+        heading: 'Grease Resistance Is a Separate Axis',
         body: [
           'It is tempting to assume a heavier board resists grease better. It does not, in any meaningful way — it simply has more material to absorb before the staining shows.',
           'Genuine grease resistance comes from a liner or a coating on the inner face, and it can be specified on any board weight. For ice cream it is usually unnecessary. For chips, fried chicken or anything from a fryer it is the whole specification.',
@@ -243,7 +243,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What board choice does to recycling claims',
+        heading: 'What Board Choice Does to Recycling Claims',
         body: [
           'Uncoated, unlaminated board is the simplest thing to put into an ordinary paper stream. Every layer added on top — a lamination film, a grease barrier, a metallic finish — makes it more of a mixed material.',
           'That is a genuine trade rather than a marketing point. An unlaminated sleeve is easier to recycle and less able to cope with a melting scoop on a hot day.',
@@ -257,7 +257,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'A practical way to choose',
+        heading: 'A Practical Way to Choose',
         body: [
           'Start with the food. Savoury and fried narrows you to a lined board immediately. Ice cream leaves the choice open.',
           'Then take the longest time a customer holds the product before finishing it, and specify for that rather than for the average. Packaging is judged by its worst outcome, not its typical one.',
@@ -266,7 +266,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'Storage and handling, which rarely appear on a spec sheet',
+        heading: 'Storage and Handling, Which Rarely Appear on a Spec Sheet',
         intro:
           'Two boards that perform identically in service can behave quite differently behind the counter.',
         columns: ['Lighter board', 'Heavier board'],
@@ -282,24 +282,24 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Settling the board in four questions',
+        heading: 'Settling the Board in Four Questions',
         intro:
           'Working through these in order gets to a specification without a long conversation.',
         steps: [
           {
-            title: 'Is the food fried or oily?',
+            title: 'Is the Food Fried or Oily?',
             body: 'If it is, you need a grease-resistant lining and the rest of the choices follow from that. If not, the field stays open.',
           },
           {
-            title: 'How long is it held before it is finished?',
+            title: 'How Long Is It Held Before It Is Finished?',
             body: 'Two minutes at a counter tolerates a light board. Fifteen on a warm promenade does not.',
           },
           {
-            title: 'Does the colour have to be accurate?',
+            title: 'Does the Colour Have to Be Accurate?',
             body: 'If a brand colour must match, that means white board. If the plain look is the point, kraft, designed around the shift rather than against it.',
           },
           {
-            title: 'What can your customers recycle?',
+            title: 'What Can Your Customers Recycle?',
             body: 'Answer that before adding lamination, because it is the layer that most often takes the sleeve out of a paper stream.',
           },
         ],
@@ -342,7 +342,7 @@ export const FUNDAMENTALS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Printing happens flat, before anything is a cone',
+        heading: 'Printing Happens Flat, Before Anything Is a Cone',
         body: [
           'A cone sleeve is printed as a flat shape on a large sheet alongside many others, then cut out by a die and shipped flat. The cone shape only appears when a member of your staff rolls it.',
           'That is worth understanding because it explains almost everything else: why artwork has to be built on an arc, why the print quality depends on the board surface rather than the finished shape, and why changing the size means changing a physical tool.',
@@ -350,7 +350,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'The two methods you will be quoted',
+        heading: 'The Two Methods You Will Be Quoted',
         intro:
           'Almost every cone sleeve job runs on one of these, and the deciding factor is quantity.',
         columns: ['Digital', 'Conventional (litho or flexo)'],
@@ -367,7 +367,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Spot colours against process colours',
+        heading: 'Spot Colours Against Process Colours',
         body: [
           'Process printing builds every colour from four inks: cyan, magenta, yellow and black. It can reproduce a photograph, and it approximates any specific colour rather than matching it.',
           'A spot colour is a single ink mixed to a specific recipe before it goes on the press. It matches a brand colour closely and holds that match across a long run, where a process build drifts.',
@@ -381,7 +381,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What actually drives the price of a print job',
+        heading: 'What Actually Drives the Price of a Print Job',
         intro:
           'Cost is less about how much of the sleeve is covered than most people expect:',
         items: [
@@ -396,34 +396,34 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'What happens between your order and your delivery',
+        heading: 'What Happens Between Your Order and Your Delivery',
         intro: 'A typical job runs through five stages.',
         steps: [
           {
-            title: 'The die is made or retrieved',
+            title: 'The Die Is Made or Retrieved',
             body: 'A new size needs a new physical cutting tool. A reorder uses the existing one, which is why repeat orders are quicker.',
           },
           {
-            title: 'Artwork is placed on the die line',
+            title: 'Artwork Is Placed on the Die Line',
             body: 'Your file is positioned on a template showing the cut, the fold, the overlap and the safe area.',
           },
           {
-            title: 'A digital proof is issued',
+            title: 'A Digital Proof Is Issued',
             body: 'This shows the layout on the die. It confirms position and content rather than exact colour, which a screen cannot show reliably.',
           },
           {
-            title: 'The job prints and is finished',
+            title: 'The Job Prints and Is Finished',
             body: 'Printing, then any lamination, then die cutting. Each is a separate pass through a machine.',
           },
           {
-            title: 'Sleeves are packed flat and dispatched',
+            title: 'Sleeves Are Packed Flat and Dispatched',
             body: 'Flat packing protects the printed face and keeps the carriage cost down.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Why colour on your screen is not colour on board',
+        heading: 'Why Colour on Your Screen Is Not Colour on Board',
         body: [
           'A screen emits light and paper reflects it, so the two can never match exactly. A colour that looks vivid backlit will always look more muted printed.',
           'On top of that, board absorbs ink to different degrees, and an uncoated or kraft surface changes a colour further still.',
@@ -437,7 +437,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What this means for your first order',
+        heading: 'What This Means for Your First Order',
         body: [
           'If you are ordering cone sleeves for the first time, digital printing almost certainly makes sense. It avoids plate costs, it makes a modest quantity viable, and it lets you find out how many you actually use before committing to a long run.',
           'Once your usage is known and stable, ask for a conventional price against your annual volume. The saving at that point is often substantial, and the die you already own carries over.',
@@ -445,7 +445,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Where the cost actually sits on a small order',
+        heading: 'Where the Cost Actually Sits on a Small Order',
         body: [
           'On a first order of a few thousand sleeves, the printing itself is rarely the largest line. Setup, tooling and the minimum quantity the press will accept usually dominate.',
           'That is why the price per unit falls so sharply between two thousand and twenty thousand: the fixed costs are being spread across ten times as many sleeves rather than the ink getting cheaper.',
@@ -454,7 +454,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to send so a quote comes back accurate',
+        heading: 'What to Send So a Quote Comes Back Accurate',
         intro:
           'Every one of these changes the price, and leaving one out means the quote gets revised later:',
         items: [
@@ -505,7 +505,7 @@ export const FUNDAMENTALS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'What lamination actually is',
+        heading: 'What Lamination Actually Is',
         body: [
           'Lamination is a thin film bonded to the printed surface after the ink is dry. It is not a varnish or a coating applied by the press — it is a separate material and a separate production step.',
           'That matters for two reasons. It adds cost and lead time, and it changes the sleeve from a single material into a laminated one, which affects how it should be disposed of.',
@@ -514,7 +514,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'The three options side by side',
+        heading: 'The Three Options Side by Side',
         intro: 'Judged on how they behave in service rather than how they look in a proof.',
         columns: ['Matt lamination', 'Gloss lamination'],
         rows: [
@@ -529,7 +529,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Grip is the underrated factor',
+        heading: 'Grip Is the Underrated Factor',
         body: [
           'A cone sleeve is held by someone whose hand may be damp from condensation or from the melting product itself. Gloss lamination is noticeably slippery in that state.',
           'Matt is not dramatically better, but it is better, and on a warm day with a heavy scoop that difference shows up as fewer dropped cones.',
@@ -538,7 +538,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'When to choose matt',
+        heading: 'When to Choose Matt',
         intro: 'Matt earns its cost in specific situations rather than universally:',
         items: [
           'Dark artwork, especially solid blacks, where gloss makes every fingerprint visible.',
@@ -552,7 +552,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'When gloss is the better answer',
+        heading: 'When Gloss Is the Better Answer',
         intro: 'Gloss is not simply the cheaper cousin — it does some things better:',
         items: [
           'Bright, saturated artwork where the extra vividness is the point.',
@@ -565,7 +565,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'The case for no lamination at all',
+        heading: 'The Case for No Lamination at All',
         body: [
           'An unlaminated sleeve costs less, ships sooner because it skips a production step, and is far easier to put into an ordinary paper recycling stream.',
           'What it gives up is durability. Ink on an unprotected board scuffs along the seam during assembly, and melt reaching the surface softens it quickly.',
@@ -579,7 +579,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'How to actually decide',
+        heading: 'How to Actually Decide',
         body: [
           'Ask for samples in both finishes with your own artwork if the run justifies it, then do two things with them. Handle one for a minute with slightly damp hands, and photograph the other under the lighting your customers will use.',
           'Those two tests answer the question faster than any amount of comparing swatches, because they replicate what the sleeve is genuinely for.',
@@ -593,7 +593,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What lamination costs you beyond the price',
+        heading: 'What Lamination Costs You Beyond the Price',
         body: [
           'Two costs are easy to miss when comparing a laminated quote against an unlaminated one. The first is lead time: lamination is a separate pass through a separate machine, and on a busy schedule that can add days rather than hours.',
           'The second is disposal. An unlaminated board is a single material and goes into an ordinary paper stream in most areas. Bond a film to it and it becomes a mixed material, which needs a facility able to separate the two.',
@@ -602,7 +602,7 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Questions worth asking before you decide',
+        heading: 'Questions Worth Asking Before You Decide',
         intro:
           'Five minutes on these usually settles the finish without needing a sample:',
         items: [
@@ -617,24 +617,24 @@ export const FUNDAMENTALS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Testing a finish properly',
+        heading: 'Testing a Finish Properly',
         intro:
           'If samples are available for your job, these four tests answer the question in about five minutes.',
         steps: [
           {
-            title: 'Handle one with slightly damp hands',
+            title: 'Handle One with Slightly Damp Hands',
             body: 'This is how the sleeve is actually held. Gloss is noticeably more slippery once condensation is involved.',
           },
           {
-            title: 'Rub a thumb firmly across the print',
+            title: 'Rub a Thumb Firmly Across the Print',
             body: 'Scuffing shows immediately on unlaminated board and barely at all on a laminated one.',
           },
           {
-            title: 'Photograph it under your own lighting',
+            title: 'Photograph It Under Your Own Lighting',
             body: 'Gloss creates hotspots under a phone flash that are invisible under daylight.',
           },
           {
-            title: 'Leave one under a melting scoop',
+            title: 'Leave One Under a Melting Scoop',
             body: 'Ten minutes tells you more about how the finish copes with moisture than any specification sheet does.',
           },
         ],

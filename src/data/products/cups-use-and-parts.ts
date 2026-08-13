@@ -21,7 +21,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A third of the cup is always hidden',
+        heading: 'A Third of the Cup Is Always Hidden',
         body: [
           'A right-handed grip covers a predictable band of the cup, and the customer will not rotate it to show your logo.',
           'Designs that repeat around the circumference survive this. A single mark placed once has roughly even odds of facing away for the entire life of the drink.',
@@ -41,7 +41,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Sleeves are the cheaper way in',
+        heading: 'Sleeves Are the Cheaper Way In',
         body: 'Printed cups carry tooling and minimum quantities that a single site often cannot justify. A printed sleeve on a plain cup achieves most of the branding effect for a fraction of the commitment, and it is where most independents start.',
         link: {
           href: '/custom-printed-coffee-sleeves/',
@@ -81,7 +81,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'What works on kraft',
+        heading: 'What Works on Kraft',
         items: [
           'A single dark colour, which prints predictably on a warm base.',
           'Line illustration and hand-drawn marks, which suit the unbleached look.',
@@ -97,7 +97,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Kraft and double wall together',
+        heading: 'Kraft and Double Wall Together',
         body: [
           'A double-wall kraft cup is a common café specification because the outer wall can be kraft while the inner one is standard, giving the look without changing what touches the drink.',
           'It also removes the need for a sleeve, which matters if you like the plain look but not the extra item.',
@@ -135,7 +135,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Toppings and lids do not coexist easily',
+        heading: 'Toppings and Lids Do Not Coexist Easily',
         body: [
           'A flat lid crushes a cream topping. A domed lid clears it but adds cost and takes more storage space.',
           'The practical answer for many sites is to serve topped drinks without a lid for eat-in and offer a lidded version without the topping for takeaway.',
@@ -148,7 +148,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points worth deciding',
+        heading: 'Points Worth Deciding',
         items: [
           'Whether topped drinks are lidded at all.',
           'Cup volume allowing for a topping, which reduces the usable liquid fill further.',
@@ -189,7 +189,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Single wall, double wall and ripple',
+        heading: 'Single Wall, Double Wall and Ripple',
         columns: ['Single wall', 'Double or ripple wall'],
         rows: [
           ['Comfort', 'Needs a sleeve above 8oz', 'Comfortable without one'],
@@ -202,7 +202,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'The lining is what makes it a hot cup',
+        heading: 'The Lining Is What Makes It a Hot Cup',
         body: [
           'Board on its own goes soft against a hot liquid within minutes. The lining is the barrier, and it has to tolerate the temperature the drink is served at.',
           'This is where wax-lined cups fail — the coating softens with heat, which is why they belong on cold service only.',
@@ -245,7 +245,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Where single wall is the right answer',
+        heading: 'Where Single Wall Is the Right Answer',
         items: [
           'Espresso and small hot drinks, where there is little heat against the hand.',
           'Cold drinks, which need no insulation at all.',
@@ -261,7 +261,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'The smooth surface prints most cleanly',
+        heading: 'The Smooth Surface Prints Most Cleanly',
         body: [
           'A ripple or double wall cup has a textured outer surface that softens fine detail. A single wall cup does not.',
           'For a brand with small type, a detailed mark or a QR code, single wall gives a noticeably cleaner result.',
@@ -299,7 +299,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The holes have to match your cups',
+        heading: 'The Holes Have to Match Your Cups',
         body: [
           'A carrier grips the cup wall partway down. Cut for a wider cup, it lets yours rattle and tip; cut too small, staff force the cup and split the board.',
           'This is a measurement job, not a stock purchase. Send us the cups you use, including the largest.',
@@ -312,7 +312,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What makes a carrier work in practice',
+        heading: 'What Makes a Carrier Work in Practice',
         items: [
           'A handle or grip point that a hand can get into while holding a bag.',
           'Enough rigidity that the centre does not sag under four full cups.',
@@ -353,7 +353,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'specs',
-        heading: 'Lid types and what each is for',
+        heading: 'Lid Types and What Each Is For',
         rows: [
           ['Sip lid', 'Hot drinks; a raised drinking aperture'],
           ['Flat lid', 'Cold drinks, usually with a straw slot'],
@@ -365,7 +365,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Sharing a lid across sizes',
+        heading: 'Sharing a Lid Across Sizes',
         body: [
           'Many cup ranges use one rim across 8oz and 12oz, with the taller cup being the larger volume. That means one lid covers both.',
           'It halves the lid lines you hold and removes the commonest service mistake — the wrong lid grabbed during a rush.',
@@ -409,7 +409,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The lid changes the portion',
+        heading: 'The Lid Changes the Portion',
         body: [
           'With a domed lid, a scoop can sit proud of the rim and the customer sees a generous serve. With a flat lid, the fill line drops below the rim and the same cup delivers noticeably less.',
           'Sites that pick the cup first and the lid second often end up serving smaller portions than they costed.',
@@ -422,7 +422,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Details that matter for desserts',
+        heading: 'Details That Matter for Desserts',
         items: [
           'Condensation on the outside, if the dessert is chilled or frozen.',
           'Whether the cup is transparent enough to show layers, or opaque and printed.',
@@ -463,7 +463,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The outside is what needs protecting',
+        heading: 'The Outside Is What Needs Protecting',
         body: [
           'A drink cup is lined inside because the liquid is inside. An ice cream cup is dry inside and wet outside within a minute of leaving the freezer.',
           'A coated or laminated outer face keeps the print sharp and stops the board going soft under a customer\'s grip.',
@@ -476,7 +476,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing scoop cups',
+        heading: 'Sizing Scoop Cups',
         items: [
           'Size by scoop count rather than by fluid volume — that is how customers order.',
           'Allow height for the scoop to stand proud, which is how it is served.',
@@ -507,7 +507,7 @@ export const CUPS_BY_USE: Product[] = [
     seoTitle: 'Ice Cream Cups With Lids UK | Printed Takeaway Tubs',
     seoDescription:
       'Printed ice cream cups with matched lids for takeaway and pre-packed cabinet portions, ordered together to avoid a mismatch.',
-    h1: 'Ice Cream Cups With Lids',
+    h1: 'Ice Cream Cups with Lids',
     cardBlurb: 'Cups supplied with matched lids for takeaway and pre-packed portions.',
     enquiryLabel: 'ice cream cups with lids',
     intro: [
@@ -517,7 +517,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Domed against flat lids for ice cream',
+        heading: 'Domed Against Flat Lids for Ice Cream',
         columns: ['Domed lid', 'Flat lid'],
         rows: [
           ['Fill', 'Scoop can stand above the rim', 'Fill stops below the rim'],
@@ -530,7 +530,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Pre-filling changes the whole operation',
+        heading: 'Pre-Filling Changes the Whole Operation',
         body: [
           'A lidded tub can be filled in a quiet period and sold from a freezer without scooping. That is a labour saving, and it changes what the packaging has to do.',
           'It also means the cup sits in a freezer for hours, so the outer face needs to survive frost and condensation rather than a brief moment of handling.',
@@ -573,7 +573,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A spoon is a structural load',
+        heading: 'A Spoon Is a Structural Load',
         body: [
           'Scraping the last of a soup means pressing a spoon against the wall and the base. A drink cup flexes under that and can split at the seam.',
           'A heavier board resists it, which is the main reason food cups cost more than drink cups at the same volume.',
@@ -581,7 +581,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Specifying for hot food',
+        heading: 'Specifying for Hot Food',
         items: [
           'A board weight chosen for cutlery, not just for liquid.',
           'A lid that seals well enough for a takeaway journey.',
@@ -627,7 +627,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Bowl against a tall cup for food',
+        heading: 'Bowl Against a Tall Cup for Food',
         columns: ['Wide bowl', 'Tall cup'],
         rows: [
           ['Eating with a fork', 'Comfortable', 'Awkward at the bottom'],
@@ -640,7 +640,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Presentation is a real reason to choose one',
+        heading: 'Presentation Is a Real Reason to Choose One',
         body: [
           'A poke bowl or a grain salad is arranged, and the arrangement is a large part of what the customer is paying for. In a tall cup none of it is visible.',
           'That is not a small consideration for businesses whose customers photograph the food before eating it.',
@@ -683,7 +683,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'No lining means lower cost and simpler disposal',
+        heading: 'No Lining Means Lower Cost and Simpler Disposal',
         body: [
           'The lining inside a drink cup is what complicates its recycling and adds to its cost. A dry snack cup does not need one.',
           'That is a genuine advantage rather than a marketing point, and it is worth taking where the food allows it.',
@@ -696,7 +696,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What counts as dry enough',
+        heading: 'What Counts as Dry Enough',
         items: [
           'Crisps, nuts and dry-seasoned popcorn — unlined board is fine.',
           'Buttered popcorn and dressed snacks — a lining is needed.',
@@ -737,7 +737,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'One cup across a changing menu',
+        heading: 'One Cup Across a Changing Menu',
         body: [
           'Event caterers and street food traders serve something different each week. Specifying a container per dish leaves dead stock when the menu moves on.',
           'A serving cup in two sizes and a lined board handles most of it, which is usually the right trade for a varied operation.',
@@ -750,7 +750,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Choosing sizes for general use',
+        heading: 'Choosing Sizes for General Use',
         items: [
           'Two sizes cover most menus; a third rarely earns its storage.',
           'Specify the lining for your wettest, hottest dish.',
@@ -791,7 +791,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Denesting is the specification that matters',
+        heading: 'Denesting Is the Specification That Matters',
         body: [
           'During a rush, staff pull portion cups off a stack one-handed. Cups that stick together cost seconds every time, and seconds add up across a service.',
           'A slight step or rib in the wall keeps them separated. It is invisible to the customer and the single most useful feature on the product.',
@@ -799,7 +799,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where portion cups earn their place',
+        heading: 'Where Portion Cups Earn Their Place',
         items: [
           'Sauces and dips served alongside a main item.',
           'Dressings kept separate so a salad does not go soft.',
@@ -845,7 +845,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The lid is the product',
+        heading: 'The Lid Is the Product',
         body: [
           'A pot without a reliable lid is fine on a tray and useless in a courier bag. Most complaints about sauce packaging are actually complaints about lids.',
           'A lid that clicks positively into a rolled rim holds through a journey. One that rests on top does not.',
@@ -858,7 +858,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What sauces do to board',
+        heading: 'What Sauces Do to Board',
         items: [
           'Oil-based sauces soak into an unlined wall quickly.',
           'Acidic sauces such as tomato and vinegar attack coatings over time.',
@@ -889,7 +889,7 @@ export const CUPS_BY_USE: Product[] = [
     seoTitle: 'Paper Tea Cups With Handles UK | Printed Handled Cups',
     seoDescription:
       'Printed paper tea cups with handles for receptions and formal events, where a handle does the job a sleeve would otherwise do.',
-    h1: 'Paper Tea Cups With Handles',
+    h1: 'Paper Tea Cups with Handles',
     cardBlurb: 'Handled cups for events, where a handle replaces a sleeve.',
     enquiryLabel: 'paper tea cups with handles',
     intro: [
@@ -899,7 +899,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Handle against sleeve',
+        heading: 'Handle Against Sleeve',
         columns: ['Handle', 'Sleeve'],
         rows: [
           ['Look', 'Reads as a teacup', 'Reads as takeaway'],
@@ -912,7 +912,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Where they suit and where they do not',
+        heading: 'Where They Suit and Where They Do Not',
         body: [
           'Weddings, conferences and church functions use them because they look appropriate to a seated occasion where a takeaway cup would not.',
           'A busy café serving to walking customers is exactly the wrong application: they cost more, store worse and offer nothing a sleeve does not.',
@@ -956,7 +956,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The rim is why the weight matters',
+        heading: 'The Rim Is Why the Weight Matters',
         body: [
           'Pressing a lid onto a thin cup distorts the rim, and the lid never seats evenly afterwards. In an office where cups are carried along corridors, that becomes a recurring spill.',
           'A heavier rim holds its shape under thumb pressure, which is most of what buyers in this part of the range are paying for.',
@@ -969,7 +969,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Typical buyers',
+        heading: 'Typical Buyers',
         items: [
           'Offices and meeting rooms with a coffee machine.',
           'Conference and event caterers serving in volume.',
@@ -999,7 +999,7 @@ export const CUPS_BY_USE: Product[] = [
     seoTitle: 'Cardboard Cups With Lids UK | Matched Cup & Lid Sets',
     seoDescription:
       'Cardboard cups supplied with matched lids, removing the rim mismatch that causes most complaints about lids on paper cups.',
-    h1: 'Cardboard Cups With Lids',
+    h1: 'Cardboard Cups with Lids',
     cardBlurb: 'Cups and lids supplied together, matched on rim diameter.',
     enquiryLabel: 'cardboard cups with lids',
     intro: [
@@ -1009,7 +1009,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Matched sets remove a whole category of problem',
+        heading: 'Matched Sets Remove a Whole Category of Problem',
         body: [
           'A lid that is close but not right pops off in a bag, leaks in a car, and is blamed on the lid when it is really a mismatch.',
           'Cups and lids quoted together are checked against each other before they ship, which is not something you can do reliably across two suppliers.',
@@ -1017,7 +1017,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'specs',
-        heading: 'What a set covers',
+        heading: 'What a Set Covers',
         rows: [
           ['Cup', 'Board weight and lining specified for the drink'],
           ['Lid', 'Matched to the rim, in sip, flat or domed'],
@@ -1059,7 +1059,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Small cups get gripped harder',
+        heading: 'Small Cups Get Gripped Harder',
         body: [
           'People wrap a whole hand around a small cup rather than holding it by the rim, which puts more pressure on the wall than a large cup ever sees.',
           'At tasting events, where people hold a cup while talking, that grip is sustained for minutes at a time.',
@@ -1072,7 +1072,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where the heavier board is worth it',
+        heading: 'Where the Heavier Board Is Worth It',
         items: [
           'Tasting events, where cups are held for several minutes.',
           'Sampling with hot liquids, where a crushed cup is a burn risk.',
@@ -1103,7 +1103,7 @@ export const CUPS_BY_USE: Product[] = [
     seoTitle: 'Paper Cups With Lids UK | Matched Cup & Lid Supply',
     seoDescription:
       'Paper cups supplied with matched lids across hot and cold ranges, sized by rim diameter rather than by the stated volume.',
-    h1: 'Paper Cups With Lids',
+    h1: 'Paper Cups with Lids',
     cardBlurb: 'Cups and lids matched on rim diameter across hot and cold ranges.',
     enquiryLabel: 'paper cups with lids',
     intro: [
@@ -1113,22 +1113,22 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Getting cups and lids right first time',
+        heading: 'Getting Cups and Lids Right First Time',
         steps: [
           {
-            title: 'Decide whether you need lids at all',
+            title: 'Decide Whether You Need Lids at All',
             body: 'Eat-in service often does not. Every lid line is stock, storage and a service decision.',
           },
           {
-            title: 'Choose the lid type before the cup size',
+            title: 'Choose the Lid Type Before the Cup Size',
             body: 'A domed lid adds usable volume above the rim; a flat lid takes it away.',
           },
           {
-            title: 'Check which sizes can share a rim',
+            title: 'Check Which Sizes Can Share a Rim',
             body: 'One lid across two cup sizes halves your lid lines and removes a service error.',
           },
           {
-            title: 'Order both together',
+            title: 'Order Both Together',
             body: 'Matching afterwards means accepting a loose fit or replacing stock.',
           },
         ],
@@ -1140,7 +1140,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Lids are a service decision as well as a product',
+        heading: 'Lids Are a Service Decision as Well as a Product',
         body: [
           'Every lid on a counter is a moment of staff time and a chance to grab the wrong one. Sites that reduce from four lid lines to two usually report faster service, not just lower stock.',
           'Sharing a rim across sizes is the simplest way to get there.',
@@ -1168,7 +1168,7 @@ export const CUPS_BY_USE: Product[] = [
     seoTitle: 'Paper Cups With Handles UK | Printed Handled Cups',
     seoDescription:
       'Paper cups with attached handles for receptions and very hot service, where a sleeve leaves fingers touching the cup wall.',
-    h1: 'Paper Cups With Handles',
+    h1: 'Paper Cups with Handles',
     cardBlurb: 'Attached handles for functions and very hot service.',
     enquiryLabel: 'paper cups with handles',
     intro: [
@@ -1178,7 +1178,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Complete separation from the wall',
+        heading: 'Complete Separation from the Wall',
         body: [
           'A sleeve protects a band of the cup. Fingers still touch above and below it, which on a near-boiling drink is noticeable.',
           'A handle keeps the hand off entirely, which is why they persist for tea and for service to people who hold a drink for a long time.',
@@ -1191,7 +1191,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'The practical objections',
+        heading: 'The Practical Objections',
         items: [
           'Cups do not nest tightly, so storage per thousand goes up considerably.',
           'Unit cost is higher than a cup plus a sleeve.',
@@ -1232,7 +1232,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'No base means no abandoned cups',
+        heading: 'No Base Means No Abandoned Cups',
         body: [
           'Flat-bottomed cups at a water cooler get put down, forgotten, and topped up by someone else. Cone cups cannot be, so each one serves one person once.',
           'They also use less material than a flat-bottomed cup of the same capacity and take almost no storage space in a dispenser.',
@@ -1245,7 +1245,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where cone cups are used',
+        heading: 'Where Cone Cups Are Used',
         items: [
           'Water dispensers in offices, gyms and public buildings.',
           'Tasting stations where each sample is drunk immediately.',
@@ -1285,7 +1285,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Cover against lid',
+        heading: 'Cover Against Lid',
         columns: ['Paper cover', 'Fitted lid'],
         rows: [
           ['Seals for transport', 'No', 'Yes'],
@@ -1298,7 +1298,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Where a paper cover is the right choice',
+        heading: 'Where a Paper Cover Is the Right Choice',
         body: [
           'Pre-filled dessert cups in a chilled cabinet need protection from dust and from customers touching them. They do not need a seal, because they go straight onto a tray.',
           'For that job a printed paper cover is cheaper, prints better, and avoids adding a moulded lid to the order.',
@@ -1341,7 +1341,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Measure where the hand goes',
+        heading: 'Measure Where the Hand Goes',
         body: [
           'A cup tapers, so its circumference changes along its height. The measurement that matters is at the point where a hand naturally grips, roughly a third down from the rim.',
           'Send a cup rather than a measurement if you can — it removes the ambiguity entirely.',
@@ -1354,7 +1354,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Practical points',
+        heading: 'Practical Points',
         items: [
           'One sleeve rarely covers more than two adjacent cup sizes.',
           'Double-walled cups are thicker, so sleeves cut for single wall will be tight.',
@@ -1396,7 +1396,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Artwork sits on a fan, not a rectangle',
+        heading: 'Artwork Sits on a Fan, Not a Rectangle',
         body: [
           'Because a cup tapers, its flat blank is an arc. Horizontal lines drawn straight across it curve once the cup is formed, and type set level rises at both ends.',
           'We supply a die template shaped to the cup so artwork is built on it from the start rather than corrected afterwards.',
@@ -1409,7 +1409,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What full colour is worth paying for',
+        heading: 'What Full Colour Is Worth Paying For',
         items: [
           'Photographic imagery, which cannot be reproduced in spot colours.',
           'Illustrations with many colours or soft gradients.',
@@ -1450,7 +1450,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Logo-only against full coverage',
+        heading: 'Logo-Only Against Full Coverage',
         columns: ['One-colour logo', 'Full coverage design'],
         rows: [
           ['Ink used', 'A few per cent of the surface', 'The entire printable area'],
@@ -1463,7 +1463,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Repeat the mark rather than enlarging it',
+        heading: 'Repeat the Mark Rather than Enlarging It',
         body: [
           'The instinct with a single logo is to make it big. The better move is to repeat it two or three times around the cup at a modest size.',
           'A hand covers about a third of the cup, so a repeated mark is always visible while a single large one often is not.',
@@ -1506,7 +1506,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Patterns tolerate the taper',
+        heading: 'Patterns Tolerate the Taper',
         body: [
           'A cup blank is a curved fan, so a strict grid distorts noticeably once formed. Organic motifs — leaves, florals, insects, abstract marks — absorb that distortion without looking wrong.',
           'That is why patterned cups tend to use flowing artwork rather than geometric repeats.',
@@ -1519,7 +1519,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Making a pattern work commercially',
+        heading: 'Making a Pattern Work Commercially',
         items: [
           'Leave one clear area for the brand mark so it is not lost in the pattern.',
           'Keep the pattern to one or two inks if cost matters — coverage does not drive price, ink count does.',
@@ -1559,29 +1559,29 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Working back from the counter date',
+        heading: 'Working Back from the Counter Date',
         steps: [
           {
-            title: 'Set the day it goes live',
+            title: 'Set the Day It Goes Live',
             body: 'Most sites switch in the last week of November. That date, not the order date, is the fixed point.',
           },
           {
-            title: 'Subtract delivery and distribution',
+            title: 'Subtract Delivery and Distribution',
             body: 'Stock has to reach every site and get to the front of the cupboard before the switch.',
           },
           {
-            title: 'Confirm the print lead time in writing',
+            title: 'Confirm the Print Lead Time in Writing',
             body: 'Lead times lengthen sharply in autumn. We confirm yours on the quote rather than quoting a general figure.',
           },
           {
-            title: 'Fix an artwork deadline well before that',
+            title: 'Fix an Artwork Deadline Well Before That',
             body: 'Artwork approval is the step that slips. Build slack into it, not into the print.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Whether to print the year',
+        heading: 'Whether to Print the Year',
         body: [
           'A dated cup cannot be carried into the following season, so any overstock is written off completely.',
           'Unless you are confident of the quantity, undated festive artwork lets leftovers be used again, which quietly saves more than the design costs.',
@@ -1624,7 +1624,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'One design against a set of four',
+        heading: 'One Design Against a Set of Four',
         columns: ['Single design', 'Set of designs'],
         rows: [
           ['Cost on digital print', 'Lower, but not by much', 'Modest premium'],
@@ -1637,7 +1637,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Distribution matters with a set',
+        heading: 'Distribution Matters with a Set',
         body: [
           'A set of four designs only works if all four reach every site. Delivered as four separate boxes, one branch inevitably works through one design first and the effect is lost.',
           'Ask for mixed cases if you are running a set across more than one location.',
@@ -1681,7 +1681,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Bought on cost per thousand',
+        heading: 'Bought on Cost per Thousand',
         body: [
           'At this end of the market the deciding factors are unit price, consistent stacking and reliable supply. A cup that occasionally sticks in a stack costs more in staff time than it saves in price.',
           'Printing is worth it only where the cup is seen by visitors rather than staff.',
@@ -1694,7 +1694,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where these are used',
+        heading: 'Where These Are Used',
         items: [
           'Canteens and staff rooms serving squash and water.',
           'Events and conferences with a self-service drinks table.',
@@ -1734,7 +1734,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Dispenser fit is a tolerance question',
+        heading: 'Dispenser Fit Is a Tolerance Question',
         body: [
           'Cooler dispensers hold a stack in a tube and release one cup at a time. That mechanism depends on consistent rim diameter and consistent stack height.',
           'A batch that varies slightly will jam, and the fault will be reported as a broken dispenser rather than a packaging issue.',
@@ -1747,7 +1747,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to send us with an enquiry',
+        heading: 'What to Send Us with an Enquiry',
         items: [
           'The dispenser make and model, or a photograph of the tube.',
           'A sample of the cup currently in use, if there is one.',
@@ -1788,7 +1788,7 @@ export const CUPS_BY_USE: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Presentation still counts in a hotel',
+        heading: 'Presentation Still Counts in a Hotel',
         body: [
           'In a hotel bathroom the cup sits on a shelf and is looked at before it is used. A crushed or grubby-looking cup undermines the room.',
           'That is why hotels often specify a slightly heavier cup, or a wrapped one, where a dental practice would take the cheapest option that works.',
@@ -1801,7 +1801,7 @@ export const CUPS_BY_USE: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What differs between settings',
+        heading: 'What Differs Between Settings',
         items: [
           'Hotels — appearance matters; often branded and sometimes individually wrapped.',
           'Dental practices — high volume, single use, cost-led.',

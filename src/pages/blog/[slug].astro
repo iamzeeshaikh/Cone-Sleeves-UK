@@ -124,7 +124,7 @@ const toc = post.sections.map((s) => ({
 
     <div class="wrap article-body-grid">
       <nav class="article-toc" aria-label="On this page">
-        <h2>On this page</h2>
+        <h2>On This Page</h2>
         <ol>
           {toc.map((t) => <li><a href={`#${t.id}`}>{t.heading}</a></li>)}
           {post.faqs?.length ? <li><a href="#article-faqs">Questions</a></li> : null}
@@ -141,7 +141,7 @@ const toc = post.sections.map((s) => ({
       related.length > 0 && (
         <section class="section-tight article-related">
           <div class="wrap">
-            <h2>Related guides</h2>
+            <h2>Related Guides</h2>
             <ul>
               {related.map((r) => (
                 <li class="card">

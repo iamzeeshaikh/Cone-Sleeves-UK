@@ -23,7 +23,7 @@ export const BUSINESS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'What a sleeve is actually for',
+        heading: 'What a Sleeve Is Actually For',
         body: [
           'Ask a scoop shop owner why they want cone sleeves and the answer is usually branding. Ask their staff and the answer is usually mess.',
           'Both are right, and the second one is what makes the first one work. A sleeve keeps a customer\'s hand off a wafer that is about to be dripped on, which is a real service improvement, and it happens to carry your name while doing it.',
@@ -32,7 +32,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'The three mistakes almost every first order makes',
+        heading: 'The Three Mistakes Almost Every First Order Makes',
         intro:
           'These come up so often they are worth naming directly:',
         items: [
@@ -45,31 +45,31 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Estimating how many you need',
+        heading: 'Estimating How Many You Need',
         intro:
           'Most businesses either wildly over-order or run out in six weeks. This gets closer.',
         steps: [
           {
-            title: 'Count cones, not customers',
+            title: 'Count Cones, Not Customers',
             body: 'Take a full week of till data and count cone servings specifically, separating them from tubs and other formats.',
           },
           {
-            title: 'Find your peak week, not your average',
+            title: 'Find Your Peak Week, Not Your Average',
             body: 'If you are seasonal, your busiest week may be three or four times your quietest. Order against the peak or you will run out during it.',
           },
           {
-            title: 'Decide your reorder interval',
+            title: 'Decide Your Reorder Interval',
             body: 'How often you are willing to place an order. Twice a year is common; quarterly suits businesses with tight storage.',
           },
           {
-            title: 'Multiply and add a margin',
+            title: 'Multiply and Add a Margin',
             body: 'Peak weekly usage, times the weeks between orders, plus around fifteen per cent. Flat-packed stock is cheap to hold and expensive to run out of.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Seasonality is bigger than most people plan for',
+        heading: 'Seasonality Is Bigger than Most People Plan For',
         body: [
           'A UK ice cream business can do half its annual trade in three months. That is not a curve to smooth — it is two different businesses sharing a counter.',
           'Ordering to an annual average leaves you short in July and overstocked in November. Ordering to a peak leaves you carrying stock through the winter, which for flat-packed sleeves costs almost nothing.',
@@ -83,7 +83,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'One sleeve or two',
+        heading: 'One Sleeve or Two',
         body: [
           'Sites selling both waffle and cake cones need two dies, because the tapers differ enough that one sleeve cannot grip both.',
           'That sounds like double the cost and usually is not. The artwork is designed once and laid onto both dies, and running both sizes in a single order shares the setup between them.',
@@ -97,7 +97,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What dessert brands need that scoop shops do not',
+        heading: 'What Dessert Brands Need That Scoop Shops Do Not',
         body: [
           'A dessert bar serving loaded waffles, crepes and cookie dough alongside cones has a wider packaging problem. The cone sleeve is one item among several, and consistency across them matters more than any single one.',
           'The practical consequence is to order them together. Printed months apart on different stocks, the same brand colour drifts enough to be visible when two items sit side by side on a table.',
@@ -111,7 +111,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'A sensible first order',
+        heading: 'A Sensible First Order',
         body: [
           'Send three cones. Ask for one size, one design and a quantity covering roughly six months at your peak rate.',
           'Take the flat sample, wrap it round a real cone in your own shop, and have the person who will actually use them assemble twenty in a row.',
@@ -120,7 +120,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to check when the first delivery arrives',
+        heading: 'What to Check When the First Delivery Arrives',
         intro:
           'Ten minutes with the first box saves a season of irritation:',
         items: [
@@ -135,7 +135,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Reordering without repeating the first order',
+        heading: 'Reordering Without Repeating the First Order',
         body: [
           'The second order is the one where the economics improve. The die already exists, the artwork is signed off, and you now know your real usage rather than an estimate.',
           'That is the moment to ask for a price against your annual volume rather than a single run. A quantity that looked small in January often justifies a cheaper print method once the whole year is taken together.',
@@ -180,7 +180,7 @@ export const BUSINESS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The date is the only fixed thing',
+        heading: 'The Date Is the Only Fixed Thing',
         body: [
           'Everything about an event order is negotiable except the day it has to be ready. A wedding does not move because a press was busy, and a festival will not wait for a delivery.',
           'That inverts the normal ordering process. Instead of asking how long something takes and adding it to today, you start from the date and subtract everything that has to happen first.',
@@ -189,35 +189,35 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Working backwards from the event',
+        heading: 'Working Backwards from the Event',
         intro:
           'Five stages sit between an idea and packaging in your hands. Each one needs a date.',
         steps: [
           {
-            title: 'The day it must be usable',
+            title: 'The Day It Must Be Usable',
             body: 'Not the event date — the day you need it in your own hands, which for a multi-day event or a distributed team is earlier.',
           },
           {
-            title: 'Minus delivery and distribution',
+            title: 'Minus Delivery and Distribution',
             body: 'Carrier transit, plus any time needed to get stock to more than one site or trader.',
           },
           {
-            title: 'Minus production',
+            title: 'Minus Production',
             body: 'Confirmed on your quote. It varies with the print method, the run length and how busy the press is that season.',
           },
           {
-            title: 'Minus proofing and approval',
+            title: 'Minus Proofing and Approval',
             body: 'The step that most often slips, because it depends on someone finding time to look at a proof.',
           },
           {
-            title: 'That is your artwork deadline',
+            title: 'That Is Your Artwork Deadline',
             body: 'Work to it as a hard date. Everything downstream has already been allowed for.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Estimating for a peak day rather than a period',
+        heading: 'Estimating for a Peak Day Rather than a Period',
         body: [
           'Event trading does not have an average. It has a peak day, and running out on it is the failure mode that matters.',
           'Take your expected footfall for the busiest day, apply a conversion rate you actually believe, and add a margin. Then check the total against what you can physically store and transport.',
@@ -231,7 +231,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What makes event packaging different',
+        heading: 'What Makes Event Packaging Different',
         intro:
           'Beyond the date, several things change compared with an ongoing supply:',
         items: [
@@ -246,7 +246,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Short runs are a different conversation',
+        heading: 'Short Runs Are a Different Conversation',
         body: [
           'A wedding needing two hundred sleeves and a chain needing two hundred thousand are quoted on entirely different logic. Sending a quantity with your first message avoids a wasted exchange.',
           'Digital printing makes short runs genuinely viable, and it also makes several designs in one order affordable — useful for a tasting flight or a set of colours across a menu.',
@@ -260,7 +260,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Reusing an existing die',
+        heading: 'Reusing an Existing Die',
         body: [
           'If you already have a sleeve in production, a seasonal or event version of it is only a print job. No new tooling, no tooling lead time, and a considerably shorter schedule.',
           'That is the single most useful thing to know when a date is tight. Ask whether your existing die can carry the new artwork before assuming you need something new.',
@@ -269,7 +269,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What to send with an event enquiry',
+        heading: 'What to Send with an Event Enquiry',
         body: [
           'The date, the quantity, whether the size is new or an existing one, and whether trading is indoors or out.',
           'Those four things let us tell you quickly whether the date is achievable, which is the only question that matters at the start. Everything else can be settled afterwards.',
@@ -277,7 +277,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Practical details that catch event traders out',
+        heading: 'Practical Details That Catch Event Traders Out',
         intro:
           'The packaging is usually the easy part. These are what actually go wrong:',
         items: [
@@ -292,7 +292,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What to do with what is left over',
+        heading: 'What to Do with What Is Left Over',
         body: [
           'Almost every event trader ends a season with packaging in a box. Whether that is waste or stock depends entirely on a decision taken months earlier.',
           'Undated artwork carries into the following year unchanged. A design with a year, a venue name or a specific festival on it does not, and has to be written off however good it looked.',
@@ -337,7 +337,7 @@ export const BUSINESS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Starting with what it does not do',
+        heading: 'Starting with What It Does Not Do',
         body: [
           'Printed packaging does not make food taste better, and it does not turn a struggling business around. Any supplier implying otherwise is describing a sales target rather than an outcome.',
           'What it does is narrower and genuinely useful: it makes a handover look deliberate, it puts your name in places you are not, and it removes the impression that an order was assembled from whatever was under the counter.',
@@ -346,7 +346,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What branded packaging reliably achieves',
+        heading: 'What Branded Packaging Reliably Achieves',
         intro:
           'These are observable rather than aspirational:',
         items: [
@@ -361,7 +361,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Delivery changes the calculation entirely',
+        heading: 'Delivery Changes the Calculation Entirely',
         body: [
           'A business with a shopfront has a sign, an interior and a counter doing brand work. A delivery-only kitchen has none of those.',
           'For those businesses, packaging is not a supporting element — it is the entire physical brand. Every impression a customer forms of the business other than the food itself comes from what arrives at the door.',
@@ -375,7 +375,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Designing for the moment it is seen',
+        heading: 'Designing for the Moment It Is Seen',
         body: [
           'A sleeve is looked at across a counter for two seconds and then in a hand at arm\'s length. It is never studied.',
           'That argues for one clear element rather than five competing ones. A wordmark that reads instantly beats a detailed illustration that reads on inspection.',
@@ -384,7 +384,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'Where the print budget does most work',
+        heading: 'Where the Print Budget Does Most Work',
         intro:
           'If you can only brand one item, these are not equal.',
         columns: ['High return', 'Lower return'],
@@ -400,27 +400,27 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Judging whether it worked',
+        heading: 'Judging Whether It Worked',
         intro:
           'Vague satisfaction is not evidence. Three things are actually measurable.',
         steps: [
           {
-            title: 'Count tagged photographs before and after',
+            title: 'Count Tagged Photographs Before and After',
             body: 'Set a baseline for a month before the packaging arrives, then compare the same period afterwards. It is imperfect and it is real data.',
           },
           {
-            title: 'Ask staff about handover complaints',
+            title: 'Ask Staff About Handover Complaints',
             body: 'Mess, dropped items and hot-to-hold complaints are all things a sleeve addresses directly, and staff know the rate.',
           },
           {
-            title: 'Track the cost per order honestly',
+            title: 'Track the Cost per Order Honestly',
             body: 'Divide the run cost by the orders it covered. Comparing that number to what you were spending on plain stock is the only fair comparison.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'What a reasonable expectation looks like',
+        heading: 'What a Reasonable Expectation Looks Like',
         body: [
           'A well-designed sleeve on a product people already like will get photographed more, look more considered, and cost a few pence more per order than a plain one.',
           'It will not compensate for slow service or food people do not want to buy twice. Packaging amplifies whatever is already there rather than replacing it.',
@@ -434,7 +434,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where a design goes wrong in practice',
+        heading: 'Where a Design Goes Wrong in Practice',
         intro:
           'Almost every disappointing printed sleeve fails for one of these reasons:',
         items: [
@@ -449,7 +449,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Consistency matters more than any single item',
+        heading: 'Consistency Matters More than Any Single Item',
         body: [
           'A sleeve, a bag and a napkin that nearly match read worse than three plain items. Customers do not consciously notice a colour that is slightly off, but they register that something is not quite deliberate.',
           'The practical fix is to order items together rather than as separate jobs months apart. Printed on the same stock from the same ink, they match; printed separately, the colour drifts enough to be visible when they sit side by side on a table.',
@@ -494,7 +494,7 @@ export const BUSINESS: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The fastest quote is rarely the most useful one',
+        heading: 'The Fastest Quote Is Rarely the Most Useful One',
         body: [
           'A supplier who can price your job from a two-line email has either done it a hundred times or has not asked what they need to know.',
           'Distinguishing between the two is straightforward: a supplier who has understood your job will ask about things you had not thought to mention, and one who has not will send a number.',
@@ -503,7 +503,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a supplier should be asking you',
+        heading: 'What a Supplier Should Be Asking You',
         intro:
           'If none of these come up, the quote is built on assumptions:',
         items: [
@@ -518,7 +518,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What you should be asking them',
+        heading: 'What You Should Be Asking Them',
         intro:
           'All of these should be answerable in writing without hesitation:',
         items: [
@@ -533,7 +533,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Claims that should make you cautious',
+        heading: 'Claims That Should Make You Cautious',
         body: [
           'Blanket environmental claims are the most common. "Eco-friendly packaging" without a specification behind it is a phrase rather than a fact, and it puts you at risk if a customer challenges it.',
           'Guaranteed delivery times from a supplier who does not run their own vehicles are another. Carriers give estimates, and a supplier promising more than their carrier does is promising something they cannot control.',
@@ -547,35 +547,35 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'A sensible process for a first order',
+        heading: 'A Sensible Process for a First Order',
         intro:
           'Following this sequence catches problems while they are still cheap.',
         steps: [
           {
-            title: 'Send a physical sample of what the packaging has to fit',
+            title: 'Send a Physical Sample of What the Packaging Has to Fit',
             body: 'A cone, a cup, a burger, a container. It removes more ambiguity than any description.',
           },
           {
-            title: 'Get the full specification in writing',
+            title: 'Get the Full Specification in Writing',
             body: 'Board, lining, ink, finish, quantity, lead time and tooling terms, on the quote rather than in conversation.',
           },
           {
-            title: 'Check a flat sample against the real product',
+            title: 'Check a Flat Sample Against the Real Product',
             body: 'Wrap it, load it, carry it. Do this with the person who will actually use it during service.',
           },
           {
-            title: 'Order a realistic first quantity',
+            title: 'Order a Realistic First Quantity',
             body: 'Enough to find out how many you use, not so many that a wrong specification becomes a two-year problem.',
           },
           {
-            title: 'Review after one reorder cycle',
+            title: 'Review After One Reorder Cycle',
             body: 'By then you know the real usage rate and whether the specification survived a season.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'On price comparisons',
+        heading: 'On Price Comparisons',
         body: [
           'Two quotes for "cone sleeves" are rarely for the same thing. Board weight, lining, finish and quantity all move independently, and a cheaper quote often differs in one of them.',
           'The only fair comparison is against an identical written specification. If you have one quote in hand, send its specification to the second supplier and ask them to price exactly that.',
@@ -589,7 +589,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What we would want you to ask us',
+        heading: 'What We Would Want You to Ask Us',
         body: [
           'Everything on the list above. We would rather answer five specific questions before an order than deal with a mismatch afterwards.',
           'The two we most want people to ask are what the specification actually is, in writing, and what happens if the delivered goods do not match the proof. Both are reasonable, and a supplier who hesitates on either has answered a different question.',
@@ -597,7 +597,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Judging a supplier by how they handle uncertainty',
+        heading: 'Judging a Supplier by How They Handle Uncertainty',
         body: [
           'The most revealing moment in a supplier conversation is not the price. It is what happens when you ask something they cannot answer immediately.',
           'A supplier who says they will check the board grade and come back has told you they know the answer matters. One who produces a confident figure on the spot for a specification they have not seen has told you something else.',
@@ -606,7 +606,7 @@ export const BUSINESS: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Switching supplier without starting again',
+        heading: 'Switching Supplier Without Starting Again',
         body: [
           'If you already buy printed packaging, you are not starting from nothing. You have a size that works, artwork that has been through a press, and a usage figure based on real trade rather than a guess.',
           'Send all three to any new supplier. A sample of your current packaging is worth more than a written specification, because it shows the board weight, the finish and the fit in a way a description cannot.',

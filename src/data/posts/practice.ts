@@ -24,7 +24,7 @@ export const PRACTICE: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The shape you are designing on',
+        heading: 'The Shape You Are Designing On',
         body: [
           'Take a cone sleeve and unroll it. What you have is not a rectangle and not a trapezium — it is a section of a ring, curved along both the top and bottom edges, wider at one end than the other.',
           'Every consequence in this article follows from that shape. A designer given a rectangle and told to make it fit will produce artwork that distorts in ways nobody can quite explain until the first box arrives.',
@@ -33,7 +33,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What happens to artwork built on a rectangle',
+        heading: 'What Happens to Artwork Built on a Rectangle',
         intro:
           'These are the failures we see most often, and all of them are geometry rather than printing:',
         items: [
@@ -48,7 +48,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Setting type on an arc',
+        heading: 'Setting Type on an Arc',
         body: [
           'Type that should read horizontally on the finished cone has to be set on a curve on the flat, following the same radius as the die.',
           'Every serious design application can do this — it is the same tool used for text on a circular badge. What it needs is the correct radius, which comes from the die line rather than from guesswork.',
@@ -62,35 +62,35 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'A working sequence for a cone sleeve design',
+        heading: 'A Working Sequence for a Cone Sleeve Design',
         intro:
           'Following this order removes almost all rework.',
         steps: [
           {
-            title: 'Get the die line before designing anything',
+            title: 'Get the Die Line Before Designing Anything',
             body: 'Ask us for it at enquiry stage. It shows the cut, the fold, the overlap area and the safe margin, as editable vector layers.',
           },
           {
-            title: 'Place the fixed elements first',
+            title: 'Place the Fixed Elements First',
             body: 'The wordmark and anything legally or commercially essential. Keep them out of the overlap and away from the narrow end.',
           },
           {
-            title: 'Build the background to bleed',
+            title: 'Build the Background to Bleed',
             body: 'Extend any full-coverage colour or image past the cut line, so the die never exposes unprinted board.',
           },
           {
-            title: 'Set curved type last',
+            title: 'Set Curved Type Last',
             body: 'Once the layout is settled, set anything that needs to read horizontally on the cone along the die\'s arc.',
           },
           {
-            title: 'Check at actual size, printed',
+            title: 'Check at Actual Size, Printed',
             body: 'Print the flat at 100 per cent on a desktop printer, cut it out and wrap it round a real cone. This catches more than any on-screen check.',
           },
         ],
       },
       {
         kind: 'specs',
-        heading: 'File requirements',
+        heading: 'File Requirements',
         intro: 'What we need in order to print without going back and forth.',
         rows: [
           ['Format', 'Vector PDF or AI preferred; high-resolution PSD or TIFF accepted'],
@@ -106,7 +106,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Colour: what a screen cannot tell you',
+        heading: 'Colour: What a Screen Cannot Tell You',
         body: [
           'Screens emit light; printed board reflects it. A colour will always look more muted on paper than it does backlit, and no amount of screen calibration changes that.',
           'On kraft or uncoated board the shift is larger again, because the ink sits over a warm base rather than a white one.',
@@ -120,7 +120,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'The safe area, and why it is bigger than you think',
+        heading: 'The Safe Area, and Why It Is Bigger than You Think',
         body: [
           'The overlap where the sleeve glues or tucks is hidden on every assembled unit. Anything placed there is invisible for the life of the product.',
           'On top of that, cutting has a small tolerance, so elements sitting right against the cut line risk being trimmed on some units and not others.',
@@ -129,7 +129,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'One test worth doing before you approve',
+        heading: 'One Test Worth Doing Before You Approve',
         body: [
           'Print the flat artwork at full size, cut around the die line with scissors, and wrap it around one of your actual cones with a piece of tape.',
           'It takes five minutes and it answers questions no proof can: whether the logo faces the customer, whether the type reads level, whether the wrap stops where you wanted, and whether anything important disappears into the overlap.',
@@ -174,7 +174,7 @@ export const PRACTICE: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Direct contact is the question that decides everything',
+        heading: 'Direct Contact Is the Question That Decides Everything',
         body: [
           'The first thing to establish about any piece of packaging is whether food touches it directly, and for how long.',
           'A cone sleeve touches a wafer continuously for the whole time a customer is eating. A gift card sleeve touches nothing edible at all. Those two sit at opposite ends of a spectrum, and they need completely different specifications.',
@@ -183,7 +183,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Questions worth putting to any packaging supplier',
+        heading: 'Questions Worth Putting to Any Packaging Supplier',
         intro:
           'These are reasonable to ask and straightforward for a supplier to answer in writing:',
         items: [
@@ -198,7 +198,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Inks, and the part people forget',
+        heading: 'Inks, and the Part People Forget',
         body: [
           'Printing sits on the outside of a cone sleeve, which sounds like it puts it safely away from the food. In practice sleeves are stacked, so the printed outer face of one sits against the inner face of the next for weeks in a box.',
           'That is why ink systems for food packaging are specified against the whole application rather than only against the surface that faces inward.',
@@ -207,7 +207,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Temperature changes the specification',
+        heading: 'Temperature Changes the Specification',
         body: [
           'Cold food is the gentlest case. Ice cream against board is a moisture problem more than a chemical one.',
           'Hot and oily is considerably harder. Fat is a solvent, heat accelerates everything, and a sleeve holding fried chicken is a far more demanding application than one holding a scoop of gelato.',
@@ -221,37 +221,37 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Keeping a defensible record',
+        heading: 'Keeping a Defensible Record',
         intro:
           'If an environmental health officer asks about your packaging, this is what makes the conversation short.',
         steps: [
           {
-            title: 'Get the specification in writing at order stage',
+            title: 'Get the Specification in Writing at Order Stage',
             body: 'Board grade, lining, ink system and any coating, on the quote or the order confirmation.',
           },
           {
-            title: 'File it with your supplier records',
+            title: 'File It with Your Supplier Records',
             body: 'Alongside your other supplier documentation, not in an email folder you will not find later.',
           },
           {
-            title: 'Note what the packaging is used for',
+            title: 'Note What the Packaging Is Used For',
             body: 'A brief line recording which product it holds and at what temperature. That is what links the specification to your actual use.',
           },
           {
-            title: 'Recheck when anything changes',
+            title: 'Recheck When Anything Changes',
             body: 'A new board, a new menu item served hotter, a new supplier — any of these makes the old record incomplete.',
           },
         ],
       },
       {
         kind: 'callout',
-        heading: 'What we confirm and what we do not',
+        heading: 'What We Confirm and What We Do Not',
         body: 'We confirm the board grade, lining, ink system and finish for every item we quote, in writing, so you can hold that record. We do not publish blanket food-safety assurances on this website, because suitability depends on your product, its temperature and how long it is in contact — none of which we know until you tell us.',
         pending: true,
       },
       {
         kind: 'prose',
-        heading: 'Allergens and labelling are a separate matter',
+        heading: 'Allergens and Labelling Are a Separate Matter',
         body: [
           'Packaging suitability and food labelling are often discussed together and are entirely different obligations. A perfectly specified sleeve tells a customer nothing about what is inside it.',
           'Where a product is pre-packed rather than made to order, labelling requirements apply, and the packaging has to leave room for that information.',
@@ -265,7 +265,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'A short summary',
+        heading: 'A Short Summary',
         body: [
           'Establish whether food touches the packaging directly and at what temperature. Ask for the board, lining and ink system in writing. File the answer with your supplier records and revisit it whenever the product or the packaging changes.',
           'None of that is onerous, and it turns a subject that sounds intimidating into four lines on a quote.',
@@ -273,7 +273,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Situations where the answer changes',
+        heading: 'Situations Where the Answer Changes',
         intro:
           'A specification that was correct when it was set can stop being correct without anyone noticing:',
         items: [
@@ -324,7 +324,7 @@ export const PRACTICE: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The uncomfortable ranking',
+        heading: 'The Uncomfortable Ranking',
         body: [
           'Businesses asking about packaging waste usually start with the material. That is the most visible lever and one of the least effective ones.',
           'The changes that reduce waste most are, roughly in order: using less packaging, using packaging that is actually collected where it is thrown away, reducing what is thrown away unused, and only then changing the material.',
@@ -333,35 +333,35 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Five changes, in order of what they save',
+        heading: 'Five Changes, in Order of What They Save',
         intro:
           'Each of these is available to an ordinary independent dessert business without a sustainability budget.',
         steps: [
           {
-            title: 'Serve eat-in customers in reusables',
+            title: 'Serve Eat-In Customers in Reusables',
             body: 'A business with seating that serves everything in disposables is generating waste it does not need to. This single change usually outweighs every material substitution available.',
           },
           {
-            title: 'Remove packaging that is not doing a job',
+            title: 'Remove Packaging That Is Not Doing a Job',
             body: 'A sleeve inside a bag inside a box is three items where two would do. Audit what actually leaves your counter with a single order and ask what each piece is for.',
           },
           {
-            title: 'Stop ordering more than you use',
+            title: 'Stop Ordering More than You Use',
             body: 'Seasonal and dated stock written off at the end of a promotion is pure waste that never even reached a customer. Undated artwork and honest quantity estimates fix most of it.',
           },
           {
-            title: 'Match the specification to a collection you can access',
+            title: 'Match the Specification to a Collection You Can Access',
             body: 'An unlaminated sleeve is only better if it reaches a paper stream. Find out what your waste contractor collects before choosing the board.',
           },
           {
-            title: 'Then choose the material',
+            title: 'Then Choose the Material',
             body: 'Removing lamination, reducing full-flood ink coverage and choosing recycled-content stock all help. They are worth doing, and they come last for a reason.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Why "recyclable" is doing less work than it appears',
+        heading: 'Why "Recyclable" Is Doing Less Work than It Appears',
         body: [
           'A material is recyclable if a process exists that can recycle it. That is a statement about the world, not about what happens to your packaging.',
           'What decides the outcome is whether a collection exists where the item is thrown away, and whether it goes into that collection rather than a general bin.',
@@ -375,7 +375,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Reductions that cost nothing',
+        heading: 'Reductions That Cost Nothing',
         intro:
           'These need no supplier conversation and no capital spend:',
         items: [
@@ -390,7 +390,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'The honest position on alternative materials',
+        heading: 'The Honest Position on Alternative Materials',
         body: [
           'Plant-based linings and compostable films are genuine engineering achievements and they are frequently oversold. Most need industrial composting that is not available to a customer walking down a street, and in a general waste stream they behave much like anything else.',
           'That does not make them worthless. In a closed setting — a venue where you control the bins and have an appropriate collection — they can work well.',
@@ -404,7 +404,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What to tell customers',
+        heading: 'What to Tell Customers',
         body: [
           'Customers increasingly ask, and vague answers land badly. A specific, modest claim is far more credible than a broad one.',
           '"Our sleeves are unlaminated board and go in the paper recycling" is checkable and true. "Our packaging is eco-friendly" is neither.',
@@ -413,7 +413,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Where to start this week',
+        heading: 'Where to Start This Week',
         body: [
           'Look at what leaves your counter with one typical order and count the pieces. Then ask what each one is for, and whether the customer would notice its absence.',
           'That exercise takes ten minutes and usually finds something. It costs nothing, it reduces both waste and your packaging bill, and it does not require changing supplier or specification.',
@@ -421,7 +421,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Measuring whether any of it worked',
+        heading: 'Measuring Whether Any of It Worked',
         intro:
           'Waste reduction is easy to feel good about and hard to demonstrate. Three numbers make it real:',
         items: [
@@ -435,7 +435,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Talking to your waste contractor',
+        heading: 'Talking to Your Waste Contractor',
         body: [
           'This is the least appealing item on any list and the one that changes the most. A ten-minute call establishes what streams you actually have, what they will take, and what they charge for.',
           'Ask three things: whether they collect card separately, whether they take lined paper cups, and whether uplift is charged by weight or by collection. The third answer decides whether reducing volume saves you anything at all.',
@@ -479,7 +479,7 @@ export const PRACTICE: BlogPost[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Why the sleeve usually beats the cup',
+        heading: 'Why the Sleeve Usually Beats the Cup',
         body: [
           'Printed cups carry tooling costs and minimum quantities that a single café often cannot justify. A printed sleeve carries neither, works with plain cups already in the cupboard, and can change four times a year without writing off stock.',
           'It also brands a cup you have not committed to. If you switch cup supplier next year, the sleeve very likely still fits, whereas a pallet of printed cups is a pallet of printed cups.',
@@ -488,7 +488,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Sizing: circumference, not volume',
+        heading: 'Sizing: Circumference, Not Volume',
         body: [
           'A sleeve is cut to the distance around a cup at the point where a hand grips it, roughly a third of the way down from the rim.',
           'That is not the same as the cup\'s stated volume. Two cups both sold as 12oz can differ by several millimetres in circumference, which is enough for one sleeve to grip and the other to spin.',
@@ -502,7 +502,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'compare',
-        heading: 'Corrugated or flat board',
+        heading: 'Corrugated or Flat Board',
         intro:
           'The two constructions feel different and suit different drinks.',
         columns: ['Corrugated', 'Flat board'],
@@ -518,7 +518,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Designing for a cup that is held',
+        heading: 'Designing for a Cup That Is Held',
         intro:
           'A right-handed grip covers roughly a third of the sleeve for the life of the drink:',
         items: [
@@ -533,7 +533,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'How many sizes you actually need',
+        heading: 'How Many Sizes You Actually Need',
         body: [
           'One sleeve rarely covers more than two adjacent cup sizes. A sleeve cut for a 12oz cup is slack on an 8oz and will not go over a 16oz.',
           'Most cafés running three cup sizes end up with two sleeves. That is worth planning for rather than discovering after the first order.',
@@ -547,7 +547,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'Using seasonal designs well',
+        heading: 'Using Seasonal Designs Well',
         body: [
           'The cheapest branding change a café can make is a new sleeve design on the same cups. There is no tooling, no cup stock to clear and no change at the counter.',
           'Digital printing makes several designs in one run affordable, so a set of four seasonal sleeves is genuinely achievable for an independent.',
@@ -556,7 +556,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'What to send when you enquire',
+        heading: 'What to Send When You Enquire',
         body: [
           'A cup from your current stock, the number of sizes you carry, your realistic annual usage, and whether your trade is mostly hot or mostly iced.',
           'Those four things let us quote properly. Without them, any price is a guess, and the most common consequence is a sleeve that does not grip the cups you actually use.',
@@ -564,7 +564,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Mistakes worth avoiding on a first sleeve order',
+        heading: 'Mistakes Worth Avoiding on a First Sleeve Order',
         intro:
           'These come up often enough to be worth naming:',
         items: [
@@ -579,7 +579,7 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'prose',
-        heading: 'When it is worth moving on to printed cups',
+        heading: 'When It Is Worth Moving on to Printed Cups',
         body: [
           'Sleeves stop being the obvious answer at a certain volume. Once a group is getting through enough cups that the tooling and minimum quantity on a printed cup are spread thinly, the maths changes.',
           'The crossover is not a fixed number, because it depends on the print method, the number of sizes carried and how often the design changes. A business changing its artwork four times a year stays with sleeves far longer than one running a single design.',
@@ -588,23 +588,23 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         kind: 'steps',
-        heading: 'Ordering a first run of sleeves',
+        heading: 'Ordering a First Run of Sleeves',
         intro: 'Four steps, and the first one removes most of the risk.',
         steps: [
           {
-            title: 'Post us a cup from your current stock',
+            title: 'Post Us a Cup from Your Current Stock',
             body: 'Not a size, and not a photograph. The circumference at the grip point is what the sleeve is cut to.',
           },
           {
-            title: 'Decide corrugated or flat board',
+            title: 'Decide Corrugated or Flat Board',
             body: 'Corrugated for very hot drinks on single-wall cups; flat board where the cup already insulates or the drink is cold.',
           },
           {
-            title: 'Lay the design out to repeat',
+            title: 'Lay the Design Out to Repeat',
             body: 'A hand covers roughly a third of the sleeve, so key elements need to appear more than once around it.',
           },
           {
-            title: 'Order to a season, not a year',
+            title: 'Order to a Season, Not a Year',
             body: 'Count a typical week first. Most cafés are surprised by their actual usage in one direction or the other.',
           },
         ],

@@ -19,7 +19,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'One-handed carrying is the real test',
+        heading: 'One-Handed Carrying Is the Real Test',
         body: [
           'A tray that feels sturdy on a counter can flex alarmingly when picked up at one corner with a full burger and chips on it.',
           'Test any sample the way customers will actually hold it, loaded, rather than empty on a flat surface.',
@@ -39,7 +39,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What tends to be specified alongside',
+        heading: 'What Tends to Be Specified Alongside',
         items: [
           'A sleeve for the burger itself, so the tray stays cleaner.',
           'Paper liner sheets, which let the tray be wiped rather than binned.',
@@ -84,7 +84,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Loaded fries are wet as well as heavy',
+        heading: 'Loaded Fries Are Wet as Well as Heavy',
         body: [
           'Melted cheese and sauce find every seam. A tray assembled from a flat blank has corners where liquid collects, and a light board goes soft there first.',
           'A lined board with a well-formed corner handles it; an unlined one leaks within a few minutes of serving.',
@@ -92,7 +92,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Specifying for a loaded portion',
+        heading: 'Specifying for a Loaded Portion',
         items: [
           'Wall height set from the topping, not the chips underneath.',
           'A base wide enough that the tray does not tip when carried.',
@@ -103,7 +103,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Delivery makes loaded fries harder still',
+        heading: 'Delivery Makes Loaded Fries Harder Still',
         body: 'A loaded tray in a courier bag tips and the topping ends up on one side. If a share of your orders are delivered, a lidded container is a more honest answer than a deeper tray.',
       },
     ],
@@ -137,7 +137,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The well has to be genuinely separate',
+        heading: 'The Well Has to Be Genuinely Separate',
         body: [
           'A shallow depression pressed into the base is not enough — sauce runs over the lip as soon as the tray is tilted.',
           'A raised divider that reaches the rim keeps the two apart while the customer walks with it, which is when separation actually matters.',
@@ -156,7 +156,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where nacho trays are used',
+        heading: 'Where Nacho Trays Are Used',
         items: [
           'Cinemas and venues, where portions are carried in the dark.',
           'Festivals and street food, where customers stand while eating.',
@@ -201,7 +201,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A channel, not a flat base',
+        heading: 'A Channel, Not a Flat Base',
         body: [
           'A shallow trough sized to the roll holds the dog upright with the toppings facing up. That is the whole design problem solved in one feature.',
           'Trays without it work fine on a table and badly the moment they are carried.',
@@ -209,7 +209,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points to specify',
+        heading: 'Points to Specify',
         items: [
           'Roll length, which sets the tray length more than anything else.',
           'Whether a side is served on the same tray or separately.',
@@ -254,7 +254,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Rigidity gets harder with diameter',
+        heading: 'Rigidity Gets Harder with Diameter',
         body: [
           'A board that holds a 10in pizza flat may sag noticeably under a 16in one. The unsupported span grows faster than intuition suggests.',
           'Specify against your largest pizza rather than your most common one, or run two board weights.',
@@ -273,7 +273,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Used for',
+        heading: 'Used For',
         items: [
           'Whole pizzas served to a table on a board rather than a plate.',
           'Takeaway pizzas inside a box, where the tray adds rigidity.',
@@ -317,7 +317,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Slice tray against slice sleeve',
+        heading: 'Slice Tray Against Slice Sleeve',
         columns: ['Wedge tray', 'Slice sleeve'],
         rows: [
           ['Support', 'Full underside to the tip', 'Sides and part of the base'],
@@ -330,7 +330,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing a wedge',
+        heading: 'Sizing a Wedge',
         items: [
           'The slice length from crust to tip, which varies with pizza diameter.',
           'Crust width at the outer edge.',
@@ -374,7 +374,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Platters get stacked, so the rim matters',
+        heading: 'Platters Get Stacked, So the Rim Matters',
         body: [
           'Two or three platters stacked for a delivery put all the weight on the rim of the one underneath. A soft rim collapses and the sandwiches below are crushed.',
           'A reinforced or folded rim carries that load. It is the detail that separates a catering tray from a serving tray.',
@@ -382,7 +382,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What catering customers need from the tray',
+        heading: 'What Catering Customers Need from the Tray',
         items: [
           'A rim strong enough for stacking during delivery.',
           'A surface that looks presentable when the lid comes off in a meeting room.',
@@ -439,7 +439,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Size is set by the hand, not the portion',
+        heading: 'Size Is Set by the Hand, Not the Portion',
         body: [
           'The useful maximum is roughly the width of a palm plus a thumb on the rim. Beyond that the tray needs a table.',
           'If your portion does not fit within that, the honest answer is a smaller portion or a different format rather than a bigger tray.',
@@ -447,7 +447,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where small trays work',
+        heading: 'Where Small Trays Work',
         items: [
           'Bars serving bar snacks alongside drinks.',
           'Cinemas and theatres, where a seat has no table.',
@@ -492,7 +492,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Compartments earn their cost two ways',
+        heading: 'Compartments Earn Their Cost Two Ways',
         body: [
           'The obvious one is separation: chips do not sit in sauce, and a burger does not absorb moisture from a slaw.',
           'The less obvious one is perceived value. A meal presented in defined sections reads as a complete offer, which supports charging for it as one.',
@@ -512,7 +512,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Getting the layout right',
+        heading: 'Getting the Layout Right',
         items: [
           'Size compartments from real portions weighed on your scales.',
           'Put the wettest item in the deepest section.',
@@ -556,7 +556,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Stopping items sliding',
+        heading: 'Stopping Items Sliding',
         body: [
           'A shallow lip around the edge is not enough on its own — items still slide within it and end up stacked against one side.',
           'Shallow indentations or a lightly textured base hold items in place well enough for a short journey, which is usually all that is needed.',
@@ -564,7 +564,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Bakery-specific considerations',
+        heading: 'Bakery-Specific Considerations',
         items: [
           'Butter and glaze mark plain board, so a lined surface keeps the tray presentable.',
           'Items are usually visible through a lid or film, so the tray is part of the display.',
@@ -609,7 +609,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Surface finish does the work here',
+        heading: 'Surface Finish Does the Work Here',
         body: [
           'A dessert sits on a tray for the length of a photograph and a few minutes of eating. Structural performance barely comes into it.',
           'What does matter is how the surface reads next to the food — a matt uncoated board looks considered where a glossy one looks like takeaway.',
@@ -617,7 +617,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where dessert trays are used',
+        heading: 'Where Dessert Trays Are Used',
         items: [
           'Dessert bars plating waffles, sundaes and sharing platters.',
           'Restaurants serving a dessert board to a table.',
@@ -662,7 +662,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A tray that gets eaten off, not just carried',
+        heading: 'A Tray That Gets Eaten Off, Not Just Carried',
         body: [
           'Unlike most trays here, this one has cutlery used on it. A fork pressing into a soft board tears it and the sauce goes underneath.',
           'A firmer board or a coated surface stands up to that. It is a different requirement from simply carrying weight.',
@@ -715,7 +715,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Tray against sleeve or cup for popcorn',
+        heading: 'Tray Against Sleeve or Cup for Popcorn',
         columns: ['Tray', 'Sleeve or cup'],
         rows: [
           ['Capacity', 'Large, and easy to share', 'Single portion'],
@@ -728,7 +728,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points that matter in a venue',
+        heading: 'Points That Matter in a Venue',
         items: [
           'Depth, because popcorn settles and looks less generous than it is.',
           'A base that sits stably on a seat arm or a cup holder.',
@@ -772,7 +772,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'One tray across a changing menu',
+        heading: 'One Tray Across a Changing Menu',
         body: [
           'Street-food traders and event caterers often serve something different each week. A tray specified for a single dish becomes dead stock when the menu moves on.',
           'A general tray in a grease-resistant board handles most things adequately and nothing perfectly, which is usually the right trade for a varied operation.',
@@ -785,7 +785,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Choosing sizes for a general range',
+        heading: 'Choosing Sizes for a General Range',
         items: [
           'Two sizes cover most menus; three is usually the practical limit.',
           'Size the larger one for your heaviest, wettest dish.',
@@ -825,7 +825,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Hot and cold on the same board',
+        heading: 'Hot and Cold on the Same Board',
         body: [
           'A waffle straight from the iron sits under ice cream that immediately starts melting. The board deals with warmth from below and cold moisture from above.',
           'A coated surface handles both. Uncoated board takes up melt quickly and the printed rim starts to look tired while the customer is still eating.',
@@ -844,7 +844,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Details dessert bars ask for',
+        heading: 'Details Dessert Bars Ask For',
         items: [
           'A rim wide enough to hold without touching sauce.',
           'A finish that photographs well, since these desserts are posted constantly.',
@@ -888,25 +888,25 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'uses',
-        heading: 'The moments a holder is needed',
+        heading: 'The Moments a Holder Is Needed',
         items: [
           {
-            title: 'Paying at the till',
+            title: 'Paying at the Till',
             body: 'Two cones already made and a card to tap. Without a holder, one cone goes to a stranger or gets held under a chin.',
           },
           {
-            title: 'Carrying more than one',
+            title: 'Carrying More than One',
             body: 'A parent with two children cannot carry three cones. A four-cone holder makes it one trip.',
           },
           {
-            title: 'Sitting at a table',
+            title: 'Sitting at a Table',
             body: 'A holder lets a cone stand while a customer eats something else or takes a photograph.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Hole size decides whether it works',
+        heading: 'Hole Size Decides Whether It Works',
         body: [
           'The cut-out has to grip the cone partway down its taper. Too large and the cone drops through; too small and staff force it and crack the wafer.',
           'Because it grips the taper rather than the rim, the hole size is specific to your cone. This is not a product that works from a stock size.',
@@ -959,7 +959,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Carrier tray against counter holder',
+        heading: 'Carrier Tray Against Counter Holder',
         columns: ['Carrier tray', 'Counter holder'],
         rows: [
           ['Used for', 'Walking away with several cones', 'Standing cones at a till or table'],
@@ -972,7 +972,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What makes a carrier work',
+        heading: 'What Makes a Carrier Work',
         items: [
           'A handle or a cut-out that allows a proper grip in the middle.',
           'Enough board stiffness that the tray does not fold when lifted at the centre.',
@@ -1012,7 +1012,7 @@ export const FOOD_TRAYS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Colour drifts between separate runs',
+        heading: 'Colour Drifts Between Separate Runs',
         body: [
           'Printing the same colour twice, months apart, on different stocks gives a visible difference when the two sit next to each other on a counter.',
           'Running them together on the same stock, from the same ink, removes the problem entirely. It is the single most common reason customers move to coordinated ordering.',
@@ -1025,7 +1025,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a set usually contains',
+        heading: 'What a Set Usually Contains',
         items: [
           'A sleeve for the item itself.',
           'A tray or holder for carrying more than one.',
@@ -1036,7 +1036,7 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Quantities rarely match across a set',
+        heading: 'Quantities Rarely Match Across a Set',
         body: 'A typical site might use ten sleeves for every tray. Tell us the ratio you expect rather than ordering equal numbers, or you will be holding trays long after the sleeves have run out.',
       },
     ],

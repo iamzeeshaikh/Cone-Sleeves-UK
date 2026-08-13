@@ -23,7 +23,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'What a printed sleeve has to survive',
+        heading: 'What a Printed Sleeve Has to Survive',
         body: [
           'A cone sleeve is gripped hard, twisted while the customer eats around the scoop, and sits in a warm hand for ten minutes. Ink on an unprotected surface scuffs along the seam long before the ice cream is finished.',
           'Lamination is the usual answer on saturated designs, and it also stops the board going limp when a drip runs down the outside. Lighter designs on kraft can go unlaminated and often look better for it.',
@@ -46,7 +46,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Design points that matter on a cone shape',
+        heading: 'Design Points That Matter on a Cone Shape',
         intro:
           'A cone sleeve is a curved surface cut from a flat arc, which catches out designs made for a rectangle:',
         items: [
@@ -65,22 +65,22 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'steps',
-        heading: 'From enquiry to delivered stock',
+        heading: 'From Enquiry to Delivered Stock',
         steps: [
           {
-            title: 'Send the cone and the quantity',
+            title: 'Send the Cone and the Quantity',
             body: 'Two or three sample cones, or the top diameter and slant height, plus the run length you have in mind.',
           },
           {
-            title: 'Agree the specification',
+            title: 'Agree the Specification',
             body: 'Board, finish, printed faces and whether you need a printed sample. We confirm lead time and minimum quantity here.',
           },
           {
-            title: 'Supply artwork on the die line',
+            title: 'Supply Artwork on the Die Line',
             body: 'We send a template cut to your cone. Artwork is placed on it rather than resized to fit afterwards.',
           },
           {
-            title: 'Approve the proof, then print',
+            title: 'Approve the Proof, Then Print',
             body: 'A digital proof shows the layout on the die. Once signed off, the run is scheduled.',
           },
         ],
@@ -125,7 +125,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Wrapper depth against short sleeve',
+        heading: 'Wrapper Depth Against Short Sleeve',
         intro: 'The same die, cut to two different depths, behaves very differently.',
         columns: ['Full wrapper', 'Short sleeve'],
         rows: [
@@ -140,7 +140,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Plain wrappers still do a job',
+        heading: 'Plain Wrappers Still Do a Job',
         body: [
           'Not every wrapper needs printing. Plenty of vendors take a plain white or kraft wrap simply to keep hands clean, and put the branding budget into something the customer keeps.',
           'If a plain wrap is what you need, say so — it is a shorter, cheaper conversation than a printed run, and the sizing work is identical.',
@@ -154,7 +154,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Deeper wraps need a stiffer board',
+        heading: 'Deeper Wraps Need a Stiffer Board',
         body: 'A short sleeve is held in place by the cone taper. A deep wrapper has more unsupported area and will buckle on a thin board, particularly once condensation softens it. We specify board weight against the depth you choose rather than using one grade throughout.',
       },
     ],
@@ -197,7 +197,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Why waffle cones need their own die',
+        heading: 'Why Waffle Cones Need Their Own Die',
         body: [
           'A waffle cone opens out at a shallower angle than a sugar or cake cone and has a much wider rim. The flat shape that wraps it is a broader arc with a different radius.',
           'Using a sleeve cut for a cake cone means the top gapes while the bottom grips, which is exactly the failure that makes staff stop using them.',
@@ -205,7 +205,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a waffle sleeve has to cope with',
+        heading: 'What a Waffle Sleeve Has to Cope With',
         items: [
           'The weight of two or three scoops, which pulls the cone downward through the grip.',
           'A textured surface, so the sleeve holds by taper rather than by friction against a smooth wall.',
@@ -218,7 +218,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'specs',
-        heading: 'Sizing information we need',
+        heading: 'Sizing Information We Need',
         intro: 'Two measurements set the die; the rest is preference.',
         rows: [
           ['Top diameter', 'Across the open rim of your waffle cone, outside edge to outside edge'],
@@ -232,7 +232,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Cones vary between batches',
+        heading: 'Cones Vary Between Batches',
         body: 'Baked cones are not dimensionally identical from one delivery to the next, and a sleeve cut to the tightest possible fit will be unusable on a slightly larger batch. We build a small tolerance into the die for this reason.',
       },
     ],
@@ -275,7 +275,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A steeper taper is less forgiving',
+        heading: 'A Steeper Taper Is Less Forgiving',
         body: [
           'Because a sugar cone narrows quickly, a sleeve that is a few millimetres too wide slides straight down to the point. There is no gradual section for it to catch on.',
           'That makes accurate sizing more important here than on any other cone in the range. A sample cone is worth more than a set of measurements.',
@@ -289,7 +289,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where sugar cone sleeves suit the counter',
+        heading: 'Where Sugar Cone Sleeves Suit the Counter',
         items: [
           'Gelaterias serving a single dense scoop that sits low in the cone.',
           'Scoop shops using sugar cones as the standard and waffle as an upgrade.',
@@ -345,7 +345,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The sleeve holds the cone together',
+        heading: 'The Sleeve Holds the Cone Together',
         body: [
           'A cake cone wall is thin enough that a customer gripping firmly can crush it. That is the single most common complaint on soft-serve vans, and it happens more with children.',
           'A sleeve spreads that grip across a wider area. On this cone type it is worth specifying a slightly stiffer board than the print alone would need.',
@@ -353,18 +353,18 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'uses',
-        heading: 'Where cake cone sleeves are used',
+        heading: 'Where Cake Cone Sleeves Are Used',
         items: [
           {
-            title: 'Ice cream vans and mobile units',
+            title: 'Ice Cream Vans and Mobile Units',
             body: 'High volume, quick service and a lot of cones handed to children. Grip and mess control matter more than presentation.',
           },
           {
-            title: 'Seaside and park kiosks',
+            title: 'Seaside and Park Kiosks',
             body: 'Cones are carried a short distance in warm weather. A wrap catches the first melt before it reaches the hand.',
           },
           {
-            title: 'Events and fetes',
+            title: 'Events and Fetes',
             body: 'A printed sleeve on a plain cone is the cheapest way to make a temporary stand look organised.',
           },
         ],
@@ -422,7 +422,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Artwork does not scale down cleanly',
+        heading: 'Artwork Does Not Scale Down Cleanly',
         body: [
           'Reducing an adult sleeve design by a third makes the type too small to read and pushes fine detail below what the press can hold on board.',
           'The practical answer is to keep one or two elements at a readable size and drop the rest. A children\'s sleeve carrying just a wordmark usually looks better than one carrying everything at 60 per cent.',
@@ -430,7 +430,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points worth deciding early',
+        heading: 'Points Worth Deciding Early',
         items: [
           'Whether the children\'s sleeve shares artwork with the adult one or has its own design.',
           'How much of the wafer to cover — deeper helps, because children grip lower down.',
@@ -442,7 +442,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Deeper coverage suits smaller hands',
+        heading: 'Deeper Coverage Suits Smaller Hands',
         body: 'Children hold a cone lower and less carefully than adults, so a wrap that extends further down catches more of the mess. It costs slightly more per unit and saves a good deal of wiping.',
       },
     ],
@@ -481,25 +481,25 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'uses',
-        heading: 'Where mini cones get served',
+        heading: 'Where Mini Cones Get Served',
         items: [
           {
-            title: 'Event catering and canapés',
+            title: 'Event Catering and Canapés',
             body: 'Handed round on trays, eaten in two bites. The sleeve keeps fingers off the wafer as the tray moves between guests.',
           },
           {
-            title: 'Dessert flights and tasting menus',
+            title: 'Dessert Flights and Tasting Menus',
             body: 'Three or four cones presented together. Sleeves in different colours separate the flavours visually.',
           },
           {
-            title: 'Weddings and private functions',
+            title: 'Weddings and Private Functions',
             body: 'A short printed run with a name or date, ordered once for a single occasion.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Small runs are a different conversation',
+        heading: 'Small Runs Are a Different Conversation',
         body: [
           'A wedding needs two hundred sleeves, not twenty thousand. That changes the sensible print method and it changes the economics.',
           'Tell us the quantity in your first message. A short run is quoted differently from an ongoing supply, and there is no point pricing one as the other.',
@@ -559,7 +559,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Wetter product, different failure mode',
+        heading: 'Wetter Product, Different Failure Mode',
         body: [
           'Rolls carry more surface moisture than a firm scoop and they start to slump as soon as they leave the plate. Melt reaches the sleeve early and keeps coming.',
           'A greaseproof-lined or coated board resists that far longer than plain board, which goes translucent and loses stiffness within a few minutes.',
@@ -567,7 +567,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What tends to matter on a rolled ice cream counter',
+        heading: 'What Tends to Matter on a Rolled Ice Cream Counter',
         items: [
           'The serve is filmed, so the sleeve is on camera for the whole preparation.',
           'Cones are often loaded with toppings that overhang the rim.',
@@ -579,7 +579,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Toppings change the geometry',
+        heading: 'Toppings Change the Geometry',
         body: 'Rolled ice cream is usually finished with sauces and toppings that sit above the rim. If your serve is built high, the sleeve should stop lower so the customer has somewhere clean to hold without touching the toppings.',
       },
       {
@@ -628,7 +628,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Solid black is a printing problem',
+        heading: 'Solid Black Is a Printing Problem',
         body: [
           'A large flat black area shows every inconsistency. Ink density varies slightly across a press sheet, and on any other colour nobody notices — on black it reads as patchiness or a slight brown cast.',
           'The usual fix is a rich black built from more than one ink rather than black alone, or a spot colour. Both cost a little more and hold far better across a long run.',
@@ -636,7 +636,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Handling marks on dark packaging',
+        heading: 'Handling Marks on Dark Packaging',
         intro:
           'Dark surfaces show fingerprints and scuffs in a way pale ones do not:',
         items: [
@@ -650,7 +650,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'compare',
-        heading: 'Black against white as a base',
+        heading: 'Black Against White as a Base',
         columns: ['Black sleeve', 'White sleeve'],
         rows: [
           ['Product stands out', 'Strongly — the scoop is the only colour', 'Less so; white competes with pale ice cream'],
@@ -696,7 +696,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Printing on white costs less',
+        heading: 'Printing on White Costs Less',
         body: [
           'A coloured sleeve needs ink across the entire surface. A white one needs ink only where the design sits, which on a one-colour logo might be a few per cent of the area.',
           'For a business testing printed sleeves for the first time, that difference is often what makes the first order affordable.',
@@ -710,7 +710,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where white works and where it does not',
+        heading: 'Where White Works and Where It Does Not',
         items: [
           'Works well with colourful ice cream, which reads clearly against a neutral wrap.',
           'Works well for clinical, clean brand positioning — frozen yoghurt in particular.',
@@ -766,7 +766,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Spot colour against full-colour process',
+        heading: 'Spot Colour Against Full-Colour Process',
         intro: 'Which is cheaper depends entirely on the artwork.',
         columns: ['Two spot colours', 'Full CMYK'],
         rows: [
@@ -781,7 +781,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Getting more than two colours out of two inks',
+        heading: 'Getting More than Two Colours Out of Two Inks',
         body: [
           'Tints extend the palette considerably. A solid colour at 100 per cent, the same ink at 40 per cent, and the two inks overprinted give five distinct tones from two plates.',
           'Designers used to working in CMYK sometimes forget this. It is worth asking yours to work in spot from the start rather than converting afterwards.',
@@ -789,7 +789,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Supplying artwork for spot printing',
+        heading: 'Supplying Artwork for Spot Printing',
         items: [
           'Send vector artwork with the colours named as Pantone references, not as CMYK builds.',
           'Keep the file to exactly two named colours plus any unprinted areas.',
@@ -839,7 +839,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Why patterns suit a cone better than a single mark',
+        heading: 'Why Patterns Suit a Cone Better than a Single Mark',
         body: [
           'A cone sleeve is a tapered band. A logo placed once sits in a different position on every assembled sleeve and faces away from the viewer half the time.',
           'A pattern covers the whole surface evenly, so the sleeve reads the same from any angle. The brand mark can then sit once, small, in a fixed position on the pattern.',
@@ -847,7 +847,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Making a dot pattern work on a taper',
+        heading: 'Making a Dot Pattern Work on a Taper',
         items: [
           'Dots compress towards the narrow end as the sleeve wraps — the artwork should account for it rather than fight it.',
           'Two sizes of dot in the same colour add depth without a second ink.',
@@ -865,7 +865,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Patterns hide handling marks',
+        heading: 'Patterns Hide Handling Marks',
         body: 'A busy surface disguises the scuffs and fingerprints that show clearly on a flat solid colour. On sites that assemble sleeves in advance and stack them, this is a practical advantage as much as a design one.',
       },
     ],
@@ -904,7 +904,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Design on the arc, not on a rectangle',
+        heading: 'Design on the Arc, Not on a Rectangle',
         body: [
           'The flat shape of a cone sleeve is a curved band, wider at one end. Straight lines drawn across it become curves once wrapped, and a horizontal band across the middle rises at both ends.',
           'Designers who have not worked on cones before usually want the template before they start rather than after. We send it as an editable file at the beginning of the job.',
@@ -918,7 +918,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Artwork that survives the wrap',
+        heading: 'Artwork That Survives the Wrap',
         items: [
           'Organic shapes and texture distort gracefully; strict grids and straight borders do not.',
           'Anything crossing the seam will be interrupted, so keep key elements clear of it.',
@@ -973,7 +973,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'What you gain and what you give up',
+        heading: 'What You Gain and What You Give Up',
         intro:
           'An unlaminated sleeve on uncoated board is the simplest to recycle and the least protective.',
         columns: ['Unlaminated, uncoated', 'Laminated, coated'],
@@ -989,7 +989,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Claims have to match what actually happens',
+        heading: 'Claims Have to Match What Actually Happens',
         body: [
           'Whether a sleeve is recycled depends on the collection available where it is thrown away, not only on the material. A sleeve printed with a recycling instruction that local facilities do not offer is worse than one with no instruction at all.',
           'We will tell you what a quoted board and finish consist of. Checking that against your own waste contractor, and against the bins available to your customers, is a step worth taking before the wording goes on the print.',
@@ -997,7 +997,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Certification and recycled content are confirmed per order',
+        heading: 'Certification and Recycled Content Are Confirmed per Order',
         body: 'Board grades, recycled content percentages and any certification available for a given stock are confirmed in writing on your quote. We do not publish a general claim here, because the answer depends on the specific board a job runs on.',
         pending: true,
       },
@@ -1041,7 +1041,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'When the extra thickness is worth paying for',
+        heading: 'When the Extra Thickness Is Worth Paying For',
         body: [
           'Large scoops, loaded toppings and warm weather all push a light sleeve past what it can hold. The first sign is the wrap creasing where the customer\'s thumb sits.',
           'A heavier board resists that, and it also survives being pre-assembled and stacked before a rush, which lighter stock does not do well.',
@@ -1049,18 +1049,18 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'uses',
-        heading: 'Where cardboard sleeves suit the operation',
+        heading: 'Where Cardboard Sleeves Suit the Operation',
         items: [
           {
-            title: 'High-volume sites that pre-assemble',
+            title: 'High-Volume Sites That Pre-Assemble',
             body: 'Sleeves rolled during a quiet period and stacked ready for a rush need to hold their shape in the stack.',
           },
           {
-            title: 'Heavy or loaded serves',
+            title: 'Heavy or Loaded Serves',
             body: 'Double scoops, toppings and sauces put weight and moisture into the cone at the same time.',
           },
           {
-            title: 'Outdoor and seaside trade',
+            title: 'Outdoor and Seaside Trade',
             body: 'Sun, wind and a walk to the beach are harder on packaging than an indoor counter.',
           },
         ],
@@ -1118,7 +1118,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'What a light paper sleeve does well',
+        heading: 'What a Light Paper Sleeve Does Well',
         items: [
           'Costs the least of any option here, which matters at volume.',
           'Takes very little cupboard space — a real consideration in a kiosk or van.',
@@ -1130,7 +1130,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Matching the paper to the serve time',
+        heading: 'Matching the Paper to the Serve Time',
         body: [
           'The useful question is how long the cone is in the customer\'s hand. Two or three minutes at a kiosk is well within what light paper handles.',
           'Fifteen minutes on a warm promenade is not, and that is where a heavier or lined board earns its cost.',
@@ -1189,7 +1189,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Printing onto a reflective surface',
+        heading: 'Printing Onto a Reflective Surface',
         body: [
           'Ink on foil behaves unlike ink on board. The surface reflects light back through the ink, so colours look brighter and more transparent than the same file printed on white.',
           'Designs usually need adjusting for this. Solid areas can look thin, and pale tints can nearly disappear, so a white underbase is often printed first where opacity matters.',
@@ -1197,7 +1197,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where a foil sleeve is chosen',
+        heading: 'Where a Foil Sleeve Is Chosen',
         items: [
           'Premium and limited-edition serves where the packaging is part of the price.',
           'Products with high moisture where a faced surface resists soaking through.',
@@ -1209,7 +1209,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Check disposal before printing a claim',
+        heading: 'Check Disposal Before Printing a Claim',
         body: 'A foil-faced board is a mixed material, which affects how it should be disposed of. Do not print a recycling instruction on a foil sleeve without confirming what your local stream accepts — the material and the instruction have to match.',
         pending: true,
       },
@@ -1249,7 +1249,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Hot oil, not cold melt',
+        heading: 'Hot Oil, Not Cold Melt',
         body: [
           'Fried food arrives at temperature and continues to release oil into the packaging for several minutes. A board specified for ice cream goes translucent quickly under it.',
           'A grease-resistant liner or coating is not optional here. It is the difference between a sleeve that looks fine at the end of service and one the customer is holding by their fingertips.',
@@ -1263,7 +1263,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What street-food traders ask for on these',
+        heading: 'What Street-Food Traders Ask for on These',
         items: [
           'Grease-resistant board as standard rather than an upgrade.',
           'A deeper wrap, because savoury cones are usually filled higher than ice cream.',
@@ -1320,7 +1320,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Crepe cones against ice cream cones',
+        heading: 'Crepe Cones Against Ice Cream Cones',
         intro: 'The differences all push in the same direction: more board, more coverage.',
         columns: ['Crepe cone', 'Ice cream cone'],
         rows: [
@@ -1335,7 +1335,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'The holder is the structure',
+        heading: 'The Holder Is the Structure',
         body: [
           'With no rigid cone inside, the packaging carries the whole load. A light wrap folds and the crepe collapses out of the bottom.',
           'That is why crepe holders are cut deeper and in heavier board than an ice cream sleeve of the same top diameter.',
@@ -1343,7 +1343,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to confirm before ordering',
+        heading: 'What to Confirm Before Ordering',
         items: [
           'The diameter of your rolled crepe at its widest, measured after filling.',
           'Whether sauces are added on top, which sets how high the holder should reach.',
@@ -1387,7 +1387,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Formed, not folded',
+        heading: 'Formed, Not Folded',
         body: [
           'Where a sleeve is die-cut flat and rolled by staff, a moulded cone arrives in its final shape. There is no assembly step, which speeds up service and removes a training point.',
           'The cost of that is storage. Formed cones nest but still take considerably more space than flat stock, which matters in a van or a small kiosk.',
@@ -1395,7 +1395,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'compare',
-        heading: 'Moulded cone against a flat sleeve',
+        heading: 'Moulded Cone Against a Flat Sleeve',
         columns: ['Moulded cone', 'Flat sleeve'],
         rows: [
           ['Assembly', 'None — ready to fill', 'Rolled and tucked per unit'],
@@ -1407,7 +1407,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where they suit a business',
+        heading: 'Where They Suit a Business',
         items: [
           'Chips and fried snacks served without a wafer or carton.',
           'Market stalls where speed of service outweighs storage cost.',
@@ -1457,7 +1457,7 @@ export const CONE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Tooling is a one-off, not a per-unit cost',
+        heading: 'Tooling Is a One-Off, Not a Per-Unit Cost',
         body: [
           'A die is a physical tool. It is made once, paid for once, and used for every reorder afterwards.',
           'That means the tooling cost spreads across everything you ever print from it. On a first order of a few thousand it looks expensive; across three years of reorders it usually is not.',
@@ -1465,7 +1465,7 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Shapes worth a bespoke tool',
+        heading: 'Shapes Worth a Bespoke Tool',
         items: [
           'A window that shows the product through the sleeve.',
           'A contoured top edge that follows the shape of what it wraps.',
@@ -1478,22 +1478,22 @@ export const CONE_SLEEVES: Product[] = [
       },
       {
         kind: 'steps',
-        heading: 'How a bespoke die job runs',
+        heading: 'How a Bespoke Die Job Runs',
         steps: [
           {
-            title: 'Describe the shape and the product',
+            title: 'Describe the Shape and the Product',
             body: 'A sketch and the product\'s dimensions are enough to start. A physical sample is better.',
           },
           {
-            title: 'We produce a die line',
+            title: 'We Produce a Die Line',
             body: 'A drawing showing cut, crease, overlap and safe area, which your designer works onto.',
           },
           {
-            title: 'Check a plain cut sample',
+            title: 'Check a Plain Cut Sample',
             body: 'An unprinted sample cut on the tool, wrapped around the real product. Changes are cheapest here.',
           },
           {
-            title: 'Print from the approved tool',
+            title: 'Print from the Approved Tool',
             body: 'Once the shape is signed off the artwork is placed and the run scheduled.',
           },
         ],

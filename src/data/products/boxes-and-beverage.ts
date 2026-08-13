@@ -19,7 +19,7 @@ export const FOOD_BOXES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Scoop against carton',
+        heading: 'Scoop Against Carton',
         intro: 'The open front is the whole difference, and it cuts both ways.',
         columns: ['Scoop', 'Carton'],
         rows: [
@@ -33,7 +33,7 @@ export const FOOD_BOXES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Grease resistance is the baseline, not an upgrade',
+        heading: 'Grease Resistance Is the Baseline, Not an Upgrade',
         body: [
           'Chips carry more free oil than any other item in this catalogue. Untreated board goes translucent within a minute or two, and the print goes with it.',
           'Every box in this range is quoted on a grease-resistant board as standard. The variable is which grade, and that depends on your fryer temperature and how long portions are held.',
@@ -92,7 +92,7 @@ export const FOOD_BOXES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Vertical portions look bigger',
+        heading: 'Vertical Portions Look Bigger',
         body: [
           'The same 200 grams of chips reads as more food standing tall in a cone than spread across a scoop. Street food traders have known this for a long time.',
           'It is a genuine perception effect rather than a trick — the customer sees the top of the pile at eye level rather than looking down into a tray.',
@@ -100,7 +100,7 @@ export const FOOD_BOXES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a chip cone has to get right',
+        heading: 'What a Chip Cone Has to Get Right',
         items: [
           'A closed or reinforced point, or chips and salt work their way out of the bottom.',
           'Grease-resistant board, since the whole portion presses against one narrow area.',
@@ -116,7 +116,7 @@ export const FOOD_BOXES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Cones need somewhere to be put down',
+        heading: 'Cones Need Somewhere to Be Put Down',
         body: 'A cone cannot stand on a table by itself. Sites with seating usually need a stand or a holder alongside, or customers end up leaning them against a drink.',
       },
     ],
@@ -150,7 +150,7 @@ export const FOOD_BOXES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Paper against a formed box',
+        heading: 'Paper Against a Formed Box',
         columns: ['Folded paper', 'Formed box'],
         rows: [
           ['Unit cost', 'Considerably lower', 'Higher'],
@@ -163,7 +163,7 @@ export const FOOD_BOXES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Grease resistance without losing the fold',
+        heading: 'Grease Resistance Without Losing the Fold',
         body: [
           'A paper stiff enough to resist oil completely is also stiff enough to be awkward to fold at speed. There is a genuine balance to strike.',
           'Greaseproof at a moderate weight folds cleanly and holds up for the length of a walk home, which is what most chip shops actually need.',
@@ -205,7 +205,7 @@ export const FOOD_BOXES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Venting is what keeps the coating crisp',
+        heading: 'Venting Is What Keeps the Coating Crisp',
         body: [
           'A sealed box holds moisture against the coating and softens it within minutes. That is the single most common complaint about delivered fried chicken, and it is a packaging problem rather than a kitchen one.',
           'Vent holes let steam out while keeping the box closed. Their size and position matter — too few and nothing escapes, too many and the food cools too fast.',
@@ -213,7 +213,7 @@ export const FOOD_BOXES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What the box has to cope with',
+        heading: 'What the Box Has to Cope With',
         items: [
           'Weight — bone-in pieces are far heavier than the same volume of chips.',
           'Heat, sustained for longer than most fried food.',
@@ -272,7 +272,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Cheaper than printing the cup, and more flexible',
+        heading: 'Cheaper than Printing the Cup, and More Flexible',
         body: [
           'Printed cups carry tooling and minimum quantities that put them out of reach for a single site. Sleeves do not, and they work across every cup size that shares a circumference.',
           'They also let you change design four times a year without holding four cup lines.',
@@ -298,7 +298,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Designing for a hand',
+        heading: 'Designing for a Hand',
         items: [
           'A right-handed grip covers roughly a third of the sleeve — repeat key elements.',
           'Keep the wordmark away from the glued seam, which sits differently on every cup.',
@@ -342,7 +342,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Flat board against corrugated',
+        heading: 'Flat Board Against Corrugated',
         columns: ['Flat board', 'Corrugated'],
         rows: [
           ['Print detail', 'Holds fine type and small logos cleanly', 'Texture softens fine detail'],
@@ -355,7 +355,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Where the smooth surface pays off',
+        heading: 'Where the Smooth Surface Pays Off',
         body: [
           'Brands with a detailed mark, small legal text, or a QR code get a noticeably better result on flat board.',
           'On corrugated, the flute texture breaks up fine lines and small reversed-out type closes up. It is not a print quality problem so much as a surface one.',
@@ -397,7 +397,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Condensation is the whole design problem',
+        heading: 'Condensation Is the Whole Design Problem',
         body: [
           'Unlike a hot sleeve, which deals with dry heat, a cold sleeve is wet from the outside in for its entire life.',
           'An unlaminated board absorbs that and goes limp. A laminated or coated outer face keeps its shape and stays gripped for the length of the drink.',
@@ -405,7 +405,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What operators notice',
+        heading: 'What Operators Notice',
         items: [
           'Print that softens and smears where condensation collects at the bottom edge.',
           'Sleeves that slide down a wet cup rather than gripping it.',
@@ -460,7 +460,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Long holding times change what fails',
+        heading: 'Long Holding Times Change What Fails',
         body: [
           'A cold drink finished in ten minutes barely tests the packaging. An iced coffee that sits on a desk for an hour produces a pool of condensation and a thoroughly wet sleeve.',
           'Where cups sit for that long, a coated outer face is not a refinement — it is the difference between a sleeve that survives and one that comes apart in a bin.',
@@ -468,7 +468,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing for iced serves',
+        heading: 'Sizing for Iced Serves',
         items: [
           'Iced cups are usually larger than hot ones — 16oz and 20oz rather than 8oz and 12oz.',
           'Clear cold cups often have a different taper from paper hot cups, so the circumference differs.',
@@ -513,7 +513,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'No liquid contact means fewer compromises',
+        heading: 'No Liquid Contact Means Fewer Compromises',
         body: [
           'A cup needs a barrier because a drink sits against it. A sleeve does not, so plain uncoated board is a workable specification rather than an aspiration.',
           'That makes this one of the few places in disposable packaging where the environmentally better option is also the cheaper one.',
@@ -526,7 +526,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What actually improves recyclability here',
+        heading: 'What Actually Improves Recyclability Here',
         items: [
           'Removing lamination, which is the main barrier to a paper stream.',
           'Reducing full-flood ink coverage, which also reduces cost.',
@@ -537,7 +537,7 @@ export const BEVERAGE_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Recycled content and certification confirmed per order',
+        heading: 'Recycled Content and Certification Confirmed per Order',
         body: 'Which recycled-content boards and certifications are available depends on the specific stock a job runs on and what is in supply at the time. We confirm that in writing on your quote rather than publishing a blanket claim here.',
         pending: true,
       },

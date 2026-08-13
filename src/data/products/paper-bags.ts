@@ -20,7 +20,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The base carries the whole order',
+        heading: 'The Base Carries the Whole Order',
         body: [
           'A block-bottom bag has a folded base that spreads load across a flat area. A simple flat bag concentrates it along a single glued seam.',
           'For anything heavier than a sandwich, that difference decides whether the bag survives being carried to a car.',
@@ -33,7 +33,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to check on a sample',
+        heading: 'What to Check on a Sample',
         items: [
           'Load it with your heaviest normal order and carry it across a room.',
           'Check the handles where they attach, which is the second failure point.',
@@ -89,7 +89,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Closure matters more than looks',
+        heading: 'Closure Matters More than Looks',
         body: [
           'A tamper-evident closure — a sticker across the fold, or an adhesive strip — shows the customer that the bag has not been opened between the kitchen and the door.',
           'It is quick at the pass and it removes an entire category of complaint, which is why most delivery operations adopt it.',
@@ -102,7 +102,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Designing for a rider\'s backpack',
+        heading: 'Designing for a Rider\'s Backpack',
         items: [
           'A base that lets the bag stand upright rather than lean.',
           'Height that fits an insulated backpack without folding the top over.',
@@ -113,7 +113,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Tamper evidence is a visible signal, not a guarantee',
+        heading: 'Tamper Evidence Is a Visible Signal, Not a Guarantee',
         body: 'A sealed bag shows clearly if it has been opened, which is what customers want to see. We would not describe it as secure beyond that, and any wording printed on the bag should stay within what the closure actually demonstrates.',
       },
     ],
@@ -148,7 +148,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Design for the bag when it is full',
+        heading: 'Design for the Bag When It Is Full',
         body: [
           'A full bag bulges, the gusset opens out, and the top folds over. Artwork that runs to the edges gets distorted or hidden by exactly those changes.',
           'Keeping the key elements in the centre of the front face, well clear of folds and the gusset, survives all of it.',
@@ -161,7 +161,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where the print gets seen',
+        heading: 'Where the Print Gets Seen',
         items: [
           'The front face at chest height, which is what passers-by see.',
           'The gusset, visible from the side as the bag swings.',
@@ -202,7 +202,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Strength for the weight',
+        heading: 'Strength for the Weight',
         body: [
           'Kraft paper is made from long fibres, which is why it tears less readily than a bleached paper of the same weight.',
           'That matters for bags more than for sheets, because a bag concentrates load at the base and the handles rather than spreading it.',
@@ -215,7 +215,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Printing on kraft bags',
+        heading: 'Printing on Kraft Bags',
         items: [
           'One or two colours is the usual specification, and it suits the material.',
           'Colours shift towards brown — pale tints in particular nearly disappear.',
@@ -256,7 +256,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Mixed loads concentrate weight',
+        heading: 'Mixed Loads Concentrate Weight',
         body: [
           'Unlike a takeaway order, a grocery load has hard, heavy items pressing into the base at specific points rather than spreading evenly.',
           'That is why grocery bags use a heavier paper and a reinforced base than a food carrier of the same volume.',
@@ -269,7 +269,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What farm shops and delis ask for',
+        heading: 'What Farm Shops and Delis Ask For',
         items: [
           'A base that copes with tins without splitting at a corner.',
           'Handles that survive being carried to a car park.',
@@ -310,7 +310,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Paper against a sealed bag for bread',
+        heading: 'Paper Against a Sealed Bag for Bread',
         columns: ['Paper bag', 'Sealed bag'],
         rows: [
           ['Crust', 'Stays crisp', 'Softens within an hour'],
@@ -323,7 +323,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Size to the loaf shape, not the weight',
+        heading: 'Size to the Loaf Shape, Not the Weight',
         body: [
           'A 800g tin loaf and an 800g bloomer are completely different shapes, and a bag that suits one is wrong for the other.',
           'Bakeries running several shapes usually need two or three bag sizes rather than one sized by weight.',
@@ -366,7 +366,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'One-handed use during a rush',
+        heading: 'One-Handed Use During a Rush',
         body: [
           'Staff at a bakery counter have tongs in one hand. The bag has to open with the other, and it has to come off the stack singly.',
           'Bags that stick together or need two hands to open are the reason counters keep a pile of pre-opened ones, which is a workaround rather than a solution.',
@@ -379,7 +379,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What the bag has to cope with',
+        heading: 'What the Bag Has to Cope With',
         items: [
           'Butter from laminated pastry, which marks plain paper within minutes.',
           'Flakes and crumbs that need containing rather than scattering.',
@@ -420,7 +420,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Glaze bonds to uncoated paper',
+        heading: 'Glaze Bonds to Uncoated Paper',
         body: [
           'Warm glaze is essentially sugar syrup, and it sticks to an absorbent surface as it cools. Pulling the doughnut out takes the glaze with it.',
           'A coated inner face gives the glaze nothing to grip, and the doughnut comes out intact.',
@@ -433,7 +433,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing for a half dozen',
+        heading: 'Sizing for a Half Dozen',
         items: [
           'Doughnuts are bought in multiples far more often than singly.',
           'A bag for six needs enough width that they sit side by side rather than stacked.',
@@ -474,7 +474,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The product sells itself if you let it show',
+        heading: 'The Product Sells Itself If You Let It Show',
         body: [
           'A cookie behind an opaque bag is a description. The same cookie behind a window is the thing itself.',
           'Where cookies are sold from a shelf rather than a counter, the window is usually worth its cost several times over.',
@@ -487,7 +487,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Counter sales against retail packs',
+        heading: 'Counter Sales Against Retail Packs',
         items: [
           'Counter sales — speed matters, plain bags are fine, the cookie is already visible.',
           'Retail shelf — a window and a printed panel do the selling.',
@@ -528,7 +528,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Bag against wrap for sandwiches',
+        heading: 'Bag Against Wrap for Sandwiches',
         columns: ['Bag', 'Wrapped sheet'],
         rows: [
           ['Speed at the counter', 'Faster', 'Slower, needs a fold'],
@@ -541,7 +541,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Label space is not optional at a busy counter',
+        heading: 'Label Space Is Not Optional at a Busy Counter',
         body: [
           'A counter making eight fillings needs a way to tell them apart once bagged. A printed tick-box panel or a clear area for a sticker solves it.',
           'Without one, staff open bags to check, which is slow and looks careless.',
@@ -584,7 +584,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A whole meal is bulkier than it looks',
+        heading: 'A Whole Meal Is Bulkier than It Looks',
         body: [
           'Sized to a sandwich and a drink, a lunch bag is always slightly too small once fruit and a snack go in. The top will not fold and the bag tears at the corner.',
           'Pack a real lunch into a sample before agreeing a size.',
@@ -597,7 +597,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What matters for packed meal service',
+        heading: 'What Matters for Packed Meal Service',
         items: [
           'Enough capacity for a drink standing upright.',
           'A fold-over top that holds without tape.',
@@ -638,7 +638,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Do not close the top',
+        heading: 'Do Not Close the Top',
         body: [
           'Folding a chip bag closed traps steam and the chips soften within a couple of minutes. It feels tidier and produces a worse product.',
           'Bags for chips are meant to be handed over open, which is worth telling staff explicitly if they are used to closing everything.',
@@ -651,7 +651,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What separates a good chip bag',
+        heading: 'What Separates a Good Chip Bag',
         items: [
           'Grease-resistant paper — chips carry more oil than almost anything.',
           'A base that lets the bag stand while it is being filled.',
@@ -692,7 +692,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Volume is the constraint, not weight',
+        heading: 'Volume Is the Constraint, Not Weight',
         body: [
           'A bag holding 100 grams of popcorn is far bigger than one holding 100 grams of anything else. Size from the volume you serve rather than the weight.',
           'That large surface is also the reason popcorn bags carry such bold printing — there is a great deal of it to fill.',
@@ -705,7 +705,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Points worth specifying',
+        heading: 'Points Worth Specifying',
         items: [
           'A base that stands so the bag can be filled with one hand.',
           'Height that reads as generous — tall bags look like more popcorn.',
@@ -746,7 +746,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'High volume, low attention',
+        heading: 'High Volume, Low Attention',
         body: [
           'A snack bag is held for a couple of minutes and rarely looked at closely. A one-colour logo identifies the seller, which is usually all the branding that pays back.',
           'Where the bag is a retail pack sitting on a shelf, the calculation changes completely.',
@@ -759,7 +759,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Service against retail',
+        heading: 'Service Against Retail',
         items: [
           'Service — plain or one-colour, bought on unit price, opened immediately.',
           'Retail — a printed face, a seal, and space for weight and ingredients.',
@@ -800,7 +800,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Customers fill these bags, not staff',
+        heading: 'Customers Fill These Bags, Not Staff',
         body: [
           'Pick-and-mix means the bag is handled by someone with a scoop in one hand and no training. It has to open easily and stay open on a counter.',
           'A flat bag that needs two hands to separate is a genuine friction point in a sweet shop.',
@@ -813,7 +813,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What makes a sweet bag work',
+        heading: 'What Makes a Sweet Bag Work',
         items: [
           'Contents visible, through translucency or a window.',
           'Easy to open one-handed at a self-service counter.',
@@ -854,22 +854,22 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Ordering against a fixed date',
+        heading: 'Ordering Against a Fixed Date',
         steps: [
           {
-            title: 'Set the in-store date, not the event date',
+            title: 'Set the In-Store Date, Not the Event Date',
             body: 'Halloween stock sells through most of October. Being ready on the 31st is being three weeks late.',
           },
           {
-            title: 'Confirm the lead time in writing',
+            title: 'Confirm the Lead Time in Writing',
             body: 'Seasonal print schedules fill up. We confirm your lead time on the quote rather than quoting a general figure.',
           },
           {
-            title: 'Order conservatively',
+            title: 'Order Conservatively',
             body: 'Unsold seasonal stock has no second life unless the artwork avoids a year.',
           },
           {
-            title: 'Keep artwork undated if you can',
+            title: 'Keep Artwork Undated If You Can',
             body: 'Undated Halloween designs can be carried into the following autumn.',
           },
         ],
@@ -881,7 +881,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Design for a short, intense season',
+        heading: 'Design for a Short, Intense Season',
         body: [
           'Halloween artwork is used for perhaps five weeks and then stops completely. That argues for a design that is unmistakably seasonal rather than subtle.',
           'It also argues for digital printing on modest quantities rather than a long run that leaves stock behind.',
@@ -919,7 +919,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The valve lets gas out without letting air in',
+        heading: 'The Valve Lets Gas Out Without Letting Air In',
         body: [
           'A one-way valve releases the carbon dioxide from fresh roast while keeping oxygen out, which is what would stale the coffee.',
           'Bagging fresh coffee without one means either inflated bags on the shelf or waiting days before packing, and neither suits a working roastery.',
@@ -932,7 +932,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a retail coffee bag has to carry',
+        heading: 'What a Retail Coffee Bag Has to Carry',
         items: [
           'Origin, roast date and roast level, which speciality buyers look for.',
           'Weight, ingredients and business details as required for retail.',
@@ -973,7 +973,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Tea takes on whatever is around it',
+        heading: 'Tea Takes on Whatever Is Around It',
         body: [
           'Dry tea leaf is highly absorbent, which is why it picks up moisture and nearby aromas readily. A bag that is not a genuine barrier lets both in.',
           'That is also why tea should not be stored next to strongly scented products, whatever the packaging.',
@@ -986,7 +986,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a tea bag has to do',
+        heading: 'What a Tea Bag Has to Do',
         items: [
           'Keep moisture out, since damp leaf spoils quickly.',
           'Block light, which degrades tea over time.',
@@ -1027,7 +1027,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Opened many times, over a long period',
+        heading: 'Opened Many Times, Over a Long Period',
         body: [
           'Unlike most food packaging, a spice bag has a long working life. A reseal that stops holding after ten openings is a real problem for the customer.',
           'That argues for a proper closure rather than a fold-over top, even at small pack sizes.',
@@ -1040,7 +1040,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Small pack considerations',
+        heading: 'Small Pack Considerations',
         items: [
           'A bag that stands up, so it can sit in a cupboard rather than lie flat.',
           'A reseal that survives repeated use over months.',
@@ -1081,7 +1081,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Powder finds every weakness',
+        heading: 'Powder Finds Every Weakness',
         body: [
           'A seam that would hold a solid product perfectly well will leak fine flour, and a leaking bag makes a mess of an entire shelf.',
           'That is why flour bags use a different seam construction from bags of the same weight carrying something coarser.',
@@ -1094,7 +1094,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a flour bag has to handle',
+        heading: 'What a Flour Bag Has to Handle',
         items: [
           'Sustained weight without splitting at the base.',
           'Fine powder that escapes through any seam gap.',
@@ -1135,7 +1135,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Pre-packed bag against wrapped to order',
+        heading: 'Pre-Packed Bag Against Wrapped to Order',
         columns: ['Pre-packed bag', 'Wrapped sheet'],
         rows: [
           ['Moisture', 'Held in by a barrier', 'Soaks through over hours'],
@@ -1148,7 +1148,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Labelling is not optional on a pre-pack',
+        heading: 'Labelling Is Not Optional on a Pre-Pack',
         body: [
           'A pre-packed meat product carries requirements that a wrapped-to-order one does not, including weight, storage and use-by information.',
           'Confirm what applies with whoever handles your food labelling, then reserve a clear area of the right size before the artwork is designed.',
@@ -1191,7 +1191,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Breathe, but not too much',
+        heading: 'Breathe, but Not Too Much',
         body: [
           'Fully sealed, cheese sweats and the surface spoils. Fully open, it dries and cracks. The packaging has to sit between the two for the length of its shelf life.',
           'That balance is what a cheese bag is designed around, and it is why an ordinary food bag performs poorly.',
@@ -1204,7 +1204,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What retail cheese packs need',
+        heading: 'What Retail Cheese Packs Need',
         items: [
           'Controlled breathability suited to the type of cheese.',
           'A window or printed description, since customers buy by variety.',
@@ -1245,7 +1245,7 @@ export const PAPER_BAGS: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Moisture is the whole enemy',
+        heading: 'Moisture Is the Whole Enemy',
         body: [
           'Dried meat that takes up moisture goes soft and its shelf life collapses. A barrier that would be adequate for a chilled product sold within days is not enough here.',
           'Ambient distribution also means the pack may sit in a warm van or a sunny shelf, which tests it further.',
@@ -1258,7 +1258,7 @@ export const PAPER_BAGS: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a jerky pack needs',
+        heading: 'What a Jerky Pack Needs',
         items: [
           'A moisture barrier suited to a long ambient shelf life.',
           'A reseal, since jerky is eaten over several sittings.',

@@ -23,7 +23,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Grease is the specification decision',
+        heading: 'Grease Is the Specification Decision',
         body: [
           'Untreated board absorbs fat from a patty within minutes. The base goes translucent, the print dulls, and by the time a delivery order arrives the sleeve looks unpleasant even though the food is fine.',
           'A greaseproof liner or a coated inner face stops that. Which one suits depends on how long the burger sits between the pass and the customer.',
@@ -37,7 +37,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'specs',
-        heading: 'What we need to size a burger sleeve',
+        heading: 'What We Need to Size a Burger Sleeve',
         rows: [
           ['Built height', 'Measured on a finished burger as it leaves the pass'],
           ['Built width', 'At the widest point, including anything overhanging'],
@@ -50,7 +50,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'compare',
-        heading: 'Half-height against full wrap',
+        heading: 'Half-Height Against Full Wrap',
         columns: ['Half-height sleeve', 'Full wrap'],
         rows: [
           ['Food visible', 'Yes — the build is the selling point', 'Mostly hidden'],
@@ -102,7 +102,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'bullets',
-        heading: 'Points that decide the die',
+        heading: 'Points That Decide the Die',
         items: [
           'Roll length, measured on the roll you buy rather than a nominal size.',
           'Topping height — a loaded dog needs a wider opening than a plain one.',
@@ -115,7 +115,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Loaded dogs change the geometry',
+        heading: 'Loaded Dogs Change the Geometry',
         body: [
           'A plain hot dog is a narrow cylinder. Add onions, sauerkraut and a zig-zag of sauce and the profile is much wider at the top and completely uneven.',
           'Sleeves sized to the plain version get forced over the toppings and push them off the far end. Measure the loaded version if that is what you sell.',
@@ -129,7 +129,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Sauce resistance is not the same as grease resistance',
+        heading: 'Sauce Resistance Is Not the Same as Grease Resistance',
         body: 'Tomato and mustard-based sauces are acidic and watery rather than oily, and they behave differently against board. Tell us what goes on top so the board is specified against the right thing.',
       },
     ],
@@ -168,7 +168,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The stick opening does more than you would expect',
+        heading: 'The Stick Opening Does More than You Would Expect',
         body: [
           'A wrap closed at the base means the customer has to pull the whole corn dog out to eat it, which defeats the point of the stick.',
           'An opening sized to the stick lets the sleeve sit against the batter while the stick passes through. Too wide and the sleeve slides down; too narrow and staff fight it during a rush.',
@@ -176,7 +176,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What street-food operators specify',
+        heading: 'What Street-Food Operators Specify',
         items: [
           'Grease-resistant board — batter carries a lot of oil out of the fryer.',
           'A stick opening sized to the sticks you buy, not a generic slot.',
@@ -233,7 +233,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Compression, not just coverage',
+        heading: 'Compression, Not Just Coverage',
         body: [
           'A loose sleeve looks fine and does nothing. The wrap needs to be slightly under the diameter of the rolled burrito so it holds it closed rather than sitting around it.',
           'That is a fine tolerance, and it is why sizing from a real burrito rather than a stated tortilla size is worth the effort.',
@@ -241,7 +241,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'How customers actually eat a burrito',
+        heading: 'How Customers Actually Eat a Burrito',
         intro: 'The eating pattern decides where the sleeve should sit:',
         items: [
           'They unwrap the top third only, and eat down through it.',
@@ -254,7 +254,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Foil-lined and paper-lined behave differently',
+        heading: 'Foil-Lined and Paper-Lined Behave Differently',
         body: 'Many burrito operations wrap in foil first and use the printed sleeve outside it. If that is your process, the sleeve does not need grease resistance at all and can be a lighter, cheaper board. Tell us which way round you work.',
       },
     ],
@@ -293,7 +293,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Cut the sleeve to match how the wrap is cut',
+        heading: 'Cut the Sleeve to Match How the Wrap Is Cut',
         body: [
           'A wrap sliced at 45 degrees has a long face and a short face. A sleeve with a matching angled top holds both halves at the right height and leaves the filling on show.',
           'A square sleeve either covers the filling on one side or leaves the other half unsupported. It is the sort of detail that only shows once a chiller cabinet is full of them.',
@@ -319,7 +319,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Chilled retail against hot service',
+        heading: 'Chilled Retail Against Hot Service',
         items: [
           'Chilled wraps sit in a cabinet for hours and need to look good cold and undisturbed.',
           'Hot wraps go out within seconds and need grease resistance instead.',
@@ -363,7 +363,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Leave room for the label before designing the print',
+        heading: 'Leave Room for the Label Before Designing the Print',
         body: [
           'Pre-packed sandwiches carry labelling requirements, and the label is applied after printing. If artwork covers the whole face, the sticker lands on top of it.',
           'Reserving a clear panel of the right size from the start looks deliberate. Adding one afterwards never quite does.',
@@ -371,7 +371,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What sells a sandwich from a chiller',
+        heading: 'What Sells a Sandwich from a Chiller',
         items: [
           'The cut face visible, which usually means an angled sleeve rather than a square one.',
           'Enough unprinted area that the bread and filling are the colour you notice.',
@@ -434,7 +434,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Soft shells against hard shells',
+        heading: 'Soft Shells Against Hard Shells',
         intro: 'The two need opposite things from a sleeve.',
         columns: ['Soft shell', 'Hard shell'],
         rows: [
@@ -449,7 +449,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'Serving more than one at a time',
+        heading: 'Serving More than One at a Time',
         body: [
           'Two tacos in one sleeve lean into each other and the fillings mix. Three is worse.',
           'Beyond a pair, a tray with separated slots does the job properly and looks better on the table than three sleeves in a huddle.',
@@ -497,7 +497,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Staying open is a structural problem',
+        heading: 'Staying Open Is a Structural Problem',
         body: [
           'A flat sleeve pressed closed by its own board is unusable during a rush — staff need a free hand for the fryer basket.',
           'A crease pattern or a gusset that holds the mouth open makes the difference. It is worth checking on an unprinted sample before the run.',
@@ -505,7 +505,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Specifying for a fryer',
+        heading: 'Specifying for a Fryer',
         items: [
           'Grease-resistant board, because chips carry more oil than almost anything else.',
           'An open top so steam escapes rather than softening the chips.',
@@ -524,7 +524,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Delivery changes the answer',
+        heading: 'Delivery Changes the Answer',
         body: 'An open sleeve is the right choice on a counter and the wrong one in a courier bag, where chips migrate and the sleeve tips. If a meaningful share of your orders are delivered, ask us to quote a vented carton alongside.',
       },
     ],
@@ -563,7 +563,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Support has to reach past the halfway point',
+        heading: 'Support Has to Reach Past the Halfway Point',
         body: [
           'A short wedge that grips only the crust does nothing — the slice pivots on the edge of the board and folds anyway.',
           'The support needs to run at least two thirds of the way to the tip. That is more board than people expect, and it is why proper slice sleeves look oversized flat.',
@@ -571,7 +571,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What to measure',
+        heading: 'What to Measure',
         items: [
           'The crust width at the widest edge of your slice.',
           'The length from crust to tip, which varies hugely by pizza diameter.',
@@ -628,7 +628,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'A rare case where lining is unnecessary',
+        heading: 'A Rare Case Where Lining Is Unnecessary',
         body: [
           'Sweet popcorn carries a sugar glaze rather than free oil, and salted popcorn is drier still. Neither soaks into board the way a chip or a burger does.',
           'Unless yours is heavily buttered, an unlined board is usually adequate — which lowers the unit cost and makes the sleeve straightforward to recycle.',
@@ -642,7 +642,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Where popcorn sleeves get used',
+        heading: 'Where Popcorn Sleeves Get Used',
         items: [
           'Cinemas and screening rooms, where the sleeve is seen in a dark room and needs contrast.',
           'Festivals and fairs, where a tall sleeve looks generous for the portion.',
@@ -654,7 +654,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Heavily buttered popcorn is a different specification',
+        heading: 'Heavily Buttered Popcorn Is a Different Specification',
         body: 'If yours is finished with melted butter rather than a dry seasoning, the board does need a grease-resistant treatment. Tell us how it is dressed and we will specify accordingly rather than assuming the dry case.',
       },
     ],
@@ -693,7 +693,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Sweet fillings are harder on board than they look',
+        heading: 'Sweet Fillings Are Harder on Board than They Look',
         body: [
           'Chocolate spread and caramel are oil-based and warm when served, which is a demanding combination for untreated board. Fruit adds water on top of that.',
           'A greaseproof-lined board handles both. Plain board goes soft at the fold within a few minutes.',
@@ -707,7 +707,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Folded crepes: what the sleeve has to do',
+        heading: 'Folded Crepes: What the Sleeve Has to Do',
         items: [
           'Hold the triangle closed so fillings do not escape at the fold.',
           'Give a clean grip at the wide end where the customer holds it.',
@@ -762,29 +762,29 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'uses',
-        heading: 'What suits a sleeve and what does not',
+        heading: 'What Suits a Sleeve and What Does Not',
         items: [
           {
-            title: 'Works well: cake slices and traybakes',
+            title: 'Works Well: Cake Slices and Traybakes',
             body: 'Firm, self-supporting and rectangular. A sleeve holds the sides and leaves the top on show.',
           },
           {
-            title: 'Works well: brownies and flapjacks',
+            title: 'Works Well: Brownies and Flapjacks',
             body: 'Dense and greasy enough to need a lined board, but structurally simple.',
           },
           {
-            title: 'Works poorly: soft-set desserts',
+            title: 'Works Poorly: Soft-Set Desserts',
             body: 'Anything that slumps needs walls on all sides. A sleeve gives it nowhere to go but sideways.',
           },
           {
-            title: 'Works poorly: anything with a sauce',
+            title: 'Works Poorly: Anything with a Sauce',
             body: 'An open-bottomed sleeve is the wrong container for liquid. Use a lidded pot.',
           },
         ],
       },
       {
         kind: 'prose',
-        heading: 'Presentation is most of the value here',
+        heading: 'Presentation Is Most of the Value Here',
         body: [
           'A brownie in a plain bag is a brownie. The same brownie in a printed sleeve reads as a product with a price attached, which is usually why cafés move to them.',
           'Because the item is dry and firm, board weight can be modest and the budget can go into the print.',
@@ -832,7 +832,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Height is set by the icing, not the cake',
+        heading: 'Height Is Set by the Icing, Not the Cake',
         body: [
           'A sleeve that reaches the icing smears it on the way on and again on the way off, and the customer sees the damage before they see the design.',
           'Measuring to the icing line, then subtracting a few millimetres, gives a sleeve that supports the case and never touches the top.',
@@ -840,7 +840,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Details worth getting right',
+        heading: 'Details Worth Getting Right',
         items: [
           'Case diameter at the top, which is wider than the base by a noticeable margin.',
           'Whether the sleeve grips the case or sits loosely around it.',
@@ -903,7 +903,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Muffins are oilier than they look',
+        heading: 'Muffins Are Oilier than They Look',
         body: [
           'A muffin has enough fat in it to mark plain board within a couple of hours in a display cabinet. On a morning\'s trade that is visible.',
           'A greaseproof inner face is the standard specification here, which is one of the main differences from a cupcake sleeve.',
@@ -911,7 +911,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'compare',
-        heading: 'Muffin sleeves against cupcake sleeves',
+        heading: 'Muffin Sleeves Against Cupcake Sleeves',
         columns: ['Muffin', 'Cupcake'],
         rows: [
           ['Widest point', 'Above the case, at the dome', 'The top of the case'],
@@ -923,7 +923,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Getting the fit right',
+        heading: 'Getting the Fit Right',
         items: [
           'Measure across the dome at its widest, not across the case.',
           'Allow for variation — hand-baked muffins are not dimensionally consistent.',
@@ -967,7 +967,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Glaze sticks to board',
+        heading: 'Glaze Sticks to Board',
         body: [
           'A warm glazed doughnut will bond to an uncoated sleeve and take a layer of glaze with it when removed. Customers notice.',
           'A coated inner face prevents it. It is the single most useful thing to specify on this product, ahead of anything to do with the print.',
@@ -981,7 +981,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What differs by doughnut type',
+        heading: 'What Differs by Doughnut Type',
         items: [
           'Ring doughnuts — a band sleeve works, and the hole keeps the shape stable.',
           'Filled doughnuts — no hole, more weight, and jam that escapes under pressure.',
@@ -1038,7 +1038,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Butter marks board within minutes',
+        heading: 'Butter Marks Board Within Minutes',
         body: [
           'A warm croissant on plain board leaves a translucent patch almost immediately. In a display cabinet where pastries sit for a morning, that patch is what customers see.',
           'Greaseproof-lined board avoids it entirely and is the normal specification for anything laminated.',
@@ -1046,7 +1046,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Pastry shapes and what they need',
+        heading: 'Pastry Shapes and What They Need',
         items: [
           'Croissants — curved and irregular; a generous band works better than a close fit.',
           'Danishes — flat and wide, with sticky glaze that needs a coated inner face.',
@@ -1064,7 +1064,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'callout',
-        heading: 'Hot-held pastries need more than cold ones',
+        heading: 'Hot-Held Pastries Need More than Cold Ones',
         body: 'A sausage roll from a hot cabinet puts far more oil and steam into the packaging than a croissant at ambient temperature. If you hold pastries hot, say so — it changes the board rather than the shape.',
       },
     ],
@@ -1103,7 +1103,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Retail packs carry required information',
+        heading: 'Retail Packs Carry Required Information',
         body: [
           'A bar sold at retail needs ingredients, allergens, weight, storage and business details on the pack. That is a substantial amount of small type, and it has to be legible.',
           'Designing the front first and finding room for the rest afterwards is how sleeves end up with six-point text. Lay out the back panel at the same time as the front.',
@@ -1111,7 +1111,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What a bar sleeve has to accommodate',
+        heading: 'What a Bar Sleeve Has to Accommodate',
         items: [
           'A front face that works at arm\'s length on a shelf.',
           'A back or inner panel with ingredients and allergen information.',
@@ -1170,7 +1170,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'The band is doing security work',
+        heading: 'The Band Is Doing Security Work',
         body: [
           'A meal box in a courier bag will open if nothing holds the lid. A band is the simplest answer, and it doubles as tamper evidence — a broken band is visible.',
           'The band has to be sized to the closed box with very little slack, or it slides off the corner in transit.',
@@ -1184,7 +1184,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'What operators put on a bento band',
+        heading: 'What Operators Put on a Bento Band',
         items: [
           'The dish name, so a driver hands the right box to the right person.',
           'Allergen and dietary marks, often as a printed tick-box panel.',
@@ -1241,7 +1241,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Cover as little of the lid as possible',
+        heading: 'Cover as Little of the Lid as Possible',
         body: [
           'The product is the packaging\'s main selling point. A wide band across the centre hides the pieces the customer is choosing between.',
           'Bands that run across one end, or down one side, leave the arrangement visible while still giving a substantial printed area.',
@@ -1249,7 +1249,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Chilled retail requirements',
+        heading: 'Chilled Retail Requirements',
         items: [
           'A barcode area on a flat section, readable at the till.',
           'Room for a date label applied after packing.',
@@ -1302,7 +1302,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'Marinade stains where oil only soaks',
+        heading: 'Marinade Stains Where Oil Only Soaks',
         body: [
           'A turmeric or tomato-based marinade leaves a coloured mark on board that a neutral oil would not. On a white sleeve that shows immediately.',
           'Darker board, a coated inner face, or a design with enough colour to absorb a mark are all reasonable answers depending on how much you care about it.',
@@ -1310,7 +1310,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Sizing a skewer sleeve',
+        heading: 'Sizing a Skewer Sleeve',
         items: [
           'The length of the loaded section, not the whole skewer.',
           'The width across the widest piece of meat or vegetable.',
@@ -1373,7 +1373,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'compare',
-        heading: 'Tea against coffee as a heat problem',
+        heading: 'Tea Against Coffee as a Heat Problem',
         columns: ['Tea', 'Coffee with milk'],
         rows: [
           ['Serving temperature', 'Close to boiling', 'Lowered by steamed or cold milk'],
@@ -1387,7 +1387,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'prose',
-        heading: 'The brewing bag changes the timing',
+        heading: 'The Brewing Bag Changes the Timing',
         body: [
           'Where a bag is left in, the cup keeps brewing and stays hot longer. The customer also has to remove the bag at some point, which usually means putting the cup down and picking it up again.',
           'A sleeve that stays put through that is worth more than one that is a fraction cheaper.',
@@ -1435,30 +1435,30 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'steps',
-        heading: 'Planning a seasonal run',
+        heading: 'Planning a Seasonal Run',
         intro: 'Work backwards from the first day it needs to be on the counter.',
         steps: [
           {
-            title: 'Fix the in-use date',
+            title: 'Fix the In-Use Date',
             body: 'The first day of the promotion, not the day stock arrives. Everything else is scheduled against it.',
           },
           {
-            title: 'Confirm the lead time in writing',
+            title: 'Confirm the Lead Time in Writing',
             body: 'Lead times shift with press workload, and the Christmas period is the busiest. We confirm yours on the quote.',
           },
           {
-            title: 'Reuse the existing die',
+            title: 'Reuse the Existing Die',
             body: 'If the sleeve shape is unchanged there is no tooling cost or lead time, only print.',
           },
           {
-            title: 'Order to the promotion, not to the year',
+            title: 'Order to the Promotion, Not to the Year',
             body: 'Seasonal stock left over is written off. Estimate honestly and reorder if it goes well.',
           },
         ],
       },
       {
         kind: 'bullets',
-        heading: 'Occasions this comes up for',
+        heading: 'Occasions This Comes Up For',
         items: [
           'Christmas, by a wide margin the busiest and the one to start earliest.',
           'Summer festival season, where several events share one design.',
@@ -1511,7 +1511,7 @@ export const FOOD_SLEEVES: Product[] = [
     sections: [
       {
         kind: 'prose',
-        heading: 'No food contact means more material options',
+        heading: 'No Food Contact Means More Material Options',
         body: [
           'Because nothing edible touches it, a gift card sleeve can use finishes that would be unsuitable elsewhere — soft-touch lamination, foil blocking, uncoated textured stocks.',
           'That is worth knowing, because those finishes are exactly what makes a small item feel worth more than it cost.',
@@ -1519,7 +1519,7 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         kind: 'bullets',
-        heading: 'Details that make a gift sleeve work',
+        heading: 'Details That Make a Gift Sleeve Work',
         items: [
           'A window or cut-out so the card is visible without removing it.',
           'A blank panel for a handwritten message, on an uncoated surface that takes ink.',
