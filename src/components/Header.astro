@@ -63,9 +63,19 @@ const areaColumns = [
   },
 ];
 
+/**
+ * The visible bar. About and Contact were removed from it: both sit in the
+ * footer of every page and in the mobile drawer, and neither is what a visitor
+ * came to the site to do. Dropping them buys the width that "Design Your Own"
+ * needs, and leaves the bar reading as three things you can act on.
+ */
 const links = [
-  { label: 'Design Yours', href: '/design-your-cone-sleeve/' },
+  { label: 'Design Your Own', href: '/design-your-cone-sleeve/' },
   { label: 'Guides', href: '/blog/' },
+];
+
+/** Kept out of the bar, kept in the drawer — the drawer is a full index. */
+const drawerOnlyLinks = [
   { label: 'About', href: '/about/' },
   { label: 'Contact', href: '/contact/' },
 ];
@@ -80,7 +90,7 @@ const isActive = (href: string) =>
 const onProducts =
   currentPath === '/products/' ||
   ranges.some((r) => currentPath.startsWith(r.href)) ||
-  (!links.some((l) => currentPath.startsWith(l.href)) &&
+  (![...links, ...drawerOnlyLinks].some((l) => currentPath.startsWith(l.href)) &&
     currentPath !== '/' &&
     !currentPath.startsWith('/blog/'));
 ---
@@ -263,7 +273,11 @@ const onProducts =
             </ul>
           </details>
         </li>
-        {links.map((l) => <li><a href={l.href}>{l.label}</a></li>)}
+        {[...links, ...drawerOnlyLinks].map((l) => (
+          <li>
+            <a href={l.href}>{l.label}</a>
+          </li>
+        ))}
         <li><a href="/faqs/">FAQs</a></li>
       </ul>
     </nav>

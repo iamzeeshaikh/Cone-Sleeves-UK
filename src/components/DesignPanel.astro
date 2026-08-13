@@ -38,6 +38,20 @@ const SHAPES: Record<string, 'cone' | 'wrap' | 'tray' | 'cup' | 'bag'> = {
 };
 const shape = SHAPES[rangeSlug] ?? 'cone';
 
+/**
+ * One line of buying advice per silhouette. A colour picker on its own is a
+ * toy; the thing that makes it worth a visitor's time is being told something
+ * they did not know while they play with it.
+ */
+const TIPS: Record<string, string> = {
+  cone: 'Leave two or three centimetres of wafer showing. Customers read a visible cone as freshly made, and the sleeve still catches the first drips.',
+  wrap: 'A narrow band uses less board than a full wrap and carries the same name. Wrap deeper only where the filling actually runs.',
+  tray: 'Put the branding on the face that points upwards. That is the one a customer looks at while carrying the tray back to a table.',
+  cup: 'A printed sleeve brands a plain cup you already buy, which is why a single site usually reaches for one before it reaches for a printed cup.',
+  bag: 'On unbleached board every colour prints warmer than it looks here. Two inks chosen for kraft beat four fighting the brown.',
+};
+const tip = TIPS[shape];
+
 const subject = product?.name ?? 'Cone Sleeve';
 const title = heading ?? `Design Your ${subject}`;
 
@@ -70,11 +84,12 @@ const textPos = TEXT_POS[shape];
 
 <section class="design-panel" data-design-panel data-shape={shape}>
   <div class="dp-head">
-    <p class="eyebrow">Design Yours</p>
+    <p class="eyebrow">Design Your Own</p>
     <h2>{title}</h2>
     <p class="dp-lede">
-      Put your colour and your name on it to see how the idea reads. This is a
-      representation, not a manufacturing proof — the die is cut from your own product.
+      Pick a colour, put your name on it, and see how the idea reads before you ask anyone
+      for a price. It is a sketch rather than a manufacturing proof — the real shape is cut
+      from the product you already serve.
     </p>
   </div>
 
@@ -222,10 +237,12 @@ const textPos = TEXT_POS[shape];
         </label>
       </p>
 
-      <a class="btn btn-primary dp-cta" href={fullHref}>Take this into the full designer</a>
+      {tip && <p class="dp-tip">{tip}</p>}
+
+      <a class="btn btn-primary dp-cta" href={fullHref}>Carry this into the full designer</a>
       <p class="dp-note">
-        The full page adds size, board, print and quantity, then sends the whole
-        specification to us in one go.
+        The full page adds the size, board, print and quantity, then sends the whole
+        specification over in one go. Nothing is committed to at any point.
       </p>
     </div>
   </div>
@@ -361,6 +378,17 @@ const textPos = TEXT_POS[shape];
     display: flex;
     align-items: center;
     gap: 0.45rem;
+  }
+
+  .dp-tip {
+    margin-top: var(--space-m);
+    padding: 0.7rem 0.85rem;
+    background: var(--green-050);
+    border-left: 3px solid var(--green-500);
+    border-radius: 0 var(--radius-m) var(--radius-m) 0;
+    font-size: var(--step--1);
+    color: var(--green-800);
+    line-height: 1.5;
   }
 
   .dp-cta {

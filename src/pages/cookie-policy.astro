@@ -1,9 +1,10 @@
 ---
 import TextPage from '~/layouts/TextPage.astro';
-import { CONTACT, ANALYTICS } from '~/config/site';
+import { CONTACT, ANALYTICS, CHAT } from '~/config/site';
 
 const path = '/cookie-policy/';
 const analyticsActive = Boolean(ANALYTICS.ga4 || ANALYTICS.gtm);
+const chatActive = Boolean(CHAT.zendeskKey);
 ---
 
 <TextPage
@@ -11,30 +12,57 @@ const analyticsActive = Boolean(ANALYTICS.ga4 || ANALYTICS.gtm);
   description="What cookies and tracking technologies conesleeves.co.uk uses, described accurately rather than as a generic template."
   path={path}
   h1="Cookie Policy"
-  standfirst="This page describes what this website actually sets — which, as it is configured today, is nothing."
+  standfirst="What this website actually sets, described from how it is configured rather than from a template."
   updated="2026-08-13"
   crumbLabel="Cookie Policy"
 >
   {
+    chatActive && (
+      <>
+        <h2>Live Chat Sets Cookies</h2>
+        <p>
+          This site loads Zendesk Chat so you can talk to us during the working day. Zendesk
+          sets cookies in your browser to keep a conversation attached to you as you move
+          between pages, to remember whether the chat window is open, and to reconnect you
+          to the same conversation if you return.
+        </p>
+        <p>
+          These are set by Zendesk rather than by us, and they are governed by Zendesk's own
+          privacy terms as well as this policy. They are not used for advertising.
+        </p>
+        <p class="pending">
+          <strong>This section needs completing before launch</strong>
+          Zendesk's current cookie names, their individual purposes and their lifetimes have
+          not been listed here, because they should be taken from Zendesk's own published
+          documentation rather than guessed at. A consent mechanism is also outstanding: the
+          chat widget loads on page load today, and non-essential cookies should be set only
+          after a visitor agrees.
+        </p>
+      </>
+    )
+  }
+
+  {
     !analyticsActive && (
       <>
-        <h2>This Site Sets No Cookies</h2>
+        <h2>No Analytics or Advertising Cookies</h2>
         <p>
-          As currently built and deployed, conesleeves.co.uk sets no cookies of its own, no
-          analytics cookies, and no advertising or tracking cookies. No analytics tag,
-          tag manager, advertising pixel or session-recording script is loaded on any page.
+          Beyond live chat, conesleeves.co.uk sets no cookies of its own, no analytics
+          cookies, and no advertising or tracking cookies. No analytics tag, tag manager,
+          advertising pixel or session-recording script is loaded on any page.
         </p>
         <p>
           That is a statement about how the site is configured rather than a promise about
-          the future. Because it is true today, this site does not display a cookie consent
-          banner — showing one for cookies that are never set would be misleading.
+          the future. It will stop being accurate the moment a tag is switched on, which is
+          why the section below sets out what has to happen if one is.
         </p>
 
-        <h2>What the Site Does Store</h2>
+        <h2>What the Site Itself Stores</h2>
         <p>
-          Nothing in your browser. There is no local storage, no session storage and no
-          fingerprinting. Fonts and images are served from this domain rather than from a
-          third-party network, so no request leaves this site as you browse it.
+          Nothing in your browser. The site's own code uses no local storage, no session
+          storage and no fingerprinting. Fonts and images are served from this domain rather
+          than from a third-party network, so browsing the pages themselves sends no request
+          elsewhere.
         </p>
         <p>
           Our server records the IP address of enquiry form submissions briefly, in order to
@@ -89,11 +117,16 @@ const analyticsActive = Boolean(ANALYTICS.ga4 || ANALYTICS.gtm);
     )
   }
 
-  <h2>Third-Party Links</h2>
+  <h2>Third Parties</h2>
   <p>
     The WhatsApp buttons on this site open WhatsApp, which is operated by a third party
     with its own cookies and privacy terms. Following that link takes you outside this
     website and outside this policy.
+  </p>
+  <p>
+    Zendesk, which provides the chat window, is a third party processing what you type in
+    that window on our behalf. Anything you send through chat reaches Zendesk as well as
+    us.
   </p>
 
   <h2>Questions</h2>

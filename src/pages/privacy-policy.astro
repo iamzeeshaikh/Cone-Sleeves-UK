@@ -1,6 +1,6 @@
 ---
 import TextPage from '~/layouts/TextPage.astro';
-import { CONTACT, BUSINESS_PENDING, ANALYTICS } from '~/config/site';
+import { CONTACT, BUSINESS_PENDING, ANALYTICS, CHAT } from '~/config/site';
 
 const path = '/privacy-policy/';
 ---
@@ -45,6 +45,15 @@ const path = '/privacy-policy/';
     Our web server also records the IP address a submission came from, for the short
     period needed to apply a rate limit that keeps automated spam off the form.
   </p>
+  {
+    CHAT.zendeskKey && (
+      <p>
+        If you open the chat window, whatever you type into it — and any name or email you
+        give there — reaches us through Zendesk. Treat it as you would an email: it is a
+        good place to ask a question, and not the place to send anything confidential.
+      </p>
+    )
+  }
 
   <h2>Why We Hold It</h2>
   <p>
@@ -72,6 +81,14 @@ const path = '/privacy-policy/';
     system. The website is hosted by a hosting provider that processes requests to it.
     These providers act on our instructions.
   </p>
+  {
+    CHAT.zendeskKey && (
+      <p>
+        Live chat is provided by Zendesk, which processes chat messages on our behalf and
+        holds them in its own systems under its own terms.
+      </p>
+    )
+  }
   <p class="pending">
     <strong>Processor names pending</strong>
     The specific hosting, email and any customer-management providers used for the live
@@ -88,9 +105,9 @@ const path = '/privacy-policy/';
       </p>
     ) : (
       <p>
-        This site currently sets no cookies of its own and loads no analytics or advertising
-        scripts. If analytics is enabled later, our{' '}
-        <a href="/cookie-policy/">cookie policy</a> will describe exactly what it sets, and a
+        This site loads no analytics or advertising scripts. The live chat window does set
+        cookies, which our <a href="/cookie-policy/">cookie policy</a> describes. If
+        analytics is enabled later, that page will describe exactly what it sets, and a
         consent mechanism will be added first.
       </p>
     )

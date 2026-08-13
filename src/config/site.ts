@@ -93,6 +93,18 @@ export const BUSINESS_PENDING = {
   registeredAddress: import.meta.env.PUBLIC_REGISTERED_ADDRESS || '',
 } as const;
 
+/**
+ * Zendesk Chat (Zopim). The key is a public widget identifier, not a secret —
+ * it is visible in the page source by design — but it lives here so there is
+ * one place to change or disable it.
+ *
+ * Supplied by the client 2026-08-13. Blank the env var to remove the widget.
+ */
+export const CHAT = {
+  zendeskKey:
+    import.meta.env.PUBLIC_ZENDESK_CHAT_KEY || '4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP',
+} as const;
+
 export const ANALYTICS = {
   ga4: import.meta.env.PUBLIC_GA4_ID || '',
   gtm: import.meta.env.PUBLIC_GTM_ID || '',

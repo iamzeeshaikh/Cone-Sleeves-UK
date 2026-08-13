@@ -4,7 +4,7 @@ import Seo from '~/components/Seo.astro';
 import Header from '~/components/Header.astro';
 import Footer from '~/components/Footer.astro';
 import FloatingContact from '~/components/FloatingContact.astro';
-import { SITE, ANALYTICS } from '~/config/site';
+import { SITE, ANALYTICS, CHAT } from '~/config/site';
 import { organisation, website } from '~/lib/schema';
 
 interface Props {
@@ -96,6 +96,20 @@ const graph = [organisation(), website(), ...schema];
     />
 
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} guides`} href="/rss.xml" />
+
+    {
+      /* Zendesk Chat. The snippet is inline but everything it does is
+         asynchronous — it appends a script with async set — so it does not
+         block the first paint. Emitted only when a key is configured. */
+    }
+    {
+      CHAT.zendeskKey && (
+        <script
+          is:inline
+          set:html={`window.$zopim||(function(d,s){var z=$zopim=function(c){z._.push(c)},$=z.s=d.createElement(s),e=d.getElementsByTagName(s)[0];z.set=function(o){z.set._.push(o)};z._=[];z.set._=[];$.async=!0;$.setAttribute('charset','utf-8');$.src='https://v2.zopim.com/?${CHAT.zendeskKey}';z.t=+new Date;$.type='text/javascript';e.parentNode.insertBefore($,e)})(document,'script');`}
+        />
+      )
+    }
 
     {
       /* Analytics is only emitted when a real ID is configured. No invented
