@@ -99,9 +99,15 @@ being allowed to publish.
 | No substantial duplication | ✅ 30 distinct section sequences | ✅ | ✅ Section order varies per page |
 | No unsupported location claims | n/a | n/a | ✅ No offices, depots, teams or local delivery promises |
 | No keyword cannibalisation | ✅ | ✅ | ✅ |
+| At least 10 FAQs, none repeated | ✅ 1,700 pairs | ✅ 180 pairs | ✅ 250 pairs |
 
 Pages that failed these tests were **not published**. The full list of what
 was dropped and why is in `MIGRATION-INVENTORY.md` §5 and §7.
+
+The FAQ row is enforced rather than sampled: `scripts/validate-content.mjs`
+fails the build when any page carries fewer than ten pairs, repeats a
+question within a page, or reuses an answer already used on another page.
+Blog articles carry ten each on the same terms.
 
 ---
 

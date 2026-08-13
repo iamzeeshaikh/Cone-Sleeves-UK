@@ -76,6 +76,34 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Can one sleeve cover a single and a double?',
         a: 'Only by sizing for the double, which then looks slack on the single and photographs badly. Most sites end up running two heights from one artwork file.',
       },
+      {
+        q: 'How do we measure a burger for a sleeve?',
+        a: 'Build one exactly as it leaves your pass, then measure its height and its width at the widest point. A photograph beside a ruler answers more than a written description.',
+      },
+      {
+        q: 'Do sleeves work for smash burgers?',
+        a: 'Yes, and they suit them well, because a smash patty spreads wider than the bun. Measure the finished item rather than the bun, or the sleeve will be short.',
+      },
+      {
+        q: 'Will a sleeve keep the burger warm?',
+        a: 'Barely. It cuts draughts and stops the base cooling against a cold surface, but board does not insulate. A lidded container is the answer if heat retention is the issue.',
+      },
+      {
+        q: 'Can the sleeve carry a burger name?',
+        a: 'Yes, and on a multi-burger menu it saves staff opening wrappers to check. On digital printing several names in one run is straightforward.',
+      },
+      {
+        q: 'What board stops grease showing through?',
+        a: 'A greaseproof liner or a coated inner face. Board weight alone only delays it, and on a delivery order the delay is shorter than the journey.',
+      },
+      {
+        q: 'Do sleeves suit delivery orders?',
+        a: 'A full wrap does. A half-height sleeve looks better on a counter and struggles once a courier bag moves, so sites doing both often run two depths.',
+      },
+      {
+        q: 'Can we print inside the sleeve?',
+        a: 'On a deep wrap the inner face shows every time the customer looks down. It adds a press pass, so it is worth deciding before the quote rather than after.',
+      },
     ],
     related: [
       'custom-sandwich-sleeves',
@@ -142,6 +170,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Can we print along the length of the sleeve?',
         a: 'A long narrow face suits a wordmark set lengthways, which reads well when the dog is held. Keep artwork clear of the base fold, since that area is creased and partly hidden.',
       },
+      {
+        q: 'Why does the base matter so much?',
+        a: 'Because mustard, onions and sauce travel downwards. An open tube looks tidy on the counter and leaks within a minute of the customer walking off.',
+      },
+      {
+        q: 'Can one sleeve fit a standard and a footlong?',
+        a: 'Not comfortably. The extra length makes the wrap flex in the middle, and a sleeve sized for the footlong looks slack on the standard.',
+      },
+      {
+        q: 'Should we measure the roll or the sausage?',
+        a: 'The roll, and the loaded height if you serve with toppings. A sleeve sized to a plain dog pushes toppings off the far end when it is fitted.',
+      },
+      {
+        q: 'Will the print run along the length?',
+        a: 'It can, and a wordmark set lengthways reads well when the dog is held. Keep artwork clear of the base fold, which is creased and partly hidden.',
+      },
+      {
+        q: 'Do sauces stain the board differently from grease?',
+        a: 'Yes. Tomato and mustard are acidic and watery rather than oily, and they behave differently against a coating. Tell us what goes on top.',
+      },
+      {
+        q: 'Are these suitable for a festival pitch?',
+        a: 'Yes, and outdoor trading argues for a laminated finish. Rain and handling both work on an unlaminated surface faster than they do indoors.',
+      },
+      {
+        q: 'Can we get a sleeve with a napkin pocket?',
+        a: 'Anything that can be drawn as a closed outline can generally be cut, though it is a bespoke die. Send a sketch and we will tell you what will hold.',
+      },
+      {
+        q: 'How do we stop the dog sliding out?',
+        a: 'A closed or folded base and a wrap sized to grip the roll rather than surround it. Too generous a fit is the usual cause.',
+      },
     ],
     related: [
       'custom-corn-dog-sleeves',
@@ -207,6 +267,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Does the batter stick to the board?',
         a: 'Fresh from the fryer it can, on an uncoated surface. A coated or lined inner face reduces it, and letting the corn dog drain briefly before sleeving makes more difference than any board choice.',
       },
+      {
+        q: 'How wide should the stick opening be?',
+        a: 'Sized to the sticks you actually buy, which vary more than people expect. Send one with your sample if you can, or measure its diameter.',
+      },
+      {
+        q: 'Can we use a hot dog sleeve instead?',
+        a: 'Not well. It is closed at the base and sized to a soft roll, where a corn dog needs the stick through and a board that copes with fryer oil.',
+      },
+      {
+        q: 'Does batter stick to the board?',
+        a: 'Straight from the fryer it can, on an uncoated surface. A coated inner face reduces it, and letting the corn dog drain briefly helps more than any board choice.',
+      },
+      {
+        q: 'How long should the sleeve be?',
+        a: 'Long enough to cover the battered section without reaching the customer\'s mouth. Measure the batter, not the sausage inside it.',
+      },
+      {
+        q: 'Do these suit indoor service too?',
+        a: 'They do, though the stick opening matters most where customers walk. Seated service can use a tray and a simpler wrap.',
+      },
+      {
+        q: 'Will the sleeve stay put while eating?',
+        a: 'With a correctly sized stick opening, yes. Too wide and it slides down the stick; too narrow and staff fight it during a rush.',
+      },
+      {
+        q: 'Can we print in one colour to keep costs down?',
+        a: 'Yes, and the visible area is small enough that a single strong colour usually reads better than a detailed design.',
+      },
+      {
+        q: 'Are they suitable for other food on sticks?',
+        a: 'Often, if the loaded diameter is similar. Skewers and battered items on sticks share the same problem, though the wrap length usually differs.',
+      },
     ],
     related: [
       'custom-hot-dog-sleeves',
@@ -266,6 +358,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'What size should the sleeve be for a 12in tortilla?',
         a: 'That depends entirely on how tightly your team rolls and how much filling goes in. Two kitchens using the same tortilla can produce burritos a centimetre apart in diameter, so we size from a real one.',
+      },
+      {
+        q: 'How tight should a burrito sleeve be?',
+        a: 'Slightly under the diameter of the rolled burrito, so it holds the roll closed rather than sitting around it. A loose sleeve looks fine and does nothing.',
+      },
+      {
+        q: 'Do we need one if we wrap in foil first?',
+        a: 'The foil holds the burrito; the sleeve carries the brand and gives a clean grip. Where foil is used first, the sleeve can be a lighter, cheaper board.',
+      },
+      {
+        q: 'What size fits a 12in tortilla?',
+        a: 'That depends entirely on how tightly your team rolls and how much filling goes in. Two kitchens using the same tortilla produce burritos a centimetre apart.',
+      },
+      {
+        q: 'Will the sleeve tear as the customer pushes it down?',
+        a: 'Not on an appropriate board. A sleeve that tears halfway through is worse than none, because the burrito is already open by then.',
+      },
+      {
+        q: 'Should the base be closed?',
+        a: 'Worth having. The base collects juice as the filling settles, and an open bottom delivers it onto a customer\'s hands.',
+      },
+      {
+        q: 'Can we print a filling name on each sleeve?',
+        a: 'On digital printing, yes, and it saves staff opening wrappers to check. Send the number of fillings and the split between them.',
+      },
+      {
+        q: 'Do these work for shawarma and wraps?',
+        a: 'The same tapered principle applies. What changes is the diameter, so measure a made-up item of each rather than assuming they match.',
+      },
+      {
+        q: 'How do these ship?',
+        a: 'Flat and die-cut, assembled at the pass. That keeps storage small, which matters in the compact kitchens most burrito operations run from.',
       },
     ],
     related: [
@@ -336,6 +460,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Do we need to leave room for an allergen label?',
         a: 'If the wrap is sold pre-packed, almost certainly. Tell us the label size at quote stage and we will keep that area clear of artwork rather than having a sticker land on your logo.',
+      },
+      {
+        q: 'Should the sleeve be cut at an angle?',
+        a: 'If you slice on the diagonal, yes. A square sleeve either covers the filling on one half or leaves the other unsupported, which shows across a full cabinet.',
+      },
+      {
+        q: 'How much room do we need for a label?',
+        a: 'Whatever size label you apply. Reserve that area in the artwork rather than adding one afterwards, or the sticker lands across your logo.',
+      },
+      {
+        q: 'Can we add a window?',
+        a: 'Yes, as an open cut-out or with film behind it. An open cut-out avoids a mixed material and suits hot service more than a chilled cabinet.',
+      },
+      {
+        q: 'Do hot and chilled wraps need different sleeves?',
+        a: 'Usually. A chilled wrap sits for hours and needs to look good undisturbed; a hot one goes out in seconds and needs grease resistance instead.',
+      },
+      {
+        q: 'Will the sleeve hold the wrap together?',
+        a: 'It holds the roll compressed, which is most of the job. A wrap that unrolls in the hand is usually a sizing problem rather than a board one.',
+      },
+      {
+        q: 'Does cabinet lighting affect the print?',
+        a: 'It drains warmth from colours, which is why print for chilled retail often runs slightly stronger. Check a sample under your own cabinet rather than in daylight.',
+      },
+      {
+        q: 'Can one sleeve cover several wrap fillings?',
+        a: 'Physically yes, if the diameter is similar. Whether you want the same printed sleeve on every filling is a labelling decision rather than a packaging one.',
+      },
+      {
+        q: 'How do we stop the sleeve curling in a chiller?',
+        a: 'A laminated or coated board resists it. Light unlaminated stock takes up moisture on one face faster than the other, which is what causes the curl.',
       },
     ],
     related: [
@@ -408,6 +564,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Should the sleeve or a label carry the allergen information?',
         a: 'That is a decision for your own food-safety process rather than a packaging one. What we can do is reserve a clear panel of the size you specify so whichever route you take is not obstructed by artwork.',
       },
+      {
+        q: 'Where should the label panel go?',
+        a: 'Somewhere flat and clear of the artwork, sized to the label you actually apply. Deciding this after the design is how stickers end up across logos.',
+      },
+      {
+        q: 'Can we print a different filling name on each sleeve?',
+        a: 'On digital printing this is normal and is how most small ranges are produced. Send the number of lines and the quantity of each so the split is priced properly.',
+      },
+      {
+        q: 'Should the sleeve be angled or square?',
+        a: 'Angled if you cut on the diagonal, which most delis do. It holds both halves at the right height and leaves the cut face on show.',
+      },
+      {
+        q: 'Do we need grease resistance for sandwiches?',
+        a: 'For mayonnaise-based and hot fillings, yes. Dry fillings are far less demanding and can use a lighter, cheaper board.',
+      },
+      {
+        q: 'Will one sleeve height work across our range?',
+        a: 'It usually should, and a consistent height makes a chiller shelf look considerably tidier than a mix of sizes.',
+      },
+      {
+        q: 'Can the sleeve carry allergen information?',
+        a: 'It can carry a printed panel, or you can reserve a clear area for a sticker. Which suits depends on how often your recipes change.',
+      },
+      {
+        q: 'What makes a sandwich sell from a chiller?',
+        a: 'With the cut face visible and enough unprinted area that the bread and filling are the colour you notice first. Heavy artwork works against that.',
+      },
+      {
+        q: 'Do these suit made-to-order counters?',
+        a: 'They do, though a folded paper wrap is quicker at a busy counter. Sleeves suit pre-made retail; wraps suit service.',
+      },
     ],
     related: [
       'custom-wrap-sleeves',
@@ -470,6 +658,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Can one sleeve hold two tacos?',
         a: 'It can physically, but the two lean together and fillings mix. Most operators find a divided tray works better once the order is more than one.',
+      },
+      {
+        q: 'Do hard and soft shells need different sleeves?',
+        a: 'Yes. A soft shell needs holding closed; a hard shell needs supporting without pressure. A sleeve tight enough for one cracks the other.',
+      },
+      {
+        q: 'Will a sleeve stop a hard shell cracking?',
+        a: 'It reduces it by spreading the grip, provided the fit is generous. A tight sleeve causes the very break it is meant to prevent.',
+      },
+      {
+        q: 'What board suits taco fillings?',
+        a: 'A greaseproof-lined board, because taco fillings are oily and sauced. Soft shells transmit that oil faster than hard shells do.',
+      },
+      {
+        q: 'Do we need paper as well?',
+        a: 'They solve different problems. The sleeve holds the shell; a sheet underneath catches what falls out of the bottom. Loaded tacos usually need both.',
+      },
+      {
+        q: 'Can the sleeve be printed both sides?',
+        a: 'It can, though on a small item the inner face is barely seen. The budget usually does more on the outer face and the board grade.',
+      },
+      {
+        q: 'How do these ship?',
+        a: 'Flat and die-cut. Taco sleeves are small, so a case holds a great many, which suits the compact kitchens most taco operations run from.',
+      },
+      {
+        q: 'Are they suitable for a street food pitch?',
+        a: 'Yes, and outdoor trading argues for a laminated finish. A matt surface also grips better when hands are oily.',
+      },
+      {
+        q: 'Can we order sleeves and papers together?',
+        a: 'Yes, and using both is common on loaded tacos. Running them in one job keeps the branding consistent.',
       },
     ],
     related: [
@@ -537,6 +757,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'What portion size should I order for?',
         a: 'Weigh a typical serving on your own scales and send us the figure. Portion sizes described as "regular" or "large" differ enormously between kitchens, and weight is the only reliable basis for sizing.',
       },
+      {
+        q: 'Why do chips go soft in packaging?',
+        a: 'Trapped steam rather than the board. An open format lets it escape; a closed one holds it against the chips and softens them within minutes.',
+      },
+      {
+        q: 'How do we stop the sleeve closing while filling?',
+        a: 'A crease pattern or gusset that holds the mouth open. Check it on an unprinted sample before the run — staff need a free hand for the fryer basket.',
+      },
+      {
+        q: 'What portion size should we quote for?',
+        a: 'Weigh a typical serving on your own scales. Descriptions like regular and large vary far too much between kitchens to size from.',
+      },
+      {
+        q: 'Do these work for delivery?',
+        a: 'Poorly. An open sleeve tips and chips migrate once a bag moves. If a meaningful share of orders are delivered, ask us to price a vented carton alongside.',
+      },
+      {
+        q: 'Will the base stay stable when set down?',
+        a: 'With a wide enough base, yes. A narrow sleeve tips when a customer puts it down to pick up a drink, which is a common complaint.',
+      },
+      {
+        q: 'What finish suits oily hands?',
+        a: 'Matt. Gloss is noticeably slippery once fingers are greasy, which matters more on chips than on almost anything else.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes. The grease resistance is a lining on the inner face, so the printable outer surface behaves like any other board.',
+      },
+      {
+        q: 'At what size should we move to a box?',
+        a: 'Around 200 grams a sleeve gets unwieldy and a scoop or carton holds its shape better. Weigh your largest portion and tell us the figure.',
+      },
     ],
     related: [
       'french-fry-boxes',
@@ -602,6 +854,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Does the sleeve keep the slice hot?',
         a: 'Barely. It stops the underside cooling against a cold counter and cuts draughts, but a slice eaten ten minutes later will be lukewarm whatever it is carried in.',
       },
+      {
+        q: 'How far towards the tip must the sleeve reach?',
+        a: 'At least two thirds. Support that stops short lets the slice pivot and fold anyway, which is the failure customers notice immediately.',
+      },
+      {
+        q: 'Can one wedge fit different pizza sizes?',
+        a: 'Only if you size for the largest, which leaves smaller slices loose. Counters cutting one standard diameter get a far better fit.',
+      },
+      {
+        q: 'Do we need grease resistance?',
+        a: 'Yes. Cheese oil soaks through untreated board quickly, and a slice sits in the sleeve for the whole time it is being eaten.',
+      },
+      {
+        q: 'Will it hold two slices back to back?',
+        a: 'Not a single-slice sleeve. A back-to-back pair is thicker and heavier and needs a deeper wedge sized for it from the start.',
+      },
+      {
+        q: 'What do we measure?',
+        a: 'Crust width at the outer edge, and the length from crust to tip. Both change with pizza diameter, so measure the size you actually cut.',
+      },
+      {
+        q: 'Can customers eat straight from the sleeve?',
+        a: 'That is the point of it. The crust end stays in the hand while the supported underside stops the tip dropping.',
+      },
+      {
+        q: 'Do these suit a takeaway counter?',
+        a: 'They are designed for it. For seated service a wedge tray presents better, which is why counters doing both often stock each.',
+      },
+      {
+        q: 'Do these suit a festival pitch?',
+        a: 'They do, and a slice sleeve is what lets a customer walk with a slice rather than needing a plate.',
+      },
     ],
     related: [
       'custom-pizza-slice-trays',
@@ -666,6 +950,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Should the sleeve be tall and narrow or short and wide?',
         a: 'Tall and narrow looks like more popcorn for the same volume, which is why cinema packaging has that shape. Short and wide is easier to eat from while seated. Choose by which matters more to you.',
+      },
+      {
+        q: 'Does popcorn need a lined board?',
+        a: 'Dry-seasoned and glazed popcorn does not, which makes these among the cheapest printed items in the range. Buttered popcorn does need a lining.',
+      },
+      {
+        q: 'Should the sleeve be tall or wide?',
+        a: 'Tall and narrow reads as more popcorn for the same volume, which is why cinema packaging has that shape. Wide is easier to eat from while seated.',
+      },
+      {
+        q: 'Will an unlined sleeve recycle easily?',
+        a: 'It is the simplest thing here to put into a paper stream, because there is no lining or lamination to separate. That is a genuine advantage of dry food.',
+      },
+      {
+        q: 'How do we size for a portion?',
+        a: 'By volume rather than weight. Popcorn is far bulkier per gram than anything else in this range, so a weight-based estimate comes out much too small.',
+      },
+      {
+        q: 'Can we print for a dark room?',
+        a: 'Design for contrast rather than detail. Cinema foyers and auditoriums are dim, and fine artwork disappears where a bold block still reads.',
+      },
+      {
+        q: 'Do these work for weddings and parties?',
+        a: 'Frequently, usually as a short printed run with a name or date. Digital printing makes a few hundred workable.',
+      },
+      {
+        q: 'Will the sleeve stand up on its own?',
+        a: 'With a formed base, yes. A flat sleeve needs holding while filled, which slows a busy counter noticeably.',
+      },
+      {
+        q: 'Can we match these to a popcorn tray?',
+        a: 'Yes, and running both in one order keeps the colour consistent. Printed separately months apart the same brand colour drifts visibly.',
       },
     ],
     related: [
@@ -736,6 +1052,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Will chocolate sauce stain through the sleeve?',
         a: 'On a lined board, not within a normal serve. On plain board it shows as a dark patch at the fold quite quickly, which is why lining is the standard specification here.',
       },
+      {
+        q: 'Will chocolate sauce stain through?',
+        a: 'Not through a greaseproof-lined board within a normal serve. On plain board it shows as a dark patch at the fold within a few minutes.',
+      },
+      {
+        q: 'How do we size a folded crepe sleeve?',
+        a: 'From your folded crepe, which varies with pan size. Fold one as you serve it and measure the triangle rather than the flat crepe.',
+      },
+      {
+        q: 'Should the point stay open?',
+        a: 'Yes, so the customer can eat down without unwrapping. A fully closed sleeve means unwrapping a warm, sauced item in one hand.',
+      },
+      {
+        q: 'Do fruit fillings need a different board?',
+        a: 'Fruit adds water on top of the oil from a sweet filling. A lined board handles both; plain board goes soft at the fold faster with fruit.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, and crepe stands are usually visual businesses where it earns its cost. A matt finish handles warm, sticky contact better than gloss.',
+      },
+      {
+        q: 'Are these suitable for savoury crepes?',
+        a: 'Yes. Savoury fillings carry more free oil than sweet ones, so a lined board matters even more on a savoury crepe menu.',
+      },
+      {
+        q: 'How do they ship?',
+        a: 'Flat and die-cut. A triangular sleeve nests well, so a case holds a good quantity for the storage space it takes.',
+      },
+      {
+        q: 'Can we order these alongside crepe cone holders?',
+        a: 'Yes, and running both in one job keeps the colour consistent between the folded and rolled formats.',
+      },
     ],
     related: [
       'crepe-cone-packaging',
@@ -805,6 +1153,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Can the sleeve carry allergen labelling?',
         a: 'It can carry a printed panel, or you can reserve a clear area for a sticker. Which route suits depends on how often your recipes change, so it is worth deciding before artwork.',
+      },
+      {
+        q: 'What desserts suit a sleeve rather than a box?',
+        a: 'Anything firm enough to hold its own shape — slices, brownies, traybakes. Soft-set desserts slump sideways and need walls on all sides.',
+      },
+      {
+        q: 'Do brownies need a lined board?',
+        a: 'Yes. They are dense and greasy enough to mark plain board within hours in a display cabinet, which customers see before they buy.',
+      },
+      {
+        q: 'Can the sleeve carry allergen information?',
+        a: 'Either a printed panel or a reserved blank area for a sticker. Bakeries changing recipes weekly usually find the sticker route far less restrictive.',
+      },
+      {
+        q: 'Will a sleeve stop a slice tipping?',
+        a: 'No. It holds the sides and leaves the top and bottom open, so a tall or heavily iced slice still needs a box.',
+      },
+      {
+        q: 'What board weight suits a cake slice?',
+        a: 'Modest, because the item is dry and firm. That leaves more of the budget for the print, which is where the value sits on a dessert.',
+      },
+      {
+        q: 'Can we run several dessert names in one order?',
+        a: 'On digital printing, yes. Send the number of names and the quantity of each rather than a single total, so the split is priced properly.',
+      },
+      {
+        q: 'Do these suit a takeaway dessert business?',
+        a: 'They do for firm items. Anything with sauce needs a lidded container, since an open-bottomed sleeve is the wrong format for liquid.',
+      },
+      {
+        q: 'How do they present in a cabinet?',
+        a: 'They read as a product with a price rather than a loose item, which is usually why cafés move to them from bags.',
       },
     ],
     related: [
@@ -877,6 +1257,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Can we order a small quantity for a wedding?',
         a: 'Short runs are normal for this product and digital printing makes a few hundred workable. Send the quantity and the date and we will tell you what is realistic.',
       },
+      {
+        q: 'What measurement matters most?',
+        a: 'The height from the base of the case to where the icing begins. Sizing to the cake rather than the icing line is what smears tops.',
+      },
+      {
+        q: 'Should the sleeve grip the case or surround it?',
+        a: 'Surround it, loosely enough to slide off cleanly. A gripping fit deforms the case and makes removal awkward with one hand.',
+      },
+      {
+        q: 'Do cupcakes need a lined board?',
+        a: 'Rarely. The case already sits between the cake and the sleeve, so plain light board is usually adequate and cheaper.',
+      },
+      {
+        q: 'Can we order a few hundred for a wedding?',
+        a: 'Short runs are normal for this product and digital printing makes them workable. Send the quantity and the date together.',
+      },
+      {
+        q: 'Will the sleeve fit any cupcake case?',
+        a: 'Case diameters vary between suppliers. Send one of yours, or measure across the top of the case rather than the base.',
+      },
+      {
+        q: 'Can we print a name or date?',
+        a: 'Yes, and it is one of the most common short-run requests here. On digital printing several versions in one order is straightforward.',
+      },
+      {
+        q: 'Do these work if cupcakes travel in a box?',
+        a: 'They do, and in that case the sleeve is presentation rather than protection, so a lighter board and a better print is the sensible split.',
+      },
+      {
+        q: 'How do they ship?',
+        a: 'Flat and die-cut, assembled at the counter. They take very little storage, which suits the small kitchens most cupcake businesses work from.',
+      },
     ],
     related: [
       'custom-muffin-sleeves',
@@ -940,6 +1352,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Do muffin sleeves need lining?',
         a: 'Generally yes. Muffins carry enough fat to mark plain board over a morning in a cabinet, which is visible to customers well before the muffin is sold.',
+      },
+      {
+        q: 'Where do we measure a muffin?',
+        a: 'Across the dome at its widest, not across the case. The widest point sits above the case, which is why case-sized sleeves will not go on.',
+      },
+      {
+        q: 'Why do muffins need a lined board when cupcakes do not?',
+        a: 'Muffins carry enough fat to mark plain board within a couple of hours in a display cabinet, which is visible well before they sell.',
+      },
+      {
+        q: 'Can a cupcake sleeve be used at a push?',
+        a: 'Rarely. It is sized to the case, and forcing it over a wider dome tears the top of the muffin as it goes on.',
+      },
+      {
+        q: 'Do hand-baked muffins vary too much to size?',
+        a: 'They vary more than machine-made ones, which is why a slightly generous fit works better here than a close one.',
+      },
+      {
+        q: 'Should the sleeve be taller for takeaway?',
+        a: 'It often helps, since a taller wrap holds the muffin more securely in a bag. For eat-in, a shorter band presents the dome better.',
+      },
+      {
+        q: 'Can we print a flavour name?',
+        a: 'Yes, and on a multi-flavour counter it saves staff checking. Digital printing makes several names in one run affordable.',
+      },
+      {
+        q: 'Will the sleeve leave a mark on the muffin?',
+        a: 'Not with a coated inner face. On uncoated board a warm muffin can stick slightly where the fat has soaked in.',
+      },
+      {
+        q: 'Do these suit a grab-and-go counter?',
+        a: 'They are mostly bought for exactly that. A sleeve is quicker than bagging and leaves the dome visible, which is what sells it.',
       },
     ],
     related: [
@@ -1012,6 +1456,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Do filled doughnuts need a different sleeve from rings?',
         a: 'Usually yes. A filled doughnut is heavier and has no hole to stabilise it, and squeezing it through a tight band is how jam ends up on a customer.',
       },
+      {
+        q: 'Why does glaze stick to the sleeve?',
+        a: 'Because warm glaze is essentially sugar syrup and bonds to an absorbent surface as it cools. A coated inner face gives it nothing to grip.',
+      },
+      {
+        q: 'Do ring and filled doughnuts need different sleeves?',
+        a: 'Usually. A filled doughnut is heavier and has no hole to stabilise it, and squeezing it through a tight band pushes jam out.',
+      },
+      {
+        q: 'What about long johns and fingers?',
+        a: 'They need a long narrow sleeve, closer to a hot dog wrap than a band. Measure the length and the widest point of the finished item.',
+      },
+      {
+        q: 'How much clearance do toppings need?',
+        a: 'Enough that the sleeve never touches them. Heavily topped doughnuts are sized like cupcakes — to the topping line rather than the doughnut.',
+      },
+      {
+        q: 'Does gloss or matt suit doughnuts better?',
+        a: 'Matt. Gloss shows sugar dust and fingerprints clearly, and doughnut counters generate a lot of both.',
+      },
+      {
+        q: 'Can one sleeve cover our whole range?',
+        a: 'Rarely more than two. A shop selling rings, filled and fingers usually settles on two sizes rather than one compromise.',
+      },
+      {
+        q: 'Do these work for a multi-doughnut order?',
+        a: 'Not really. Above one or two, a bag or box handles the order better than several individual sleeves.',
+      },
+      {
+        q: 'Will the print survive a warm doughnut?',
+        a: 'On a coated board, yes. Uncoated print can pick up sugar and fat from the surface, which shows on a pale design.',
+      },
     ],
     related: [
       'custom-donut-bags',
@@ -1076,6 +1552,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Will the sleeve keep a sausage roll warm?',
         a: 'Only marginally. Board slows cooling but does not insulate, and steam trapped against pastry softens it. For hot-held items, most operators accept warm rather than hot as the realistic outcome.',
+      },
+      {
+        q: 'Why do croissants mark plain board?',
+        a: 'Butter. A warm laminated pastry leaves a translucent patch almost immediately, and in a cabinet that patch is what customers see first.',
+      },
+      {
+        q: 'Should the sleeve fit closely?',
+        a: 'Not on croissants. They are curved and irregular, so a generous band works better than a close fit that crushes the layers.',
+      },
+      {
+        q: 'Do hot-held pastries need a different board?',
+        a: 'Yes. A sausage roll from a hot cabinet puts far more oil and steam into packaging than a croissant at ambient temperature.',
+      },
+      {
+        q: 'How many sizes will we need?',
+        a: 'Most bakeries settle on two rather than one per shape. Croissants and danishes usually share; sausage rolls need their own.',
+      },
+      {
+        q: 'Can we print a pastry name?',
+        a: 'Yes, and on digital printing several names in one order is straightforward. Send the split between them rather than a total.',
+      },
+      {
+        q: 'Do glazed danishes need a coated face?',
+        a: 'They benefit from it. Sticky glaze bonds to uncoated board and lifts when the pastry is removed, which shows on the finished item.',
+      },
+      {
+        q: 'Can one sleeve cover croissants and danishes?',
+        a: 'Usually, since both are broadly similar in footprint. Sausage rolls are the shape that needs its own size.',
+      },
+      {
+        q: 'Do these work in a self-service cabinet?',
+        a: 'They do, and a sleeve keeps customer fingers off the pastry while still letting the lamination show, which a bag does not.',
       },
     ],
     related: [
@@ -1143,6 +1651,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Where should the barcode go?',
         a: 'On a flat panel with clear space around it, away from folds and the overlap. A barcode across a crease or on a curved area scans unreliably, which causes problems at the till rather than in production.',
+      },
+      {
+        q: 'How much information has to fit?',
+        a: 'More than most designs allow for. Ingredients, allergens, weight, storage and business details is a lot of small type, so lay out the back panel with the front.',
+      },
+      {
+        q: 'Can we leave space for a batch code?',
+        a: 'You should. Batch and best-before marks are applied after printing, so reserve a clear, uncoated area for them in the artwork.',
+      },
+      {
+        q: 'What finishes are available?',
+        a: 'Because nothing edible touches it, finishes ruled out elsewhere are open here — soft-touch lamination, foil blocking and uncoated textured stocks among them.',
+      },
+      {
+        q: 'Will a soft-touch finish mark?',
+        a: 'It marks more readily than standard matt, which is worth knowing for a product that sits on a shelf being handled.',
+      },
+      {
+        q: 'Can we run several flavours in one order?',
+        a: 'On digital printing, yes, and it is the normal route for a small range. Send the quantity of each rather than a combined total.',
+      },
+      {
+        q: 'Do we need a different sleeve for retail and gifting?',
+        a: 'Often. A gift pack justifies a finish and a weight that a shelf product would not, even where the bar inside is identical.',
+      },
+      {
+        q: 'Can we run a limited edition alongside a core range?',
+        a: 'On digital printing, yes, and a short limited run beside a longer core one is a common split. Send both quantities.',
+      },
+      {
+        q: 'Does the sleeve need to be food-grade?',
+        a: 'Only where it touches the bar directly. Where the chocolate is wrapped in foil or film first, the requirement is far lighter.',
       },
     ],
     related: [
@@ -1215,6 +1755,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Can we print a different band for each dish?',
         a: 'On digital print, yes, and it is one of the more useful applications. Send the number of dishes and the quantity of each so we can price the split rather than assuming an even one.',
       },
+      {
+        q: 'How tight should the band be?',
+        a: 'Sized to the closed box with very little slack, or it slides off a corner in transit. Send a box rather than its stated dimensions.',
+      },
+      {
+        q: 'Does a band count as tamper evidence?',
+        a: 'It shows visibly if it has been broken, which is the practical benefit. Whether that meets a formal requirement is a question for your own procedures.',
+      },
+      {
+        q: 'Can we print a different band per dish?',
+        a: 'On digital printing, yes, and it is one of the more useful applications. Send the number of dishes and the quantity of each.',
+      },
+      {
+        q: 'What board weight does a band need?',
+        a: 'Light. The box provides the structure, so the band is doing security and branding rather than support, which keeps the cost down.',
+      },
+      {
+        q: 'Should the band carry allergen marks?',
+        a: 'A printed tick-box panel is common and works well where your menu is stable. Where dishes change often, a sticker is more practical.',
+      },
+      {
+        q: 'Will the band survive a delivery bag?',
+        a: 'A correctly sized one will. Bands fail by sliding off rather than tearing, which is a fit problem rather than a strength problem.',
+      },
+      {
+        q: 'Can we match bands to our bag?',
+        a: 'Yes, and running them in one order keeps the colour consistent. Printed months apart the same brand colour drifts visibly.',
+      },
+      {
+        q: 'Do bands work on round containers?',
+        a: 'They can, though the fit is less secure than on a box with corners. Send the container and we will tell you honestly whether it will hold.',
+      },
     ],
     related: [
       'custom-sushi-sleeves',
@@ -1275,6 +1847,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'How much of the lid can the band cover?',
         a: 'Less than most designers want. The arrangement of the pieces is what sells the pack, so an end band or a side band nearly always outperforms a wide central one.',
+      },
+      {
+        q: 'How much of the lid should the band cover?',
+        a: 'Less than most designs want. The arrangement of the pieces is what sells the pack, so an end band or a side band outperforms a wide central one.',
+      },
+      {
+        q: 'Where does the barcode go?',
+        a: 'On a flat section clear of folds, so it scans reliably at the till. That has to be planned rather than fitted in afterwards.',
+      },
+      {
+        q: 'Do we need space for a date label?',
+        a: 'Yes, applied after packing. Reserve the area in the artwork so the sticker does not land across your logo or the barcode.',
+      },
+      {
+        q: 'Can the band carry allergen information?',
+        a: 'It can, though for sushi the list is rarely short. Many operations use a printed panel for the fixed part and a sticker for what changes.',
+      },
+      {
+        q: 'Will cabinet lighting change how the print looks?',
+        a: 'It drains warmth from colours. Check a printed sample under your own cabinet rather than approving from a screen or in daylight.',
+      },
+      {
+        q: 'Can we run several pack types in one order?',
+        a: 'On digital printing, yes. Send the number of variants and the quantity of each so the split is priced properly.',
+      },
+      {
+        q: 'Do bands work on trays with a domed lid?',
+        a: 'They can, though the band has to clear the dome. Send the tray and lid together rather than the tray alone.',
+      },
+      {
+        q: 'Can we run a vegetarian and standard band?',
+        a: 'On digital printing, yes, and it saves staff checking. Send the quantity of each rather than a total.',
       },
     ],
     related: [
@@ -1347,6 +1951,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'How do we stop marinade staining the sleeve?',
         a: 'A coated inner face keeps most of it off the printed surface, and darker or busier artwork disguises what gets through. Letting skewers drain briefly before sleeving helps more than either.',
       },
+      {
+        q: 'Why does marinade matter more than oil?',
+        a: 'Because it stains. Turmeric and tomato-based marinades leave a coloured mark on board that a neutral cooking oil would not.',
+      },
+      {
+        q: 'How do we size a skewer sleeve?',
+        a: 'From the loaded section rather than the whole skewer, measured across the widest piece of meat or vegetable.',
+      },
+      {
+        q: 'Should the stick opening match a corn dog sleeve?',
+        a: 'The principle is the same but the stick diameters usually differ. Send one of your sticks rather than assuming they match.',
+      },
+      {
+        q: 'Can one sleeve fit chicken and vegetable skewers?',
+        a: 'If they are loaded to a similar diameter, yes. Vegetable skewers are often bulkier at the ends, so check the widest piece.',
+      },
+      {
+        q: 'How do we stop staining showing?',
+        a: 'A coated inner face keeps most of it off the printed surface, and darker artwork disguises what gets through. Draining before sleeving helps most.',
+      },
+      {
+        q: 'What finish grips most reliably with oily hands?',
+        a: 'Matt. Gloss is noticeably slippery once fingers are greasy, which matters on a product held by a stick.',
+      },
+      {
+        q: 'Can we serve two or three in one sleeve?',
+        a: 'Not comfortably. Beyond one skewer a tray works considerably better, because they lean and the fillings press together.',
+      },
+      {
+        q: 'Do these suit a festival pitch?',
+        a: 'Yes. Outdoor trading argues for a laminated finish alongside the grease-resistant board, because a sleeve handled with wet hands in the rain fails far sooner than one handled indoors.',
+      },
     ],
     related: [
       'custom-corn-dog-sleeves',
@@ -1408,6 +2044,38 @@ export const FOOD_SLEEVES: Product[] = [
       {
         q: 'Can one sleeve cover our tea and coffee cups?',
         a: 'If the cups are the same size, physically yes. Whether it is comfortable enough for tea is the real question, and that depends on which construction you choose rather than the fit.',
+      },
+      {
+        q: 'Is tea really hotter than coffee to hold?',
+        a: 'In practice, yes. It is brewed close to boiling and has no cold milk to cool it, so it stays hot for longer in the hand.',
+      },
+      {
+        q: 'Should we choose corrugated for tea?',
+        a: 'It usually makes a noticeable difference, because the air gap in the flute does real insulating work where a flat sleeve mainly adds grip.',
+      },
+      {
+        q: 'Does a brewing bag change anything?',
+        a: 'It keeps the cup hotter for longer, and the customer has to put the cup down to remove it. A sleeve that stays put through that is worth having.',
+      },
+      {
+        q: 'How do we size a sleeve to our cups?',
+        a: 'From the circumference at the grip point, roughly a third down from the rim. Send a cup rather than a stated volume.',
+      },
+      {
+        q: 'Will a sleeve fit a double-walled cup?',
+        a: 'Usually, though a double-walled cup is thicker at the same stated size, so a sleeve cut for single wall will be tight.',
+      },
+      {
+        q: 'Can we print on corrugated board?',
+        a: 'Yes, though the flute texture softens fine detail. Bold, simple designs read better on it than small type does.',
+      },
+      {
+        q: 'Do these suit a café serving both hot and iced?',
+        a: 'Cold cups sweat, which is a different problem. Many cafés run a corrugated sleeve for hot and a laminated flat one for iced.',
+      },
+      {
+        q: 'Can we run one design across tea and coffee sleeves?',
+        a: 'Yes, if the cup sizes match. Where they differ, the artwork carries over but each needs its own layout.',
       },
     ],
     related: [
@@ -1485,6 +2153,38 @@ export const FOOD_SLEEVES: Product[] = [
         q: 'Should we print the year on a Christmas sleeve?',
         a: 'Only if you are confident you will use every one. A dated sleeve cannot be carried over, and unsold seasonal stock is a real cost that undated artwork avoids.',
       },
+      {
+        q: 'Can we reuse our existing die?',
+        a: 'If the shape and size are unchanged, yes, and it removes the tooling cost and its lead time entirely. Only the print differs.',
+      },
+      {
+        q: 'How far ahead should we order?',
+        a: 'Work backwards from the day it goes on the counter rather than forwards from today, and treat the artwork deadline as the fixed one.',
+      },
+      {
+        q: 'Should we print the year?',
+        a: 'Only if you are confident of using every one. A dated sleeve cannot be carried over, and unsold seasonal stock is a real cost.',
+      },
+      {
+        q: 'Can we run four seasonal designs in one order?',
+        a: 'On digital printing, yes, with the cost depending on the split. Ask for mixed cases if the designs go to more than one site.',
+      },
+      {
+        q: 'What is the busiest period for seasonal work?',
+        a: 'Christmas, by a wide margin, because every café in the country wants press time in the same few weeks. Start earlier than feels necessary.',
+      },
+      {
+        q: 'Do event sleeves need a different board?',
+        a: 'Only if the trading conditions differ. Outdoor festival pitches argue for a laminated finish where an indoor promotion would not.',
+      },
+      {
+        q: 'Can we add a venue or town name?',
+        a: 'Yes, and on digital printing several versions in one run is straightforward. Send the split between them.',
+      },
+      {
+        q: 'What happens to leftovers?',
+        a: 'With undated artwork they run again next season. With a year or a specific event printed on them, they cannot.',
+      },
     ],
     related: [
       'christmas-paper-cups',
@@ -1555,7 +2255,39 @@ export const FOOD_SLEEVES: Product[] = [
       },
       {
         q: 'Do gift card sleeves need to be food-safe?',
+        a: 'No. Nothing edible touches a gift card sleeve, which is why soft-touch, foil and textured stocks are all open here.',
+      },
+      {
+        q: 'Do these need to be food-safe?',
         a: 'No, and that is the useful part. Nothing edible touches them, so finishes ruled out elsewhere in this range are available here.',
+      },
+      {
+        q: 'What finishes suit a gift item?',
+        a: 'Soft-touch lamination, foil blocking and uncoated textured stocks all work, and they are what make a small item feel worth more than it cost.',
+      },
+      {
+        q: 'Should the card be visible?',
+        a: 'A window or cut-out lets the card show without removing it, which reads as more considered than a plain wallet.',
+      },
+      {
+        q: 'Will the card slide out?',
+        a: 'Not with a slot or pocket cut for it. A plain sleeve without one relies on friction, which is unreliable once it has been opened.',
+      },
+      {
+        q: 'Can we print terms on the sleeve?',
+        a: 'Yes, and balance or expiry notes are commonly placed on the inner face where they do not compete with the design.',
+      },
+      {
+        q: 'Are short runs practical?',
+        a: 'Yes. Gift card sleeves are frequently ordered in small quantities, and digital printing suits that well.',
+      },
+      {
+        q: 'Do these fit a standard card size?',
+        a: 'They can be cut to a standard card or to your own dimensions. Send a card if yours is not a standard size.',
+      },
+      {
+        q: 'Can we order a small quantity to test?',
+        a: 'Yes. Gift card sleeves are frequently ordered in short runs, and digital printing suits that well.',
       },
     ],
     related: [

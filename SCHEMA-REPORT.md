@@ -173,7 +173,12 @@ It is emitted only where the identical questions and answers are rendered as
 visible `<details>` accordions on the same page. The build audit enforces
 this by matching every markup question against the page's rendered text.
 
-**480 question/answer pairs** across the site, all of them visible.
+**2,266 question/answer pairs** across the site, all of them visible: exactly ten
+on every product, category, location and article page, plus sixteen on `/faqs/`.
+
+No question is repeated within a page and no answer is repeated across pages —
+the pre-build validator fails on either, so near-duplicate FAQ blocks cannot be
+copied from one product to the next.
 
 Google has narrowed FAQ rich results to authoritative government and health
 sites, so this markup is unlikely to produce a visual result. It remains

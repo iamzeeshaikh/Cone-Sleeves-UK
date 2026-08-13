@@ -150,6 +150,34 @@ export const PRACTICE: BlogPost[] = [
         q: 'Do you check artwork before printing?',
         a: 'We check position, bleed, resolution and that everything important sits inside the safe area, and we issue a digital proof on the die line. Colour accuracy on screen is the one thing a proof cannot confirm.',
       },
+      {
+        q: 'Can you fix artwork built on a rectangle?',
+        a: 'Sometimes, by rebuilding it on the die line, which is design work rather than an adjustment. Getting the template first avoids it.',
+      },
+      {
+        q: 'What if we have no designer?',
+        a: 'Send what you have. A logo on a plain board is a legitimate specification and needs no illustration work at all.',
+      },
+      {
+        q: 'Should fonts be outlined?',
+        a: 'Yes, or supply the font files with the artwork. An outlined font cannot substitute itself for something else on another machine, which is exactly what causes unexplained layout changes.',
+      },
+      {
+        q: 'How much bleed do you need?',
+        a: 'Artwork extended past the cut line on every edge. The exact amount is marked on the die template we send.',
+      },
+      {
+        q: 'Can we supply a PDF from a design app?',
+        a: 'A vector PDF is fine. A flattened export limits what can be adjusted, so send the working file alongside it where you can, since small changes then take minutes rather than being impossible.',
+      },
+      {
+        q: 'What is the single most useful thing we can do?',
+        a: 'Print the flat at full size, cut it out and wrap it around a real cone. Five minutes there catches more than any screen check.',
+      },
+      {
+        q: 'Can we send artwork before we have a quote?',
+        a: 'Yes, and it often helps. We will tell you what will and will not hold at print size before you commit to anything.',
+      },
     ],
   },
 
@@ -299,6 +327,34 @@ export const PRACTICE: BlogPost[] = [
       {
         q: 'Do we need documentation for environmental health?',
         a: 'Having the specification in writing makes any such conversation considerably shorter. What you need to hold depends on your own food safety management system, which is a question for whoever manages it.',
+      },
+      {
+        q: 'Do you provide documentation?',
+        a: 'We confirm the board grade, lining, ink system and finish in writing on your quote, which is the record worth filing.',
+      },
+      {
+        q: 'Does the ink matter if food only touches the board?',
+        a: 'It can, because sleeves are stacked and the printed face sits against the inner face of the next one in the box.',
+      },
+      {
+        q: 'What changes when food gets hotter?',
+        a: 'Everything gets more demanding. Fat is a solvent and heat accelerates it, so a specification for cold food may not hold for fried.',
+      },
+      {
+        q: 'Is a sleeve around a wrapped item different?',
+        a: 'Considerably lighter a requirement, because it touches film or foil rather than food. Tell us which applies.',
+      },
+      {
+        q: 'Who is responsible for the specification?',
+        a: 'We confirm what we supply; you decide whether it suits your food, your process and your own food safety system.',
+      },
+      {
+        q: 'Does packaging cover allergen labelling?',
+        a: 'No. Those are separate obligations. What packaging can do is leave clear space for whatever labelling you apply.',
+      },
+      {
+        q: 'How often should we review the specification?',
+        a: 'Whenever the food, the temperature, the holding time or the supplier changes. Any of those makes the old record incomplete.',
       },
     ],
   },
@@ -453,7 +509,35 @@ export const PRACTICE: BlogPost[] = [
       },
       {
         q: 'What is the single biggest change we could make?',
-        a: 'If you have seating, serving eat-in customers in reusables. It almost always outweighs every material substitution available on the disposable range put together.',
+        a: 'Reusables for anyone eating in. No change to a disposable specification comes close to simply not issuing one.',
+      },
+      {
+        q: 'Where should we start?',
+        a: 'By counting what leaves your counter with one typical order and asking what each piece is for. It takes ten minutes and usually finds something.',
+      },
+      {
+        q: 'Does using less packaging save money too?',
+        a: 'Almost always, which is what makes it the easiest change to justify. Material substitution rarely does both.',
+      },
+      {
+        q: 'What should we ask our waste contractor?',
+        a: 'Whether they collect card separately, whether they take lined paper cups, and whether uplift is charged by weight or by collection.',
+      },
+      {
+        q: 'Is compostable packaging better?',
+        a: 'Only if it reaches a facility that can compost it, which for packaging carried away from your premises is unlikely in most of the UK.',
+      },
+      {
+        q: 'How do we avoid seasonal write-offs?',
+        a: 'Undated artwork and honest quantity estimates. Dated stock left at the end of a promotion is waste that never reached a customer.',
+      },
+      {
+        q: 'Can we claim anything on the pack?',
+        a: 'Only what your customers can act on. A specific, modest, checkable claim is far more credible than a broad one.',
+      },
+      {
+        q: 'How do we measure progress?',
+        a: 'Packaging items purchased per thousand covers, tracked before and after. It separates a real reduction from a quiet month.',
       },
     ],
   },
@@ -622,6 +706,34 @@ export const PRACTICE: BlogPost[] = [
       {
         q: 'How many sleeves does a café get through?',
         a: 'That depends entirely on how many takeaway hot drinks you sell and whether every one gets a sleeve. Count a typical week before ordering rather than estimating annually — most people are surprised in one direction or the other.',
+      },
+      {
+        q: 'Do we need to change cups to use sleeves?',
+        a: 'No, and that is the point. A sleeve is cut to the cup you already buy, so nothing in your supply has to change.',
+      },
+      {
+        q: 'How many sleeves will we get through?',
+        a: 'Count a typical week of takeaway hot drinks and whether every one gets a sleeve. Most people are surprised either way.',
+      },
+      {
+        q: 'Can we use sleeves on cold drinks?',
+        a: 'Yes, with a coated surface. Cold cups sweat, which is a different problem from heat and needs specifying for.',
+      },
+      {
+        q: 'What if we change cup supplier?',
+        a: 'Send a cup from the new supplier before reordering. Two cups sold as the same volume can differ enough to matter.',
+      },
+      {
+        q: 'Is a corrugated sleeve worth the extra?',
+        a: 'On single-wall cups with very hot drinks, yes. On double-walled cups the insulation argument largely disappears.',
+      },
+      {
+        q: 'Should we print cups instead?',
+        a: 'Once volumes justify the tooling and minimum quantity. Ask for both prices against your genuine annual usage.',
+      },
+      {
+        q: 'Can we run a seasonal sleeve?',
+        a: 'Easily, and it is the cheapest branding change a café can make — no tooling and no cup stock to clear.',
       },
     ],
   },

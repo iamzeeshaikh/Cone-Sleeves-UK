@@ -99,6 +99,34 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Does a printed sleeve make the cone harder to hold?',
         a: 'The opposite, usually. The extra layer gives a drier grip and keeps warm fingers off the wafer, which is the main reason parlours introduce them in the first place.',
       },
+      {
+        q: 'How long does it take staff to learn to assemble them?',
+        a: 'Most people are fluent after twenty or thirty sleeves. They arrive flat, and the motion is a roll and a tuck. It is worth having whoever works the counter try a box before a busy weekend rather than during one.',
+      },
+      {
+        q: 'Can the sleeve carry a QR code?',
+        a: 'Yes, provided it sits where a right-handed grip does not cover it and it is printed large enough to scan from a phone at arm\'s length. Test a printed sample rather than a screen mock-up.',
+      },
+      {
+        q: 'Do you supply a die template for our designer?',
+        a: 'Yes, as an editable vector file with the cut line, the fold, the overlap and the safe area on separate layers. Ask for it before design work starts rather than after.',
+      },
+      {
+        q: 'What happens if our artwork is low resolution?',
+        a: 'We will tell you before printing rather than after. Anything under 300 dpi at final size shows softness on board, and a logo pulled from a website is usually well below that.',
+      },
+      {
+        q: 'Can we order two designs in one run?',
+        a: 'On digital printing, yes, and the cost depends on how the quantity splits between them. On a longer conventional run each design carries its own setup, which changes the arithmetic.',
+      },
+      {
+        q: 'Do sleeves need to be stored in any particular way?',
+        a: 'Flat, dry and off the floor. Board takes up moisture from a damp store room, and a pallet left against an outside wall can soften before it reaches the counter.',
+      },
+      {
+        q: 'Will the printed sleeve mark a customer\'s hands?',
+        a: 'Not on a properly cured print. If ink transfers, that is a fault worth reporting immediately with the batch details so it can be traced to a specific run.',
+      },
     ],
     related: [
       'custom-waffle-cone-sleeves',
@@ -170,6 +198,34 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Do deep wraps make the cone harder to eat from?',
         a: 'They can if the wrap sits too close to the rim, because the customer bites into board. Leaving a clear centimetre or two below the rim avoids it entirely, and we set that on the die rather than leaving it to chance.',
+      },
+      {
+        q: 'How much extra board does a deeper wrap use?',
+        a: 'Enough to show on the unit price, because the flat shape is larger. Whether that is worth paying depends on how much melt your trade actually produces on a warm day.',
+      },
+      {
+        q: 'Can we run a shallow wrap in winter and a deep one in summer?',
+        a: 'Plenty of seaside sites do exactly that, from one artwork file and two dies. The tooling is paid for once and both versions reorder as print-only jobs afterwards.',
+      },
+      {
+        q: 'Do plain wrappers still need a die?',
+        a: 'Yes. The shape has to match your cone whether or not anything is printed on it, so the sizing conversation is identical and only the print stage is skipped.',
+      },
+      {
+        q: 'Will a deep wrapper hide our branding?',
+        a: 'It gives you more printed area, not less. What it hides is the cone, which is worth thinking about if the wafer is part of what you are selling.',
+      },
+      {
+        q: 'Can wrappers be printed on the inside face?',
+        a: 'On a deep wrap the inner face is visible whenever the customer looks down at the cone, so it is worth considering. It adds a press pass, so decide before quoting.',
+      },
+      {
+        q: 'Are wrappers suitable for soft serve as well as scooped?',
+        a: 'Yes, though soft serve sits lower in the cone and melts faster, which usually argues for the deeper end of the range rather than a short band.',
+      },
+      {
+        q: 'Do you supply unprinted wrappers in small quantities?',
+        a: 'Plain stock has different economics from a printed run. Send the quantity you have in mind and we will tell you what is realistic rather than quoting a general minimum.',
       },
     ],
     related: [
@@ -249,6 +305,34 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Do these work with a double scoop?',
         a: 'Yes, and the extra weight is one reason to choose a stiffer board. Tell us if double scoops are your normal serve and we will factor it into the board recommendation.',
       },
+      {
+        q: 'How many cones should we send you?',
+        a: 'Three is ideal. One tells us the shape; three tell us how much that shape varies inside a single box, which is what the tolerance in the die is built around.',
+      },
+      {
+        q: 'Can you work from a photograph instead?',
+        a: 'For a first conversation, yes. For cutting a die, no — a photograph carries no reliable scale, and a sleeve cut from one is a guess that costs a whole run to correct.',
+      },
+      {
+        q: 'Do waffle sleeves work with a flat-bottomed waffle cone?',
+        a: 'A flat-bottomed cone tapers differently, so it needs its own die. Tell us which you use, because the two are easy to confuse by name and behave differently in the hand.',
+      },
+      {
+        q: 'What board weight do you recommend for double scoops?',
+        a: 'Something firmer than the lightest option, because the extra weight pulls the cone down through the customer\'s grip. We recommend against the serve you describe rather than a default.',
+      },
+      {
+        q: 'Can the sleeve be printed to look like the wafer pattern?',
+        a: 'It can, though the effect competes with the real wafer visible above it. Most sites get a better result with a plain or branded wrap that contrasts with the cone.',
+      },
+      {
+        q: 'Do you offer a matching cone holder?',
+        a: 'Yes, cut from the same cone measurements so the holder grips where the sleeve does not. Ordering both together keeps the fit consistent and shares the setup cost.',
+      },
+      {
+        q: 'How far in advance should we reorder?',
+        a: 'Before you are down to your last case. Reorders skip tooling and artwork, so they are quicker than a first order, but production lead time still applies and moves with the season.',
+      },
     ],
     related: [
       'custom-child-size-waffle-cone-sleeves',
@@ -318,6 +402,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Can a sleeve crack the cone when it is fitted?',
         a: 'It can if the sleeve is too tight, because a sugar cone does not flex. A small tolerance in the die avoids this, and it is one reason we prefer to size from a physical sample.',
+      },
+      {
+        q: 'Why do sugar cones crack when a sleeve is fitted?',
+        a: 'Because they do not flex. A sleeve cut too tight forces the cone to give, and it splits rather than bending. Building tolerance into the die is the fix.',
+      },
+      {
+        q: 'Can one sleeve cover our sugar and cake cones?',
+        a: 'Rarely. Both are narrow, but the tapers differ enough that a sleeve gripping one slides on the other. Two dies from one artwork file is the usual answer.',
+      },
+      {
+        q: 'Is a lighter board acceptable on a sugar cone?',
+        a: 'Usually, because the cone carries its own weight and the sleeve is doing grip and branding rather than support. That makes it one of the cheaper sleeves in the range.',
+      },
+      {
+        q: 'How much of the cone should stay visible?',
+        a: 'Most gelaterias leave the top third showing so the wafer reads as part of the product. Covering more protects better and hides what the customer is partly buying.',
+      },
+      {
+        q: 'Do sugar cones vary as much as waffle cones?',
+        a: 'Less, because they are denser and hold their shape better in transit. They still vary enough to matter, which is why we size from three samples rather than one.',
+      },
+      {
+        q: 'Can we print full colour on a short band?',
+        a: 'You can, though the visible area is small and detail gets lost. A one or two colour design at that size usually reads better and costs less.',
+      },
+      {
+        q: 'Will the sleeve stay on if the cone is pre-loaded into a stand?',
+        a: 'Yes, and pre-sleeving before filling is common on busy counters. Tell us if that is your process, because a sleeve fitted before filling can be a fraction tighter.',
+      },
+      {
+        q: 'Do you supply samples of the board before we commit?',
+        a: 'Board samples are usually straightforward. Printed samples depend on the print method quoted for your job, so ask at quote stage and we will tell you what is available.',
       },
     ],
     related: [
@@ -396,6 +512,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Do cake cones vary enough to matter?',
         a: 'They do, more than sugar or waffle cones, because they are thinner and handled more roughly in transit. We build tolerance into the die and recommend checking a new batch against an existing sleeve before reordering.',
       },
+      {
+        q: 'How much does a sleeve reduce cone breakage?',
+        a: 'Enough that most mobile operators notice it within a week. The grip is spread across the sleeve rather than concentrated on thin wafer, which is where the crushing happens.',
+      },
+      {
+        q: 'Are cake cones the same as wafer cones?',
+        a: 'They are the same thing under two names — the light, flat-bottomed cone used across the UK for soft serve. Tell us the brand you buy and we will size from it.',
+      },
+      {
+        q: 'Can the sleeve be deep enough to cover the whole cone?',
+        a: 'It can, though a full-height wrap on a cake cone hides the product entirely. Most vans stop two or three centimetres below the rim as a compromise.',
+      },
+      {
+        q: 'Do cake cone sleeves need lamination?',
+        a: 'On a van in summer, it helps considerably. Indoors with quick service, an unlaminated board is usually adequate and cheaper. It depends on how long the cone is held.',
+      },
+      {
+        q: 'Will the sleeve fit if we change cone supplier?',
+        a: 'Send a cone from the new supplier before reordering. Cake cones vary more between manufacturers than any other type, because they are thin and handled roughly in transit.',
+      },
+      {
+        q: 'Can we print a children\'s design on these?',
+        a: 'Cake cones are heavily used for children\'s servings, so a brighter palette often suits. Keep the type large — small detail disappears on a cone this narrow.',
+      },
+      {
+        q: 'How quickly can staff sleeve a cone during a rush?',
+        a: 'A couple of seconds once practised. Pre-assembling a batch during a quiet period is common on vans, and a slightly firmer board holds shape better in the stack.',
+      },
+      {
+        q: 'Do you supply these unprinted?',
+        a: 'Yes. Plain white or kraft sleeves are a common choice for operators who want the grip and hygiene without a print budget, and the sizing work is identical.',
+      },
     ],
     related: [
       'custom-sugar-cone-sleeves',
@@ -454,6 +602,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Is there much price difference between the two sizes?',
         a: 'A smaller sleeve uses less board, but the setup work is much the same. Running both in one order shares that setup and is usually the more sensible route.',
+      },
+      {
+        q: 'Can children\'s sleeves share a die with the adult size?',
+        a: 'No. The children\'s cone is a different shape rather than a scaled version, so it needs its own tool. The artwork is what carries across, not the die.',
+      },
+      {
+        q: 'Should the children\'s design be different?',
+        a: 'Not necessarily, but it usually has to be simpler. There is far less printable area, so elements that work on the adult sleeve often need dropping rather than shrinking.',
+      },
+      {
+        q: 'Are children\'s cones more prone to being dropped?',
+        a: 'They are held less carefully and lower down, which is the argument for a deeper wrap. It catches more of the mess and gives smaller hands something to grip.',
+      },
+      {
+        q: 'What proportion of our order should be children\'s size?',
+        a: 'Only your till data can answer that. Sites that guess usually over-order the children\'s size, because it feels like a large share of trade and rarely is.',
+      },
+      {
+        q: 'Can both sizes be produced in one run?',
+        a: 'Yes, and it is the sensible route. The setup is shared across both rather than repeated, which makes the second size considerably cheaper than ordering it separately.',
+      },
+      {
+        q: 'Do children\'s sleeves need a different board?',
+        a: 'Usually the same or slightly lighter, because the serve is smaller and lighter. The grip support matters more than structural strength at this size.',
+      },
+      {
+        q: 'Will an adult sleeve work at a push?',
+        a: 'It will sit loose and slide, which defeats the point. If you only want one die, size for the cone you sell most of and accept the other fits poorly.',
+      },
+      {
+        q: 'Can we add a name or message for parties?',
+        a: 'Short digital runs make that workable. Send the quantity and the date and we will tell you what is realistic rather than quoting an ongoing supply price.',
       },
     ],
     related: [
@@ -533,6 +713,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Can each sleeve in a set be a different colour?',
         a: 'Yes, and it is a common request for tasting flights. On a digital run the cost of several colourways is modest; on a long run it is a different calculation, so tell us the split.',
       },
+      {
+        q: 'How small can a cone sleeve usefully be?',
+        a: 'Small enough for a two-bite canapé cone, though below a certain size the printable area stops carrying anything readable. We will tell you what will hold at your dimensions.',
+      },
+      {
+        q: 'Can we have several colours in one order?',
+        a: 'On digital printing, yes, and it is a common request for tasting flights where each colour marks a flavour. Send the split between colours rather than a single total.',
+      },
+      {
+        q: 'Do mini cones need a deep wrap?',
+        a: 'Rarely. They are eaten in two bites and usually served on a tray, so a short band is enough and keeps more of the cone visible.',
+      },
+      {
+        q: 'Is there a minimum for a single event?',
+        a: 'It depends on the print method rather than a fixed rule. Digital printing makes a few hundred workable where a conventional press would not. Send the quantity and the date together.',
+      },
+      {
+        q: 'Can the sleeves be foil blocked for a wedding?',
+        a: 'Speciality finishes are quoted per job because availability varies with the run size. Tell us what you have in mind and we will confirm what can be produced.',
+      },
+      {
+        q: 'How far ahead should we order for an event?',
+        a: 'Work backwards from the date rather than forwards from today, and allow time for proofing as well as production. We confirm the lead time on the quote.',
+      },
+      {
+        q: 'Will mini sleeves work with a cone holder?',
+        a: 'Only with a holder cut for that cone size. A standard holder lets a mini cone drop straight through, so the two need sizing together.',
+      },
+      {
+        q: 'Can leftovers be used at a later event?',
+        a: 'If the artwork carries no date. A sleeve printed with a specific occasion cannot be reused, which is the main argument for keeping event artwork undated.',
+      },
     ],
     related: [
       'custom-child-size-waffle-cone-sleeves',
@@ -602,6 +814,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Does the sleeve need to be waterproof?',
         a: 'Not waterproof, but grease and moisture resistant. Nothing in board packaging is designed to hold standing liquid — the aim is to stay stiff and clean for the ten minutes the customer is eating.',
       },
+      {
+        q: 'Do rolled ice cream cones need a different die from scoop cones?',
+        a: 'Often not, if the cone is the same. What changes is the board and the depth, because the product is wetter and usually built higher above the rim.',
+      },
+      {
+        q: 'How high should the sleeve stop below the toppings?',
+        a: 'Far enough that the customer can hold it without touching sauce, which on a heavily finished serve is lower than you would expect. Measure a made-up cone rather than an empty one.',
+      },
+      {
+        q: 'Does the sleeve appear in customer videos?',
+        a: 'Almost always, because the preparation is filmed. That is a genuine argument for a laminated finish, which holds its appearance under the lights better than uncoated board.',
+      },
+      {
+        q: 'Will a standard scoop sleeve work to start with?',
+        a: 'It will, and many sites begin there. The board tends to soften faster because the product is wetter, which is usually the first thing they change at reorder.',
+      },
+      {
+        q: 'Can the sleeve carry a social handle?',
+        a: 'It is one of the better places for it, since the cone is filmed. Keep it large enough to read on a phone screen and clear of the overlap.',
+      },
+      {
+        q: 'Do rolled cones need a stiffer board than waffle cones?',
+        a: 'Generally yes. The serve is heavier and wetter, and the cone spends longer in the hand while the customer photographs it before eating.',
+      },
+      {
+        q: 'How do we stop the sleeve softening in a humid shop?',
+        a: 'Store stock away from the preparation area and specify a coated or lined board. A cold plate throws moisture into the air continuously through a service.',
+      },
+      {
+        q: 'Can we match the sleeve to our cup and tub packaging?',
+        a: 'Yes, and running them together keeps the colour consistent. Printed separately months apart, the same brand colour drifts enough to be visible side by side.',
+      },
     ],
     related: [
       'custom-ice-cream-cone-sleeves',
@@ -669,6 +913,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Can a logo be left unprinted so the board shows through?',
         a: 'Yes, and reversing a mark out of solid black looks striking. Fine lines and small type need a little weight added, because ink spread closes up thin gaps on board.',
+      },
+      {
+        q: 'Does a black sleeve cost more than a white one?',
+        a: 'Yes, because the colour is ink across the whole surface rather than only where a design sits, and a properly built black uses more than one ink to stay even.',
+      },
+      {
+        q: 'Will the black rub off on hands?',
+        a: 'Not on a cured, laminated print. Unlaminated heavy ink coverage can scuff along the seam during assembly, which is one reason black sleeves are usually laminated.',
+      },
+      {
+        q: 'Can we have a matt black with a gloss logo?',
+        a: 'Spot finishing effects are quoted per job because availability depends on the print method. Tell us the effect you want and we will confirm what can be produced.',
+      },
+      {
+        q: 'Does black show melt and drips?',
+        a: 'Less than white, which is one of its practical advantages. What it does show is fingerprints and scuffs, which is why matt lamination is the usual specification.',
+      },
+      {
+        q: 'Is a reversed-out logo hard to print?',
+        a: 'Not hard, but fine lines need slight weight added because ink spreads into board and closes small gaps. Send vector artwork and we will flag anything at risk.',
+      },
+      {
+        q: 'Can we run black sleeves alongside a white version?',
+        a: 'Yes, and both can run in one job on digital printing. Tell us the split between them so the quantities are priced properly rather than assumed even.',
+      },
+      {
+        q: 'Does black board exist, or is it always printed?',
+        a: 'Printed, in this range. A dyed black board behaves differently and is quoted separately, so tell us if the material itself needs to be black through the section.',
+      },
+      {
+        q: 'Will the unprinted rim margin be obvious?',
+        a: 'More than on a pale sleeve, yes. Every printed sleeve leaves a small unprinted margin where it is cut and formed, and on solid black it reads as a thin light line.',
       },
     ],
     related: [
@@ -739,6 +1015,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Will melt stain a white sleeve during service?',
         a: 'It marks visibly, which is one of the few real drawbacks. A light lamination lets staff wipe the outside, and most sites accept a little marking as the trade-off for the lower print cost.',
+      },
+      {
+        q: 'Is a plain white sleeve cheaper than a printed one?',
+        a: 'Considerably, because there is no ink and no artwork stage. You still need a die cut to your cone, so the sizing conversation and its cost are unchanged.',
+      },
+      {
+        q: 'Will white board look grey?',
+        a: 'Only on a low-grade stock. If you are going minimal, board quality matters more than usual, because there is no printing to distract from the surface itself.',
+      },
+      {
+        q: 'Can we start plain and add printing later?',
+        a: 'Yes, and it is a sensible way to test sizing before committing to artwork. The die carries over, so the printed reorder is a print-only job.',
+      },
+      {
+        q: 'How well do brand colours print on white?',
+        a: 'As accurately as this process allows, because the ink sits on a neutral base. If colour matters, white board is the specification to ask for.',
+      },
+      {
+        q: 'Does white show melt more than other colours?',
+        a: 'Yes, particularly around the lower edge. A light lamination lets staff wipe the outside during service, which is the usual answer where marking is a concern.',
+      },
+      {
+        q: 'Is white suitable for savoury cones?',
+        a: 'The colour is fine; the board is the question. Anything fried needs a grease-resistant lining, which can be specified on a white board like any other.',
+      },
+      {
+        q: 'Can we print one colour on white and keep the cost down?',
+        a: 'That is the cheapest branded sleeve there is. Ink covers only a few per cent of the surface, and the board was being bought regardless.',
+      },
+      {
+        q: 'Will a white sleeve look cheap next to a coloured one?',
+        a: 'Not if the board is good and the mark is well placed. Plenty of well-regarded parlours use white deliberately, because it lets the ice cream provide the colour.',
       },
     ],
     related: [
@@ -813,6 +1121,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Can we add a third colour later?',
         a: 'It becomes a different job rather than an adjustment, since each ink is a separate plate on a conventional press. If a third colour is likely, it is worth pricing the three-colour version now.',
       },
+      {
+        q: 'How do we know if our logo suits two-colour printing?',
+        a: 'Count the flat colours in it. If it is a mark and a background with no photographs or soft gradients, it suits spot printing and will usually cost less than full colour.',
+      },
+      {
+        q: 'Can we get more than two tones from two inks?',
+        a: 'Yes. Each ink at full strength, each at a lighter tint, and the two overprinted gives five distinct tones from two plates, which surprises most people the first time.',
+      },
+      {
+        q: 'What if our brand has three colours?',
+        a: 'Then price the three-colour version as well as a two-colour simplification. On a conventional press each ink is a separate plate, so the third one is a real cost rather than a rounding.',
+      },
+      {
+        q: 'Do we need to supply Pantone references?',
+        a: 'For spot printing, yes. A CMYK build or a hex code describes a colour approximately; a Pantone reference describes a specific mixed ink, which is the point of the process.',
+      },
+      {
+        q: 'Will two spot colours match across reorders?',
+        a: 'Far more closely than a process build, because the ink is mixed to a recipe rather than assembled from four separates. That consistency is the main reason to choose spot.',
+      },
+      {
+        q: 'Can we add a photograph later?',
+        a: 'Not to a two-colour job. Photographs need process printing, so adding one converts the whole design and changes the price. Decide before the artwork is built.',
+      },
+      {
+        q: 'Is two-colour cheaper on a short digital run?',
+        a: 'Often not. Digital presses lay all colours in one pass, so the saving comes on longer conventional runs. Ask for both prices when the quantity is modest.',
+      },
+      {
+        q: 'What should we send our designer?',
+        a: 'Our die template, and an instruction to work in two named Pantone colours rather than CMYK. Converting a CMYK file to spot afterwards rarely produces a clean separation.',
+      },
     ],
     related: [
       'custom-white-cone-sleeve',
@@ -877,6 +1217,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Does a pattern cost more than a plain sleeve?',
         a: 'Not necessarily. Cost follows the number of inks rather than how much of the surface they cover, so a one-colour pattern prices much like a one-colour logo.',
+      },
+      {
+        q: 'Can we choose the dot size and spacing?',
+        a: 'Yes, and it changes the character considerably. Larger, sparser dots read as playful; small, dense ones read closer to a texture. We can show both on the die template.',
+      },
+      {
+        q: 'Will the dots distort on the cone?',
+        a: 'They compress slightly towards the narrow end, which is the taper doing its work. Dots absorb that far better than a strict grid, which is why the pattern has lasted.',
+      },
+      {
+        q: 'Does a pattern cost more than a logo?',
+        a: 'Not usually. Price follows the number of inks rather than the area they cover, so a one-colour pattern prices much like a one-colour mark.',
+      },
+      {
+        q: 'Where should our logo sit on a patterned sleeve?',
+        a: 'In a deliberately clear area of the pattern rather than on top of it. Leaving that gap in the artwork looks intentional; dropping a logo onto a busy field does not.',
+      },
+      {
+        q: 'Can we use two dot colours?',
+        a: 'Yes, and two sizes of dot in one colour is another way to add depth without a second ink. Both are worth pricing before deciding.',
+      },
+      {
+        q: 'Does a pattern hide handling marks?',
+        a: 'Noticeably. A busy surface disguises the scuffs and fingerprints that show clearly on a flat solid colour, which helps on sites that pre-assemble and stack sleeves.',
+      },
+      {
+        q: 'Can we change the pattern seasonally?',
+        a: 'Easily, because the die stays the same. Only the print changes, so a seasonal version is a shorter job than the original order was.',
+      },
+      {
+        q: 'Will small dots hold at print size?',
+        a: 'Very small dots can close up or drop out on board. Send the artwork and we will tell you what will hold before the run rather than after it.',
       },
     ],
     related: [
@@ -947,6 +1319,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Will heavy ink coverage make the sleeve harder to assemble?',
         a: 'Not the coverage itself, but an unlaminated heavy print can scuff where the overlap is pressed together. Lamination removes the issue and is the usual specification on designs like these.',
       },
+      {
+        q: 'What does our designer need before starting?',
+        a: 'The die template, as an editable vector file. Everything else follows from it, and artwork built without it almost always needs rebuilding rather than adjusting.',
+      },
+      {
+        q: 'Will straight lines look straight on the cone?',
+        a: 'No. A line drawn straight across the flat becomes a curve once wrapped, which is why designs for cones use organic shapes or lines set on the die\'s arc.',
+      },
+      {
+        q: 'Can we use a photographic background?',
+        a: 'Yes, at 300 dpi or better at final size, printed in full colour. Bear in mind that a third of it is under a hand for the life of the cone.',
+      },
+      {
+        q: 'How do we avoid the design being cut off?',
+        a: 'Extend everything past the die line rather than stopping at it, and keep anything that matters inside the safe area. Both are marked on the template.',
+      },
+      {
+        q: 'Does heavy ink coverage need lamination?',
+        a: 'It benefits from it. Unlaminated saturated print scuffs where the overlap is pressed together during assembly, which shows immediately on a dark or detailed design.',
+      },
+      {
+        q: 'Can we see a proof before printing?',
+        a: 'Yes, a digital proof showing your artwork positioned on the die. It confirms layout, content and spelling; colour accuracy needs a printed sample rather than a screen.',
+      },
+      {
+        q: 'Is there a limit to how many colours we can use?',
+        a: 'Not on process printing, which builds everything from four inks. The practical limit is what reads at the size a customer actually sees it from.',
+      },
+      {
+        q: 'Can the design run across the seam?',
+        a: 'It can, but it will be interrupted there on every assembled sleeve. Keep anything that has to read continuously away from the overlap.',
+      },
     ],
     related: [
       'polka-designs-ice-cream-cone-sleeves',
@@ -1014,6 +1418,34 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Does an eco specification cost more?',
         a: 'Removing lamination usually reduces cost. Moving to a specialist board can increase it. The two often cancel out, which surprises people expecting a premium.',
+      },
+      {
+        q: 'Is unlaminated board cheaper?',
+        a: 'Usually, because it removes a production step. Moving to a specialist recycled stock can add some of that back, so the two often cancel out.',
+      },
+      {
+        q: 'Can you supply certified board?',
+        a: 'Which certifications are available depends on the specific stock and what is in supply when your job runs. We confirm that in writing on your quote rather than claiming it generally.',
+      },
+      {
+        q: 'What percentage recycled content can we get?',
+        a: 'It varies by grade and availability, so we do not publish a figure. Tell us it matters and we will confirm what is achievable for your specification.',
+      },
+      {
+        q: 'Can we print a recycling symbol on the sleeve?',
+        a: 'Only if it describes what a customer can actually do where they throw it away. We will tell you the material; checking it against local collection is the step that makes the claim honest.',
+      },
+      {
+        q: 'Does removing lamination affect print quality?',
+        a: 'Slightly. Colours read a little softer and less saturated on an uncoated surface. Many brands prefer that look, which is worth seeing before deciding.',
+      },
+      {
+        q: 'Are these suitable for savoury cones?',
+        a: 'Usually not. Grease resistance comes from a lining or coating, which is exactly what an unlaminated, uncoated specification leaves out.',
+      },
+      {
+        q: 'What is the single biggest improvement we could make?',
+        a: 'If you have seating, serving eat-in customers in reusables. It almost always outweighs every material substitution available on the disposable range put together.',
       },
     ],
     related: [
@@ -1092,6 +1524,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Does heavier board improve grease resistance?',
         a: 'Only in the sense that there is more material to absorb before it shows. Genuine grease resistance comes from a liner or coating, which can be specified on any board weight.',
       },
+      {
+        q: 'How much more storage does a heavier board need?',
+        a: 'Enough to notice in a small back-of-house. The sleeves still ship flat, but each case holds fewer, so the pallet footprint per thousand goes up.',
+      },
+      {
+        q: 'Is a heavier board harder to roll?',
+        a: 'Firmer, and staff notice it on the first box. Against that, it holds shape once formed, so pre-assembled stock stays usable rather than flattening in the stack.',
+      },
+      {
+        q: 'Does heavier board resist grease better?',
+        a: 'Only in the sense that there is more material to absorb before staining shows. Genuine grease resistance comes from a lining, which can be added at any weight.',
+      },
+      {
+        q: 'Will it feel more expensive to a customer?',
+        a: 'Most people register the difference in the hand without being able to name it. That perceived quality is a large part of why sites move up a weight.',
+      },
+      {
+        q: 'Can we use the same artwork as our lighter sleeve?',
+        a: 'Yes, if the size is unchanged. Board weight does not affect the die line, so the artwork transfers directly and only the stock changes.',
+      },
+      {
+        q: 'Is it worth it for indoor counter service?',
+        a: 'Often not. A heavier board earns its cost on large scoops, long serves and outdoor trading. Indoors with quick turnover, a lighter sleeve usually performs identically.',
+      },
+      {
+        q: 'Does the extra weight increase carriage cost?',
+        a: 'Marginally, since carriage is priced on both weight and volume. It is rarely the deciding factor next to the difference in board cost itself.',
+      },
+      {
+        q: 'Can we trial it before switching a whole order?',
+        a: 'Splitting a run across two board weights is worth asking about. Tell us the quantities and we will price it rather than assuming one specification for everything.',
+      },
     ],
     related: [
       'custom-paper-cone-sleeves',
@@ -1163,6 +1627,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'Is the print quality lower on paper?',
         a: 'Slightly softer than on coated board, because paper absorbs ink. One and two colour designs look fine. Photographic artwork is better on a coated stock.',
       },
+      {
+        q: 'How much less storage does paper stock need?',
+        a: 'Substantially. A case holds far more than the same case of heavy board, which is often the deciding factor in a van or a kiosk with one cupboard.',
+      },
+      {
+        q: 'Will paper sleeves tear during assembly?',
+        a: 'Not with normal handling. They are lighter to roll, which is why high-volume counters like them, but they are less forgiving of being forced onto an oversized cone.',
+      },
+      {
+        q: 'Are they strong enough for a double scoop?',
+        a: 'For a cone eaten within a few minutes, generally yes. For a heavy serve carried any distance, a firmer board holds its shape considerably better.',
+      },
+      {
+        q: 'Can paper sleeves be laminated?',
+        a: 'They can, though laminating a lightweight stock removes much of the cost advantage that made it attractive. It is worth pricing both before deciding.',
+      },
+      {
+        q: 'Do they suit an unlaminated recycling specification?',
+        a: 'They are the natural fit for it. A light uncoated paper with a one or two colour print is the simplest thing in this range to put into a paper stream.',
+      },
+      {
+        q: 'How does print quality compare with board?',
+        a: 'Slightly softer, because paper absorbs ink. One and two colour designs look fine; photographic artwork is noticeably better on a coated stock.',
+      },
+      {
+        q: 'Are they the cheapest option in the range?',
+        a: 'Per unit, yes, on a like-for-like print. Whether they are the cheapest overall depends on whether they survive your service without being replaced.',
+      },
+      {
+        q: 'Which service type suits them?',
+        a: 'Quick counter turnover where the cone is eaten within a few minutes. A promenade kiosk in August is the case where they struggle.',
+      },
     ],
     related: [
       'custom-cardboard-cone-sleeves',
@@ -1222,6 +1718,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Can we print full colour on foil?',
         a: 'Yes, though the result differs from the same artwork on white board. A white underbase restores opacity where needed. It is worth asking for a proof on the actual material rather than judging from screen.',
+      },
+      {
+        q: 'Why do colours look different on foil?',
+        a: 'Because the surface reflects light back through the ink. Colours read brighter and more transparent than the same file on white board, and pale tints can nearly disappear.',
+      },
+      {
+        q: 'Can we print a solid colour on foil?',
+        a: 'Yes, usually over a white underbase so the colour reads as intended rather than as a tint of the metal beneath it. That adds a printing pass.',
+      },
+      {
+        q: 'Are foil sleeves recyclable?',
+        a: 'A foil-faced board is a mixed material, which changes the disposal route. Do not print a recycling instruction on one without confirming what your local stream accepts.',
+      },
+      {
+        q: 'Do they cost much more than board?',
+        a: 'Noticeably more, which is why most sites use them for a premium or seasonal line alongside a standard sleeve rather than instead of one.',
+      },
+      {
+        q: 'Will the foil crease when assembled?',
+        a: 'A faced board creases like any other along the fold. What it does not do is crack the way a heavily inked unlaminated surface can.',
+      },
+      {
+        q: 'Do foil sleeves keep ice cream colder?',
+        a: 'Marginally, by reflecting radiant heat, but over the few minutes a cone is held the effect is small. The moisture barrier and the appearance are the real reasons to use them.',
+      },
+      {
+        q: 'Can we get a proof on the actual material?',
+        a: 'Ask at quote stage. Foil is one of the cases where judging from a screen is genuinely misleading, so a physical sample is worth more than usual.',
+      },
+      {
+        q: 'Are they suitable for hot savoury cones?',
+        a: 'The facing resists moisture well, but grease resistance is a separate specification. Tell us what goes inside and we will confirm rather than assume.',
       },
     ],
     related: [
@@ -1294,6 +1822,38 @@ export const CONE_SLEEVES: Product[] = [
         q: 'How do you stop small pieces falling through the point?',
         a: 'A reinforced or closed point on the die. It is worth specifying explicitly, since a sleeve designed to wrap a solid cone assumes there is a cone in there holding everything up.',
       },
+      {
+        q: 'What board do you recommend for fried chicken?',
+        a: 'A grease-resistant lined or coated board, specified against your fryer temperature and how long portions are held before they are eaten. We confirm the grade on the quote.',
+      },
+      {
+        q: 'How do we stop small pieces falling out?',
+        a: 'A reinforced or closed point on the die. A sleeve designed to wrap a solid cone assumes something is holding the contents up, which loose pieces are not.',
+      },
+      {
+        q: 'Can we use the same die as our ice cream cones?',
+        a: 'The shape often works. The board rarely does, because untreated stock soaks through within minutes of hot chicken going in.',
+      },
+      {
+        q: 'How deep should the wrap be?',
+        a: 'Deeper than an ice cream sleeve, because savoury cones are filled higher. Measure a made-up portion rather than working from the empty cone.',
+      },
+      {
+        q: 'Will the sleeve stay gripped with oily hands?',
+        a: 'A matt finish grips considerably better than gloss when hands are greasy, which is why it is the usual specification for fried food.',
+      },
+      {
+        q: 'Do these work at festivals and markets?',
+        a: 'They are mostly bought for exactly that, because a cone leaves the customer a free hand. Outdoor trading argues for a laminated finish as well.',
+      },
+      {
+        q: 'Can we print full colour on a grease-resistant board?',
+        a: 'Yes. The grease resistance is a lining on the inner face, so the printable outer surface behaves like any other coated board.',
+      },
+      {
+        q: 'How do we size for a portion by weight?',
+        a: 'Weigh a typical serving on your own scales and send us the figure. Portion descriptions vary far too much between kitchens to size from.',
+      },
     ],
     related: [
       'cone-fries-packaging',
@@ -1360,6 +1920,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Do crepe cones need a closed point?',
         a: 'A closed or tightly folded point is worth specifying. Warm fillings settle downwards, and an open point turns into a slow leak by the time the customer reaches the bottom.',
+      },
+      {
+        q: 'How is a crepe holder different from an ice cream sleeve?',
+        a: 'It is doing the job the wafer does in an ice cream cone. With nothing rigid inside, the holder carries the whole load, so it is cut deeper and in a heavier board.',
+      },
+      {
+        q: 'What measurement do you need?',
+        a: 'The diameter of your rolled crepe at its widest, measured after filling, plus how high the toppings sit. Both change with pan size and how tightly your team rolls.',
+      },
+      {
+        q: 'Do crepe holders need a closed point?',
+        a: 'Worth specifying. Warm fillings settle downwards, and an open point becomes a slow leak by the time the customer reaches the bottom.',
+      },
+      {
+        q: 'Can the inside be printed?',
+        a: 'On a deep holder the inner face is visible whenever the customer looks down, so it is worth considering. It adds a press pass, so decide before quoting.',
+      },
+      {
+        q: 'Will chocolate sauce soak through?',
+        a: 'Not through a greaseproof-lined board within a normal serve. On plain board it shows as a dark patch within a few minutes.',
+      },
+      {
+        q: 'Are these suitable for savoury crepes?',
+        a: 'Yes, and savoury fillings are often oilier, which strengthens the case for a lined board rather than a plain one.',
+      },
+      {
+        q: 'Can we use one holder for folded and rolled crepes?',
+        a: 'No. A folded crepe is a triangle and a rolled one is a cone, so the dies have nothing in common. Sites serving both need two items.',
+      },
+      {
+        q: 'How do they ship?',
+        a: 'Flat and die-cut, assembled at the counter. A deeper holder uses more board per unit but still stores far more compactly than a formed container.',
       },
     ],
     related: [
@@ -1430,6 +2022,38 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'Are they suitable for hot, oily food?',
         a: 'With a grease-resistant specification, yes. Confirm the grade against your food rather than assuming, since a moulded cone is often chosen for chips, which are the hardest test.',
+      },
+      {
+        q: 'How much storage do moulded cones need?',
+        a: 'Considerably more than flat stock, even though they nest. In a van or a small kiosk that is usually the deciding factor against them.',
+      },
+      {
+        q: 'Can they be printed?',
+        a: 'More simply than flat stock. Printing onto a formed shape is limited, so designs are usually a logo and a colour rather than full artwork. We confirm what is available per size.',
+      },
+      {
+        q: 'Are they suitable for hot chips?',
+        a: 'With a grease-resistant specification, yes, and chips are one of the most common uses. Confirm the grade against your fryer rather than assuming.',
+      },
+      {
+        q: 'Do they stand up on their own?',
+        a: 'They are rigid, but a cone cannot stand unaided on a flat surface. If customers sit down to eat, plan for a holder as part of the order.',
+      },
+      {
+        q: 'How do they compare on cost with a folded sleeve?',
+        a: 'Higher per unit, because they arrive formed rather than flat. What you buy back is service speed, since there is no assembly step at all.',
+      },
+      {
+        q: 'Can we use them for sweets and dry snacks?',
+        a: 'Yes, and dry goods are the easiest case, since no lining is needed. That makes them cheaper than the same cone specified for fried food.',
+      },
+      {
+        q: 'Do they need a die?',
+        a: 'Not a cutting die, because they are moulded rather than die-cut. Tooling for a moulded shape works differently, which we confirm on the quote.',
+      },
+      {
+        q: 'Are they available in colours?',
+        a: 'Availability of coloured stock varies by size and run length. Tell us what you need and we will confirm rather than listing options that may not be produced.',
       },
     ],
     related: [
@@ -1517,6 +2141,34 @@ export const CONE_SLEEVES: Product[] = [
       {
         q: 'How small can cut detail be?',
         a: 'Fine detail is limited by the board thickness — a thick board cannot hold a sharp small feature cleanly. Send the shape and we will tell you what will and will not cut before you commit.',
+      },
+      {
+        q: 'How long does a new die take to make?',
+        a: 'It is a separate step ahead of printing, and its lead time is confirmed with your quote. A first order with new tooling always runs longer than a reorder from the same tool.',
+      },
+      {
+        q: 'Can you cut any shape?',
+        a: 'Anything that can be drawn as a closed outline, within limits on very fine detail. Board thickness sets how sharp a small feature can be, and we will tell you before you commit.',
+      },
+      {
+        q: 'Do we need to supply a technical drawing?',
+        a: 'No. A sketch and the product\'s dimensions are enough to start, and a physical sample is better still. We produce the die line from that.',
+      },
+      {
+        q: 'Can we see the shape before printing?',
+        a: 'Yes, as an unprinted sample cut on the tool. Wrapping that around the real product is the cheapest possible moment to change anything.',
+      },
+      {
+        q: 'Is a window cheaper without film?',
+        a: 'Yes, and it avoids a mixed material. The trade-off is that the product is exposed at that point, which suits a wrapped item more than a loose one.',
+      },
+      {
+        q: 'Can the die include a locking tab?',
+        a: 'Yes, and it removes the need for glue on some formats. It has to be designed into the shape rather than added later, so raise it early.',
+      },
+      {
+        q: 'What happens to the die between orders?',
+        a: 'Storage and reuse terms are set out on your quote. It is a fair question to ask before committing, and we would rather put it in writing than leave it assumed.',
       },
     ],
     related: [

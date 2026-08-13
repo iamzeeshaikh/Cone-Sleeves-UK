@@ -71,6 +71,34 @@ export const FOOD_BOXES: Product[] = [
         q: 'Can we print full colour on a grease-resistant board?',
         a: 'Yes. The grease resistance is a lining or coating on the inner face, so the printable outer surface behaves normally.',
       },
+      {
+        q: 'Scoop or carton for a chip shop?',
+        a: 'A scoop if the customer eats standing up, a carton if they sit down or the order is delivered. Scoops fill faster during a rush.',
+      },
+      {
+        q: 'Why do chips go soft in a closed box?',
+        a: 'Trapped steam. A closed carton holds moisture against the chips, which is why vented cartons and open scoops exist.',
+      },
+      {
+        q: 'How do we size a chip box?',
+        a: 'Weigh a typical portion on your own scales. A regular portion ranges from roughly 150 to 300 grams across UK shops, so the word tells us nothing.',
+      },
+      {
+        q: 'Do these arrive assembled?',
+        a: 'Flat-packed or pre-formed, and the difference matters. Flat stores in a fraction of the space; pre-formed is ready instantly.',
+      },
+      {
+        q: 'Can we print full colour on grease-resistant board?',
+        a: 'Yes. The grease resistance is a lining on the inner face, so the printable outer surface behaves normally.',
+      },
+      {
+        q: 'Will the box stand up on a counter?',
+        a: 'With a formed base, yes. A scoop with a narrow base tips when set down, which is a common complaint.',
+      },
+      {
+        q: 'Do we need venting?',
+        a: 'On a closed carton, if crispness matters. Vent size and position both matter — too few and nothing escapes, too many and the food cools.',
+      },
     ],
     related: ['custom-fries-sleeves', 'cone-fries-packaging', 'fried-chicken-packaging', 'custom-french-fry-bags'],
   },
@@ -129,6 +157,38 @@ export const FOOD_BOXES: Product[] = [
         q: 'Can a customer put a cone down?',
         a: 'Not without a stand. If your customers sit down to eat, plan for a holder as part of the order rather than discovering the problem at the first event.',
       },
+      {
+        q: 'Why does a cone look like more food?',
+        a: 'Because the customer sees the top of the pile at eye level rather than looking down into a tray. It is a genuine perception effect.',
+      },
+      {
+        q: 'What board suits a chip cone?',
+        a: 'Grease-resistant, because the whole portion presses against one narrow area. That concentration is harder on board than a flat tray is.',
+      },
+      {
+        q: 'Will the cone collapse when gripped?',
+        a: 'Not with enough rigidity in the board. A cone gripped mid-height with a full portion in it is the test worth doing on a sample.',
+      },
+      {
+        q: 'How wide should the rim be?',
+        a: 'Wide enough to get a hand and a wooden fork in. A narrow rim looks elegant and is awkward to eat from.',
+      },
+      {
+        q: 'Do these suit festivals?',
+        a: 'They are mostly bought for exactly that, because a cone frees a hand when everyone is already holding a drink.',
+      },
+      {
+        q: 'How do they ship?',
+        a: 'Flat and die-cut, assembled at the counter, unless you choose a moulded version which arrives formed and takes far more space.',
+      },
+      {
+        q: 'Can we brand the cone if it is moulded?',
+        a: 'Printing on a formed shape is limited, so most moulded cones carry a logo rather than full artwork. Flat die-cut cones print freely.',
+      },
+      {
+        q: 'What portion weight suits a cone?',
+        a: 'Weigh a serving and tell us the figure. A cone holds the same weight as a scoop in a much smaller footprint, which misleads the eye.',
+      },
     ],
     related: ['french-fry-boxes', 'paper-mache-cones', 'custom-chicken-cone-sleeves', 'custom-fries-sleeves'],
   },
@@ -183,6 +243,38 @@ export const FOOD_BOXES: Product[] = [
       {
         q: 'How much does the fold vary between staff?',
         a: 'Enough to matter for portion consistency. Shops that care about exact portions tend to move to a formed container; shops that value the traditional look accept the variation.',
+      },
+      {
+        q: 'What weight of greaseproof folds most easily?',
+        a: 'A moderate weight. Heavy stock resists oil better and is awkward to fold at speed, which is the balance to strike.',
+      },
+      {
+        q: 'How much storage do these need?',
+        a: 'Almost none, which is their main advantage. A case of sheets replaces a pallet of formed containers.',
+      },
+      {
+        q: 'Can we print in full colour?',
+        a: 'One or two colours reproduces reliably and suits the price point. Heavy coverage on an absorbent sheet looks patchy and costs more.',
+      },
+      {
+        q: 'Do these suit a traditional chip shop?',
+        a: 'They are exactly what a traditional shop used before formed containers, and plenty have gone back to them for the look and the cost.',
+      },
+      {
+        q: 'What sheet size do we need?',
+        a: 'Enough to fold around your portion with an overlap. Wrap a real portion with a test sheet before settling on a size.',
+      },
+      {
+        q: 'Can we use these as a box liner too?',
+        a: 'Yes, and many shops do both — a folded holder for takeaway and the same printed sheet lining a box for eat-in.',
+      },
+      {
+        q: 'Can staff be trained to fold these quickly?',
+        a: 'Yes, and most pick it up within a shift. The variation between staff is what pushes some shops towards a formed container.',
+      },
+      {
+        q: 'Do these suit a delivery order?',
+        a: 'Poorly. A folded paper holder is a counter product; a courier bag needs something that holds its shape when tipped.',
       },
     ],
     related: ['custom-printed-fry-paper', 'french-fry-boxes', 'custom-greaseproof-paper', 'custom-french-fry-bags'],
@@ -248,6 +340,38 @@ export const FOOD_BOXES: Product[] = [
       {
         q: 'How many pieces should a box hold?',
         a: 'Size by weight rather than count, since piece sizes vary considerably. Weigh your standard portions and send the figures, including the largest sharing box you sell.',
+      },
+      {
+        q: 'Will bones puncture the box?',
+        a: 'On a light board they can. Bone-in portions are one of the clearer cases for specifying a heavier grade.',
+      },
+      {
+        q: 'Do these stack in a delivery bag?',
+        a: 'With a rim and lid designed for it. Tell us at quote stage if boxes are stacked, because it changes the construction.',
+      },
+      {
+        q: 'Open bucket or closed box?',
+        a: 'Open for counter service where crispness matters; closed and vented for delivery where spillage matters more.',
+      },
+      {
+        q: 'What board copes with fryer oil?',
+        a: 'A heavy grease-resistant grade, specified against your fryer temperature and holding time rather than a general figure.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes. The grease resistance is on the inner face, so the outer printable surface behaves like any other coated board.',
+      },
+      {
+        q: 'How do we stop the coating sticking to the box?',
+        a: 'A coated inner face and letting pieces drain briefly before boxing. The second helps more than most board changes.',
+      },
+      {
+        q: 'Should we vent a bucket as well as a box?',
+        a: 'An open bucket vents by design. Venting matters on closed formats, which is where trapped steam softens the coating.',
+      },
+      {
+        q: 'Can we run a sharing size alongside individual boxes?',
+        a: 'Yes, and running both in one job shares the setup. Weigh both portions rather than sizing the large one by eye.',
       },
     ],
     related: ['french-fry-boxes', 'custom-chicken-cone-sleeves', 'custom-combo-meal-trays', 'custom-take-out-bags'],
@@ -321,6 +445,34 @@ export const BEVERAGE_SLEEVES: Product[] = [
         q: 'Can we run several designs in one order?',
         a: 'On digital printing this is straightforward. The cost depends on how the quantity splits between designs, so send the split rather than a total.',
       },
+      {
+        q: 'Will these fit cups we already buy?',
+        a: 'That is the intention. Send a cup or the brand and size code from the base, and the sleeve is cut to that circumference.',
+      },
+      {
+        q: 'How many sleeve sizes will we need?',
+        a: 'Usually two across three cup sizes. One sleeve rarely covers more than two adjacent sizes without spinning or refusing to fit.',
+      },
+      {
+        q: 'Do we need sleeves on double-walled cups?',
+        a: 'Not for heat. Plenty of cafés still use them for branding, because a printed sleeve is far cheaper than printing the cup.',
+      },
+      {
+        q: 'Where should a QR code go?',
+        a: 'Where a right-handed thumb does not land, and large enough to scan at arm\'s length. Test a printed sample rather than a screen.',
+      },
+      {
+        q: 'How many sleeves does a café use?',
+        a: 'Count a typical week of takeaway hot drinks and whether every one gets a sleeve. Most people are surprised in one direction or the other.',
+      },
+      {
+        q: 'Will kraft board change our colours?',
+        a: 'Yes, warmer and darker. If a colour has to be exact, that means white board or a white underbase.',
+      },
+      {
+        q: 'Do you supply plain sleeves alongside printed ones?',
+        a: 'Yes, and some cafés run plain stock for quiet periods and printed for promotions. Send the split between them.',
+      },
     ],
     related: ['custom-cardboard-beverage-sleeves', 'custom-iced-coffee-sleeves', 'custom-tea-cup-sleeves', 'paper-cup-sleeves'],
   },
@@ -375,6 +527,38 @@ export const BEVERAGE_SLEEVES: Product[] = [
       {
         q: 'Will a flat sleeve go soft on an iced drink?',
         a: 'It can where condensation is heavy. A laminated outer face stops the print softening and is worth specifying if cold drinks are a large part of your trade.',
+      },
+      {
+        q: 'Is a flat sleeve enough for hot coffee?',
+        a: 'On a double-walled cup, yes. On a single-wall cup with a very hot drink it adds grip rather than protection.',
+      },
+      {
+        q: 'Why does flat board print better?',
+        a: 'Because the surface is smooth. Corrugated flute texture breaks up fine lines and closes small reversed-out type.',
+      },
+      {
+        q: 'Will a flat sleeve soften on an iced drink?',
+        a: 'It can where condensation is heavy. A laminated outer face stops the print softening and is worth specifying for cold trade.',
+      },
+      {
+        q: 'How much storage do these save?',
+        a: 'Considerably more compact than corrugated per thousand, which is often the deciding factor in a small café store room.',
+      },
+      {
+        q: 'Can we print small legal text?',
+        a: 'This is the construction to use if you need to. Flat board holds small type where corrugated does not.',
+      },
+      {
+        q: 'Do these suit a tea-heavy menu?',
+        a: 'Less well than corrugated, because tea goes in near boiling and benefits from a real air gap rather than added grip.',
+      },
+      {
+        q: 'Will they fit any cup?',
+        a: 'They are cut to a circumference, so send a cup. Two cups sold as the same volume can differ enough for one sleeve to spin.',
+      },
+      {
+        q: 'Can we match these to our cups?',
+        a: 'Yes, and where you also print cups, running both in one order keeps the colour consistent across the pair.',
       },
     ],
     related: ['custom-printed-coffee-sleeves', 'custom-cold-drink-sleeves', 'paper-cup-sleeves', 'eco-friendly-beverage-sleeves'],
@@ -439,6 +623,38 @@ export const BEVERAGE_SLEEVES: Product[] = [
         q: 'Do cold cups need sleeves at all?',
         a: 'For comfort and grip rather than temperature. A very cold cup is genuinely unpleasant to hold for long, and a wet one is slippery, which is the more common complaint.',
       },
+      {
+        q: 'Why do cold drink sleeves need a coating?',
+        a: 'Because a cold cup sweats and the sleeve is wet from the outside in for its whole life. Uncoated board absorbs that and goes limp.',
+      },
+      {
+        q: 'Do cold drinks really need a sleeve?',
+        a: 'For grip rather than temperature. A wet cup is slippery, which is the complaint customers actually make.',
+      },
+      {
+        q: 'Will the ink transfer to hands?',
+        a: 'Not on a coated or laminated print. Uncoated ink on a wet surface is where transfer happens, which is why coating is specified.',
+      },
+      {
+        q: 'Are cold cups a different size from hot ones?',
+        a: 'Often. Cold cups are commonly larger and can have a different taper, so send a cold cup rather than assuming.',
+      },
+      {
+        q: 'Corrugated or flat for cold?',
+        a: 'Either works if the surface is protected. Corrugated absorbs condensation well; flat board laminated resists it.',
+      },
+      {
+        q: 'Will the sleeve slide down a wet cup?',
+        a: 'It can, since moisture reduces friction. Sizing slightly tighter than a hot sleeve helps considerably.',
+      },
+      {
+        q: 'Do these suit milkshakes?',
+        a: 'Yes, and a thick shake is held for longer than a soft drink, which strengthens the case for a coated surface.',
+      },
+      {
+        q: 'Can we run one design across hot and cold sleeves?',
+        a: 'Yes, if the cup circumferences match. Where they differ the artwork carries over but each needs its own layout.',
+      },
     ],
     related: ['custom-iced-coffee-sleeves', 'custom-cardboard-beverage-sleeves', 'custom-printed-coffee-sleeves', '32-oz-clear-cups'],
   },
@@ -491,6 +707,38 @@ export const BEVERAGE_SLEEVES: Product[] = [
       {
         q: 'Will the sleeve slide down a wet cup?',
         a: 'It can, since moisture reduces grip. Sizing slightly tighter than a hot sleeve, and positioning it above the widest point of the cup, both help considerably.',
+      },
+      {
+        q: 'Why do iced coffee sleeves need more than cold drink sleeves?',
+        a: 'Because the cup is held for an hour rather than ten minutes, and iced cups are commonly larger. Both change the specification.',
+      },
+      {
+        q: 'What size cup should we send?',
+        a: 'A cold one, and a hot one as well if you are ordering sleeves for both. The two frequently differ in taper as well as size.',
+      },
+      {
+        q: 'Will the sleeve survive an hour on a desk?',
+        a: 'With a coated outer face, yes. Uncoated board sitting in a pool of condensation comes apart by the time the drink is finished.',
+      },
+      {
+        q: 'Should iced sleeves be tighter?',
+        a: 'Slightly, because moisture reduces grip. Positioning above the cup\'s widest point also stops it sliding.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, with inks selected for moisture resistance. That is worth specifying rather than assuming on a product that lives wet.',
+      },
+      {
+        q: 'Do these fit clear cold cups?',
+        a: 'They can, though clear cups often have a different taper from paper hot cups. Send one rather than a stated volume.',
+      },
+      {
+        q: 'Will they work in summer only?',
+        a: 'Most sites use them year round now, since iced drinks have stopped being seasonal in the way they were.',
+      },
+      {
+        q: 'Can we match them to our hot sleeves?',
+        a: 'Yes, and running both in one order keeps the brand colour consistent across the two, which matters when they sit together on a counter.',
       },
     ],
     related: ['custom-cold-drink-sleeves', 'custom-printed-coffee-sleeves', '32-oz-clear-cups', 'custom-cardboard-beverage-sleeves'],
@@ -550,6 +798,38 @@ export const BEVERAGE_SLEEVES: Product[] = [
       {
         q: 'Does an eco specification cost more?',
         a: 'Removing lamination usually reduces cost. Moving to a specialist recycled board can add some back. The two frequently cancel out.',
+      },
+      {
+        q: 'Why is a sleeve easier to specify than a cup?',
+        a: 'Because it does not touch the drink, so there is no lining to work around. Plain uncoated board is a workable specification rather than an aspiration.',
+      },
+      {
+        q: 'Can we get recycled content?',
+        a: 'Availability varies by stock and by what is in supply when your job runs. We confirm what is achievable on your quote.',
+      },
+      {
+        q: 'Can we print a recycling instruction?',
+        a: 'Only if it matches what your customers can actually do. A sleeve marked recyclable that goes to general waste misleads.',
+      },
+      {
+        q: 'Does reducing ink coverage help?',
+        a: 'It helps recyclability and reduces cost at the same time, which is a rare alignment. Heavy flood coverage does neither any favours.',
+      },
+      {
+        q: 'Should we avoid metallic finishes?',
+        a: 'If recyclability matters, yes. Foil and metallised layers make the material mixed, which changes the disposal route entirely.',
+      },
+      {
+        q: 'What is the biggest reduction we could make?',
+        a: 'Serving eat-in customers in reusables, if you have seating. It usually outweighs every material change available on the disposable range.',
+      },
+      {
+        q: 'Can we print a disposal instruction?',
+        a: 'Only one your customers can follow. If the sleeve leaves your premises, the instruction has to match street collection rather than yours.',
+      },
+      {
+        q: 'Do unlaminated sleeves feel cheaper?',
+        a: 'They feel different rather than cheaper. Plenty of brands prefer the uncoated surface, which reads as deliberate on the right design.',
       },
     ],
     related: ['custom-cardboard-beverage-sleeves', 'custom-eco-friendly-cone-sleeves', 'recyclable-paper-cups', 'kraft-coffee-cups'],

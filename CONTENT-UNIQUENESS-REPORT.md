@@ -19,7 +19,7 @@ page was written from scratch for a UK audience.
 | Location pages | None existed | 25 written from scratch |
 | Legal pages | Generic templates | Rewritten for a UK B2B bespoke-goods supplier |
 
-**Total authored: ≈ 78,300 words.**
+**Total authored: ≈ 127,400 words**, of which ≈ 68,000 sit in the FAQ blocks.
 
 ---
 

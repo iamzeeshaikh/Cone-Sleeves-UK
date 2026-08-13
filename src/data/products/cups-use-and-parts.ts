@@ -59,6 +59,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Should the logo appear once or repeat around the cup?',
         a: 'Repeat it. A single logo faces away from the viewer about as often as it faces towards them, and customers do not turn the cup to help.',
       },
+      {
+        q: 'Should the logo repeat around the cup?',
+        a: 'Yes. A hand covers roughly a third of the cup, so a single mark faces away as often as towards the viewer.',
+      },
+      {
+        q: 'How many cups make printing worthwhile?',
+        a: 'It depends on the print method rather than a threshold. Digital makes far smaller runs viable than conventional flexo does.',
+      },
+      {
+        q: 'Are sleeves cheaper than printed cups?',
+        a: 'For a single site, almost always. A printed sleeve on a plain cup avoids cup tooling and minimum quantities entirely.',
+      },
+      {
+        q: 'Which sizes should we print first?',
+        a: '12oz, because it is the most ordered and the one that appears in photographs and on desks.',
+      },
+      {
+        q: 'Do we need matching lids?',
+        a: 'Only if drinks leave the building. Lids are matched by rim diameter rather than stated volume, so send a cup.',
+      },
+      {
+        q: 'Can we run several sizes in one order?',
+        a: 'Yes, and it shares the setup. Each size needs its own layout because the flat blank differs.',
+      },
+      {
+        q: 'Will kraft change our brand colour?',
+        a: 'Yes, warmer and darker. If the colour must be exact, that means white board or a white underbase.',
+      },
+      {
+        q: 'How do we estimate annual usage?',
+        a: 'Count a typical week of takeaway hot drinks and scale it. Annual guesses made without till data are usually well out.',
+      },
     ],
     related: ['12-oz-paper-cups', 'kraft-coffee-cups', 'custom-printed-coffee-sleeves', 'paper-coffee-cup-lids'],
   },
@@ -113,6 +145,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Is kraft more expensive than white?',
         a: 'The board is usually similar. Where costs differ is in the artwork — a design needing a white underbase to sit correctly on kraft adds a printing pass.',
       },
+      {
+        q: 'What artwork suits kraft cups?',
+        a: 'A single dark colour, line illustration, or type reversed to the board colour. Photographs and pale gradients consistently disappoint.',
+      },
+      {
+        q: 'Can we use white ink on kraft?',
+        a: 'Yes, and it reads brightly against the brown. It is an extra ink, so price it rather than assuming it is included.',
+      },
+      {
+        q: 'Is a double-wall kraft cup possible?',
+        a: 'Commonly, with a kraft outer and a standard inner. That gives the look without changing what touches the drink.',
+      },
+      {
+        q: 'Do kraft cups need a sleeve?',
+        a: 'On a single wall with a hot drink, yes, above about 8oz. A double-wall kraft cup removes that need.',
+      },
+      {
+        q: 'Will the brown vary between orders?',
+        a: 'A little, because unbleached board shifts between mill batches. It matters if cups sit beside other matched packaging.',
+      },
+      {
+        q: 'Is kraft an environmental choice?',
+        a: 'It skips a bleaching stage, which is real. It does not change the lining inside or how the cup is collected.',
+      },
+      {
+        q: 'Can we print two colours on kraft?',
+        a: 'Yes. Two well-chosen inks usually look better on kraft than four fighting the brown base, because every colour printed on unbleached board shifts warmer than it would on white.',
+      },
+      {
+        q: 'Do kraft cups cost more?',
+        a: 'The board is usually similar to white. Cost differs where artwork needs a white underbase to sit correctly.',
+      },
     ],
     related: ['kraft-paper-cups', 'custom-paper-coffee-cups', 'brown-paper-cups', 'cardboard-coffee-cups'],
   },
@@ -166,6 +230,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Can a topped drink be lidded?',
         a: 'Only with a domed lid, and even then a tall cream swirl will touch it. Most sites accept that topped drinks are an eat-in offer and serve takeaway versions without.',
+      },
+      {
+        q: 'What size suits hot chocolate?',
+        a: 'Usually a size up from your standard coffee, because the pour is fuller and a topping needs headspace above it.',
+      },
+      {
+        q: 'Do these need double wall?',
+        a: 'Often. Hot chocolate is served very hot and held for longer than an espresso-based drink, so comfort matters more.',
+      },
+      {
+        q: 'Will cream marks show on the print?',
+        a: 'On a pale cup, yes. A darker or busier design disguises the inevitable drips down the outside.',
+      },
+      {
+        q: 'Is demand seasonal?',
+        a: 'Sharply. Hot chocolate volumes peak in December, which is worth planning stock and any seasonal print around.',
+      },
+      {
+        q: 'Can we run a festive version?',
+        a: 'Yes, and hot chocolate is the drink most often given a festive cup. Start the conversation in late summer rather than autumn.',
+      },
+      {
+        q: 'Do we need a bigger lid?',
+        a: 'A domed lid clears a topping where a flat one crushes it. Confirm the rim rather than the volume when matching.',
+      },
+      {
+        q: 'How do we cost the drink?',
+        a: 'Allow for the topping as well as the liquid. A topped 16oz cup delivers less drink than the number suggests.',
+      },
+      {
+        q: 'Can we run a festive hot chocolate cup?',
+        a: 'Yes, and it is one of the most common seasonal requests. Order earlier than feels necessary, because press capacity tightens.',
       },
     ],
     related: ['12-oz-paper-cups', 'custom-paper-coffee-cups', 'paper-coffee-cup-lids', 'christmas-coffee-cups'],
@@ -223,6 +319,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'What temperature can a hot cup handle?',
         a: 'Standard hot drink service is well within what a properly lined cup handles. If your application involves higher or sustained heat, tell us and we will confirm a suitable specification rather than assume.',
       },
+      {
+        q: 'Is single wall plus a sleeve cheaper?',
+        a: 'Less often than assumed. Counting both items and the extra handling, the totals are frequently close to double wall.',
+      },
+      {
+        q: 'Why do wax cups fail with hot drinks?',
+        a: 'The coating softens with heat and transfers onto the drink. It is a cold and ambient material rather than a hot one.',
+      },
+      {
+        q: 'What is ripple wall?',
+        a: 'An outer layer with a fluted texture bonded to the cup, giving insulation similar to a sleeve without a separate item.',
+      },
+      {
+        q: 'Does double wall print differently?',
+        a: 'The outer surface is slightly textured, which softens fine detail. Single wall holds small type more cleanly.',
+      },
+      {
+        q: 'How much storage does double wall need?',
+        a: 'Noticeably more per thousand, because each cup is thicker. Worth checking against your store room before switching.',
+      },
+      {
+        q: 'Do these need lids?',
+        a: 'Only if drinks leave the building. Where they do, match the lid to the rim rather than the stated volume.',
+      },
+      {
+        q: 'Can we mix wall types across sizes?',
+        a: 'Yes, and some sites do — single wall with a sleeve on small drinks, double wall on large. Tell us the split.',
+      },
+      {
+        q: 'Do you supply matching lids?',
+        a: 'Yes, matched by rim diameter rather than volume. Ordering cups and lids together avoids the commonest fitting problem.',
+      },
     ],
     related: ['single-wall-paper-cups', 'custom-paper-coffee-cups', 'paper-cup-sleeves', '12-oz-paper-cups'],
   },
@@ -277,6 +405,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Does single wall print better than double wall?',
         a: 'Noticeably, for fine detail. The outer surface is smooth rather than textured, so small type and detailed marks hold cleanly.',
       },
+      {
+        q: 'Why does single wall print better?',
+        a: 'The outer surface is smooth rather than textured, so small type, fine detail and QR codes hold cleanly.',
+      },
+      {
+        q: 'How much storage do they save?',
+        a: 'Considerably. A case holds far more single wall cups than double wall, which matters in a small back-of-house.',
+      },
+      {
+        q: 'Do these suit cold drinks?',
+        a: 'Very well, since no insulation is needed. Condensation on the outside is the only consideration, and a sleeve solves grip.',
+      },
+      {
+        q: 'Should we pair them with sleeves?',
+        a: 'If you are printing sleeves anyway, single wall cups plus sleeves is a coherent specification rather than a compromise.',
+      },
+      {
+        q: 'Are they the cheapest hot cup?',
+        a: 'Per cup, yes. Whether they are cheapest overall depends on whether you then buy sleeves to go with them.',
+      },
+      {
+        q: 'Will they deform when squeezed?',
+        a: 'At larger sizes with a full drink, a thin single wall can, which is what pops a lid. Wall stiffness matters above 16oz.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, and this is the construction that reproduces it most cleanly, because the surface is smooth.',
+      },
+      {
+        q: 'Do you supply these with sleeves?',
+        a: 'Yes, and single wall plus a printed sleeve is a coherent specification rather than a compromise. Send both quantities.',
+      },
     ],
     related: ['disposable-hot-cups', 'paper-cup-sleeves', '8-oz-paper-cups', 'custom-printed-coffee-sleeves'],
   },
@@ -330,6 +490,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Are carriers worth printing?',
         a: 'They travel into offices and meeting rooms and are seen by everyone the order is delivered to, which is a wider audience than the cups themselves reach. For most cafés, yes.',
+      },
+      {
+        q: 'How many cups should a carrier take?',
+        a: 'Two or four. Six exists but becomes awkward through doorways and the centre starts to flex.',
+      },
+      {
+        q: 'Will cups rattle in transit?',
+        a: 'Not with holes cut to your cups. A carrier sized for a wider cup lets yours tip, which is the usual complaint.',
+      },
+      {
+        q: 'Do carriers need a handle?',
+        a: 'Once four full cups are in one, yes. Without a grip point it needs two hands and the customer puts something down.',
+      },
+      {
+        q: 'Will the centre sag?',
+        a: 'Not with enough board rigidity. A carrier that folds at the centre under four cups is the failure worth testing on a sample.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'Flat, and formed at the counter. That keeps storage small, which matters where they are used in bursts.',
+      },
+      {
+        q: 'Do they increase order size?',
+        a: 'They make a four-coffee order possible, which is usually why cafés add them. Nobody buys four coffees they cannot carry.',
+      },
+      {
+        q: 'Can a carrier take different cup sizes at once?',
+        a: 'With holes cut for a mix, yes. Tell us the combination you serve rather than assuming one hole size covers it.',
+      },
+      {
+        q: 'Do carriers work with sleeved cups?',
+        a: 'They need cutting to allow for the sleeve, which adds thickness exactly where the carrier grips. Tell us if cups are sleeved.',
       },
     ],
     related: ['paper-cups-with-lids', 'custom-paper-coffee-cups', '12-oz-paper-cups', 'paper-coffee-cup-lids'],
@@ -386,6 +578,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Why does a lid that fits one 12oz cup not fit another?',
         a: 'Because the stated volume says nothing about the rim. Two cups holding the same amount can differ by a few millimetres at the rim, which is more than enough for a lid to sit loose.',
       },
+      {
+        q: 'Why will a lid not fit our cups?',
+        a: 'Because lids match rims, not volumes. Two cups holding the same amount can differ by millimetres at the rim.',
+      },
+      {
+        q: 'Can you supply lids for cups bought elsewhere?',
+        a: 'Usually, provided the rim measures to a diameter we can match. Send the measurement or a sample cup.',
+      },
+      {
+        q: 'What is the difference between lid types?',
+        a: 'Sip lids suit hot drinks, flat lids suit cold with a straw, domed lids clear a topping, and vented lids release steam.',
+      },
+      {
+        q: 'Can we reduce the number of lid lines?',
+        a: 'Often, by choosing cup sizes that share a rim. An 8oz and a 12oz frequently can, taking two lines down to one.',
+      },
+      {
+        q: 'Are lids printed?',
+        a: 'Normally plain. Printing a lid adds cost for a surface largely hidden by a hand and a mouth once it is in use.',
+      },
+      {
+        q: 'Do we need vented lids?',
+        a: 'For drinks carried a long way, they help. Venting releases steam that would otherwise condense inside the lid.',
+      },
+      {
+        q: 'How do we measure a rim?',
+        a: 'Across the outside of the rolled edge, at the widest point. That measurement is what a lid is matched against.',
+      },
+      {
+        q: 'Can lids be ordered in a different ratio?',
+        a: 'Yes, and often should be. Sites serving some drinks without lids need fewer, so tell us the ratio you actually use.',
+      },
     ],
     related: ['paper-cups-with-lids', 'custom-paper-coffee-cups', 'paper-coffee-cup-holders', 'hot-chocolate-paper-cups'],
   },
@@ -441,6 +665,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Do dessert cups need a different lining from drink cups?',
         a: 'For cold desserts, a coated outer face matters more than the inner lining, because condensation attacks the printed outside rather than the inside.',
       },
+      {
+        q: 'Do dessert cups need an outer coating?',
+        a: 'For chilled or frozen desserts, yes. Condensation attacks the printed outside rather than the lining inside.',
+      },
+      {
+        q: 'Will a scoop fit under a flat lid?',
+        a: 'Only if the cup is filled below the rim, which reduces the portion. That is the trade a flat lid makes.',
+      },
+      {
+        q: 'Can we use clear cups instead?',
+        a: 'For layered desserts, often better. If the layers are the selling point, hiding them behind print works against you.',
+      },
+      {
+        q: 'How long a spoon do we need?',
+        a: 'Match it to the cup depth. A tall cup with a short spoon is a recurring complaint that packaging cannot fix afterwards.',
+      },
+      {
+        q: 'Will a narrow cup tip on a table?',
+        a: 'Tall narrow cups do. A wider base is more stable but shows less of a layered dessert from the side.',
+      },
+      {
+        q: 'Can we run several designs?',
+        a: 'On digital printing, yes. Send the split between them rather than a total so the quantities are priced properly.',
+      },
+      {
+        q: 'Do these suit takeaway?',
+        a: 'With a lid that seals, yes. Without one they are a counter and seated product rather than a travelling one.',
+      },
+      {
+        q: 'Do you supply matching lids?',
+        a: 'Yes, matched by rim diameter. Choose the lid type first, since it decides how much of the cup you can fill.',
+      },
     ],
     related: ['ice-cream-paper-cups', 'bowl-paper-cups', 'paper-serving-cups', 'ice-cream-paper-cups-with-lids'],
   },
@@ -494,6 +750,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Should ice cream cups be sized by volume or by scoops?',
         a: 'By scoops, because that is how the product is sold and portioned. A stated fluid volume tells you very little about whether two scoops will sit in it properly.',
+      },
+      {
+        q: 'Why does the outside matter more than the inside?',
+        a: 'Because the cup is dry inside and wet outside within a minute of leaving a freezer. Condensation attacks the print, not the lining.',
+      },
+      {
+        q: 'Should we size by scoops or volume?',
+        a: 'By scoops, because that is how the product is sold. A stated fluid volume says little about whether two scoops sit properly.',
+      },
+      {
+        q: 'How many sizes do we need?',
+        a: 'A single and a double covers most scoop counters. A third size is usually the one that sits unused.',
+      },
+      {
+        q: 'Will the print survive a cabinet?',
+        a: 'With a coated or laminated outer face, yes. Uncoated print softens and marks within minutes of leaving the cold.',
+      },
+      {
+        q: 'Do we need lids?',
+        a: 'Only if portions travel or are pre-filled. For scoop-to-order service, an open cup is quicker and cheaper.',
+      },
+      {
+        q: 'Can we match these to cone sleeves?',
+        a: 'Yes, and running both in one order keeps the colour consistent, which shows when the two sit together on a counter.',
+      },
+      {
+        q: 'Will a wide cup show flavours better?',
+        a: 'Noticeably. A wider, shallower cup displays the scoop where a tall narrow one hides it below the rim.',
+      },
+      {
+        q: 'Do these suit gelato as well?',
+        a: 'Yes, though gelato is usually served in a wider, shallower cup than hard scoop ice cream. Tell us which you serve.',
       },
     ],
     related: ['ice-cream-paper-cups-with-lids', 'paper-dessert-cups', 'custom-ice-cream-cone-sleeves', 'bowl-paper-cups'],
@@ -551,6 +839,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Will pre-filled tubs stack in a freezer?',
         a: 'With flat lids, yes. With domed lids, no — the dome prevents a stable stack, which is why pre-packing operations almost always use flat.',
       },
+      {
+        q: 'Can we buy cups now and lids later?',
+        a: 'It is the commonest way this goes wrong. Lids match the rim, so matching afterwards means a loose fit or replacing stock.',
+      },
+      {
+        q: 'Does a domed lid increase the portion?',
+        a: 'It lets a scoop sit proud of the rim, so the served portion looks and is larger for the same cup.',
+      },
+      {
+        q: 'How long can we pre-fill ahead?',
+        a: 'That is a food safety question for your own procedures. What packaging can do is survive the freezer without the print failing.',
+      },
+      {
+        q: 'Do the cups need a coated outer face?',
+        a: 'More than open cups do, because pre-filled tubs sit in frost and condensation for hours rather than minutes.',
+      },
+      {
+        q: 'Can lids be printed?',
+        a: 'They can, though a plain lid with a printed cup is the usual split. A label on the lid is often more practical.',
+      },
+      {
+        q: 'Does this replace scoop service?',
+        a: 'It supplements it. Pre-packing lets you sell from a freezer without a member of staff at the scoop counter.',
+      },
+      {
+        q: 'Can we order lids in a different quantity?',
+        a: 'Yes. Counters that scoop to order for some customers and pre-pack for others need far fewer lids than cups.',
+      },
+      {
+        q: 'Can we order cups and lids in different quantities?',
+        a: 'Yes, and you should if some portions are served open. Tell us the ratio rather than assuming one for one.',
+      },
     ],
     related: ['ice-cream-paper-cups', 'paper-dessert-cups', 'paper-cups-with-lids', 'bowl-paper-cups'],
   },
@@ -604,6 +924,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Do soup cups need a different lid?',
         a: 'Usually a flat lid that seals rather than a sip lid. Soup is eaten with a spoon, so a drinking aperture serves no purpose and is a route for spills.',
+      },
+      {
+        q: 'What lid suits soup?',
+        a: 'A flat lid that seals rather than a sip lid. Soup is eaten with a spoon, so a drinking aperture is a route for spills.',
+      },
+      {
+        q: 'Why does the board need to be heavier?',
+        a: 'Because a spoon scrapes the wall and the base. That is a mechanical load a drink cup is not built for.',
+      },
+      {
+        q: 'Will the rim take a lid pressed on hot?',
+        a: 'On a heavier board, yes. A thin rim distorts under thumb pressure and the lid never seats evenly afterwards.',
+      },
+      {
+        q: 'How wide should the mouth be?',
+        a: 'Wide enough for a spoon to work comfortably. Deep narrow cups look generous and are awkward to eat from.',
+      },
+      {
+        q: 'Do these suit a delivery menu?',
+        a: 'With a sealing lid, yes, and soup travels better than most hot food because it does not go soggy.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes. The lining is on the inner face, so the outer printable surface behaves like any other coated board.',
+      },
+      {
+        q: 'Are these suitable for porridge?',
+        a: 'Yes, and the requirements are much the same — sustained heat, a spoon against the wall, and a lid that seals.',
+      },
+      {
+        q: 'Do you supply sealing lids?',
+        a: 'Yes, and for a takeaway soup menu a lid that seals matters considerably more than a drinking aperture.',
       },
     ],
     related: ['bowl-paper-cups', 'paper-serving-cups', 'parchment-paper-cups', 'paper-cups-with-lids'],
@@ -661,6 +1013,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Are bowls harder to store than cups?',
         a: 'They take more shelf space per unit because they are wider. They do nest, so it is not as bad as it looks, but it is worth checking against your storage before switching.',
       },
+      {
+        q: 'Do paper bowls hold dressing?',
+        a: 'A properly lined bowl holds dressing for a normal service. Standing liquid over a long delivery is a harder test, and the lid matters as much.',
+      },
+      {
+        q: 'Why use a bowl rather than a tall cup?',
+        a: 'Because food eaten with a fork wants to be spread out. In a tall cup only the top layer is visible or reachable.',
+      },
+      {
+        q: 'Do bowls photograph better?',
+        a: 'Noticeably, which matters for poke and grain salads where the arrangement is a large part of what is being sold.',
+      },
+      {
+        q: 'Will a bowl tip over?',
+        a: 'Far less than a tall cup. A wide base is one of the main practical advantages of the format.',
+      },
+      {
+        q: 'What lid do bowls take?',
+        a: 'Usually a flat or domed lid matched to the rim. Domed clears a piled portion where flat compresses it.',
+      },
+      {
+        q: 'Can we print the inside?',
+        a: 'Food covers it within seconds. The rim and outer wall are what customers see once the bowl is filled.',
+      },
+      {
+        q: 'Do these suit hot food?',
+        a: 'With the right lining, yes. Tell us whether the food is hot and wet, because that sets the grade rather than the shape.',
+      },
+      {
+        q: 'Do you supply matching lids?',
+        a: 'Yes, matched by rim diameter. A domed lid clears a piled portion where a flat one compresses it.',
+      },
     ],
     related: ['soup-paper-cups', 'paper-serving-cups', 'paper-dessert-cups', 'custom-bento-sleeves'],
   },
@@ -714,6 +1098,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Are unlined cups cheaper?',
         a: 'Meaningfully so, and they are simpler to recycle. Where the food allows it, it is one of the few decisions that improves cost and disposal at the same time.',
+      },
+      {
+        q: 'Do dry snacks really need no lining?',
+        a: 'For genuinely dry food, no. Anything buttered, dressed or fried does, and the difference is easy to test by leaving a portion for an hour.',
+      },
+      {
+        q: 'What counts as dry enough?',
+        a: 'Crisps, nuts and dry-seasoned popcorn. Buttered popcorn and anything from a fryer should be treated as oily.',
+      },
+      {
+        q: 'Will these hold up at an event?',
+        a: 'Yes, and their low cost suits high-volume event service where each cup is used once and discarded.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and on a small cup a single strong colour usually reads better than a detailed design would.',
+      },
+      {
+        q: 'Do these suit a bar?',
+        a: 'They do, and bar snacks are one of the main uses alongside cinemas and standing events.',
+      },
+      {
+        q: 'Will they denest cleanly?',
+        a: 'With a denesting feature, yes. At event volumes stuck cups cost real time across a session.',
+      },
+      {
+        q: 'Can we use these for sweets?',
+        a: 'Yes, and confectionery is usually dry enough for an unlined cup unless anything is glazed or sticky.',
+      },
+      {
+        q: 'Do these suit a cinema kiosk?',
+        a: 'They do, alongside bars and standing events, and dry snacks keep the specification and the cost simple.',
       },
     ],
     related: ['custom-popcorn-sleeves', 'paper-serving-cups', 'paper-portion-cups', 'custom-snack-trays'],
@@ -769,6 +1185,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'What lining should a general cup have?',
         a: 'Specify for the most demanding thing you serve in it. A cup lined for hot wet food handles dry food perfectly well; the reverse is not true.',
       },
+      {
+        q: 'Is a general serving cup a compromise?',
+        a: 'Knowingly so. It will not suit any single dish as well as a purpose-made container, which is the trade for a changing menu.',
+      },
+      {
+        q: 'How many sizes should we hold?',
+        a: 'Two in most cases. A third gets used rarely and takes the same storage as the ones that move.',
+      },
+      {
+        q: 'Do these nest?',
+        a: 'They should nest, or storage becomes the limiting factor behind a busy counter. It is worth confirming before ordering two sizes, since a mixed stack that will not seat wastes shelf space.',
+      },
+      {
+        q: 'Can we order both sizes together?',
+        a: 'Yes, and it shares the setup cost between them rather than repeating it on a second job.',
+      },
+      {
+        q: 'Do these suit street food?',
+        a: 'They are mostly bought for it, where the menu changes weekly and dish-specific containers become dead stock.',
+      },
+      {
+        q: 'Will one artwork work across sizes?',
+        a: 'The elements carry over, but each size needs its own layout because the flat blank differs. We re-lay it from your file.',
+      },
+      {
+        q: 'Do we need lids?',
+        a: 'Only where portions travel or sit on a shelf. For counter service an open cup is quicker to fill and cheaper per portion, and a lid nobody needs is a cost with no return.',
+      },
+      {
+        q: 'What size suits a sauce or a dip?',
+        a: 'The smallest in the range usually does, and portion control is the real reason to pick it: an oversized cup encourages staff to overfill it, which costs more than the cup ever did.',
+      },
     ],
     related: ['bowl-paper-cups', 'soup-paper-cups', 'paper-snack-cups', 'custom-cardboard-food-trays'],
   },
@@ -823,6 +1271,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Why do our portion cups stick together?',
         a: 'They lack a denesting feature, or the stack has been compressed in storage. A slight step in the wall keeps them separated, and it is worth specifying rather than assuming.',
       },
+      {
+        q: 'Do these need lids?',
+        a: 'If portions travel, yes. Without one a pot in a delivery bag empties itself into the order.',
+      },
+      {
+        q: 'What size should we choose?',
+        a: 'Match it to your actual portion rather than a round number. An over-large pot looks mean when half full.',
+      },
+      {
+        q: 'Are these the same as sauce cups?',
+        a: 'Essentially, though sauce use puts more demand on the lining. Tell us what goes in them and we will specify accordingly.',
+      },
+      {
+        q: 'Will they survive being stacked?',
+        a: 'Yes, though a compressed stack is what causes sticking. Store them upright rather than on their side under weight.',
+      },
+      {
+        q: 'Can we order in very large quantities?',
+        a: 'This is a product bought by the tens of thousands, and the economics improve with volume. Send your annual usage.',
+      },
+      {
+        q: 'Do these suit institutional catering?',
+        a: 'They are widely used for portion control there, where a fixed measure matters more than any branding.',
+      },
+      {
+        q: 'Should portion cups have lids?',
+        a: 'If portions travel, yes. On a tray they are unnecessary and add cost to a very high-volume item.',
+      },
+      {
+        q: 'How many sizes do we need?',
+        a: 'Usually one, matched to your standard portion. A second size only earns its storage where you serve two clearly different measures.',
+      },
     ],
     related: ['paper-sauce-cups', '2-oz-paper-cups', 'small-paper-cups', 'paper-snack-cups'],
   },
@@ -876,6 +1356,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Do hot sauces need a different pot?',
         a: 'Warm sauces work on a lining faster than cold ones, and acidic sauces faster still. If you serve either, say so, since the lining choice follows from what goes in the pot.',
+      },
+      {
+        q: 'Will the lid survive a delivery?',
+        a: 'A lid that clicks into a rolled rim generally will. One that rests on top will not, and that difference is worth testing with a bag.',
+      },
+      {
+        q: 'Why do sauce pots leak?',
+        a: 'Almost always the lid rather than the pot. Most complaints about sauce packaging are complaints about the closure.',
+      },
+      {
+        q: 'Should we print sauce pots?',
+        a: 'Rarely worth it. They are seen briefly and bought in volume, so the budget does more elsewhere.',
+      },
+      {
+        q: 'What size suits a dip?',
+        a: 'Match your actual portion. Customers notice a pot that is half full more than they notice a small one that is full.',
+      },
+      {
+        q: 'Will coloured sauces stain?',
+        a: 'Visibly on a pale pot. A darker pot or accepting the staining are the two honest options.',
+      },
+      {
+        q: 'Can we order pots and lids together?',
+        a: 'Yes, and you should. Matching a lid to a pot afterwards is the same rim-diameter problem as with cups.',
+      },
+      {
+        q: 'Do these suit a delivery-led kitchen?',
+        a: 'They are essential to one, and the lid specification matters more there than in any other setting.',
+      },
+      {
+        q: 'Do you supply pots and lids together?',
+        a: 'Yes, and you should. Matching a lid afterwards is the same rim-diameter problem as with drink cups.',
       },
     ],
     related: ['paper-portion-cups', '2-oz-paper-cups', 'paper-cups-with-lids', 'custom-take-out-bags'],
@@ -933,6 +1445,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Do handled cups stack?',
         a: 'They nest, but not tightly, because the handles hold the cups apart. Expect them to take noticeably more storage space than the same number of plain cups.',
       },
+      {
+        q: 'Are handled cups worth the cost?',
+        a: 'At a seated reception, often, because they look right where a takeaway cup does not. For counter service a sleeve does the same job for less.',
+      },
+      {
+        q: 'Will the handle take the weight?',
+        a: 'On a properly attached handle, yes. It is worth testing a sample with a full cup rather than assuming.',
+      },
+      {
+        q: 'Do these suit a busy café?',
+        a: 'Poorly. They cost more, store worse and slow service. They suit functions and seated events instead.',
+      },
+      {
+        q: 'Can handled cups be printed?',
+        a: 'Yes, though the handle interrupts the printable area. Keep key elements away from where it attaches.',
+      },
+      {
+        q: 'Are they available with lids?',
+        a: 'Sometimes, though a handled cup is usually a seated product where a lid serves little purpose. Confirm at quote stage.',
+      },
+      {
+        q: 'Do they suit outdoor events?',
+        a: 'Less well than a sleeve, because the handle adds bulk and the format reads formal. Indoor functions are the natural fit.',
+      },
+      {
+        q: 'Why choose a handle over a sleeve?',
+        a: 'It removes hand contact with the wall entirely, which on near-boiling tea is a real difference rather than a stylistic one.',
+      },
+      {
+        q: 'Do you supply these for weddings and events?',
+        a: 'Yes, and short runs suit one-off occasions where a takeaway cup would look out of place.',
+      },
     ],
     related: ['custom-tea-cup-sleeves', 'paper-cups-with-handles', 'paper-cups-with-lids', '8-oz-paper-cups'],
   },
@@ -987,6 +1531,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Do we need a heavier cup for an office?',
         a: 'If cups are lidded and carried along corridors, yes. A thin rim deforms when a lid is pressed on, and that is the source of most office coffee spills.',
       },
+      {
+        q: 'Why does the rim matter in an office?',
+        a: 'Because cups are lidded and carried along corridors. A thin rim deforms under thumb pressure and the lid never seats evenly.',
+      },
+      {
+        q: 'Do these suit conference catering?',
+        a: 'They are frequently bought for it, where volume and reliability matter more than a café-standard finish.',
+      },
+      {
+        q: 'Can we print a single logo?',
+        a: 'Yes, and that is the usual specification here. A plain cup with one mark suits offices and venues better than a full design.',
+      },
+      {
+        q: 'Are they heavier to store?',
+        a: 'Slightly, and each case holds fewer than a lightweight cup. Worth checking against your storage before switching.',
+      },
+      {
+        q: 'Do they need sleeves?',
+        a: 'Less than a thin single wall, though a very hot drink in a large size is still more comfortable with one.',
+      },
+      {
+        q: 'Can we order plain and printed together?',
+        a: 'Yes, and many buildings do — printed for reception, plain for staff areas. Send the split.',
+      },
+      {
+        q: 'Do they take standard lids?',
+        a: 'Matched by rim diameter as with any cup. Send a cup or the rim measurement rather than the stated volume.',
+      },
+      {
+        q: 'Do you supply these plain?',
+        a: 'Yes, and many offices take plain stock with a printed cup only for reception and client areas.',
+      },
     ],
     related: ['cardboard-cups-with-lids', 'small-cardboard-cups', 'custom-paper-coffee-cups', 'disposable-hot-cups'],
   },
@@ -1036,6 +1612,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Do lids come printed?',
         a: 'They are normally plain, since printing a lid adds cost for a surface that is largely hidden once it is on the cup and covered by a hand and a mouth.',
+      },
+      {
+        q: 'Why order cups and lids together?',
+        a: 'Because rim diameters differ between manufacturers even at identical stated volumes, and matching afterwards means a loose fit or replacing stock.',
+      },
+      {
+        q: 'Can lids be a different quantity from cups?',
+        a: 'Yes. Many sites lid only takeaway drinks, so the lid quantity is well below the cup quantity. Send us your actual ratio.',
+      },
+      {
+        q: 'Are lids printed?',
+        a: 'Normally plain, since printing a lid adds cost for a surface hidden by a hand and a mouth.',
+      },
+      {
+        q: 'Which lid type should we choose?',
+        a: 'Sip for hot, flat for cold with a straw, domed for a topping. Confirm the rim rather than the volume when matching.',
+      },
+      {
+        q: 'Will a lid pop off in a bag?',
+        a: 'A close-fitting lid on an undeformed rim will not. A thin rim squeezed during handling is what causes it.',
+      },
+      {
+        q: 'Do sets cost more than buying separately?',
+        a: 'Usually less overall, because a mismatch means replacing one or the other. The saving is in not getting it wrong.',
+      },
+      {
+        q: 'Can we add a second cup size later?',
+        a: 'Yes, and if it shares a rim you may be able to keep the same lid, which is worth checking before choosing the size.',
+      },
+      {
+        q: 'Do these suit an office coffee machine?',
+        a: 'They do, and machine compatibility is worth confirming with the model rather than assuming from the volume.',
       },
     ],
     related: ['cardboard-coffee-cups', 'paper-cups-with-lids', 'paper-coffee-cup-lids', 'small-cardboard-cups'],
@@ -1089,6 +1697,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Do heavier small cups cost much more?',
         a: 'A modest amount per unit, which matters at sampling volumes. It is worth pricing both and deciding against your actual usage rather than assuming.',
+      },
+      {
+        q: 'Why not use a standard small cup?',
+        a: 'For a quick sample handed over and drunk, a standard cup is fine. Where cups are held for minutes, the heavier board avoids crushing.',
+      },
+      {
+        q: 'Why do small cups get crushed?',
+        a: 'Because people wrap a whole hand around them rather than holding by the rim, which puts more pressure on the wall.',
+      },
+      {
+        q: 'Do these suit tasting events?',
+        a: 'They do, and cups held for several minutes during conversation are exactly the case where a light cup fails.',
+      },
+      {
+        q: 'Are they suitable for hot samples?',
+        a: 'With a hot lining, yes, and a crushed cup with a hot liquid in it is a burn risk, which is part of the argument.',
+      },
+      {
+        q: 'Can we print them?',
+        a: 'Yes, though the area is small. One element usually reads better than several shrunk to fit.',
+      },
+      {
+        q: 'Will they denest cleanly?',
+        a: 'With a denesting feature. A heavier board actually helps here, because the cups hold their shape in the stack.',
+      },
+      {
+        q: 'Do these suit clinical settings?',
+        a: 'They are used in care and dental settings where reliability matters more than unit cost.',
+      },
+      {
+        q: 'Do these suit clinical or care settings?',
+        a: 'They are used there, where reliability and hygiene matter more than unit cost or appearance.',
       },
     ],
     related: ['small-paper-cups', '4-oz-paper-cups', 'cardboard-coffee-cups', 'paper-portion-cups'],
@@ -1156,6 +1796,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Do all cups need lids?',
         a: 'Eat-in service usually does not, and every lid line adds stock and a service step. It is worth checking how many of your drinks actually leave the building.',
       },
+      {
+        q: 'How do we reduce the number of lid lines?',
+        a: 'Choose cup sizes that share a rim diameter. An 8oz and a 12oz frequently can, taking two lines down to one.',
+      },
+      {
+        q: 'Which do we choose first, cup or lid?',
+        a: 'The lid, because it decides how much of the cup you can fill. A domed lid adds capacity; a flat one caps it.',
+      },
+      {
+        q: 'Can we match lids to existing cups?',
+        a: 'In most cases, as long as the rim falls on a diameter we hold. A sample cup settles it faster than a measurement does.',
+      },
+      {
+        q: 'Why does a lid fit one 12oz cup and not another?',
+        a: 'Because the stated volume says nothing about the rim. A few millimetres is enough for a lid to sit loose.',
+      },
+      {
+        q: 'Do vented lids help?',
+        a: 'On drinks carried a long way, yes. Venting releases steam that would otherwise condense inside the lid.',
+      },
+      {
+        q: 'Should lids be ordered in equal quantity?',
+        a: 'Only if every drink gets one. Tell us the ratio you actually use rather than defaulting to one for one.',
+      },
+      {
+        q: 'Can lids be printed?',
+        a: 'They can, though it is rarely worth it. A hand and a mouth cover most of the surface in use.',
+      },
+      {
+        q: 'Can we add a size later?',
+        a: 'Yes, and if it shares a rim with an existing size you may keep the same lid, which is worth checking before choosing.',
+      },
     ],
     related: ['paper-coffee-cup-lids', 'cardboard-cups-with-lids', 'paper-cup-cover', 'ice-cream-paper-cups-with-lids'],
   },
@@ -1210,6 +1882,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'How much more storage do handled cups need?',
         a: 'Noticeably more, because the handles hold cups apart in a stack. It is worth measuring against your shelf space before switching a whole line.',
       },
+      {
+        q: 'Do handles catch when pulling from a stack?',
+        a: 'They can during a rush, which is one of the practical objections alongside cost and storage.',
+      },
+      {
+        q: 'Where should print go on a handled cup?',
+        a: 'Away from the handle attachment, which interrupts the printable band. Keep key elements on the opposite face.',
+      },
+      {
+        q: 'Do these suit takeaway?',
+        a: 'Poorly. They read as formal and cost more, which suits functions and seated events rather than a walking customer.',
+      },
+      {
+        q: 'Will the handle hold a full cup?',
+        a: 'On a properly attached handle, yes. Test a sample with a full cup rather than assuming, since attachment is the failure point.',
+      },
+      {
+        q: 'Are they available in all sizes?',
+        a: 'Availability is narrower than plain cups. Tell us the size you need and we will confirm rather than assume.',
+      },
+      {
+        q: 'Why choose these for tea?',
+        a: 'Because tea goes in near boiling with no cold milk, and a handle keeps the hand off the wall entirely.',
+      },
+      {
+        q: 'Are handled cups available with lids?',
+        a: 'Sometimes, though a handled cup is usually a seated product where a lid adds little. Confirm at quote stage.',
+      },
+      {
+        q: 'What sizes do handled cups come in?',
+        a: 'Availability is narrower than plain cups. Tell us the volume you pour and we will confirm what can be produced.',
+      },
     ],
     related: ['paper-tea-cups-with-handles', 'paper-cup-sleeves', 'paper-cups-with-lids', 'disposable-hot-cups'],
   },
@@ -1263,6 +1967,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Do cone cups fit standard dispensers?',
         a: 'They fit cone dispensers, which are a different fitting from flat-bottom cup dispensers. Confirm which you have before ordering, since the two are not interchangeable.',
       },
+      {
+        q: 'Why would we want a cup that cannot be put down?',
+        a: 'Because it guarantees single use. At a water cooler, flat-bottomed cups get abandoned and reused by other people; a cone cannot be.',
+      },
+      {
+        q: 'Do they use less material?',
+        a: 'Yes, less than a flat-bottomed cup of the same capacity, and they take almost no storage space in a dispenser tube.',
+      },
+      {
+        q: 'Can these be printed?',
+        a: 'They can, though the printable area is small and the cup is used for seconds. A single mark is usually all that pays back.',
+      },
+      {
+        q: 'Are they suitable for hot drinks?',
+        a: 'Rarely used for them, because there is nowhere to set the cup down while it cools. Cold water and tasting are the main uses.',
+      },
+      {
+        q: 'Do they suit tasting stations?',
+        a: 'Very well, because each sample is drunk immediately and cups cannot accumulate on surfaces waiting to be reused.',
+      },
+      {
+        q: 'What size are cone cups?',
+        a: 'Typically small, in the 4 to 7oz range. Tell us your dispenser and we will confirm what fits it.',
+      },
+      {
+        q: 'Do they need a lining?',
+        a: 'For water, a light barrier is enough. Tell us if anything other than water goes in them.',
+      },
+      {
+        q: 'Do you supply these in bulk for events?',
+        a: 'Yes, and event and sampling use is where the single-use discipline of a cone cup is most useful.',
+      },
     ],
     related: ['paper-water-cups', 'paper-drinking-cups', 'paper-bathroom-cups', '7-oz-paper-cups'],
   },
@@ -1313,11 +2049,43 @@ export const CUPS_BY_USE: Product[] = [
     faqs: [
       {
         q: 'Can a paper cover replace a lid for takeaway?',
-        a: 'No. A cover keeps dust off a cup standing still; it will not hold contents in a bag. Anything that moves needs a fitted lid.',
+        a: 'No. Covers are for cups that stay put in a cabinet. The moment a cup travels, only a fitted lid will keep the contents in.',
       },
       {
         q: 'Are covers worth printing?',
         a: 'They are, because on a cabinet-filled cup the cover is the face the customer sees. It is one of the few parts where printing a lid-type item genuinely pays back.',
+      },
+      {
+        q: 'Can a cover replace a lid for takeaway?',
+        a: 'No. A cover keeps dust off a cup standing still; it will not hold contents in a bag. Anything that moves needs a fitted lid.',
+      },
+      {
+        q: 'What are covers actually for?',
+        a: 'Keeping dust and handling off a filled cup in a display cabinet, and giving a printed face where a moulded lid would be plain.',
+      },
+      {
+        q: 'Are they cheaper than lids?',
+        a: 'Generally yes, and they avoid adding a moulded item to the order, which some sites prefer for disposal reasons.',
+      },
+      {
+        q: 'Will a cover stay on if knocked?',
+        a: 'It sits rather than seals, so it will come off. That is the distinction between a cover and a lid.',
+      },
+      {
+        q: 'Do these suit a dessert counter?',
+        a: 'They do, for pre-filled cups sitting in a chilled cabinet before being handed straight to a tray.',
+      },
+      {
+        q: 'Can covers be die-cut to a shape?',
+        a: 'Yes, and a shaped cover is a bespoke die. Send a sketch and the cup and we will tell you what will cut.',
+      },
+      {
+        q: 'Do they fit any cup?',
+        a: 'They are matched to the rim like a lid. Send a cup or the rim measurement rather than the volume.',
+      },
+      {
+        q: 'Can covers be printed in full colour?',
+        a: 'Yes, and on a cabinet-filled cup the cover is the face the customer sees, so it is worth the ink.',
       },
     ],
     related: ['paper-cups-with-lids', 'paper-dessert-cups', 'ice-cream-paper-cups-with-lids', 'paper-coffee-cup-lids'],
@@ -1373,6 +2141,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Can we use sleeves on double-walled cups?',
         a: 'Yes, but a double-walled cup is thicker at the same stated volume, so a sleeve cut for single wall will be tight. Tell us which construction you use.',
       },
+      {
+        q: 'Where exactly do we measure?',
+        a: 'At the point where a hand naturally grips, roughly a third down from the rim. A cup tapers, so the measurement changes along its height.',
+      },
+      {
+        q: 'Do double-walled cups need a different sleeve?',
+        a: 'Yes, because they are thicker at the same stated volume. A sleeve cut for single wall will be tight.',
+      },
+      {
+        q: 'Corrugated or flat board?',
+        a: 'Corrugated insulates through the air gap in the flute; flat board adds grip and holds finer print detail.',
+      },
+      {
+        q: 'Why does our sleeve spin?',
+        a: 'Because it is cut slightly too large for the cup. Two cups sold as the same volume can differ enough to cause it.',
+      },
+      {
+        q: 'Can sleeves be printed both sides?',
+        a: 'The inner face is invisible in use. The budget does more on the outer face and the board choice.',
+      },
+      {
+        q: 'Will a sleeve stay put on a wet cup?',
+        a: 'A cold cup reduces friction, so cold service usually needs a slightly tighter fit than hot.',
+      },
+      {
+        q: 'Are sleeves cheaper than printed cups?',
+        a: 'For a single site, considerably. They avoid cup tooling and minimum quantities entirely while branding cups you already hold.',
+      },
+      {
+        q: 'Can we order sleeves without buying cups?',
+        a: 'Yes, and that is the normal case. The sleeve is cut to the cup you already buy from elsewhere.',
+      },
     ],
     related: ['custom-printed-coffee-sleeves', 'single-wall-paper-cups', 'custom-cardboard-beverage-sleeves', 'custom-tea-cup-sleeves'],
   },
@@ -1427,6 +2227,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Is full colour always better than two colours?',
         a: 'Not for a flat logo. Two spot colours reproduce a brand mark more accurately and usually cost less. Full colour earns its cost on photographs and complex illustration.',
+      },
+      {
+        q: 'Why does our logo look stretched?',
+        a: 'Almost always because the artwork was laid out on a rectangle. A cup blank is a curved fan, so a straight baseline distorts when formed.',
+      },
+      {
+        q: 'Is full colour always better?',
+        a: 'Not for a flat logo. Two spot colours reproduce a brand mark more accurately and usually cost less on a long run.',
+      },
+      {
+        q: 'What does full colour earn its cost on?',
+        a: 'Photographs, complex illustration and several designs in one order, where digital printing carries no per-design plate cost.',
+      },
+      {
+        q: 'Can we get the die template?',
+        a: 'Yes, as an editable vector file. Ask for it before design work starts rather than trying to correct a rectangle afterwards.',
+      },
+      {
+        q: 'What resolution do images need?',
+        a: 'At least 300 dpi at final printed size. An image that looks sharp on screen is often a quarter of that.',
+      },
+      {
+        q: 'Will colours match across sizes?',
+        a: 'Different sizes can run on different presses or board batches. If consistency matters, say so at quote stage so sizes are planned together.',
+      },
+      {
+        q: 'Can we print edge to edge?',
+        a: 'Bleed extends past the cut line, but a small unprinted margin remains at the rim on every printed cup regardless of supplier.',
+      },
+      {
+        q: 'How many designs can one order carry?',
+        a: 'On digital printing, several. Send the split between designs rather than a total so the quantities are priced properly.',
       },
     ],
     related: ['logo-paper-cups', 'coloured-paper-cups', 'custom-paper-coffee-cups', 'butterfly-paper-cups'],
@@ -1484,6 +2316,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Should the logo be big or repeated?',
         a: 'Repeated, in most cases. A hand covers a third of the cup at any time, so one large mark is often hidden while a repeated smaller one always shows.',
       },
+      {
+        q: 'Should the logo be large or repeated?',
+        a: 'Repeated. A hand covers a third of the cup, so one large mark is often hidden while a repeated smaller one always shows.',
+      },
+      {
+        q: 'How small can a logo print?',
+        a: 'Fine lines and small type close up on board, particularly kraft. Send the artwork and we will tell you what holds before the run.',
+      },
+      {
+        q: 'Why is this the cheapest option?',
+        a: 'Because ink covers only a few per cent of the surface. Everything else is board you were buying regardless.',
+      },
+      {
+        q: 'Can we add a second colour later?',
+        a: 'On a conventional press each ink is a separate plate, so it becomes a different job. If a second colour is likely, price it now.',
+      },
+      {
+        q: 'Does a one-colour cup look cheap?',
+        a: 'Not on a good board with a well-placed mark. Plenty of well-regarded cafés use exactly this specification deliberately.',
+      },
+      {
+        q: 'What should we supply?',
+        a: 'Vector artwork with the colour named as a Pantone reference, positioned on our die template rather than on a rectangle.',
+      },
+      {
+        q: 'Will the logo print on kraft?',
+        a: 'Yes, though it will read warmer and darker. Dark marks hold up on kraft; pale tints do not.',
+      },
+      {
+        q: 'Is this a good first order?',
+        a: 'It is the usual starting point, because it proves the cup, the lid and the sizing before any larger print spend.',
+      },
     ],
     related: ['white-paper-cups', 'printed-paper-cups', 'custom-paper-coffee-cups', 'kraft-coffee-cups'],
   },
@@ -1536,6 +2400,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Will a geometric pattern distort on the cup?',
         a: 'Straight-line grids will, because the blank is a curved fan. Flowing or organic patterns absorb the distortion without looking incorrect, which is why they are the usual choice.',
+      },
+      {
+        q: 'Does a pattern cost more than a logo?',
+        a: 'Not necessarily. Cost follows the number of inks rather than how much surface they cover, so a one-colour pattern prices like a one-colour mark.',
+      },
+      {
+        q: 'Will a geometric pattern distort?',
+        a: 'Straight grids will, because the blank is a curved fan. Flowing or organic patterns absorb the distortion without looking wrong.',
+      },
+      {
+        q: 'Where should the brand mark go?',
+        a: 'In a deliberately clear area of the pattern. Leaving that gap looks intentional; dropping a logo onto a busy field does not.',
+      },
+      {
+        q: 'Do patterns hide handling marks?',
+        a: 'Noticeably, which helps on cups stacked and handled before service. A flat solid colour shows every mark.',
+      },
+      {
+        q: 'Can we use a photographic pattern?',
+        a: 'Yes, at 300 dpi at final size, printed in full colour. Bear in mind a hand covers a band of it throughout the drink.',
+      },
+      {
+        q: 'Will fine pattern detail hold?',
+        a: 'Very small motifs can close up on board. Test at actual size rather than judging from a screen at 200 per cent.',
+      },
+      {
+        q: 'Can we change the pattern seasonally?',
+        a: 'Easily, because there is no tooling on a cup print. Only the artwork changes between runs.',
+      },
+      {
+        q: 'Do patterns suit a children\'s offer?',
+        a: 'They do, and a repeating motif reads as playful where a corporate mark does not.',
       },
     ],
     related: ['printed-paper-cups', 'coloured-paper-cups', 'polka-designs-ice-cream-cone-sleeves', 'logo-paper-cups'],
@@ -1602,6 +2498,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Should we print the year on the cup?',
         a: 'Only if you are sure of the quantity. Undated artwork lets unsold stock be used the following year, which usually matters more than the extra detail.',
       },
+      {
+        q: 'Should we print the year?',
+        a: 'Only if you are sure of the quantity. Undated artwork lets unsold stock run again next year, which usually matters more than the detail.',
+      },
+      {
+        q: 'Can we run four designs in one order?',
+        a: 'On digital printing, yes, with the cost depending on the split. Ask for mixed cases if they go to more than one site.',
+      },
+      {
+        q: 'What if stock arrives late?',
+        a: 'A festive cup arriving in mid-December has lost most of its value, which is why the on-counter date drives the whole schedule.',
+      },
+      {
+        q: 'Do festive cups need a different board?',
+        a: 'No, only different artwork. That is why a seasonal run is usually a shorter job than a first order.',
+      },
+      {
+        q: 'Can we use our standard cup size?',
+        a: 'Yes, and you should. Keeping the size means no new tooling and no change at the counter when you switch.',
+      },
+      {
+        q: 'How many should we order?',
+        a: 'Enough for the promotion rather than the year. Seasonal overstock is written off unless the artwork is undated.',
+      },
+      {
+        q: 'Will metallic finishes work?',
+        a: 'Metallic ink or foil both work for festive ranges, though foil makes the material mixed, which affects disposal.',
+      },
+      {
+        q: 'Can we combine a Christmas run with a Halloween one?',
+        a: 'Yes, and combining two seasonal jobs shares the setup. The lead times differ, so tell us both dates.',
+      },
     ],
     related: ['christmas-coffee-cups', 'event-or-seasonal-sleeves', 'gold-paper-cups', 'red-paper-cups'],
   },
@@ -1658,6 +2586,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'How do we make sure every site gets every design?',
         a: 'Ask for mixed cases rather than separate boxes per design. Otherwise one site works through one design and the set effect disappears.',
       },
+      {
+        q: 'How many festive designs can one run carry?',
+        a: 'On digital printing, several. On long conventional runs each design carries its own setup, which changes the calculation considerably.',
+      },
+      {
+        q: 'Do customers actually notice a set?',
+        a: 'They collect and compare them, which is most of the reason a set is worth the premium over a single design.',
+      },
+      {
+        q: 'When does the switch usually happen?',
+        a: 'Most sites change in the last week of November. That date, not the order date, is what the schedule is built backwards from.',
+      },
+      {
+        q: 'Can we keep the same cup size?',
+        a: 'Yes, and it is the sensible route. No tooling, no new lids, and no change at the counter when you switch over.',
+      },
+      {
+        q: 'Should the design mention the year?',
+        a: 'Only if you will use it all. Undated festive artwork can be carried into the following season.',
+      },
+      {
+        q: 'Do these need to be ordered with lids?',
+        a: 'Only if your lid stock is running low. Lids are unaffected by a seasonal print, so they can be ordered on their own cycle.',
+      },
+      {
+        q: 'What is the biggest scheduling risk?',
+        a: 'Artwork approval. It is the step that slips most often, so build slack into it rather than into the print.',
+      },
+      {
+        q: 'Do we need new lids for a festive cup?',
+        a: 'No, provided the cup size is unchanged. Keeping the size is what makes a seasonal switch straightforward.',
+      },
     ],
     related: ['christmas-paper-cups', 'hot-chocolate-paper-cups', 'custom-paper-coffee-cups', 'event-or-seasonal-sleeves'],
   },
@@ -1711,6 +2671,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Can these hold hot drinks?',
         a: 'Only if specified for it. A cup made for cold service will not hold up to a hot drink, and mixing the two in one cupboard is how that mistake happens.',
+      },
+      {
+        q: 'What decides the choice at this end of the market?',
+        a: 'Unit price, consistent stacking and reliable supply. A cup that occasionally sticks costs more in staff time than it saves.',
+      },
+      {
+        q: 'Do these need lids?',
+        a: 'Rarely. They are filled from a jug and drunk immediately, which is why they are among the cheapest cups available.',
+      },
+      {
+        q: 'Will they denest cleanly?',
+        a: 'With a denesting feature, yes, and at self-service volumes that matters more than almost anything else.',
+      },
+      {
+        q: 'What size is standard?',
+        a: '7oz is the common office and event size, though 9oz is used where a fuller pour is served.',
+      },
+      {
+        q: 'Do these suit a conference?',
+        a: 'They do, and event caterers are among the main buyers alongside canteens and public buildings.',
+      },
+      {
+        q: 'Can we order plain and printed together?',
+        a: 'Yes, and many organisations do exactly that: printed cups for reception and meeting rooms, plain stock everywhere else. Send us the split between the two rather than a single combined total.',
+      },
+      {
+        q: 'What size suits a self-service drinks table?',
+        a: '7oz to 9oz covers most event and canteen service. Larger sizes encourage waste where drinks are poured freely.',
+      },
+      {
+        q: 'Do these need to be branded for an event?',
+        a: 'For a branded conference or an exhibition stand, often. For day-to-day internal catering, plain stock is the more sensible spend and nobody photographs the cup anyway.',
       },
     ],
     related: ['paper-water-cups', 'paper-bathroom-cups', '7-oz-paper-cups', 'paper-cone-cups'],
@@ -1766,6 +2758,38 @@ export const CUPS_BY_USE: Product[] = [
         q: 'Does the cup volume matter for a cooler?',
         a: 'Less than the fit does. A cup that dispenses reliably at a slightly different volume is far more useful than one at the exact volume that jams.',
       },
+      {
+        q: 'Does the volume matter for a cooler?',
+        a: 'Less than the fit does. A cup that dispenses reliably at a slightly different volume is far more useful than one that jams.',
+      },
+      {
+        q: 'Why do cups jam a dispenser?',
+        a: 'A rim or height slightly outside tolerance, or a damaged sleeve. The fault is usually reported as a broken machine.',
+      },
+      {
+        q: 'What should we send with an enquiry?',
+        a: 'The dispenser make and model, a sample of the current cup, and the rim diameter and height if you can measure them.',
+      },
+      {
+        q: 'Can these be printed?',
+        a: 'Yes, and in a reception area it is worth doing. In back-office locations it rarely repays the cost.',
+      },
+      {
+        q: 'Do water cups need a lining?',
+        a: 'A light barrier is enough for water. Tell us if anything else goes in them, because that changes the specification.',
+      },
+      {
+        q: 'Are cone and flat-bottom dispensers interchangeable?',
+        a: 'No. Cone and flat-bottom dispensers take entirely different fittings, so confirm which unit you have before ordering either type, ideally by checking the model plate rather than by eye.',
+      },
+      {
+        q: 'How are they packed?',
+        a: 'In nested sleeves, which is also how they load into a dispenser. Damaged sleeves are the usual cause of jamming.',
+      },
+      {
+        q: 'Do you supply plain water cups?',
+        a: 'Yes, and most buildings take plain stock for staff areas and print only what visitors see.',
+      },
     ],
     related: ['paper-drinking-cups', 'paper-cone-cups', '7-oz-paper-cups', 'paper-bathroom-cups'],
   },
@@ -1818,6 +2842,38 @@ export const CUPS_BY_USE: Product[] = [
       {
         q: 'Can these be branded?',
         a: 'Yes, and in a hotel it is one of the few branded items a guest handles in the bathroom. In a clinical setting it is rarely worth the cost.',
+      },
+      {
+        q: 'What size are bathroom cups?',
+        a: 'Small, typically in the 3 to 5oz range, since they are used for rinsing rather than drinking a full serving.',
+      },
+      {
+        q: 'Do they need a heavier board?',
+        a: 'In a hotel where the cup sits on display, yes. A crushed or flimsy cup undermines the room.',
+      },
+      {
+        q: 'Do these fit washroom dispensers?',
+        a: 'Where a dispenser is used, the fit matters as much as with a cooler. Send the model or a current cup.',
+      },
+      {
+        q: 'Are they suitable for dental practices?',
+        a: 'They are widely used there, where cost and reliable single use matter more than appearance.',
+      },
+      {
+        q: 'Do they need a lining?',
+        a: 'A light barrier for water is enough. Tell us if mouthwash or anything else is used, since that can differ.',
+      },
+      {
+        q: 'Can we order in very large volumes?',
+        a: 'This is a high-volume product and the economics improve with quantity. Send your annual usage rather than a first order.',
+      },
+      {
+        q: 'Do these need to match a dispenser?',
+        a: 'Where one is fitted, yes, and the fit matters as much as with a cooler. Send the model or a current cup.',
+      },
+      {
+        q: 'What size do hotels usually order?',
+        a: 'Small, in the 3 to 5oz range, since the cup is for rinsing rather than drinking a full serving.',
       },
     ],
     related: ['small-paper-cups', 'paper-drinking-cups', 'small-cardboard-cups', 'paper-water-cups'],

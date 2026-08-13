@@ -136,62 +136,63 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
     </div>
   </div>
 
-  <div class="wrap product-body">
-    <div class="product-main">
-      <Sections sections={product.sections} />
+  <div class="wrap product-quote">
+    <QuoteForm
+      productName={product.name}
+      source={`product:${product.slug}`}
+      variant="panel"
+      heading="Quote for This Product"
+      intro="Tell us the quantity and any date you are working to. We reply with the board, print and finish, plus the minimum order quantity and lead time."
+      id="quote"
+    />
+  </div>
 
-      <section class="content-section ordering-strip">
-        <h2>Ordering, Artwork and Delivery</h2>
-        <div class="ordering-grid">
-          <div>
-            <h3>Getting a Quote</h3>
-            <p>{ordering.lead} We reply with a written specification, the minimum order quantity and the lead time for your job.</p>
-          </div>
-          <div>
-            <h3>Artwork</h3>
-            <p>{ordering.artwork} Full file requirements are set out in our <a href="/artwork-guidelines/">artwork guidelines</a>.</p>
-          </div>
-          <div>
-            <h3>Turnaround</h3>
-            <p>
-              Lead times depend on the print method, run length and press schedule, so we
-              confirm yours on the quote rather than publishing a single figure.
-            </p>
-          </div>
-          <div>
-            <h3>Delivery in the UK</h3>
-            <p>
-              Orders are dispatched on national carriers to any UK address. See
-              <a href="/delivery-information/">delivery information</a> for how dates are given.
-            </p>
-          </div>
+  <div class="wrap product-main">
+    <Sections sections={product.sections} />
+
+    <section class="content-section ordering-strip">
+      <h2>Ordering, Artwork and Delivery</h2>
+      <div class="ordering-grid">
+        <div>
+          <h3>Getting a Quote</h3>
+          <p>{ordering.lead} We reply with a written specification, the minimum order quantity and the lead time for your job.</p>
         </div>
-      </section>
+        <div>
+          <h3>Artwork</h3>
+          <p>{ordering.artwork} Full file requirements are set out in our <a href="/artwork-guidelines/">artwork guidelines</a>.</p>
+        </div>
+        <div>
+          <h3>Turnaround</h3>
+          <p>
+            Lead times depend on the print method, run length and press schedule, so we
+            confirm yours on the quote rather than publishing a single figure.
+          </p>
+        </div>
+        <div>
+          <h3>Delivery in the UK</h3>
+          <p>
+            Orders are dispatched on national carriers to any UK address. See
+            <a href="/delivery-information/">delivery information</a> for how dates are given.
+          </p>
+        </div>
+      </div>
+    </section>
 
-      <Faqs faqs={product.faqs} heading={`${product.name}: Common Questions`} />
-    </div>
+    <Faqs faqs={product.faqs} heading={`${product.name}: Common Questions`} />
 
-    <aside class="product-aside">
-      <QuoteForm
-        productName={product.name}
-        source={`product:${product.slug}`}
-        heading="Quote for This Product"
-        intro="We reply with a specification, minimum quantity and lead time."
-        id="quote"
-      />
-
-      <div class="aside-contact">
+    <section class="talk-strip">
+      <div>
         <h2>Prefer to Talk It Through?</h2>
         <p>
           Sizing questions are usually quicker on the phone, especially if you have the
           product in front of you.
         </p>
-        <p class="aside-links">
-          <a href={TEL_HREF}>{CONTACT.phoneDisplay}</a>
-          <a href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
-        </p>
       </div>
-    </aside>
+      <p class="talk-links">
+        <a class="btn btn-primary" href={TEL_HREF}>{CONTACT.phoneDisplay}</a>
+        <a class="btn btn-outline" href={`mailto:${CONTACT.email}`}>{CONTACT.email}</a>
+      </p>
+    </section>
   </div>
 
   {
@@ -268,33 +269,44 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
     transform: rotate(-45deg);
   }
 
-  .product-body {
-    display: grid;
-    gap: var(--space-xl);
-    grid-template-columns: minmax(0, 1fr) 22rem;
-    align-items: start;
-    padding-top: var(--space-l);
+  .product-quote {
+    padding-block: var(--space-l);
     border-top: 1px solid var(--c-border-soft);
   }
 
-  @media (max-width: 1000px) {
-    .product-body {
-      grid-template-columns: minmax(0, 1fr);
-    }
+  /* Content runs the full wrapper. Paragraphs keep their own measure, so the
+     prose stays readable while tables and comparison grids use the width. */
+  .product-main {
+    padding-bottom: var(--space-l);
   }
 
-  .product-aside {
-    position: sticky;
-    top: 8.5rem;
-    display: grid;
-    gap: var(--space-s);
+  .talk-strip {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--space-m);
+    margin-top: var(--space-xl);
+    padding: var(--space-m) var(--space-l);
+    background: var(--green-050);
+    border-radius: var(--radius-l);
   }
 
-  @media (max-width: 1000px) {
-    .product-aside {
-      position: static;
-      order: -1;
-    }
+  .talk-strip h2 {
+    font-size: var(--step-2);
+  }
+
+  .talk-strip p {
+    margin-top: 0.4rem;
+    color: var(--c-text-soft);
+    max-width: 46ch;
+  }
+
+  .talk-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.6rem;
+    margin: 0 !important;
   }
 
   .ordering-strip {
@@ -323,27 +335,7 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
     margin: 0;
   }
 
-  .aside-contact {
-    padding: var(--space-m);
-    background: var(--green-050);
-    border-radius: var(--radius-l);
-  }
 
-  .aside-contact h2 {
-    font-size: var(--step-1);
-  }
-
-  .aside-contact p {
-    margin-top: 0.5rem;
-    font-size: 0.93rem;
-    color: var(--c-text-soft);
-  }
-
-  .aside-links {
-    display: grid;
-    gap: 0.25rem;
-    font-weight: 650;
-  }
 
   .related-intro {
     margin-top: 0.35rem;

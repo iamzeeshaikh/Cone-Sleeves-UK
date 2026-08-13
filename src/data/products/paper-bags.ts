@@ -67,6 +67,34 @@ export const PAPER_BAGS: Product[] = [
         q: 'What size bag should we order?',
         a: 'Size from your largest container rather than a typical order. A bag that will not take your big meal box is unusable even if it fits everything else.',
       },
+      {
+        q: 'Should we test a sample before ordering?',
+        a: 'Load one with your heaviest normal order and carry it across a room. That answers more than any specification sheet.',
+      },
+      {
+        q: 'Where do takeaway bags usually fail?',
+        a: 'The base first, the handle attachment second. Both are worth checking on a sample rather than trusting to weight alone.',
+      },
+      {
+        q: 'Do we need grease resistance?',
+        a: 'Where hot food goes in unboxed, yes. Where everything is already in a container, a plain kraft bag is adequate and cheaper.',
+      },
+      {
+        q: 'Which handle type is most reliably?',
+        a: 'Twisted paper handles carry more weight; flat paper handles cost less; die-cut handles avoid an attachment point entirely.',
+      },
+      {
+        q: 'Will the bag stand open while packing?',
+        a: 'A block bottom will; a flat bag will not. That is seconds on every order at a busy pass.',
+      },
+      {
+        q: 'How many sizes should we hold?',
+        a: 'Two usually covers a takeaway — one for a single meal and one for a family order. A third rarely earns its storage.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The front face and the gusset. Both are visible as the bag is carried, where the base and back rarely are.',
+      },
     ],
     related: ['custom-food-delivery-bags', 'custom-restaurant-paper-bags', 'custom-kraft-food-bags', 'custom-lunch-bags'],
   },
@@ -126,6 +154,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'How tall should a delivery bag be?',
         a: 'Short enough to stand upright in a rider\'s insulated backpack without the top being folded over. Measure a typical backpack rather than sizing from the food alone.',
       },
+      {
+        q: 'Will the bag collapse in a backpack?',
+        a: 'Not with enough rigidity. A bag that folds when others are packed beside it is what tips the order inside.',
+      },
+      {
+        q: 'Do we need handles on a delivery bag?',
+        a: 'Less than on a customer-carried bag, since it travels in a backpack. Handles help at the handover rather than in transit.',
+      },
+      {
+        q: 'Can a rider close it one-handed?',
+        a: 'With an adhesive strip, yes. A closure needing two hands slows every collection, which riders notice.',
+      },
+      {
+        q: 'Should we seal containers as well?',
+        a: 'It closes the remaining gap. A sealed bag with unsealed boxes inside still lets food move during a journey.',
+      },
+      {
+        q: 'Will printing survive the journey?',
+        a: 'On a coated or laminated surface, yes. Unlaminated print scuffs against a backpack lining over repeated trips.',
+      },
+      {
+        q: 'How do we stop leaks reaching the bag?',
+        a: 'Seal the containers rather than relying on the bag. A paper bag is not a containment vessel for spilled liquid.',
+      },
+      {
+        q: 'Can the closure be reused?',
+        a: 'A tamper-evident closure is designed not to be, which is the point. Reusable closures defeat the purpose.',
+      },
+      {
+        q: 'Do these need handles?',
+        a: 'Less than a customer-carried bag, since they travel in a backpack. Handles help at the handover rather than in transit.',
+      },
     ],
     related: ['custom-take-out-bags', 'custom-bento-sleeves', 'custom-restaurant-paper-bags', 'custom-kraft-food-bags'],
   },
@@ -179,6 +239,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Why does our design look distorted on the finished bag?',
         a: 'Almost always because it was laid out flat. A full bag bulges and the gusset opens, so artwork running to the edges gets stretched or hidden at exactly those points.',
+      },
+      {
+        q: 'Why does our design look distorted?',
+        a: 'Because it was laid out flat. A full bag bulges and the gusset opens, so artwork running to the edges stretches or hides.',
+      },
+      {
+        q: 'Should we print both sides?',
+        a: 'It doubles the visible surface on a bag that swings as it is carried. For most brands the front and gusset are enough.',
+      },
+      {
+        q: 'Where is the print actually seen?',
+        a: 'The front face at chest height, the gusset from the side, and the base when the bag is set on a table.',
+      },
+      {
+        q: 'Do we need grease resistance?',
+        a: 'Only where hot food goes in unboxed. If everything is contained, a plain bag is adequate and considerably cheaper.',
+      },
+      {
+        q: 'Will a paper bag carry a full order?',
+        a: 'A properly specified one will. Test with your heaviest normal order rather than relying on a stated weight figure.',
+      },
+      {
+        q: 'Can we run several sizes?',
+        a: 'Yes, and most restaurants need two. Running both in one job shares the setup rather than repeating it.',
+      },
+      {
+        q: 'How do we choose a size?',
+        a: 'From your largest container rather than a typical order. A bag that will not take the big box is unusable.',
+      },
+      {
+        q: 'Do these suit collection orders?',
+        a: 'They are mostly bought for them, where the customer carries the bag through a street and past other people.',
       },
     ],
     related: ['custom-take-out-bags', 'custom-kraft-food-bags', 'custom-grocery-bags', 'custom-lunch-bags'],
@@ -234,6 +326,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Will our brand colours print accurately on kraft?',
         a: 'They will shift warmer and darker. If a colour has to be exact, either print a white underbase first or use a white bag — those are the two honest options.',
       },
+      {
+        q: 'Are kraft bags stronger than white?',
+        a: 'For the same weight, generally yes, because kraft uses longer fibres. That matters more on a bag than on a sheet.',
+      },
+      {
+        q: 'Will our colours print accurately on kraft?',
+        a: 'They shift warmer and darker. If a colour must be exact, that means a white underbase or a white bag.',
+      },
+      {
+        q: 'How many colours should we print?',
+        a: 'One or two suits the material and the price point. Designs made for kraft look better than designs adapted to it.',
+      },
+      {
+        q: 'Can we use white ink?',
+        a: 'Yes, and it stands out well against brown. It is an extra ink, so price it rather than assuming.',
+      },
+      {
+        q: 'Are kraft bags an environmental choice?',
+        a: 'They skip a bleaching stage, which is real. Any lining or lamination added for grease resistance changes the disposal picture.',
+      },
+      {
+        q: 'Do these suit a bakery?',
+        a: 'Very well, and kraft is the default across UK bakery counters for exactly the plain, unfussy look.',
+      },
+      {
+        q: 'What sizes are common?',
+        a: 'From single-item bags up to full order carriers. Tell us the largest item you put in one and we will size from it.',
+      },
+      {
+        q: 'Will the bag tear at the seam?',
+        a: 'Not on an appropriate weight. Seam failure usually means the bag is under-specified for the load.',
+      },
     ],
     related: ['custom-take-out-bags', 'custom-restaurant-paper-bags', 'custom-grocery-bags', 'mycelium-packaging'],
   },
@@ -287,6 +411,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Do grocery bags need handles?',
         a: 'For anything carried to a car, yes. Handle-less bags work at a counter where the customer is putting the bag straight into another one, and not much beyond that.',
+      },
+      {
+        q: 'Why do grocery bags split at the base?',
+        a: 'Because tins and jars press into specific points rather than spreading the load. That is why the base construction differs.',
+      },
+      {
+        q: 'What weight should we specify?',
+        a: 'Heavier than a food carrier of the same volume, because the load is denser and more concentrated.',
+      },
+      {
+        q: 'Do these suit a farm shop?',
+        a: 'They are frequently bought for one, where the bag carries branding out of the shop and into a customer\'s kitchen.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and on kraft a single strong colour usually reads better than a detailed multi-colour design.',
+      },
+      {
+        q: 'How many sizes should we hold?',
+        a: 'Two usually covers it — a standard shop and a larger one. More than that tends to sit unused.',
+      },
+      {
+        q: 'Will they stand up while being packed?',
+        a: 'A block bottom will stand open on the counter, which matters when staff are packing one-handed at a till. A flat-bottom bag has to be held, and that slows a queue.',
+      },
+      {
+        q: 'Can we print a farm shop logo in two colours?',
+        a: 'Yes. On kraft, two well-chosen inks usually outperform four fighting the brown base, and a simple mark printed cleanly reads better across a car park than a detailed one does.',
+      },
+      {
+        q: 'Do these suit a market stall?',
+        a: 'They do, though a stall usually cannot receive a delivery. Most traders take stock at home or a storage unit.',
       },
     ],
     related: ['custom-kraft-food-bags', 'custom-bread-bags', 'custom-restaurant-paper-bags', 'custom-flour-bags'],
@@ -344,6 +500,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Should a bread bag have a window?',
         a: 'A window shows the crust and colour, which sells an artisan loaf. It also adds a material and a cost, so plenty of bakeries print the loaf type instead and keep the bag simple.',
       },
+      {
+        q: 'Why not use a sealed bag?',
+        a: 'A sealed bag holds moisture and softens the crust within an hour. Paper exists for bread precisely because it breathes.',
+      },
+      {
+        q: 'How do we size for different loaves?',
+        a: 'By shape rather than weight. An 800g tin loaf and an 800g bloomer need different bags entirely.',
+      },
+      {
+        q: 'How many sizes will we need?',
+        a: 'Two or three for a bakery running several shapes. Sizing by weight alone is the usual mistake.',
+      },
+      {
+        q: 'Can we print in two colours?',
+        a: 'Yes, and a restrained design suits a craft bakery. Heavy coverage works against the plain paper look.',
+      },
+      {
+        q: 'Do these suit sourdough?',
+        a: 'They do, and a crisp crust is exactly what a paper bag protects and a sealed bag destroys.',
+      },
+      {
+        q: 'Will the bag mark from a warm loaf?',
+        a: 'A freshly baked loaf can mark plain paper slightly. Most bakeries accept it, or let loaves cool before bagging.',
+      },
+      {
+        q: 'Can we print the loaf type on the bag?',
+        a: 'Yes, and on digital printing several loaf names in one run is straightforward. Send the split between them.',
+      },
+      {
+        q: 'Do these suit a wholesale bakery?',
+        a: 'They do, though wholesale bags often carry less retail information than shelf packs. Tell us which use dominates.',
+      },
     ],
     related: ['custom-pastry-bags', 'custom-grocery-bags', 'custom-kraft-food-bags', 'custom-cookie-bags'],
   },
@@ -397,6 +585,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Should bags have a window?',
         a: 'A window sells the product but adds cost and a second material. Most bakery counters put the display in the cabinet instead and keep the bag simple.',
+      },
+      {
+        q: 'Why does one-handed opening matter?',
+        a: 'Because staff have tongs in the other hand. A bag needing two hands is why counters keep a pile of pre-opened ones.',
+      },
+      {
+        q: 'Will they come off the stack singly?',
+        a: 'With an interleaved or pop-up pack, yes, and at a Saturday morning counter that is worth more than a small unit saving.',
+      },
+      {
+        q: 'Can we print two colours?',
+        a: 'Yes, and a simple repeated design suits the stock. Fine detail closes up on an absorbent lightweight paper.',
+      },
+      {
+        q: 'Do these suit hot pastries?',
+        a: 'With a lined grade, yes, though steam softens pastry in any closed bag. Many counters fold rather than seal.',
+      },
+      {
+        q: 'How many sizes do we need?',
+        a: 'Usually two — one for a single pastry and one for two or three. Larger orders move to a box.',
+      },
+      {
+        q: 'Will crumbs escape?',
+        a: 'Less than from a sleeve, which is one of the main reasons counters choose bags for flaky items.',
+      },
+      {
+        q: 'Can we run a window version alongside a plain one?',
+        a: 'Yes, and many bakeries do — plain for everyday, windowed for a premium line. Send the split.',
+      },
+      {
+        q: 'Do these come in a pop-up pack?',
+        a: 'Where staff take one at a time at a counter, it is worth asking for. It changes how the job is finished.',
       },
     ],
     related: ['custom-pastry-sleeves', 'custom-cookie-bags', 'custom-donut-bags', 'custom-bread-bags'],
@@ -452,6 +672,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'How many doughnuts should one bag hold?',
         a: 'Up to about six, sitting side by side rather than stacked. Beyond that they crush each other and a box is the better format.',
       },
+      {
+        q: 'Why does glaze come off in the bag?',
+        a: 'The bag is uncoated. Warm glaze bonds to absorbent paper as it cools and lifts when the doughnut is pulled out.',
+      },
+      {
+        q: 'Do filled doughnuts need a bigger bag?',
+        a: 'They are heavier and less stable, so a slightly larger bag avoids squeezing them past each other and pushing jam out.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, and doughnut brands are usually colour-led. A coated inner face is the more important specification, though.',
+      },
+      {
+        q: 'Will sugar dust show on the bag?',
+        a: 'On a dark print, clearly. A lighter or busier design disguises it, and most counters accept some dusting.',
+      },
+      {
+        q: 'Do these suit delivery?',
+        a: 'For short journeys, yes. For longer ones a box protects better, because a bag lets doughnuts press together.',
+      },
+      {
+        q: 'Should the bag have a window?',
+        a: 'It sells a decorated doughnut well. Weigh that against the cost and the extra material before adding one.',
+      },
+      {
+        q: 'Can we run several designs?',
+        a: 'On digital printing, yes, because there is no plate cost per design. Send us the split between them rather than a single combined total so the run can be planned properly.',
+      },
+      {
+        q: 'Can we order bags and boxes together?',
+        a: 'Yes, and shops selling both singles and dozens usually need each. Running them in one job shares the setup.',
+      },
     ],
     related: ['custom-donut-sleeves', 'custom-pastry-bags', 'custom-cookie-bags', 'custom-greaseproof-paper'],
   },
@@ -505,6 +757,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Do cookie bags need to be grease resistant?',
         a: 'For anything with a high butter content or melted chocolate, yes. Plain shortbread-style biscuits are drier and often fine in an ordinary bag.',
+      },
+      {
+        q: 'Is a window worth the cost?',
+        a: 'On a shelf, usually yes, because cookies sell on appearance. At a counter where the product is already visible, it adds less.',
+      },
+      {
+        q: 'Do cookie bags need grease resistance?',
+        a: 'For high-butter cookies and melted chocolate, yes. Drier shortbread-style biscuits are often fine in an ordinary bag.',
+      },
+      {
+        q: 'What is different about a retail pack?',
+        a: 'It needs a seal and space for weight, ingredients and allergens. A service bag needs neither.',
+      },
+      {
+        q: 'Can we use one bag for both?',
+        a: 'Rarely well. Decide which use dominates rather than adapting a service bag for a shelf afterwards.',
+      },
+      {
+        q: 'Will cookies break in a bag?',
+        a: 'Flat bags protect poorly against crushing. For gifting or postal sale, a box or a rigid insert is the safer route.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and on kraft a single strong colour reads well. Save the detail for a window if you want the product to show.',
+      },
+      {
+        q: 'Do these suit a market stall?',
+        a: 'They do, and the low unit cost suits high-volume outdoor selling where each bag is used once.',
+      },
+      {
+        q: 'How do we size them?',
+        a: 'From your largest cookie and the number per bag. Cookies vary far more in diameter than people expect.',
       },
     ],
     related: ['custom-pastry-bags', 'custom-candy-bags', 'custom-donut-bags', 'custom-glassine-paper'],
@@ -562,6 +846,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'How should we mark which filling is which?',
         a: 'A printed tick-box panel on the bag, or a clear area for a sticker. Both are quicker than writing on the bag and far quicker than opening it to check.',
       },
+      {
+        q: 'How should we mark the filling?',
+        a: 'A printed tick-box panel or a clear area for a sticker. Both are quicker than writing, and far quicker than opening the bag.',
+      },
+      {
+        q: 'Do sandwich bags need grease resistance?',
+        a: 'For mayonnaise-based and hot fillings, yes. Dry fillings can use a lighter and cheaper bag.',
+      },
+      {
+        q: 'Can a service bag double as a retail pack?',
+        a: 'Not usually, because a retail pack needs a seal and legally required labelling. Decide which you are ordering first.',
+      },
+      {
+        q: 'Should the bag have a window?',
+        a: 'It shows the filling, which helps on a shelf. At a made-to-order counter the customer has already chosen, so it adds less.',
+      },
+      {
+        q: 'How many sizes do we need?',
+        a: 'Usually one, sized to your largest sandwich. A bag sized for the smallest will not take the biggest.',
+      },
+      {
+        q: 'Will the bag hold a sandwich and a packet?',
+        a: 'Only if sized for both. Meal-deal counters often need a slightly larger bag than the sandwich alone suggests.',
+      },
+      {
+        q: 'Can we print two colours?',
+        a: 'Yes, and a simple design with a clear label panel usually works better than a busy one.',
+      },
+      {
+        q: 'Can we order bags and wraps together?',
+        a: 'Yes, and many counters use bags for takeaway and wraps for eat-in. One job keeps the branding consistent.',
+      },
     ],
     related: ['custom-sandwich-paper', 'custom-sandwich-sleeves', 'custom-lunch-bags', 'custom-pastry-bags'],
   },
@@ -615,6 +931,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Can names be written on the bag?',
         a: 'Leave an unprinted, uncoated panel and a marker pen will take. For allergy management that panel is usually more important than anything else printed on the bag.',
+      },
+      {
+        q: 'Will the bag survive a school bag?',
+        a: 'It needs to. Specify for a morning of being carried and squashed rather than for a short trip from a counter.',
+      },
+      {
+        q: 'Do lunch bags need handles?',
+        a: 'Rarely, since they usually go inside another bag. Handles add cost for a use case that does not need them.',
+      },
+      {
+        q: 'Should the top fold or seal?',
+        a: 'A fold-over top is enough for most packed lunches and lets the bag be reopened. A seal suits pre-packed catering.',
+      },
+      {
+        q: 'Can we print for a school?',
+        a: 'Yes, and school and event caterers are the main buyers. A single colour usually suits the budget and the volume.',
+      },
+      {
+        q: 'Will a drink make the bag damp?',
+        a: 'A cold drink can sweat inside a closed bag. A lined grade helps where drinks are chilled.',
+      },
+      {
+        q: 'How many do we order?',
+        a: 'Count actual daily servings across a term rather than estimating. Institutional volumes are easy to get badly wrong.',
+      },
+      {
+        q: 'Do these suit event catering as well as schools?',
+        a: 'Yes. Conference and event caterers use the same format for packed meal service, and the requirements barely differ: a bag that holds a filled roll, a drink and a piece of fruit.',
+      },
+      {
+        q: 'Can we print dietary marks?',
+        a: 'A printed tick-box panel works where the menu is stable. Where meals vary daily, a sticker is more practical.',
       },
     ],
     related: ['custom-sandwich-bags', 'custom-take-out-bags', 'custom-snack-bags', 'custom-kraft-food-bags'],
@@ -670,6 +1018,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Bag or box for chips?',
         a: 'A bag suits smaller portions and costs less. A box holds its shape better under a large portion and stacks on a tray, which a bag does not.',
       },
+      {
+        q: 'Will the bag stand while being filled?',
+        a: 'With a formed base, yes, and that matters when staff fill one-handed from a fryer basket.',
+      },
+      {
+        q: 'What portion size should we quote for?',
+        a: 'Weigh a typical serving. Descriptions like regular and large vary far too much between shops to size from.',
+      },
+      {
+        q: 'Do these need grease resistance?',
+        a: 'Yes. Chips carry more free oil than almost anything, and an untreated bag goes translucent within a minute.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, though one or two colours suits the price point of a high-volume item bought by the thousand.',
+      },
+      {
+        q: 'Will chips fall out when carried?',
+        a: 'Enough height stops it. A shallow bag with a full portion is where spillage happens.',
+      },
+      {
+        q: 'Do these suit a market pitch?',
+        a: 'They suit them well. Nothing else in this range lets a walking customer hold chips at a lower cost per portion.',
+      },
+      {
+        q: 'Can we print a chip shop name and address?',
+        a: 'Yes, and one strong colour usually reads better than a detailed design on an absorbent grease-resistant stock.',
+      },
+      {
+        q: 'Do these suit a festival pitch?',
+        a: 'They do, and a bag is the cheapest chip packaging that still lets a customer walk while eating.',
+      },
     ],
     related: ['french-fry-boxes', 'custom-fries-sleeves', 'custom-printed-fry-paper', 'custom-snack-bags'],
   },
@@ -723,6 +1103,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'How big should a popcorn bag be?',
         a: 'Size by volume, not weight. Popcorn is far bulkier per gram than anything else in this range, so a bag sized by weight will be much too small.',
+      },
+      {
+        q: 'Does popcorn need a grease-resistant bag?',
+        a: 'Dry-seasoned and glazed popcorn does not. Buttered popcorn does, and the two look identical on a specification sheet.',
+      },
+      {
+        q: 'Why do striped designs persist?',
+        a: 'Because they read clearly at a distance and in low light, which is exactly the condition a cinema foyer provides.',
+      },
+      {
+        q: 'Will the bag stand open while filling?',
+        a: 'With a formed base, yes. That matters when you are serving a queue one-handed, because a bag that collapses while being filled means spilled product and a slower line.',
+      },
+      {
+        q: 'Should the bag be tall or wide?',
+        a: 'Tall reads as more popcorn for the same volume, which is why cinema packaging has that shape.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, and the large flat face takes it well. Contrast matters more than detail in a dark room.',
+      },
+      {
+        q: 'Do these suit outdoor events?',
+        a: 'They do, though wind catches a light empty bag. Weighted storage on the pitch is worth planning for.',
+      },
+      {
+        q: 'How many sizes should we hold?',
+        a: 'Usually two — an individual and a sharing size. A third rarely earns its storage at an event.',
+      },
+      {
+        q: 'Do you supply these to cinemas?',
+        a: 'Yes, alongside events and markets. Contrast matters more than detail in a dark foyer, which shapes the design.',
       },
     ],
     related: ['custom-popcorn-sleeves', 'custom-popcorn-trays', 'custom-snack-bags', 'custom-candy-bags'],
@@ -778,6 +1190,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Can a service bag be used as a retail pack?',
         a: 'Not usually, because a retail pack needs a seal and space for legally required labelling. It is worth deciding which you need before ordering rather than adapting afterwards.',
       },
+      {
+        q: 'What size suits a single portion?',
+        a: 'Size from a weighed portion rather than a target. Snack portions vary widely between operators.',
+      },
+      {
+        q: 'Do dry snacks need a lining?',
+        a: 'Genuinely dry ones do not, which keeps the cost down. Anything dressed, fried or buttered does.',
+      },
+      {
+        q: 'Will the bag stand up?',
+        a: 'A flat bag will not; a block-bottom one will. For self-service displays that difference matters.',
+      },
+      {
+        q: 'Can we run several sizes?',
+        a: 'Yes, and running them in one job shares the setup between them rather than repeating it.',
+      },
+      {
+        q: 'Do these suit a market stall?',
+        a: 'They do, and the low unit cost suits high-volume selling where each bag is used once.',
+      },
+      {
+        q: 'How are they supplied?',
+        a: 'Flat in cases. A snack bag takes very little storage, which suits stalls and kiosks with almost none.',
+      },
+      {
+        q: 'Can we add a hanging hole?',
+        a: 'Yes, for clip strip display at a till. It has to be designed into the shape rather than added afterwards.',
+      },
+      {
+        q: 'Do these suit a farm shop shelf?',
+        a: 'With a seal and labelling space, yes. A service bag without either is a counter product rather than a shelf one.',
+      },
     ],
     related: ['custom-popcorn-bags', 'paper-snack-cups', 'custom-candy-bags', 'custom-french-fry-bags'],
   },
@@ -831,6 +1275,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'What sizes should we stock?',
         a: 'Match them to your price and weight bands rather than to round volumes. A bag that holds slightly more than a standard portion looks mean when it is only two thirds full.',
+      },
+      {
+        q: 'Will the bag stand open for self-service?',
+        a: 'It needs to, because a customer is filling it with a scoop in one hand. A flat bag that needs two hands is a real friction point.',
+      },
+      {
+        q: 'How do we close them at the till?',
+        a: 'A fold-over top or a printed sticker. A sticker also gives you somewhere to put a weight or price label.',
+      },
+      {
+        q: 'Can we print on a translucent bag?',
+        a: 'Yes, and the contents showing through the unprinted areas creates depth. Open designs use that better than heavy coverage.',
+      },
+      {
+        q: 'Do these suit a sweet shop?',
+        a: 'They are the standard format for a sweet shop, alongside event favours and party bags. A window or a printed panel lets the contents do the selling from behind a counter.',
+      },
+      {
+        q: 'Will sticky sweets mark the bag?',
+        a: 'Glazed and sugared sweets can. A coated inner face helps where the sweets are genuinely sticky.',
+      },
+      {
+        q: 'Can we run several sizes in one order?',
+        a: 'Yes, and it shares the setup. Send the split between sizes rather than a combined total.',
+      },
+      {
+        q: 'Can we print weight bands on the bag?',
+        a: 'Yes, though many shops prefer a sticker so the same bag serves several bands. Tell us which you would rather.',
+      },
+      {
+        q: 'Do these suit party and event bags?',
+        a: 'They do, and short digital runs with a name or date are a common request alongside the shop trade.',
       },
     ],
     related: ['custom-glassine-paper', 'custom-cookie-bags', 'custom-halloween-treat-bags', 'custom-snack-bags'],
@@ -897,6 +1373,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'What happens to unsold stock?',
         a: 'With undated artwork it can be carried into the following autumn. With a year printed on it, it cannot, which is the main argument for leaving the year off.',
       },
+      {
+        q: 'Why is the season so short?',
+        a: 'Halloween stock sells through October and stops completely. That five-week window is what makes over-ordering costly.',
+      },
+      {
+        q: 'Should the design be subtle?',
+        a: 'Rarely. Seasonal artwork used for five weeks benefits from being unmistakably seasonal rather than understated.',
+      },
+      {
+        q: 'Can we run several designs?',
+        a: 'On digital printing, yes, and a set works well for a seasonal range. Send the split between them.',
+      },
+      {
+        q: 'Do these need a lining?',
+        a: 'Wrapped sweets need nothing more than plain paper. Only unwrapped or glazed items call for a coated inner face.',
+      },
+      {
+        q: 'What size suits a treat bag?',
+        a: 'Small, sized to a handful of wrapped sweets. Larger bags look under-filled, which works against the offer.',
+      },
+      {
+        q: 'Do these suit schools and events?',
+        a: 'They are frequently bought for both, alongside shops. Volumes are usually modest, which suits digital printing.',
+      },
+      {
+        q: 'Can we run a Christmas design in the same order?',
+        a: 'Yes, and combining two seasonal runs shares the setup. The lead times differ, so tell us both dates.',
+      },
+      {
+        q: 'Does the bag need a coated inner face?',
+        a: 'Wrapped sweets need nothing beyond plain paper. Unwrapped or glazed treats are the case where a coated face earns its cost.',
+      },
     ],
     related: ['custom-candy-bags', 'event-or-seasonal-sleeves', 'christmas-paper-cups', 'custom-cookie-bags'],
   },
@@ -950,6 +1458,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'How should we mark the roast date?',
         a: 'Leave a clear panel and apply it per batch, rather than printing it. Roast date changes constantly and printing it would mean a new run every time.',
+      },
+      {
+        q: 'Do we need a valve?',
+        a: 'For freshly roasted coffee, effectively yes. Without one the bag inflates from the gas the beans release.',
+      },
+      {
+        q: 'Should the bag reseal?',
+        a: 'Yes. A bag is opened many times before it is finished, and a closure that stops holding is a real complaint.',
+      },
+      {
+        q: 'What information has to fit?',
+        a: 'Origin, roast level, weight, ingredients and business details, plus a scannable barcode on a flat panel.',
+      },
+      {
+        q: 'Can we run several origins in one order?',
+        a: 'On digital printing, yes, which suits a roastery with a rotating single-origin range. Send the split.',
+      },
+      {
+        q: 'Will light affect the coffee?',
+        a: 'It degrades it over time, which is why most retail coffee bags are opaque rather than windowed.',
+      },
+      {
+        q: 'Do these suit wholesale as well as retail?',
+        a: 'Wholesale bags are usually larger and carry less retail information. Tell us which use dominates.',
+      },
+      {
+        q: 'Where should the barcode go?',
+        a: 'On a flat panel with clear space around it, away from folds and the valve, so it scans reliably at the till.',
+      },
+      {
+        q: 'Can we order these without a valve?',
+        a: 'For pre-ground coffee rested before packing, yes. For freshly roasted beans a valve is effectively necessary.',
       },
     ],
     related: ['custom-tea-bags', 'custom-spice-bags', 'custom-kraft-food-bags', 'custom-jerky-bags'],
@@ -1005,6 +1545,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Are these the bags tea is brewed in?',
         a: 'No. This page covers retail packaging for loose leaf tea. Infusion bags for brewing are a different product entirely.',
       },
+      {
+        q: 'Why does tea need a barrier?',
+        a: 'Dry leaf absorbs moisture and nearby aromas readily, and light degrades it. The packaging is doing preservation work.',
+      },
+      {
+        q: 'Should it reseal?',
+        a: 'Yes. A tea bag is opened repeatedly over weeks, so a closure that survives that is worth specifying.',
+      },
+      {
+        q: 'Can we run several blends in one order?',
+        a: 'On digital printing, yes, which suits a range of blends. Send the quantity of each rather than a total.',
+      },
+      {
+        q: 'Will the bag hold the aroma?',
+        a: 'A proper barrier will, and much of what customers are buying in speciality tea is the smell when the bag opens.',
+      },
+      {
+        q: 'What size suits loose leaf?',
+        a: 'Sized to your weight bands. Loose leaf is bulky for its weight, so a bag sized by grams alone comes out too small.',
+      },
+      {
+        q: 'Do these suit wholesale?',
+        a: 'Wholesale packs are larger and carry less retail information. Tell us which use dominates before we quote.',
+      },
+      {
+        q: 'Can we print brewing instructions?',
+        a: 'Yes, and speciality tea usually carries them. Lay out the information panel with the front rather than fitting it in afterwards.',
+      },
+      {
+        q: 'Do these suit loose leaf sold by weight?',
+        a: 'Yes, sized to your weight bands. Loose leaf is bulky for its weight, so a bag sized by grams alone comes out too small.',
+      },
     ],
     related: ['custom-coffee-bags', 'custom-spice-bags', 'custom-candy-bags', 'custom-kraft-food-bags'],
   },
@@ -1059,6 +1631,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'How much information has to fit on a small bag?',
         a: 'More than most people plan for — ingredients, weight, best-before and business details all have to be legible. Lay out the required panel before designing the front.',
       },
+      {
+        q: 'Should spice bags stand up?',
+        a: 'It helps a great deal in a kitchen cupboard, where a flat bag disappears. A standing bag is easier to find and pour from.',
+      },
+      {
+        q: 'How much information has to fit?',
+        a: 'More than most people plan for on a small face — ingredients, weight, best-before and business details, all legible.',
+      },
+      {
+        q: 'Why does the reseal matter so much?',
+        a: 'Because a spice bag is opened dozens of times over months. A closure that stops holding after ten uses is a real problem.',
+      },
+      {
+        q: 'Do ground spices need more protection?',
+        a: 'They lose aroma faster than whole spices once air reaches them, which is what the barrier is slowing down.',
+      },
+      {
+        q: 'Will moisture cake the spice?',
+        a: 'It will without a barrier. Caking is the most common complaint and it is a packaging problem rather than a product one.',
+      },
+      {
+        q: 'Can we run several spices in one order?',
+        a: 'On digital printing, yes, and a range is the normal case. Send the quantity of each.',
+      },
+      {
+        q: 'What size suits retail?',
+        a: 'Small, matched to your price bands. Spices are sold in modest quantities and used a pinch at a time.',
+      },
+      {
+        q: 'Should there be a window?',
+        a: 'It shows the colour, which sells a spice. It also lets light in, so many brands print an image of the product instead.',
+      },
     ],
     related: ['custom-tea-bags', 'custom-coffee-bags', 'custom-flour-bags', 'custom-jerky-bags'],
   },
@@ -1112,6 +1716,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Can flour bags be stacked?',
         a: 'They need to be built for it. Tell us how they will be stored and transported, since a bag designed for a shelf and one designed for a pallet are not the same specification.',
+      },
+      {
+        q: 'What weight of paper do we need?',
+        a: 'Heavier than a food carrier of the same volume, because flour is dense and concentrates load at the base.',
+      },
+      {
+        q: 'Should the bag reseal?',
+        a: 'For retail, yes. A bag of flour is used over weeks, and a fold-over top alone lets powder escape into a cupboard.',
+      },
+      {
+        q: 'Can we print in two colours?',
+        a: 'Yes, and mills often use a simple two-colour design that reads clearly on a large kraft face.',
+      },
+      {
+        q: 'Do these suit a farm shop selling its own flour?',
+        a: 'They are frequently bought for exactly that, alongside working mills packing for retail sale. The board weight matters more here than the print, because flour is heavier than it looks.',
+      },
+      {
+        q: 'What size should we choose?',
+        a: 'Matched to your weight bands. Flour is sold in standard weights, so the bag is sized to those rather than to a volume.',
+      },
+      {
+        q: 'Will the bag survive being dropped?',
+        a: 'A properly specified one will. Base failure on impact is the usual sign the paper weight is too light.',
+      },
+      {
+        q: 'Can we print milling information?',
+        a: 'Yes, and provenance sells a specialist flour. Leave room for weight and best-before marks applied per batch.',
+      },
+      {
+        q: 'Do these suit wholesale sacks?',
+        a: 'Sacks are a different construction from retail bags. Tell us the weight you pack and we will confirm what suits.',
       },
     ],
     related: ['custom-grocery-bags', 'custom-spice-bags', 'custom-bread-bags', 'custom-kraft-food-bags'],
@@ -1169,6 +1805,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Should the label be printed or applied?',
         a: 'Applied, in most cases, because weight and use-by dates change per pack. Reserve a clear panel of the right size in the artwork so the sticker does not land on your logo.',
       },
+      {
+        q: 'What information has to appear?',
+        a: 'Weight, storage and use-by among others. Confirm the full requirement with whoever handles your food labelling.',
+      },
+      {
+        q: 'Will the bag hold liquid?',
+        a: 'A barrier bag contains normal moisture from a chilled cut. Standing liquid over a long period is a harder test.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'Yes, and farm shops often do, because a branded pack carries further than a plain one. Leave room for the label.',
+      },
+      {
+        q: 'Do these suit a farm shop chiller?',
+        a: 'They are mostly bought for one, where meat is packed ahead rather than cut to order at a counter.',
+      },
+      {
+        q: 'How do we size them?',
+        a: 'From your typical cuts, including the largest joint you pack. Meat varies more in shape than in weight.',
+      },
+      {
+        q: 'Is this the same as freezer packaging?',
+        a: 'No. Freezer paper carries a barrier for frozen storage; these are for chilled retail. Tell us which use applies.',
+      },
+      {
+        q: 'Can these go in a freezer?',
+        a: 'Freezer storage needs a barrier specified for it. Tell us if packs are frozen rather than chilled and we will specify accordingly.',
+      },
+      {
+        q: 'Do these suit a butcher\'s counter?',
+        a: 'They suit pre-packed sale rather than cutting to order, where butcher paper is the quicker and cheaper wrap.',
+      },
     ],
     related: ['custom-butcher-paper', 'custom-jerky-bags', 'custom-freezer-paper', 'custom-cheese-packaging-bags'],
   },
@@ -1223,6 +1891,38 @@ export const PAPER_BAGS: Product[] = [
         q: 'Does the bag suit every type of cheese?',
         a: 'Not really — a hard aged cheese and a soft rind need different things from packaging. Tell us what you are packing and we will specify against it rather than offering one bag for everything.',
       },
+      {
+        q: 'Does one bag suit every cheese?',
+        a: 'No. A hard aged cheese and a soft rind need different things. Tell us what you pack and we will specify against it.',
+      },
+      {
+        q: 'Should the bag have a window?',
+        a: 'Customers buy cheese by variety and appearance, so a window helps. Printing the variety clearly is the cheaper alternative.',
+      },
+      {
+        q: 'Can the customer reseal it?',
+        a: 'A reseal is worth having, since cheese is used over days rather than at once. It also reduces waste.',
+      },
+      {
+        q: 'What information has to appear?',
+        a: 'Weight, variety, use-by and allergen information among others. Confirm the full requirement with your own labelling process.',
+      },
+      {
+        q: 'Why does breathability matter?',
+        a: 'Sealed airtight the cheese sweats; fully open it dries. The packaging has to sit between the two for its shelf life.',
+      },
+      {
+        q: 'Do these suit a farm shop?',
+        a: 'They are frequently bought for one, alongside cheesemongers packing ahead rather than cutting to order.',
+      },
+      {
+        q: 'How do we size them?',
+        a: 'From your standard cut weights. Cheese is sold by weight, so the bag follows those bands rather than a volume.',
+      },
+      {
+        q: 'Can we order these alongside cheese paper?',
+        a: 'Yes, and counters selling both pre-packed and cut-to-order usually need each. Running them in one job shares the setup.',
+      },
     ],
     related: ['custom-cheese-paper', 'custom-meat-packaging-bags', 'custom-deli-paper', 'custom-jerky-bags'],
   },
@@ -1276,6 +1976,38 @@ export const PAPER_BAGS: Product[] = [
       {
         q: 'Should the bag hang or stand?',
         a: 'It depends where it is sold. Clip strips at a till need a hanging hole; a counter display works better with a stand-up base. Some brands specify both.',
+      },
+      {
+        q: 'How long must the barrier protect for?',
+        a: 'That depends on the shelf life you declare, which comes from your own product testing. Tell us the target and we specify against it.',
+      },
+      {
+        q: 'Why is moisture the main risk?',
+        a: 'Because jerky is preserved by having its moisture removed. Any that gets back in softens it and collapses the shelf life.',
+      },
+      {
+        q: 'Does ambient distribution change anything?',
+        a: 'It makes the barrier work harder, since the pack may sit in a warm van or a sunny shelf rather than a chiller.',
+      },
+      {
+        q: 'Should the bag reseal?',
+        a: 'Yes. Jerky is eaten over several sittings, and a pack that cannot be reclosed loses condition quickly.',
+      },
+      {
+        q: 'Can we run several flavours?',
+        a: 'On digital printing, yes, which suits a range. Send the quantity of each rather than a combined total.',
+      },
+      {
+        q: 'Should there be a window?',
+        a: 'It shows the product, which sells it. It also lets light in, so many brands print an image instead.',
+      },
+      {
+        q: 'What size suits retail?',
+        a: 'Small, matched to your price bands. Jerky is sold in modest weights at a relatively high price per gram.',
+      },
+      {
+        q: 'Can we order a hanging and a standing version?',
+        a: 'Yes, and some brands need both for different retail placements. Send the split between them.',
       },
     ],
     related: ['custom-meat-packaging-bags', 'custom-snack-bags', 'custom-spice-bags', 'custom-cheese-packaging-bags'],

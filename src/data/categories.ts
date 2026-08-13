@@ -115,6 +115,30 @@ export const CATEGORIES: Category[] = [
         q: 'Can one sleeve design work across waffle and cake cones?',
         a: 'Rarely. Cake cones taper more sharply, so a sleeve cut for a waffle cone sits loose and slides. Sites selling both usually run two dies with the same artwork scaled to each.',
       },
+      {
+        q: 'What information do you need to quote?',
+        a: 'The cone you use or its top diameter and slant height, the quantity you have in mind, and any date you are working to.',
+      },
+      {
+        q: 'Do you supply unprinted sleeves?',
+        a: 'Yes. Plenty of vendors take plain white or kraft sleeves for hygiene and grip alone. The die still has to be cut to your cone.',
+      },
+      {
+        q: 'How are cone sleeves delivered?',
+        a: 'Flat and die-cut in cases, on national carriers to any UK address. Flat packing protects the print and keeps carriage down.',
+      },
+      {
+        q: 'Can we order more than one cone size?',
+        a: 'Yes, and sites selling waffle and cake cones usually need two dies. Running both in one order shares the setup between them.',
+      },
+      {
+        q: 'What print methods do you use?',
+        a: 'Digital for shorter runs and multiple designs, conventional for longer runs. Which suits your job depends on quantity and colour count.',
+      },
+      {
+        q: 'Do you charge for tooling?',
+        a: 'A new size needs a physical cutting die, made once and used for every reorder. Where a charge applies it is stated on the quote.',
+      },
     ],
   },
 
@@ -228,6 +252,34 @@ export const CATEGORIES: Category[] = [
         q: 'Will one sleeve size cover a single and a double burger?',
         a: 'Only if the sleeve is generous enough for the double, which then looks slack on the single. Sites selling both usually run two depths from the same artwork.',
       },
+      {
+        q: 'What do you need to quote a food sleeve?',
+        a: 'The made-up item measured at its widest, what it holds, whether it is served hot or fried, and your quantity.',
+      },
+      {
+        q: 'Can you match a sleeve to a container we already use?',
+        a: 'That is the usual starting point. Send the container or the item and the die is cut to it.',
+      },
+      {
+        q: 'Do you supply plain food sleeves?',
+        a: 'Yes, and some operators start plain to prove the sizing before committing to artwork. The die carries over to the printed reorder.',
+      },
+      {
+        q: 'How are they delivered?',
+        a: 'Flat and die-cut in cases, on national carriers. Assembly is a roll and a tuck at the pass.',
+      },
+      {
+        q: 'What is the difference between a sleeve and a wrap?',
+        a: 'A sleeve is die-cut board that holds its shape; a wrap is a paper sheet folded around the item. Different jobs, different stock.',
+      },
+      {
+        q: 'Can we print several product names?',
+        a: 'On digital printing, yes, which suits a menu with several items. Send the split between names rather than a total.',
+      },
+      {
+        q: 'Do these suit delivery orders?',
+        a: 'Some do. A full wrap survives a courier bag where a half-height sleeve struggles, so tell us your delivery share.',
+      },
     ],
   },
 
@@ -324,6 +376,34 @@ export const CATEGORIES: Category[] = [
         q: 'Are compartment trays worth the extra cost?',
         a: 'They are when a side would otherwise make the main soggy, or when you want a meal deal to look like a set rather than two loose items. For a single portion they add cost without adding much.',
       },
+      {
+        q: 'What do you need to quote a tray?',
+        a: 'Internal dimensions or the portion in grams, what it carries, whether it is hot or wet, and your quantity.',
+      },
+      {
+        q: 'Flat-packed or pre-formed?',
+        a: 'Flat stores in a fraction of the space and takes seconds to form. Pre-formed is instant and takes far more room.',
+      },
+      {
+        q: 'Can trays be lidded?',
+        a: 'Many can, and for delivery it is worth doing. Tell us at quote stage, because the rim has to be designed for it.',
+      },
+      {
+        q: 'Do you supply plain trays?',
+        a: 'Yes, and some sites use plain trays with a printed liner instead, which is often cheaper for the same visual effect.',
+      },
+      {
+        q: 'How are trays delivered?',
+        a: 'In cases on national carriers. Flat-packed trays ship far more economically than pre-formed ones for the same quantity.',
+      },
+      {
+        q: 'Can we order two tray sizes together?',
+        a: 'Yes, and doing so spreads one setup across both sizes instead of paying for it twice.',
+      },
+      {
+        q: 'What board weights are available?',
+        a: 'A range, specified against the load rather than chosen from a list. Tell us the heaviest thing the tray carries.',
+      },
     ],
   },
 
@@ -390,6 +470,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Can these boxes go in a delivery bag?',
         a: 'Open formats travel poorly — chips migrate and the box tips. If a meaningful share of your orders are delivered, a carton with a closing lid is the safer specification, ideally vented so the contents do not steam.',
+      },
+      {
+        q: 'What do you need to quote a chip box?',
+        a: 'A weighed portion, whether the format is open or closed, your fryer temperature and holding time, and the quantity.',
+      },
+      {
+        q: 'Do you supply plain boxes?',
+        a: 'Yes, and many takeaways use plain boxes with printed papers inside, which is often the cheaper route to the same effect.',
+      },
+      {
+        q: 'Can boxes be vented?',
+        a: 'On closed cartons, yes, and it is worth specifying if crispness matters. Vent size and position both affect the result.',
+      },
+      {
+        q: 'How are they delivered?',
+        a: 'Flat-packed or pre-formed in cases, on national carriers. Flat packing makes a substantial difference to carriage on this product.',
+      },
+      {
+        q: 'Can we order several formats?',
+        a: 'Yes — a scoop for counter service and a carton for delivery is a common pairing. Running both in one job shares the setup.',
+      },
+      {
+        q: 'What grease-resistant grades do you use?',
+        a: 'Several, specified against your fryer rather than chosen generically. We confirm the grade in writing on the quote.',
+      },
+      {
+        q: 'Do these suit a market pitch?',
+        a: 'They do, and an exposed pitch is the case where lamination earns its cost on top of the grease-resistant lining.',
+      },
+      {
+        q: 'Can we start with a small trial order?',
+        a: 'Often, depending on the print method. A trial proves the portion size and the board before you commit to a full run.',
       },
     ],
   },
@@ -470,6 +582,34 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Can we print different designs across one order?',
         a: 'Splitting an order across several designs is possible on digital print, and the economics depend on the split. Send the number of designs and the quantity of each with your enquiry and we will price it properly rather than guessing.',
+      },
+      {
+        q: 'What do you need to quote a cup sleeve?',
+        a: 'A cup, or the brand and size code from its base, plus how many cup sizes you carry and your quantity.',
+      },
+      {
+        q: 'Can you supply sleeves for cups we buy elsewhere?',
+        a: 'That is the normal case. The sleeve is cut to your cup\'s circumference rather than to a nominal volume.',
+      },
+      {
+        q: 'Do you supply plain sleeves?',
+        a: 'Yes, though the main reason cafés buy sleeves is branding, so plain is less common here than elsewhere in the range.',
+      },
+      {
+        q: 'How are they delivered?',
+        a: 'Flat in cases on national carriers. Corrugated sleeves take noticeably more space per thousand than flat board ones.',
+      },
+      {
+        q: 'Can we run seasonal designs?',
+        a: 'Easily, because there is no tooling. Only the print changes, so a seasonal run is shorter than a first order.',
+      },
+      {
+        q: 'How many sleeve sizes will we need?',
+        a: 'Usually two across three cup sizes. One sleeve rarely covers more than two adjacent sizes properly.',
+      },
+      {
+        q: 'Are sleeves cheaper than printed cups?',
+        a: 'For a single site, considerably cheaper, because a sleeve avoids cup tooling and the higher minimum quantities that printed cups carry. You brand a plain cup you already buy.',
       },
     ],
   },
@@ -552,6 +692,30 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Can you supply matching lids?',
         a: 'Lids are matched to the rim diameter of the cup, which is not the same across suppliers even at the same stated volume. Tell us at quote stage that you need lids and we will confirm the matching size.',
+      },
+      {
+        q: 'What do you need to quote cups?',
+        a: 'The volume you pour, how many sizes you carry, whether you need lids, and your realistic annual usage.',
+      },
+      {
+        q: 'Do you supply lids?',
+        a: 'Yes, matched by rim diameter rather than stated volume. Tell us at quote stage so cups and lids are checked against each other.',
+      },
+      {
+        q: 'Can you supply plain cups?',
+        a: 'Yes, and many sites use plain cups with printed sleeves, which is cheaper than printing cups for a single location.',
+      },
+      {
+        q: 'How are cups delivered?',
+        a: 'In nested sleeves inside cases, on national carriers. That is also how they load into a dispenser where one is used.',
+      },
+      {
+        q: 'What is the minimum order for printed cups?',
+        a: 'Higher than for sleeves, and set by the print method rather than a fixed figure. Send your annual usage and we will advise.',
+      },
+      {
+        q: 'Can we run several sizes in one order?',
+        a: 'Yes, and it shares the setup. Each size needs its own artwork layout because the flat blank differs.',
       },
     ],
   },
@@ -639,6 +803,34 @@ export const CATEGORIES: Category[] = [
         q: 'What is the difference between a flat bag and a block-bottom bag?',
         a: 'A flat bag lies completely flat and suits a single pastry or a sandwich. A block-bottom bag opens out to stand up on its own, which matters when staff need to fill it one-handed or when the contents should not be crushed.',
       },
+      {
+        q: 'What do you need to quote papers or bags?',
+        a: 'What the paper or bag holds, whether it is hot, cold or oily, the sheet or bag size, and your quantity.',
+      },
+      {
+        q: 'Can you supply plain stock?',
+        a: 'Yes, and many sites use plain bags with a printed sticker, which suits a small operation changing its range often.',
+      },
+      {
+        q: 'How are these delivered?',
+        a: 'Sheets in reams and bags flat in cases, on national carriers. Both are compact relative to formed packaging.',
+      },
+      {
+        q: 'How many colours can we print?',
+        a: 'One or two reproduce reliably on absorbent stock. More is possible and adds cost quickly on a low unit-price item.',
+      },
+      {
+        q: 'Can we order papers and bags together?',
+        a: 'Yes, and running them in one job keeps the colour consistent and shares the setup between them.',
+      },
+      {
+        q: 'Do you supply interleaved sheets?',
+        a: 'Where staff need to take one at a time at a counter, yes. Ask at quote stage, because it changes how the job is finished.',
+      },
+      {
+        q: 'What sizes are available?',
+        a: 'Cut to your item rather than a stock list. Send the dimensions plus the fold allowance and we will confirm.',
+      },
     ],
   },
 
@@ -699,6 +891,38 @@ export const CATEGORIES: Category[] = [
         q: 'Can one printed design run across several sizes?',
         a: 'The artwork can be the same, but each size needs its own layout because the cup is a different shape when flattened. Scaling one file across sizes distorts the logo, so we re-lay it per size from your original file.',
       },
+      {
+        q: 'Which two sizes should a café carry?',
+        a: '8oz and 12oz for hot is the standard UK pairing, with a single 16oz for cold. Adding a size later is easier than clearing dead stock.',
+      },
+      {
+        q: 'How much less than the stated size do we actually pour?',
+        a: 'Roughly 10 to 15 per cent once headspace is allowed, more if a topping or ice is involved.',
+      },
+      {
+        q: 'Do lid sizes follow cup volume?',
+        a: 'No. Lids match the rim, and several volumes often share one rim, which can take a line out of your stock.',
+      },
+      {
+        q: 'Can we run several sizes in one order?',
+        a: 'Yes, and it shares the setup. Each size still needs its own artwork layout because the flat blank differs.',
+      },
+      {
+        q: 'What size suits vending?',
+        a: '6oz and 7oz are the common machine sizes. Confirm against the machine model rather than the volume alone.',
+      },
+      {
+        q: 'Which size should we print first?',
+        a: '12oz. It outsells every other size in the UK, so the print budget reaches the most people there.',
+      },
+      {
+        q: 'Do larger cups need different lids?',
+        a: 'Often, because there is more weight and more suction on the lid. Confirm the rim rather than assuming.',
+      },
+      {
+        q: 'How do we estimate quantity per size?',
+        a: 'From till data rather than instinct. Most sites find one of their sizes barely moves, which is worth knowing before ordering.',
+      },
     ],
   },
 
@@ -756,6 +980,38 @@ export const CATEGORIES: Category[] = [
         q: 'Which lining should I choose to reduce environmental impact?',
         a: 'It depends less on the cup than on where it ends up. A cup with an alternative lining sent to general waste performs no better than a conventional one. Start by finding out what separate collection you can arrange, then choose the lining that matches it.',
       },
+      {
+        q: 'Do all paper cups have a lining?',
+        a: 'Every cup holding a liquid does. Board alone goes soft within minutes, so the question is which lining rather than whether.',
+      },
+      {
+        q: 'Which lining should we choose?',
+        a: 'Start from the collection you can actually arrange, then choose the lining that matches it. The bin decides more than the material.',
+      },
+      {
+        q: 'Does the lining affect print?',
+        a: 'No. It is on the inside face, so the printable outer surface behaves the same whichever lining is specified.',
+      },
+      {
+        q: 'Are unlined cups available?',
+        a: 'For dry goods such as popcorn and snacks, yes, and they are cheaper and simpler to recycle. Not for anything wet.',
+      },
+      {
+        q: 'Can we get recycled content?',
+        a: 'Availability varies by grade and by what is in supply when your job runs. We confirm what is achievable per quote.',
+      },
+      {
+        q: 'Does an alternative lining cost more?',
+        a: 'Generally yes. We will price it alongside a conventional specification so the difference is visible rather than assumed.',
+      },
+      {
+        q: 'Will an alternative lining handle hot drinks?',
+        a: 'Heat tolerance varies by type and some are lower than conventional. Tell us your service temperature and we will confirm.',
+      },
+      {
+        q: 'Can you supply certification?',
+        a: 'What is available depends on the specific stock. We confirm it in writing on your quote rather than claiming it generally.',
+      },
     ],
   },
 
@@ -804,6 +1060,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Why does the same colour look different on two cup sizes?',
         a: 'Different sizes can run on different presses or board batches, and a large flat area shows variation that a small logo hides. If colour consistency across sizes matters, say so at quote stage so the sizes can be planned together.',
+      },
+      {
+        q: 'Why is there an unprinted line at the rim?',
+        a: 'The rim is rolled to form the cup, and printed ink there would crack. Every printed cup carries that margin.',
+      },
+      {
+        q: 'How close can you match a brand colour?',
+        a: 'Very close with a spot ink and a Pantone reference. A process build drifts more across a long run.',
+      },
+      {
+        q: 'Why does full coverage cost more?',
+        a: 'Because ink covers the whole printable area rather than the small fraction a logo uses. That is the main difference from a white cup.',
+      },
+      {
+        q: 'Can the inside be coloured?',
+        a: 'Normally not. The inner face touches the drink, so any print there needs an ink system specified for direct contact.',
+      },
+      {
+        q: 'Why does one size look different from another?',
+        a: 'Presses and board batches vary between sizes, and a full-coverage colour exposes differences a small mark would conceal.',
+      },
+      {
+        q: 'Can we mix colours in one order?',
+        a: 'On digital printing, yes. Send us the split between colours rather than a combined total, since each colour is a separate stock item even when the size and shape are identical.',
+      },
+      {
+        q: 'Which colours are hardest to hold?',
+        a: 'Pale tints and strong reds. Both benefit from a spot ink rather than a colour built from four process inks.',
+      },
+      {
+        q: 'Does colour change how the cup performs?',
+        a: 'No. Colour is print on the outside; the lining and wall construction determine how it behaves with a drink.',
       },
     ],
   },
@@ -858,6 +1146,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Is a double-wall cup worth the extra cost over a sleeve?',
         a: 'Compare the pair rather than the cup alone. A single-wall cup plus a sleeve is often close in total cost to a double wall, and the double wall removes a second line from your stock list and a step from service.',
+      },
+      {
+        q: 'Do we need to buy lids from you?',
+        a: 'Not necessarily, but rim diameters have to match. If you already hold lids, send the brand and code and we will check the cup against them.',
+      },
+      {
+        q: 'Is double wall worth it over a sleeve?',
+        a: 'Compare the pair rather than the cup alone. A single wall plus a sleeve is often close in total cost and adds a stock line.',
+      },
+      {
+        q: 'Which sizes should we carry?',
+        a: '8oz and 12oz covers most UK cafés, with a 16oz for large and iced. Two sizes is usually enough.',
+      },
+      {
+        q: 'Can we run seasonal designs on cups?',
+        a: 'Yes, though cup print carries a minimum quantity that a sleeve does not. Ask for both prices before deciding.',
+      },
+      {
+        q: 'Will kraft change our brand colours?',
+        a: 'Yes, warmer and darker. An exact match needs white board or a white underbase printed first.',
+      },
+      {
+        q: 'Do you supply plain cups?',
+        a: 'Yes, and plain cups with printed sleeves is the cheaper route for a single site wanting branding.',
+      },
+      {
+        q: 'How do we estimate annual usage?',
+        a: 'Count a typical week of takeaway hot drinks and scale it. Estimates made without till data are usually well out.',
+      },
+      {
+        q: 'What lead time should we expect?',
+        a: 'It follows the print method, run length and press schedule, so we confirm it on your quote rather than publishing a figure.',
       },
     ],
   },
@@ -927,6 +1247,38 @@ export const CATEGORIES: Category[] = [
         q: 'Do sauce pots need to be printed?',
         a: 'Rarely worth it. They are seen for seconds and bought in large volumes, so plain pots are usually the sensible choice and the print budget goes on the item the customer actually carries.',
       },
+      {
+        q: 'Can we use drink cups for food?',
+        a: 'They will hold it, but a spoon against the wall and sustained heat are loads a drink cup is not built for.',
+      },
+      {
+        q: 'Should we choose the cup or the lid first?',
+        a: 'The lid, because it decides how much of the cup you can fill. A domed lid adds capacity above the rim; a flat one caps it.',
+      },
+      {
+        q: 'Do cold desserts need a different specification?',
+        a: 'Yes, and the difference is on the outside. Condensation attacks the printed face rather than the lining.',
+      },
+      {
+        q: 'Are unlined cups available for dry food?',
+        a: 'Yes, and they are cheaper and simpler to recycle. Anything buttered, dressed or fried needs a lining.',
+      },
+      {
+        q: 'Do sauce pots need printing?',
+        a: 'Rarely worth it. They are seen for seconds and bought in volume, so the print budget does more elsewhere.',
+      },
+      {
+        q: 'Can we order cups and lids together?',
+        a: 'Yes, and it avoids the commonest problem in this range. A lid matched after the fact rarely seats properly.',
+      },
+      {
+        q: 'What size should we choose?',
+        a: 'From a weighed or measured portion rather than a stated volume, particularly where a topping sits above the rim.',
+      },
+      {
+        q: 'How are these delivered?',
+        a: 'Nested in sleeves inside cases, on national carriers, with lids packed separately where they are supplied.',
+      },
     ],
   },
 
@@ -971,6 +1323,42 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Is a cardboard cup different from a paper cup?',
         a: 'Not meaningfully. Both are formed from lined board. The word tends to signal a heavier, plainer cup rather than a different construction, so it is worth confirming board weight rather than relying on the name.',
+      },
+      {
+        q: 'Why does the rim matter?',
+        a: 'Because pressing a lid onto a thin rim distorts it, and the lid never seats evenly afterwards. In an office that becomes a recurring spill.',
+      },
+      {
+        q: 'Do these suit conference catering?',
+        a: 'Very often. Conference catering values a consistent rim and reliable supply above the finish a café would want.',
+      },
+      {
+        q: 'Can we order plain and printed together?',
+        a: 'Yes, and many organisations do — printed for reception, plain for staff areas. Send the split.',
+      },
+      {
+        q: 'Are they heavier to store?',
+        a: 'Each case holds fewer than a lightweight cup, so check against your storage before switching a whole line.',
+      },
+      {
+        q: 'Do they need sleeves?',
+        a: 'Not as often as a thin cup, though a large very hot drink is still easier to hold with one.',
+      },
+      {
+        q: 'Can we get lids?',
+        a: 'Yes, matched by rim diameter. Ordering cups and lids together avoids the mismatch that causes most lid complaints.',
+      },
+      {
+        q: 'What sizes are available?',
+        a: 'From small tasting cups up to standard coffee sizes. Tell us the volume you pour and we will confirm.',
+      },
+      {
+        q: 'Do cardboard cups suit event catering?',
+        a: 'They do, and conference and event caterers are among the main buyers where volume and a reliable rim matter more than finish.',
+      },
+      {
+        q: 'What sizes are available in this range?',
+        a: 'From small tasting cups to standard coffee sizes. Tell us the volume you pour and we will confirm what can be produced.',
       },
     ],
   },
@@ -1025,6 +1413,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Do printed sleeves fit any cup?',
         a: 'No. A sleeve is cut to a circumference, so one sized for a 12oz cup will be slack on an 8oz and will not go over a 16oz. Sites running several sizes normally need more than one sleeve.',
+      },
+      {
+        q: 'Can you supply lids for cups we bought elsewhere?',
+        a: 'Generally yes, if the rim matches a diameter we can supply. Post us a cup and we will confirm before quoting.',
+      },
+      {
+        q: 'How do we measure a rim?',
+        a: 'Across the outside of the rolled edge at its widest point. That is the measurement a lid is matched against.',
+      },
+      {
+        q: 'Can we reduce the number of lid lines?',
+        a: 'Often, by choosing cup sizes that share a rim. Two lines can become one, which also removes a service error.',
+      },
+      {
+        q: 'Are covers the same as lids?',
+        a: 'No. A cover keeps dust off a cup standing still; a lid seals for transport. Different jobs entirely.',
+      },
+      {
+        q: 'Do handles suit a busy café?',
+        a: 'Not well. The cost, the storage and the slower service all count against them outside a seated occasion.',
+      },
+      {
+        q: 'What are cone cups for?',
+        a: 'Dispensers and tasting, where a cup that cannot be put down guarantees single use rather than being abandoned and reused.',
+      },
+      {
+        q: 'Can these parts be ordered separately?',
+        a: 'Yes, though ordering cups and lids together is what avoids a mismatch. Sleeves can be ordered on their own cycle.',
+      },
+      {
+        q: 'Can we order parts without cups?',
+        a: 'Yes. Sleeves and lids can be ordered on their own cycle, though lids are safest ordered alongside the cups they match.',
       },
     ],
   },
@@ -1096,6 +1516,38 @@ export const CATEGORIES: Category[] = [
         q: 'Can we run four seasonal designs in one order?',
         a: 'On digital print, usually yes, with the cost depending on the split between designs. Tell us the quantity of each and we will price the split properly.',
       },
+      {
+        q: 'When should we order Christmas cups?',
+        a: 'Earlier than feels necessary, because every café wants press time in the same weeks. Ask for a lead time as soon as the design is settled.',
+      },
+      {
+        q: 'Should we print the year?',
+        a: 'Only if you are sure of the quantity. Undated artwork lets unsold stock run again the following season.',
+      },
+      {
+        q: 'How many designs can one run carry?',
+        a: 'On digital printing, several. On long conventional runs each design carries its own setup, which changes the arithmetic.',
+      },
+      {
+        q: 'Is a logo cup cheaper than full colour?',
+        a: 'Considerably, because ink covers only a few per cent of the surface rather than the whole printable area.',
+      },
+      {
+        q: 'Will a pattern cost more than a logo?',
+        a: 'Not necessarily. Cost follows the number of inks rather than how much surface they cover.',
+      },
+      {
+        q: 'How do we make sure every site gets every design?',
+        a: 'Ask for mixed cases rather than separate boxes per design, or one branch works through one design first.',
+      },
+      {
+        q: 'Can we keep our standard cup size for a seasonal run?',
+        a: 'Yes, and you should. No new tooling, no new lids, and no change at the counter when you switch.',
+      },
+      {
+        q: 'What is the biggest scheduling risk?',
+        a: 'Artwork approval, which slips more often than production does. Build slack into that step rather than into the print.',
+      },
     ],
   },
 
@@ -1148,6 +1600,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Is it worth branding a water cooler cup?',
         a: 'In a reception or a client-facing area, often — it is seen by every visitor. In a back office it rarely repays the cost, and most organisations take the plain cup.',
+      },
+      {
+        q: 'What should we send with an enquiry?',
+        a: 'The dispenser make and model, a current cup if you have one, and the rim diameter and cup height if measurable.',
+      },
+      {
+        q: 'Are cone and flat-bottom dispensers interchangeable?',
+        a: 'No, they take entirely different fittings. Confirm which dispenser you have before ordering either type, because a cone cup will not seat in a flat-bottom unit at all.',
+      },
+      {
+        q: 'Do these need a lining?',
+        a: 'A light barrier is enough for water. Tell us if anything else goes in them, since that changes the specification.',
+      },
+      {
+        q: 'Can these hold hot drinks?',
+        a: 'Only if specified for it. A cold-service cup will not hold up, and mixing the two in one cupboard is how that happens.',
+      },
+      {
+        q: 'How are they packed?',
+        a: 'In nested sleeves inside cases, which is also how they load into a dispenser. Damaged sleeves are the usual cause of jamming.',
+      },
+      {
+        q: 'What size is standard?',
+        a: '7oz for coolers and vending, with smaller sizes for washrooms. Confirm against the dispenser rather than the volume.',
+      },
+      {
+        q: 'Do these cups need printing at all?',
+        a: 'Most buildings take plain stock for staff areas and print only what visitors see. It is the cheapest split that still puts your name in front of people.',
+      },
+      {
+        q: 'What goes wrong most often with dispenser cups?',
+        a: 'A batch marginally outside tolerance, or a crushed sleeve. Both stop the dispenser releasing cleanly and both are avoidable by checking the fit first.',
       },
     ],
   },
@@ -1207,6 +1691,38 @@ export const CATEGORIES: Category[] = [
         q: 'What sheet size should I order?',
         a: 'Measure the item, then add enough on each side to fold and tuck. Ordering a standard size and hoping it wraps is the usual reason a first order gets replaced.',
       },
+      {
+        q: 'How many colours can we print on food paper?',
+        a: 'One or two reproduce reliably. More is possible and adds cost quickly on a product bought for its low unit price.',
+      },
+      {
+        q: 'What sheet size do we need?',
+        a: 'Measure the item, then add enough on each side to fold and tuck. Ordering a standard size and hoping is the usual mistake.',
+      },
+      {
+        q: 'Are printed papers safe against hot food?',
+        a: 'When both the paper grade and the ink system are specified for direct contact, yes. We confirm both on the quote.',
+      },
+      {
+        q: 'Can papers be supplied interleaved?',
+        a: 'Where staff take one at a time at a counter, yes. Ask at quote stage, because it changes how the job is finished.',
+      },
+      {
+        q: 'Which paper suits hot oily food?',
+        a: 'Greaseproof, or parchment where the paper also sees oven heat. Waxed paper is a cold and ambient material.',
+      },
+      {
+        q: 'How are sheets delivered?',
+        a: 'Flat in reams inside cases, on national carriers. Paper ships compactly compared with formed packaging.',
+      },
+      {
+        q: 'Can we order two sheet sizes?',
+        a: 'Yes, and most kitchens settle on two rather than one compromise. Running both in one job shares the setup.',
+      },
+      {
+        q: 'Will printing show through to the food?',
+        a: 'Not with a food-contact ink system, which is specified rather than assumed and confirmed on your quote.',
+      },
     ],
   },
 
@@ -1262,6 +1778,38 @@ export const CATEGORIES: Category[] = [
       {
         q: 'Can hot food go straight into a paper bag?',
         a: 'It can with a grease-resistant grade, but steam is still an issue and anything crisp will soften. Chips in particular do better in an open container inside the bag than loose in it.',
+      },
+      {
+        q: 'Flat or block-bottom?',
+        a: 'Flat suits a single item and one-handed filling; block-bottom stands open and carries a multi-item order.',
+      },
+      {
+        q: 'How do we choose a size?',
+        a: 'Size to the biggest box you use. A bag that fits four orders out of five is still the wrong bag.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and one confident colour on kraft tends to look better than several fighting the brown base.',
+      },
+      {
+        q: 'How are bags delivered?',
+        a: 'Flat in cases on national carriers. Even block-bottom bags ship flat, so storage is modest relative to formed packaging.',
+      },
+      {
+        q: 'Can we order several bag sizes together?',
+        a: 'Yes, and it shares the setup cost between them rather than repeating it on separate jobs.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The front face and the gusset, both visible as the bag is carried. The base and back rarely earn the ink.',
+      },
+      {
+        q: 'Do bags need a grease-resistant grade?',
+        a: 'Only where hot food goes in without a container. Where everything is boxed first, plain paper is adequate and noticeably cheaper.',
+      },
+      {
+        q: 'How do we stop the base giving way?',
+        a: 'Choose a block bottom for anything heavier than a single item, and load a sample with your worst-case order before committing.',
       },
     ],
   },

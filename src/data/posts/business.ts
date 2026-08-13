@@ -156,6 +156,34 @@ export const BUSINESS: BlogPost[] = [
         q: 'Do we need sleeves for tubs as well as cones?',
         a: 'A tub does not need a sleeve, though a printed tub or a lid label does the same branding job. If tubs are a large share of your trade it is worth quoting both together for consistency.',
       },
+      {
+        q: 'How much stock should a first order cover?',
+        a: 'Roughly six months at your peak rate. Enough to learn from, not so much that a wrong specification becomes a two-year problem.',
+      },
+      {
+        q: 'Do we need a children\'s size straight away?',
+        a: 'Only if children\'s cones are a meaningful share of trade. Many sites add it at the second order once they have real figures.',
+      },
+      {
+        q: 'What is the commonest first-order mistake?',
+        a: 'Sizing from a catalogue description rather than a physical cone. It produces a sleeve that slides, and there is no fixing it afterwards.',
+      },
+      {
+        q: 'Should we order sleeves and holders together?',
+        a: 'If you use both, yes. Cutting them from the same cone measurements is what makes the holder grip where the sleeve does not, and ordering together shares the setup cost.',
+      },
+      {
+        q: 'How do we handle a seasonal business?',
+        a: 'Order against your peak rather than an average, and remember flat-packed stock costs almost nothing to hold through the winter.',
+      },
+      {
+        q: 'Can we test a design before a full run?',
+        a: 'Ask about printed samples at quote stage. What is available depends on the print method your job runs on, and digital work makes them considerably easier than a conventional press does.',
+      },
+      {
+        q: 'When should we reorder?',
+        a: 'Before the last case, and ideally with your annual volume in hand so we can price the better print method.',
+      },
     ],
   },
 
@@ -313,6 +341,34 @@ export const BUSINESS: BlogPost[] = [
         q: 'Should we print the event year on the packaging?',
         a: 'Only if you are confident of using it all. Undated artwork lets leftovers run again the following year, which for a recurring event usually saves more than the extra detail adds.',
       },
+      {
+        q: 'What is the first thing to tell you about an event?',
+        a: 'The date. Everything else can be settled afterwards, but the date is what decides whether the job is achievable at all.',
+      },
+      {
+        q: 'Can we reuse packaging from a previous event?',
+        a: 'If the artwork carries no year or venue name, yes. That is the main argument for keeping event designs undated.',
+      },
+      {
+        q: 'How do we estimate for an unfamiliar event?',
+        a: 'From expected footfall and a conversion rate you actually believe, then check the total against what you can store and transport.',
+      },
+      {
+        q: 'Is tooling a problem for a one-off?',
+        a: 'It is the cost that does not scale down. Using an existing size avoids it entirely, which is worth checking first.',
+      },
+      {
+        q: 'Do event orders cost more per unit?',
+        a: 'Usually, because quantities are smaller and setup is spread more thinly. Digital printing narrows the gap considerably.',
+      },
+      {
+        q: 'Where should stock be delivered?',
+        a: 'Somewhere dry and staffed, ideally a week early. Deliveries arriving during setup are the commonest avoidable problem.',
+      },
+      {
+        q: 'Can we split an order across several events?',
+        a: 'Yes, and undated artwork makes that straightforward. Tell us the schedule and we will advise on quantities.',
+      },
     ],
   },
 
@@ -469,6 +525,34 @@ export const BUSINESS: BlogPost[] = [
       {
         q: 'How much more does printed packaging cost per order?',
         a: 'A few pence over plain stock in most cases, though it depends on the item, the run length and the number of inks. Ask for both prices and divide by the orders each run covers.',
+      },
+      {
+        q: 'Will branded packaging increase sales?',
+        a: 'We would not claim that. What it reliably does is make handovers look deliberate and put your name where you have no other presence.',
+      },
+      {
+        q: 'Which item should we brand first?',
+        a: 'Whatever the customer carries out and holds. Items discarded at the table are seen for seconds and rarely repay the print cost.',
+      },
+      {
+        q: 'How much more does printed packaging cost?',
+        a: 'A few pence per order in most cases, though it depends on the item, run length and ink count. Ask for both prices.',
+      },
+      {
+        q: 'Does this matter more for delivery?',
+        a: 'Considerably. A delivery-only kitchen has no shopfront, so packaging is the entire physical brand a customer receives.',
+      },
+      {
+        q: 'How do we know if it worked?',
+        a: 'Count tagged photographs before and after, ask staff about handover complaints, and track cost per order honestly.',
+      },
+      {
+        q: 'Should everything match?',
+        a: 'Items that nearly match read worse than plain ones. Ordering together is what keeps the colour consistent across them.',
+      },
+      {
+        q: 'Can packaging fix a struggling business?',
+        a: 'No. It amplifies what is already there rather than replacing it, which is worth being clear about before spending.',
       },
     ],
   },
@@ -631,6 +715,34 @@ export const BUSINESS: BlogPost[] = [
       {
         q: 'What should a supplier be able to confirm in writing?',
         a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to the tooling at reorder. Any reluctance on those is worth noticing.',
+      },
+      {
+        q: 'What should a supplier confirm in writing?',
+        a: 'Board grade, lining, ink system, finish, minimum quantity, lead time from artwork approval, and what happens to tooling at reorder.',
+      },
+      {
+        q: 'Is the cheapest quote usually comparable?',
+        a: 'Rarely, because specifications move independently. Send the first quote\'s written specification to the second supplier and ask them to price exactly that.',
+      },
+      {
+        q: 'Should we expect samples?',
+        a: 'What is available depends on the print method, and it is a fair question to ask at quote stage rather than after committing.',
+      },
+      {
+        q: 'What claims should make us cautious?',
+        a: 'Blanket environmental claims, guaranteed delivery times from a supplier without vehicles, and published turnaround figures unrelated to any specification.',
+      },
+      {
+        q: 'Can we move supplier without starting again?',
+        a: 'Largely. Your size, artwork and usage figures all carry over. Tooling usually does not, so budget for a new die.',
+      },
+      {
+        q: 'How do we judge a supplier early?',
+        a: 'By what they ask. One who prices from two lines has either done it a hundred times or has not asked what they need to know.',
+      },
+      {
+        q: 'What should we send with a first enquiry?',
+        a: 'A physical sample of what the packaging has to fit, your realistic quantity, and any date you are working to.',
       },
     ],
   },

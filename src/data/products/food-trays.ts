@@ -63,6 +63,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Should the tray be printed in the centre?',
         a: 'There is little point — the food covers it. The rim and the outer edges are what customers see when the tray is carried and photographed.',
       },
+      {
+        q: 'How do we test a tray properly?',
+        a: 'Load it the way a customer will and pick it up at one corner. A tray that feels sturdy empty on a counter can flex alarmingly with a burger and chips on it.',
+      },
+      {
+        q: 'Should we choose flat-packed or pre-formed?',
+        a: 'Flat-packed stores in a fraction of the space but takes a few seconds each to form. Busy sites with little back-of-house usually take flat.',
+      },
+      {
+        q: 'What wall height do we need?',
+        a: 'Enough that chips do not escape when the tray is carried at an angle. Measure a made-up meal rather than the burger alone.',
+      },
+      {
+        q: 'Do we need a liner as well?',
+        a: 'Not strictly, but it keeps grease off the printed base and extends how long the tray looks new. It costs very little.',
+      },
+      {
+        q: 'Can the tray hold a drink too?',
+        a: 'Only with a cut-out sized to your cup base. That is a bespoke die, so raise it early if you want it.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The rim and outer edges. The centre disappears under food within seconds of the tray leaving the pass.',
+      },
+      {
+        q: 'Will one tray size cover our menu?',
+        a: 'Size for your largest meal. A tray that will not take the big burger is unusable even if it fits everything else.',
+      },
+      {
+        q: 'Do these suit delivery?',
+        a: 'No. An open tray tips in a bag. If a share of orders are delivered, ask us to price a lidded container alongside.',
+      },
     ],
     related: ['burger-sleeves', 'custom-combo-meal-trays', 'custom-fries-trays', 'custom-greaseproof-paper'],
   },
@@ -115,6 +147,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'How deep should the walls be?',
         a: 'Deep enough that the topping sits below the rim, which is usually more than people expect. Measure a made-up portion rather than working from the chip volume alone.',
+      },
+      {
+        q: 'Why do loaded fries leak at the corners?',
+        a: 'Because an assembled tray has seams there, and melted cheese finds them. A lined board with a well-formed corner holds; an unlined one does not.',
+      },
+      {
+        q: 'What board suits melted cheese?',
+        a: 'A grease-resistant lining. Cheese oil is more demanding than chip oil, and it sits on the food for the whole time it is being eaten.',
+      },
+      {
+        q: 'How do we size for a loaded portion?',
+        a: 'Weigh one on your own scales and send the figure. Volume descriptions are unreliable once toppings are involved.',
+      },
+      {
+        q: 'Will the tray tip when carried?',
+        a: 'Not with a wide enough base. A tall narrow tray with a heavy topping is the combination that tips.',
+      },
+      {
+        q: 'Do these work for delivery?',
+        a: 'Poorly on their own. A loaded tray tips in a courier bag, so a lidded container is a more honest answer where delivery is a large share.',
+      },
+      {
+        q: 'Can we print inside the walls?',
+        a: 'You can, though food covers most of it. The rim and outer faces are what the customer actually sees.',
+      },
+      {
+        q: 'How do we stop the tray softening mid-service?',
+        a: 'A lined board and a wall height that keeps hot topping off the rim. Softening usually starts where sauce sits against an unlined seam.',
+      },
+      {
+        q: 'Can we print a menu item name on the tray?',
+        a: 'Yes, and on a multi-item counter it saves staff checking. Digital printing makes several names in one run affordable.',
       },
     ],
     related: ['custom-fries-sleeves', 'custom-nacho-trays', 'french-fry-boxes', 'custom-combo-meal-trays'],
@@ -180,6 +244,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Will hot cheese sauce soak through the board?',
         a: 'Through untreated board, yes, and quickly. A grease-resistant lining is the standard specification for this tray for exactly that reason.',
       },
+      {
+        q: 'Why must the divider reach the rim?',
+        a: 'Because a shallow depression lets sauce run over the lip as soon as the tray is tilted, which is exactly when separation matters.',
+      },
+      {
+        q: 'How many dip wells should we have?',
+        a: 'One is usual, two where you serve cheese and salsa together. Beyond that each well becomes too small to be useful.',
+      },
+      {
+        q: 'Will hot cheese sauce soak through?',
+        a: 'Through untreated board, quickly. A grease-resistant lining is the standard specification for this tray for that reason.',
+      },
+      {
+        q: 'Do these suit a cinema?',
+        a: 'They are frequently bought for one, and carrying in the dark is the argument for a wide, stable base.',
+      },
+      {
+        q: 'Can we print on the divider?',
+        a: 'There is very little visible area and it is usually covered. The rim and outer walls are where print earns its cost.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'Flat-packed nests compactly; pre-formed takes considerably more room. Divided trays are bulkier pre-formed than plain ones.',
+      },
+      {
+        q: 'Will the tray survive being carried up steps?',
+        a: 'With a rigid board, yes. Stadium and cinema use is exactly why the board weight matters more here than on a table-service tray.',
+      },
+      {
+        q: 'Can we order these with matching dip pots?',
+        a: 'Yes, and running them together keeps the branding consistent where the dip is served separately rather than in a well.',
+      },
     ],
     related: ['custom-fries-trays', 'custom-combo-meal-trays', 'custom-snack-trays', 'custom-taco-sleeves'],
   },
@@ -232,6 +328,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Will one tray fit standard and footlong?',
         a: 'Not comfortably. A footlong on a standard tray overhangs at both ends and tips. If you sell both, size the tray for the footlong or run two.',
+      },
+      {
+        q: 'Do we need a channel?',
+        a: 'If the tray is ever carried, yes. On a flat base the roll rolls into the side, and the toppings end up on the tray.',
+      },
+      {
+        q: 'Do we need a tray if the dog is already sleeved?',
+        a: 'Only if a side is served with it. A sleeved dog alone is easy to carry; add chips and the customer needs somewhere to put both.',
+      },
+      {
+        q: 'What board copes with mustard and ketchup?',
+        a: 'Sauce resistance rather than plain grease resistance. Tell us what goes on top, because acidic sauces work on coatings differently.',
+      },
+      {
+        q: 'How wide should the channel be?',
+        a: 'Sized to the roll rather than the sausage, since the roll is what sits in it. Send a roll measurement with your enquiry.',
+      },
+      {
+        q: 'Can we fit a drink on the same tray?',
+        a: 'With a cut-out sized to your cup base, yes, though it makes the tray considerably larger. That is a bespoke die.',
+      },
+      {
+        q: 'Do these suit a market pitch?',
+        a: 'They do. Outdoor trading argues for a laminated finish alongside the sauce-resistant board, since a tray that softens in drizzle costs more in remakes than the finish costs to add.',
+      },
+      {
+        q: 'Where does the print go?',
+        a: 'The rim and the outer faces. The channel and the base are covered as soon as the tray is loaded.',
+      },
+      {
+        q: 'Can we print a menu name on the tray?',
+        a: 'Yes. On a counter serving several dog varieties it saves opening anything to check which is which.',
       },
     ],
     related: ['custom-hot-dog-sleeves', 'custom-combo-meal-trays', 'custom-corn-dog-sleeves', 'custom-fries-trays'],
@@ -296,6 +424,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Can the tray be square rather than round?',
         a: 'Yes, and square boards are easier to cut with less waste, which can reduce cost. Round looks more considered on a table, so it comes down to service style.',
       },
+      {
+        q: 'Why does board weight matter more on a large pizza?',
+        a: 'Because the unsupported span grows faster than intuition suggests. A board that holds a 10in pizza flat can sag noticeably under a 16in one.',
+      },
+      {
+        q: 'Should we size for our largest pizza?',
+        a: 'Yes, or run two weights. Specifying for the most common size leaves the largest one sagging, which is the complaint customers notice.',
+      },
+      {
+        q: 'Does a tray inside a box help?',
+        a: 'It stops the base flexing when the box is carried at an angle, which is what makes toppings slide to one side.',
+      },
+      {
+        q: 'Round or square?',
+        a: 'Square cuts with less waste and can cost less. Round looks more considered on a table, so it comes down to service style.',
+      },
+      {
+        q: 'Do we need grease resistance?',
+        a: 'Either that or a liner. Cheese oil soaks into plain board and the base loses rigidity exactly where the pizza needs support.',
+      },
+      {
+        q: 'Can we print the whole surface?',
+        a: 'There is little point — the pizza covers it. The rim is the only area a customer sees once the tray is loaded.',
+      },
+      {
+        q: 'Will a tray fit our existing boxes?',
+        a: 'Send the box internal dimensions and we will size it to sit inside with a small clearance rather than forcing it.',
+      },
+      {
+        q: 'Do these suit market trading?',
+        a: 'Yes, and they are often used instead of a box where a customer eats on the spot. Outdoor use argues for a coated surface.',
+      },
     ],
     related: ['custom-pizza-slice-trays', 'custom-pizza-liner', 'custom-pizza-slice-sleeves', 'custom-cardboard-food-trays'],
   },
@@ -352,6 +512,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Can one wedge fit slices from different pizza sizes?',
         a: 'Only if you size for the largest, which leaves smaller slices sitting loose. Sites cutting one standard diameter get a much better fit.',
+      },
+      {
+        q: 'How far towards the tip must the tray reach?',
+        a: 'As close as the shape allows. Support stopping two thirds along still lets the tip droop, which is what customers notice first.',
+      },
+      {
+        q: 'Tray or sleeve for slices?',
+        a: 'A tray presents better for seated service; a sleeve is designed for walking customers. Counters doing both usually stock each.',
+      },
+      {
+        q: 'Can one wedge fit different pizza sizes?',
+        a: 'Only by sizing for the largest, which leaves smaller slices loose. Counters cutting one diameter get a much better fit.',
+      },
+      {
+        q: 'Do we need grease resistance?',
+        a: 'Yes. A slice sits on the tray for the whole time it is eaten, and cheese oil soaks into untreated board quickly.',
+      },
+      {
+        q: 'Will it hold two slices?',
+        a: 'Only if sized for a pair from the start. Two slices are heavier and thicker than a single-slice wedge is built for.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'They nest flat and take little room, which suits the small counters that sell pizza by the slice.',
+      },
+      {
+        q: 'Can we print the crust end?',
+        a: 'That is the area worth printing, because it is what shows when the slice is carried and photographed.',
+      },
+      {
+        q: 'Do customers eat off the tray?',
+        a: 'Usually they lift the slice off. The tray is doing carrying and presentation rather than acting as a plate.',
       },
     ],
     related: ['custom-pizza-slice-sleeves', 'custom-pizza-trays', 'custom-snack-trays', 'custom-pizza-liner'],
@@ -418,6 +610,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Should the tray or a separate card carry the allergen list?',
         a: 'A separate card is more flexible, since fillings change between orders. Printing a fixed list onto the tray only works if your platters never vary.',
       },
+      {
+        q: 'What size suits an office order?',
+        a: 'Set it from your portion count and the tables it will sit on. A platter that will not fit a meeting room table is a recurring irritation.',
+      },
+      {
+        q: 'Should allergen information be printed on the tray?',
+        a: 'A separate card is more flexible, since fillings change per order. Printing a fixed list only works if your platters never vary.',
+      },
+      {
+        q: 'Will it fit in a car boot?',
+        a: 'Worth checking before ordering. Catering platters are frequently sized without anyone measuring the vehicle they travel in.',
+      },
+      {
+        q: 'Do we need a lid or film?',
+        a: 'Whichever you already use — tell us at quote stage, because the covering method constrains the rim design more than anything else.',
+      },
+      {
+        q: 'What board weight do we need?',
+        a: 'Rigid. Sandwiches are heavier in quantity than they seem, and a platter is usually carried one-handed through a building.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The rim and the underside, both of which are visible when the platter is carried at chest height.',
+      },
+      {
+        q: 'Do these suit buffets as well as delivery?',
+        a: 'Yes, though a buffet platter can use a lighter rim, since it is not stacked. Tell us which use dominates.',
+      },
+      {
+        q: 'Do these suit a buffet as well as delivery?',
+        a: 'Yes, though a buffet platter can use a lighter rim since it is not stacked. Tell us which use dominates.',
+      },
     ],
     related: ['custom-sandwich-sleeves', 'custom-combo-meal-trays', 'custom-bakery-trays', 'custom-cardboard-food-trays'],
   },
@@ -470,6 +694,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Do snack trays need grease resistance?',
         a: 'It depends entirely on the snack. Dry nuts and crisps do not; anything fried or dressed does. It is worth specifying against your actual menu rather than the category.',
+      },
+      {
+        q: 'How big is too big?',
+        a: 'Wider than a palm plus a thumb on the rim, at which point it needs two hands and the customer puts their drink down.',
+      },
+      {
+        q: 'Will a small tray tip when carried?',
+        a: 'Not with a wide enough base relative to its height. A tall narrow tray is the combination that tips.',
+      },
+      {
+        q: 'Can we add a thumb rest?',
+        a: 'A small cut-out or a shaped rim makes one-handed carrying noticeably easier, and it is a small change to the die.',
+      },
+      {
+        q: 'Do these suit a bar?',
+        a: 'They are mostly bought for one, along with cinemas and standing events where there is nowhere to put a plate.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'They nest tightly and take very little room, which matters behind a bar where storage is usually the binding constraint.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and on a small tray a single strong colour usually reads better than a detailed design.',
+      },
+      {
+        q: 'Will they hold a portion with a dip?',
+        a: 'Only with a divided version. A plain small tray has nowhere to put a dip without it reaching the rest of the food.',
+      },
+      {
+        q: 'Can we order these with printed liners?',
+        a: 'Yes, and a liner lets a plain tray be reused across servings while still carrying your branding.',
       },
     ],
     related: ['paper-snack-cups', 'custom-nacho-trays', 'custom-popcorn-trays', 'custom-dessert-trays'],
@@ -535,6 +791,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Can combo trays be lidded for delivery?',
         a: 'They can, and for delivery it is worth doing, since compartments alone do not stop food moving when a bag tips. Tell us at quote stage so the rim is designed for a lid.',
       },
+      {
+        q: 'How many compartments should we have?',
+        a: 'Rarely more than four. Beyond that each section becomes too small to use, and the tray gets larger than it needs to be.',
+      },
+      {
+        q: 'How do we decide the layout?',
+        a: 'From real portions weighed on your own scales, with the wettest item in the deepest section and the largest compartment for whatever is eaten first.',
+      },
+      {
+        q: 'Are compartments worth it for two items?',
+        a: 'If one is wet and the other should stay crisp, yes. If both are dry, a plain tray does the same job for less.',
+      },
+      {
+        q: 'Can combo trays be lidded?',
+        a: 'They can, and for delivery it is worth doing. Compartments alone do not stop food moving when a bag tips.',
+      },
+      {
+        q: 'Do dividers need full height?',
+        a: 'Where liquids are involved, yes. A shallow crease lets sauce cross as soon as the tray is tilted.',
+      },
+      {
+        q: 'Will a combo tray sell a meal deal?',
+        a: 'It presents one as a set rather than three loose items, which is a large part of why kitchens adopt them.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'Flat-packed nests well; pre-formed divided trays take considerably more space than plain ones. Check against your storage before choosing.',
+      },
+      {
+        q: 'Can we print the compartments differently?',
+        a: 'There is little visible area inside once loaded. The rim and outer faces carry the branding effectively.',
+      },
     ],
     related: ['custom-burger-trays', 'custom-nacho-trays', 'custom-fries-trays', 'custom-bento-sleeves'],
   },
@@ -587,6 +875,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Should the tray fit inside our existing boxes?',
         a: 'It should, and it is worth checking rather than assuming. Send the internal dimensions of the box and we will size the tray to sit inside it with a small clearance.',
+      },
+      {
+        q: 'How do we stop pastries sliding?',
+        a: 'Shallow indentations or a lightly textured base. A plain lip alone lets items slide within it and stack against one side.',
+      },
+      {
+        q: 'Will the tray fit inside our boxes?',
+        a: 'Send the box internal dimensions and we will size it to sit inside with a small clearance rather than needing to be forced.',
+      },
+      {
+        q: 'Do bakery trays need a lined board?',
+        a: 'For anything buttery or glazed, yes. Butter marks plain board within hours, and the tray is usually visible through a lid.',
+      },
+      {
+        q: 'Does icing sugar show on the tray?',
+        a: 'Clearly on dark board and hardly at all on white, which is worth thinking about if your counter dusts heavily.',
+      },
+      {
+        q: 'How many sizes will we need?',
+        a: 'Two usually covers a bakery counter — one for a few items and one for a six or twelve pack.',
+      },
+      {
+        q: 'Can we print between the indentations?',
+        a: 'There is limited clear area once items are placed. The rim carries branding more reliably.',
+      },
+      {
+        q: 'Do these suit a delivery box?',
+        a: 'They do, and the tray is what stops six pastries arriving in one corner. Size it to the box rather than the other way round.',
+      },
+      {
+        q: 'Will the tray survive being carried flat?',
+        a: 'With a rigid board, yes. A loaded bakery tray is usually carried level with both hands, which is the least demanding case.',
       },
     ],
     related: ['custom-pastry-sleeves', 'custom-dessert-trays', 'custom-donut-sleeves', 'custom-cardboard-food-trays'],
@@ -641,6 +961,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Matt or gloss finish?',
         a: 'Matt almost always looks better under food and photographs without hotspots. Gloss reflects light and reads as disposable, which is rarely what a dessert menu is going for.',
       },
+      {
+        q: 'Matt or gloss for desserts?',
+        a: 'Matt almost always. It photographs without hotspots and reads as considered, where gloss reflects light and looks disposable.',
+      },
+      {
+        q: 'Do dessert trays need grease resistance?',
+        a: 'For most plated desserts, no. Anything with warm sauce, melted chocolate or fried elements does.',
+      },
+      {
+        q: 'Will a fork go through the tray?',
+        a: 'On a soft or thin board it can, particularly once sauce has softened it. Tell us if cutlery is used on the tray.',
+      },
+      {
+        q: 'Do these suit takeaway?',
+        a: 'Only with a board specified for the journey. A presentation tray chosen for how it looks will not survive a courier bag.',
+      },
+      {
+        q: 'What size suits a sharing dessert?',
+        a: 'Set it from a made-up portion including toppings, which is usually wider than the dessert itself suggests.',
+      },
+      {
+        q: 'Can we print the base?',
+        a: 'The base is covered by the dessert. The rim is what shows and what appears in photographs.',
+      },
+      {
+        q: 'Will the tray mark from cold desserts?',
+        a: 'Condensation marks uncoated board. A coated surface handles a chilled or frozen dessert far better.',
+      },
+      {
+        q: 'Do these work for a dessert counter?',
+        a: 'Yes, and presentation is usually the deciding factor rather than strength, which is unusual in this range.',
+      },
     ],
     related: ['custom-waffle-trays', 'custom-bakery-trays', 'custom-crepe-trays', 'custom-dessert-sleeves'],
   },
@@ -693,6 +1045,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'How high should the walls be?',
         a: 'Just high enough to stop sauce running off. High walls hide the crepe, which is what the customer is buying, so most sites go as low as the sauce allows.',
+      },
+      {
+        q: 'Do these suit takeaway?',
+        a: 'Only with a lid and a board specified for the journey. For walking customers a cone holder suits better than a flat tray.',
+      },
+      {
+        q: 'What size do we need?',
+        a: 'Set it from your folded crepe plus the topping footprint, which varies with pan size and how heavily you finish it.',
+      },
+      {
+        q: 'Will warm sauce soak through?',
+        a: 'Not through a coated board within a normal serve. Uncoated board shows a dark patch within a few minutes.',
+      },
+      {
+        q: 'Can we print the rim only?',
+        a: 'That is the sensible approach. The base is entirely covered once the crepe and toppings are on it.',
+      },
+      {
+        q: 'Do fruit toppings change the specification?',
+        a: 'They add water on top of the oil from sweet sauces, which strengthens the case for a coated surface.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'Flat-packed they nest well. A low-walled tray takes less room than a deep one, which suits small dessert counters.',
+      },
+      {
+        q: 'Do these work for savoury crepes?',
+        a: 'Yes, and savoury fillings are usually oilier, which makes the coated surface more useful rather than less.',
+      },
+      {
+        q: 'Can we use one tray for crepes and waffles?',
+        a: 'Often, if the footprints are close. Measure both made up with toppings before assuming a single tray covers them.',
       },
     ],
     related: ['custom-crepe-sleeves', 'crepe-cone-packaging', 'custom-waffle-trays', 'custom-dessert-trays'],
@@ -751,6 +1135,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'How deep should a sharing tray be?',
         a: 'Deeper than looks necessary. Popcorn settles considerably between filling and reaching a seat, so a tray that looks full at the counter can look half empty by the time it is sat down with.',
       },
+      {
+        q: 'Does popcorn need a lined board?',
+        a: 'Dry-seasoned popcorn does not. Buttered popcorn does, and the two look identical on a specification sheet while behaving completely differently.',
+      },
+      {
+        q: 'Will the tray fit a cup holder?',
+        a: 'Only if the base is sized for one. Venue seating varies, so measure a seat arm before assuming.',
+      },
+      {
+        q: 'Tray or sleeve for popcorn?',
+        a: 'A tray suits a sharing portion; a sleeve or cup suits an individual one. Trays are harder to carry once full.',
+      },
+      {
+        q: 'Can we print for a dark auditorium?',
+        a: 'Design for contrast rather than detail. Fine artwork disappears in low light where a bold block still reads.',
+      },
+      {
+        q: 'Do they nest for storage?',
+        a: 'Yes, and that matters behind a busy kiosk where storage is usually the binding constraint rather than cost.',
+      },
+      {
+        q: 'Will popcorn spill when carried?',
+        a: 'Some will, because the opening is wide. Depth helps more than a narrow mouth, which slows filling.',
+      },
+      {
+        q: 'Can we match these to popcorn sleeves?',
+        a: 'Yes, and running both in one order keeps the colour consistent. Printed separately the same brand colour drifts visibly.',
+      },
+      {
+        q: 'Can we order trays and sleeves together?',
+        a: 'Yes, and venues often need both — a sleeve for individual portions and a tray for sharing. One job shares the setup.',
+      },
     ],
     related: ['custom-popcorn-sleeves', 'custom-popcorn-bags', 'custom-snack-trays', 'paper-snack-cups'],
   },
@@ -803,6 +1219,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'How many sizes should we stock?',
         a: 'Two in most cases. A third gets used rarely and takes up the same storage as the ones that move, which is why it tends to be the first thing dropped at a reorder.',
+      },
+      {
+        q: 'What board should a general tray use?',
+        a: 'Specify for the wettest, heaviest thing you serve. A tray lined for that handles dry food perfectly well; the reverse is not true.',
+      },
+      {
+        q: 'Do they nest?',
+        a: 'They should, or storage becomes the limiting factor. Check that before ordering two sizes rather than after.',
+      },
+      {
+        q: 'Can we order both sizes in one run?',
+        a: 'Yes, and it shares the setup cost between them rather than repeating it, which usually makes the second size considerably cheaper.',
+      },
+      {
+        q: 'Will one artwork work across sizes?',
+        a: 'The elements carry over but each size needs its own layout, because the flat shape differs. We re-lay it from your original file.',
+      },
+      {
+        q: 'Do these suit event catering?',
+        a: 'They are mostly bought for exactly that, where the menu changes weekly and dish-specific containers would become dead stock.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The rim and outer faces. On a general tray the base is covered whatever is served on it.',
+      },
+      {
+        q: 'Can we add a dish-specific tray later?',
+        a: 'Yes, and many sites do once a dish settles. The general sizes keep working for everything else in the meantime.',
+      },
+      {
+        q: 'What is the commonest sizing mistake?',
+        a: 'Choosing from a stated volume rather than a weighed portion. Volumes describe the tray; weight describes what you actually serve.',
       },
     ],
     related: ['custom-snack-trays', 'custom-combo-meal-trays', 'custom-burger-trays', 'tray-and-sleeves'],
@@ -866,6 +1314,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Can these be lidded for delivery?',
         a: 'They can, though a loaded waffle travels poorly whatever it is in — toppings slide and ice cream melts. If delivery is a large share of trade, it is worth discussing the whole format rather than only the lid.',
+      },
+      {
+        q: 'How wide should the tray be?',
+        a: 'Set from your waffle plus the topping footprint, which is usually wider than the waffle alone once sauces and fruit are added.',
+      },
+      {
+        q: 'Will a fork tear the tray?',
+        a: 'On a soft board, especially once sauce has softened it. Tell us cutlery is used and we will specify accordingly.',
+      },
+      {
+        q: 'How high should the walls be?',
+        a: 'Low enough to keep the dessert visible, high enough to contain melt. That balance is why waffle trays have shallower walls than chip trays.',
+      },
+      {
+        q: 'Do these photograph well?',
+        a: 'That is a large part of why dessert bars buy them. A matt coated surface photographs without hotspots under phone flash.',
+      },
+      {
+        q: 'Should we run two sizes?',
+        a: 'Sites selling a single and a sharing waffle usually do. One size sized for the sharing portion looks empty under a single.',
+      },
+      {
+        q: 'Where does the print go?',
+        a: 'The rim. The base is entirely covered by the waffle and its toppings within seconds of plating.',
+      },
+      {
+        q: 'Do we need two tray sizes?',
+        a: 'Sites selling a single and a sharing waffle usually do, because one size sized for sharing looks under-filled with a single.',
+      },
+      {
+        q: 'Will the tray survive a cutlery-heavy dessert?',
+        a: 'With a firmer coated board, yes. Softening from sauce is what makes a fork go through, rather than the fork itself.',
       },
     ],
     related: ['custom-dessert-trays', 'custom-crepe-trays', 'ice-cream-cone-tray', 'custom-bakery-trays'],
@@ -938,6 +1418,38 @@ export const FOOD_TRAYS: Product[] = [
         q: 'Do holders work with a sleeve already on the cone?',
         a: 'They need to be cut allowing for it, because the sleeve adds thickness at exactly the point the holder grips. Tell us if cones are sleeved first and we will size the hole accordingly.',
       },
+      {
+        q: 'Do holders work with a sleeve already fitted?',
+        a: 'Only if cut allowing for it, because the sleeve adds thickness exactly where the holder grips. Tell us if cones are pre-sleeved.',
+      },
+      {
+        q: 'How many cones should a holder take?',
+        a: 'One, two or four. Beyond four it becomes too wide to carry comfortably through a doorway.',
+      },
+      {
+        q: 'Do these arrive assembled?',
+        a: 'Flat, and formed at the counter. That keeps storage small, which matters at a kiosk where counter space is tight.',
+      },
+      {
+        q: 'What board weight does a holder need?',
+        a: 'Rigid enough not to flex under filled cones. A holder that bends at the centre tips its cones, which is the failure customers notice.',
+      },
+      {
+        q: 'Can we print the top face?',
+        a: 'That is the face worth printing, since it is what customers see while the holder sits on the counter.',
+      },
+      {
+        q: 'Will the holder stand on an uneven surface?',
+        a: 'A wide flat base helps. On a market stall or a van counter that is worth specifying rather than assuming.',
+      },
+      {
+        q: 'Can we order these with matching sleeves?',
+        a: 'Yes, and cutting both from the same cone measurements is the reliable way to make the fit work together.',
+      },
+      {
+        q: 'Can we order holders and carriers together?',
+        a: 'Yes, and sites doing both counter service and takeaway usually need each. One job shares the setup between them.',
+      },
     ],
     related: ['ice-cream-cone-tray', 'tray-and-sleeves', 'custom-waffle-cone-sleeves', 'paper-mache-cones'],
   },
@@ -989,7 +1501,39 @@ export const FOOD_TRAYS: Product[] = [
       },
       {
         q: 'Can we use the counter holder as a carrier?',
+        a: 'They will attempt it, and a counter holder flexes under the weight once it is lifted. Carrying any distance needs the heavier construction.',
+      },
+      {
+        q: 'How many cones can one carrier take?',
+        a: 'Four is the sensible limit. Six is possible but the tray becomes awkward through doorways and the centre starts to flex.',
+      },
+      {
+        q: 'Can we use a counter holder as a carrier?',
         a: 'Customers will try, and it usually flexes and tips. If cones are carried any distance, the heavier carrier construction is worth the difference.',
+      },
+      {
+        q: 'Does the carrier need a handle?',
+        a: 'A handle or a central cut-out makes a real difference once four filled cones are in it. Without one it needs two hands.',
+      },
+      {
+        q: 'Will cones knock together in transit?',
+        a: 'Not with the holes spaced correctly. Spacing is as important as hole size on a carrier, which is not true of a static holder.',
+      },
+      {
+        q: 'Do these suit a seaside kiosk?',
+        a: 'They are mostly bought for exactly that, where a family buys four cones and walks away from the counter.',
+      },
+      {
+        q: 'How do they store?',
+        a: 'Flat and formed at the counter, though a carrier uses more board per unit than a simple holder does.',
+      },
+      {
+        q: 'Can the holes be cut for different cone sizes?',
+        a: 'Within one carrier, yes, if you serve two cone types. Tell us the mix and we will cut accordingly.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'The top face carries the branding, because that is what a customer looks down at while carrying the tray back to a table. Side walls are usually too shallow to read at a glance.',
       },
     ],
     related: ['ice-cream-cone-holder', 'tray-and-sleeves', 'custom-waffle-trays', 'custom-cardboard-food-trays'],
@@ -1048,6 +1592,38 @@ export const FOOD_TRAYS: Product[] = [
       {
         q: 'Can items in a set use different board?',
         a: 'They can, and often should — a tray needs more rigidity than a sleeve. What stays common is the ink and the design, which is what makes them read as a set.',
+      },
+      {
+        q: 'Why do colours drift between separate orders?',
+        a: 'Different board batches, different press runs and months in between. The same specified colour comes back visibly different when the two items sit side by side.',
+      },
+      {
+        q: 'Do we have to order equal quantities?',
+        a: 'No, and you should not. A typical site uses ten sleeves for every tray, so tell us the ratio rather than ordering matched numbers.',
+      },
+      {
+        q: 'Is a set cheaper than separate orders?',
+        a: 'Usually, because the setup is shared across one job rather than repeated. The saving depends on the quantities, so ask us to price both ways.',
+      },
+      {
+        q: 'What usually goes in a set?',
+        a: 'A sleeve for the item, a tray or holder for carrying more than one, and sometimes a printed liner or bag in the same design.',
+      },
+      {
+        q: 'Can we add an item to an existing set later?',
+        a: 'Yes, though matching a colour printed months earlier is harder than running it alongside. Ask for the original ink reference to be recorded.',
+      },
+      {
+        q: 'Do sets suit a small independent?',
+        a: 'They suit anyone ordering more than one item, which is most sites. The saving is proportionally larger on smaller runs.',
+      },
+      {
+        q: 'How do we start?',
+        a: 'Tell us every item you want printed and the rough annual quantity of each. We will price them together and separately so the difference is visible.',
+      },
+      {
+        q: 'How do we start a coordinated order?',
+        a: 'Tell us every item you want printed and the rough annual quantity of each. We will price them together and separately.',
       },
     ],
     related: ['ice-cream-cone-holder', 'custom-cardboard-food-trays', 'custom-ice-cream-cone-sleeves', 'ice-cream-cone-tray'],

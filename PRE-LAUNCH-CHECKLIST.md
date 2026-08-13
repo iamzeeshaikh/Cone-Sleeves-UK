@@ -199,7 +199,7 @@ a formality.
 
 ### 7. Redirects from the old domain
 
-If `conesleeves.com` is being retired, the 242 redirects in this project cover
+If `conesleeves.com` is being retired, the 243 redirects in this project cover
 paths **within** the new site. The old domain also needs host-level 301s
 mapping its URLs to the equivalents documented in `URL-MAP.md`.
 

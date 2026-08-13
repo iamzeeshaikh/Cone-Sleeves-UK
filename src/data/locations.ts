@@ -84,6 +84,34 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Do you have a London office we can visit?',
         a: 'No. We work by email and phone, and we post physical samples rather than meeting in person. If you need to see and feel a board before committing, ask for samples at quote stage.',
       },
+      {
+        q: 'Do you deliver to all London postcodes?',
+        a: 'Yes, on national carriers. Congestion and low emission zones can affect carrier scheduling into central postcodes, so flag any access restriction when you order.',
+      },
+      {
+        q: 'Can you deliver to a market stall?',
+        a: 'Deliveries need an address that can receive them. A stall usually cannot, so most traders take delivery at home or a storage unit.',
+      },
+      {
+        q: 'What suits a small dessert bar kitchen?',
+        a: 'Flat-packed stock and fewer separate lines. One sleeve covering two products beats the ideal item for each when storage is the constraint.',
+      },
+      {
+        q: 'How often should a London site reorder?',
+        a: 'More often than most, because storage is the binding constraint rather than cash. Smaller, more frequent orders cost slightly more per unit.',
+      },
+      {
+        q: 'Do you work with delivery-only kitchens?',
+        a: 'Frequently, and they get more from printed packaging than anyone, because it is the only physical thing a customer receives.',
+      },
+      {
+        q: 'Can we collect instead of having it delivered?',
+        a: 'We do not hold stock at a London address, so everything travels by carrier. There is nowhere to collect from.',
+      },
+      {
+        q: 'Which products do London sites order most?',
+        a: 'Cone sleeves, cup sleeves and takeaway bags, with delivery-led kitchens adding sealed bags and container bands.',
+      },
     ],
     recommended: [
       'custom-ice-cream-cone-sleeves',
@@ -150,6 +178,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'How quickly can packaging reach Manchester?',
         a: 'Lead time is dominated by production rather than transit, so it is much the same wherever in Britain you are. We confirm the production lead time on your quote and the carrier adds its own transit time on top.',
+      },
+      {
+        q: 'Can we split an order across the academic year?',
+        a: 'Often yes, and for a student-trade business it usually makes sense rather than financing stock through a quiet summer.',
+      },
+      {
+        q: 'How long does delivery to Manchester take?',
+        a: 'Standard mainland transit. Lead time is dominated by production rather than distance, and we confirm that on your quote.',
+      },
+      {
+        q: 'Do you supply the Northern Quarter street food halls?',
+        a: 'We supply traders rather than venues, and a shared kitchen space usually means each trader orders their own packaging.',
+      },
+      {
+        q: 'What do late-night sites need differently?',
+        a: 'Speed at the pass and stock planned against a Friday night rather than a weekly average. Running out at 1am is expensive.',
+      },
+      {
+        q: 'Can we get packaging branded to a residency?',
+        a: 'Yes, and short digital runs suit a residency that may last a season rather than years.',
+      },
+      {
+        q: 'Do you deliver to a home address?',
+        a: 'Yes, provided someone can receive it during the working day. Traders without commercial premises frequently do exactly that, though a pallet needs space to be unloaded into.',
+      },
+      {
+        q: 'What suits a student-market takeaway?',
+        a: 'Grease-resistant board and formats that fill quickly. Presentation matters less than speed for that trade.',
+      },
+      {
+        q: 'Do you supply Rusholme dessert houses?',
+        a: 'Yes, and late trading there argues for board that holds up while a cone or tray is carried rather than eaten immediately.',
       },
     ],
     recommended: [
@@ -223,6 +283,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Do you supply packaging for sit-in dessert service?',
         a: 'Yes, and it is a different specification from takeaway. Trays and presentation boards suit a table; deep wraps suit a walking customer. Tell us the split and we will quote accordingly.',
       },
+      {
+        q: 'How far ahead should NEC caterers order?',
+        a: 'Work back from the show date rather than forward from today, and have stock in hand well before setup rather than during it.',
+      },
+      {
+        q: 'Do dessert lounges need different packaging?',
+        a: 'Yes. Sit-in service needs trays and presentation boards where takeaway needs deep wraps that survive a walk.',
+      },
+      {
+        q: 'Can you deliver to an exhibition venue?',
+        a: 'Venues usually restrict deliveries and require booking. Most caterers take stock to their own premises first, which is simpler.',
+      },
+      {
+        q: 'What suits a Ladypool Road dessert lounge?',
+        a: 'Waffle and crepe trays, dessert sleeves and cup sleeves, specified for sit-in presentation rather than transit.',
+      },
+      {
+        q: 'Do you supply Balti Triangle restaurants?',
+        a: 'We supply their takeaway and delivery arms, which is where printed packaging earns its cost rather than the dining room.',
+      },
+      {
+        q: 'How is delivery to Birmingham handled?',
+        a: 'On national carriers to your address. We have no premises or vehicles in the West Midlands and cannot offer timed delivery.',
+      },
+      {
+        q: 'Can we order for several sites at once?',
+        a: 'Yes, and mixed cases are worth asking for so each site receives every design rather than working through one.',
+      },
+      {
+        q: 'What lead time should Birmingham caterers allow?',
+        a: 'Longer than the production figure alone, because proofing and distribution to a venue both sit on top of it.',
+      },
     ],
     recommended: [
       'custom-waffle-trays',
@@ -290,6 +382,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Can one sleeve work for eat-in and delivery?',
         a: 'Sometimes, if the delivery share is modest. Where a lot of orders go by courier, the board that suits a counter often goes soft in a bag, and two specifications work better.',
       },
+      {
+        q: 'How long does assembly actually take?',
+        a: 'A couple of seconds once practised, though it varies with board weight. Have your own team assemble twenty from a sample.',
+      },
+      {
+        q: 'Do you deliver into the arcades?',
+        a: 'On national carriers, though access and delivery windows in listed buildings are worth flagging when you order.',
+      },
+      {
+        q: 'What suits a small arcade unit?',
+        a: 'Flat-packed stock and the fewest lines you can manage. Storage in converted historic buildings is usually the binding constraint.',
+      },
+      {
+        q: 'How do we speed up service?',
+        a: 'Choose formats that assemble quickly and reduce the number of separate items per order. Both save seconds that add up on a Saturday.',
+      },
+      {
+        q: 'Do you supply Kirkgate Market traders?',
+        a: 'Yes, though delivery needs an address that can receive stock. Most traders take it at home or a storage unit.',
+      },
+      {
+        q: 'What is the lead time to Leeds?',
+        a: 'Production dominates and is confirmed on your quote. Transit to Leeds is standard mainland service on top of that.',
+      },
+      {
+        q: 'Do you supply Trinity and Corn Exchange units?',
+        a: 'Yes, and both are cases where flat-packed stock matters, since back-of-house space in those buildings is minimal.',
+      },
+      {
+        q: 'Can we order small quantities for a single unit?',
+        a: 'Digital printing makes modest runs workable, which suits an arcade unit that cannot store more than a few cases.',
+      },
     ],
     recommended: [
       'custom-cardboard-cone-sleeves',
@@ -351,6 +475,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Can you match a sleeve to cones we have used for years?',
         a: 'That is the usual request from established cafés. Post us two or three of the cones and the die is cut to their shape, so nothing about your counter has to change.',
+      },
+      {
+        q: 'Can you match sleeves to cones we have used for years?',
+        a: 'That is the usual request from established cafés. Post two or three cones and the die is cut to their shape.',
+      },
+      {
+        q: 'Do you supply traditional Italian-Scottish cafés?',
+        a: 'Frequently, and they usually want plain or single-colour sleeves that fit existing cones rather than a redesign.',
+      },
+      {
+        q: 'What suits a Finnieston dessert bar?',
+        a: 'Full-colour printed sleeves and trays, changed seasonally. That trade cares more about how it photographs than about unit cost.',
+      },
+      {
+        q: 'Is there a Glasgow depot we can collect from?',
+        a: 'No. We have no premises in Scotland, so everything travels by national carrier to your address.',
+      },
+      {
+        q: 'How far ahead should we order for summer?',
+        a: 'Earlier than English mainland sites, because Scottish transit adds time and surcharges apply to some postcodes.',
+      },
+      {
+        q: 'Do you supply chip shops?',
+        a: 'Yes, and grease-resistant board is the whole conversation there rather than print quality or finish.',
+      },
+      {
+        q: 'Can we order plain sleeves only?',
+        a: 'Yes, and many long-established cafés do exactly that. The die still has to be cut to your cones.',
+      },
+      {
+        q: 'Do you supply Merchant City venues?',
+        a: 'Yes, and that trade tends towards full-colour printed packaging changed seasonally, unlike the long-established café side of the city.',
       },
     ],
     recommended: [
@@ -419,6 +575,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Will printed packaging hold up outdoors?',
         a: 'A laminated finish handles rain and handling considerably better than an unlaminated one. If you trade outdoors regularly, it is worth specifying rather than treating as an upgrade.',
       },
+      {
+        q: 'Do you deliver near the waterfront?',
+        a: 'On national carriers to any Liverpool address. Event-day access restrictions are worth flagging when you order.',
+      },
+      {
+        q: 'Can we order for a single event?',
+        a: 'Yes, and short digital runs suit one-off event trading. Send the date as well as the quantity.',
+      },
+      {
+        q: 'What suits Baltic Triangle traders?',
+        a: 'Formats that work outdoors and photograph well, since that trade is heavily driven by social media.',
+      },
+      {
+        q: 'How do cruise arrivals affect ordering?',
+        a: 'They are published in advance, so order against the calendar rather than reacting. That is an advantage over weather-driven trade.',
+      },
+      {
+        q: 'Do you supply match-day street food?',
+        a: 'Yes, and cone and scoop formats suit that trade because they free a hand for a drink.',
+      },
+      {
+        q: 'Can we take delivery at a home address?',
+        a: 'Yes, provided someone can receive it during the working day. Traders operating without commercial premises frequently do, though larger quantities arrive on a pallet that needs somewhere to go.',
+      },
+      {
+        q: 'Do you supply Bold Street independents?',
+        a: 'Yes, and that trade tends to order steadily rather than around fixtures, which makes annual quantities easier to plan.',
+      },
+      {
+        q: 'What suits a pitch that only trades on match days?',
+        a: 'A single hard-wearing format ordered against peak-day usage. Trading twenty days a year makes running out far more costly than overstocking.',
+      },
     ],
     recommended: [
       'cone-fries-packaging',
@@ -483,6 +671,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Will an unlaminated sleeve hold up on a hot day?',
         a: 'Less well than a laminated one. Melting ice cream reaches an unlaminated board faster and it softens sooner. For harbourside trading in August that is a genuine trade-off rather than a technicality.',
+      },
+      {
+        q: 'Can you supply genuinely recyclable sleeves?',
+        a: 'We supply unlaminated sleeves on uncoated board, which is the specification most likely to be accepted in an ordinary paper stream.',
+      },
+      {
+        q: 'Will you put the specification in writing?',
+        a: 'Yes, board grade, lining and finish, so you can verify it independently rather than relying on an assurance.',
+      },
+      {
+        q: 'What can we honestly tell customers?',
+        a: 'Something specific and checkable. A modest accurate claim stands up to a Bristol customer asking follow-up questions; a broad one does not.',
+      },
+      {
+        q: 'Do you supply Wapping Wharf container units?',
+        a: 'Yes, and storage there is usually the binding constraint, which argues for flat-packed stock and fewer lines.',
+      },
+      {
+        q: 'How is delivery to Bristol handled?',
+        a: 'On national carriers to your address. We have no premises or vehicles in the South West.',
+      },
+      {
+        q: 'Can we see the board before ordering?',
+        a: 'Board samples can normally be posted. Ask when you enquire and we will confirm which stocks are available to send.',
+      },
+      {
+        q: 'Does an unlaminated specification cost more?',
+        a: 'Usually less, because it removes a production step. A specialist recycled board can add some back.',
+      },
+      {
+        q: 'Do you supply Gloucester Road independents?',
+        a: 'Yes, and that trade asks more searching questions about materials than most, which is why we put specifications in writing.',
       },
     ],
     recommended: [
@@ -550,6 +770,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Can packaging be branded to us rather than the venue?',
         a: 'That is usually the point of ordering it. For a kitchen residency, the packaging is often the only thing carrying your name in someone else\'s room.',
+      },
+      {
+        q: 'What should a taproom residency order?',
+        a: 'Two general tray sizes in a grease-resistant board rather than dish-specific containers that become dead stock when the menu changes.',
+      },
+      {
+        q: 'Do you deliver to a venue address?',
+        a: 'On national carriers, though a venue may not accept deliveries for a trader. Confirm with them before giving us the address.',
+      },
+      {
+        q: 'How do we handle a monthly menu change?',
+        a: 'Specify for the wettest and heaviest thing you might serve, in two sizes, and accept it is not ideal for any single dish.',
+      },
+      {
+        q: 'What suits the student areas?',
+        a: 'Formats that fill quickly and cope with a term-time demand pattern. Ordering twice a year usually beats once.',
+      },
+      {
+        q: 'Is delivery to Sheffield slower?',
+        a: 'No, it is standard mainland transit. Production time dominates and is confirmed on your quote.',
+      },
+      {
+        q: 'Can we order short runs for a residency?',
+        a: 'Yes, and digital printing suits a residency that may last a season. Send the quantity and the run dates.',
+      },
+      {
+        q: 'Do you supply Kelham Island traders?',
+        a: 'Yes, and residency kitchens there are the main case for general-purpose trays over dish-specific containers.',
+      },
+      {
+        q: 'Do you supply Ecclesall Road and Broomhill cafés?',
+        a: 'Yes, and student-corridor trade there follows the term calendar, which suits splitting an order across the academic year.',
       },
     ],
     recommended: [
@@ -627,6 +879,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'How much more packaging do Festival volumes need?',
         a: 'Most traders find it is a multiple of a normal peak day rather than a modest uplift. Base the estimate on your busiest ordinary Saturday and scale from there rather than from a monthly average.',
       },
+      {
+        q: 'Does delivery to Edinburgh cost more?',
+        a: 'Scottish postcodes can carry a carrier surcharge and transit is often a day longer. We confirm what applies to your address.',
+      },
+      {
+        q: 'Can you deliver during August?',
+        a: 'City centre access restrictions during the Festival affect carrier scheduling, which is the main argument for taking stock early.',
+      },
+      {
+        q: 'Where should Festival stock be stored?',
+        a: 'Somewhere dry with room for the volume. Flat-packed stock helps considerably, but three weeks of trade is a lot of packaging.',
+      },
+      {
+        q: 'Do you supply Old Town tourist trade?',
+        a: 'Yes, and it runs year round rather than only in August, which is worth reflecting in how you split orders.',
+      },
+      {
+        q: 'Can we use the same specification all year?',
+        a: 'Most traders do, and simply order more of it in spring. That avoids holding two specifications for one product.',
+      },
+      {
+        q: 'Can we split a Festival order into two deliveries?',
+        a: 'Often, and it helps where storage is limited. It costs slightly more per unit than a single delivery.',
+      },
+      {
+        q: 'Do you supply Grassmarket and Old Town cafés?',
+        a: 'Yes, and their trade runs year round on tourism rather than peaking only in August, which changes how they order.',
+      },
+      {
+        q: 'Should Festival artwork carry the year?',
+        a: 'Only if you will use it all. An undated Festival design can run again the following August, where a dated one cannot.',
+      },
     ],
     recommended: [
       'cone-fries-packaging',
@@ -693,6 +977,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'How should packaging be sized for goods sold by weight?',
         a: 'To your price bands rather than to a portion. A bag that holds slightly more than your standard 250g band looks half empty, which undermines the sale.',
+      },
+      {
+        q: 'Do you supply Belgrave Road sweet centres?',
+        a: 'Yes, and counter service sold by weight needs bags and boxes sized to weight bands rather than to servings.',
+      },
+      {
+        q: 'What suits a mithai counter?',
+        a: 'Bags and boxes matched to your price bands, with a coated inner face where sweets are syrupy or oily.',
+      },
+      {
+        q: 'Can we order for retail as well as counter sale?',
+        a: 'Yes, though retail packs need labelling space that counter bags do not. Tell us which use dominates.',
+      },
+      {
+        q: 'How is delivery to Leicester handled?',
+        a: 'On national carriers to your address, standard mainland transit. Production time dominates and is confirmed on your quote.',
+      },
+      {
+        q: 'Do you supply wedding caterers?',
+        a: 'Frequently, and those orders are date-driven and often bespoke, which needs earlier planning than rolling stock.',
+      },
+      {
+        q: 'Do you supply namkeen and snack producers?',
+        a: 'Yes, and packing for retail rather than counter sale changes the labelling requirement, so tell us which applies.',
+      },
+      {
+        q: 'Can packaging carry Gujarati or Hindi text?',
+        a: 'Yes. Non-Latin text needs to be supplied as outlined vector artwork so nothing substitutes on our system.',
+      },
+      {
+        q: 'Do you supply Leicester restaurants as well as sweet centres?',
+        a: 'Yes, and their takeaway and delivery arms are usually where printed packaging earns its cost rather than the dining room.',
       },
     ],
     recommended: [
@@ -761,6 +1077,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Can we order twice a year rather than once?',
         a: 'Yes, and for a student-trade business it usually makes sense. It costs a little more per unit than a single run and avoids financing stock through a quiet summer.',
       },
+      {
+        q: 'Can we order twice a year?',
+        a: 'Yes, and for a student-trade business it usually makes sense rather than financing stock through a quiet summer.',
+      },
+      {
+        q: 'Why is kraft so popular in Hockley?',
+        a: 'It reads as independent and unmanufactured, which suits the area\'s positioning. The constraint is colour accuracy rather than availability.',
+      },
+      {
+        q: 'Do you supply small independent units?',
+        a: 'Frequently, and storage is usually the constraint, which argues for flat-packed stock and fewer separate lines.',
+      },
+      {
+        q: 'What suits a design-conscious counter?',
+        a: 'Uncoated or kraft board with restrained one or two colour printing, which is also usually the cheaper specification.',
+      },
+      {
+        q: 'Is delivery to Nottingham straightforward?',
+        a: 'Yes, standard mainland transit on national carriers. Lead time is dominated by production rather than distance.',
+      },
+      {
+        q: 'Can we see how our logo prints on kraft?',
+        a: 'Ask at quote stage. Judging a kraft print from a screen is genuinely misleading, so a sample is worth more than usual.',
+      },
+      {
+        q: 'Do you supply Lace Market venues?',
+        a: 'Yes, and small units there usually need compact stock and a specification that works across more than one product.',
+      },
+      {
+        q: 'Can we see how kraft prints before committing?',
+        a: 'Ask at quote stage. Judging a kraft print from a screen is genuinely misleading, so a physical sample is worth more than usual.',
+      },
     ],
     recommended: [
       'kraft-coffee-cups',
@@ -824,6 +1172,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Is delivery to Wales slower?',
         a: 'To Cardiff and the South Wales corridor, generally not. More rural Welsh postcodes can take longer and some carriers apply a surcharge, which we confirm against your specific address.',
+      },
+      {
+        q: 'How should bilingual artwork be supplied?',
+        a: 'With each language on its own layer, so spacing can be adjusted without rebuilding the design. Our template supports that.',
+      },
+      {
+        q: 'Do you supply stadium event caterers?',
+        a: 'Yes. Fixture-driven demand needs the same peak-day planning that match days require anywhere else: order against the busiest date in the calendar rather than an average week.',
+      },
+      {
+        q: 'Does bilingual printing cost more?',
+        a: 'Not in ink, since it is the same number of colours. It costs design time, which is why planning it early matters.',
+      },
+      {
+        q: 'What suits City Road takeaways?',
+        a: 'Grease-resistant board and formats that fill quickly, with delivery-sealed bags where a share of orders go by courier.',
+      },
+      {
+        q: 'Can we order for several Cardiff sites?',
+        a: 'Yes. Ask for mixed cases, or one Cardiff site works through a single design while another never sees it.',
+      },
+      {
+        q: 'Do you supply Cardiff Bay caterers?',
+        a: 'Yes, and waterfront trading argues for a laminated finish, since wind-driven rain reaches packaging that would stay dry inland.',
+      },
+      {
+        q: 'Do you supply Welsh-language-only packaging?',
+        a: 'Yes, if that is what you want. Most Cardiff businesses choose bilingual, but a single-language run is no harder to produce.',
+      },
+      {
+        q: 'What suits Cathays and student-area cafés?',
+        a: 'Formats that fill quickly at a low unit cost, with quantities planned around term dates rather than the calendar year.',
       },
     ],
     recommended: [
@@ -892,6 +1272,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'How do we avoid running out on a busy night?',
         a: 'Plan stock against your peak night rather than a weekly average. Flat-packed packaging stores compactly enough that carrying a margin costs very little.',
       },
+      {
+        q: 'Should we use open or closed containers late at night?',
+        a: 'A vented closed carton is usually the most workable compromise outdoors in winter, holding heat while still letting steam escape.',
+      },
+      {
+        q: 'What suits Bigg Market trade?',
+        a: 'Formats that fill straight from a fryer basket, in grease-resistant board, with a matt finish that grips oily hands.',
+      },
+      {
+        q: 'Does cold weather change the specification?',
+        a: 'It argues for a vented closed format over a fully open one, because food cools fast outdoors on a winter night.',
+      },
+      {
+        q: 'Is delivery to Newcastle standard?',
+        a: 'Yes, standard mainland transit on national carriers. Production time dominates and is confirmed on your quote.',
+      },
+      {
+        q: 'Do you supply Quayside venues?',
+        a: 'We supply the traders rather than the venues. Delivery needs an address that can receive stock during working hours.',
+      },
+      {
+        q: 'How fast can staff fill a scoop?',
+        a: 'Faster than a carton, which is why scoops dominate late-night trade where a queue backs up quickly.',
+      },
+      {
+        q: 'Can we order for a peak weekend only?',
+        a: 'Yes, though a one-off run costs more per unit than an ongoing supply. Send the dates and quantity together.',
+      },
+      {
+        q: 'Do you supply Ouseburn and Jesmond independents?',
+        a: 'Yes, and their trade is steadier than the city centre late-night market, which usually means simpler ordering.',
+      },
     ],
     recommended: [
       'french-fry-boxes',
@@ -958,6 +1370,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Is printed packaging worth it for a delivery-only kitchen?',
         a: 'More than for almost any other business, because it is the only physical thing your customer ever sees from you. There is no shopfront doing that work.',
+      },
+      {
+        q: 'What changes when most orders are delivered?',
+        a: 'Open formats stop working, venting becomes necessary, and the bag and closure matter as much as the container itself.',
+      },
+      {
+        q: 'Is printed packaging worth it for a delivery kitchen?',
+        a: 'More than for almost any other business, because it is the only physical thing your customer ever receives from you.',
+      },
+      {
+        q: 'How do we test our delivery packaging?',
+        a: 'Order from yourself. What leaves the kitchen and what arrives twenty minutes later are frequently different things.',
+      },
+      {
+        q: 'Do you supply campus caterers?',
+        a: 'Yes, and term-time demand patterns suit splitting an order across the academic year rather than buying once.',
+      },
+      {
+        q: 'Can we get tamper-evident closures?',
+        a: 'Yes, as an adhesive strip or a sticker across the fold. It shows visibly if a bag has been opened in transit.',
+      },
+      {
+        q: 'Is delivery to Coventry standard?',
+        a: 'Yes. Coventry sits on standard mainland transit, and the production time in front of it is what actually sets your date.',
+      },
+      {
+        q: 'What suits a delivery-only kitchen?',
+        a: 'Sealed bags, container bands and vented boxes, all specified for a journey rather than a counter handover.',
+      },
+      {
+        q: 'Can we order small quantities to start?',
+        a: 'Digital printing makes modest runs workable, which suits a kitchen still settling its menu and volumes.',
       },
     ],
     recommended: [
@@ -1026,6 +1470,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'What changes if we pack for retail rather than the counter?',
         a: 'Retail packs carry labelling requirements that counter sales do not — weight, ingredients and allergens among them. That needs a reserved area in the artwork, so flag it before design work starts.',
       },
+      {
+        q: 'What changes if we pack for retail?',
+        a: 'Retail packs carry labelling requirements counter sales do not, and that needs a reserved area in the artwork from the start.',
+      },
+      {
+        q: 'Do you supply sweet centres?',
+        a: 'Yes, and goods sold by weight need packaging matched to your price bands rather than to a portion size.',
+      },
+      {
+        q: 'How far ahead should wedding caterers order?',
+        a: 'Months rather than weeks for a fixed date, particularly where the design is bespoke or carries names.',
+      },
+      {
+        q: 'Can we print names or dates?',
+        a: 'On digital printing, yes, and short runs suit celebration work. Send the quantity and the date together.',
+      },
+      {
+        q: 'Is delivery to Bradford standard?',
+        a: 'Yes, standard mainland transit on national carriers to your address. We have no premises in Yorkshire.',
+      },
+      {
+        q: 'What suits a restaurant takeaway arm?',
+        a: 'Grease-resistant containers and sealed bags, specified for the journey rather than for the dining room.',
+      },
+      {
+        q: 'Can we order for several sites?',
+        a: 'Yes, and mixed cases are worth asking for where a set of designs goes to more than one location.',
+      },
+      {
+        q: 'Can we order bespoke packaging for a single wedding?',
+        a: 'Yes, and digital printing makes a few hundred units workable. Send the date with the quantity so we can schedule backwards from it.',
+      },
     ],
     recommended: [
       'custom-dessert-sleeves',
@@ -1092,6 +1568,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'How far ahead should we order for cruise turnaround days?',
         a: 'The dates are published well in advance, so order against the calendar rather than reacting. Production lead time is confirmed on your quote and should be treated as the deadline.',
+      },
+      {
+        q: 'How far ahead should we order for cruise days?',
+        a: 'The dates are published well in advance, so order against the calendar rather than reacting to a busy week.',
+      },
+      {
+        q: 'Do you supply Ocean Village and the waterfront?',
+        a: 'Yes, and waterfront trading is the case where weather resistance matters more than it does inland.',
+      },
+      {
+        q: 'Can we order for a single event?',
+        a: 'Yes, and the boat show and similar events suit short digital runs. Send the dates with the quantity.',
+      },
+      {
+        q: 'Is delivery to Southampton standard?',
+        a: 'Yes, on ordinary mainland transit. Plan around the production lead time rather than the journey, which is the shorter half.',
+      },
+      {
+        q: 'What suits a student-market takeaway?',
+        a: 'Grease-resistant board and formats that fill quickly, with demand planned around term rather than the calendar year.',
+      },
+      {
+        q: 'Do you supply ice cream vendors on the common?',
+        a: 'Yes, and summer-concentrated trade argues for ordering against a peak week rather than an average.',
+      },
+      {
+        q: 'Can we take delivery somewhere other than the pitch?',
+        a: 'Most seasonal traders do, since a pitch cannot usually receive a pallet. A home or storage address works.',
+      },
+      {
+        q: 'Do you supply Southampton restaurants with delivery arms?',
+        a: 'Yes, and delivery packaging is a different specification from counter service, so tell us the split between them.',
       },
     ],
     recommended: [
@@ -1160,6 +1668,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'How much stock should we hold for the summer?',
         a: 'Estimate from your busiest week rather than an average one. A good August can run well ahead of what a normal summer suggests, and running out in peak season is expensive.',
       },
+      {
+        q: 'How much stock should we hold for summer?',
+        a: 'Estimate from your busiest week rather than an average. A good August runs well ahead of what a normal summer suggests.',
+      },
+      {
+        q: 'Do you supply Southsea seafront traders?',
+        a: 'Yes, and seafront trade is the clearest case in this range for specifying weather resistance from the outset.',
+      },
+      {
+        q: 'What suits an outdoor ice cream pitch?',
+        a: 'A deeper wrap and a laminated finish, because melt runs faster and the packaging is exposed to sun and wind.',
+      },
+      {
+        q: 'Can we order once for the whole season?',
+        a: 'Many traders do, since flat-packed stock costs almost nothing to hold. Order against your busiest week rather than an average.',
+      },
+      {
+        q: 'Is delivery to Portsmouth standard?',
+        a: 'Yes, Portsmouth is standard mainland transit on national carriers to whatever address you give us. Transit times themselves are confirmed on the quotation rather than promised in advance here.',
+      },
+      {
+        q: 'Do you supply chip shops and kiosks?',
+        a: 'Yes, and with chip shops and seafront kiosks the grease-resistant board is most of the conversation rather than the print or the finish. Hot food handled outdoors is unforgiving of thin stock.',
+      },
+      {
+        q: 'Does wind affect which format we choose?',
+        a: 'It does. Light empty packaging blows off a counter, which is worth planning storage and weighting for on an exposed pitch.',
+      },
+      {
+        q: 'Do you supply Gunwharf and city centre units?',
+        a: 'Yes, and indoor units there need far less weather resistance than a seafront pitch, which changes the specification.',
+      },
     ],
     recommended: [
       'custom-ice-cream-cone-wrappers',
@@ -1226,6 +1766,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Should allergen information be printed on the packaging?',
         a: 'Usually not, because menus change per order. A separate card gives the same information and does not tie you to one menu for the life of a packaging run.',
+      },
+      {
+        q: 'Can platters be stacked for a delivery round?',
+        a: 'Only if the rim is specified for it. A standard serving rim buckles under a second loaded platter.',
+      },
+      {
+        q: 'Should allergen information be printed?',
+        a: 'Usually not, because menus change per order. A separate card gives the same information without tying you to one menu.',
+      },
+      {
+        q: 'Do you supply corporate catering contracts?',
+        a: 'Yes, and a known contract volume often makes a longer print run economic in a way ad-hoc trade does not.',
+      },
+      {
+        q: 'What matters most for office delivery?',
+        a: 'How it looks when unpacked in front of the client who ordered it, and whether it survived the journey stacked.',
+      },
+      {
+        q: 'Can we order against an annual contract volume?',
+        a: 'Yes, and you should tell us the annual figure rather than the first order. It frequently changes the print method.',
+      },
+      {
+        q: 'Is delivery to Reading standard?',
+        a: 'Yes. Thames Valley addresses are straightforward for carriers; it is the print schedule that decides when stock arrives.',
+      },
+      {
+        q: 'Do you supply contract canteens?',
+        a: 'Yes. Predictable contract volumes suit longer runs, which lowers the unit cost considerably compared with the small repeat orders a seasonal trader is limited to.',
+      },
+      {
+        q: 'What suits office lunch delivery?',
+        a: 'Platter trays with a stacking rim, sealed containers and bags that keep an order upright in a vehicle.',
       },
     ],
     recommended: [
@@ -1294,6 +1866,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Does the tourist season replace the student trade?',
         a: 'Partly, but the mix changes. Visitors buy differently from students, so the packaging that moves in July may not be the packaging that moves in November.',
       },
+      {
+        q: 'Does tourist season replace student trade?',
+        a: 'Partly, but the mix changes. What sells in July is not what sells in November, which is worth reflecting in stock.',
+      },
+      {
+        q: 'Do you supply college caterers?',
+        a: 'Yes, and college catering runs to a term calendar with formal presentation standards, which differs from a market pitch.',
+      },
+      {
+        q: 'What suits science park lunch delivery?',
+        a: 'Platter trays, sealed containers and clear dietary marking, since corporate catering is judged on the unpacking.',
+      },
+      {
+        q: 'Can we take delivery at home?',
+        a: 'Yes, provided someone is there to receive it during the working day. Market traders without commercial premises frequently do, though a full pallet needs somewhere to be unloaded.',
+      },
+      {
+        q: 'Is delivery to Cambridge standard?',
+        a: 'Yes, on ordinary mainland transit. Market stalls cannot usually take a delivery, so give us an address that can.',
+      },
+      {
+        q: 'How do short terms affect ordering?',
+        a: 'Cambridge terms are short and vacations long, so the quiet period is more pronounced than in most university cities.',
+      },
+      {
+        q: 'What suits Market Square trading?',
+        a: 'One or two general formats rather than several specialist ones, because a stall has room for a day\'s stock and no more.',
+      },
+      {
+        q: 'Do you supply Mill Road and residential-area cafés?',
+        a: 'Yes, and residential trade is steadier than the tourist streets, which usually makes annual quantities easier to plan.',
+      },
     ],
     recommended: [
       'custom-cardboard-food-trays',
@@ -1360,6 +1964,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Does uncoated packaging cost more?',
         a: 'Usually less, because there is no lamination step and designs suited to it tend to use fewer inks. It is one of the few cases where the look people want is also the cheaper option.',
+      },
+      {
+        q: 'Do you supply Covered Market units?',
+        a: 'Yes, and storage there is usually the binding constraint rather than cost, which shapes the whole specification.',
+      },
+      {
+        q: 'What suits a heritage setting?',
+        a: 'Uncoated boards, kraft, and restrained one or two colour printing, which happens to be the cheaper specification as well.',
+      },
+      {
+        q: 'Do conference caterers order differently?',
+        a: 'They run through the summer vacation, which usefully offsets the drop in student trade for sites serving both.',
+      },
+      {
+        q: 'Is delivery to Oxford straightforward?',
+        a: 'Standard mainland transit on national carriers, though city centre access restrictions are worth flagging when you order.',
+      },
+      {
+        q: 'Can we order small quantities?',
+        a: 'Digital printing makes modest runs workable, which suits small units that cannot store more than a few cases.',
+      },
+      {
+        q: 'Do you supply college catering?',
+        a: 'Yes, and academic-calendar demand suits splitting an order across the year rather than buying once.',
+      },
+      {
+        q: 'Do you supply Cowley Road cafés?',
+        a: 'Yes, and residential-area trade is steadier than the tourist streets, which usually means simpler ordering and longer runs.',
+      },
+      {
+        q: 'Can stock be delivered in smaller, more frequent drops?',
+        a: 'Yes, at a slightly higher unit cost. For a Covered Market unit that trade-off is often worth making.',
       },
     ],
     recommended: [
@@ -1430,6 +2066,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Do you deliver across the whole county?',
         a: 'Yes, on national carriers to any Kent address. We have no local depot and cannot offer timed delivery, so any date is the carrier\'s estimate rather than a commitment.',
       },
+      {
+        q: 'What suits a farm shop producer?',
+        a: 'Retail packs with reserved labelling space, in materials chosen for how the product keeps rather than how fast it is served.',
+      },
+      {
+        q: 'What suits a coastal vendor?',
+        a: 'A laminated finish and formats that cope with sun, wind and damp air, which reach packaging that would stay dry inland.',
+      },
+      {
+        q: 'Can we order both in one job?',
+        a: 'Yes, and running them together keeps the branding consistent and shares the setup between two quite different items.',
+      },
+      {
+        q: 'Do you supply Whitstable and Margate traders?',
+        a: 'Yes, and seasonal coastal trade argues for ordering against a peak week rather than an average.',
+      },
+      {
+        q: 'Is delivery to Kent standard?',
+        a: 'Standard mainland transit on national carriers. Production time dominates and is confirmed on your quote.',
+      },
+      {
+        q: 'Can we take delivery at a farm address?',
+        a: 'Yes, provided a vehicle can reach it. Flag any access restriction when you order so it can be passed to the carrier.',
+      },
+      {
+        q: 'Do you supply Kentish producers packing for wholesale?',
+        a: 'Yes, and wholesale packs usually carry less retail information than shelf packs. Tell us which use dominates before we quote.',
+      },
+      {
+        q: 'How should a seasonal coastal business order?',
+        a: 'Against a peak week rather than an average, and early enough that stock is on site before the first warm weekend.',
+      },
     ],
     recommended: [
       'custom-ice-cream-cone-sleeves',
@@ -1496,6 +2164,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Why do you ask for annual volume rather than order quantity?',
         a: 'Because it often changes which print method is economic. A quantity that looks small as a single order can justify a cheaper method once the year is taken together.',
+      },
+      {
+        q: 'Why do you ask for annual volume?',
+        a: 'Because it often changes which print method is economic. A quantity that looks small as one order can justify a cheaper method annually.',
+      },
+      {
+        q: 'Do you supply Southend seafront traders?',
+        a: 'Yes, and seasonal seafront trade needs ordering against a peak week rather than a monthly average.',
+      },
+      {
+        q: 'What suits a commuter town café?',
+        a: 'Cup sleeves and pastry bags, since morning-led trade is consistent year round and makes longer print runs economic.',
+      },
+      {
+        q: 'Is delivery to Essex standard?',
+        a: 'Yes. Essex addresses run on ordinary mainland transit, including the estuary towns and the seafront.',
+      },
+      {
+        q: 'Can we order once a year?',
+        a: 'For a steady commuter trade, often. For seasonal seafront trade, ordering against the season usually works better.',
+      },
+      {
+        q: 'Do you supply estuary town kiosks?',
+        a: 'Yes, and their season is shorter than Southend\'s, which is worth reflecting in the quantity rather than the specification.',
+      },
+      {
+        q: 'Can we take delivery at a home address?',
+        a: 'Yes, provided someone is there to receive it. Seasonal traders without year-round premises frequently do, though it is worth checking access before a pallet rather than after.',
+      },
+      {
+        q: 'Do you supply Chelmsford and Brentwood cafés?',
+        a: 'Yes, and commuter town trade peaks on weekday mornings rather than summer weekends, which simplifies stock planning considerably.',
       },
     ],
     recommended: [
@@ -1564,6 +2264,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Is a better specification worth it for a destination business?',
         a: 'Generally yes. Customers who have made a trip pay attention to the details, and the packaging is part of what they associate with the visit.',
       },
+      {
+        q: 'Do you supply garden centre cafés?',
+        a: 'Yes, and their demand peaks in spring rather than high summer, which differs from most seasonal trade in this range.',
+      },
+      {
+        q: 'What suits a farm shop café?',
+        a: 'Presentation-led dessert and bakery packaging, matched to the retail packs sold under the same roof.',
+      },
+      {
+        q: 'Is delivery to Surrey standard?',
+        a: 'Yes, on ordinary mainland transit. Rural farm shop addresses are worth flagging for vehicle access when you order.',
+      },
+      {
+        q: 'Do you supply National Trust and estate tea rooms?',
+        a: 'We supply caterers and operators rather than venues directly. Delivery needs an address that can receive stock.',
+      },
+      {
+        q: 'Can we order once a year?',
+        a: 'Destination trade is reasonably predictable, so annual ordering often works and lowers the unit cost.',
+      },
+      {
+        q: 'What suits takeaway cakes and bakes?',
+        a: 'Presentation sleeves and bakery trays, since a destination customer is buying the occasion as much as the product.',
+      },
+      {
+        q: 'Do you supply Guildford and Farnham independents?',
+        a: 'Yes, and town centre bakeries and delis there buy on much the same terms as the farm shop trade.',
+      },
+      {
+        q: 'What suits a garden centre restaurant?',
+        a: 'Presentation-led packaging for the café and matching retail packs for the shop, ordered together so the colours agree.',
+      },
     ],
     recommended: [
       'custom-dessert-sleeves',
@@ -1631,6 +2363,38 @@ export const LOCATIONS: LocationPage[] = [
         q: 'Does high volume get a better price?',
         a: 'It can change which print method is economic, which matters more than a percentage discount. Tell us your genuine annual usage rather than a first order quantity.',
       },
+      {
+        q: 'Does a longer season change what we order?',
+        a: 'It does. Trading into damp autumn weather is harder on packaging than August, so a heavier board or lamination earns its cost.',
+      },
+      {
+        q: 'Do you supply Blackpool seafront vendors?',
+        a: 'Yes, and they are among the highest-volume single sites we quote for anywhere in the country.',
+      },
+      {
+        q: 'How do the Illuminations affect ordering?',
+        a: 'They extend the season into November, so stock has to cover a longer period and colder, wetter trading conditions.',
+      },
+      {
+        q: 'Is delivery to Lancashire standard?',
+        a: 'Yes, on ordinary mainland transit, including Blackpool and the coast. Peak-season volumes are worth booking in early.',
+      },
+      {
+        q: 'What suits a Ribble Valley farm shop?',
+        a: 'Retail packs and bakery packaging rather than the seafront specification, which is a different business entirely.',
+      },
+      {
+        q: 'Can we order once for the whole season?',
+        a: 'Many seafront sites do, since flat-packed stock is cheap to hold and running out in peak season is expensive.',
+      },
+      {
+        q: 'Do you supply promenade kiosks?',
+        a: 'Yes, and exposed pitches argue for a laminated finish and a heavier board than an indoor counter would need.',
+      },
+      {
+        q: 'Do you supply Lytham and the Fylde coast?',
+        a: 'Yes, and the season there is shorter than Blackpool\'s without the Illuminations, which is worth reflecting in the quantity.',
+      },
     ],
     recommended: [
       'custom-cardboard-cone-sleeves',
@@ -1697,6 +2461,38 @@ export const LOCATIONS: LocationPage[] = [
       {
         q: 'Which finish suits a rural tea room?',
         a: 'Uncoated or kraft board with restrained printing generally reads better in that setting than a glossy laminate, and it usually costs less as well.',
+      },
+      {
+        q: 'Do you supply Cotswolds tea rooms?',
+        a: 'Yes. Visitor-facing trade in the Cotswolds tends to prefer craft-led packaging that suits the setting, which in practice means unbleached board and restrained printing rather than full-colour photography.',
+      },
+      {
+        q: 'What suits a farm shop packing its own produce?',
+        a: 'Retail packs with reserved labelling space, specified for how the product keeps rather than for service speed.',
+      },
+      {
+        q: 'Is delivery to Gloucestershire standard?',
+        a: 'Yes, standard mainland transit on national carriers. Rural addresses are worth flagging for access when you order.',
+      },
+      {
+        q: 'How large are race week volumes?',
+        a: 'Large enough that caterers order quantities that would last an ordinary café a year. That needs planning months ahead.',
+      },
+      {
+        q: 'Can we order for a single event?',
+        a: 'Yes, and short digital runs suit one-off event work. Send the dates with the quantity.',
+      },
+      {
+        q: 'Do you supply market town bakeries?',
+        a: 'Yes, and steady year-round trade there suits annual ordering rather than the event-driven pattern of race weeks.',
+      },
+      {
+        q: 'Do you deliver to rural Cotswolds addresses?',
+        a: 'Yes, though narrow access is worth flagging when you order so it can be passed to the carrier before the vehicle arrives.',
+      },
+      {
+        q: 'What quantity do race week caterers usually need?',
+        a: 'Far more than a normal month, concentrated into days. Work from expected covers per day rather than scaling a monthly figure.',
       },
     ],
     recommended: [

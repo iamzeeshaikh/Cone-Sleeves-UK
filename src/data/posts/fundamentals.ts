@@ -153,6 +153,34 @@ export const FUNDAMENTALS: BlogPost[] = [
         q: 'How much tolerance should a sleeve have?',
         a: 'Enough to absorb normal batch variation in your cones and no more. That is why we prefer to measure three cones from the same box rather than one — the spread between them tells us what the tolerance needs to be.',
       },
+      {
+        q: 'Can we measure a cone with an ordinary ruler?',
+        a: 'Yes. A ruler and three cones is all the equipment needed. The difficulty is knowing which two measurements matter, not the tools.',
+      },
+      {
+        q: 'What if our cones vary a lot?',
+        a: 'Then the die needs more tolerance, which is exactly why we ask for three samples rather than one. The spread tells us what to allow.',
+      },
+      {
+        q: 'Does the sleeve depth affect the size calculation?',
+        a: 'It changes the slant height measurement, since that runs from the rim to wherever you want the wrap to stop.',
+      },
+      {
+        q: 'Should we measure a filled cone?',
+        a: 'Measure the empty cone for the die, but look at a filled one to decide the depth. Toppings determine where the wrap should stop.',
+      },
+      {
+        q: 'Can you size from a competitor\'s sleeve?',
+        a: 'Sometimes, though a competitor\'s sleeve tells us about their cone rather than yours. A cone from your own stock is always the more reliable sample to work from.',
+      },
+      {
+        q: 'How much does a wrong size cost?',
+        a: 'A whole run, because a sleeve that slides is unusable. That is why the flat sample stage exists before anything is printed.',
+      },
+      {
+        q: 'Do children\'s cones need separate measurement?',
+        a: 'Yes. A children\'s cone is a different shape rather than a scaled version, so it needs its own measurements and its own die.',
+      },
     ],
   },
 
@@ -318,6 +346,34 @@ export const FUNDAMENTALS: BlogPost[] = [
         q: 'Can we change board without changing the die?',
         a: 'Usually yes, within limits — a much heavier board can behave differently on the same die. If you are considering a change at reorder, ask us to check rather than assuming the tool transfers directly.',
       },
+      {
+        q: 'Can we change board at reorder?',
+        a: 'Usually, within limits. A much heavier board can behave differently on the same die, so ask us to check rather than assuming.',
+      },
+      {
+        q: 'Does board affect how the sleeve prints?',
+        a: 'Considerably. A coated white board holds fine detail; kraft shifts colour; an uncoated stock softens the print slightly.',
+      },
+      {
+        q: 'Is a heavier board always more durable?',
+        a: 'For structure, yes. For grease and moisture, no — that comes from a lining, which can be added at any weight.',
+      },
+      {
+        q: 'How do we compare two quotes?',
+        a: 'Against an identical written specification. Board weight, lining and finish move independently, so a cheaper quote often differs in one.',
+      },
+      {
+        q: 'Does board weight change the carriage cost?',
+        a: 'Marginally, since carriage is priced on weight and volume. It rarely decides the choice next to the board cost itself.',
+      },
+      {
+        q: 'Can we see board samples?',
+        a: 'Usually, yes. Ask when you enquire and we will tell you which board stocks can be posted out to you.',
+      },
+      {
+        q: 'Which board suits a first order?',
+        a: 'Something in the middle of the range. Starting at either extreme means learning what was wrong from a whole run, whereas a mid-weight board leaves room to move either way at reorder.',
+      },
     ],
   },
 
@@ -480,6 +536,34 @@ export const FUNDAMENTALS: BlogPost[] = [
       {
         q: 'Can we get a printed sample before the full run?',
         a: 'Sometimes, depending on the print method quoted for your job. Digital jobs make samples far easier than conventional ones. Ask at quote stage and we will tell you what is available and what it costs.',
+      },
+      {
+        q: 'Should we ask for both print prices?',
+        a: 'Almost always. The crossover between digital and conventional moves with quantity, colours and design count, so the answer is job-specific.',
+      },
+      {
+        q: 'Does the die exist before printing?',
+        a: 'It has to, because the artwork is placed on it. That is why a new size runs longer than a reorder from an existing tool.',
+      },
+      {
+        q: 'Can we change artwork without new tooling?',
+        a: 'Yes. The die is tied to the shape, not the design, so a new artwork on the same size is a print job only.',
+      },
+      {
+        q: 'Why does colour drift on long runs?',
+        a: 'Ink density varies slightly across a press run. A spot colour holds far better than the same colour built from four process inks.',
+      },
+      {
+        q: 'What is a proof actually confirming?',
+        a: 'Position, content and spelling on the die line. It cannot confirm colour, because a screen and printed board cannot match.',
+      },
+      {
+        q: 'Do more colours always cost more?',
+        a: 'On conventional printing, yes, since each is a separate plate. On digital the difference is much smaller.',
+      },
+      {
+        q: 'How far ahead should we plan a print job?',
+        a: 'Further than the production time alone, because proofing and artwork approval sit ahead of it and are what usually slip.',
       },
     ],
   },
@@ -652,6 +736,34 @@ export const FUNDAMENTALS: BlogPost[] = [
       {
         q: 'Does lamination add to the lead time?',
         a: 'It is a separate production step after printing, so yes, usually. If your date is tight, ask us whether an unlaminated version could be produced sooner before assuming lamination is fixed.',
+      },
+      {
+        q: 'Does lamination delay an order?',
+        a: 'It is a separate production step, so usually yes. If a date is tight, ask whether an unlaminated version could be produced sooner.',
+      },
+      {
+        q: 'Can we laminate only part of the sleeve?',
+        a: 'Spot finishing effects are quoted per job, because availability depends on the print method. Tell us the effect you want.',
+      },
+      {
+        q: 'Does lamination change the board weight needed?',
+        a: 'Not directly, though it adds stiffness. It does not replace choosing an appropriate board for the load.',
+      },
+      {
+        q: 'Which finish photographs most reliably?',
+        a: 'Matt, because gloss creates hotspots under a phone flash. That matters for products customers photograph.',
+      },
+      {
+        q: 'Is unlaminated always cheaper?',
+        a: 'Usually, because it removes a production step. What it costs is durability, which matters more outdoors and in hot weather.',
+      },
+      {
+        q: 'Can we change finish at reorder?',
+        a: 'Yes, and it is one of the easier things to change. The die and artwork carry over unaltered.',
+      },
+      {
+        q: 'Does the finish affect recycling?',
+        a: 'Lamination makes the sleeve a mixed material, which is the main reason an unlaminated specification is easier to put in a paper stream.',
       },
     ],
   },

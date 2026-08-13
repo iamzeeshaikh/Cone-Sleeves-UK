@@ -197,10 +197,10 @@ All four old slugs 301 to the new ones.
 | Location pages | 25 | 20 cities, 5 counties |
 | Blog articles | 12 | 12,916 words, every article over 1,000 |
 | Legal & trust pages | 8 | Written for a UK B2B bespoke-goods supplier |
-| FAQ pairs | 480 | Across products, categories, locations, articles and `/faqs/` |
+| FAQ pairs | 2,266 | 10 on every product, category, location and article; 16 on `/faqs/` |
 | Contextual internal links | 222 | One per content section maximum |
 | Related-product links | 680 | |
-| **Total authored words** | | **≈ 78,300** |
+| **Total authored words** | | **≈ 127,400** |
 
 Not one sentence was carried over from the source site. See
 `CONTENT-UNIQUENESS-REPORT.md`.

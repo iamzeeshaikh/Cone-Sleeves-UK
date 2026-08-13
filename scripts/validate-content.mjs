@@ -165,6 +165,43 @@ for (const b of POSTS) {
 }
 
 // ---------------------------------------------------------------------------
+// FAQ depth
+// ---------------------------------------------------------------------------
+
+// Every page carries at least ten questions. Duplicate wording across pages is
+// checked separately below, so depth cannot be reached by repeating answers.
+const MIN_FAQS = 10;
+const seenQuestions = new Map();
+
+function checkFaqs(kind, id, faqs = []) {
+  if (faqs.length < MIN_FAQS) {
+    fail(`${kind} ${id}: ${faqs.length} FAQs (minimum ${MIN_FAQS})`);
+  }
+  const local = new Set();
+  for (const f of faqs) {
+    const q = f.q.trim().toLowerCase();
+    if (local.has(q)) fail(`${kind} ${id}: repeats the question "${f.q}"`);
+    local.add(q);
+
+    const a = f.a.trim().toLowerCase();
+    if (seenQuestions.has(a)) {
+      fail(`${kind} ${id}: answer duplicated from ${seenQuestions.get(a)}`);
+    } else seenQuestions.set(a, `${kind} ${id}`);
+
+    // 15 words, not 20: the median answer runs to ~23, so a higher floor fires
+    // on hundreds of complete answers and nobody reads the warnings at all.
+    if (f.a.trim().split(/\s+/).length < 15) {
+      warn(`${kind} ${id}: very short answer to "${f.q.slice(0, 40)}"`);
+    }
+  }
+}
+
+for (const p of PRODUCTS) checkFaqs('product', p.slug, p.faqs);
+for (const c of CATEGORIES) checkFaqs('category', c.slug, c.faqs);
+for (const l of LOCATIONS) checkFaqs('location', l.slug, l.faqs);
+for (const b of POSTS) checkFaqs('post', b.slug, b.faqs);
+
+// ---------------------------------------------------------------------------
 // Internal links, anchors and prose rules
 // ---------------------------------------------------------------------------
 

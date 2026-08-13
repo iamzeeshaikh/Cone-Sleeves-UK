@@ -68,6 +68,34 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Is printed greaseproof safe against hot food?',
         a: 'When both the paper grade and the ink system are specified for direct contact, yes. Tell us what the paper touches and how hot it is, and we confirm the specification on your quote.',
       },
+      {
+        q: 'How many colours can we print on greaseproof?',
+        a: 'One or two reproduce reliably. More is technically possible but adds cost quickly on a product bought for its low unit price.',
+      },
+      {
+        q: 'Will ink spread on the sheet?',
+        a: 'Slightly, because paper is absorbent. Fine lines thicken and small reversed-out type can close up, so designs stay simple.',
+      },
+      {
+        q: 'What weight of greaseproof do we need?',
+        a: 'It depends on what the sheet holds and for how long. Tell us the food and the holding time and we will specify a grade.',
+      },
+      {
+        q: 'Can we use it as a tray liner?',
+        a: 'Yes, and lining a tray so it can be wiped rather than binned is one of the most common uses alongside wrapping.',
+      },
+      {
+        q: 'Does greaseproof work with hot food?',
+        a: 'It is designed for it. Where paper also sees oven heat, parchment is the grade rather than greaseproof.',
+      },
+      {
+        q: 'How are sheets supplied?',
+        a: 'Flat sheets or reams, with interleaved options where staff need to take one at a time during service.',
+      },
+      {
+        q: 'Will printing show through to the food?',
+        a: 'Not with a food-contact ink system, which we confirm on the quote rather than assuming from the paper grade alone.',
+      },
     ],
     related: ['custom-fish-chips-paper', 'custom-deli-paper', 'custom-printed-fry-paper', 'custom-food-basket-liner'],
   },
@@ -124,6 +152,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'What sheet size suits a standard fish supper?',
         a: 'Larger than most people first order, because the fold takes a surprising amount of paper. Wrap a real portion with a test sheet before committing to a size.',
       },
+      {
+        q: 'Which sheet should be printed?',
+        a: 'The outer one. The inner sheet is soaked in oil within a minute, so nothing printed on it survives being seen.',
+      },
+      {
+        q: 'What size suits a fish supper?',
+        a: 'Larger than most people first order, because the fold takes a surprising amount of paper. Wrap a real portion with a test sheet.',
+      },
+      {
+        q: 'Does the traditional wrap keep food hotter?',
+        a: 'Two layers insulate better than one, which is part of why the format persists alongside the appearance.',
+      },
+      {
+        q: 'Can we print a newspaper-style design?',
+        a: 'It is a common request and reproduces well in one colour on a light sheet. Send the artwork and we will check it at size.',
+      },
+      {
+        q: 'How fast can staff wrap with two sheets?',
+        a: 'Slightly slower than one, which is why busy shops sometimes move to a single heavier sheet and accept the trade.',
+      },
+      {
+        q: 'Will vinegar affect the paper?',
+        a: 'Acid works on coatings differently from oil. Tell us if vinegar goes on before wrapping and we will factor it in.',
+      },
+      {
+        q: 'Can we use the outer sheet alone for chips?',
+        a: 'Yes, and many shops do for a chips-only order, keeping the two-layer wrap for fish suppers.',
+      },
+      {
+        q: 'Can we order inner and outer sheets together?',
+        a: 'Yes, and running both in one job is the usual route. Only the outer sheet needs printing.',
+      },
     ],
     related: ['custom-greaseproof-paper', 'french-fries-holder-paper', 'custom-printed-fry-paper', 'custom-food-basket-liner'],
   },
@@ -176,6 +236,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Does the liner need to be greaseproof?',
         a: 'For chips, yes — that is the point of it. A plain paper soaks through and the oil reaches the basket, which removes the reason for using a liner at all.',
+      },
+      {
+        q: 'Should a liner be shaped or square?',
+        a: 'Square is cheaper to produce and works in most baskets. A shaped liner fits neatly, which matters if the basket goes to a table.',
+      },
+      {
+        q: 'How big should the sheet be?',
+        a: 'Enough to cover the base and rise up the sides. A sheet lying flat across the top defeats the purpose.',
+      },
+      {
+        q: 'Does a liner really save money?',
+        a: 'It replaces washing a basket between customers with a wipe, which across a busy service is real labour rather than a marginal saving.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'One or two colours suits the price point and the absorbent surface. Heavy coverage looks patchy and costs more.',
+      },
+      {
+        q: 'Do liners work in boxes as well?',
+        a: 'Yes, and using the same printed sheet in a basket and a box keeps the look consistent across service styles.',
+      },
+      {
+        q: 'Will the corners stick out?',
+        a: 'Deliberately, on a square liner. Corners that stand up look intentional; ones that flop over look careless.',
+      },
+      {
+        q: 'How are they supplied?',
+        a: 'Flat sheets in reams. Interleaved packs are worth asking about if staff take one at a time during a rush.',
+      },
+      {
+        q: 'Can we order liners in two sizes?',
+        a: 'Yes, and most kitchens have baskets in two sizes. Running both in one job shares the setup.',
       },
     ],
     related: ['custom-food-basket-liner', 'custom-greaseproof-paper', 'custom-fish-chips-paper', 'custom-printed-hot-paper'],
@@ -230,6 +322,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Where should the logo sit on a liner?',
         a: 'Around the edge. The centre disappears under the food within seconds, so anything placed there is only seen by the person washing up.',
+      },
+      {
+        q: 'Can liners be cut to an unusual basket?',
+        a: 'Yes, provided the shape cuts cleanly. Send a basket or its internal dimensions and we will produce a liner that sits properly.',
+      },
+      {
+        q: 'Where should the logo sit?',
+        a: 'Around the edge. The centre disappears under food within seconds, so anything there is only seen by whoever washes up.',
+      },
+      {
+        q: 'What paper suits a basket liner?',
+        a: 'Greaseproof for fried food, a lighter sheet for dry items. It follows the food rather than the basket.',
+      },
+      {
+        q: 'Will a pale design show oil marks?',
+        a: 'Yes, and mid tones hold up better. Photograph a test print with real food on it before approving a design.',
+      },
+      {
+        q: 'Do these suit a pub?',
+        a: 'They are frequently bought for pub and diner service, where the basket goes to a table and the liner is in every photograph.',
+      },
+      {
+        q: 'Can we run two liner sizes?',
+        a: 'Yes, and most kitchens have baskets in two sizes. Running both in one job shares the setup between them.',
+      },
+      {
+        q: 'How many colours should we use?',
+        a: 'One or two reproduce reliably on an absorbent sheet. A pattern in one colour usually reads better than a detailed mark.',
+      },
+      {
+        q: 'Will the liner slide in the basket?',
+        a: 'Cut to the footprint it sits still. An oversized sheet folded in is what slides and looks untidy.',
       },
     ],
     related: ['custom-printed-fry-paper', 'custom-greaseproof-paper', 'custom-placemats', 'custom-pizza-liner'],
@@ -290,6 +414,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Is the ink affected by heat?',
         a: 'Ink systems for direct food contact are specified against the conditions they will see. Tell us the temperature and duration and we will confirm the system rather than giving a general assurance.',
       },
+      {
+        q: 'What is different about hot-held paper?',
+        a: 'Exposure time. A wrapped burger sees heat for minutes; a pasty in a cabinet sees it for hours, which is a different demand.',
+      },
+      {
+        q: 'Do we need this for a normal takeaway?',
+        a: 'Usually not. Standard greaseproof handles food wrapped and handed over. Hot-holding is the case that needs more.',
+      },
+      {
+        q: 'Will the paper discolour?',
+        a: 'A grade specified for the conditions should not within its intended holding time. That is what the specification is protecting against.',
+      },
+      {
+        q: 'Can we use it for reheating?',
+        a: 'Tell us if food is reheated in its wrapping, because that is a different requirement again from being held hot.',
+      },
+      {
+        q: 'Does it cost more than greaseproof?',
+        a: 'Yes, which is why it is specified where the heat requires it rather than as a general upgrade.',
+      },
+      {
+        q: 'What should we tell you when enquiring?',
+        a: 'The temperature, how long the paper is held at it, and whether it is in a cabinet, under a lamp or in an oven.',
+      },
+      {
+        q: 'Can we use this for a hot cabinet only?',
+        a: 'That is its main use. For food wrapped and handed straight over, standard greaseproof is adequate and cheaper.',
+      },
+      {
+        q: 'Do you supply this in rolls?',
+        a: 'Sheets are usual for printed work. Tell us if a roll format is essential and we will confirm what can be produced.',
+      },
     ],
     related: ['custom-parchment-paper', 'custom-greaseproof-paper', 'custom-pizza-liner', 'custom-food-basket-liner'],
   },
@@ -346,6 +502,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Is parchment worth the extra cost for wrapping?',
         a: 'For plain wrapping, generally not — greaseproof performs well and costs less. Parchment earns its cost where oven heat or non-stick release is genuinely needed.',
       },
+      {
+        q: 'Is parchment worth it for plain wrapping?',
+        a: 'Generally not. Greaseproof performs well and costs less. Parchment earns its cost where oven heat or non-stick release is needed.',
+      },
+      {
+        q: 'What makes parchment non-stick?',
+        a: 'It is treated so baked goods release rather than adhering, which is why bakers line trays with it rather than with greaseproof.',
+      },
+      {
+        q: 'Does parchment resist grease as well?',
+        a: 'Well, though greaseproof is denser and marginally better at oil specifically. Parchment buys heat tolerance instead.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'The surface is less absorbent than greaseproof, so print sits differently. One or two colours remains the practical choice.',
+      },
+      {
+        q: 'Do bakers use printed parchment?',
+        a: 'Where the sheet stays with the finished product, yes. Where it only lines a tray, plain parchment is the sensible spend.',
+      },
+      {
+        q: 'What sizes are available?',
+        a: 'Cut to your tray or your product. Send the dimensions and we will confirm what can be produced at that size.',
+      },
+      {
+        q: 'Is it suitable for cold food?',
+        a: 'It is, though you would be paying for heat tolerance you do not need. A lighter sheet is cheaper for cold.',
+      },
+      {
+        q: 'Do you supply this in sheets cut to a tray?',
+        a: 'Yes. Send the tray dimensions and we will confirm what can be produced at that size.',
+      },
     ],
     related: ['custom-greaseproof-paper', 'custom-printed-hot-paper', 'parchment-paper-cups', 'custom-pastry-bags'],
   },
@@ -399,6 +587,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Does waxed paper print well?',
         a: 'It does, though the coating means ink sits on the surface rather than soaking in, so it can be more prone to scuffing. Simple designs in one or two colours hold up most reliably.',
+      },
+      {
+        q: 'What is it genuinely good at?',
+        a: 'Repelling moisture. Cold sandwiches, confectionery, cheese and anything that would go soggy in plain paper.',
+      },
+      {
+        q: 'Is it the same as greaseproof?',
+        a: 'No. Greaseproof resists oil through dense fibres; waxed paper resists moisture through a coating, and behaves differently under heat.',
+      },
+      {
+        q: 'Can we use it for interleaving?',
+        a: 'Yes. Interleaving chilled products is one of the main uses alongside wrapping, because a sheet between portions stops them freezing into a single block that has to be prised apart.',
+      },
+      {
+        q: 'Will it affect taste?',
+        a: 'With cold food, generally not. With anything warm the coating can become noticeable, which is another reason to keep uses separate.',
+      },
+      {
+        q: 'How is it supplied?',
+        a: 'Flat sheets or reams, with interleaved options where staff take one at a time at a counter.',
+      },
+      {
+        q: 'Is it recyclable?',
+        a: 'A wax coating changes the disposal route and acceptance depends on local collection. We confirm the material rather than the outcome.',
+      },
+      {
+        q: 'Can we use waxed paper for cheese?',
+        a: 'For short-term wrapping, yes, though cheese paper manages moisture better over several days. It depends how long it is held.',
+      },
+      {
+        q: 'Does the wax coating affect printing?',
+        a: 'It does, which is why printing happens before waxing rather than after. Tell us at quote stage that the sheet is to be waxed so the ink and the coating are specified together.',
       },
     ],
     related: ['custom-greaseproof-paper', 'custom-cheese-paper', 'custom-glassine-paper', 'wax-paper-cups'],
@@ -454,6 +674,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'How does printing look on a translucent sheet?',
         a: 'Ink sits on the surface and the product shows through the unprinted areas, which creates depth. Designs with plenty of open space use that better than heavy coverage does.',
       },
+      {
+        q: 'Why choose it over greaseproof?',
+        a: 'For the translucency. The product shows through, which sells confectionery and bakery items in a way an opaque wrap does not.',
+      },
+      {
+        q: 'How does printing look on it?',
+        a: 'Ink sits on the surface and the product shows through the unprinted areas, which creates depth. Open designs use that better than heavy coverage.',
+      },
+      {
+        q: 'Does it cost much more?',
+        a: 'Enough to notice, which is why it is chosen where appearance justifies it rather than as a general-purpose sheet.',
+      },
+      {
+        q: 'Can we use it for interleaving?',
+        a: 'It is one of the main uses, particularly between layers of pastry or biscuits where a non-stick smooth surface matters.',
+      },
+      {
+        q: 'Will it hold up against oil?',
+        a: 'Well, comparably to greaseproof. The processing that makes it translucent does not reduce its grease resistance.',
+      },
+      {
+        q: 'Do chocolatiers use it?',
+        a: 'Frequently, because a glimpse of the product through the wrap is part of the presentation.',
+      },
+      {
+        q: 'What sizes are available?',
+        a: 'Cut to your product. Send the item dimensions plus the fold allowance and we will confirm what can be produced.',
+      },
+      {
+        q: 'Can we order glassine bags as well as sheets?',
+        a: 'Translucent bags are a related product. Tell us both requirements and we will price them together.',
+      },
     ],
     related: ['custom-wax-paper', 'custom-flower-bouquet-paper', 'custom-candy-bags', 'custom-pastry-bags'],
   },
@@ -507,6 +759,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Does deli paper need to be greaseproof?',
         a: 'For cured meats and cheese, a grease-resistant grade is worth having. For dry goods and salads a lighter plain sheet is adequate and cheaper.',
+      },
+      {
+        q: 'What size sheet suits a deli counter?',
+        a: 'Large enough to pick up and wrap in one motion. Measure the largest item you handle rather than the average.',
+      },
+      {
+        q: 'Can we print in two colours?',
+        a: 'Yes, and a repeating pattern in one or two colours reads well on a lightweight absorbent sheet.',
+      },
+      {
+        q: 'Will the print rub off on food?',
+        a: 'Not with a food-contact ink system, which we confirm on the quote alongside the paper grade.',
+      },
+      {
+        q: 'Do these suit a farm shop?',
+        a: 'They do, and a printed deli sheet is one of the cheapest branded surfaces a farm shop counter can carry.',
+      },
+      {
+        q: 'How light should the paper be?',
+        a: 'Light enough to fold easily around soft goods. Heavy stock is stiff and awkward at a counter where speed matters.',
+      },
+      {
+        q: 'Can we use the same sheet for wrapping and lining?',
+        a: 'Often, and many counters do. Tell us both uses and we will specify a grade that suits the more demanding one.',
+      },
+      {
+        q: 'Can the same sheet wrap and line?',
+        a: 'Often, and many counters use one grade for both. Tell us both uses and we will specify against the more demanding one.',
+      },
+      {
+        q: 'Does deli paper need to be food-grade?',
+        a: 'It touches food directly, so yes, both the paper grade and the ink system. We confirm both on your quote.',
       },
     ],
     related: ['custom-cheese-paper', 'custom-butcher-paper', 'custom-sandwich-paper', 'custom-greaseproof-paper'],
@@ -562,6 +846,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Does blood soak through butcher paper?',
         a: 'Through a light sheet, yes, and quickly. A heavier moisture-resistant grade holds it for the length of a journey home, which is what the customer needs.',
       },
+      {
+        q: 'Will a marker pen write on it?',
+        a: 'On an uncoated area, yes. If your team writes weights and cuts on the wrap, leave part of the sheet unprinted and uncoated.',
+      },
+      {
+        q: 'Does blood soak through?',
+        a: 'Through a light sheet, quickly. A heavier moisture-resistant grade holds it for the journey home, which is what the customer needs.',
+      },
+      {
+        q: 'What weight do we need?',
+        a: 'Heavier than deli paper, because meat is heavier and wetter and concentrates load at the fold.',
+      },
+      {
+        q: 'How many sheet sizes should we hold?',
+        a: 'Two usually covers a butcher counter — one for a few sausages and one for a large joint. Three is rarely needed.',
+      },
+      {
+        q: 'Can we print full colour?',
+        a: 'One or two colours suits the stock and the price point. Heavy coverage on an absorbent sheet looks patchy and costs more.',
+      },
+      {
+        q: 'Is this suitable for freezing?',
+        a: 'Freezer paper carries a moisture barrier for that specifically. Butcher paper is a counter wrap rather than a freezer wrap.',
+      },
+      {
+        q: 'Will the wrap tear at the fold?',
+        a: 'Not on an appropriate weight. Tearing at the fold is the usual sign the paper is too light for the joint.',
+      },
+      {
+        q: 'Do these suit a farm shop counter?',
+        a: 'They do, and a printed butcher wrap carries branding into the customer\'s kitchen more effectively than a bag does.',
+      },
     ],
     related: ['custom-deli-paper', 'custom-meat-packaging-bags', 'custom-freezer-paper', 'custom-cheese-paper'],
   },
@@ -615,6 +931,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Should there be a blank area for writing?',
         a: 'If staff write the variety and date by hand, yes. Leave that panel unprinted and uncoated, because ink from a marker will not take reliably on a printed or coated surface.',
+      },
+      {
+        q: 'Why does cheese need to breathe?',
+        a: 'Sealed airtight it sweats and the surface spoils; fully open it dries and cracks. Cheese paper sits between the two.',
+      },
+      {
+        q: 'Does this suit every cheese?',
+        a: 'A hard aged cheese and a soft rind need different things. Tell us what you cut and we will specify against it.',
+      },
+      {
+        q: 'Can we print in two colours?',
+        a: 'Yes, and a restrained design suits a specialist counter better than heavy coverage. Leave room for the handwritten panel.',
+      },
+      {
+        q: 'How long will cheese keep in it?',
+        a: 'That is a food question for your own judgement rather than a packaging claim. The paper manages moisture; it does not set shelf life.',
+      },
+      {
+        q: 'Do farm shops use this?',
+        a: 'Frequently, alongside cheesemongers and delis. Anywhere cheese is cut to order rather than sold pre-packed.',
+      },
+      {
+        q: 'What sheet size do we need?',
+        a: 'Enough to wrap your largest cut with an overlap. Measure a typical wedge and add the fold rather than guessing.',
+      },
+      {
+        q: 'Can we use one paper for hard and soft cheese?',
+        a: 'It is a compromise. Specialist counters often hold two grades, since a soft rind and an aged hard cheese need different things.',
+      },
+      {
+        q: 'Should the paper be printed both sides?',
+        a: 'One side is against the cheese. Printing the outer face is what the customer sees, and the inner face rarely justifies it.',
       },
     ],
     related: ['custom-deli-paper', 'custom-cheese-packaging-bags', 'custom-butcher-paper', 'custom-wax-paper'],
@@ -670,6 +1018,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Do we need tape to hold the wrap closed?',
         a: 'Not with a correctly sized sheet and a proper fold. Many sites use a printed sticker instead, which seals the wrap and carries the filling name at the same time.',
       },
+      {
+        q: 'Do we need tape to close the wrap?',
+        a: 'Not with a correctly sized sheet and a proper fold. Many counters use a printed sticker instead, which also carries the filling name.',
+      },
+      {
+        q: 'Does sandwich paper need to be greaseproof?',
+        a: 'For mayonnaise-based and hot fillings, yes. Dry fillings are far less demanding and can use a lighter, cheaper sheet.',
+      },
+      {
+        q: 'Can customers eat from the wrap?',
+        a: 'That is one of its advantages over a bag, and why office lunch counters often prefer it.',
+      },
+      {
+        q: 'Where should the print go?',
+        a: 'On the outer face, which is what the customer sees at their desk. The inner face is against the food.',
+      },
+      {
+        q: 'Can we leave space for a label?',
+        a: 'Yes, and you should if you apply one. Reserve the area in the artwork rather than adding a sticker over the design.',
+      },
+      {
+        q: 'How fast is wrapping compared with bagging?',
+        a: 'Slower, which is the trade. Bags are quicker at a busy counter; wraps present better and can be eaten from.',
+      },
+      {
+        q: 'Can we use one sheet size across our range?',
+        a: 'Usually, if it suits the largest sandwich. A sheet sized for the smallest will not close around the biggest one.',
+      },
+      {
+        q: 'Can we order printed stickers to seal the wrap?',
+        a: 'Yes, and a sticker seals the fold and carries the filling name at the same time. Send both quantities.',
+      },
     ],
     related: ['custom-sandwich-sleeves', 'custom-greaseproof-paper', 'custom-deli-paper', 'custom-sandwich-bags'],
   },
@@ -723,6 +1103,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'What size sheet suits a standard taco?',
         a: 'Large enough for the customer to gather around the base without it flapping. Test with a real taco rather than working from the shell diameter.',
+      },
+      {
+        q: 'What size sheet suits a taco?',
+        a: 'Large enough to gather around the base as the customer eats, without flapping. Test with a real taco rather than the shell diameter.',
+      },
+      {
+        q: 'Should it be greaseproof?',
+        a: 'Yes. Taco fillings are oily and sauced, and a plain sheet soaks through within a minute or two.',
+      },
+      {
+        q: 'Can it be printed both sides?',
+        a: 'One side is against the food. Printing the outer face is what the customer sees, and the inner face rarely justifies the cost.',
+      },
+      {
+        q: 'Does a square sheet work?',
+        a: 'Yes, and there is no benefit in a shaped cut here. Square is cheaper to produce with less waste.',
+      },
+      {
+        q: 'Can we use the same paper for burritos?',
+        a: 'Often, if the sheet is large enough. A burrito needs more paper to roll, so measure both before deciding on one size.',
+      },
+      {
+        q: 'Will marinade stain the paper?',
+        a: 'Coloured marinades mark visibly on a pale sheet. A mid-tone or patterned design disguises it better than white does.',
+      },
+      {
+        q: 'Do these suit a street food pitch?',
+        a: 'They do, and the low unit cost suits high-volume outdoor service where each sheet is used once.',
+      },
+      {
+        q: 'Can we order paper and taco holders together?',
+        a: 'Yes, and loaded tacos usually need both. Running them in one job keeps the branding consistent.',
       },
     ],
     related: ['custom-taco-sleeves', 'custom-greaseproof-paper', 'custom-burrito-sleeves', 'custom-food-basket-liner'],
@@ -778,6 +1190,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Should the liner be round or square?',
         a: 'Round looks better when the box opens; square is cheaper to cut with less waste. Both work, and it comes down to whether the reveal matters to your brand.',
       },
+      {
+        q: 'Round or square liner?',
+        a: 'Round looks better when the box opens; square cuts with less waste and costs less. Both work in practice.',
+      },
+      {
+        q: 'What size should the liner be?',
+        a: 'Cut to the pizza diameter rather than the box. A liner running up the walls is wasted paper.',
+      },
+      {
+        q: 'Can we print the liner?',
+        a: 'Yes, and it is one of the cheapest ways to brand a delivery, because the customer sees it the moment the box opens.',
+      },
+      {
+        q: 'Does it stop cheese sticking to the box?',
+        a: 'That is one of its main jobs, and it matters most on a delivery journey where the pizza slides against the board.',
+      },
+      {
+        q: 'Do we need one for eat-in pizzas?',
+        a: 'Less so, since the pizza is on the board for minutes rather than a journey. Delivery is where the liner earns its cost.',
+      },
+      {
+        q: 'Will it survive a hot pizza straight from the oven?',
+        a: 'With a greaseproof grade specified for hot contact, yes. That is what we confirm on the quote.',
+      },
+      {
+        q: 'Can we match the liner to our box print?',
+        a: 'Yes, and running both in one order keeps the colour consistent. Printed separately, the same colour drifts visibly.',
+      },
+      {
+        q: 'Can we order liners and boxes together?',
+        a: 'Yes, and running both in one job keeps the colour consistent between the liner and the box print.',
+      },
     ],
     related: ['custom-pizza-trays', 'custom-pizza-slice-sleeves', 'custom-greaseproof-paper', 'custom-food-basket-liner'],
   },
@@ -831,6 +1275,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'Can placemats be changed monthly?',
         a: 'Digital printing makes short, frequent runs practical, which suits promotional content. Long conventional runs are cheaper per unit but lock you into one design for months.',
+      },
+      {
+        q: 'Why do people read placemats?',
+        a: 'Because waiting for food is dead time and the mat is directly in front of them. They get read more thoroughly than menus.',
+      },
+      {
+        q: 'Can a placemat replace a menu?',
+        a: 'In cafés without printed menus, frequently. It also lets you change specials without reprinting a menu.',
+      },
+      {
+        q: 'Do they need grease resistance?',
+        a: 'If plates are set directly on them and food is oily, it helps. Many sites accept marking as part of a disposable item.',
+      },
+      {
+        q: 'What size should they be?',
+        a: 'Sized to your tables rather than a standard. Send the table dimensions and we will confirm what fits and cuts economically.',
+      },
+      {
+        q: 'Can we print children\'s activities?',
+        a: 'Frequently requested, and it keeps families seated longer. Leave clear space for a crayon rather than covering the sheet.',
+      },
+      {
+        q: 'How many colours?',
+        a: 'One or two reproduce reliably and keep the cost proportionate. Full colour is possible where the design justifies it.',
+      },
+      {
+        q: 'Do placemats need to be food-safe?',
+        a: 'Where plates sit on them and food may touch, yes. Tell us how they are used and we will specify accordingly.',
+      },
+      {
+        q: 'Can we print different mats for adults and children?',
+        a: 'Yes, and digital printing makes a split run affordable. Send the quantity of each rather than a combined total.',
       },
     ],
     related: ['custom-food-basket-liner', 'custom-greaseproof-paper', 'custom-restaurant-paper-bags', 'custom-pizza-liner'],
@@ -886,6 +1362,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Does freezer paper prevent freezer burn completely?',
         a: 'It reduces it considerably when the wrap is tight. Air trapped against the surface is what causes the damage, so the fold matters as much as the paper does.',
       },
+      {
+        q: 'Does it prevent freezer burn completely?',
+        a: 'It reduces it considerably when the wrap is tight. Air trapped against the surface causes the damage, so the fold matters as much as the paper.',
+      },
+      {
+        q: 'Will a marker pen write on it?',
+        a: 'On the uncoated outer face, yes, which is why date and cut are written there rather than on the barrier side.',
+      },
+      {
+        q: 'Can we print on the outer face?',
+        a: 'Yes, and leaving an unprinted panel for handwriting is worth planning in rather than adding afterwards.',
+      },
+      {
+        q: 'Is this the same as butcher paper?',
+        a: 'No. Butcher paper is a counter wrap; freezer paper carries a moisture barrier for frozen storage specifically.',
+      },
+      {
+        q: 'How long does it protect for?',
+        a: 'That depends on your product and storage rather than the paper alone. It slows moisture loss; it does not set a shelf life.',
+      },
+      {
+        q: 'Do farm shops use this?',
+        a: 'They do, alongside butchers and producers packing their own meat for frozen sale. The coated face is what keeps moisture in the product rather than in the freezer as ice.',
+      },
+      {
+        q: 'What sheet size do we need?',
+        a: 'Sized to your typical portion with enough to fold tightly. A loose wrap defeats the barrier however good the paper is.',
+      },
+      {
+        q: 'Can we order this alongside butcher paper?',
+        a: 'Yes, and many butchers use both — one for the counter and one for frozen stock. One job shares the setup.',
+      },
     ],
     related: ['custom-butcher-paper', 'custom-meat-packaging-bags', 'custom-cheese-paper', 'custom-wax-paper'],
   },
@@ -940,6 +1448,38 @@ export const PRINTED_PAPERS: Product[] = [
         q: 'Should the design be bold?',
         a: 'Usually not. The flowers are the product, and a strong pattern competes with them. Most florists choose restrained artwork with the brand mark used sparingly.',
       },
+      {
+        q: 'Why does stiffness matter?',
+        a: 'Because a hand-tied bouquet is supported by its wrap. Paper that collapses leaves the arrangement flopping.',
+      },
+      {
+        q: 'What sheet size do florists need?',
+        a: 'Larger than most printed paper. Send the size of a typical bouquet and we will confirm what can be produced.',
+      },
+      {
+        q: 'Can we print in one colour?',
+        a: 'Yes, and a single-colour repeat with plenty of open paper usually suits flowers better than heavy coverage.',
+      },
+      {
+        q: 'Does this need food-grade ink?',
+        a: 'No, since nothing edible touches it, which widens the ink and paper choice compared with the rest of this range.',
+      },
+      {
+        q: 'Can we match it to our ribbon?',
+        a: 'Colour matching to a physical sample is worth asking about. Send the ribbon and we will tell you how close a print can get.',
+      },
+      {
+        q: 'Do these suit a farm shop florist counter?',
+        a: 'They do, and a printed wrap carries branding further than most items, because bouquets are given away rather than kept.',
+      },
+      {
+        q: 'Can we get several colourways?',
+        a: 'On digital printing, yes, and florists frequently run seasonal variants. Send the split between them rather than a total.',
+      },
+      {
+        q: 'What weight suits a hand-tied bouquet?',
+        a: 'Firm enough to hold a cone shape unaided. Too light and the wrap collapses; too heavy and it will not fold cleanly.',
+      },
     ],
     related: ['custom-glassine-paper', 'custom-placemats', 'custom-greaseproof-paper', 'custom-grocery-bags'],
   },
@@ -993,6 +1533,38 @@ export const PRINTED_PAPERS: Product[] = [
       {
         q: 'How does the cost compare with foam?',
         a: 'It varies with the shape, the tooling and the volume far more than board packaging does, so a general comparison would be misleading. Send the application and we will price it properly.',
+      },
+      {
+        q: 'What lead time should we expect?',
+        a: 'Longer than board, because the material is grown rather than manufactured. We confirm it against your specific application.',
+      },
+      {
+        q: 'What information do you need from us?',
+        a: 'The item being protected with dimensions and weight, how fragile it is, the transit it faces, annual volume and your timescale.',
+      },
+      {
+        q: 'Is it a replacement for board packaging?',
+        a: 'No. It is a protective moulded material, comparable to expanded foam rather than to the printed board elsewhere in this range.',
+      },
+      {
+        q: 'Can it be printed?',
+        a: 'Printing on a grown moulded surface is limited. Labelling is usually the practical route, which we would confirm per application.',
+      },
+      {
+        q: 'Does it break down naturally?',
+        a: 'It is designed to, though what happens in practice depends on conditions. We will describe the material rather than promise an outcome.',
+      },
+      {
+        q: 'Is there a minimum volume?',
+        a: 'Moulded tooling is volume-sensitive, so there usually is. Send your annual quantity and we will tell you whether it is viable.',
+      },
+      {
+        q: 'Can we see a sample before committing?',
+        a: 'Sampling is possible and works differently from board, since the material is grown. Tell us the application and we will confirm.',
+      },
+      {
+        q: 'Is it suitable for shipping fragile items?',
+        a: 'That is its main use, as a cushioning alternative to expanded foam. Tell us the item and the transit it faces.',
       },
     ],
     related: ['custom-greaseproof-paper', 'custom-kraft-food-bags', 'eco-friendly-paper-cups', 'custom-eco-friendly-cone-sleeves'],
