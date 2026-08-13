@@ -26,3 +26,4 @@ wc-product-export-*.csv
 # logs
 npm-debug.log*
 *.log
+.vercel
