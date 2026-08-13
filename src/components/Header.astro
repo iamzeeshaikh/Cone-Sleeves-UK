@@ -2,7 +2,7 @@
 import Logo from './Logo.astro';
 import { CONTACT, TEL_HREF } from '~/config/site';
 import { TOP_CATEGORIES, subcategoriesOf, categoryPath } from '~/data/categories';
-import { productsInCategory } from '~/data/products';
+import { productsInCategory, productBySlug } from '~/data/products';
 
 /**
  * Site header.
@@ -18,15 +18,26 @@ import { productsInCategory } from '~/data/products';
  */
 const currentPath = Astro.url.pathname;
 
+/**
+ * Each range lists its subcategories where it has them, and its featured
+ * products where it does not — a column with nothing under it gives a visitor
+ * no reason to look at the menu.
+ */
 const ranges = TOP_CATEGORIES.map((c) => ({
   label: c.name,
   href: categoryPath(c),
   blurb: c.cardBlurb,
   count: productsInCategory(c.slug).length,
-  children: subcategoriesOf(c.slug).map((s) => ({
-    label: s.name,
-    href: categoryPath(s),
-  })),
+  children: [
+    ...subcategoriesOf(c.slug).map((s) => ({
+      label: s.name,
+      href: categoryPath(s),
+    })),
+    ...(c.featured ?? [])
+      .map((slug) => productBySlug(slug))
+      .filter((p): p is NonNullable<typeof p> => Boolean(p))
+      .map((p) => ({ label: p.name, href: `/${p.slug}/` })),
+  ],
 }));
 
 const links = [
@@ -90,7 +101,7 @@ const onProducts =
                           <span>{r.label}</span>
                           <em>{r.count}</em>
                         </a>
-                        <p class="mega-blurb">{r.blurb}</p>
+                        {r.children.length === 0 && <p class="mega-blurb">{r.blurb}</p>}
                         {r.children.length > 0 && (
                           <ul class="mega-subs">
                             {r.children.map((c) => (

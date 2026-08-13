@@ -17,6 +17,14 @@ export const CATEGORIES: Category[] = [
     // for "custom cone sleeves UK", which the homepage should own outright.
     mergedIntoHome: true,
     heroProduct: 'custom-waffle-cone-sleeves',
+    featured: [
+      'custom-ice-cream-cone-sleeves',
+      'custom-waffle-cone-sleeves',
+      'custom-sugar-cone-sleeves',
+      'custom-cake-cone-sleeves',
+      'custom-chicken-cone-sleeves',
+      'custom-eco-friendly-cone-sleeves',
+    ],
     sourceNames: ['Cone Sleeves By Industry'],
     seoTitle: 'Custom Cone Sleeves UK | Printed Ice Cream Cone Sleeves',
     seoDescription:
@@ -114,6 +122,14 @@ export const CATEGORIES: Category[] = [
     slug: 'food-sleeves',
     name: 'Food Sleeves',
     heroProduct: 'burger-sleeves',
+    featured: [
+      'burger-sleeves',
+      'custom-hot-dog-sleeves',
+      'custom-sandwich-sleeves',
+      'custom-wrap-sleeves',
+      'custom-pastry-sleeves',
+      'custom-donut-sleeves',
+    ],
     sourceNames: ['Custom Food Sleeves'],
     seoTitle: 'Custom Food Sleeves UK | Printed Sleeves & Wraps',
     seoDescription:
@@ -219,6 +235,14 @@ export const CATEGORIES: Category[] = [
     slug: 'food-trays',
     name: 'Food Trays',
     heroProduct: 'custom-burger-trays',
+    featured: [
+      'custom-burger-trays',
+      'custom-fries-trays',
+      'custom-nacho-trays',
+      'custom-combo-meal-trays',
+      'ice-cream-cone-holder',
+      'custom-bakery-trays',
+    ],
     sourceNames: ['Custom Food Trays'],
     seoTitle: 'Custom Printed Food Trays UK | Board Serving Trays',
     seoDescription:
@@ -307,6 +331,12 @@ export const CATEGORIES: Category[] = [
     slug: 'food-boxes',
     name: 'Food Boxes',
     heroProduct: 'french-fry-boxes',
+    featured: [
+      'french-fry-boxes',
+      'cone-fries-packaging',
+      'fried-chicken-packaging',
+      'french-fries-holder-paper',
+    ],
     sourceNames: ['Custom Food Boxes'],
     seoTitle: 'Custom Chip & Fry Boxes UK | Printed Food Boxes',
     seoDescription:
@@ -368,6 +398,13 @@ export const CATEGORIES: Category[] = [
     slug: 'beverage-sleeves',
     name: 'Beverage Sleeves',
     heroProduct: 'custom-printed-coffee-sleeves',
+    featured: [
+      'custom-printed-coffee-sleeves',
+      'custom-cold-drink-sleeves',
+      'custom-iced-coffee-sleeves',
+      'custom-cardboard-beverage-sleeves',
+      'eco-friendly-beverage-sleeves',
+    ],
     sourceNames: ['Custom Beverage Sleeves'],
     seoTitle: 'Custom Coffee Cup Sleeves UK | Printed Cup Sleeves',
     seoDescription:
@@ -523,6 +560,12 @@ export const CATEGORIES: Category[] = [
     slug: 'printed-papers-bags',
     name: 'Printed Papers & Bags',
     heroProduct: 'custom-greaseproof-paper',
+    featured: [
+      'custom-greaseproof-paper',
+      'custom-fish-chips-paper',
+      'custom-take-out-bags',
+      'custom-pastry-bags',
+    ],
     sourceNames: ['Custom Printed Papers'],
     seoTitle: 'Printed Greaseproof Paper & Food Bags UK',
     seoDescription:

@@ -178,6 +178,12 @@ export interface Category {
   /** Slug of a product whose photograph represents the category. */
   heroProduct: string;
   /**
+   * Products surfaced in the header navigation for ranges that have no
+   * subcategories to list. Chosen editorially rather than sliced off the
+   * front of the catalogue, so the menu shows what people actually ask for.
+   */
+  featured?: string[];
+  /**
    * Rendered on the homepage rather than at its own URL. Used for the flagship
    * range, which would otherwise compete with the homepage for the same head
    * term — the brand, the domain and the homepage all target "cone sleeves".

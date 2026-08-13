@@ -133,6 +133,18 @@ function checkSeo(kind, id, seoTitle, seoDescription, h1) {
 
 for (const p of PRODUCTS) checkSeo('product', p.slug, p.seoTitle, p.seoDescription, p.h1);
 for (const c of CATEGORIES) checkSeo('category', c.slug, c.seoTitle, c.seoDescription, c.h1);
+
+// Products surfaced in the header must exist and belong to the range they are
+// listed under, or the menu quietly points somewhere unrelated.
+for (const c of CATEGORIES) {
+  for (const slug of c.featured ?? []) {
+    const product = PRODUCTS.find((p) => p.slug === slug);
+    if (!product) fail(`category ${c.slug}: featured product "${slug}" does not exist`);
+    else if (product.category !== c.slug) {
+      fail(`category ${c.slug}: featured product "${slug}" belongs to ${product.category}`);
+    }
+  }
+}
 for (const l of LOCATIONS) checkSeo('location', l.slug, l.seoTitle, l.seoDescription, l.h1);
 for (const b of POSTS) checkSeo('post', b.slug, b.seoTitle, b.seoDescription, b.title);
 
