@@ -72,6 +72,7 @@ Tested against a running server with real POSTs:
 - [x] Filenames rebuilt server-side rather than trusted
 - [x] Mail headers guarded against injection
 - [x] SMTP credentials read from environment only; never in client code
+- [x] Real credentials verified absent from `dist/` after a full build
 
 ### Design tool
 
@@ -104,26 +105,37 @@ Tested against a running server with real POSTs:
 Each item below has a clearly marked placeholder in the site that renders only
 when a real value is supplied. **Nothing has been invented.**
 
-### 1. SMTP credentials — BLOCKING
+### 1. SMTP credentials — ✅ SUPPLIED AND VERIFIED 2026-08-13
 
-Without these, every enquiry form returns a clear 503 telling the visitor to
-email instead. The site is otherwise fully functional.
+Local `.env` is populated and the pipeline was tested end to end against the
+live mailbox. Two real enquiries were sent from the dev server and returned
+`200`: one plain, one carrying a PNG artwork attachment.
 
-Copy `.env.example` to `.env` and fill in:
+Delivery runs through Gmail on `smtp.gmail.com:587` (STARTTLS, so
+`SMTP_SECURE=false`) authenticating as the client's Google account with a
+16-character **App Password** — Gmail refuses ordinary account passwords over
+SMTP. Enquiries land in the client's nominated inbox.
 
-```
-SMTP_HOST=            SMTP_PORT=            SMTP_SECURE=
-SMTP_USER=            SMTP_PASS=
-SMTP_TO=info@conesleeves.co.uk
-SMTP_FROM_NAME=Cone Sleeves UK
-SMTP_FROM_EMAIL=info@conesleeves.co.uk
-```
+`.env` holds the real values, is gitignored, and does not appear in
+`dist/`. Nothing was committed.
 
-Set the same variables in the hosting provider's environment settings.
-**Never commit `.env`** — it is gitignored.
+- [x] Credentials supplied
+- [x] Plain enquiry delivers (HTTP 200)
+- [x] Enquiry with artwork attachment delivers (HTTP 200)
+- [x] Honeypot still returns a silent 200 without sending
+- [x] Disallowed file type still rejected with 415
+- [x] Cross-site POST still rejected with 403
+- [ ] **Set the same variables in the Vercel project settings** — `.env` is
+      local only and does not deploy. Without this the live forms return 503.
+- [ ] Send one enquiry from the deployed site and confirm arrival
 
-Then send one real test enquiry with an artwork attachment and confirm it
-arrives at `info@conesleeves.co.uk` with the attachment intact.
+**Note on the From address.** `SMTP_FROM_EMAIL` is set to an address on the old
+`.com` domain at the client's explicit instruction, after it was raised that it
+contradicts this site's domain-separation rule. It is confined to `.env`, so the
+build audit's `.com` sweep still passes. Gmail will rewrite the From header to
+the authenticating account unless that address is verified under Gmail
+Settings → Accounts → *Send mail as*; check the header on the first delivered
+enquiry and add the alias there if the rewrite is not wanted.
 
 ### 2. Legal entity details — BLOCKING
 
