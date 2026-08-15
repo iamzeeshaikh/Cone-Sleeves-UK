@@ -1310,6 +1310,10 @@ const previewColours = [
       const original = submitBtn.textContent;
       submitBtn.textContent = 'Sending…';
 
+      // Leaves the button disabled through the navigation, so an impatient
+      // second click cannot send the specification twice.
+      let sent = false;
+
       try {
         const res = await fetch('/api/quote/', {
           method: 'POST',
@@ -1319,11 +1323,14 @@ const previewColours = [
         const data = (await res.json()) as { ok: boolean; message?: string };
 
         if (res.ok && data.ok) {
-          status.setAttribute('data-state', 'ok');
-          status.textContent =
-            data.message ?? 'Thank you — your specification is with us and we will reply by email.';
+          sent = true;
           const w = window as unknown as { dataLayer?: unknown[] };
           if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'design_your_sleeve_submit' });
+
+          status.setAttribute('data-state', 'ok');
+          status.textContent = 'Thank you — taking you to the confirmation…';
+          window.location.assign('/thank-you/');
+          return;
         } else {
           status.setAttribute('data-state', 'error');
           status.textContent = data.message ?? 'Something went wrong. Please try again or email us.';
@@ -1333,8 +1340,10 @@ const previewColours = [
         status.textContent =
           'We could not reach the server. Please try again, or email info@conesleeves.co.uk.';
       } finally {
-        submitBtn.disabled = false;
-        submitBtn.textContent = original;
+        if (!sent) {
+          submitBtn.disabled = false;
+          submitBtn.textContent = original;
+        }
       }
     });
 

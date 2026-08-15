@@ -448,6 +448,11 @@ const formId = `qf-${id}`;
       const original = submit.textContent;
       submit.textContent = 'Sending…';
 
+      // Set on success so the `finally` below leaves the button disabled while
+      // the browser navigates. Re-enabling it during navigation is a window in
+      // which an impatient second click sends the enquiry twice.
+      let sent = false;
+
       try {
         const res = await fetch(form.action, {
           method: 'POST',
@@ -457,12 +462,20 @@ const formId = `qf-${id}`;
         const data = (await res.json()) as { ok: boolean; message?: string };
 
         if (res.ok && data.ok) {
-          status.setAttribute('data-state', 'ok');
-          status.textContent =
-            data.message ?? 'Thank you — your enquiry is with us and we will reply by email.';
-          form.reset();
+          sent = true;
+          // Push the event before navigating — once the location changes this
+          // document stops running.
           const w = window as unknown as { dataLayer?: unknown[] };
           if (Array.isArray(w.dataLayer)) w.dataLayer.push({ event: 'quote_submit' });
+
+          status.setAttribute('data-state', 'ok');
+          status.textContent = 'Thank you — taking you to the confirmation…';
+          // The no-JS path already redirects here (303). Matching it means one
+          // confirmation page, one analytics destination, and a result the
+          // visitor can see without scrolling back up a long form.
+          form.reset();
+          window.location.assign('/thank-you/');
+          return;
         } else {
           status.setAttribute('data-state', 'error');
           status.textContent =
@@ -473,8 +486,10 @@ const formId = `qf-${id}`;
         status.textContent =
           'We could not reach the server. Please try again, or email info@conesleeves.co.uk.';
       } finally {
-        submit.disabled = false;
-        submit.textContent = original;
+        if (!sent) {
+          submit.disabled = false;
+          submit.textContent = original;
+        }
       }
     });
   });
