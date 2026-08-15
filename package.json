@@ -3,10 +3,10 @@
   "type": "module",
   "version": "1.0.0",
   "private": true,
-  "description": "Cone Sleeves UK — custom printed cone sleeves and food packaging for UK businesses",
+  "description": "Cone Sleeves UK \u2014 custom printed cone sleeves and food packaging for UK businesses",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && node scripts/finalise-sitemap.mjs",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",

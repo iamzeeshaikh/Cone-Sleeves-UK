@@ -28,6 +28,10 @@ export const GET: APIRoute = () => {
     'Disallow: /*?s=',
     'Disallow: /*?replytocom=',
     '',
+    // /sitemap.xml is a copy of the index, published by
+    // scripts/finalise-sitemap.mjs. Both are advertised: the first is the one
+    // people and tools reach for, the second is what Astro generates.
+    `Sitemap: ${SITE.origin}/sitemap.xml`,
     `Sitemap: ${SITE.origin}/sitemap-index.xml`,
     '',
   ];
