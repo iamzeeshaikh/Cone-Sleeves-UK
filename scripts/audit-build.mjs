@@ -323,26 +323,26 @@ for (const path of indexablePages) {
 // Sitemap and robots
 // ---------------------------------------------------------------------------
 
-const sitemapIndex = join(dist, 'sitemap-index.xml');
-if (!existsSync(sitemapIndex)) {
-  fail('No sitemap-index.xml in the build');
+// The site publishes one flat sitemap at /sitemap.xml. finalise-sitemap.mjs
+// collapses Astro's index-plus-parts into it and deletes the originals, so
+// their continued presence would mean that step silently did not run.
+const sitemapFile = join(dist, 'sitemap.xml');
+if (!existsSync(sitemapFile)) {
+  fail('No sitemap.xml in the build — did finalise-sitemap.mjs run?');
 } else {
-  const indexXml = readFileSync(sitemapIndex, 'utf8');
-  const parts = [...indexXml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]);
-  const urls = new Set();
-
-  for (const part of parts) {
-    const name = part.split('/').pop();
-    const partFile = join(dist, name);
-    if (!existsSync(partFile)) {
-      fail(`Sitemap part missing from build: ${name}`);
-      continue;
+  for (const stale of ['sitemap-index.xml', 'sitemap-0.xml']) {
+    if (existsSync(join(dist, stale))) {
+      fail(`${stale} is still in the build; it should have been collapsed into sitemap.xml`);
     }
-    const xml = readFileSync(partFile, 'utf8');
-    for (const m of xml.matchAll(/<loc>([^<]+)<\/loc>/g)) urls.add(m[1]);
   }
 
-  console.log(`Sitemap lists ${urls.size} URLs across ${parts.length} part(s)`);
+  const xml = readFileSync(sitemapFile, 'utf8');
+  if (!xml.includes('<urlset')) {
+    fail('sitemap.xml is not a urlset — it should list URLs directly, not point at parts');
+  }
+
+  const urls = new Set([...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((m) => m[1]));
+  console.log(`Sitemap lists ${urls.size} URLs in one file`);
 
   for (const url of urls) {
     if (!url.startsWith(ORIGIN)) fail(`Sitemap URL on wrong host: ${url}`);
