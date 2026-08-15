@@ -105,8 +105,26 @@ prefix — 988 distinct first segments across 988 URLs. The only prefix that
 covers them is `/`, which would hide the real site as well. Per-URL removal of
 ~3,700 pages is not realistic. The 410 is the mechanism; removals are not.
 
-The exported list is saved as `spam-urls-2026-08-13.txt` if a sample is ever
-needed for a reconsideration request or for spot-checking that 410s are live.
+The exported list is saved as `spam-urls-2026-08-13.txt`, and is published as a
+sitemap of removed URLs at **/sitemap-removed.xml** — see section 3.6.
+
+### 3.6 Submit /sitemap-removed.xml — but only after 3.1
+
+A sitemap does not ask Google to remove anything; it asks Google to *look
+again*. That is what these URLs need, because a dead page is not dropped from
+the index until it is re-crawled, and ~3,700 of them left alone take months.
+
+Submit `https://conesleeves.co.uk/sitemap-removed.xml` in *Indexing →
+Sitemaps* **once the domain actually returns 410**. Submitting it while DNS
+still reaches the compromised WordPress — where these URLs return 200 with real
+spam content — asks Google to re-crawl and re-affirm 3,700 casino pages.
+
+It carries the 1,000 URLs Search Console exported, not all ~3,700 — that cap
+is Search Console’s, not the file’s. Re-export and regenerate with
+`node scripts/build-removed-sitemap.mjs YYYY-MM-DD` to widen it.
+
+Kept out of `sitemap.xml` and out of `robots.txt` so the real sitemap stays
+clean. Delete it once the indexed count is back to the real page count.
 
 ---
 

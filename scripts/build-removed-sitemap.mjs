@@ -1,5 +1,5 @@
 /**
- * Generates public/sitemap-recrawl.xml — a throwaway sitemap listing the
+ * Generates public/sitemap-removed.xml — a throwaway sitemap listing the
  * injected gambling URLs so Google re-crawls them and sees the 410.
  *
  * A sitemap does not ask Google to remove anything. It asks Google to *look
@@ -24,7 +24,7 @@ import { fileURLToPath } from 'node:url';
 
 const root = join(dirname(fileURLToPath(import.meta.url)), '..');
 const source = join(root, 'spam-urls-2026-08-13.txt');
-const target = join(root, 'public', 'sitemap-recrawl.xml');
+const target = join(root, 'public', 'sitemap-removed.xml');
 
 if (!existsSync(source)) {
   console.error(`Missing ${source}`);
@@ -65,5 +65,5 @@ const xml = [
 ].join('\n');
 
 writeFileSync(target, xml);
-console.log(`Wrote ${urls.length} URLs to public/sitemap-recrawl.xml (lastmod ${lastmod})`);
+console.log(`Wrote ${urls.length} URLs to public/sitemap-removed.xml (lastmod ${lastmod})`);
 console.log('Submit in Search Console ONLY after conesleeves.co.uk returns 410 for these.');
