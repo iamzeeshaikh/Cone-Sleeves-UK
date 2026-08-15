@@ -19,6 +19,11 @@ src-images/
 *.xml
 wc-product-export-*.csv
 
+# ...but anything under public/ is a deployable asset, not source material.
+# The *.xml rule above was written for the WordPress export dumps and silently
+# swallowed public/sitemap-recrawl.xml, which then never reached the build.
+!public/**/*.xml
+
 # macOS
 .DS_Store
 ._*
