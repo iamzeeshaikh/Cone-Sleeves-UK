@@ -106,7 +106,7 @@ export const CHAT = {
 } as const;
 
 export const ANALYTICS = {
-  ga4: import.meta.env.PUBLIC_GA4_ID || '',
+  ga4: import.meta.env.PUBLIC_GA4_ID || 'G-5LP51J1629',
   gtm: import.meta.env.PUBLIC_GTM_ID || '',
   gscVerification: import.meta.env.PUBLIC_GSC_VERIFICATION || '',
 } as const;
