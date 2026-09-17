@@ -154,8 +154,8 @@ export const PAGE_FAQS: Record<string, Faq[]> = {
       a: 'A supplier of printed cone sleeves and food packaging to businesses across the United Kingdom, working to specification rather than from a stock list. The catalogue is broad because the customers are: an ice cream shop and a street food trader need different things from the same range.',
     },
     {
-      q: 'Why does the site not publish prices?',
-      a: 'Because a unit price with no quantity, board, colour count or finish attached to it is a number that will be wrong when you order. Every job is quoted against its own specification, which is slower to read and considerably more accurate.',
+      q: 'Why does the site only publish a starting price?',
+      a: 'Because a unit price with no quantity, board, colour count or finish attached to it is a number that will be wrong when you order. Product pages carry an indicative figure to start from, but every job is quoted against its own specification, which is slower to read and considerably more accurate.',
     },
     {
       q: 'Why are lead times and minimum quantities missing?',

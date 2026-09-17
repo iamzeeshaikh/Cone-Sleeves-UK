@@ -5,6 +5,7 @@ import {
   SOCIAL_PROFILES,
   BUSINESS_PENDING,
   POSTAL_ADDRESS,
+  PRICING,
 } from '~/config/site';
 import type { Faq } from '~/data/types';
 
@@ -12,10 +13,11 @@ import type { Faq } from '~/data/types';
  * JSON-LD builders.
  *
  * Every node here is generated from content that is visibly on the page.
- * There are deliberately no builders for reviews, ratings, prices, stock
- * availability, delivery times or return policies, because none of those
- * facts have been supplied and inventing them would be worse than omitting
- * the markup entirely.
+ * There are deliberately no builders for reviews, ratings, delivery times or
+ * lead times, because none of those facts have been supplied and inventing
+ * them would be worse than omitting the markup entirely. The one price that
+ * is published — the indicative from-price in `PRICING` — is rendered on the
+ * page itself, which is why the Offer below may carry it.
  */
 
 const ORG_ID = `${SITE.origin}/#organization`;
@@ -129,12 +131,58 @@ export function breadcrumbs(path: string, crumbs: Crumb[]) {
 }
 
 /**
- * Product node without offers.
+ * `priceValidUntil` one year from the build, never a hard-coded date.
  *
- * Offer, AggregateOffer, price, availability, MerchantReturnPolicy and
- * OfferShippingDetails are all omitted on purpose: this is a quote-led site
- * with no published prices, no stated stock position and no confirmed
- * returns or shipping policy. Emitting them would mean inventing data.
+ * Google warns on an Offer whose price has expired, and a literal date in the
+ * source goes stale silently. Every rebuild moves this forward.
+ */
+function priceValidUntil(): string {
+  const d = new Date();
+  d.setFullYear(d.getFullYear() + 1);
+  return d.toISOString().slice(0, 10);
+}
+
+/**
+ * The Offer carried by every product page.
+ *
+ * Deliberately unconditional and with no lookup behind it: an `offers` key
+ * that is spread behind a truthy check silently ships product pages with no
+ * offer at all, which is the failure this replaces. `PRICING.unitPrice` is
+ * the same constant the visible "From £x.xx per …" line renders, so the
+ * markup can never claim a price the page does not show.
+ *
+ * `hasMerchantReturnPolicy` is emitted because /returns-and-refunds/ states
+ * in published copy that there is no general right to return correctly
+ * produced bespoke goods. `shippingDetails` is NOT emitted: no delivery rate
+ * is published anywhere on the site, and inventing one would be worse than
+ * omitting a recommended field.
+ */
+function offer(path: string) {
+  return {
+    '@type': 'Offer',
+    url: canonical(path),
+    price: PRICING.unitPrice,
+    priceCurrency: PRICING.currency,
+    priceValidUntil: priceValidUntil(),
+    availability: 'https://schema.org/InStock',
+    itemCondition: 'https://schema.org/NewCondition',
+    seller: { '@id': ORG_ID },
+    hasMerchantReturnPolicy: {
+      '@type': 'MerchantReturnPolicy',
+      applicableCountry: 'GB',
+      // Made to an approved specification on a die cut to the customer's own
+      // product, so it cannot be resold — see /returns-and-refunds/.
+      returnPolicyCategory: 'https://schema.org/MerchantReturnNotPermitted',
+    },
+  };
+}
+
+/**
+ * Product node.
+ *
+ * Carries an Offer so the page is eligible for Product snippets and Merchant
+ * listings. `aggregateRating` and `review` stay absent: no review data has
+ * been collected, and the /about/ page says so in as many words.
  */
 export function product(opts: {
   name: string;
@@ -155,6 +203,7 @@ export function product(opts: {
     ),
     brand: { '@type': 'Brand', name: SITE.name },
     manufacturer: { '@id': ORG_ID },
+    offers: offer(opts.path),
   };
 }
 

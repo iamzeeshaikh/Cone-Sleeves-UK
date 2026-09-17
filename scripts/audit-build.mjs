@@ -275,10 +275,42 @@ for (const [path, file] of pages) {
           fail(`${where}: JSON-LD contains "${banned}" — no review data has been supplied`);
         }
       }
-      // Price and availability would be invented on a quote-led site.
-      for (const banned of ['price', 'priceCurrency', 'availability', 'offers']) {
-        if (Object.prototype.hasOwnProperty.call(node, banned)) {
-          fail(`${where}: JSON-LD node declares "${banned}" without supporting data`);
+      // A Product must carry a complete Offer, and the price it claims must be
+      // rendered on the page. A priced listing landing on a page that shows no
+      // price is what Merchant Center treats as misrepresentation, and an
+      // `offers` key hidden behind a truthy check is how that happens.
+      if (node['@type'] === 'Product') {
+        const offers = node.offers;
+        if (!offers || offers['@type'] !== 'Offer') {
+          fail(`${where}: Product node has no Offer — ineligible for Merchant listings`);
+        } else {
+          for (const required of [
+            'price',
+            'priceCurrency',
+            'url',
+            'availability',
+            'itemCondition',
+            'priceValidUntil',
+            'seller',
+          ]) {
+            if (offers[required] === undefined) {
+              fail(`${where}: Product Offer is missing "${required}"`);
+            }
+          }
+          if (!(typeof offers.price === 'number' && offers.price > 0)) {
+            fail(`${where}: Product Offer price must be a number above zero`);
+          }
+          if (offers.priceCurrency !== 'GBP') {
+            fail(`${where}: Product Offer currency is "${offers.priceCurrency}", not GBP`);
+          }
+          if (Date.parse(offers.priceValidUntil) <= Date.now()) {
+            fail(`${where}: Product Offer priceValidUntil is not in the future`);
+          }
+          // The number itself, formatted as the page renders it.
+          const shown = `£${Number(offers.price).toFixed(2)}`;
+          if (!(document.body.textContent ?? '').includes(shown)) {
+            fail(`${where}: Offer price ${shown} appears nowhere in the page text`);
+          }
         }
       }
       if (node['@type'] === 'LocalBusiness') {

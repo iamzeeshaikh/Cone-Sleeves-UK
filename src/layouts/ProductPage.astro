@@ -11,7 +11,7 @@ import type { Product } from '~/data/types';
 import { relatedProducts } from '~/data/products';
 import { categoryBySlug, subcategoriesOf, categoryPath } from '~/data/categories';
 import { productImages } from '~/lib/images';
-import { whatsappHref, CONTACT, TEL_HREF } from '~/config/site';
+import { whatsappHref, CONTACT, TEL_HREF, fromPriceLine } from '~/config/site';
 import * as schema from '~/lib/schema';
 
 interface Props {
@@ -61,6 +61,10 @@ const graph = [
 ];
 
 const enquiryLabel = product.enquiryLabel ?? product.name.toLowerCase();
+
+// Rendered from the same constant the Offer above reads, so the visible price
+// and the structured-data price cannot drift apart.
+const priceLine = fromPriceLine(product.category);
 
 // Ordering guidance is framed by range, so the strip is not identical
 // wording on all 170 product pages.
@@ -121,6 +125,15 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
       {category && <p class="eyebrow">{sub ? sub.name : category.name}</p>}
       <h1>{product.h1}</h1>
       {product.intro.map((p) => <p class="lede">{p}</p>)}
+
+      <p class="product-price">
+        <strong>{priceLine}</strong>
+        <span>
+          Indicative starting price, excluding VAT and delivery. Your unit cost moves
+          with quantity, board, colour count and finish, and the figure that binds is the
+          one written on your quotation.
+        </span>
+      </p>
 
       <div class="btn-row product-cta">
         <a class="btn btn-primary" href="#quote">Get a quote</a>
@@ -241,6 +254,27 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
 
   .product-hero-body .lede + .lede {
     margin-top: 0.75rem;
+  }
+
+  .product-price {
+    margin-top: var(--space-m);
+    padding: 0.7rem 0.9rem;
+    background: var(--green-050);
+    border-radius: var(--radius-m, 0.5rem);
+    max-width: 46ch;
+  }
+
+  .product-price strong {
+    display: block;
+    font-size: var(--step-1);
+    line-height: 1.2;
+  }
+
+  .product-price span {
+    display: block;
+    margin-top: 0.3rem;
+    font-size: 0.87rem;
+    color: var(--c-text-soft);
   }
 
   .product-cta {

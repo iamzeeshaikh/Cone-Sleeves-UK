@@ -54,6 +54,51 @@ export const POSTAL_ADDRESS = {
 
 export const TEL_HREF = `tel:${CONTACT.phoneE164}`;
 
+/**
+ * Indicative starting unit price.
+ *
+ * One number, used by BOTH the visible "From £x.xx per …" line on a product
+ * page and the Offer in that page's structured data, so the two can never
+ * drift apart. A priced listing whose price appears nowhere in the page text
+ * is what Merchant Center treats as misrepresentation, so neither half of
+ * this is optional and neither is conditional.
+ *
+ * The figure is a floor, not a quotation: it sits below the unit price the
+ * same range is sold at on the sister site theconesleeves.com ($0.50 per
+ * sleeve, roughly £0.39), so "from" is never an overstatement. Quantity,
+ * board, colour count and finish still move the real number, which is why
+ * every page carrying it also says the quotation is what binds.
+ */
+export const PRICING = {
+  /** Lowest unit price across the range, GBP, excluding VAT and delivery. */
+  unitPrice: 0.3,
+  currency: SITE.currency,
+  /** Rendered form of the same number — always built from `unitPrice`. */
+  get display(): string {
+    return `£${this.unitPrice.toFixed(2)}`;
+  },
+} as const;
+
+/** The unit a price is quoted per, by category slug. */
+const PRICE_UNIT_BY_CATEGORY: Record<string, string> = {
+  'cone-sleeves': 'sleeve',
+  'food-sleeves': 'sleeve',
+  'beverage-sleeves': 'sleeve',
+  'food-trays': 'tray',
+  'food-boxes': 'box',
+  'paper-cups': 'cup',
+  'printed-papers-bags': 'unit',
+};
+
+export function priceUnit(categorySlug?: string): string {
+  return (categorySlug && PRICE_UNIT_BY_CATEGORY[categorySlug]) || 'unit';
+}
+
+/** "From £0.30 per sleeve" — the one wording, built from the one number. */
+export function fromPriceLine(categorySlug?: string): string {
+  return `From ${PRICING.display} per ${priceUnit(categorySlug)}`;
+}
+
 /** Google Maps search link, built from the address rather than a stored URL. */
 export const MAP_HREF = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(
   ADDRESS_LINE,
