@@ -154,6 +154,8 @@ export const ANALYTICS = {
   ga4: import.meta.env.PUBLIC_GA4_ID || 'G-5LP51J1629',
   gtm: import.meta.env.PUBLIC_GTM_ID || '',
   gscVerification: import.meta.env.PUBLIC_GSC_VERIFICATION || '',
+  /** Microsoft Clarity — the portfolio's packaging project. */
+  clarity: import.meta.env.PUBLIC_CLARITY_ID || 'yk7d21q01g',
 } as const;
 
 /** Social profiles are only emitted in schema when a real profile exists. */
