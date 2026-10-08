@@ -1,0 +1,191 @@
+{
+ "_note": "Ratings restored 2026-10-08 on the owner's instruction. The old old UK WordPress site mirrored the US site; its own database was never exported, so these are the WooCommerce reviews recorded in the sister US site's WordPress export of 2026-08-11 (the Woo default Product graph those pages printed: aggregateRating = average of approved reviews, one Review node per approved review). Only the six products Search Console showed review snippets for on conesleeves.co.uk (Mar-May 2026) are listed. Any path not listed here gets no rating.",
+ "products": {
+  "/crepe-cone-packaging/": {
+   "_source": "US site WordPress export 2026-08-11, product crepe-cone-packaging, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Martha Casantosan",
+     "datePublished": "2023-03-02",
+     "ratingValue": 5,
+     "reviewBody": "Items are on hand and of high quality. Order was shipped right away. Highly recommended."
+    },
+    {
+     "author": "Rebecca Riesinger",
+     "datePublished": "2023-03-02",
+     "ratingValue": 5,
+     "reviewBody": "Quick and easy. Delivery time quite good. Great. I'm excited. I'll order from there again."
+    },
+    {
+     "author": "Annamaria Gruber",
+     "datePublished": "2023-03-02",
+     "ratingValue": 5,
+     "reviewBody": "Best quality Crepe Cone I have ever acquired. I will definitely buy again. Customer service was very helpful and fast."
+    },
+    {
+     "author": "Braden H",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "It was great! Super easy to order and the Crepe Cone Packaging came out great."
+    }
+   ]
+  },
+  "/tray-and-sleeves/": {
+   "_source": "US site WordPress export 2026-08-11, product tray-and-sleeves, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Slade Maureen",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "The whole experience was great! They were very communicative and easy to work with."
+    },
+    {
+     "author": "Tyler Ayden",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Fast and friendly service from start to finish. The whole experience was great!"
+    },
+    {
+     "author": "Donny Richardine",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Customer support services were quick to respond to questions and provided accurate and helpful information. Thanks"
+    },
+    {
+     "author": "Jonas Pitts",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "It was my very first experience with Cone Sleeves, but I must say that every step in the process was great. From design to arrival on my doorstep I was impressed and will be using Cone Sleeves again."
+    }
+   ]
+  },
+  "/custom-waffle-trays/": {
+   "_source": "US site WordPress export 2026-08-11, product custom-waffle-trays, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Joandra Desmond",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "The company made it very easy to have my Custom Waffle Trays made. They came out as expected and will definitely be ordering more in the future"
+    },
+    {
+     "author": "Jade Brianne",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Very intuitive website Excellent communication"
+    },
+    {
+     "author": "Elise Leah",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "If I could give more stars, I would. The team helped me with my design, shipped quickly. Thank you!"
+    },
+    {
+     "author": "Alison Camille",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "I had to change things about my orders multiple times and I was able to call in and do it so quickly. Cone Sleeves gave me the most positive experience I've ever had with a retailer. I can't shut up about it!!"
+    }
+   ]
+  },
+  "/ice-cream-cone-holder/": {
+   "_source": "US site WordPress export 2026-08-11, product ice-cream-cone-holder, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Jenelle Sophy",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "The sleeves are great, the contact is friendly and always helpful, shipping is fast and the packaging makes you feel like opening a pure luxury item"
+    },
+    {
+     "author": "Carl Non",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Easy to deal with. No issues. Received everything as expected. Thanks Cone Sleeves!"
+    },
+    {
+     "author": "Johnny Lamb",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "I ordered two sets of Cone Holder. They are literally the best customer service people in any business. And the product! OMG .Absolutely superb"
+    },
+    {
+     "author": "Dolly Fawn",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Great company! I've bought multiple Cone Holder (+20) and have always been amazed on the quality! Thanks"
+    }
+   ]
+  },
+  "/custom-cardboard-food-trays/": {
+   "_source": "US site WordPress export 2026-08-11, product custom-cardboard-food-trays, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Kimberly E. Beczo",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "The design page and order format is very easy to use. The products arrived ahead of schedule and are decent quality."
+    },
+    {
+     "author": "Gemma Archie",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Your graphics team and customer service team are amazing. Will definitely purchase from them again."
+    },
+    {
+     "author": "Vittorio Rossi",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "The response to all queries was exceptionally professional and efficient. I am eagerly looking forward to establishing a regular working relationship with them."
+    },
+    {
+     "author": "Gonzalez Richard",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "So glad to have found this company! Communication was great and service was excellent."
+    }
+   ]
+  },
+  "/ice-cream-cone-tray/": {
+   "_source": "US site WordPress export 2026-08-11, product ice-cream-cone-tray, approved WooCommerce reviews",
+   "ratingValue": 5.0,
+   "reviewCount": 4,
+   "reviews": [
+    {
+     "author": "Coleman Murphy",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "They’re so helpful and very quick to respond in the case of missing items. Love the Cone Sleeves definitely coming back for more!"
+    },
+    {
+     "author": "Rick Stanfill Jr.",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Great product, great friendly people. Thanks again, you guys ROCK!!!"
+    },
+    {
+     "author": "Joel Lankhaar",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "Such a fantastic product! I bought some Ice Cream Cone Tray from Cone Sleeves some months ago. Products are great!"
+    },
+    {
+     "author": "Marco Caporaletti",
+     "datePublished": "2023-07-19",
+     "ratingValue": 5,
+     "reviewBody": "It was a very pleasant experience. They were very nice and super quick answering and fixing the problem. AMAZING!!!"
+    }
+   ]
+  }
+ }
+}

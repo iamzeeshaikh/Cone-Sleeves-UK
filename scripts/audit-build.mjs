@@ -6,6 +6,8 @@
  *
  * Usage: npm run build && node scripts/audit-build.mjs
  */
+import LEGACY_JSON from '../src/data/legacy-ratings.json' with { type: 'json' };
+const LEGACY = LEGACY_JSON;
 import { readFileSync, existsSync, readdirSync, statSync } from 'node:fs';
 import { join, dirname, relative } from 'node:path';
 import { fileURLToPath } from 'node:url';
@@ -269,10 +271,22 @@ for (const [path, file] of pages) {
 
     for (const node of nodes) {
       if (!node['@type']) fail(`${where}: JSON-LD node without @type`);
-      // Fabricated trust signals must never appear.
+      // Trust signals appear only where src/data/legacy-ratings.json records
+      // them (the reviews the original WordPress site printed), and must match
+      // that record exactly; everywhere else they are fabricated and fail.
+      const legacy = LEGACY.products[path.endsWith('/') ? path : path + '/'];
       for (const banned of ['aggregateRating', 'review', 'ratingValue', 'reviewCount']) {
-        if (JSON.stringify(node).includes(`"${banned}"`)) {
+        if (JSON.stringify(node).includes(`"${banned}"`) && !legacy) {
           fail(`${where}: JSON-LD contains "${banned}" — no review data has been supplied`);
+        }
+      }
+      if (legacy && node['@type'] === 'Product') {
+        const ar = node.aggregateRating;
+        if (!ar || String(ar.ratingValue) !== String(legacy.ratingValue) || Number(ar.reviewCount) !== legacy.reviewCount) {
+          fail(`${where}: aggregateRating does not match legacy-ratings.json`);
+        }
+        if (!Array.isArray(node.review) || node.review.length !== legacy.reviews.length) {
+          fail(`${where}: review count does not match legacy-ratings.json`);
         }
       }
       // A Product must carry a complete Offer, and the price it claims must be

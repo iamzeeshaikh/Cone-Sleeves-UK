@@ -8,6 +8,7 @@ import {
   PRICING,
 } from '~/config/site';
 import type { Faq } from '~/data/types';
+import legacyRatings from '~/data/legacy-ratings.json' with { type: 'json' };
 
 /**
  * JSON-LD builders.
@@ -177,12 +178,25 @@ function offer(path: string) {
   };
 }
 
+/** The reviews the original WordPress site printed for a product path, if any. */
+export function legacyRating(path: string) {
+  const key = path.endsWith('/') ? path : `${path}/`;
+  return (legacyRatings.products as Record<string, LegacyRating>)[key] ?? null;
+}
+export type LegacyRating = {
+  ratingValue: number;
+  reviewCount: number;
+  reviews: { author: string; datePublished: string; ratingValue: number; reviewBody: string }[];
+};
+
 /**
  * Product node.
  *
  * Carries an Offer so the page is eligible for Product snippets and Merchant
- * listings. `aggregateRating` and `review` stay absent: no review data has
- * been collected, and the /about/ page says so in as many words.
+ * listings. `aggregateRating` and `review` appear only on the six products
+ * whose WordPress-era reviews are recorded in src/data/legacy-ratings.json
+ * (restored 2026-10-08 on the owner's instruction); the same reviews are
+ * rendered on those pages. Everywhere else they stay absent.
  */
 export function product(opts: {
   name: string;
@@ -204,6 +218,28 @@ export function product(opts: {
     brand: { '@type': 'Brand', name: SITE.name },
     manufacturer: { '@id': ORG_ID },
     offers: offer(opts.path),
+    ...ratingNodes(opts.path),
+  };
+}
+
+function ratingNodes(path: string) {
+  const r = legacyRating(path);
+  if (!r) return {};
+  return {
+    aggregateRating: {
+      '@type': 'AggregateRating',
+      ratingValue: r.ratingValue,
+      reviewCount: r.reviewCount,
+      bestRating: 5,
+      worstRating: 1,
+    },
+    review: r.reviews.map((rev) => ({
+      '@type': 'Review',
+      author: { '@type': 'Person', name: rev.author },
+      datePublished: rev.datePublished,
+      reviewRating: { '@type': 'Rating', ratingValue: rev.ratingValue, bestRating: 5, worstRating: 1 },
+      reviewBody: rev.reviewBody,
+    })),
   };
 }
 

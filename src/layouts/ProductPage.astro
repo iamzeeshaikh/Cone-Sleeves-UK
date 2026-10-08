@@ -11,6 +11,7 @@ import type { Product } from '~/data/types';
 import { relatedProducts } from '~/data/products';
 import { categoryBySlug, subcategoriesOf, categoryPath } from '~/data/categories';
 import { productImages } from '~/lib/images';
+import { legacyRating } from '~/lib/schema';
 import { whatsappHref, CONTACT, TEL_HREF, fromPriceLine } from '~/config/site';
 import * as schema from '~/lib/schema';
 
@@ -20,6 +21,7 @@ interface Props {
 
 const { product } = Astro.props;
 const path = `/${product.slug}/`;
+const rating = legacyRating(path);
 const category = categoryBySlug(product.category);
 const sub = product.subcategory
   ? subcategoriesOf(product.category).find((s) => s.slug === product.subcategory)
@@ -195,6 +197,29 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
         </div>
       </div>
     </section>
+
+    {rating && (
+      <section class="content-section legacy-reviews" aria-labelledby="reviews-title">
+        <h2 id="reviews-title">Customer Reviews</h2>
+        <p class="legacy-reviews-summary">
+          <span class="legacy-stars" aria-hidden="true">★★★★★</span>
+          Rated {rating.ratingValue} out of 5 from {rating.reviewCount} customer reviews,
+          recorded on our original website.
+        </p>
+        <ul class="legacy-reviews-list">
+          {rating.reviews.map((r) => (
+            <li>
+              <p class="legacy-review-meta">
+                <span class="legacy-stars" aria-label={`${r.ratingValue} out of 5`}>{'★'.repeat(r.ratingValue)}</span>
+                <strong>{r.author}</strong>
+                <time datetime={r.datePublished}>{new Date(r.datePublished).toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric' })}</time>
+              </p>
+              <p>{r.reviewBody}</p>
+            </li>
+          ))}
+        </ul>
+      </section>
+    )}
 
     <Faqs faqs={product.faqs} heading={`${product.name}: Common Questions`} />
 
@@ -387,4 +412,13 @@ const ordering = orderingByCategory[product.category] ?? orderingByCategory['con
   .related-grid {
     margin-top: var(--space-m);
   }
+</style>
+
+<style>
+  .legacy-reviews-summary { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; margin: 0 0 18px; }
+  .legacy-stars { color: #e0a800; letter-spacing: 1px; }
+  .legacy-reviews-list { list-style: none; margin: 0; padding: 0; display: grid; gap: 14px; }
+  .legacy-reviews-list li { border: 1px solid #e6e3dc; border-radius: 10px; padding: 14px 16px; background: #fff; }
+  .legacy-review-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; margin: 0 0 6px; font-size: 14px; color: #5b6267; }
+  .legacy-reviews-list li p:last-child { margin: 0; }
 </style>
