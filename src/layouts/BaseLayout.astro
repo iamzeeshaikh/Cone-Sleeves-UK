@@ -4,7 +4,7 @@ import Seo from '~/components/Seo.astro';
 import Header from '~/components/Header.astro';
 import Footer from '~/components/Footer.astro';
 import FloatingContact from '~/components/FloatingContact.astro';
-import { SITE, ANALYTICS } from '~/config/site';
+import { SITE, ANALYTICS, CHAT } from '~/config/site';
 import { organisation, website } from '~/lib/schema';
 
 interface Props {
@@ -99,7 +99,7 @@ const graph = [organisation(), website(), ...schema];
     <link rel="alternate" type="application/rss+xml" title={`${SITE.name} guides`} href="/rss.xml" />
 
     {/* LiveChat Desk widget. Async, renders in its own shadow root. */}
-    <script is:inline src="https://livechat-desk-omega.vercel.app/w.js" data-site="conesleeves-couk" async></script>
+    {CHAT.siteId && <script is:inline src={`${CHAT.host}/w.js`} data-site={CHAT.siteId} async></script>}
 
     {
       /* Analytics is only emitted when a real ID is configured. No invented

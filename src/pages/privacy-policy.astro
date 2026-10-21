@@ -11,7 +11,7 @@ const path = '/privacy-policy/';
   path={path}
   h1="Privacy Policy"
   standfirst="What happens to the information you send us, why we hold it, and how to ask us to delete it."
-  updated="2026-08-13"
+  updated="2026-10-22"
   crumbLabel="Privacy Policy"
 >
   <h2>Who This Policy Covers</h2>
@@ -46,12 +46,25 @@ const path = '/privacy-policy/';
     period needed to apply a rate limit that keeps automated spam off the form.
   </p>
   {
-    CHAT.zendeskKey && (
-      <p>
-        If you open the chat window, whatever you type into it — and any name or email you
-        give there — reaches us through Zendesk. Treat it as you would an email: it is a
-        good place to ask a question, and not the place to send anything confidential.
-      </p>
+    CHAT.siteId && (
+      <>
+        <p>
+          If you use the live chat window, we receive whatever you type into it, any name,
+          email address or telephone number you give there, and any file you attach. The
+          chat also records the page you were on, the page that referred you to this site,
+          your browser type, and the country and town your connection appears to come from,
+          so that whoever answers knows what you were looking at. Treat chat as you would an
+          email: it is a good place to ask a question, and not the place to send anything
+          confidential.
+        </p>
+        <p>
+          The chat window keeps a random visitor identifier in your browser so that a
+          conversation can continue if you move between pages or come back later. It is
+          not shared with anyone else and does not identify you until you choose to give a
+          name. Our <a href="/cookie-policy/">cookie policy</a> lists exactly what it
+          stores.
+        </p>
+      </>
     )
   }
 
@@ -82,10 +95,15 @@ const path = '/privacy-policy/';
     These providers act on our instructions.
   </p>
   {
-    CHAT.zendeskKey && (
+    CHAT.siteId && (
       <p>
-        Live chat is provided by Zendesk, which processes chat messages on our behalf and
-        holds them in its own systems under its own terms.
+        Live chat runs on LiveChat Desk, our own chat system rather than a third-party chat
+        service. Chat messages and any attachments are stored in a database hosted for us by
+        Supabase, Inc. in its Mumbai, India region, and the chat application itself is served
+        by Vercel, Inc. Both act only on our instructions, and that storage is outside the
+        UK; the transfer rests on their standard contractual terms for customer data. Chat
+        conversations are kept on the same basis as email enquiries, described above, and
+        are deleted on request.
       </p>
     )
   }
@@ -105,8 +123,9 @@ const path = '/privacy-policy/';
       </p>
     ) : (
       <p>
-        This site loads no analytics or advertising scripts. The live chat window does set
-        cookies, which our <a href="/cookie-policy/">cookie policy</a> describes. If
+        This site loads no analytics or advertising scripts. The live chat window keeps a
+        few values in your browser's storage, which our{' '}
+        <a href="/cookie-policy/">cookie policy</a> describes. If
         analytics is enabled later, that page will describe exactly what it sets, and a
         consent mechanism will be added first.
       </p>

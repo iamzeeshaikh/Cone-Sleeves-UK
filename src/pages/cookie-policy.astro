@@ -4,7 +4,7 @@ import { CONTACT, ANALYTICS, CHAT } from '~/config/site';
 
 const path = '/cookie-policy/';
 const analyticsActive = Boolean(ANALYTICS.ga4 || ANALYTICS.gtm);
-const chatActive = Boolean(CHAT.zendeskKey);
+const chatActive = Boolean(CHAT.siteId);
 ---
 
 <TextPage
@@ -13,30 +13,40 @@ const chatActive = Boolean(CHAT.zendeskKey);
   path={path}
   h1="Cookie Policy"
   standfirst="What this website actually sets, described from how it is configured rather than from a template."
-  updated="2026-08-13"
+  updated="2026-10-22"
   crumbLabel="Cookie Policy"
 >
   {
     chatActive && (
       <>
-        <h2>Live Chat Sets Cookies</h2>
+        <h2>Live Chat Uses Browser Storage, Not Cookies</h2>
         <p>
-          This site loads Zendesk Chat so you can talk to us during the working day. Zendesk
-          sets cookies in your browser to keep a conversation attached to you as you move
-          between pages, to remember whether the chat window is open, and to reconnect you
-          to the same conversation if you return.
+          This site loads our own live chat window (LiveChat Desk) so you can talk to us
+          during the working day. It sets no cookies. It keeps a small number of values in
+          your browser's local storage and session storage, which stay on your device and
+          are read only by the chat window on this site. Their job is to keep a conversation
+          attached to you as you move between pages, to remember whether the window is open,
+          and to reconnect you to the same conversation if you return. None of them is used
+          for advertising, and none is shared with any other site. Each name ends in this
+          site's own identifier, shown here as "…".
         </p>
+        <table>
+          <thead>
+            <tr><th>Name</th><th>Purpose</th><th>Lasts</th></tr>
+          </thead>
+          <tbody>
+            {CHAT.storage.local.map(([name, purpose, lasts]) => (
+              <tr><td>{name}</td><td>{purpose}</td><td>{lasts}</td></tr>
+            ))}
+            {CHAT.storage.session.map(([name, purpose, lasts]) => (
+              <tr><td>{name}</td><td>{purpose} (session storage)</td><td>{lasts}</td></tr>
+            ))}
+          </tbody>
+        </table>
         <p>
-          These are set by Zendesk rather than by us, and they are governed by Zendesk's own
-          privacy terms as well as this policy. They are not used for advertising.
-        </p>
-        <p class="pending">
-          <strong>This section needs completing before launch</strong>
-          Zendesk's current cookie names, their individual purposes and their lifetimes have
-          not been listed here, because they should be taken from Zendesk's own published
-          documentation rather than guessed at. A consent mechanism is also outstanding: the
-          chat widget loads on page load today, and non-essential cookies should be set only
-          after a visitor agrees.
+          These values are needed for the chat to work at all, so they fall within the
+          strictly necessary exemption and no consent banner is shown for them. Clearing your
+          browser's site data for conesleeves.co.uk removes all of them.
         </p>
       </>
     )
@@ -59,10 +69,11 @@ const chatActive = Boolean(CHAT.zendeskKey);
 
         <h2>What the Site Itself Stores</h2>
         <p>
-          Nothing in your browser. The site's own code uses no local storage, no session
-          storage and no fingerprinting. Fonts and images are served from this domain rather
-          than from a third-party network, so browsing the pages themselves sends no request
-          elsewhere.
+          Nothing beyond the live chat values listed above. The site's own pages use no local
+          storage, no session storage and no fingerprinting. Fonts and images are served from
+          this domain rather than from a third-party network, so browsing the pages
+          themselves sends no request elsewhere; the chat window is the one script loaded
+          from another address, our own chat system.
         </p>
         <p>
           Our server records the IP address of enquiry form submissions briefly, in order to
@@ -123,11 +134,16 @@ const chatActive = Boolean(CHAT.zendeskKey);
     with its own cookies and privacy terms. Following that link takes you outside this
     website and outside this policy.
   </p>
-  <p>
-    Zendesk, which provides the chat window, is a third party processing what you type in
-    that window on our behalf. Anything you send through chat reaches Zendesk as well as
-    us.
-  </p>
+  {
+    chatActive && (
+      <p>
+        The chat window is our own system, not a third-party chat service, so what you type
+        in it reaches only us. It is hosted for us by Supabase and Vercel, which act on our
+        instructions; our <a href="/privacy-policy/">privacy policy</a> explains where that
+        data is held.
+      </p>
+    )
+  }
 
   <h2>Questions</h2>
   <p>

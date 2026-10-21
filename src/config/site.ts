@@ -139,15 +139,26 @@ export const BUSINESS_PENDING = {
 } as const;
 
 /**
- * Zendesk Chat (Zopim). The key is a public widget identifier, not a secret —
- * it is visible in the page source by design — but it lives here so there is
- * one place to change or disable it.
- *
- * Supplied by the client 2026-08-13. Blank the env var to remove the widget.
+ * Live chat: LiveChat Desk, the company's own chat system (replaced Zendesk
+ * Chat on 2026-10-21). The site id is a public widget identifier, not a
+ * secret. Blank the env var to remove the widget; the privacy and cookie
+ * pages drop their chat sections with it.
  */
 export const CHAT = {
-  zendeskKey:
-    import.meta.env.PUBLIC_ZENDESK_CHAT_KEY || '4h3lbyJihoT1mCOqDA0VoQOaVQE9qTOP',
+  host: 'https://livechat-desk-omega.vercel.app',
+  siteId: import.meta.env.PUBLIC_LIVECHAT_SITE ?? 'conesleeves-couk',
+  /** What the widget keeps in the browser — listed on the cookie policy. */
+  storage: {
+    local: [
+      ['lcd-vid-…', 'a random visitor id, so a returning visitor is recognised', 'until cleared'],
+      ['lcd-sid-…, lcd-start-…, lcd-act-…', 'the current visit (ends after 30 minutes of inactivity or 12 hours)', '12 hours'],
+      ['lcd-token-…', 'the id of your open conversation, so you can continue it', 'until the chat is closed'],
+      ['lcd-contact-…', 'whether you have already given a name and email', 'until cleared'],
+      ['lcd-ref-…', 'the site that referred you, so we know how you found us', 'until cleared'],
+      ['lcd-dismissed-…, lcd-autoopen-…, lcd-muted-…', 'whether you closed the window, saw it open, or muted its sound', 'up to 24 hours'],
+    ],
+    session: [['lcd-open-…', 'whether the chat window is open, so it stays open as you move between pages', 'this tab']],
+  },
 } as const;
 
 export const ANALYTICS = {
