@@ -64,7 +64,7 @@ export const TEL_HREF = `tel:${CONTACT.phoneE164}`;
  * this is optional and neither is conditional.
  *
  * The figure is a floor, not a quotation: it sits below the unit price the
- * same range is sold at on the sister site theconesleeves.com ($0.50 per
+ * same range is sold at on the US sister site ($0.50 per
  * sleeve, roughly £0.39), so "from" is never an overstatement. Quantity,
  * board, colour count and finish still move the real number, which is why
  * every page carrying it also says the quotation is what binds.

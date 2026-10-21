@@ -65,7 +65,10 @@ function walk(dir, out = []) {
 }
 
 const allFiles = walk(dist);
-const htmlFiles = allFiles.filter((f) => f.endsWith('.html'));
+// Search Console ownership files (public/google<hex>.html) are not pages.
+const htmlFiles = allFiles.filter(
+  (f) => f.endsWith('.html') && !/(^|\/)google[0-9a-f]+\.html$/.test(f),
+);
 
 /** dist path → site path, e.g. dist/client/about/index.html → /about/ */
 function sitePath(file) {
