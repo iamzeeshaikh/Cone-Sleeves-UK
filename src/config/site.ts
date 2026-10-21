@@ -145,7 +145,7 @@ export const BUSINESS_PENDING = {
  * pages drop their chat sections with it.
  */
 export const CHAT = {
-  host: 'https://livechat-desk-omega.vercel.app',
+  host: 'https://chat.wizpack.work',
   siteId: import.meta.env.PUBLIC_LIVECHAT_SITE ?? 'conesleeves-couk',
   /** What the widget keeps in the browser — listed on the cookie policy. */
   storage: {
