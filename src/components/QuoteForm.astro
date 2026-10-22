@@ -58,7 +58,7 @@ const formId = `qf-${id}`;
         autocomplete="off"
       />
     </div>
-    {/* Timing trap: the server rejects anything submitted implausibly fast. */}
+    {/* Timing stamp: the server labels anything submitted implausibly fast as possible spam. */}
     <input type="hidden" name="rendered_at" value={Date.now().toString()} data-rendered-at />
 
     <div class="field-grid">

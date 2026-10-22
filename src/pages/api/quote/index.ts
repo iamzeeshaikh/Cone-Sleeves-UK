@@ -1,5 +1,6 @@
 import type { APIRoute } from 'astro';
 import nodemailer from 'nodemailer';
+import { spamReasons } from '../../../lib/spam.js';
 
 /**
  * Quote and enquiry endpoint.
@@ -126,24 +127,14 @@ export const POST: APIRoute = async ({ request }) => {
   }
 
   // --- Spam checks -------------------------------------------------------
+  // Nothing here refuses the enquiry (owner's rule: never drop a lead). A
+  // suspect submission is still mailed, with "[Possible spam]" in the subject
+  // and the reasons at the top, so a real customer is never lost.
+
+  const spam: string[] = [];
 
   // Honeypot: a real person never sees this field.
-  if (clean(form.get('website'))) {
-    // Answer as though it succeeded so a bot learns nothing.
-    return respond(request, { ok: true, status: 200, message: 'Thank you.' });
-  }
-
-  const renderedAt = Number(clean(form.get('rendered_at')));
-  if (Number.isFinite(renderedAt) && renderedAt > 0) {
-    const elapsed = Date.now() - renderedAt;
-    if (elapsed < 2500) {
-      return respond(request, {
-        ok: false,
-        status: 429,
-        message: 'That was submitted very quickly. Please try again.',
-      });
-    }
-  }
+  if (clean(form.get('website'))) spam.push('hidden field filled');
 
   if (rateLimited(clientIp(request))) {
     return respond(request, {
@@ -163,6 +154,21 @@ export const POST: APIRoute = async ({ request }) => {
   const message = clean(form.get('message'), 2000);
   const source = clean(form.get('source'), 80) || 'website';
   const consent = clean(form.get('consent'), 10);
+  const company = clean(form.get('company'), 80);
+
+  // Random-letter names, canned sentences pasted into every box, a name that
+  // does not match a first.last@ address, and posts that never loaded the
+  // page or came within seconds of loading it. Labels only, never refuses.
+  spam.push(
+    ...spamReasons({
+      names: [name],
+      email,
+      message,
+      fields: { product, quantity, company },
+      sentAt: clean(form.get('rendered_at')),
+    }),
+  );
+  const spamLine = spam.length ? `Spam check: ${spam.join('; ')}` : '';
 
   // The sleeve designer posts its configuration as a JSON string.
   const configRaw = clean(form.get('configuration'), 4000);
@@ -265,6 +271,7 @@ export const POST: APIRoute = async ({ request }) => {
   const configRows = configuration ? Object.entries(configuration) : [];
 
   const text = [
+    ...(spamLine ? [spamLine, ''] : []),
     `New enquiry from the Cone Sleeves UK website`,
     '',
     ...rows.map(([k, v]) => `${k}: ${v}`),
@@ -277,6 +284,7 @@ export const POST: APIRoute = async ({ request }) => {
   ].join('\n');
 
   const html = `
+    ${spamLine ? `<p style="font:600 14px system-ui,sans-serif;background:#fde3d8;color:#7a2e0e;padding:8px 12px;margin:0 0 12px">${escapeHtml(spamLine)}</p>` : ''}
     <h2 style="font:600 18px system-ui,sans-serif;color:#1f4415;margin:0 0 12px">New website enquiry</h2>
     <table style="border-collapse:collapse;font:14px system-ui,sans-serif">
       ${rows
@@ -317,7 +325,7 @@ export const POST: APIRoute = async ({ request }) => {
       cc,
       // Replying to the notification reaches the enquirer directly.
       replyTo: `"${headerSafe(name)}" <${headerSafe(email)}>`,
-      subject: `Quote enquiry — ${headerSafe(product)} (${headerSafe(quantity)})`,
+      subject: `${spam.length ? '[Possible spam] ' : ''}Quote enquiry — ${headerSafe(product)} (${headerSafe(quantity)})`,
       text,
       html,
       attachments,
